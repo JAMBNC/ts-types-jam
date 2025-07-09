@@ -152,7 +152,7 @@ export const All = z.object({
           }),
         )
         .optional(),
-      brand: z.string(),
+      brand: z.string().optional(),
       browsable: z.boolean(),
       content: z
         .object({
@@ -191,15 +191,13 @@ export const All = z.object({
       purchaseOptions: z
         .object({
           allowsSample: z.boolean(),
-          availability: z.string(),
-          basePrice: z.number(),
           customizable: z.boolean(),
           customizeLeadTimeDayRange: z.string().optional(),
           discountReason: z.string().optional(),
           inStock: z.boolean(),
           leadTime: z.string().optional(),
           minCustomizationQty: z.number().int().gt(0).optional(),
-          minSaleQty: z.number().int().gt(0),
+          minSaleQty: z.number().int().gt(0).optional(),
           onSale: z.boolean().optional(),
           plainLeadTimeDayRange: z.string().optional(),
           price: z.number(),
@@ -227,9 +225,9 @@ export const All = z.object({
       status: z.string().optional(),
       taxonomy: z.object({
         additionalProperties: z.record(z.any()).optional(),
-        master: z.string(),
-        primary: z.string(),
-        sub: z.string(),
+        master: z.string().optional(),
+        primary: z.string().optional(),
+        sub: z.string().optional(),
       }),
       upc: z.string().optional(),
       updatedAt: z.string().datetime({ offset: true }).optional(),
