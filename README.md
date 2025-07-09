@@ -1,4 +1,4 @@
-### JAM Zod/TypeScript types ES Module
+# JAM Zod/TypeScript types ES Module
 
 **DO NOT MAKE SCHEMA CHANGES IN THIS REPO. THIS IS GENERATED**
 
