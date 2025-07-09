@@ -1,0 +1,20 @@
+{
+  "name": "@types/jam",
+  "version": "1.0.0",
+  "description": "The generated typescript types from JSON Schema",
+  "homepage": "https://github.com/JAMBNC/ts-types-jam#readme",
+  "bugs": {
+    "url": "https://github.com/JAMBNC/ts-types-jam/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAMBNC/ts-types-jam.git"
+  },
+  "license": "ISC",
+  "author": "JAM Plus",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
