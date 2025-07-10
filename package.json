@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The generated typescript types from JSON Schema",
   "homepage": "https://github.com/JAMBNC/ts-types-jam#readme",
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./index.js",
@@ -26,5 +26,8 @@
   },
   "dependencies": {
     "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }
