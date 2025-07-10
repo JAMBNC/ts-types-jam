@@ -178,7 +178,7 @@ export const All = z.object({
         .array(
           z.object({
             altText: z.string().optional(),
-            mediaType: z.string(),
+            mediaType: z.enum(["Image", "Video"]),
             tags: z.array(z.string()).optional(),
             url: z.string(),
           }),
