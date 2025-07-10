@@ -1,6 +1,6 @@
 # JAM Zod/TypeScript types ES Module
 
-**DO NOT MAKE SCHEMA CHANGES IN THIS REPO. THIS IS GENERATED**
+**DO NOT MAKE SCHEMA CHANGES IN THIS REPO. THIS IS GENERATED VIA https://github.com/JAMBNC/generate-typescript-from-json-schema-action**
 
 The generated Zod schemas and exported TypeScript types generated from
 the [schema repo](https://github.com/JAMBNC/schema)
