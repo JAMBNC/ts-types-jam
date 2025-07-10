@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "The generated typescript types from JSON Schema",
   "homepage": "https://github.com/JAMBNC/ts-types-jam#readme",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
   "bugs": {
     "url": "https://github.com/JAMBNC/ts-types-jam/issues"
   },
