@@ -25,10 +25,10 @@ export const Product = z.object({
   createdAt: z.string().datetime({ offset: true }).optional(),
   customization: z
     .object({
-      designRequired: z.boolean(),
+      designRequired: z.boolean().optional(),
       prebuiltConfigurationId: z.string().optional(),
-      prebuiltCustomizable: z.boolean(),
-      prebuiltDesign: z.boolean(),
+      prebuiltCustomizable: z.boolean().optional(),
+      prebuiltDesign: z.boolean().optional(),
     })
     .optional(),
   identifiers: z.record(z.any()).optional(),
