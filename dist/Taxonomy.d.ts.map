@@ -1,1 +1,1 @@
-{"version":3,"file":"Taxonomy.d.ts","sourceRoot":"","sources":["../Taxonomy.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,QAAQ;;;;;iBAKnB,CAAC;AACH,MAAM,MAAM,QAAQ,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,QAAQ,CAAC,CAAC"}
+{"version":3,"file":"Taxonomy.d.ts","sourceRoot":"","sources":["../schemas/Taxonomy.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,QAAQ;;;;;iBAKnB,CAAC;AACH,MAAM,MAAM,QAAQ,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,QAAQ,CAAC,CAAC"}
