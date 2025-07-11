@@ -1,1 +1,1 @@
-{"version":3,"file":"TierPrice.d.ts","sourceRoot":"","sources":["../schemas/TierPrice.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,SAAS,UAAU,CAAC;AACjC,MAAM,MAAM,SAAS,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,SAAS,CAAC,CAAC"}
+{"version":3,"file":"TierPrice.d.ts","sourceRoot":"","sources":["../schemas/TierPrice.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,SAAS;;;iBAGpB,CAAC;AACH,MAAM,MAAM,SAAS,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,SAAS,CAAC,CAAC"}

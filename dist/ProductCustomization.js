@@ -1,2 +1,7 @@
 import { z } from "zod";
-export const ProductCustomization = z.any();
+export const ProductCustomization = z.object({
+    designRequired: z.boolean().optional(),
+    prebuiltConfigurationId: z.string().optional(),
+    prebuiltCustomizable: z.boolean().optional(),
+    prebuiltDesign: z.boolean().optional(),
+});
