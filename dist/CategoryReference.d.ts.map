@@ -1,1 +1,1 @@
-{"version":3,"file":"CategoryReference.d.ts","sourceRoot":"","sources":["../schemas/CategoryReference.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,iBAAiB;;;;iBAI5B,CAAC;AACH,MAAM,MAAM,iBAAiB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,iBAAiB,CAAC,CAAC"}
+{"version":3,"file":"CategoryReference.d.ts","sourceRoot":"","sources":["../schemas/CategoryReference.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,iBAAiB,UAAU,CAAC;AACzC,MAAM,MAAM,iBAAiB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,iBAAiB,CAAC,CAAC"}
