@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 export const ShippingInfo = z.object({
     accountNumber: z.string().optional(),
     accountType: z.string().optional(),

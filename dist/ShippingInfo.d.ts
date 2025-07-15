@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { z } from "zod/v4";
 export declare const ShippingInfo: z.ZodObject<{
     accountNumber: z.ZodOptional<z.ZodString>;
     accountType: z.ZodOptional<z.ZodString>;
