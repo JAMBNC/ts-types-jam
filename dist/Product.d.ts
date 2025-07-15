@@ -1,0 +1,89 @@
+import { z } from "zod/v4";
+export declare const Product: z.ZodObject<{
+    badges: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        id: z.ZodOptional<z.ZodNumber>;
+        imageUrl: z.ZodOptional<z.ZodString>;
+        label: z.ZodOptional<z.ZodString>;
+    }, z.core.$strip>>>;
+    brand: z.ZodOptional<z.ZodString>;
+    browsable: z.ZodBoolean;
+    content: z.ZodOptional<z.ZodObject<{
+        longDescription: z.ZodOptional<z.ZodString>;
+        metaDescription: z.ZodOptional<z.ZodString>;
+        metaKeywords: z.ZodOptional<z.ZodString>;
+        metaTitle: z.ZodOptional<z.ZodString>;
+        seoDescription: z.ZodOptional<z.ZodString>;
+        shortDescription: z.ZodOptional<z.ZodString>;
+        shortName: z.ZodOptional<z.ZodString>;
+    }, z.core.$strip>>;
+    createdAt: z.ZodOptional<z.ZodString>;
+    customization: z.ZodOptional<z.ZodObject<{
+        designRequired: z.ZodOptional<z.ZodBoolean>;
+        prebuiltConfigurationId: z.ZodOptional<z.ZodString>;
+        prebuiltCustomizable: z.ZodOptional<z.ZodBoolean>;
+        prebuiltDesign: z.ZodOptional<z.ZodBoolean>;
+    }, z.core.$strip>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    media: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        altText: z.ZodOptional<z.ZodString>;
+        mediaType: z.ZodEnum<{
+            Image: "Image";
+            Video: "Video";
+        }>;
+        tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
+            PRIMARY: "PRIMARY";
+            SMALL: "SMALL";
+            THUMBNAIL: "THUMBNAIL";
+            YOUR_LOGO_HERE: "YOUR_LOGO_HERE";
+            OTHER: "OTHER";
+        }>>>;
+        url: z.ZodString;
+    }, z.core.$strip>>>;
+    name: z.ZodString;
+    primaryCategory: z.ZodOptional<z.ZodObject<{
+        id: z.ZodNumber;
+        label: z.ZodString;
+        url: z.ZodString;
+    }, z.core.$strip>>;
+    purchaseOptions: z.ZodOptional<z.ZodObject<{
+        allowsSample: z.ZodBoolean;
+        customizable: z.ZodBoolean;
+        customizeLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+            max: z.ZodNumber;
+            min: z.ZodNumber;
+        }, z.core.$strip>>;
+        inStock: z.ZodBoolean;
+        leadTime: z.ZodOptional<z.ZodString>;
+        minCustomizationQty: z.ZodOptional<z.ZodNumber>;
+        minSaleQty: z.ZodOptional<z.ZodNumber>;
+        onSale: z.ZodOptional<z.ZodBoolean>;
+        plainLeadTimeDayRange: z.ZodOptional<z.ZodString>;
+        quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            requiredStepIncrement: z.ZodNumber;
+            startingAtQty: z.ZodNumber;
+        }, z.core.$strip>>>;
+        stockQty: z.ZodNumber;
+        suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+        tierPrices: z.ZodArray<z.ZodObject<{
+            discountReason: z.ZodOptional<z.ZodString>;
+            price: z.ZodNumber;
+            salePrice: z.ZodOptional<z.ZodNumber>;
+            startingAtQty: z.ZodNumber;
+        }, z.core.$strip>>;
+        toBeDiscontinued: z.ZodBoolean;
+    }, z.core.$strip>>;
+    searchable: z.ZodBoolean;
+    sku: z.ZodString;
+    status: z.ZodOptional<z.ZodString>;
+    taxonomy: z.ZodObject<{
+        additionalProperties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        master: z.ZodOptional<z.ZodString>;
+        primary: z.ZodOptional<z.ZodString>;
+        sub: z.ZodOptional<z.ZodString>;
+    }, z.core.$strip>;
+    upc: z.ZodOptional<z.ZodString>;
+    updatedAt: z.ZodOptional<z.ZodString>;
+    url: z.ZodString;
+}, z.core.$strip>;
+export type Product = z.infer<typeof Product>;
+//# sourceMappingURL=Product.d.ts.map
