@@ -1,4 +1,3 @@
-export * from './MapStringObject';
 export * from './Address';
 export * from './LineItem';
 export * from './Discount';
