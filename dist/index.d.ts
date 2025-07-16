@@ -12,6 +12,7 @@ export * from './ProductMedia';
 export * from './CategoryReference';
 export * from './PurchaseOptions';
 export * from './Taxonomy';
+export * from './Breadcrumb';
 export * from './MediaType';
 export * from './Tag';
 export * from './NonNegativeIntRange';

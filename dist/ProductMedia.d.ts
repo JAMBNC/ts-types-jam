@@ -10,6 +10,10 @@ export declare const ProductMedia: z.ZodObject<{
         SMALL: "SMALL";
         THUMBNAIL: "THUMBNAIL";
         YOUR_LOGO_HERE: "YOUR_LOGO_HERE";
+        INSIDE_VIEW: "INSIDE_VIEW";
+        SWATCH: "SWATCH";
+        AMAZON: "AMAZON";
+        CAROUSEL: "CAROUSEL";
         OTHER: "OTHER";
     }>>>;
     url: z.ZodString;

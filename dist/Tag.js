@@ -4,5 +4,9 @@ export const Tag = z.enum([
     "SMALL",
     "THUMBNAIL",
     "YOUR_LOGO_HERE",
+    "INSIDE_VIEW",
+    "SWATCH",
+    "AMAZON",
+    "CAROUSEL",
     "OTHER",
 ]);

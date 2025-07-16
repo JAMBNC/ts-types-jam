@@ -3,7 +3,7 @@ export declare const PurchaseOptions: z.ZodObject<{
     allowsSample: z.ZodBoolean;
     customizable: z.ZodBoolean;
     customizeLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
-        max: z.ZodNumber;
+        max: z.ZodOptional<z.ZodNumber>;
         min: z.ZodNumber;
     }, z.core.$strip>>;
     inStock: z.ZodBoolean;
@@ -11,7 +11,10 @@ export declare const PurchaseOptions: z.ZodObject<{
     minCustomizationQty: z.ZodOptional<z.ZodNumber>;
     minSaleQty: z.ZodOptional<z.ZodNumber>;
     onSale: z.ZodOptional<z.ZodBoolean>;
-    plainLeadTimeDayRange: z.ZodOptional<z.ZodString>;
+    plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+        max: z.ZodOptional<z.ZodNumber>;
+        min: z.ZodNumber;
+    }, z.core.$strip>>;
     quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
         requiredStepIncrement: z.ZodNumber;
         startingAtQty: z.ZodNumber;

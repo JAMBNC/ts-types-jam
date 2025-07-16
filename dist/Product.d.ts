@@ -8,6 +8,10 @@ export declare const Product: z.ZodObject<{
     brand: z.ZodOptional<z.ZodString>;
     browsable: z.ZodBoolean;
     content: z.ZodOptional<z.ZodObject<{
+        breadcrumbs: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            label: z.ZodString;
+            url: z.ZodOptional<z.ZodString>;
+        }, z.core.$strip>>>;
         longDescription: z.ZodOptional<z.ZodString>;
         metaDescription: z.ZodOptional<z.ZodString>;
         metaKeywords: z.ZodOptional<z.ZodString>;
@@ -35,6 +39,10 @@ export declare const Product: z.ZodObject<{
             SMALL: "SMALL";
             THUMBNAIL: "THUMBNAIL";
             YOUR_LOGO_HERE: "YOUR_LOGO_HERE";
+            INSIDE_VIEW: "INSIDE_VIEW";
+            SWATCH: "SWATCH";
+            AMAZON: "AMAZON";
+            CAROUSEL: "CAROUSEL";
             OTHER: "OTHER";
         }>>>;
         url: z.ZodString;
@@ -49,7 +57,7 @@ export declare const Product: z.ZodObject<{
         allowsSample: z.ZodBoolean;
         customizable: z.ZodBoolean;
         customizeLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
-            max: z.ZodNumber;
+            max: z.ZodOptional<z.ZodNumber>;
             min: z.ZodNumber;
         }, z.core.$strip>>;
         inStock: z.ZodBoolean;
@@ -57,7 +65,10 @@ export declare const Product: z.ZodObject<{
         minCustomizationQty: z.ZodOptional<z.ZodNumber>;
         minSaleQty: z.ZodOptional<z.ZodNumber>;
         onSale: z.ZodOptional<z.ZodBoolean>;
-        plainLeadTimeDayRange: z.ZodOptional<z.ZodString>;
+        plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+            max: z.ZodOptional<z.ZodNumber>;
+            min: z.ZodNumber;
+        }, z.core.$strip>>;
         quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
             requiredStepIncrement: z.ZodNumber;
             startingAtQty: z.ZodNumber;

@@ -11,6 +11,9 @@ export const Product = z.object({
     browsable: z.boolean(),
     content: z
         .object({
+        breadcrumbs: z
+            .array(z.object({ label: z.string(), url: z.string().optional() }))
+            .optional(),
         longDescription: z.string().optional(),
         metaDescription: z.string().optional(),
         metaKeywords: z.string().optional(),
@@ -40,6 +43,10 @@ export const Product = z.object({
             "SMALL",
             "THUMBNAIL",
             "YOUR_LOGO_HERE",
+            "INSIDE_VIEW",
+            "SWATCH",
+            "AMAZON",
+            "CAROUSEL",
             "OTHER",
         ]))
             .optional(),
@@ -55,14 +62,22 @@ export const Product = z.object({
         allowsSample: z.boolean(),
         customizable: z.boolean(),
         customizeLeadTimeDayRange: z
-            .object({ max: z.number().int().gte(0), min: z.number().int().gte(0) })
+            .object({
+            max: z.number().int().gte(0).optional(),
+            min: z.number().int().gte(0),
+        })
             .optional(),
         inStock: z.boolean(),
         leadTime: z.string().optional(),
         minCustomizationQty: z.number().int().gt(0).optional(),
         minSaleQty: z.number().int().gt(0).optional(),
         onSale: z.boolean().optional(),
-        plainLeadTimeDayRange: z.string().optional(),
+        plainLeadTimeDayRange: z
+            .object({
+            max: z.number().int().gte(0).optional(),
+            min: z.number().int().gte(0),
+        })
+            .optional(),
         quantityStepIncrements: z
             .array(z.object({
             requiredStepIncrement: z.number().int(),

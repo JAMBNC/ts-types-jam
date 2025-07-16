@@ -3,14 +3,22 @@ export const PurchaseOptions = z.object({
     allowsSample: z.boolean(),
     customizable: z.boolean(),
     customizeLeadTimeDayRange: z
-        .object({ max: z.number().int().gte(0), min: z.number().int().gte(0) })
+        .object({
+        max: z.number().int().gte(0).optional(),
+        min: z.number().int().gte(0),
+    })
         .optional(),
     inStock: z.boolean(),
     leadTime: z.string().optional(),
     minCustomizationQty: z.number().int().gt(0).optional(),
     minSaleQty: z.number().int().gt(0).optional(),
     onSale: z.boolean().optional(),
-    plainLeadTimeDayRange: z.string().optional(),
+    plainLeadTimeDayRange: z
+        .object({
+        max: z.number().int().gte(0).optional(),
+        min: z.number().int().gte(0),
+    })
+        .optional(),
     quantityStepIncrements: z
         .array(z.object({
         requiredStepIncrement: z.number().int(),
