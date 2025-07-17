@@ -85,6 +85,7 @@ export declare const Product: z.ZodObject<{
     }, z.core.$strip>>;
     searchable: z.ZodBoolean;
     sku: z.ZodString;
+    specs: z.ZodRecord<z.ZodString, z.ZodAny>;
     status: z.ZodOptional<z.ZodString>;
     taxonomy: z.ZodObject<{
         additionalProperties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;

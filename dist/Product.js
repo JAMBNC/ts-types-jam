@@ -97,6 +97,7 @@ export const Product = z.object({
         .optional(),
     searchable: z.boolean(),
     sku: z.string(),
+    specs: z.record(z.string(), z.any()),
     status: z.string().optional(),
     taxonomy: z.object({
         additionalProperties: z.record(z.string(), z.any()).optional(),
