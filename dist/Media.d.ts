@@ -1,5 +1,5 @@
 import { z } from "zod/v4";
-export declare const ProductMedia: z.ZodObject<{
+export declare const Media: z.ZodObject<{
     altText: z.ZodOptional<z.ZodString>;
     mediaType: z.ZodEnum<{
         Image: "Image";
@@ -18,5 +18,5 @@ export declare const ProductMedia: z.ZodObject<{
     }>>>;
     url: z.ZodString;
 }, z.core.$strip>;
-export type ProductMedia = z.infer<typeof ProductMedia>;
-//# sourceMappingURL=ProductMedia.d.ts.map
+export type Media = z.infer<typeof Media>;
+//# sourceMappingURL=Media.d.ts.map
