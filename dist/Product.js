@@ -36,7 +36,7 @@ export const Product = z.object({
     media: z
         .array(z.object({
         altText: z.string().optional(),
-        mediaType: z.enum(["Image", "Video"]),
+        mediaType: z.enum(["IMAGE", "VIDEO"]),
         tags: z
             .array(z.enum([
             "PRIMARY",
