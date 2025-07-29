@@ -1,16 +1,20 @@
 import { z } from "zod/v4";
 export const PurchaseOptions = z.object({
     allowsSample: z.boolean(),
-    customizable: z.boolean(),
-    customizeLeadTimeDayRange: z
+    customLeadTimeDayRange: z
         .object({
         max: z.number().int().gte(0).optional(),
         min: z.number().int().gte(0),
     })
         .optional(),
+    customizable: z.boolean(),
+    designRequired: z.boolean(),
     inStock: z.boolean(),
+    isReturnable: z.boolean(),
     leadTime: z.string().optional(),
+    maxPrice: z.number(),
     minCustomizationQty: z.number().int().gt(0).optional(),
+    minPrice: z.number(),
     minSaleQty: z.number().int().gt(0).optional(),
     onSale: z.boolean().optional(),
     plainLeadTimeDayRange: z

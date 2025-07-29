@@ -1,14 +1,18 @@
 import { z } from "zod/v4";
 export declare const PurchaseOptions: z.ZodObject<{
     allowsSample: z.ZodBoolean;
-    customizable: z.ZodBoolean;
-    customizeLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+    customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
         max: z.ZodOptional<z.ZodNumber>;
         min: z.ZodNumber;
     }, z.core.$strip>>;
+    customizable: z.ZodBoolean;
+    designRequired: z.ZodBoolean;
     inStock: z.ZodBoolean;
+    isReturnable: z.ZodBoolean;
     leadTime: z.ZodOptional<z.ZodString>;
+    maxPrice: z.ZodNumber;
     minCustomizationQty: z.ZodOptional<z.ZodNumber>;
+    minPrice: z.ZodNumber;
     minSaleQty: z.ZodOptional<z.ZodNumber>;
     onSale: z.ZodOptional<z.ZodBoolean>;
     plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{

@@ -2,19 +2,19 @@ import { z } from "zod/v4";
 export declare const Media: z.ZodObject<{
     altText: z.ZodOptional<z.ZodString>;
     mediaType: z.ZodEnum<{
-        IMAGE: "IMAGE";
-        VIDEO: "VIDEO";
+        Image: "Image";
+        Video: "Video";
     }>;
     tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
-        PRIMARY: "PRIMARY";
-        SMALL: "SMALL";
-        THUMBNAIL: "THUMBNAIL";
-        YOUR_LOGO_HERE: "YOUR_LOGO_HERE";
-        INSIDE_VIEW: "INSIDE_VIEW";
-        SWATCH: "SWATCH";
-        AMAZON: "AMAZON";
-        CAROUSEL: "CAROUSEL";
-        OTHER: "OTHER";
+        primary: "primary";
+        small: "small";
+        thumbnail: "thumbnail";
+        yourLogoHere: "yourLogoHere";
+        insideView: "insideView";
+        swatch: "swatch";
+        amazon: "amazon";
+        carousel: "carousel";
+        other: "other";
     }>>>;
     url: z.ZodString;
 }, z.core.$strip>;

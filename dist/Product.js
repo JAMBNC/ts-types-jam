@@ -26,28 +26,29 @@ export const Product = z.object({
     createdAt: z.string().datetime({ offset: true }).optional(),
     customization: z
         .object({
-        designRequired: z.boolean().optional(),
         prebuiltConfigurationId: z.string().optional(),
         prebuiltCustomizable: z.boolean().optional(),
         prebuiltDesign: z.boolean().optional(),
+        stockType: z.string().optional(),
+        styleType: z.string().optional(),
     })
         .optional(),
     identifiers: z.record(z.string(), z.any()).optional(),
     media: z
         .array(z.object({
         altText: z.string().optional(),
-        mediaType: z.enum(["IMAGE", "VIDEO"]),
+        mediaType: z.enum(["Image", "Video"]),
         tags: z
             .array(z.enum([
-            "PRIMARY",
-            "SMALL",
-            "THUMBNAIL",
-            "YOUR_LOGO_HERE",
-            "INSIDE_VIEW",
-            "SWATCH",
-            "AMAZON",
-            "CAROUSEL",
-            "OTHER",
+            "primary",
+            "small",
+            "thumbnail",
+            "yourLogoHere",
+            "insideView",
+            "swatch",
+            "amazon",
+            "carousel",
+            "other",
         ]))
             .optional(),
         url: z.string(),
@@ -60,16 +61,20 @@ export const Product = z.object({
     purchaseOptions: z
         .object({
         allowsSample: z.boolean(),
-        customizable: z.boolean(),
-        customizeLeadTimeDayRange: z
+        customLeadTimeDayRange: z
             .object({
             max: z.number().int().gte(0).optional(),
             min: z.number().int().gte(0),
         })
             .optional(),
+        customizable: z.boolean(),
+        designRequired: z.boolean(),
         inStock: z.boolean(),
+        isReturnable: z.boolean(),
         leadTime: z.string().optional(),
+        maxPrice: z.number(),
         minCustomizationQty: z.number().int().gt(0).optional(),
+        minPrice: z.number(),
         minSaleQty: z.number().int().gt(0).optional(),
         onSale: z.boolean().optional(),
         plainLeadTimeDayRange: z
@@ -100,7 +105,6 @@ export const Product = z.object({
     specs: z.record(z.string(), z.any()),
     status: z.string().optional(),
     taxonomy: z.object({
-        additionalProperties: z.record(z.string(), z.any()).optional(),
         master: z.string().optional(),
         primary: z.string().optional(),
         sub: z.string().optional(),

@@ -22,28 +22,29 @@ export declare const Product: z.ZodObject<{
     }, z.core.$strip>>;
     createdAt: z.ZodOptional<z.ZodString>;
     customization: z.ZodOptional<z.ZodObject<{
-        designRequired: z.ZodOptional<z.ZodBoolean>;
         prebuiltConfigurationId: z.ZodOptional<z.ZodString>;
         prebuiltCustomizable: z.ZodOptional<z.ZodBoolean>;
         prebuiltDesign: z.ZodOptional<z.ZodBoolean>;
+        stockType: z.ZodOptional<z.ZodString>;
+        styleType: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     media: z.ZodOptional<z.ZodArray<z.ZodObject<{
         altText: z.ZodOptional<z.ZodString>;
         mediaType: z.ZodEnum<{
-            IMAGE: "IMAGE";
-            VIDEO: "VIDEO";
+            Image: "Image";
+            Video: "Video";
         }>;
         tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
-            PRIMARY: "PRIMARY";
-            SMALL: "SMALL";
-            THUMBNAIL: "THUMBNAIL";
-            YOUR_LOGO_HERE: "YOUR_LOGO_HERE";
-            INSIDE_VIEW: "INSIDE_VIEW";
-            SWATCH: "SWATCH";
-            AMAZON: "AMAZON";
-            CAROUSEL: "CAROUSEL";
-            OTHER: "OTHER";
+            primary: "primary";
+            small: "small";
+            thumbnail: "thumbnail";
+            yourLogoHere: "yourLogoHere";
+            insideView: "insideView";
+            swatch: "swatch";
+            amazon: "amazon";
+            carousel: "carousel";
+            other: "other";
         }>>>;
         url: z.ZodString;
     }, z.core.$strip>>>;
@@ -55,14 +56,18 @@ export declare const Product: z.ZodObject<{
     }, z.core.$strip>>;
     purchaseOptions: z.ZodOptional<z.ZodObject<{
         allowsSample: z.ZodBoolean;
-        customizable: z.ZodBoolean;
-        customizeLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+        customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
             max: z.ZodOptional<z.ZodNumber>;
             min: z.ZodNumber;
         }, z.core.$strip>>;
+        customizable: z.ZodBoolean;
+        designRequired: z.ZodBoolean;
         inStock: z.ZodBoolean;
+        isReturnable: z.ZodBoolean;
         leadTime: z.ZodOptional<z.ZodString>;
+        maxPrice: z.ZodNumber;
         minCustomizationQty: z.ZodOptional<z.ZodNumber>;
+        minPrice: z.ZodNumber;
         minSaleQty: z.ZodOptional<z.ZodNumber>;
         onSale: z.ZodOptional<z.ZodBoolean>;
         plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
@@ -88,7 +93,6 @@ export declare const Product: z.ZodObject<{
     specs: z.ZodRecord<z.ZodString, z.ZodAny>;
     status: z.ZodOptional<z.ZodString>;
     taxonomy: z.ZodObject<{
-        additionalProperties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         master: z.ZodOptional<z.ZodString>;
         primary: z.ZodOptional<z.ZodString>;
         sub: z.ZodOptional<z.ZodString>;

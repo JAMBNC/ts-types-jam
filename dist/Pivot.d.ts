@@ -1,11 +1,11 @@
 import { z } from "zod/v4";
 export declare const Pivot: z.ZodObject<{
+    code: z.ZodString;
     helpText: z.ZodOptional<z.ZodString>;
-    label: z.ZodString;
     values: z.ZodArray<z.ZodObject<{
         helpText: z.ZodOptional<z.ZodString>;
         label: z.ZodString;
-        skus: z.ZodArray<z.ZodString>;
+        products: z.ZodArray<z.ZodString>;
         swatchType: z.ZodOptional<z.ZodEnum<{
             TEXT: "TEXT";
             IMAGE: "IMAGE";
