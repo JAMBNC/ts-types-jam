@@ -31,6 +31,7 @@ export declare const Product: z.ZodObject<{
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     media: z.ZodOptional<z.ZodArray<z.ZodObject<{
         altText: z.ZodOptional<z.ZodString>;
+        label: z.ZodOptional<z.ZodString>;
         mediaType: z.ZodEnum<{
             Image: "Image";
             Video: "Video";
@@ -64,7 +65,6 @@ export declare const Product: z.ZodObject<{
         designRequired: z.ZodBoolean;
         inStock: z.ZodBoolean;
         isReturnable: z.ZodBoolean;
-        leadTime: z.ZodOptional<z.ZodString>;
         maxPrice: z.ZodNumber;
         minCustomizationQty: z.ZodOptional<z.ZodNumber>;
         minPrice: z.ZodNumber;

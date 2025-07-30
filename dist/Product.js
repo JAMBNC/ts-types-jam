@@ -37,6 +37,7 @@ export const Product = z.object({
     media: z
         .array(z.object({
         altText: z.string().optional(),
+        label: z.string().optional(),
         mediaType: z.enum(["Image", "Video"]),
         tags: z
             .array(z.enum([
@@ -71,7 +72,6 @@ export const Product = z.object({
         designRequired: z.boolean(),
         inStock: z.boolean(),
         isReturnable: z.boolean(),
-        leadTime: z.string().optional(),
         maxPrice: z.number(),
         minCustomizationQty: z.number().int().gt(0).optional(),
         minPrice: z.number(),

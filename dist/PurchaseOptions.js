@@ -11,7 +11,6 @@ export const PurchaseOptions = z.object({
     designRequired: z.boolean(),
     inStock: z.boolean(),
     isReturnable: z.boolean(),
-    leadTime: z.string().optional(),
     maxPrice: z.number(),
     minCustomizationQty: z.number().int().gt(0).optional(),
     minPrice: z.number(),

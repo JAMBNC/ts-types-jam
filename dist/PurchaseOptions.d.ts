@@ -9,7 +9,6 @@ export declare const PurchaseOptions: z.ZodObject<{
     designRequired: z.ZodBoolean;
     inStock: z.ZodBoolean;
     isReturnable: z.ZodBoolean;
-    leadTime: z.ZodOptional<z.ZodString>;
     maxPrice: z.ZodNumber;
     minCustomizationQty: z.ZodOptional<z.ZodNumber>;
     minPrice: z.ZodNumber;

@@ -1,6 +1,7 @@
 import { z } from "zod/v4";
 export declare const Media: z.ZodObject<{
     altText: z.ZodOptional<z.ZodString>;
+    label: z.ZodOptional<z.ZodString>;
     mediaType: z.ZodEnum<{
         Image: "Image";
         Video: "Video";
