@@ -36,6 +36,7 @@ export declare const Product: z.ZodObject<{
             Image: "Image";
             Video: "Video";
         }>;
+        previewUrl: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
             primary: "primary";
             small: "small";

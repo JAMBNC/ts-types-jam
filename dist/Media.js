@@ -3,6 +3,7 @@ export const Media = z.object({
     altText: z.string().optional(),
     label: z.string().optional(),
     mediaType: z.enum(["Image", "Video"]),
+    previewUrl: z.string().optional(),
     tags: z
         .array(z.enum([
         "primary",
