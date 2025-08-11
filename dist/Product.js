@@ -33,6 +33,7 @@ export const Product = z.object({
         styleType: z.string().optional(),
     })
         .optional(),
+    displayGroup: z.string().optional(),
     identifiers: z.record(z.string(), z.any()).optional(),
     media: z
         .array(z.object({

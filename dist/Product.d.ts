@@ -28,6 +28,7 @@ export declare const Product: z.ZodObject<{
         stockType: z.ZodOptional<z.ZodString>;
         styleType: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>>;
+    displayGroup: z.ZodOptional<z.ZodString>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     media: z.ZodOptional<z.ZodArray<z.ZodObject<{
         altText: z.ZodOptional<z.ZodString>;
