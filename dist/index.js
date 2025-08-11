@@ -9,6 +9,7 @@ export * from './Payment';
 export * from './ShippingInfo';
 export * from './Status';
 export * from './Method';
+export * from './Type';
 export * from './PivotValue';
 export * from './SwatchType';
 export * from './ProductBadge';
