@@ -5,9 +5,9 @@ export declare const DisplayGroup: z.ZodObject<{
     pivots: z.ZodArray<z.ZodObject<{
         code: z.ZodString;
         helpText: z.ZodOptional<z.ZodString>;
-        type: z.ZodOptional<z.ZodEnum<{
-            Primary: "Primary";
-            Secondary: "Secondary";
+        pivotType: z.ZodOptional<z.ZodEnum<{
+            primary: "primary";
+            secondary: "secondary";
         }>>;
         values: z.ZodArray<z.ZodObject<{
             helpText: z.ZodOptional<z.ZodString>;

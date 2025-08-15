@@ -3,8 +3,8 @@ export declare const Media: z.ZodObject<{
     altText: z.ZodOptional<z.ZodString>;
     label: z.ZodOptional<z.ZodString>;
     mediaType: z.ZodEnum<{
-        Image: "Image";
-        Video: "Video";
+        image: "image";
+        video: "video";
     }>;
     previewUrl: z.ZodOptional<z.ZodString>;
     tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{

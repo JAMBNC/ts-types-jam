@@ -2,9 +2,9 @@ import { z } from "zod/v4";
 export declare const Pivot: z.ZodObject<{
     code: z.ZodString;
     helpText: z.ZodOptional<z.ZodString>;
-    type: z.ZodOptional<z.ZodEnum<{
-        Primary: "Primary";
-        Secondary: "Secondary";
+    pivotType: z.ZodOptional<z.ZodEnum<{
+        primary: "primary";
+        secondary: "secondary";
     }>>;
     values: z.ZodArray<z.ZodObject<{
         helpText: z.ZodOptional<z.ZodString>;

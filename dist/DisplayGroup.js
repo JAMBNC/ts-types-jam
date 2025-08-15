@@ -5,7 +5,7 @@ export const DisplayGroup = z.object({
     pivots: z.array(z.object({
         code: z.string(),
         helpText: z.string().optional(),
-        type: z.enum(["Primary", "Secondary"]).optional(),
+        pivotType: z.enum(["primary", "secondary"]).optional(),
         values: z.array(z.object({
             helpText: z.string().optional(),
             label: z.string(),
