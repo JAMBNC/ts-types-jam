@@ -85,6 +85,7 @@ export const Product = z.object({
             min: z.number().int().gte(0),
         })
             .optional(),
+        pricePercentOff: z.number().optional(),
         quantityStepIncrements: z
             .array(z.object({
             requiredStepIncrement: z.number().int(),

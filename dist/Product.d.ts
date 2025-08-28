@@ -76,6 +76,7 @@ export declare const Product: z.ZodObject<{
             max: z.ZodOptional<z.ZodNumber>;
             min: z.ZodNumber;
         }, z.core.$strip>>;
+        pricePercentOff: z.ZodOptional<z.ZodNumber>;
         quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
             requiredStepIncrement: z.ZodNumber;
             startingAtQty: z.ZodNumber;
