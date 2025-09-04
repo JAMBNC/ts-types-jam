@@ -115,5 +115,18 @@ export const Product = z.object({
     }),
     upc: z.string().optional(),
     updatedAt: z.string().datetime({ offset: true }).optional(),
-    url: z.string(),
+    url: z
+        .array(z.object({
+        metaData: z
+            .object({
+            creativeEngine: z.enum(["chili", "alchemy"]).optional(),
+            designer: z.enum(["chili", "luma", "addrLogo"]).optional(),
+        })
+            .optional(),
+        url: z.string().optional(),
+        urlType: z
+            .enum(["product", "customProduct", "yourLogoHere"])
+            .optional(),
+    }))
+        .min(1),
 });

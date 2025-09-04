@@ -103,7 +103,25 @@ export declare const Product: z.ZodObject<{
     }, z.core.$strip>;
     upc: z.ZodOptional<z.ZodString>;
     updatedAt: z.ZodOptional<z.ZodString>;
-    url: z.ZodString;
+    url: z.ZodArray<z.ZodObject<{
+        metaData: z.ZodOptional<z.ZodObject<{
+            creativeEngine: z.ZodOptional<z.ZodEnum<{
+                chili: "chili";
+                alchemy: "alchemy";
+            }>>;
+            designer: z.ZodOptional<z.ZodEnum<{
+                chili: "chili";
+                luma: "luma";
+                addrLogo: "addrLogo";
+            }>>;
+        }, z.core.$strip>>;
+        url: z.ZodOptional<z.ZodString>;
+        urlType: z.ZodOptional<z.ZodEnum<{
+            yourLogoHere: "yourLogoHere";
+            product: "product";
+            customProduct: "customProduct";
+        }>>;
+    }, z.core.$strip>>;
 }, z.core.$strip>;
 export type Product = z.infer<typeof Product>;
 //# sourceMappingURL=Product.d.ts.map
