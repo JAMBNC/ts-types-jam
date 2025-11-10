@@ -1,3 +1,5 @@
+export * from './PredefinedAttributeValue';
+export * from './SelectionRenderPreference';
 export * from './Address';
 export * from './Pivot';
 export * from './ProductListing';
@@ -29,6 +31,7 @@ export * from './NonNegativeIntRange';
 export * from './QuantityStepIncrement';
 export * from './TierPrice';
 export * from './Provider';
+export * from './Attribute';
 export * from './Customer';
 export * from './DisplayGroup';
 export * from './Order';
