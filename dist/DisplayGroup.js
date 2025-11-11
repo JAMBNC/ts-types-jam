@@ -3,10 +3,12 @@ export const DisplayGroup = z.object({
     id: z.string(),
     identifiers: z.record(z.string(), z.any()).optional(),
     pivots: z.array(z.object({
+        attributeRenderPreference: z
+            .enum(["tabs", "dropdown", "swatches", "textSwatches", "modal"])
+            .optional(),
         code: z.string(),
         helpText: z.string().optional(),
         pivotType: z.enum(["primary", "secondary"]).optional(),
-        renderer: z.enum(["tabs", "dropdown", "swatches", "modal"]),
         values: z.array(z.object({
             helpText: z.string().optional(),
             label: z.string(),

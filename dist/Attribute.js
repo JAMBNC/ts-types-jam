@@ -11,6 +11,12 @@ export const Attribute = z.object({
         value: z.string(),
     }))
         .optional(),
-    selectionRenderPreference: z.enum(["SELECT", "SWATCH", "TEXT_SWATCH"]),
+    renderPreference: z.enum([
+        "tabs",
+        "dropdown",
+        "swatches",
+        "textSwatches",
+        "modal",
+    ]),
     usedForProductSelection: z.boolean(),
 });

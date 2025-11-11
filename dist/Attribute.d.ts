@@ -9,10 +9,12 @@ export declare const Attribute: z.ZodObject<{
         swatches: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         value: z.ZodString;
     }, z.core.$strip>>>;
-    selectionRenderPreference: z.ZodEnum<{
-        SELECT: "SELECT";
-        SWATCH: "SWATCH";
-        TEXT_SWATCH: "TEXT_SWATCH";
+    renderPreference: z.ZodEnum<{
+        swatches: "swatches";
+        tabs: "tabs";
+        dropdown: "dropdown";
+        textSwatches: "textSwatches";
+        modal: "modal";
     }>;
     usedForProductSelection: z.ZodBoolean;
 }, z.core.$strip>;

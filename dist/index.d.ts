@@ -1,6 +1,6 @@
 export * from './Type';
 export * from './PredefinedAttributeValue';
-export * from './SelectionRenderPreference';
+export * from './AttributeRenderPreference';
 export * from './Address';
 export * from './Pivot';
 export * from './ProductListing';
@@ -14,7 +14,6 @@ export * from './ShippingInfo';
 export * from './Status';
 export * from './Method';
 export * from './PivotType';
-export * from './PivotRenderer';
 export * from './PivotValue';
 export * from './SwatchType';
 export * from './ProductBadge';
