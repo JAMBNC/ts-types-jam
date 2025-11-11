@@ -2,6 +2,7 @@ import { z } from "zod/v4";
 export declare const Attribute: z.ZodObject<{
     code: z.ZodString;
     displayForCustomer: z.ZodBoolean;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     label: z.ZodString;
     predefinedValues: z.ZodOptional<z.ZodArray<z.ZodObject<{
         identifiers: z.ZodRecord<z.ZodString, z.ZodAny>;
