@@ -3,6 +3,7 @@ export const Pivot = z.object({
     code: z.string(),
     helpText: z.string().optional(),
     pivotType: z.enum(["primary", "secondary"]).optional(),
+    renderer: z.enum(["tabs", "dropdown", "swatches", "modal"]),
     values: z.array(z.object({
         helpText: z.string().optional(),
         label: z.string(),

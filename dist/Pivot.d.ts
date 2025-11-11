@@ -6,6 +6,12 @@ export declare const Pivot: z.ZodObject<{
         primary: "primary";
         secondary: "secondary";
     }>>;
+    renderer: z.ZodEnum<{
+        swatches: "swatches";
+        tabs: "tabs";
+        dropdown: "dropdown";
+        modal: "modal";
+    }>;
     values: z.ZodArray<z.ZodObject<{
         helpText: z.ZodOptional<z.ZodString>;
         label: z.ZodString;
