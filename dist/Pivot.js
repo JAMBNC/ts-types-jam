@@ -1,7 +1,7 @@
 import { z } from "zod/v4";
 export const Pivot = z.object({
     attributeRenderPreference: z
-        .enum(["tabs", "dropdown", "swatches", "textSwatches", "modal"])
+        .enum(["tabs", "dropdown", "swatches", "modal"])
         .optional(),
     code: z.string(),
     helpText: z.string().optional(),

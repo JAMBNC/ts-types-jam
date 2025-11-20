@@ -7,7 +7,6 @@ export declare const DisplayGroup: z.ZodObject<{
             swatches: "swatches";
             tabs: "tabs";
             dropdown: "dropdown";
-            textSwatches: "textSwatches";
             modal: "modal";
         }>>;
         code: z.ZodString;
@@ -35,6 +34,11 @@ export declare const DisplayGroup: z.ZodObject<{
         shortName: z.ZodOptional<z.ZodString>;
         sku: z.ZodString;
     }, z.core.$strip>>;
+    shoutOuts: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        display: z.ZodString;
+        displayGroupId: z.ZodOptional<z.ZodNumber>;
+        url: z.ZodString;
+    }, z.core.$strip>>>;
 }, z.core.$strip>;
 export type DisplayGroup = z.infer<typeof DisplayGroup>;
 //# sourceMappingURL=DisplayGroup.d.ts.map

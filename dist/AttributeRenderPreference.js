@@ -3,6 +3,5 @@ export const AttributeRenderPreference = z.enum([
     "tabs",
     "dropdown",
     "swatches",
-    "textSwatches",
     "modal",
 ]);

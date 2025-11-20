@@ -4,7 +4,7 @@ export const DisplayGroup = z.object({
     identifiers: z.record(z.string(), z.any()).optional(),
     pivots: z.array(z.object({
         attributeRenderPreference: z
-            .enum(["tabs", "dropdown", "swatches", "textSwatches", "modal"])
+            .enum(["tabs", "dropdown", "swatches", "modal"])
             .optional(),
         code: z.string(),
         helpText: z.string().optional(),
@@ -24,4 +24,11 @@ export const DisplayGroup = z.object({
         shortName: z.string().optional(),
         sku: z.string(),
     })),
+    shoutOuts: z
+        .array(z.object({
+        display: z.string(),
+        displayGroupId: z.number().int().optional(),
+        url: z.string(),
+    }))
+        .optional(),
 });

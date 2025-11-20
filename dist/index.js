@@ -4,6 +4,7 @@ export * from './AttributeRenderPreference';
 export * from './Address';
 export * from './Pivot';
 export * from './ProductListing';
+export * from './ShoutOut';
 export * from './LineItem';
 export * from './MediaType';
 export * from './Tag';

@@ -13,7 +13,6 @@ export declare const Attribute: z.ZodObject<{
         swatches: "swatches";
         tabs: "tabs";
         dropdown: "dropdown";
-        textSwatches: "textSwatches";
         modal: "modal";
     }>;
     usedForProductSelection: z.ZodBoolean;

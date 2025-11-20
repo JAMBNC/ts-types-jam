@@ -4,7 +4,6 @@ export declare const Pivot: z.ZodObject<{
         swatches: "swatches";
         tabs: "tabs";
         dropdown: "dropdown";
-        textSwatches: "textSwatches";
         modal: "modal";
     }>>;
     code: z.ZodString;
