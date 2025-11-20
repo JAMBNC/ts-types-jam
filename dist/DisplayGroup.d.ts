@@ -37,7 +37,7 @@ export declare const DisplayGroup: z.ZodObject<{
     }, z.core.$strip>>;
     shoutOuts: z.ZodOptional<z.ZodArray<z.ZodObject<{
         display: z.ZodString;
-        displayGroupId: z.ZodOptional<z.ZodNumber>;
+        displayGroupId: z.ZodOptional<z.ZodString>;
         url: z.ZodString;
     }, z.core.$strip>>>;
 }, z.core.$strip>;

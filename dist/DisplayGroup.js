@@ -28,7 +28,7 @@ export const DisplayGroup = z.object({
     shoutOuts: z
         .array(z.object({
         display: z.string(),
-        displayGroupId: z.number().int().optional(),
+        displayGroupId: z.string().optional(),
         url: z.string(),
     }))
         .optional(),

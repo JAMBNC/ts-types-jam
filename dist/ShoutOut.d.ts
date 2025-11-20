@@ -1,7 +1,7 @@
 import { z } from "zod/v4";
 export declare const ShoutOut: z.ZodObject<{
     display: z.ZodString;
-    displayGroupId: z.ZodOptional<z.ZodNumber>;
+    displayGroupId: z.ZodOptional<z.ZodString>;
     url: z.ZodString;
 }, z.core.$strip>;
 export type ShoutOut = z.infer<typeof ShoutOut>;
