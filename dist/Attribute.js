@@ -12,5 +12,6 @@ export const Attribute = z.object({
     }))
         .optional(),
     renderPreference: z.enum(["tabs", "dropdown", "swatches", "modal"]),
+    secondarySelectionEnabled: z.boolean(),
     usedForProductSelection: z.boolean(),
 });

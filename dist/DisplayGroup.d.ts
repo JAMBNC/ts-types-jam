@@ -11,6 +11,7 @@ export declare const DisplayGroup: z.ZodObject<{
         }>>;
         code: z.ZodString;
         helpText: z.ZodOptional<z.ZodString>;
+        label: z.ZodOptional<z.ZodString>;
         pivotType: z.ZodOptional<z.ZodEnum<{
             primary: "primary";
             secondary: "secondary";

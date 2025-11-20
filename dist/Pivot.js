@@ -5,6 +5,7 @@ export const Pivot = z.object({
         .optional(),
     code: z.string(),
     helpText: z.string().optional(),
+    label: z.string().optional(),
     pivotType: z.enum(["primary", "secondary"]).optional(),
     values: z.array(z.object({
         helpText: z.string().optional(),

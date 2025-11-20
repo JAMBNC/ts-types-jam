@@ -15,6 +15,7 @@ export declare const Attribute: z.ZodObject<{
         dropdown: "dropdown";
         modal: "modal";
     }>;
+    secondarySelectionEnabled: z.ZodBoolean;
     usedForProductSelection: z.ZodBoolean;
 }, z.core.$strip>;
 export type Attribute = z.infer<typeof Attribute>;
