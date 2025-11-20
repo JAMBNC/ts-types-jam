@@ -39,6 +39,7 @@ export * from './AnsweredQuestion';
 export * from './MerchantResponse';
 export * from './ReviewSource';
 export * from './Provider';
+export * from './ShoutOutType';
 export * from './Attribute';
 export * from './Customer';
 export * from './DisplayGroup';

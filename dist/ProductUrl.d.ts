@@ -13,8 +13,8 @@ export declare const ProductUrl: z.ZodObject<{
     }, z.core.$strip>>;
     url: z.ZodOptional<z.ZodString>;
     urlType: z.ZodOptional<z.ZodEnum<{
-        yourLogoHere: "yourLogoHere";
         product: "product";
+        yourLogoHere: "yourLogoHere";
         customProduct: "customProduct";
     }>>;
 }, z.core.$strip>;

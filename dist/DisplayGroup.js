@@ -29,6 +29,7 @@ export const DisplayGroup = z.object({
         .array(z.object({
         display: z.string(),
         displayGroupId: z.string().optional(),
+        type: z.enum(["generic", "product", "category", "group", "similar"]),
         url: z.string(),
     }))
         .optional(),
