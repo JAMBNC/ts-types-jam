@@ -28,9 +28,9 @@ export const DisplayGroup = z.object({
     shoutOuts: z
         .array(z.object({
         display: z.string(),
-        displayGroupId: z.string().optional(),
         type: z.enum(["generic", "product", "category", "group", "similar"]),
         url: z.string(),
+        value: z.string().optional(),
     }))
         .optional(),
 });
