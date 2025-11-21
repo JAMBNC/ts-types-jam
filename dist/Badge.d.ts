@@ -1,7 +1,13 @@
 import { z } from "zod/v4";
 export declare const Badge: z.ZodObject<{
-    id: z.ZodOptional<z.ZodString>;
-    imageUrl: z.ZodOptional<z.ZodString>;
+    code: z.ZodString;
+    images: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        context: z.ZodEnum<{
+            product_detail: "product_detail";
+            product_listing: "product_listing";
+        }>;
+        url: z.ZodOptional<z.ZodString>;
+    }, z.core.$strip>>>;
     priority: z.ZodOptional<z.ZodNumber>;
     title: z.ZodOptional<z.ZodString>;
 }, z.core.$strip>;
