@@ -1,12 +1,6 @@
 import { z } from "zod/v4";
 export const Product = z.object({
-    badges: z
-        .array(z.object({
-        id: z.number().int().optional(),
-        imageUrl: z.string().optional(),
-        label: z.string().optional(),
-    }))
-        .optional(),
+    badges: z.array(z.string()).optional(),
     brand: z.string().optional(),
     browsable: z.boolean(),
     content: z

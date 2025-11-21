@@ -1,10 +1,6 @@
 import { z } from "zod/v4";
 export declare const Product: z.ZodObject<{
-    badges: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        id: z.ZodOptional<z.ZodNumber>;
-        imageUrl: z.ZodOptional<z.ZodString>;
-        label: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>>;
+    badges: z.ZodOptional<z.ZodArray<z.ZodString>>;
     brand: z.ZodOptional<z.ZodString>;
     browsable: z.ZodBoolean;
     content: z.ZodOptional<z.ZodObject<{
