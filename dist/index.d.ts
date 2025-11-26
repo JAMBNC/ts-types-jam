@@ -3,6 +3,7 @@ export * from './PredefinedAttributeValue';
 export * from './AttributeRenderPreference';
 export * from './BadgeImage';
 export * from './Context';
+export * from './BadgePosition';
 export * from './Address';
 export * from './Pivot';
 export * from './ProductListing';

@@ -6,7 +6,13 @@ export declare const Badge: z.ZodObject<{
             product_detail: "product_detail";
             product_listing: "product_listing";
         }>;
-        url: z.ZodOptional<z.ZodString>;
+        position: z.ZodEnum<{
+            topRight: "topRight";
+            bottomRight: "bottomRight";
+            bottomLeft: "bottomLeft";
+            topLeft: "topLeft";
+        }>;
+        url: z.ZodString;
     }, z.core.$strip>>>;
     priority: z.ZodOptional<z.ZodNumber>;
     title: z.ZodOptional<z.ZodString>;

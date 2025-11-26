@@ -4,7 +4,8 @@ export const Badge = z.object({
     images: z
         .array(z.object({
         context: z.enum(["product_detail", "product_listing"]),
-        url: z.string().optional(),
+        position: z.enum(["topRight", "bottomRight", "bottomLeft", "topLeft"]),
+        url: z.string(),
     }))
         .optional(),
     priority: z.number().int().optional(),
