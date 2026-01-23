@@ -2,8 +2,8 @@ import { z } from "zod/v4";
 export declare const ShoutOut: z.ZodObject<{
     display: z.ZodString;
     type: z.ZodEnum<{
-        generic: "generic";
         product: "product";
+        generic: "generic";
         category: "category";
         group: "group";
         similar: "similar";
