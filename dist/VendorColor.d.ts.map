@@ -1,1 +1,1 @@
-{"version":3,"file":"VendorColor.d.ts","sourceRoot":"","sources":["../schemas/VendorColor.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,QAAQ,CAAC;AAE3B,eAAO,MAAM,WAAW;;;;;;;;;;;;;;;kBAkCrB,CAAC;AACJ,MAAM,MAAM,WAAW,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,WAAW,CAAC,CAAC"}
+{"version":3,"file":"VendorColor.d.ts","sourceRoot":"","sources":["../schemas/VendorColor.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,QAAQ,CAAC;AAE3B,eAAO,MAAM,WAAW;;;;;;;kBAuBrB,CAAC;AACJ,MAAM,MAAM,WAAW,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,WAAW,CAAC,CAAC"}

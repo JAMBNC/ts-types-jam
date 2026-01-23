@@ -54,7 +54,6 @@ export * from './Process.js';
 export * from './ColorValue.js';
 export * from './ColorSpaceName.js';
 export * from './Color.js';
-export * from './VendorColor.js';
 export * from './ColorPalette.js';
 export * from './DesignerSaveEndpoints.js';
 export * from './DesignerImageEndpoints.js';
@@ -67,4 +66,5 @@ export * from './DesignerFont.js';
 export * from './InkSelectorV1ComponentLabels.js';
 export * from './VariableAddressInputV1ComponentLabels.js';
 export * from './DesignerUiLabels.js';
+export * from './VendorColor.js';
 //# sourceMappingURL=index.d.ts.map

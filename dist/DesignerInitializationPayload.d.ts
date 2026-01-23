@@ -23,10 +23,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
     }, z.core.$strip>;
     pricing: z.ZodOptional<z.ZodAny>;
     uiLabels: z.ZodOptional<z.ZodAny>;
-    fonts: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        uuid: z.ZodString;
-        name: z.ZodString;
-    }, z.core.$strict>>>;
+    fonts: z.ZodOptional<z.ZodArray<z.ZodAny>>;
 }, z.core.$strip>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;
 //# sourceMappingURL=DesignerInitializationPayload.d.ts.map

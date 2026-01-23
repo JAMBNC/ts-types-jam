@@ -34,7 +34,7 @@ export const VariableAddressInputV1ComponentLabels = z.object({
   "upload.success.label": z
     .string()
     .describe(
-      "The label used after adresses uploaded successfully, can use the $fileName variable",
+      "The label used after addresses uploaded successfully, can use the $fileName variable",
     )
     .default("$fileName uploaded successfully"),
   "upload.success.icon": z
