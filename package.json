@@ -2,13 +2,11 @@
   "name": "@jam/schemas",
   "version": "1.0.0",
   "description": "The generated typescript types from JSON Schema",
-  "homepage": "https://github.com/JAMBNC/ts-types-jam#readme",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     }
   },
   "bugs": {
@@ -20,7 +18,6 @@
   },
   "license": "ISC",
   "author": "JAM Plus",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
