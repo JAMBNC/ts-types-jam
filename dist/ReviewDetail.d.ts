@@ -19,8 +19,8 @@ export declare const ReviewDetail: z.ZodObject<{
         }>;
         previewUrl: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
-            primary: "primary";
             small: "small";
+            primary: "primary";
             thumbnail: "thumbnail";
             yourLogoHere: "yourLogoHere";
             insideView: "insideView";

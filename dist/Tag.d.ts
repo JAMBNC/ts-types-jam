@@ -1,7 +1,7 @@
 import { z } from "zod/v4";
 export declare const Tag: z.ZodEnum<{
-    primary: "primary";
     small: "small";
+    primary: "primary";
     thumbnail: "thumbnail";
     yourLogoHere: "yourLogoHere";
     insideView: "insideView";

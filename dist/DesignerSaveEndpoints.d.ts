@@ -1,0 +1,6 @@
+import { z } from "zod/v4";
+export declare const DesignerSaveEndpoints: z.ZodObject<{
+    save: z.ZodString;
+}, z.core.$strip>;
+export type DesignerSaveEndpoints = z.infer<typeof DesignerSaveEndpoints>;
+//# sourceMappingURL=DesignerSaveEndpoints.d.ts.map
