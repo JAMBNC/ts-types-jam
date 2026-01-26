@@ -1,1 +1,1 @@
-{"version":3,"file":"ColorPalette.d.ts","sourceRoot":"","sources":["../schemas/ColorPalette.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,QAAQ,CAAC;AAE3B,eAAO,MAAM,YAAY;;;;kBAYgC,CAAC;AAC1D,MAAM,MAAM,YAAY,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,YAAY,CAAC,CAAC"}
+{"version":3,"file":"ColorPalette.d.ts","sourceRoot":"","sources":["../schemas/ColorPalette.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,QAAQ,CAAC;AAE3B,eAAO,MAAM,YAAY,UAE2B,CAAC;AACrD,MAAM,MAAM,YAAY,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,YAAY,CAAC,CAAC"}

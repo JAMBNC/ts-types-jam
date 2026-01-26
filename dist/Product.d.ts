@@ -35,8 +35,8 @@ export declare const Product: z.ZodObject<{
         }>;
         previewUrl: z.ZodOptional<z.ZodString>;
         tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
-            small: "small";
             primary: "primary";
+            small: "small";
             thumbnail: "thumbnail";
             yourLogoHere: "yourLogoHere";
             insideView: "insideView";
