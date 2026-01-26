@@ -64,10 +64,8 @@ export * from './DesignerAuth.js';
 export * from './DesignerPricing.js';
 export * from './DesignerInitializationPayload.js';
 export * from './DesignerFont.js';
-export * from './Fonts.js';
 export * from './InkSelectorV1ComponentLabels.js';
 export * from './VariableAddressInputV1ComponentLabels.js';
 export * from './DesignerUiLabels.js';
-export * from './UiLabels.js';
 export * from './VendorColor.js';
 //# sourceMappingURL=index.d.ts.map
