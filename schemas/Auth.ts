@@ -11,7 +11,16 @@ export const Auth = z
       })
       .strict()
       .describe("A bearer token that is sent in the Authorization header."),
-    z.any(),
+    z
+      .object({
+        type: z.literal("basic"),
+        /**The username for authentication.*/
+        username: z.string().describe("The username for authentication."),
+        /**The password for authentication.*/
+        password: z.string().describe("The password for authentication."),
+      })
+      .strict()
+      .describe("Basic authentication using a username and password."),
     z
       .object({
         type: z.literal("apiKey"),

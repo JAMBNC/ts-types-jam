@@ -3,7 +3,11 @@ import { z } from "zod";
 export declare const Auth: z.ZodUnion<readonly [z.ZodObject<{
     type: z.ZodLiteral<"bearer">;
     token: z.ZodString;
-}, z.core.$strict>, z.ZodAny, z.ZodObject<{
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"basic">;
+    username: z.ZodString;
+    password: z.ZodString;
+}, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"apiKey">;
     key: z.ZodString;
     headerName: z.ZodDefault<z.ZodString>;
