@@ -65,11 +65,31 @@ export const DesignerInitializationPayload = z.object({
         .describe("The endpoint URL for retrieving a font file by uuid "),
     }),
   }),
-  auth: z.any(),
+  auth: z.object({
+    /**The api key use for CHILI requests*/
+    chiliAuth: z.any().describe("The api key use for CHILI requests"),
+    /**The api key use for DesignerEndpoint requests*/
+    endpointAuth: z
+      .any()
+      .describe("The api key use for DesignerEndpoint requests")
+      .optional(),
+  }),
   /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
   pricing: z
     .union([
-      z.record(z.array(z.any())).describe("Price tiers keyed by product SKU."),
+      z
+        .record(
+          z.array(
+            z.object({
+              discountReason: z.string().optional(),
+              price: z.number(),
+              pricePercentOff: z.number().optional(),
+              salePrice: z.number().optional(),
+              startingAtQty: z.number().int(),
+            }),
+          ),
+        )
+        .describe("Price tiers keyed by product SKU."),
       z.string().url(),
     ])
     .describe(
