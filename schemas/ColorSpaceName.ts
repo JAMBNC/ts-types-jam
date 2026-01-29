@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+/**Known color space names.*/
 export const ColorSpaceName = z
   .enum([
     "sRGB",

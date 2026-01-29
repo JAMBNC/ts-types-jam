@@ -1,4 +1,5 @@
 import { z } from "zod";
+/**Known color space names.*/
 export declare const ColorSpaceName: z.ZodEnum<{
     sRGB: "sRGB";
     "Adobe RGB": "Adobe RGB";

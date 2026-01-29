@@ -1,4 +1,5 @@
 import { z } from "zod";
+/**A defined set of colors with a given name.*/
 export declare const ColorPalette: z.ZodObject<{
     uuid: z.ZodString;
     name: z.ZodString;

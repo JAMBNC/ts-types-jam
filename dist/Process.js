@@ -1,4 +1,5 @@
 import { z } from "zod";
+/**Defines how visual content is transferred to the medium.*/
 export const Process = z
     .enum([
     "offset",

@@ -49,6 +49,7 @@ export const Order = z.object({
     )
     .min(1),
   orderDate: z.string().datetime({ offset: true }).optional(),
+  /**Globally unique orderNumber.  Usually a combination of sales channel and order number*/
   orderNumber: z
     .string()
     .min(1)

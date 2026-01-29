@@ -1,4 +1,5 @@
 import { z } from "zod";
+/**A standalone color object that serves as a way to represent a visual impression on a medium.*/
 export declare const Color: z.ZodObject<{
     uuid: z.ZodString;
     name: z.ZodString;

@@ -25,6 +25,7 @@ export const Shipment = z.object({
     )
     .optional(),
   orderIdentifiers: z.record(z.any()).optional(),
+  /**Globally unique orderNumber.  Usually a combination of sales channel and order number*/
   orderNumber: z
     .string()
     .min(1)

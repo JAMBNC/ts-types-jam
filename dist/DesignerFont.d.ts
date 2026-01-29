@@ -1,4 +1,5 @@
 import { z } from "zod";
+/**A font definition for injection into the designer.*/
 export declare const DesignerFont: z.ZodObject<{
     uuid: z.ZodString;
     name: z.ZodString;

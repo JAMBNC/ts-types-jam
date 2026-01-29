@@ -1,1 +1,1 @@
-{"version":3,"file":"DesignerPricing.d.ts","sourceRoot":"","sources":["../schemas/DesignerPricing.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,eAAe,oDAYoB,CAAC;AACjD,MAAM,MAAM,eAAe,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,eAAe,CAAC,CAAC"}
+{"version":3,"file":"DesignerPricing.d.ts","sourceRoot":"","sources":["../schemas/DesignerPricing.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,sCAAsC;AACtC,eAAO,MAAM,eAAe,oDAYoB,CAAC;AACjD,MAAM,MAAM,eAAe,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,eAAe,CAAC,CAAC"}
