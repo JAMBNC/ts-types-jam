@@ -28,10 +28,10 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             save: z.ZodString;
         }, z.core.$strip>;
         image: z.ZodObject<{
-            gallery: z.ZodOptional<z.ZodString>;
-            upload: z.ZodOptional<z.ZodString>;
-            delete: z.ZodOptional<z.ZodString>;
-            rendition: z.ZodOptional<z.ZodString>;
+            gallery: z.ZodString;
+            upload: z.ZodString;
+            delete: z.ZodString;
+            rendition: z.ZodString;
         }, z.core.$strip>;
         fonts: z.ZodObject<{
             all: z.ZodOptional<z.ZodString>;
