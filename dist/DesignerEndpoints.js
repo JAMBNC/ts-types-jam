@@ -6,8 +6,7 @@ export const DesignerEndpoints = z.object({
             .url()
             .describe("The endpoint URL for saving the designer data"),
     }),
-    image: z
-        .object({
+    image: z.object({
         gallery: z
             .string()
             .url()
@@ -28,10 +27,8 @@ export const DesignerEndpoints = z.object({
             .url()
             .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)")
             .optional(),
-    })
-        .optional(),
-    fonts: z
-        .object({
+    }),
+    fonts: z.object({
         all: z
             .string()
             .url()
@@ -41,6 +38,5 @@ export const DesignerEndpoints = z.object({
             .string()
             .url()
             .describe("The endpoint URL for retrieving a font file by uuid "),
-    })
-        .optional(),
+    }),
 });

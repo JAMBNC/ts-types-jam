@@ -40,59 +40,54 @@ export const DesignerInitializationPayload = z.object({
         .url()
         .describe("The endpoint URL for saving the designer data"),
     }),
-    image: z
-      .object({
-        gallery: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)",
-          )
-          .optional(),
-        upload: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)",
-          )
-          .optional(),
-        delete: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)",
-          )
-          .optional(),
-        rendition: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
-          )
-          .optional(),
-      })
-      .optional(),
-    fonts: z
-      .object({
-        all: z
-          .string()
-          .url()
-          .describe(
-            "The (optional) endpoint URL for retrieving all supported fonts",
-          )
-          .optional(),
-        get: z
-          .string()
-          .url()
-          .describe("The endpoint URL for retrieving a font file by uuid "),
-      })
-      .optional(),
+    image: z.object({
+      gallery: z
+        .string()
+        .url()
+        .describe(
+          "The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)",
+        )
+        .optional(),
+      upload: z
+        .string()
+        .url()
+        .describe(
+          "The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)",
+        )
+        .optional(),
+      delete: z
+        .string()
+        .url()
+        .describe(
+          "The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)",
+        )
+        .optional(),
+      rendition: z
+        .string()
+        .url()
+        .describe(
+          "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
+        )
+        .optional(),
+    }),
+    fonts: z.object({
+      all: z
+        .string()
+        .url()
+        .describe(
+          "The (optional) endpoint URL for retrieving all supported fonts",
+        )
+        .optional(),
+      get: z
+        .string()
+        .url()
+        .describe("The endpoint URL for retrieving a font file by uuid "),
+    }),
   }),
   auth: z.object({
     chiliAuth: z
       .string()
-      .describe("The authorization token for CHILI requests")
-      .optional(),
+      .describe("The authorization token for CHILI requests"),
     endpointAuth: z
       .string()
       .describe("The authorization token for designer endpoint requests")
@@ -673,6 +668,12 @@ export const DesignerInitializationPayload = z.object({
     )
     .describe(
       "An (optional) array of DesignerFont schemas used to configure the fonts available in the designer. If this property is not provided, then the endpoints.fonts.all endpoint will be used to fetch the fonts.",
+    )
+    .optional(),
+  metadata: z
+    .record(z.any())
+    .describe(
+      "An (optional) object containing additional metadata for the designer initialization payload.",
     )
     .optional(),
 });

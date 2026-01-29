@@ -1,1 +1,1 @@
-{"version":3,"file":"DesignerEndpoints.d.ts","sourceRoot":"","sources":["../schemas/DesignerEndpoints.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,iBAAiB;;;;;;;;;;;;;;iBAsD5B,CAAC;AACH,MAAM,MAAM,iBAAiB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,iBAAiB,CAAC,CAAC"}
+{"version":3,"file":"DesignerEndpoints.d.ts","sourceRoot":"","sources":["../schemas/DesignerEndpoints.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,iBAAiB;;;;;;;;;;;;;;iBAkD5B,CAAC;AACH,MAAM,MAAM,iBAAiB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,iBAAiB,CAAC,CAAC"}

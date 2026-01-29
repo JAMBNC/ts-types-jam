@@ -27,19 +27,19 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         design: z.ZodObject<{
             save: z.ZodString;
         }, z.core.$strip>;
-        image: z.ZodOptional<z.ZodObject<{
+        image: z.ZodObject<{
             gallery: z.ZodOptional<z.ZodString>;
             upload: z.ZodOptional<z.ZodString>;
             delete: z.ZodOptional<z.ZodString>;
             rendition: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>>;
-        fonts: z.ZodOptional<z.ZodObject<{
+        }, z.core.$strip>;
+        fonts: z.ZodObject<{
             all: z.ZodOptional<z.ZodString>;
             get: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$strip>;
     }, z.core.$strip>;
     auth: z.ZodObject<{
-        chiliAuth: z.ZodOptional<z.ZodString>;
+        chiliAuth: z.ZodString;
         endpointAuth: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>;
     pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
@@ -171,6 +171,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         uuid: z.ZodString;
         name: z.ZodString;
     }, z.core.$strict>>>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
 }, z.core.$strip>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;
 //# sourceMappingURL=DesignerInitializationPayload.d.ts.map
