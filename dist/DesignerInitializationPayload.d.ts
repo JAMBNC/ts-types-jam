@@ -17,10 +17,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             get: z.ZodString;
         }, z.core.$strip>;
     }, z.core.$strip>;
-    auth: z.ZodObject<{
-        chiliAuth: z.ZodAny;
-        endpointAuth: z.ZodOptional<z.ZodAny>;
-    }, z.core.$strip>;
+    auth: z.ZodAny;
     pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
     uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
