@@ -1,0 +1,1 @@
+{"version":3,"file":"OAuth2GrantType.d.ts","sourceRoot":"","sources":["../schemas/OAuth2GrantType.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,uDAAuD;AACvD,eAAO,MAAM,eAAe;;;;;EAOqC,CAAC;AAClE,MAAM,MAAM,eAAe,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,eAAe,CAAC,CAAC"}

@@ -89,17 +89,7 @@ export const DesignerInitializationPayload = z.object({
         .describe("The endpoint URL for retrieving a font file by uuid "),
     }),
   }),
-  auth: z.object({
-    /**The authorization token for CHILI requests*/
-    chiliAuth: z
-      .string()
-      .describe("The authorization token for CHILI requests"),
-    /**The authorization token for designer endpoint requests*/
-    endpointAuth: z
-      .string()
-      .describe("The authorization token for designer endpoint requests")
-      .optional(),
-  }),
+  auth: z.any(),
   /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
   pricing: z
     .union([

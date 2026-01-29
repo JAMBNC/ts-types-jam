@@ -1,0 +1,1 @@
+{"version":3,"file":"OAuth2AuthorizationCode.d.ts","sourceRoot":"","sources":["../schemas/OAuth2AuthorizationCode.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,uEAAuE;AACvE,eAAO,MAAM,uBAAuB;;;;;;;;kBA4BjC,CAAC;AACJ,MAAM,MAAM,uBAAuB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,uBAAuB,CAAC,CAAC"}
