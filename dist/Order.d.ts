@@ -1,17 +1,6 @@
 import { z } from "zod";
 export declare const Order: z.ZodObject<{
-    billingAddress: z.ZodObject<{
-        city: z.ZodString;
-        company: z.ZodOptional<z.ZodString>;
-        country: z.ZodOptional<z.ZodString>;
-        firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
-        lastName: z.ZodOptional<z.ZodString>;
-        phone: z.ZodOptional<z.ZodString>;
-        postal: z.ZodOptional<z.ZodString>;
-        region: z.ZodOptional<z.ZodString>;
-        streets: z.ZodArray<z.ZodString>;
-    }, z.core.$strip>;
+    billingAddress: z.ZodAny;
     comments: z.ZodOptional<z.ZodString>;
     currencyCode: z.ZodOptional<z.ZodString>;
     customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -56,18 +45,7 @@ export declare const Order: z.ZodObject<{
         status: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>>>;
     salesChannel: z.ZodString;
-    shippingAddress: z.ZodOptional<z.ZodObject<{
-        city: z.ZodString;
-        company: z.ZodOptional<z.ZodString>;
-        country: z.ZodOptional<z.ZodString>;
-        firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
-        lastName: z.ZodOptional<z.ZodString>;
-        phone: z.ZodOptional<z.ZodString>;
-        postal: z.ZodOptional<z.ZodString>;
-        region: z.ZodOptional<z.ZodString>;
-        streets: z.ZodArray<z.ZodString>;
-    }, z.core.$strip>>;
+    shippingAddress: z.ZodOptional<z.ZodAny>;
     shippingAmount: z.ZodNumber;
     shippingInfo: z.ZodOptional<z.ZodObject<{
         accountNumber: z.ZodOptional<z.ZodString>;

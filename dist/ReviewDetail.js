@@ -43,7 +43,7 @@ export const ReviewDetail = z.object({
         response: z.string().optional(),
         responseType: z.literal("merchantResponse").optional(),
         updatedAt: z.string().datetime({ offset: true }).optional(),
-        votes: z.record(z.any()).optional(),
+        votes: z.record(z.number().int()).optional(),
     }))
         .optional(),
     nickname: z.string().optional(),
@@ -51,5 +51,5 @@ export const ReviewDetail = z.object({
     sku: z.string(),
     source: z.literal("email").optional(),
     title: z.string().optional(),
-    votes: z.record(z.any()).optional(),
+    votes: z.record(z.number().int()).optional(),
 });

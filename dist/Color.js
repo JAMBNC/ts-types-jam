@@ -1,9 +1,5 @@
 import { z } from "zod";
-/**A standalone color object that serves as a way to represent a visual impression on a medium.*/
-export const Color = z
-    .object({
-    /**A unique UUID identifier for the color.*/
-    uuid: z.string().uuid().describe("A unique UUID identifier for the color."),
+export const Color = z.object({
     /**The normalized name for a color, used for spot name in spot applications.*/
     name: z
         .string()
@@ -16,6 +12,6 @@ export const Color = z
         .max(4)
         .describe("The numeric value of a color, dependent on the color model/color space."))
         .describe("Color representations keyed by color space name."),
-})
-    .strict()
-    .describe("A standalone color object that serves as a way to represent a visual impression on a medium.");
+    /**A unique UUID identifier for the color.*/
+    uuid: z.string().uuid().describe("A unique UUID identifier for the color."),
+});

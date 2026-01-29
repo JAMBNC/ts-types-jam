@@ -1,15 +1,5 @@
 import { z } from "zod";
 /**Known color space names.*/
 export const ColorSpaceName = z
-    .enum([
-    "sRGB",
-    "Adobe RGB",
-    "Display P3",
-    "ProPhoto RGB",
-    "US Web Coated SWOP v2",
-    "Coated FOGRA39",
-    "Japan Color 2001 Coated",
-    "PMS",
-    "CIELAB",
-])
+    .enum(["sRGB", "US_Web_Coated_SWOP_v2"])
     .describe("Known color space names.");

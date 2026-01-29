@@ -1,7 +1,7 @@
 import { z } from "zod";
 export declare const ShoutOutType: z.ZodEnum<{
-    generic: "generic";
     product: "product";
+    generic: "generic";
     category: "category";
     group: "group";
     similar: "similar";

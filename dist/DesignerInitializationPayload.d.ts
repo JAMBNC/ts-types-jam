@@ -1,28 +1,7 @@
 import { z } from "zod";
 export declare const DesignerInitializationPayload: z.ZodObject<{
     config: z.ZodUnion<readonly [z.ZodRecord<z.ZodAny, z.core.SomeType>, z.ZodString]>;
-    product: z.ZodUnion<readonly [z.ZodObject<{
-        badges: z.ZodOptional<z.ZodArray<z.ZodString>>;
-        brand: z.ZodOptional<z.ZodString>;
-        browsable: z.ZodBoolean;
-        content: z.ZodOptional<z.ZodAny>;
-        createdAt: z.ZodOptional<z.ZodString>;
-        customization: z.ZodOptional<z.ZodAny>;
-        displayGroup: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
-        media: z.ZodOptional<z.ZodArray<z.ZodAny>>;
-        name: z.ZodString;
-        primaryCategory: z.ZodOptional<z.ZodAny>;
-        purchaseOptions: z.ZodOptional<z.ZodAny>;
-        searchable: z.ZodBoolean;
-        sku: z.ZodString;
-        specs: z.ZodRecord<z.ZodAny, z.core.SomeType>;
-        status: z.ZodOptional<z.ZodString>;
-        taxonomy: z.ZodAny;
-        upc: z.ZodOptional<z.ZodString>;
-        updatedAt: z.ZodOptional<z.ZodString>;
-        url: z.ZodArray<z.ZodAny>;
-    }, z.core.$strip>, z.ZodString]>;
+    product: z.ZodUnion<readonly [z.ZodAny, z.ZodString]>;
     endpoints: z.ZodObject<{
         design: z.ZodObject<{
             save: z.ZodString;

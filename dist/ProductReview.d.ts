@@ -40,14 +40,14 @@ export declare const ProductReview: z.ZodObject<{
             response: z.ZodOptional<z.ZodString>;
             responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
             updatedAt: z.ZodOptional<z.ZodString>;
-            votes: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+            votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
         }, z.core.$strip>>>;
         nickname: z.ZodOptional<z.ZodString>;
         rating: z.ZodOptional<z.ZodNumber>;
         sku: z.ZodString;
         source: z.ZodOptional<z.ZodLiteral<"email">>;
         title: z.ZodOptional<z.ZodString>;
-        votes: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
     }, z.core.$strip>>;
     summary: z.ZodOptional<z.ZodObject<{
         displayGroupId: z.ZodOptional<z.ZodNumber>;

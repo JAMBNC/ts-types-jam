@@ -38,8 +38,8 @@ export declare const DisplayGroup: z.ZodObject<{
     shoutOuts: z.ZodOptional<z.ZodArray<z.ZodObject<{
         display: z.ZodString;
         type: z.ZodEnum<{
-            generic: "generic";
             product: "product";
+            generic: "generic";
             category: "category";
             group: "group";
             similar: "similar";

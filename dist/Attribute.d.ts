@@ -6,7 +6,7 @@ export declare const Attribute: z.ZodObject<{
     label: z.ZodString;
     predefinedValues: z.ZodOptional<z.ZodArray<z.ZodObject<{
         identifiers: z.ZodRecord<z.ZodAny, z.core.SomeType>;
-        swatches: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        swatches: z.ZodOptional<z.ZodRecord<z.ZodString, z.core.SomeType>>;
         value: z.ZodString;
     }, z.core.$strip>>>;
     renderPreference: z.ZodEnum<{

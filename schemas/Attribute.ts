@@ -9,7 +9,7 @@ export const Attribute = z.object({
     .array(
       z.object({
         identifiers: z.record(z.any()),
-        swatches: z.record(z.any()).optional(),
+        swatches: z.record(z.string()).optional(),
         value: z.string(),
       }),
     )

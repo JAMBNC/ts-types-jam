@@ -6,31 +6,7 @@ export const DesignerInitializationPayload = z.object({
         .describe("The designer configuration schema or URI endpoint that returns a designer configuration schema"),
     /**A Product schema or URI endpoint that returns a Product schema*/
     product: z
-        .union([
-        z.object({
-            badges: z.array(z.string()).optional(),
-            brand: z.string().optional(),
-            browsable: z.boolean(),
-            content: z.any().optional(),
-            createdAt: z.string().datetime({ offset: true }).optional(),
-            customization: z.any().optional(),
-            displayGroup: z.string().optional(),
-            identifiers: z.record(z.any()).optional(),
-            media: z.array(z.any()).optional(),
-            name: z.string(),
-            primaryCategory: z.any().optional(),
-            purchaseOptions: z.any().optional(),
-            searchable: z.boolean(),
-            sku: z.string(),
-            specs: z.record(z.any()),
-            status: z.string().optional(),
-            taxonomy: z.any(),
-            upc: z.string().optional(),
-            updatedAt: z.string().datetime({ offset: true }).optional(),
-            url: z.array(z.any()).min(1),
-        }),
-        z.string().url(),
-    ])
+        .union([z.any(), z.string().url()])
         .describe("A Product schema or URI endpoint that returns a Product schema"),
     endpoints: z.object({
         design: z.object({
@@ -80,15 +56,7 @@ export const DesignerInitializationPayload = z.object({
     /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
     pricing: z
         .union([
-        z
-            .record(z.array(z.object({
-            discountReason: z.string().optional(),
-            price: z.number(),
-            pricePercentOff: z.number().optional(),
-            salePrice: z.number().optional(),
-            startingAtQty: z.number().int(),
-        })))
-            .describe("Price tiers keyed by product SKU."),
+        z.record(z.array(z.any())).describe("Price tiers keyed by product SKU."),
         z.string().url(),
     ])
         .describe("A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema")

@@ -90,7 +90,7 @@ export declare const Product: z.ZodObject<{
     }, z.core.$strip>>;
     searchable: z.ZodBoolean;
     sku: z.ZodString;
-    specs: z.ZodRecord<z.ZodAny, z.core.SomeType>;
+    specs: z.ZodRecord<z.ZodString, z.core.SomeType>;
     status: z.ZodOptional<z.ZodString>;
     taxonomy: z.ZodObject<{
         master: z.ZodOptional<z.ZodString>;
