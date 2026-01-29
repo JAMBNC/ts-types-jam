@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const DesignerUiLabels: z.ZodObject<{
     "menubar.undo.label": z.ZodDefault<z.ZodString>;
     "menubar.undo.icon": z.ZodDefault<z.ZodString>;

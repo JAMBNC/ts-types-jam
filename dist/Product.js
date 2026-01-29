@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const Product = z.object({
     badges: z.array(z.string()).optional(),
     brand: z.string().optional(),
@@ -28,7 +28,7 @@ export const Product = z.object({
     })
         .optional(),
     displayGroup: z.string().optional(),
-    identifiers: z.record(z.string(), z.any()).optional(),
+    identifiers: z.record(z.any()).optional(),
     media: z
         .array(z.object({
         altText: z.string().optional(),
@@ -100,7 +100,7 @@ export const Product = z.object({
         .optional(),
     searchable: z.boolean(),
     sku: z.string(),
-    specs: z.record(z.string(), z.any()),
+    specs: z.record(z.any()),
     status: z.string().optional(),
     taxonomy: z.object({
         master: z.string().optional(),

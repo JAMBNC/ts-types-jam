@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const VendorColor = z
   .object({
@@ -13,7 +13,6 @@ export const VendorColor = z
       .optional(),
     processes: z
       .record(
-        z.string(),
         z.object({
           pricingGroup: z.string(),
           vendorColorName: z

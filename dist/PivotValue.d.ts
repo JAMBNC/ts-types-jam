@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const PivotValue: z.ZodObject<{
     helpText: z.ZodOptional<z.ZodString>;
     label: z.ZodString;

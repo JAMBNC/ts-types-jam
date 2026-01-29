@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ReviewSummary: z.ZodObject<{
     displayGroupId: z.ZodOptional<z.ZodNumber>;
     maxRating: z.ZodOptional<z.ZodNumber>;

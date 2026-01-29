@@ -1,8 +1,8 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const Payment: z.ZodObject<{
     amount: z.ZodOptional<z.ZodNumber>;
     billToName: z.ZodOptional<z.ZodString>;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     method: z.ZodEnum<{
         CASH: "CASH";
         PO: "PO";

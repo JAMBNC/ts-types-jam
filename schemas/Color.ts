@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const Color = z
   .object({
@@ -10,7 +10,6 @@ export const Color = z
       ),
     representations: z
       .record(
-        z.string(),
         z
           .array(z.number())
           .min(3)

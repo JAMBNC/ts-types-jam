@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ProductCustomization: z.ZodObject<{
     prebuiltConfigurationId: z.ZodOptional<z.ZodString>;
     prebuiltCustomizable: z.ZodOptional<z.ZodBoolean>;

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const PurchaseOptions = z.object({
   allowsSample: z.boolean(),

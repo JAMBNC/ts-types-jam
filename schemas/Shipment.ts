@@ -1,20 +1,20 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const Shipment = z.object({
   carrier: z.string().optional(),
   comments: z.string().optional(),
   currencyCode: z.string().optional(),
   estimatedDeliveryDate: z.string().datetime({ offset: true }).optional(),
-  identifiers: z.record(z.string(), z.any()).optional(),
+  identifiers: z.record(z.any()).optional(),
   lineItems: z
     .array(
       z.object({
         children: z.array(z.any()).optional(),
         discountAmount: z.number().gte(0).optional(),
-        identifiers: z.record(z.string(), z.any()).optional(),
+        identifiers: z.record(z.any()).optional(),
         imageUrls: z.array(z.string()).optional(),
         name: z.string(),
-        productIdentifiers: z.record(z.string(), z.any()).optional(),
+        productIdentifiers: z.record(z.any()).optional(),
         quantity: z.number().gt(0),
         sku: z.string(),
         subtotal: z.number().gte(0),
@@ -24,7 +24,7 @@ export const Shipment = z.object({
       }),
     )
     .optional(),
-  orderIdentifiers: z.record(z.string(), z.any()).optional(),
+  orderIdentifiers: z.record(z.any()).optional(),
   orderNumber: z
     .string()
     .min(1)

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const VariableAddressInputV1ComponentLabels: z.ZodObject<{
     "download.description": z.ZodDefault<z.ZodString>;
     "download.button.label": z.ZodDefault<z.ZodString>;

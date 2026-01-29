@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const Color = z
     .object({
     uuid: z.string().uuid().describe("A unique UUID identifier for the color."),
@@ -6,7 +6,7 @@ export const Color = z
         .string()
         .describe("The normalized name for a color, used for spot name in spot applications."),
     representations: z
-        .record(z.string(), z
+        .record(z
         .array(z.number())
         .min(3)
         .max(4)

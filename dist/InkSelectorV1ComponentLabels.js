@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const InkSelectorV1ComponentLabels = z.object({
     "tabs.standard.label": z
         .string()

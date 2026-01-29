@@ -1,11 +1,11 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const All: z.ZodObject<{
     address: z.ZodOptional<z.ZodObject<{
         city: z.ZodString;
         company: z.ZodOptional<z.ZodString>;
         country: z.ZodOptional<z.ZodString>;
         firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         lastName: z.ZodOptional<z.ZodString>;
         phone: z.ZodOptional<z.ZodString>;
         postal: z.ZodOptional<z.ZodString>;
@@ -15,11 +15,11 @@ export declare const All: z.ZodObject<{
     attribute: z.ZodOptional<z.ZodObject<{
         code: z.ZodString;
         displayForCustomer: z.ZodBoolean;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         label: z.ZodString;
         predefinedValues: z.ZodOptional<z.ZodArray<z.ZodObject<{
-            identifiers: z.ZodRecord<z.ZodString, z.ZodAny>;
-            swatches: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodRecord<z.ZodAny, z.core.SomeType>;
+            swatches: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             value: z.ZodString;
         }, z.core.$strip>>>;
         renderPreference: z.ZodEnum<{
@@ -55,7 +55,7 @@ export declare const All: z.ZodObject<{
             company: z.ZodOptional<z.ZodString>;
             country: z.ZodOptional<z.ZodString>;
             firstName: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             lastName: z.ZodOptional<z.ZodString>;
             phone: z.ZodOptional<z.ZodString>;
             postal: z.ZodOptional<z.ZodString>;
@@ -64,12 +64,12 @@ export declare const All: z.ZodObject<{
         }, z.core.$strip>>>;
         email: z.ZodOptional<z.ZodString>;
         firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         lastName: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>>;
     displayGroup: z.ZodOptional<z.ZodObject<{
         id: z.ZodString;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         pivots: z.ZodArray<z.ZodObject<{
             attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
                 swatches: "swatches";
@@ -99,7 +99,7 @@ export declare const All: z.ZodObject<{
         products: z.ZodArray<z.ZodObject<{
             isCustomizable: z.ZodBoolean;
             mainImageUrl: z.ZodOptional<z.ZodString>;
-            pivotValues: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            pivotValues: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             shortName: z.ZodOptional<z.ZodString>;
             sku: z.ZodString;
         }, z.core.$strip>>;
@@ -122,7 +122,7 @@ export declare const All: z.ZodObject<{
             company: z.ZodOptional<z.ZodString>;
             country: z.ZodOptional<z.ZodString>;
             firstName: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             lastName: z.ZodOptional<z.ZodString>;
             phone: z.ZodOptional<z.ZodString>;
             postal: z.ZodOptional<z.ZodString>;
@@ -131,24 +131,24 @@ export declare const All: z.ZodObject<{
         }, z.core.$strip>;
         comments: z.ZodOptional<z.ZodString>;
         currencyCode: z.ZodOptional<z.ZodString>;
-        customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         discounts: z.ZodOptional<z.ZodArray<z.ZodObject<{
             amount: z.ZodOptional<z.ZodNumber>;
             code: z.ZodOptional<z.ZodString>;
             description: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         }, z.core.$strip>>>;
         email: z.ZodOptional<z.ZodString>;
         firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         lastName: z.ZodOptional<z.ZodString>;
         lineItems: z.ZodArray<z.ZodObject<{
             children: z.ZodOptional<z.ZodArray<z.ZodAny>>;
             discountAmount: z.ZodOptional<z.ZodNumber>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             imageUrls: z.ZodOptional<z.ZodArray<z.ZodString>>;
             name: z.ZodString;
-            productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             quantity: z.ZodNumber;
             sku: z.ZodString;
             subtotal: z.ZodNumber;
@@ -161,7 +161,7 @@ export declare const All: z.ZodObject<{
         payments: z.ZodOptional<z.ZodArray<z.ZodObject<{
             amount: z.ZodOptional<z.ZodNumber>;
             billToName: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             method: z.ZodEnum<{
                 CASH: "CASH";
                 PO: "PO";
@@ -178,7 +178,7 @@ export declare const All: z.ZodObject<{
             company: z.ZodOptional<z.ZodString>;
             country: z.ZodOptional<z.ZodString>;
             firstName: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             lastName: z.ZodOptional<z.ZodString>;
             phone: z.ZodOptional<z.ZodString>;
             postal: z.ZodOptional<z.ZodString>;
@@ -230,7 +230,7 @@ export declare const All: z.ZodObject<{
             styleType: z.ZodOptional<z.ZodString>;
         }, z.core.$strip>>;
         displayGroup: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         media: z.ZodOptional<z.ZodArray<z.ZodObject<{
             altText: z.ZodOptional<z.ZodString>;
             label: z.ZodOptional<z.ZodString>;
@@ -295,7 +295,7 @@ export declare const All: z.ZodObject<{
         }, z.core.$strip>>;
         searchable: z.ZodBoolean;
         sku: z.ZodString;
-        specs: z.ZodRecord<z.ZodString, z.ZodAny>;
+        specs: z.ZodRecord<z.ZodAny, z.core.SomeType>;
         status: z.ZodOptional<z.ZodString>;
         taxonomy: z.ZodObject<{
             master: z.ZodOptional<z.ZodString>;
@@ -333,7 +333,7 @@ export declare const All: z.ZodObject<{
             }, z.core.$strip>>>;
             comments: z.ZodOptional<z.ZodString>;
             createdAt: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             location: z.ZodOptional<z.ZodString>;
             maxRating: z.ZodOptional<z.ZodNumber>;
             media: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -359,20 +359,20 @@ export declare const All: z.ZodObject<{
             }, z.core.$strip>>>;
             merchantResponses: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 createdAt: z.ZodOptional<z.ZodString>;
-                identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+                identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
                 location: z.ZodOptional<z.ZodString>;
                 nickname: z.ZodOptional<z.ZodString>;
                 response: z.ZodOptional<z.ZodString>;
                 responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
                 updatedAt: z.ZodOptional<z.ZodString>;
-                votes: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+                votes: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             }, z.core.$strip>>>;
             nickname: z.ZodOptional<z.ZodString>;
             rating: z.ZodOptional<z.ZodNumber>;
             sku: z.ZodString;
             source: z.ZodOptional<z.ZodLiteral<"email">>;
             title: z.ZodOptional<z.ZodString>;
-            votes: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            votes: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         }, z.core.$strip>>;
         summary: z.ZodOptional<z.ZodObject<{
             displayGroupId: z.ZodOptional<z.ZodNumber>;
@@ -387,14 +387,14 @@ export declare const All: z.ZodObject<{
         comments: z.ZodOptional<z.ZodString>;
         currencyCode: z.ZodOptional<z.ZodString>;
         estimatedDeliveryDate: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         lineItems: z.ZodOptional<z.ZodArray<z.ZodObject<{
             children: z.ZodOptional<z.ZodArray<z.ZodAny>>;
             discountAmount: z.ZodOptional<z.ZodNumber>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             imageUrls: z.ZodOptional<z.ZodArray<z.ZodString>>;
             name: z.ZodString;
-            productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             quantity: z.ZodNumber;
             sku: z.ZodString;
             subtotal: z.ZodNumber;
@@ -402,7 +402,7 @@ export declare const All: z.ZodObject<{
             total: z.ZodNumber;
             weightInPounds: z.ZodNumber;
         }, z.core.$strip>>>;
-        orderIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        orderIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         orderNumber: z.ZodString;
         shipmentDate: z.ZodString;
         trackingNumber: z.ZodOptional<z.ZodString>;

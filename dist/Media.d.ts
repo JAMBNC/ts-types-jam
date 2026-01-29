@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const Media: z.ZodObject<{
     altText: z.ZodOptional<z.ZodString>;
     label: z.ZodOptional<z.ZodString>;

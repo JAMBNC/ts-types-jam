@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const Breadcrumb: z.ZodObject<{
     label: z.ZodString;
     url: z.ZodOptional<z.ZodString>;

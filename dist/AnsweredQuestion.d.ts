@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const AnsweredQuestion: z.ZodObject<{
     choices: z.ZodArray<z.ZodString>;
     selected: z.ZodOptional<z.ZodArray<z.ZodString>>;

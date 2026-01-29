@@ -1,8 +1,8 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const DisplayGroup = z.object({
   id: z.string(),
-  identifiers: z.record(z.string(), z.any()).optional(),
+  identifiers: z.record(z.any()).optional(),
   pivots: z.array(
     z.object({
       attributeRenderPreference: z
@@ -27,7 +27,7 @@ export const DisplayGroup = z.object({
     z.object({
       isCustomizable: z.boolean(),
       mainImageUrl: z.string().optional(),
-      pivotValues: z.record(z.string(), z.any()).optional(),
+      pivotValues: z.record(z.any()).optional(),
       shortName: z.string().optional(),
       sku: z.string(),
     }),

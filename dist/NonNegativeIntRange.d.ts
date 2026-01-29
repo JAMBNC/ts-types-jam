@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const NonNegativeIntRange: z.ZodObject<{
     max: z.ZodOptional<z.ZodNumber>;
     min: z.ZodNumber;

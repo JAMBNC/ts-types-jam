@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ProductContent: z.ZodObject<{
     breadcrumbs: z.ZodOptional<z.ZodArray<z.ZodObject<{
         label: z.ZodString;

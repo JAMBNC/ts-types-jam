@@ -1,8 +1,7 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const DesignerPricing = z
   .record(
-    z.string(),
     z.array(
       z.object({
         discountReason: z.string().optional(),

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const AnsweredQuestion = z.object({
   choices: z.array(z.string()),

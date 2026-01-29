@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ColorPalette: z.ZodObject<{
     uuid: z.ZodString;
     name: z.ZodString;

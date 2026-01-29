@@ -1,7 +1,7 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const DisplayGroup: z.ZodObject<{
     id: z.ZodString;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     pivots: z.ZodArray<z.ZodObject<{
         attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
             swatches: "swatches";
@@ -31,7 +31,7 @@ export declare const DisplayGroup: z.ZodObject<{
     products: z.ZodArray<z.ZodObject<{
         isCustomizable: z.ZodBoolean;
         mainImageUrl: z.ZodOptional<z.ZodString>;
-        pivotValues: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        pivotValues: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         shortName: z.ZodOptional<z.ZodString>;
         sku: z.ZodString;
     }, z.core.$strip>>;

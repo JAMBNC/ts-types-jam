@@ -1,8 +1,8 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const PredefinedAttributeValue = z.object({
-  identifiers: z.record(z.string(), z.any()),
-  swatches: z.record(z.string(), z.any()).optional(),
+  identifiers: z.record(z.any()),
+  swatches: z.record(z.any()).optional(),
   value: z.string(),
 });
 export type PredefinedAttributeValue = z.infer<typeof PredefinedAttributeValue>;

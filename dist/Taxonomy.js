@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const Taxonomy = z.object({
     master: z.string().optional(),
     primary: z.string().optional(),

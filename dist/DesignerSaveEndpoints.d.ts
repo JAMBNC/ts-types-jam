@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const DesignerSaveEndpoints: z.ZodObject<{
     save: z.ZodString;
 }, z.core.$strip>;

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const PurchaseOptions: z.ZodObject<{
     allowsSample: z.ZodBoolean;
     customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{

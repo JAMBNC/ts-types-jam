@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const Media = z.object({
   altText: z.string().optional(),

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const BadgeImage: z.ZodObject<{
     context: z.ZodEnum<{
         product_detail: "product_detail";

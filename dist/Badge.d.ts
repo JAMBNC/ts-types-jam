@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const Badge: z.ZodObject<{
     code: z.ZodString;
     images: z.ZodOptional<z.ZodArray<z.ZodObject<{

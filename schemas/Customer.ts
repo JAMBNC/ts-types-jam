@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const Customer = z.object({
   addresses: z
@@ -8,7 +8,7 @@ export const Customer = z.object({
         company: z.string().optional(),
         country: z.string().optional(),
         firstName: z.string().optional(),
-        identifiers: z.record(z.string(), z.any()).optional(),
+        identifiers: z.record(z.any()).optional(),
         lastName: z.string().optional(),
         phone: z.string().optional(),
         postal: z.string().optional(),
@@ -19,7 +19,7 @@ export const Customer = z.object({
     .optional(),
   email: z.string().optional(),
   firstName: z.string().optional(),
-  identifiers: z.record(z.string(), z.any()).optional(),
+  identifiers: z.record(z.any()).optional(),
   lastName: z.string().optional(),
 });
 export type Customer = z.infer<typeof Customer>;

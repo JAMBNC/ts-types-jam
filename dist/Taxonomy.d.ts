@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const Taxonomy: z.ZodObject<{
     master: z.ZodOptional<z.ZodString>;
     primary: z.ZodOptional<z.ZodString>;

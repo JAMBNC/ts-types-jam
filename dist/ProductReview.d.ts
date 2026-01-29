@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ProductReview: z.ZodObject<{
     detail: z.ZodOptional<z.ZodObject<{
         answeredQuestions: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -8,7 +8,7 @@ export declare const ProductReview: z.ZodObject<{
         }, z.core.$strip>>>;
         comments: z.ZodOptional<z.ZodString>;
         createdAt: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         location: z.ZodOptional<z.ZodString>;
         maxRating: z.ZodOptional<z.ZodNumber>;
         media: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -34,20 +34,20 @@ export declare const ProductReview: z.ZodObject<{
         }, z.core.$strip>>>;
         merchantResponses: z.ZodOptional<z.ZodArray<z.ZodObject<{
             createdAt: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
             location: z.ZodOptional<z.ZodString>;
             nickname: z.ZodOptional<z.ZodString>;
             response: z.ZodOptional<z.ZodString>;
             responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
             updatedAt: z.ZodOptional<z.ZodString>;
-            votes: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+            votes: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         }, z.core.$strip>>>;
         nickname: z.ZodOptional<z.ZodString>;
         rating: z.ZodOptional<z.ZodNumber>;
         sku: z.ZodString;
         source: z.ZodOptional<z.ZodLiteral<"email">>;
         title: z.ZodOptional<z.ZodString>;
-        votes: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        votes: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     }, z.core.$strip>>;
     summary: z.ZodOptional<z.ZodObject<{
         displayGroupId: z.ZodOptional<z.ZodNumber>;

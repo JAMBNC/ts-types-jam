@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ShoutOutType: z.ZodEnum<{
     generic: "generic";
     product: "product";

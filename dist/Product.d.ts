@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const Product: z.ZodObject<{
     badges: z.ZodOptional<z.ZodArray<z.ZodString>>;
     brand: z.ZodOptional<z.ZodString>;
@@ -25,7 +25,7 @@ export declare const Product: z.ZodObject<{
         styleType: z.ZodOptional<z.ZodString>;
     }, z.core.$strip>>;
     displayGroup: z.ZodOptional<z.ZodString>;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     media: z.ZodOptional<z.ZodArray<z.ZodObject<{
         altText: z.ZodOptional<z.ZodString>;
         label: z.ZodOptional<z.ZodString>;
@@ -90,7 +90,7 @@ export declare const Product: z.ZodObject<{
     }, z.core.$strip>>;
     searchable: z.ZodBoolean;
     sku: z.ZodString;
-    specs: z.ZodRecord<z.ZodString, z.ZodAny>;
+    specs: z.ZodRecord<z.ZodAny, z.core.SomeType>;
     status: z.ZodOptional<z.ZodString>;
     taxonomy: z.ZodObject<{
         master: z.ZodOptional<z.ZodString>;

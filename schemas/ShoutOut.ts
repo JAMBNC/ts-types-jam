@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const ShoutOut = z.object({
   display: z.string(),

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const BadgeImage = z.object({
     context: z.enum(["product_detail", "product_listing"]),
     position: z.enum(["topRight", "bottomRight", "bottomLeft", "topLeft"]),

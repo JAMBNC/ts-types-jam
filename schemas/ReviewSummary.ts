@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const ReviewSummary = z.object({
   displayGroupId: z.number().int().optional(),

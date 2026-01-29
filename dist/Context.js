@@ -1,2 +1,2 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const Context = z.enum(["product_detail", "product_listing"]);

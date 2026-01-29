@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const ProductContent = z.object({
     breadcrumbs: z
         .array(z.object({ label: z.string(), url: z.string().optional() }))

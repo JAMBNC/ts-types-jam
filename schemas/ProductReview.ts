@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const ProductReview = z.object({
   detail: z
@@ -14,7 +14,7 @@ export const ProductReview = z.object({
         .optional(),
       comments: z.string().optional(),
       createdAt: z.string().datetime({ offset: true }).optional(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       location: z.string().optional(),
       maxRating: z.number().optional(),
       media: z
@@ -47,13 +47,13 @@ export const ProductReview = z.object({
         .array(
           z.object({
             createdAt: z.string().datetime({ offset: true }).optional(),
-            identifiers: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()).optional(),
             location: z.string().optional(),
             nickname: z.string().optional(),
             response: z.string().optional(),
             responseType: z.literal("merchantResponse").optional(),
             updatedAt: z.string().datetime({ offset: true }).optional(),
-            votes: z.record(z.string(), z.any()).optional(),
+            votes: z.record(z.any()).optional(),
           }),
         )
         .optional(),
@@ -62,7 +62,7 @@ export const ProductReview = z.object({
       sku: z.string(),
       source: z.literal("email").optional(),
       title: z.string().optional(),
-      votes: z.record(z.string(), z.any()).optional(),
+      votes: z.record(z.any()).optional(),
     })
     .optional(),
   summary: z

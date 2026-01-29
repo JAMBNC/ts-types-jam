@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const DesignerImageEndpoints: z.ZodObject<{
     gallery: z.ZodOptional<z.ZodString>;
     upload: z.ZodOptional<z.ZodString>;

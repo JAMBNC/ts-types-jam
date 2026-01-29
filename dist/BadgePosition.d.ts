@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const BadgePosition: z.ZodEnum<{
     topRight: "topRight";
     bottomRight: "bottomRight";

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const All = z.object({
   address: z
@@ -7,7 +7,7 @@ export const All = z.object({
       company: z.string().optional(),
       country: z.string().optional(),
       firstName: z.string().optional(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       lastName: z.string().optional(),
       phone: z.string().optional(),
       postal: z.string().optional(),
@@ -19,13 +19,13 @@ export const All = z.object({
     .object({
       code: z.string(),
       displayForCustomer: z.boolean(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       label: z.string(),
       predefinedValues: z
         .array(
           z.object({
-            identifiers: z.record(z.string(), z.any()),
-            swatches: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()),
+            swatches: z.record(z.any()).optional(),
             value: z.string(),
           }),
         )
@@ -65,7 +65,7 @@ export const All = z.object({
             company: z.string().optional(),
             country: z.string().optional(),
             firstName: z.string().optional(),
-            identifiers: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()).optional(),
             lastName: z.string().optional(),
             phone: z.string().optional(),
             postal: z.string().optional(),
@@ -76,14 +76,14 @@ export const All = z.object({
         .optional(),
       email: z.string().optional(),
       firstName: z.string().optional(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       lastName: z.string().optional(),
     })
     .optional(),
   displayGroup: z
     .object({
       id: z.string(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       pivots: z.array(
         z.object({
           attributeRenderPreference: z
@@ -108,7 +108,7 @@ export const All = z.object({
         z.object({
           isCustomizable: z.boolean(),
           mainImageUrl: z.string().optional(),
-          pivotValues: z.record(z.string(), z.any()).optional(),
+          pivotValues: z.record(z.any()).optional(),
           shortName: z.string().optional(),
           sku: z.string(),
         }),
@@ -138,7 +138,7 @@ export const All = z.object({
         company: z.string().optional(),
         country: z.string().optional(),
         firstName: z.string().optional(),
-        identifiers: z.record(z.string(), z.any()).optional(),
+        identifiers: z.record(z.any()).optional(),
         lastName: z.string().optional(),
         phone: z.string().optional(),
         postal: z.string().optional(),
@@ -147,30 +147,30 @@ export const All = z.object({
       }),
       comments: z.string().optional(),
       currencyCode: z.string().optional(),
-      customerIdentifiers: z.record(z.string(), z.any()).optional(),
+      customerIdentifiers: z.record(z.any()).optional(),
       discounts: z
         .array(
           z.object({
             amount: z.number().gte(0).optional(),
             code: z.string().optional(),
             description: z.string().optional(),
-            identifiers: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()).optional(),
           }),
         )
         .optional(),
       email: z.string().optional(),
       firstName: z.string().optional(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       lastName: z.string().optional(),
       lineItems: z
         .array(
           z.object({
             children: z.array(z.any()).optional(),
             discountAmount: z.number().gte(0).optional(),
-            identifiers: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()).optional(),
             imageUrls: z.array(z.string()).optional(),
             name: z.string(),
-            productIdentifiers: z.record(z.string(), z.any()).optional(),
+            productIdentifiers: z.record(z.any()).optional(),
             quantity: z.number().gt(0),
             sku: z.string(),
             subtotal: z.number().gte(0),
@@ -193,7 +193,7 @@ export const All = z.object({
           z.object({
             amount: z.number().gte(0).optional(),
             billToName: z.string().optional(),
-            identifiers: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()).optional(),
             method: z.enum(["CASH", "PO", "CREDIT_CARD", "ON_ACCOUNT"]),
             paymentDate: z.string().datetime({ offset: true }).optional(),
             poNumber: z.string().optional(),
@@ -208,7 +208,7 @@ export const All = z.object({
           company: z.string().optional(),
           country: z.string().optional(),
           firstName: z.string().optional(),
-          identifiers: z.record(z.string(), z.any()).optional(),
+          identifiers: z.record(z.any()).optional(),
           lastName: z.string().optional(),
           phone: z.string().optional(),
           postal: z.string().optional(),
@@ -263,7 +263,7 @@ export const All = z.object({
         })
         .optional(),
       displayGroup: z.string().optional(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       media: z
         .array(
           z.object({
@@ -343,7 +343,7 @@ export const All = z.object({
         .optional(),
       searchable: z.boolean(),
       sku: z.string(),
-      specs: z.record(z.string(), z.any()),
+      specs: z.record(z.any()),
       status: z.string().optional(),
       taxonomy: z.object({
         master: z.string().optional(),
@@ -385,7 +385,7 @@ export const All = z.object({
             .optional(),
           comments: z.string().optional(),
           createdAt: z.string().datetime({ offset: true }).optional(),
-          identifiers: z.record(z.string(), z.any()).optional(),
+          identifiers: z.record(z.any()).optional(),
           location: z.string().optional(),
           maxRating: z.number().optional(),
           media: z
@@ -418,13 +418,13 @@ export const All = z.object({
             .array(
               z.object({
                 createdAt: z.string().datetime({ offset: true }).optional(),
-                identifiers: z.record(z.string(), z.any()).optional(),
+                identifiers: z.record(z.any()).optional(),
                 location: z.string().optional(),
                 nickname: z.string().optional(),
                 response: z.string().optional(),
                 responseType: z.literal("merchantResponse").optional(),
                 updatedAt: z.string().datetime({ offset: true }).optional(),
-                votes: z.record(z.string(), z.any()).optional(),
+                votes: z.record(z.any()).optional(),
               }),
             )
             .optional(),
@@ -433,7 +433,7 @@ export const All = z.object({
           sku: z.string(),
           source: z.literal("email").optional(),
           title: z.string().optional(),
-          votes: z.record(z.string(), z.any()).optional(),
+          votes: z.record(z.any()).optional(),
         })
         .optional(),
       summary: z
@@ -453,16 +453,16 @@ export const All = z.object({
       comments: z.string().optional(),
       currencyCode: z.string().optional(),
       estimatedDeliveryDate: z.string().datetime({ offset: true }).optional(),
-      identifiers: z.record(z.string(), z.any()).optional(),
+      identifiers: z.record(z.any()).optional(),
       lineItems: z
         .array(
           z.object({
             children: z.array(z.any()).optional(),
             discountAmount: z.number().gte(0).optional(),
-            identifiers: z.record(z.string(), z.any()).optional(),
+            identifiers: z.record(z.any()).optional(),
             imageUrls: z.array(z.string()).optional(),
             name: z.string(),
-            productIdentifiers: z.record(z.string(), z.any()).optional(),
+            productIdentifiers: z.record(z.any()).optional(),
             quantity: z.number().gt(0),
             sku: z.string(),
             subtotal: z.number().gte(0),
@@ -472,7 +472,7 @@ export const All = z.object({
           }),
         )
         .optional(),
-      orderIdentifiers: z.record(z.string(), z.any()).optional(),
+      orderIdentifiers: z.record(z.any()).optional(),
       orderNumber: z
         .string()
         .min(1)

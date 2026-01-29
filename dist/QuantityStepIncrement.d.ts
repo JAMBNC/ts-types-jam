@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const QuantityStepIncrement: z.ZodObject<{
     requiredStepIncrement: z.ZodNumber;
     startingAtQty: z.ZodNumber;

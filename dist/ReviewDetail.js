@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const ReviewDetail = z.object({
     answeredQuestions: z
         .array(z.object({
@@ -9,7 +9,7 @@ export const ReviewDetail = z.object({
         .optional(),
     comments: z.string().optional(),
     createdAt: z.string().datetime({ offset: true }).optional(),
-    identifiers: z.record(z.string(), z.any()).optional(),
+    identifiers: z.record(z.any()).optional(),
     location: z.string().optional(),
     maxRating: z.number().optional(),
     media: z
@@ -37,13 +37,13 @@ export const ReviewDetail = z.object({
     merchantResponses: z
         .array(z.object({
         createdAt: z.string().datetime({ offset: true }).optional(),
-        identifiers: z.record(z.string(), z.any()).optional(),
+        identifiers: z.record(z.any()).optional(),
         location: z.string().optional(),
         nickname: z.string().optional(),
         response: z.string().optional(),
         responseType: z.literal("merchantResponse").optional(),
         updatedAt: z.string().datetime({ offset: true }).optional(),
-        votes: z.record(z.string(), z.any()).optional(),
+        votes: z.record(z.any()).optional(),
     }))
         .optional(),
     nickname: z.string().optional(),
@@ -51,5 +51,5 @@ export const ReviewDetail = z.object({
     sku: z.string(),
     source: z.literal("email").optional(),
     title: z.string().optional(),
-    votes: z.record(z.string(), z.any()).optional(),
+    votes: z.record(z.any()).optional(),
 });

@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const InkSelectorV1ComponentLabels: z.ZodObject<{
     "tabs.standard.label": z.ZodDefault<z.ZodString>;
     "tabs.metallic.label": z.ZodDefault<z.ZodString>;

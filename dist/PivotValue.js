@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export const PivotValue = z.object({
     helpText: z.string().optional(),
     label: z.string(),

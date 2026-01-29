@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const DesignerAuth: z.ZodObject<{
     chiliAuth: z.ZodOptional<z.ZodString>;
     endpointAuth: z.ZodOptional<z.ZodString>;

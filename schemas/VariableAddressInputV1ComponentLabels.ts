@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 
 export const VariableAddressInputV1ComponentLabels = z.object({
   "download.description": z

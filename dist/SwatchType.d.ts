@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const SwatchType: z.ZodEnum<{
     TEXT: "TEXT";
     IMAGE: "IMAGE";

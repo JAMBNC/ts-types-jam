@@ -1,4 +1,4 @@
-import { z } from "zod/v4";
+import { z } from "zod";
 export declare const ProductUrlMetaDataCreativeEngine: z.ZodEnum<{
     chili: "chili";
     alchemy: "alchemy";
