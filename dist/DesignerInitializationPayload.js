@@ -173,7 +173,7 @@ export const DesignerInitializationPayload = z
                 .url()
                 .describe("The endpoint URL for saving the designer data"),
         })
-            .passthrough(),
+            .strict(),
         image: z
             .object({
             /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
@@ -197,7 +197,7 @@ export const DesignerInitializationPayload = z
                 .url()
                 .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)"),
         })
-            .passthrough(),
+            .strict(),
         fonts: z
             .object({
             /**The (optional) endpoint URL for retrieving all supported fonts*/
@@ -212,9 +212,9 @@ export const DesignerInitializationPayload = z
                 .url()
                 .describe("The endpoint URL for retrieving a font file by uuid "),
         })
-            .passthrough(),
+            .strict(),
     })
-        .passthrough(),
+        .strict(),
     auth: z
         .object({
         /**API key authentication, typically sent as a header or query parameter.*/
@@ -353,7 +353,7 @@ export const DesignerInitializationPayload = z
             .describe("A discriminated union of all supported authentication types.")
             .optional(),
     })
-        .passthrough(),
+        .strict(),
     /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
     pricing: z
         .union([

@@ -31,5 +31,5 @@ export const DesignerImageEndpoints = z
         "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
       ),
   })
-  .passthrough();
+  .strict();
 export type DesignerImageEndpoints = z.infer<typeof DesignerImageEndpoints>;

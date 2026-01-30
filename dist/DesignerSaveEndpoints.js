@@ -7,4 +7,4 @@ export const DesignerSaveEndpoints = z
         .url()
         .describe("The endpoint URL for saving the designer data"),
 })
-    .passthrough();
+    .strict();

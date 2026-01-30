@@ -144,5 +144,5 @@ export const DesignerAuth = z
       .describe("A discriminated union of all supported authentication types.")
       .optional(),
   })
-  .passthrough();
+  .strict();
 export type DesignerAuth = z.infer<typeof DesignerAuth>;

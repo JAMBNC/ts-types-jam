@@ -45,6 +45,6 @@ export declare const DesignerAuth: z.ZodObject<{
         tokenUrl: z.ZodString;
         refreshToken: z.ZodString;
     }, z.core.$strict>]>>;
-}, z.core.$loose>;
+}, z.core.$strict>;
 export type DesignerAuth = z.infer<typeof DesignerAuth>;
 //# sourceMappingURL=DesignerAuth.d.ts.map

@@ -13,4 +13,4 @@ export const DesignerFontEndpoints = z
         .url()
         .describe("The endpoint URL for retrieving a font file by uuid "),
 })
-    .passthrough();
+    .strict();

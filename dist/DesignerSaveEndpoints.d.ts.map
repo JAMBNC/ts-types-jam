@@ -1,1 +1,1 @@
-{"version":3,"file":"DesignerSaveEndpoints.d.ts","sourceRoot":"","sources":["../schemas/DesignerSaveEndpoints.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,qBAAqB;;iBAQlB,CAAC;AACjB,MAAM,MAAM,qBAAqB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,qBAAqB,CAAC,CAAC"}
+{"version":3,"file":"DesignerSaveEndpoints.d.ts","sourceRoot":"","sources":["../schemas/DesignerSaveEndpoints.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,qBAAqB;;kBAQvB,CAAC;AACZ,MAAM,MAAM,qBAAqB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,qBAAqB,CAAC,CAAC"}

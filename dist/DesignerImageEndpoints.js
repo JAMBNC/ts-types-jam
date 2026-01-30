@@ -22,4 +22,4 @@ export const DesignerImageEndpoints = z
         .url()
         .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)"),
 })
-    .passthrough();
+    .strict();

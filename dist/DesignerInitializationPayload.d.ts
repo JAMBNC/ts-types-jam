@@ -124,18 +124,18 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
     endpoints: z.ZodObject<{
         design: z.ZodObject<{
             save: z.ZodString;
-        }, z.core.$loose>;
+        }, z.core.$strict>;
         image: z.ZodObject<{
             gallery: z.ZodString;
             upload: z.ZodString;
             delete: z.ZodString;
             rendition: z.ZodString;
-        }, z.core.$loose>;
+        }, z.core.$strict>;
         fonts: z.ZodObject<{
             all: z.ZodOptional<z.ZodString>;
             get: z.ZodString;
-        }, z.core.$loose>;
-    }, z.core.$loose>;
+        }, z.core.$strict>;
+    }, z.core.$strict>;
     auth: z.ZodObject<{
         chiliAuth: z.ZodObject<{
             type: z.ZodLiteral<"apiKey">;
@@ -182,7 +182,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             tokenUrl: z.ZodString;
             refreshToken: z.ZodString;
         }, z.core.$strict>]>>;
-    }, z.core.$loose>;
+    }, z.core.$strict>;
     pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
     uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;

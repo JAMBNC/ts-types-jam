@@ -9,7 +9,7 @@ export const DesignerEndpoints = z
             .url()
             .describe("The endpoint URL for saving the designer data"),
     })
-        .passthrough(),
+        .strict(),
     image: z
         .object({
         /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
@@ -33,7 +33,7 @@ export const DesignerEndpoints = z
             .url()
             .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)"),
     })
-        .passthrough(),
+        .strict(),
     fonts: z
         .object({
         /**The (optional) endpoint URL for retrieving all supported fonts*/
@@ -48,6 +48,6 @@ export const DesignerEndpoints = z
             .url()
             .describe("The endpoint URL for retrieving a font file by uuid "),
     })
-        .passthrough(),
+        .strict(),
 })
-    .passthrough();
+    .strict();

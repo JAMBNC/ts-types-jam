@@ -8,5 +8,5 @@ export const DesignerSaveEndpoints = z
       .url()
       .describe("The endpoint URL for saving the designer data"),
   })
-  .passthrough();
+  .strict();
 export type DesignerSaveEndpoints = z.infer<typeof DesignerSaveEndpoints>;
