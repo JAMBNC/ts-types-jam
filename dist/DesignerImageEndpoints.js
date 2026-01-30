@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const DesignerImageEndpoints = z.object({
+export const DesignerImageEndpoints = z
+    .object({
     /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
     gallery: z
         .string()
@@ -20,4 +21,5 @@ export const DesignerImageEndpoints = z.object({
         .string()
         .url()
         .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)"),
-});
+})
+    .passthrough();

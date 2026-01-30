@@ -13,9 +13,9 @@ export declare const Badge: z.ZodObject<{
             topLeft: "topLeft";
         }>;
         url: z.ZodString;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     priority: z.ZodOptional<z.ZodNumber>;
     title: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Badge = z.infer<typeof Badge>;
 //# sourceMappingURL=Badge.d.ts.map

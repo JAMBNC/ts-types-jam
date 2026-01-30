@@ -1,1 +1,1 @@
-{"version":3,"file":"ShippingInfo.d.ts","sourceRoot":"","sources":["../schemas/ShippingInfo.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,YAAY;;;;;;;;;;;;iBAOvB,CAAC;AACH,MAAM,MAAM,YAAY,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,YAAY,CAAC,CAAC"}
+{"version":3,"file":"ShippingInfo.d.ts","sourceRoot":"","sources":["../schemas/ShippingInfo.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,YAAY;;;;;;;;;;;;iBAST,CAAC;AACjB,MAAM,MAAM,YAAY,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,YAAY,CAAC,CAAC"}

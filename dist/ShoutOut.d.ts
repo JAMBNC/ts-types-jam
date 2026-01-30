@@ -10,6 +10,6 @@ export declare const ShoutOut: z.ZodObject<{
     }>;
     url: z.ZodString;
     value: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ShoutOut = z.infer<typeof ShoutOut>;
 //# sourceMappingURL=ShoutOut.d.ts.map

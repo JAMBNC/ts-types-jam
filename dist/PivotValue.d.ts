@@ -9,6 +9,6 @@ export declare const PivotValue: z.ZodObject<{
         RGB: "RGB";
     }>>;
     swatchValue: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type PivotValue = z.infer<typeof PivotValue>;
 //# sourceMappingURL=PivotValue.d.ts.map

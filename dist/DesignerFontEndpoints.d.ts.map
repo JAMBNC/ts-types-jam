@@ -1,1 +1,1 @@
-{"version":3,"file":"DesignerFontEndpoints.d.ts","sourceRoot":"","sources":["../schemas/DesignerFontEndpoints.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,qBAAqB;;;iBAYhC,CAAC;AACH,MAAM,MAAM,qBAAqB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,qBAAqB,CAAC,CAAC"}
+{"version":3,"file":"DesignerFontEndpoints.d.ts","sourceRoot":"","sources":["../schemas/DesignerFontEndpoints.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,qBAAqB;;;iBAgBlB,CAAC;AACjB,MAAM,MAAM,qBAAqB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,qBAAqB,CAAC,CAAC"}

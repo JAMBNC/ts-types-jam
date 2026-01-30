@@ -30,7 +30,7 @@ export declare const DesignerUiLabels: z.ZodObject<{
         "tabs.metallic.label": z.ZodDefault<z.ZodString>;
         "selectedInk.label": z.ZodDefault<z.ZodString>;
         "imageColors.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     "workspace.toolBar.stack.mailingAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.mailingAddress.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAddress.label": z.ZodDefault<z.ZodString>;
@@ -50,7 +50,7 @@ export declare const DesignerUiLabels: z.ZodObject<{
         "upload.error.label": z.ZodDefault<z.ZodString>;
         "upload.error.icon": z.ZodDefault<z.ZodString>;
         "addressPreview.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     "workspace.toolBar.tab.mailingAddress.address.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAddress.address.placeholder": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAdress.color.label": z.ZodDefault<z.ZodString>;
@@ -59,7 +59,7 @@ export declare const DesignerUiLabels: z.ZodObject<{
         "tabs.metallic.label": z.ZodDefault<z.ZodString>;
         "selectedInk.label": z.ZodDefault<z.ZodString>;
         "imageColors.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     "workspace.toolBar.stack.image.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.image.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.label": z.ZodDefault<z.ZodString>;
@@ -122,6 +122,6 @@ export declare const DesignerUiLabels: z.ZodObject<{
     "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type DesignerUiLabels = z.infer<typeof DesignerUiLabels>;
 //# sourceMappingURL=DesignerUiLabels.d.ts.map

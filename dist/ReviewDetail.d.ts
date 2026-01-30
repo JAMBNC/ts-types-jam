@@ -4,7 +4,7 @@ export declare const ReviewDetail: z.ZodObject<{
         choices: z.ZodArray<z.ZodString>;
         selected: z.ZodOptional<z.ZodArray<z.ZodString>>;
         type: z.ZodLiteral<"Tag">;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     comments: z.ZodOptional<z.ZodString>;
     createdAt: z.ZodOptional<z.ZodString>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -30,7 +30,7 @@ export declare const ReviewDetail: z.ZodObject<{
             other: "other";
         }>>>;
         url: z.ZodString;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     merchantResponses: z.ZodOptional<z.ZodArray<z.ZodObject<{
         createdAt: z.ZodOptional<z.ZodString>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -40,13 +40,13 @@ export declare const ReviewDetail: z.ZodObject<{
         responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
         updatedAt: z.ZodOptional<z.ZodString>;
         votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     nickname: z.ZodOptional<z.ZodString>;
     rating: z.ZodOptional<z.ZodNumber>;
     sku: z.ZodString;
     source: z.ZodOptional<z.ZodLiteral<"email">>;
     title: z.ZodOptional<z.ZodString>;
     votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ReviewDetail = z.infer<typeof ReviewDetail>;
 //# sourceMappingURL=ReviewDetail.d.ts.map

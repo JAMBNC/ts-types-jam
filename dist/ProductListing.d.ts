@@ -5,6 +5,6 @@ export declare const ProductListing: z.ZodObject<{
     pivotValues: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     shortName: z.ZodOptional<z.ZodString>;
     sku: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ProductListing = z.infer<typeof ProductListing>;
 //# sourceMappingURL=ProductListing.d.ts.map

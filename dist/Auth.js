@@ -1,7 +1,7 @@
 import { z } from "zod";
 /**A discriminated union of all supported authentication types.*/
 export const Auth = z
-    .union([
+    .discriminatedUnion("type", [
     z
         .object({
         type: z.literal("bearer"),

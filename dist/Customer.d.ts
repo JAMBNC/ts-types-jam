@@ -11,11 +11,11 @@ export declare const Customer: z.ZodObject<{
         postal: z.ZodOptional<z.ZodString>;
         region: z.ZodOptional<z.ZodString>;
         streets: z.ZodArray<z.ZodString>;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     email: z.ZodOptional<z.ZodString>;
     firstName: z.ZodOptional<z.ZodString>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     lastName: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Customer = z.infer<typeof Customer>;
 //# sourceMappingURL=Customer.d.ts.map

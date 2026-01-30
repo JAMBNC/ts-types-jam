@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const DesignerFontEndpoints = z.object({
+export const DesignerFontEndpoints = z
+    .object({
     /**The (optional) endpoint URL for retrieving all supported fonts*/
     all: z
         .string()
@@ -11,4 +12,5 @@ export const DesignerFontEndpoints = z.object({
         .string()
         .url()
         .describe("The endpoint URL for retrieving a font file by uuid "),
-});
+})
+    .passthrough();

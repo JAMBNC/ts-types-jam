@@ -5,6 +5,6 @@ export declare const ProductCustomization: z.ZodObject<{
     prebuiltDesign: z.ZodOptional<z.ZodBoolean>;
     stockType: z.ZodOptional<z.ZodString>;
     styleType: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ProductCustomization = z.infer<typeof ProductCustomization>;
 //# sourceMappingURL=ProductCustomization.d.ts.map

@@ -11,6 +11,6 @@ export declare const ShippingInfo: z.ZodObject<{
         Other: "Other";
     }>;
     weightInPounds: z.ZodOptional<z.ZodNumber>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ShippingInfo = z.infer<typeof ShippingInfo>;
 //# sourceMappingURL=ShippingInfo.d.ts.map

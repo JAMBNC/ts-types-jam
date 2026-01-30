@@ -26,15 +26,15 @@ export declare const DisplayGroup: z.ZodObject<{
                 RGB: "RGB";
             }>>;
             swatchValue: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>>;
-    }, z.core.$strip>>;
+        }, z.core.$loose>>;
+    }, z.core.$loose>>;
     products: z.ZodArray<z.ZodObject<{
         isCustomizable: z.ZodBoolean;
         mainImageUrl: z.ZodOptional<z.ZodString>;
         pivotValues: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         shortName: z.ZodOptional<z.ZodString>;
         sku: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     shoutOuts: z.ZodOptional<z.ZodArray<z.ZodObject<{
         display: z.ZodString;
         type: z.ZodEnum<{
@@ -46,7 +46,7 @@ export declare const DisplayGroup: z.ZodObject<{
         }>;
         url: z.ZodString;
         value: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>>;
-}, z.core.$strip>;
+    }, z.core.$loose>>>;
+}, z.core.$loose>;
 export type DisplayGroup = z.infer<typeof DisplayGroup>;
 //# sourceMappingURL=DisplayGroup.d.ts.map

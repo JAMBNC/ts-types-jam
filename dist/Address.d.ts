@@ -10,6 +10,6 @@ export declare const Address: z.ZodObject<{
     postal: z.ZodOptional<z.ZodString>;
     region: z.ZodOptional<z.ZodString>;
     streets: z.ZodArray<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Address = z.infer<typeof Address>;
 //# sourceMappingURL=Address.d.ts.map

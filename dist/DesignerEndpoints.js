@@ -1,13 +1,17 @@
 import { z } from "zod";
-export const DesignerEndpoints = z.object({
-    design: z.object({
+export const DesignerEndpoints = z
+    .object({
+    design: z
+        .object({
         /**The endpoint URL for saving the designer data*/
         save: z
             .string()
             .url()
             .describe("The endpoint URL for saving the designer data"),
-    }),
-    image: z.object({
+    })
+        .passthrough(),
+    image: z
+        .object({
         /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
         gallery: z
             .string()
@@ -28,8 +32,10 @@ export const DesignerEndpoints = z.object({
             .string()
             .url()
             .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)"),
-    }),
-    fonts: z.object({
+    })
+        .passthrough(),
+    fonts: z
+        .object({
         /**The (optional) endpoint URL for retrieving all supported fonts*/
         all: z
             .string()
@@ -41,5 +47,7 @@ export const DesignerEndpoints = z.object({
             .string()
             .url()
             .describe("The endpoint URL for retrieving a font file by uuid "),
-    }),
-});
+    })
+        .passthrough(),
+})
+    .passthrough();

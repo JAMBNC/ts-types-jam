@@ -8,6 +8,6 @@ export declare const MerchantResponse: z.ZodObject<{
     responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
     updatedAt: z.ZodOptional<z.ZodString>;
     votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type MerchantResponse = z.infer<typeof MerchantResponse>;
 //# sourceMappingURL=MerchantResponse.d.ts.map

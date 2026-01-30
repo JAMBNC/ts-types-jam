@@ -18,12 +18,12 @@ export declare const Shipment: z.ZodObject<{
         taxAmount: z.ZodNumber;
         total: z.ZodNumber;
         weightInPounds: z.ZodNumber;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     orderIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     orderNumber: z.ZodString;
     shipmentDate: z.ZodString;
     trackingNumber: z.ZodOptional<z.ZodString>;
     trackingUrl: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Shipment = z.infer<typeof Shipment>;
 //# sourceMappingURL=Shipment.d.ts.map

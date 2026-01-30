@@ -5,6 +5,6 @@ export declare const ReviewSummary: z.ZodObject<{
     rating: z.ZodOptional<z.ZodNumber>;
     reviewCount: z.ZodOptional<z.ZodNumber>;
     sku: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ReviewSummary = z.infer<typeof ReviewSummary>;
 //# sourceMappingURL=ReviewSummary.d.ts.map

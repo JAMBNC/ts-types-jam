@@ -9,7 +9,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             breadcrumbs: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 label: z.ZodString;
                 url: z.ZodOptional<z.ZodString>;
-            }, z.core.$strip>>>;
+            }, z.core.$loose>>>;
             longDescription: z.ZodOptional<z.ZodString>;
             metaDescription: z.ZodOptional<z.ZodString>;
             metaKeywords: z.ZodOptional<z.ZodString>;
@@ -17,7 +17,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             seoDescription: z.ZodOptional<z.ZodString>;
             shortDescription: z.ZodOptional<z.ZodString>;
             shortName: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         createdAt: z.ZodOptional<z.ZodString>;
         customization: z.ZodOptional<z.ZodObject<{
             prebuiltConfigurationId: z.ZodOptional<z.ZodString>;
@@ -25,7 +25,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             prebuiltDesign: z.ZodOptional<z.ZodBoolean>;
             stockType: z.ZodOptional<z.ZodString>;
             styleType: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         displayGroup: z.ZodOptional<z.ZodString>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
         media: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -48,19 +48,19 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
                 other: "other";
             }>>>;
             url: z.ZodString;
-        }, z.core.$strip>>>;
+        }, z.core.$loose>>>;
         name: z.ZodString;
         primaryCategory: z.ZodOptional<z.ZodObject<{
             id: z.ZodNumber;
             label: z.ZodString;
             url: z.ZodString;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         purchaseOptions: z.ZodOptional<z.ZodObject<{
             allowsSample: z.ZodBoolean;
             customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
                 max: z.ZodOptional<z.ZodNumber>;
                 min: z.ZodNumber;
-            }, z.core.$strip>>;
+            }, z.core.$loose>>;
             customizable: z.ZodBoolean;
             designRequired: z.ZodBoolean;
             inStock: z.ZodBoolean;
@@ -73,12 +73,12 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
                 max: z.ZodOptional<z.ZodNumber>;
                 min: z.ZodNumber;
-            }, z.core.$strip>>;
+            }, z.core.$loose>>;
             pricePercentOff: z.ZodOptional<z.ZodNumber>;
             quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 requiredStepIncrement: z.ZodNumber;
                 startingAtQty: z.ZodNumber;
-            }, z.core.$strip>>>;
+            }, z.core.$loose>>>;
             stockQty: z.ZodNumber;
             suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
             tierPrices: z.ZodArray<z.ZodObject<{
@@ -87,9 +87,9 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
                 pricePercentOff: z.ZodOptional<z.ZodNumber>;
                 salePrice: z.ZodOptional<z.ZodNumber>;
                 startingAtQty: z.ZodNumber;
-            }, z.core.$strip>>;
+            }, z.core.$loose>>;
             toBeDiscontinued: z.ZodBoolean;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         searchable: z.ZodBoolean;
         sku: z.ZodString;
         specs: z.ZodRecord<z.ZodString, z.core.SomeType>;
@@ -98,7 +98,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             master: z.ZodOptional<z.ZodString>;
             primary: z.ZodOptional<z.ZodString>;
             sub: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>;
+        }, z.core.$loose>;
         upc: z.ZodOptional<z.ZodString>;
         updatedAt: z.ZodOptional<z.ZodString>;
         url: z.ZodArray<z.ZodObject<{
@@ -112,32 +112,32 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
                     luma: "luma";
                     addrLogo: "addrLogo";
                 }>>;
-            }, z.core.$strip>>;
+            }, z.core.$loose>>;
             url: z.ZodOptional<z.ZodString>;
             urlType: z.ZodOptional<z.ZodEnum<{
                 yourLogoHere: "yourLogoHere";
                 product: "product";
                 customProduct: "customProduct";
             }>>;
-        }, z.core.$strip>>;
-    }, z.core.$strip>, z.ZodString]>;
+        }, z.core.$loose>>;
+    }, z.core.$loose>, z.ZodString]>;
     endpoints: z.ZodObject<{
         design: z.ZodObject<{
             save: z.ZodString;
-        }, z.core.$strip>;
+        }, z.core.$loose>;
         image: z.ZodObject<{
             gallery: z.ZodString;
             upload: z.ZodString;
             delete: z.ZodString;
             rendition: z.ZodString;
-        }, z.core.$strip>;
+        }, z.core.$loose>;
         fonts: z.ZodObject<{
             all: z.ZodOptional<z.ZodString>;
             get: z.ZodString;
-        }, z.core.$strip>;
-    }, z.core.$strip>;
+        }, z.core.$loose>;
+    }, z.core.$loose>;
     auth: z.ZodObject<{
-        chiliAuth: z.ZodUnion<readonly [z.ZodObject<{
+        chiliAuth: z.ZodDiscriminatedUnion<[z.ZodObject<{
             type: z.ZodLiteral<"bearer">;
             token: z.ZodString;
         }, z.core.$strict>, z.ZodObject<{
@@ -173,7 +173,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             tokenUrl: z.ZodString;
             refreshToken: z.ZodString;
         }, z.core.$strict>]>;
-        endpointAuth: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+        endpointAuth: z.ZodOptional<z.ZodDiscriminatedUnion<[z.ZodObject<{
             type: z.ZodLiteral<"bearer">;
             token: z.ZodString;
         }, z.core.$strict>, z.ZodObject<{
@@ -209,7 +209,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             tokenUrl: z.ZodString;
             refreshToken: z.ZodString;
         }, z.core.$strict>]>>;
-    }, z.core.$strip>;
+    }, z.core.$loose>;
     pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
     uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
@@ -242,7 +242,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             "tabs.metallic.label": z.ZodDefault<z.ZodString>;
             "selectedInk.label": z.ZodDefault<z.ZodString>;
             "imageColors.label": z.ZodDefault<z.ZodString>;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         "workspace.toolBar.stack.mailingAddress.label": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.stack.mailingAddress.icon": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.tab.mailingAddress.label": z.ZodDefault<z.ZodString>;
@@ -262,7 +262,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             "upload.error.label": z.ZodDefault<z.ZodString>;
             "upload.error.icon": z.ZodDefault<z.ZodString>;
             "addressPreview.label": z.ZodDefault<z.ZodString>;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         "workspace.toolBar.tab.mailingAddress.address.label": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.tab.mailingAddress.address.placeholder": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.tab.mailingAdress.color.label": z.ZodDefault<z.ZodString>;
@@ -271,7 +271,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             "tabs.metallic.label": z.ZodDefault<z.ZodString>;
             "selectedInk.label": z.ZodDefault<z.ZodString>;
             "imageColors.label": z.ZodDefault<z.ZodString>;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         "workspace.toolBar.stack.image.label": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.stack.image.icon": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.tab.image.label": z.ZodDefault<z.ZodString>;
@@ -334,12 +334,12 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$strip>, z.ZodString]>>;
+    }, z.core.$loose>, z.ZodString]>>;
     fonts: z.ZodOptional<z.ZodArray<z.ZodObject<{
         uuid: z.ZodString;
         name: z.ZodString;
     }, z.core.$strict>>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;
 //# sourceMappingURL=DesignerInitializationPayload.d.ts.map

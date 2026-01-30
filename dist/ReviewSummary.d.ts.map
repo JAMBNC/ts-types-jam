@@ -1,1 +1,1 @@
-{"version":3,"file":"ReviewSummary.d.ts","sourceRoot":"","sources":["../schemas/ReviewSummary.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,aAAa;;;;;;iBAMxB,CAAC;AACH,MAAM,MAAM,aAAa,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,aAAa,CAAC,CAAC"}
+{"version":3,"file":"ReviewSummary.d.ts","sourceRoot":"","sources":["../schemas/ReviewSummary.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,aAAa;;;;;;iBAQV,CAAC;AACjB,MAAM,MAAM,aAAa,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,aAAa,CAAC,CAAC"}

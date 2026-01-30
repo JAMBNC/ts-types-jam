@@ -11,6 +11,6 @@ export declare const BadgeImage: z.ZodObject<{
         topLeft: "topLeft";
     }>;
     url: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type BadgeImage = z.infer<typeof BadgeImage>;
 //# sourceMappingURL=BadgeImage.d.ts.map

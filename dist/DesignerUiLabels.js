@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const DesignerUiLabels = z.object({
+export const DesignerUiLabels = z
+    .object({
     /**The label showed with the undo button on the menu bar*/
     "menubar.undo.label": z
         .string()
@@ -148,6 +149,7 @@ export const DesignerUiLabels = z.object({
             .describe("The label used when presenting the current colors of the image")
             .default("My Image Colors"),
     })
+        .passthrough()
         .optional(),
     /**The label used for the Mailing Address tool in the.toolBar*/
     "workspace.toolBar.stack.mailingAddress.label": z
@@ -242,6 +244,7 @@ export const DesignerUiLabels = z.object({
             .describe("The label for the address preview input")
             .default("Address Preview"),
     })
+        .passthrough()
         .optional(),
     /**The mailing address address input label*/
     "workspace.toolBar.tab.mailingAddress.address.label": z
@@ -281,6 +284,7 @@ export const DesignerUiLabels = z.object({
             .describe("The label used when presenting the current colors of the image")
             .default("My Image Colors"),
     })
+        .passthrough()
         .optional(),
     /**The label used for the Image tool in the.toolBar*/
     "workspace.toolBar.stack.image.label": z
@@ -592,4 +596,5 @@ export const DesignerUiLabels = z.object({
         .string()
         .describe("The ui label for variable addressing on side two")
         .default("Variable Addressing Side 2"),
-});
+})
+    .passthrough();

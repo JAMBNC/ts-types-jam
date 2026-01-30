@@ -1,11 +1,13 @@
 import { z } from "zod";
-export const PurchaseOptions = z.object({
+export const PurchaseOptions = z
+    .object({
     allowsSample: z.boolean(),
     customLeadTimeDayRange: z
         .object({
         max: z.number().int().gte(0).optional(),
         min: z.number().int().gte(0),
     })
+        .passthrough()
         .optional(),
     customizable: z.boolean(),
     designRequired: z.boolean(),
@@ -21,22 +23,28 @@ export const PurchaseOptions = z.object({
         max: z.number().int().gte(0).optional(),
         min: z.number().int().gte(0),
     })
+        .passthrough()
         .optional(),
     pricePercentOff: z.number().optional(),
     quantityStepIncrements: z
-        .array(z.object({
+        .array(z
+        .object({
         requiredStepIncrement: z.number().int(),
         startingAtQty: z.number().int(),
-    }))
+    })
+        .passthrough())
         .optional(),
     stockQty: z.number().int().gte(0),
     suggestedQuantityDisplays: z.array(z.number().int()).optional(),
-    tierPrices: z.array(z.object({
+    tierPrices: z.array(z
+        .object({
         discountReason: z.string().optional(),
         price: z.number(),
         pricePercentOff: z.number().optional(),
         salePrice: z.number().optional(),
         startingAtQty: z.number().int(),
-    })),
+    })
+        .passthrough()),
     toBeDiscontinued: z.boolean(),
-});
+})
+    .passthrough();

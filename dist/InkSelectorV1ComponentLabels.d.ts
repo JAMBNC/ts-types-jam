@@ -4,6 +4,6 @@ export declare const InkSelectorV1ComponentLabels: z.ZodObject<{
     "tabs.metallic.label": z.ZodDefault<z.ZodString>;
     "selectedInk.label": z.ZodDefault<z.ZodString>;
     "imageColors.label": z.ZodDefault<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type InkSelectorV1ComponentLabels = z.infer<typeof InkSelectorV1ComponentLabels>;
 //# sourceMappingURL=InkSelectorV1ComponentLabels.d.ts.map

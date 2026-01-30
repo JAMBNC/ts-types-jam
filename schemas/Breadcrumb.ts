@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-export const Breadcrumb = z.object({
-  label: z.string(),
-  url: z.string().optional(),
-});
+export const Breadcrumb = z
+  .object({ label: z.string(), url: z.string().optional() })
+  .passthrough();
 export type Breadcrumb = z.infer<typeof Breadcrumb>;

@@ -10,13 +10,13 @@ export declare const ProductUrl: z.ZodObject<{
             luma: "luma";
             addrLogo: "addrLogo";
         }>>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     url: z.ZodOptional<z.ZodString>;
     urlType: z.ZodOptional<z.ZodEnum<{
         yourLogoHere: "yourLogoHere";
         product: "product";
         customProduct: "customProduct";
     }>>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ProductUrl = z.infer<typeof ProductUrl>;
 //# sourceMappingURL=ProductUrl.d.ts.map

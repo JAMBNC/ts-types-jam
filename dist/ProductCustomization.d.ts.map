@@ -1,1 +1,1 @@
-{"version":3,"file":"ProductCustomization.d.ts","sourceRoot":"","sources":["../schemas/ProductCustomization.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,oBAAoB;;;;;;iBAM/B,CAAC;AACH,MAAM,MAAM,oBAAoB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,oBAAoB,CAAC,CAAC"}
+{"version":3,"file":"ProductCustomization.d.ts","sourceRoot":"","sources":["../schemas/ProductCustomization.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,oBAAoB;;;;;;iBAQjB,CAAC;AACjB,MAAM,MAAM,oBAAoB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,oBAAoB,CAAC,CAAC"}

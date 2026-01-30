@@ -23,7 +23,7 @@ export declare const Pivot: z.ZodObject<{
             RGB: "RGB";
         }>>;
         swatchValue: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>;
-}, z.core.$strip>;
+    }, z.core.$loose>>;
+}, z.core.$loose>;
 export type Pivot = z.infer<typeof Pivot>;
 //# sourceMappingURL=Pivot.d.ts.map

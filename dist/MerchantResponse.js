@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const MerchantResponse = z.object({
+export const MerchantResponse = z
+    .object({
     createdAt: z.string().datetime({ offset: true }).optional(),
     identifiers: z.record(z.any()).optional(),
     location: z.string().optional(),
@@ -8,4 +9,5 @@ export const MerchantResponse = z.object({
     responseType: z.literal("merchantResponse").optional(),
     updatedAt: z.string().datetime({ offset: true }).optional(),
     votes: z.record(z.number().int()).optional(),
-});
+})
+    .passthrough();

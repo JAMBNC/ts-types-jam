@@ -4,6 +4,6 @@ export declare const DesignerImageEndpoints: z.ZodObject<{
     upload: z.ZodString;
     delete: z.ZodString;
     rendition: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type DesignerImageEndpoints = z.infer<typeof DesignerImageEndpoints>;
 //# sourceMappingURL=DesignerImageEndpoints.d.ts.map

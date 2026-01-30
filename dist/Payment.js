@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const Payment = z.object({
+export const Payment = z
+    .object({
     amount: z.number().gte(0).optional(),
     billToName: z.string().optional(),
     identifiers: z.record(z.any()).optional(),
@@ -7,4 +8,5 @@ export const Payment = z.object({
     paymentDate: z.string().datetime({ offset: true }).optional(),
     poNumber: z.string().optional(),
     status: z.string().optional(),
-});
+})
+    .passthrough();

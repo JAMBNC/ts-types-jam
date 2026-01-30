@@ -1,6 +1,6 @@
 import { z } from "zod";
 export declare const DesignerAuth: z.ZodObject<{
-    chiliAuth: z.ZodUnion<readonly [z.ZodObject<{
+    chiliAuth: z.ZodDiscriminatedUnion<[z.ZodObject<{
         type: z.ZodLiteral<"bearer">;
         token: z.ZodString;
     }, z.core.$strict>, z.ZodObject<{
@@ -36,7 +36,7 @@ export declare const DesignerAuth: z.ZodObject<{
         tokenUrl: z.ZodString;
         refreshToken: z.ZodString;
     }, z.core.$strict>]>;
-    endpointAuth: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+    endpointAuth: z.ZodOptional<z.ZodDiscriminatedUnion<[z.ZodObject<{
         type: z.ZodLiteral<"bearer">;
         token: z.ZodString;
     }, z.core.$strict>, z.ZodObject<{
@@ -72,6 +72,6 @@ export declare const DesignerAuth: z.ZodObject<{
         tokenUrl: z.ZodString;
         refreshToken: z.ZodString;
     }, z.core.$strict>]>>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type DesignerAuth = z.infer<typeof DesignerAuth>;
 //# sourceMappingURL=DesignerAuth.d.ts.map

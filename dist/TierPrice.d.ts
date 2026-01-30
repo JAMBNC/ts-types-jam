@@ -5,6 +5,6 @@ export declare const TierPrice: z.ZodObject<{
     pricePercentOff: z.ZodOptional<z.ZodNumber>;
     salePrice: z.ZodOptional<z.ZodNumber>;
     startingAtQty: z.ZodNumber;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type TierPrice = z.infer<typeof TierPrice>;
 //# sourceMappingURL=TierPrice.d.ts.map

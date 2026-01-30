@@ -7,7 +7,7 @@ export declare const Product: z.ZodObject<{
         breadcrumbs: z.ZodOptional<z.ZodArray<z.ZodObject<{
             label: z.ZodString;
             url: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>>>;
+        }, z.core.$loose>>>;
         longDescription: z.ZodOptional<z.ZodString>;
         metaDescription: z.ZodOptional<z.ZodString>;
         metaKeywords: z.ZodOptional<z.ZodString>;
@@ -15,7 +15,7 @@ export declare const Product: z.ZodObject<{
         seoDescription: z.ZodOptional<z.ZodString>;
         shortDescription: z.ZodOptional<z.ZodString>;
         shortName: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     createdAt: z.ZodOptional<z.ZodString>;
     customization: z.ZodOptional<z.ZodObject<{
         prebuiltConfigurationId: z.ZodOptional<z.ZodString>;
@@ -23,7 +23,7 @@ export declare const Product: z.ZodObject<{
         prebuiltDesign: z.ZodOptional<z.ZodBoolean>;
         stockType: z.ZodOptional<z.ZodString>;
         styleType: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     displayGroup: z.ZodOptional<z.ZodString>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     media: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -46,19 +46,19 @@ export declare const Product: z.ZodObject<{
             other: "other";
         }>>>;
         url: z.ZodString;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     name: z.ZodString;
     primaryCategory: z.ZodOptional<z.ZodObject<{
         id: z.ZodNumber;
         label: z.ZodString;
         url: z.ZodString;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     purchaseOptions: z.ZodOptional<z.ZodObject<{
         allowsSample: z.ZodBoolean;
         customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
             max: z.ZodOptional<z.ZodNumber>;
             min: z.ZodNumber;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         customizable: z.ZodBoolean;
         designRequired: z.ZodBoolean;
         inStock: z.ZodBoolean;
@@ -71,12 +71,12 @@ export declare const Product: z.ZodObject<{
         plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
             max: z.ZodOptional<z.ZodNumber>;
             min: z.ZodNumber;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         pricePercentOff: z.ZodOptional<z.ZodNumber>;
         quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
             requiredStepIncrement: z.ZodNumber;
             startingAtQty: z.ZodNumber;
-        }, z.core.$strip>>>;
+        }, z.core.$loose>>>;
         stockQty: z.ZodNumber;
         suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
         tierPrices: z.ZodArray<z.ZodObject<{
@@ -85,9 +85,9 @@ export declare const Product: z.ZodObject<{
             pricePercentOff: z.ZodOptional<z.ZodNumber>;
             salePrice: z.ZodOptional<z.ZodNumber>;
             startingAtQty: z.ZodNumber;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         toBeDiscontinued: z.ZodBoolean;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     searchable: z.ZodBoolean;
     sku: z.ZodString;
     specs: z.ZodRecord<z.ZodString, z.core.SomeType>;
@@ -96,7 +96,7 @@ export declare const Product: z.ZodObject<{
         master: z.ZodOptional<z.ZodString>;
         primary: z.ZodOptional<z.ZodString>;
         sub: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>;
+    }, z.core.$loose>;
     upc: z.ZodOptional<z.ZodString>;
     updatedAt: z.ZodOptional<z.ZodString>;
     url: z.ZodArray<z.ZodObject<{
@@ -110,14 +110,14 @@ export declare const Product: z.ZodObject<{
                 luma: "luma";
                 addrLogo: "addrLogo";
             }>>;
-        }, z.core.$strip>>;
+        }, z.core.$loose>>;
         url: z.ZodOptional<z.ZodString>;
         urlType: z.ZodOptional<z.ZodEnum<{
             yourLogoHere: "yourLogoHere";
             product: "product";
             customProduct: "customProduct";
         }>>;
-    }, z.core.$strip>>;
-}, z.core.$strip>;
+    }, z.core.$loose>>;
+}, z.core.$loose>;
 export type Product = z.infer<typeof Product>;
 //# sourceMappingURL=Product.d.ts.map

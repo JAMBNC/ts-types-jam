@@ -1,8 +1,9 @@
 import { z } from "zod";
-export const DesignerAuth = z.object({
+export const DesignerAuth = z
+    .object({
     /**A discriminated union of all supported authentication types.*/
     chiliAuth: z
-        .union([
+        .discriminatedUnion("type", [
         z
             .object({
             type: z.literal("bearer"),
@@ -113,7 +114,7 @@ export const DesignerAuth = z.object({
         .describe("A discriminated union of all supported authentication types."),
     /**A discriminated union of all supported authentication types.*/
     endpointAuth: z
-        .union([
+        .discriminatedUnion("type", [
         z
             .object({
             type: z.literal("bearer"),
@@ -223,4 +224,5 @@ export const DesignerAuth = z.object({
     ])
         .describe("A discriminated union of all supported authentication types.")
         .optional(),
-});
+})
+    .passthrough();

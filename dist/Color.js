@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const Color = z.object({
+export const Color = z
+    .object({
     /**The normalized name for a color, used for spot name in spot applications.*/
     name: z
         .string()
@@ -14,4 +15,5 @@ export const Color = z.object({
         .describe("Color representations keyed by color space name."),
     /**A unique UUID identifier for the color.*/
     uuid: z.string().uuid().describe("A unique UUID identifier for the color."),
-});
+})
+    .passthrough();

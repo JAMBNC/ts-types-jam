@@ -1,57 +1,65 @@
 import { z } from "zod";
 
-export const DesignerEndpoints = z.object({
-  design: z.object({
-    /**The endpoint URL for saving the designer data*/
-    save: z
-      .string()
-      .url()
-      .describe("The endpoint URL for saving the designer data"),
-  }),
-  image: z.object({
-    /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
-    gallery: z
-      .string()
-      .url()
-      .describe(
-        "The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)",
-      ),
-    /**The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)*/
-    upload: z
-      .string()
-      .url()
-      .describe(
-        "The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)",
-      ),
-    /**The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)*/
-    delete: z
-      .string()
-      .url()
-      .describe(
-        "The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)",
-      ),
-    /**The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)*/
-    rendition: z
-      .string()
-      .url()
-      .describe(
-        "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
-      ),
-  }),
-  fonts: z.object({
-    /**The (optional) endpoint URL for retrieving all supported fonts*/
-    all: z
-      .string()
-      .url()
-      .describe(
-        "The (optional) endpoint URL for retrieving all supported fonts",
-      )
-      .optional(),
-    /**The endpoint URL for retrieving a font file by uuid */
-    get: z
-      .string()
-      .url()
-      .describe("The endpoint URL for retrieving a font file by uuid "),
-  }),
-});
+export const DesignerEndpoints = z
+  .object({
+    design: z
+      .object({
+        /**The endpoint URL for saving the designer data*/
+        save: z
+          .string()
+          .url()
+          .describe("The endpoint URL for saving the designer data"),
+      })
+      .passthrough(),
+    image: z
+      .object({
+        /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
+        gallery: z
+          .string()
+          .url()
+          .describe(
+            "The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)",
+          ),
+        /**The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)*/
+        upload: z
+          .string()
+          .url()
+          .describe(
+            "The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)",
+          ),
+        /**The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)*/
+        delete: z
+          .string()
+          .url()
+          .describe(
+            "The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)",
+          ),
+        /**The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)*/
+        rendition: z
+          .string()
+          .url()
+          .describe(
+            "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
+          ),
+      })
+      .passthrough(),
+    fonts: z
+      .object({
+        /**The (optional) endpoint URL for retrieving all supported fonts*/
+        all: z
+          .string()
+          .url()
+          .describe(
+            "The (optional) endpoint URL for retrieving all supported fonts",
+          )
+          .optional(),
+        /**The endpoint URL for retrieving a font file by uuid */
+        get: z
+          .string()
+          .url()
+          .describe("The endpoint URL for retrieving a font file by uuid "),
+      })
+      .passthrough(),
+  })
+  .passthrough();
 export type DesignerEndpoints = z.infer<typeof DesignerEndpoints>;

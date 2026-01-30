@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const Media = z.object({
+export const Media = z
+    .object({
     altText: z.string().optional(),
     label: z.string().optional(),
     mediaType: z.enum(["image", "video"]),
@@ -18,4 +19,5 @@ export const Media = z.object({
     ]))
         .optional(),
     url: z.string(),
-});
+})
+    .passthrough();

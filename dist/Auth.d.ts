@@ -1,6 +1,6 @@
 import { z } from "zod";
 /**A discriminated union of all supported authentication types.*/
-export declare const Auth: z.ZodUnion<readonly [z.ZodObject<{
+export declare const Auth: z.ZodDiscriminatedUnion<[z.ZodObject<{
     type: z.ZodLiteral<"bearer">;
     token: z.ZodString;
 }, z.core.$strict>, z.ZodObject<{

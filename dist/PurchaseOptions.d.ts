@@ -4,7 +4,7 @@ export declare const PurchaseOptions: z.ZodObject<{
     customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
         max: z.ZodOptional<z.ZodNumber>;
         min: z.ZodNumber;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     customizable: z.ZodBoolean;
     designRequired: z.ZodBoolean;
     inStock: z.ZodBoolean;
@@ -17,12 +17,12 @@ export declare const PurchaseOptions: z.ZodObject<{
     plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
         max: z.ZodOptional<z.ZodNumber>;
         min: z.ZodNumber;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     pricePercentOff: z.ZodOptional<z.ZodNumber>;
     quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
         requiredStepIncrement: z.ZodNumber;
         startingAtQty: z.ZodNumber;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     stockQty: z.ZodNumber;
     suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
     tierPrices: z.ZodArray<z.ZodObject<{
@@ -31,8 +31,8 @@ export declare const PurchaseOptions: z.ZodObject<{
         pricePercentOff: z.ZodOptional<z.ZodNumber>;
         salePrice: z.ZodOptional<z.ZodNumber>;
         startingAtQty: z.ZodNumber;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     toBeDiscontinued: z.ZodBoolean;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type PurchaseOptions = z.infer<typeof PurchaseOptions>;
 //# sourceMappingURL=PurchaseOptions.d.ts.map

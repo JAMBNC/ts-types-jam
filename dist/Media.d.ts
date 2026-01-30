@@ -19,6 +19,6 @@ export declare const Media: z.ZodObject<{
         other: "other";
     }>>>;
     url: z.ZodString;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Media = z.infer<typeof Media>;
 //# sourceMappingURL=Media.d.ts.map

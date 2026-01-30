@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const DesignerInitializationPayload = z.object({
+export const DesignerInitializationPayload = z
+    .object({
     /**The designer configuration schema or URI endpoint that returns a designer configuration schema*/
     config: z
         .union([z.record(z.any()), z.string().url()])
@@ -7,14 +8,17 @@ export const DesignerInitializationPayload = z.object({
     /**A Product schema or URI endpoint that returns a Product schema*/
     product: z
         .union([
-        z.object({
+        z
+            .object({
             badges: z.array(z.string()).optional(),
             brand: z.string().optional(),
             browsable: z.boolean(),
             content: z
                 .object({
                 breadcrumbs: z
-                    .array(z.object({ label: z.string(), url: z.string().optional() }))
+                    .array(z
+                    .object({ label: z.string(), url: z.string().optional() })
+                    .passthrough())
                     .optional(),
                 longDescription: z.string().optional(),
                 metaDescription: z.string().optional(),
@@ -24,6 +28,7 @@ export const DesignerInitializationPayload = z.object({
                 shortDescription: z.string().optional(),
                 shortName: z.string().optional(),
             })
+                .passthrough()
                 .optional(),
             createdAt: z.string().datetime({ offset: true }).optional(),
             customization: z
@@ -34,11 +39,13 @@ export const DesignerInitializationPayload = z.object({
                 stockType: z.string().optional(),
                 styleType: z.string().optional(),
             })
+                .passthrough()
                 .optional(),
             displayGroup: z.string().optional(),
             identifiers: z.record(z.any()).optional(),
             media: z
-                .array(z.object({
+                .array(z
+                .object({
                 altText: z.string().optional(),
                 label: z.string().optional(),
                 mediaType: z.enum(["image", "video"]),
@@ -57,11 +64,17 @@ export const DesignerInitializationPayload = z.object({
                 ]))
                     .optional(),
                 url: z.string(),
-            }))
+            })
+                .passthrough())
                 .optional(),
             name: z.string(),
             primaryCategory: z
-                .object({ id: z.number().int(), label: z.string(), url: z.string() })
+                .object({
+                id: z.number().int(),
+                label: z.string(),
+                url: z.string(),
+            })
+                .passthrough()
                 .optional(),
             purchaseOptions: z
                 .object({
@@ -71,6 +84,7 @@ export const DesignerInitializationPayload = z.object({
                     max: z.number().int().gte(0).optional(),
                     min: z.number().int().gte(0),
                 })
+                    .passthrough()
                     .optional(),
                 customizable: z.boolean(),
                 designRequired: z.boolean(),
@@ -86,64 +100,82 @@ export const DesignerInitializationPayload = z.object({
                     max: z.number().int().gte(0).optional(),
                     min: z.number().int().gte(0),
                 })
+                    .passthrough()
                     .optional(),
                 pricePercentOff: z.number().optional(),
                 quantityStepIncrements: z
-                    .array(z.object({
+                    .array(z
+                    .object({
                     requiredStepIncrement: z.number().int(),
                     startingAtQty: z.number().int(),
-                }))
+                })
+                    .passthrough())
                     .optional(),
                 stockQty: z.number().int().gte(0),
                 suggestedQuantityDisplays: z.array(z.number().int()).optional(),
-                tierPrices: z.array(z.object({
+                tierPrices: z.array(z
+                    .object({
                     discountReason: z.string().optional(),
                     price: z.number(),
                     pricePercentOff: z.number().optional(),
                     salePrice: z.number().optional(),
                     startingAtQty: z.number().int(),
-                })),
+                })
+                    .passthrough()),
                 toBeDiscontinued: z.boolean(),
             })
+                .passthrough()
                 .optional(),
             searchable: z.boolean(),
             sku: z.string(),
             specs: z.record(z.string()),
             status: z.string().optional(),
-            taxonomy: z.object({
+            taxonomy: z
+                .object({
                 master: z.string().optional(),
                 primary: z.string().optional(),
                 sub: z.string().optional(),
-            }),
+            })
+                .passthrough(),
             upc: z.string().optional(),
             updatedAt: z.string().datetime({ offset: true }).optional(),
             url: z
-                .array(z.object({
+                .array(z
+                .object({
                 metaData: z
                     .object({
                     creativeEngine: z.enum(["chili", "alchemy"]).optional(),
-                    designer: z.enum(["chili", "luma", "addrLogo"]).optional(),
+                    designer: z
+                        .enum(["chili", "luma", "addrLogo"])
+                        .optional(),
                 })
+                    .passthrough()
                     .optional(),
                 url: z.string().optional(),
                 urlType: z
                     .enum(["product", "customProduct", "yourLogoHere"])
                     .optional(),
-            }))
+            })
+                .passthrough())
                 .min(1),
-        }),
+        })
+            .passthrough(),
         z.string().url(),
     ])
         .describe("A Product schema or URI endpoint that returns a Product schema"),
-    endpoints: z.object({
-        design: z.object({
+    endpoints: z
+        .object({
+        design: z
+            .object({
             /**The endpoint URL for saving the designer data*/
             save: z
                 .string()
                 .url()
                 .describe("The endpoint URL for saving the designer data"),
-        }),
-        image: z.object({
+        })
+            .passthrough(),
+        image: z
+            .object({
             /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
             gallery: z
                 .string()
@@ -164,8 +196,10 @@ export const DesignerInitializationPayload = z.object({
                 .string()
                 .url()
                 .describe("The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)"),
-        }),
-        fonts: z.object({
+        })
+            .passthrough(),
+        fonts: z
+            .object({
             /**The (optional) endpoint URL for retrieving all supported fonts*/
             all: z
                 .string()
@@ -177,12 +211,15 @@ export const DesignerInitializationPayload = z.object({
                 .string()
                 .url()
                 .describe("The endpoint URL for retrieving a font file by uuid "),
-        }),
-    }),
-    auth: z.object({
+        })
+            .passthrough(),
+    })
+        .passthrough(),
+    auth: z
+        .object({
         /**A discriminated union of all supported authentication types.*/
         chiliAuth: z
-            .union([
+            .discriminatedUnion("type", [
             z
                 .object({
                 type: z.literal("bearer"),
@@ -195,9 +232,13 @@ export const DesignerInitializationPayload = z.object({
                 .object({
                 type: z.literal("basic"),
                 /**The username for authentication.*/
-                username: z.string().describe("The username for authentication."),
+                username: z
+                    .string()
+                    .describe("The username for authentication."),
                 /**The password for authentication.*/
-                password: z.string().describe("The password for authentication."),
+                password: z
+                    .string()
+                    .describe("The password for authentication."),
             })
                 .strict()
                 .describe("Basic authentication using a username and password."),
@@ -293,7 +334,7 @@ export const DesignerInitializationPayload = z.object({
             .describe("A discriminated union of all supported authentication types."),
         /**A discriminated union of all supported authentication types.*/
         endpointAuth: z
-            .union([
+            .discriminatedUnion("type", [
             z
                 .object({
                 type: z.literal("bearer"),
@@ -306,9 +347,13 @@ export const DesignerInitializationPayload = z.object({
                 .object({
                 type: z.literal("basic"),
                 /**The username for authentication.*/
-                username: z.string().describe("The username for authentication."),
+                username: z
+                    .string()
+                    .describe("The username for authentication."),
                 /**The password for authentication.*/
-                password: z.string().describe("The password for authentication."),
+                password: z
+                    .string()
+                    .describe("The password for authentication."),
             })
                 .strict()
                 .describe("Basic authentication using a username and password."),
@@ -403,22 +448,26 @@ export const DesignerInitializationPayload = z.object({
         ])
             .describe("A discriminated union of all supported authentication types.")
             .optional(),
-    }),
+    })
+        .passthrough(),
     /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
     pricing: z
         .union([
         z
-            .record(z.array(z.object({
+            .record(z.array(z
+            .object({
             badges: z.array(z.string()).optional(),
             brand: z.string().optional(),
             browsable: z.boolean(),
             content: z
                 .object({
                 breadcrumbs: z
-                    .array(z.object({
+                    .array(z
+                    .object({
                     label: z.string(),
                     url: z.string().optional(),
-                }))
+                })
+                    .passthrough())
                     .optional(),
                 longDescription: z.string().optional(),
                 metaDescription: z.string().optional(),
@@ -428,6 +477,7 @@ export const DesignerInitializationPayload = z.object({
                 shortDescription: z.string().optional(),
                 shortName: z.string().optional(),
             })
+                .passthrough()
                 .optional(),
             createdAt: z.string().datetime({ offset: true }).optional(),
             customization: z
@@ -438,11 +488,13 @@ export const DesignerInitializationPayload = z.object({
                 stockType: z.string().optional(),
                 styleType: z.string().optional(),
             })
+                .passthrough()
                 .optional(),
             displayGroup: z.string().optional(),
             identifiers: z.record(z.any()).optional(),
             media: z
-                .array(z.object({
+                .array(z
+                .object({
                 altText: z.string().optional(),
                 label: z.string().optional(),
                 mediaType: z.enum(["image", "video"]),
@@ -461,7 +513,8 @@ export const DesignerInitializationPayload = z.object({
                 ]))
                     .optional(),
                 url: z.string(),
-            }))
+            })
+                .passthrough())
                 .optional(),
             name: z.string(),
             primaryCategory: z
@@ -470,6 +523,7 @@ export const DesignerInitializationPayload = z.object({
                 label: z.string(),
                 url: z.string(),
             })
+                .passthrough()
                 .optional(),
             purchaseOptions: z
                 .object({
@@ -479,6 +533,7 @@ export const DesignerInitializationPayload = z.object({
                     max: z.number().int().gte(0).optional(),
                     min: z.number().int().gte(0),
                 })
+                    .passthrough()
                     .optional(),
                 customizable: z.boolean(),
                 designRequired: z.boolean(),
@@ -494,56 +549,70 @@ export const DesignerInitializationPayload = z.object({
                     max: z.number().int().gte(0).optional(),
                     min: z.number().int().gte(0),
                 })
+                    .passthrough()
                     .optional(),
                 pricePercentOff: z.number().optional(),
                 quantityStepIncrements: z
-                    .array(z.object({
+                    .array(z
+                    .object({
                     requiredStepIncrement: z.number().int(),
                     startingAtQty: z.number().int(),
-                }))
+                })
+                    .passthrough())
                     .optional(),
                 stockQty: z.number().int().gte(0),
                 suggestedQuantityDisplays: z
                     .array(z.number().int())
                     .optional(),
-                tierPrices: z.array(z.object({
+                tierPrices: z.array(z
+                    .object({
                     discountReason: z.string().optional(),
                     price: z.number(),
                     pricePercentOff: z.number().optional(),
                     salePrice: z.number().optional(),
                     startingAtQty: z.number().int(),
-                })),
+                })
+                    .passthrough()),
                 toBeDiscontinued: z.boolean(),
             })
+                .passthrough()
                 .optional(),
             searchable: z.boolean(),
             sku: z.string(),
             specs: z.record(z.string()),
             status: z.string().optional(),
-            taxonomy: z.object({
+            taxonomy: z
+                .object({
                 master: z.string().optional(),
                 primary: z.string().optional(),
                 sub: z.string().optional(),
-            }),
+            })
+                .passthrough(),
             upc: z.string().optional(),
             updatedAt: z.string().datetime({ offset: true }).optional(),
             url: z
-                .array(z.object({
+                .array(z
+                .object({
                 metaData: z
                     .object({
-                    creativeEngine: z.enum(["chili", "alchemy"]).optional(),
+                    creativeEngine: z
+                        .enum(["chili", "alchemy"])
+                        .optional(),
                     designer: z
                         .enum(["chili", "luma", "addrLogo"])
                         .optional(),
                 })
+                    .passthrough()
                     .optional(),
                 url: z.string().optional(),
                 urlType: z
                     .enum(["product", "customProduct", "yourLogoHere"])
                     .optional(),
-            }))
+            })
+                .passthrough())
                 .min(1),
-        })))
+        })
+            .passthrough()))
             .describe("Price tiers keyed by product SKU."),
         z.string().url(),
     ])
@@ -552,7 +621,8 @@ export const DesignerInitializationPayload = z.object({
     /**The UI Label schema used to configure the labels on the designer (optional)*/
     uiLabels: z
         .union([
-        z.object({
+        z
+            .object({
             /**The label showed with the undo button on the menu bar*/
             "menubar.undo.label": z
                 .string()
@@ -701,6 +771,7 @@ export const DesignerInitializationPayload = z.object({
                     .describe("The label used when presenting the current colors of the image")
                     .default("My Image Colors"),
             })
+                .passthrough()
                 .optional(),
             /**The label used for the Mailing Address tool in the.toolBar*/
             "workspace.toolBar.stack.mailingAddress.label": z
@@ -795,6 +866,7 @@ export const DesignerInitializationPayload = z.object({
                     .describe("The label for the address preview input")
                     .default("Address Preview"),
             })
+                .passthrough()
                 .optional(),
             /**The mailing address address input label*/
             "workspace.toolBar.tab.mailingAddress.address.label": z
@@ -834,6 +906,7 @@ export const DesignerInitializationPayload = z.object({
                     .describe("The label used when presenting the current colors of the image")
                     .default("My Image Colors"),
             })
+                .passthrough()
                 .optional(),
             /**The label used for the Image tool in the.toolBar*/
             "workspace.toolBar.stack.image.label": z
@@ -1145,7 +1218,8 @@ export const DesignerInitializationPayload = z.object({
                 .string()
                 .describe("The ui label for variable addressing on side two")
                 .default("Variable Addressing Side 2"),
-        }),
+        })
+            .passthrough(),
         z.string().url(),
     ])
         .describe("The UI Label schema used to configure the labels on the designer (optional)")
@@ -1171,4 +1245,5 @@ export const DesignerInitializationPayload = z.object({
         .record(z.any())
         .describe("An (optional) object containing additional metadata for the designer initialization payload.")
         .optional(),
-});
+})
+    .passthrough();

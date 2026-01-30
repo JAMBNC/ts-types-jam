@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const LineItem = z.object({
+export const LineItem = z
+    .object({
     children: z.array(z.any()).optional(),
     discountAmount: z.number().gte(0).optional(),
     identifiers: z.record(z.any()).optional(),
@@ -12,4 +13,5 @@ export const LineItem = z.object({
     taxAmount: z.number().gte(0),
     total: z.number().gte(0),
     weightInPounds: z.number().gte(0),
-});
+})
+    .passthrough();

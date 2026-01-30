@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const Address = z.object({
+export const Address = z
+    .object({
     city: z.string(),
     company: z.string().optional(),
     country: z.string().optional(),
@@ -10,4 +11,5 @@ export const Address = z.object({
     postal: z.string().optional(),
     region: z.string().optional(),
     streets: z.array(z.string()),
-});
+})
+    .passthrough();

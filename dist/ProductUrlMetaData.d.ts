@@ -9,6 +9,6 @@ export declare const ProductUrlMetaData: z.ZodObject<{
         luma: "luma";
         addrLogo: "addrLogo";
     }>>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type ProductUrlMetaData = z.infer<typeof ProductUrlMetaData>;
 //# sourceMappingURL=ProductUrlMetaData.d.ts.map

@@ -12,6 +12,6 @@ export declare const Payment: z.ZodObject<{
     paymentDate: z.ZodOptional<z.ZodString>;
     poNumber: z.ZodOptional<z.ZodString>;
     status: z.ZodOptional<z.ZodString>;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Payment = z.infer<typeof Payment>;
 //# sourceMappingURL=Payment.d.ts.map

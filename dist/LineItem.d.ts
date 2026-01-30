@@ -12,6 +12,6 @@ export declare const LineItem: z.ZodObject<{
     taxAmount: z.ZodNumber;
     total: z.ZodNumber;
     weightInPounds: z.ZodNumber;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type LineItem = z.infer<typeof LineItem>;
 //# sourceMappingURL=LineItem.d.ts.map

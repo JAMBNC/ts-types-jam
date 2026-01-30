@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const InkSelectorV1ComponentLabels = z.object({
+export const InkSelectorV1ComponentLabels = z
+    .object({
     /**The label for the standard inks selection tab*/
     "tabs.standard.label": z
         .string()
@@ -20,4 +21,5 @@ export const InkSelectorV1ComponentLabels = z.object({
         .string()
         .describe("The label used when presenting the current colors of the image")
         .default("My Image Colors"),
-});
+})
+    .passthrough();

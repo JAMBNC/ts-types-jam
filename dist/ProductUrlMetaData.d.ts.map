@@ -1,1 +1,1 @@
-{"version":3,"file":"ProductUrlMetaData.d.ts","sourceRoot":"","sources":["../schemas/ProductUrlMetaData.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,kBAAkB;;;;;;;;;;iBAG7B,CAAC;AACH,MAAM,MAAM,kBAAkB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,kBAAkB,CAAC,CAAC"}
+{"version":3,"file":"ProductUrlMetaData.d.ts","sourceRoot":"","sources":["../schemas/ProductUrlMetaData.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,kBAAkB;;;;;;;;;;iBAKf,CAAC;AACjB,MAAM,MAAM,kBAAkB,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,kBAAkB,CAAC,CAAC"}

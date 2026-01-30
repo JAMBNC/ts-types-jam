@@ -1,1 +1,1 @@
-{"version":3,"file":"Breadcrumb.d.ts","sourceRoot":"","sources":["../schemas/Breadcrumb.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,UAAU;;;iBAGrB,CAAC;AACH,MAAM,MAAM,UAAU,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,UAAU,CAAC,CAAC"}
+{"version":3,"file":"Breadcrumb.d.ts","sourceRoot":"","sources":["../schemas/Breadcrumb.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,UAAU;;;iBAEP,CAAC;AACjB,MAAM,MAAM,UAAU,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,UAAU,CAAC,CAAC"}

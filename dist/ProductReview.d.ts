@@ -5,7 +5,7 @@ export declare const ProductReview: z.ZodObject<{
             choices: z.ZodArray<z.ZodString>;
             selected: z.ZodOptional<z.ZodArray<z.ZodString>>;
             type: z.ZodLiteral<"Tag">;
-        }, z.core.$strip>>>;
+        }, z.core.$loose>>>;
         comments: z.ZodOptional<z.ZodString>;
         createdAt: z.ZodOptional<z.ZodString>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -31,7 +31,7 @@ export declare const ProductReview: z.ZodObject<{
                 other: "other";
             }>>>;
             url: z.ZodString;
-        }, z.core.$strip>>>;
+        }, z.core.$loose>>>;
         merchantResponses: z.ZodOptional<z.ZodArray<z.ZodObject<{
             createdAt: z.ZodOptional<z.ZodString>;
             identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -41,21 +41,21 @@ export declare const ProductReview: z.ZodObject<{
             responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
             updatedAt: z.ZodOptional<z.ZodString>;
             votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
-        }, z.core.$strip>>>;
+        }, z.core.$loose>>>;
         nickname: z.ZodOptional<z.ZodString>;
         rating: z.ZodOptional<z.ZodNumber>;
         sku: z.ZodString;
         source: z.ZodOptional<z.ZodLiteral<"email">>;
         title: z.ZodOptional<z.ZodString>;
         votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     summary: z.ZodOptional<z.ZodObject<{
         displayGroupId: z.ZodOptional<z.ZodNumber>;
         maxRating: z.ZodOptional<z.ZodNumber>;
         rating: z.ZodOptional<z.ZodNumber>;
         reviewCount: z.ZodOptional<z.ZodNumber>;
         sku: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>;
-}, z.core.$strip>;
+    }, z.core.$loose>>;
+}, z.core.$loose>;
 export type ProductReview = z.infer<typeof ProductReview>;
 //# sourceMappingURL=ProductReview.d.ts.map

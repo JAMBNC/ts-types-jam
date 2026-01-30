@@ -11,7 +11,7 @@ export declare const Order: z.ZodObject<{
         postal: z.ZodOptional<z.ZodString>;
         region: z.ZodOptional<z.ZodString>;
         streets: z.ZodArray<z.ZodString>;
-    }, z.core.$strip>;
+    }, z.core.$loose>;
     comments: z.ZodOptional<z.ZodString>;
     currencyCode: z.ZodOptional<z.ZodString>;
     customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -20,7 +20,7 @@ export declare const Order: z.ZodObject<{
         code: z.ZodOptional<z.ZodString>;
         description: z.ZodOptional<z.ZodString>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     email: z.ZodOptional<z.ZodString>;
     firstName: z.ZodOptional<z.ZodString>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
@@ -38,7 +38,7 @@ export declare const Order: z.ZodObject<{
         taxAmount: z.ZodNumber;
         total: z.ZodNumber;
         weightInPounds: z.ZodNumber;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     orderDate: z.ZodOptional<z.ZodString>;
     orderNumber: z.ZodString;
     payments: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -54,7 +54,7 @@ export declare const Order: z.ZodObject<{
         paymentDate: z.ZodOptional<z.ZodString>;
         poNumber: z.ZodOptional<z.ZodString>;
         status: z.ZodOptional<z.ZodString>;
-    }, z.core.$strip>>>;
+    }, z.core.$loose>>>;
     salesChannel: z.ZodString;
     shippingAddress: z.ZodOptional<z.ZodObject<{
         city: z.ZodString;
@@ -67,7 +67,7 @@ export declare const Order: z.ZodObject<{
         postal: z.ZodOptional<z.ZodString>;
         region: z.ZodOptional<z.ZodString>;
         streets: z.ZodArray<z.ZodString>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     shippingAmount: z.ZodNumber;
     shippingInfo: z.ZodOptional<z.ZodObject<{
         accountNumber: z.ZodOptional<z.ZodString>;
@@ -81,11 +81,11 @@ export declare const Order: z.ZodObject<{
             Other: "Other";
         }>;
         weightInPounds: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strip>>;
+    }, z.core.$loose>>;
     status: z.ZodOptional<z.ZodLiteral<"CREATED">>;
     subtotal: z.ZodNumber;
     taxAmount: z.ZodNumber;
     total: z.ZodNumber;
-}, z.core.$strip>;
+}, z.core.$loose>;
 export type Order = z.infer<typeof Order>;
 //# sourceMappingURL=Order.d.ts.map

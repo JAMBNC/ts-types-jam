@@ -1,6 +1,8 @@
 import { z } from "zod";
-export const Order = z.object({
-    billingAddress: z.object({
+export const Order = z
+    .object({
+    billingAddress: z
+        .object({
         city: z.string(),
         company: z.string().optional(),
         country: z.string().optional(),
@@ -11,24 +13,28 @@ export const Order = z.object({
         postal: z.string().optional(),
         region: z.string().optional(),
         streets: z.array(z.string()),
-    }),
+    })
+        .passthrough(),
     comments: z.string().optional(),
     currencyCode: z.string().optional(),
     customerIdentifiers: z.record(z.any()).optional(),
     discounts: z
-        .array(z.object({
+        .array(z
+        .object({
         amount: z.number().gte(0).optional(),
         code: z.string().optional(),
         description: z.string().optional(),
         identifiers: z.record(z.any()).optional(),
-    }))
+    })
+        .passthrough())
         .optional(),
     email: z.string().optional(),
     firstName: z.string().optional(),
     identifiers: z.record(z.any()).optional(),
     lastName: z.string().optional(),
     lineItems: z
-        .array(z.object({
+        .array(z
+        .object({
         children: z.array(z.any()).optional(),
         discountAmount: z.number().gte(0).optional(),
         identifiers: z.record(z.any()).optional(),
@@ -41,7 +47,8 @@ export const Order = z.object({
         taxAmount: z.number().gte(0),
         total: z.number().gte(0),
         weightInPounds: z.number().gte(0),
-    }))
+    })
+        .passthrough())
         .min(1),
     orderDate: z.string().datetime({ offset: true }).optional(),
     /**Globally unique orderNumber.  Usually a combination of sales channel and order number*/
@@ -51,7 +58,8 @@ export const Order = z.object({
         .max(50)
         .describe("Globally unique orderNumber.  Usually a combination of sales channel and order number"),
     payments: z
-        .array(z.object({
+        .array(z
+        .object({
         amount: z.number().gte(0).optional(),
         billToName: z.string().optional(),
         identifiers: z.record(z.any()).optional(),
@@ -59,7 +67,8 @@ export const Order = z.object({
         paymentDate: z.string().datetime({ offset: true }).optional(),
         poNumber: z.string().optional(),
         status: z.string().optional(),
-    }))
+    })
+        .passthrough())
         .optional(),
     salesChannel: z.string(),
     shippingAddress: z
@@ -75,6 +84,7 @@ export const Order = z.object({
         region: z.string().optional(),
         streets: z.array(z.string()),
     })
+        .passthrough()
         .optional(),
     shippingAmount: z.number().gte(0),
     shippingInfo: z
@@ -86,9 +96,11 @@ export const Order = z.object({
         provider: z.enum(["FedEx", "UPS", "USPS", "Other"]),
         weightInPounds: z.number().gte(0).optional(),
     })
+        .passthrough()
         .optional(),
     status: z.literal("CREATED").optional(),
     subtotal: z.number().gte(0),
     taxAmount: z.number().gte(0),
     total: z.number().gte(0),
-});
+})
+    .passthrough();

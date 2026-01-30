@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const VariableAddressInputV1ComponentLabels = z.object({
+export const VariableAddressInputV1ComponentLabels = z
+    .object({
     /**The text used as the description for downloading the address template*/
     "download.description": z
         .string()
@@ -55,4 +56,5 @@ export const VariableAddressInputV1ComponentLabels = z.object({
         .string()
         .describe("The label for the address preview input")
         .default("Address Preview"),
-});
+})
+    .passthrough();
