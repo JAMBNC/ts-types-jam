@@ -9,7 +9,146 @@ export const DesignerInitializationPayload = z.object({
     ),
   /**A Product schema or URI endpoint that returns a Product schema*/
   product: z
-    .union([z.any(), z.string().url()])
+    .union([
+      z.object({
+        badges: z.array(z.string()).optional(),
+        brand: z.string().optional(),
+        browsable: z.boolean(),
+        content: z
+          .object({
+            breadcrumbs: z
+              .array(
+                z.object({ label: z.string(), url: z.string().optional() }),
+              )
+              .optional(),
+            longDescription: z.string().optional(),
+            metaDescription: z.string().optional(),
+            metaKeywords: z.string().optional(),
+            metaTitle: z.string().optional(),
+            seoDescription: z.string().optional(),
+            shortDescription: z.string().optional(),
+            shortName: z.string().optional(),
+          })
+          .optional(),
+        createdAt: z.string().datetime({ offset: true }).optional(),
+        customization: z
+          .object({
+            prebuiltConfigurationId: z.string().optional(),
+            prebuiltCustomizable: z.boolean().optional(),
+            prebuiltDesign: z.boolean().optional(),
+            stockType: z.string().optional(),
+            styleType: z.string().optional(),
+          })
+          .optional(),
+        displayGroup: z.string().optional(),
+        identifiers: z.record(z.any()).optional(),
+        media: z
+          .array(
+            z.object({
+              altText: z.string().optional(),
+              label: z.string().optional(),
+              mediaType: z.enum(["image", "video"]),
+              previewUrl: z.string().optional(),
+              tags: z
+                .array(
+                  z.enum([
+                    "primary",
+                    "small",
+                    "thumbnail",
+                    "yourLogoHere",
+                    "insideView",
+                    "swatch",
+                    "amazon",
+                    "carousel",
+                    "other",
+                  ]),
+                )
+                .optional(),
+              url: z.string(),
+            }),
+          )
+          .optional(),
+        name: z.string(),
+        primaryCategory: z
+          .object({ id: z.number().int(), label: z.string(), url: z.string() })
+          .optional(),
+        purchaseOptions: z
+          .object({
+            allowsSample: z.boolean(),
+            customLeadTimeDayRange: z
+              .object({
+                max: z.number().int().gte(0).optional(),
+                min: z.number().int().gte(0),
+              })
+              .optional(),
+            customizable: z.boolean(),
+            designRequired: z.boolean(),
+            inStock: z.boolean(),
+            isReturnable: z.boolean(),
+            maxPrice: z.number(),
+            minCustomizationQty: z.number().int().gt(0).optional(),
+            minPrice: z.number(),
+            minSaleQty: z.number().int().gt(0).optional(),
+            onSale: z.boolean().optional(),
+            plainLeadTimeDayRange: z
+              .object({
+                max: z.number().int().gte(0).optional(),
+                min: z.number().int().gte(0),
+              })
+              .optional(),
+            pricePercentOff: z.number().optional(),
+            quantityStepIncrements: z
+              .array(
+                z.object({
+                  requiredStepIncrement: z.number().int(),
+                  startingAtQty: z.number().int(),
+                }),
+              )
+              .optional(),
+            stockQty: z.number().int().gte(0),
+            suggestedQuantityDisplays: z.array(z.number().int()).optional(),
+            tierPrices: z.array(
+              z.object({
+                discountReason: z.string().optional(),
+                price: z.number(),
+                pricePercentOff: z.number().optional(),
+                salePrice: z.number().optional(),
+                startingAtQty: z.number().int(),
+              }),
+            ),
+            toBeDiscontinued: z.boolean(),
+          })
+          .optional(),
+        searchable: z.boolean(),
+        sku: z.string(),
+        specs: z.record(z.string()),
+        status: z.string().optional(),
+        taxonomy: z.object({
+          master: z.string().optional(),
+          primary: z.string().optional(),
+          sub: z.string().optional(),
+        }),
+        upc: z.string().optional(),
+        updatedAt: z.string().datetime({ offset: true }).optional(),
+        url: z
+          .array(
+            z.object({
+              metaData: z
+                .object({
+                  creativeEngine: z.enum(["chili", "alchemy"]).optional(),
+                  designer: z.enum(["chili", "luma", "addrLogo"]).optional(),
+                })
+                .optional(),
+              url: z.string().optional(),
+              urlType: z
+                .enum(["product", "customProduct", "yourLogoHere"])
+                .optional(),
+            }),
+          )
+          .min(1),
+      }),
+      z.string().url(),
+    ])
     .describe("A Product schema or URI endpoint that returns a Product schema"),
   endpoints: z.object({
     design: z.object({
@@ -65,7 +204,247 @@ export const DesignerInitializationPayload = z.object({
         .describe("The endpoint URL for retrieving a font file by uuid "),
     }),
   }),
-  auth: z.any(),
+  auth: z.object({
+    /**A discriminated union of all supported authentication types.*/
+    chiliAuth: z
+      .union([
+        z
+          .object({
+            type: z.literal("bearer"),
+            /**The bearer token value.*/
+            token: z.string().describe("The bearer token value."),
+          })
+          .strict()
+          .describe("A bearer token that is sent in the Authorization header."),
+        z
+          .object({
+            type: z.literal("basic"),
+            /**The username for authentication.*/
+            username: z.string().describe("The username for authentication."),
+            /**The password for authentication.*/
+            password: z.string().describe("The password for authentication."),
+          })
+          .strict()
+          .describe("Basic authentication using a username and password."),
+        z
+          .object({
+            type: z.literal("apiKey"),
+            /**The API key value.*/
+            key: z.string().describe("The API key value."),
+            /**The header name to use for the API key.*/
+            headerName: z
+              .string()
+              .describe("The header name to use for the API key.")
+              .default("X-API-Key"),
+            /**Where to send the API key.*/
+            in: z
+              .enum(["header", "query"])
+              .describe("Where to send the API key.")
+              .default("header"),
+          })
+          .strict()
+          .describe(
+            "API key authentication, typically sent as a header or query parameter.",
+          ),
+        z
+          .object({
+            type: z.literal("oauth2_client_credentials"),
+            /**The OAuth2 client ID.*/
+            clientId: z.string().describe("The OAuth2 client ID."),
+            /**The OAuth2 client secret.*/
+            clientSecret: z.string().describe("The OAuth2 client secret."),
+            /**The URL to obtain access tokens from.*/
+            tokenUrl: z
+              .string()
+              .url()
+              .describe("The URL to obtain access tokens from."),
+            /**The scopes to request.*/
+            scopes: z
+              .array(z.string())
+              .describe("The scopes to request.")
+              .optional(),
+          })
+          .strict()
+          .describe("OAuth2 client credentials for machine-to-machine."),
+        z
+          .object({
+            type: z.literal("oauth2_authorization_code"),
+            /**The OAuth2 client ID.*/
+            clientId: z.string().describe("The OAuth2 client ID."),
+            /**The OAuth2 client secret.*/
+            clientSecret: z.string().describe("The OAuth2 client secret."),
+            /**The URL to redirect users for authorization.*/
+            authorizationUrl: z
+              .string()
+              .url()
+              .describe("The URL to redirect users for authorization."),
+            /**The URL to exchange authorization codes for tokens.*/
+            tokenUrl: z
+              .string()
+              .url()
+              .describe("The URL to exchange authorization codes for tokens."),
+            /**The redirect URI registered with the OAuth2 provider.*/
+            redirectUri: z
+              .string()
+              .url()
+              .describe(
+                "The redirect URI registered with the OAuth2 provider.",
+              ),
+            /**The scopes to request.*/
+            scopes: z
+              .array(z.string())
+              .describe("The scopes to request.")
+              .optional(),
+          })
+          .strict()
+          .describe(
+            "OAuth2 authorization code grant for user-delegated authentication.",
+          ),
+        z
+          .object({
+            type: z.literal("oauth2_refresh_token"),
+            /**The OAuth2 client ID.*/
+            clientId: z.string().describe("The OAuth2 client ID."),
+            /**The OAuth2 client secret.*/
+            clientSecret: z
+              .string()
+              .describe("The OAuth2 client secret.")
+              .optional(),
+            /**The URL to obtain new access tokens.*/
+            tokenUrl: z
+              .string()
+              .url()
+              .describe("The URL to obtain new access tokens."),
+            /**The refresh token value.*/
+            refreshToken: z.string().describe("The refresh token value."),
+          })
+          .strict()
+          .describe(
+            "OAuth2 refresh token grant for obtaining new access tokens.",
+          ),
+      ])
+      .describe("A discriminated union of all supported authentication types."),
+    /**A discriminated union of all supported authentication types.*/
+    endpointAuth: z
+      .union([
+        z
+          .object({
+            type: z.literal("bearer"),
+            /**The bearer token value.*/
+            token: z.string().describe("The bearer token value."),
+          })
+          .strict()
+          .describe("A bearer token that is sent in the Authorization header."),
+        z
+          .object({
+            type: z.literal("basic"),
+            /**The username for authentication.*/
+            username: z.string().describe("The username for authentication."),
+            /**The password for authentication.*/
+            password: z.string().describe("The password for authentication."),
+          })
+          .strict()
+          .describe("Basic authentication using a username and password."),
+        z
+          .object({
+            type: z.literal("apiKey"),
+            /**The API key value.*/
+            key: z.string().describe("The API key value."),
+            /**The header name to use for the API key.*/
+            headerName: z
+              .string()
+              .describe("The header name to use for the API key.")
+              .default("X-API-Key"),
+            /**Where to send the API key.*/
+            in: z
+              .enum(["header", "query"])
+              .describe("Where to send the API key.")
+              .default("header"),
+          })
+          .strict()
+          .describe(
+            "API key authentication, typically sent as a header or query parameter.",
+          ),
+        z
+          .object({
+            type: z.literal("oauth2_client_credentials"),
+            /**The OAuth2 client ID.*/
+            clientId: z.string().describe("The OAuth2 client ID."),
+            /**The OAuth2 client secret.*/
+            clientSecret: z.string().describe("The OAuth2 client secret."),
+            /**The URL to obtain access tokens from.*/
+            tokenUrl: z
+              .string()
+              .url()
+              .describe("The URL to obtain access tokens from."),
+            /**The scopes to request.*/
+            scopes: z
+              .array(z.string())
+              .describe("The scopes to request.")
+              .optional(),
+          })
+          .strict()
+          .describe("OAuth2 client credentials for machine-to-machine."),
+        z
+          .object({
+            type: z.literal("oauth2_authorization_code"),
+            /**The OAuth2 client ID.*/
+            clientId: z.string().describe("The OAuth2 client ID."),
+            /**The OAuth2 client secret.*/
+            clientSecret: z.string().describe("The OAuth2 client secret."),
+            /**The URL to redirect users for authorization.*/
+            authorizationUrl: z
+              .string()
+              .url()
+              .describe("The URL to redirect users for authorization."),
+            /**The URL to exchange authorization codes for tokens.*/
+            tokenUrl: z
+              .string()
+              .url()
+              .describe("The URL to exchange authorization codes for tokens."),
+            /**The redirect URI registered with the OAuth2 provider.*/
+            redirectUri: z
+              .string()
+              .url()
+              .describe(
+                "The redirect URI registered with the OAuth2 provider.",
+              ),
+            /**The scopes to request.*/
+            scopes: z
+              .array(z.string())
+              .describe("The scopes to request.")
+              .optional(),
+          })
+          .strict()
+          .describe(
+            "OAuth2 authorization code grant for user-delegated authentication.",
+          ),
+        z
+          .object({
+            type: z.literal("oauth2_refresh_token"),
+            /**The OAuth2 client ID.*/
+            clientId: z.string().describe("The OAuth2 client ID."),
+            /**The OAuth2 client secret.*/
+            clientSecret: z
+              .string()
+              .describe("The OAuth2 client secret.")
+              .optional(),
+            /**The URL to obtain new access tokens.*/
+            tokenUrl: z
+              .string()
+              .url()
+              .describe("The URL to obtain new access tokens."),
+            /**The refresh token value.*/
+            refreshToken: z.string().describe("The refresh token value."),
+          })
+          .strict()
+          .describe(
+            "OAuth2 refresh token grant for obtaining new access tokens.",
+          ),
+      ])
+      .describe("A discriminated union of all supported authentication types.")
+      .optional(),
+  }),
   /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
   pricing: z
     .union([
@@ -73,11 +452,152 @@ export const DesignerInitializationPayload = z.object({
         .record(
           z.array(
             z.object({
-              discountReason: z.string().optional(),
-              price: z.number(),
-              pricePercentOff: z.number().optional(),
-              salePrice: z.number().optional(),
-              startingAtQty: z.number().int(),
+              badges: z.array(z.string()).optional(),
+              brand: z.string().optional(),
+              browsable: z.boolean(),
+              content: z
+                .object({
+                  breadcrumbs: z
+                    .array(
+                      z.object({
+                        label: z.string(),
+                        url: z.string().optional(),
+                      }),
+                    )
+                    .optional(),
+                  longDescription: z.string().optional(),
+                  metaDescription: z.string().optional(),
+                  metaKeywords: z.string().optional(),
+                  metaTitle: z.string().optional(),
+                  seoDescription: z.string().optional(),
+                  shortDescription: z.string().optional(),
+                  shortName: z.string().optional(),
+                })
+                .optional(),
+              createdAt: z.string().datetime({ offset: true }).optional(),
+              customization: z
+                .object({
+                  prebuiltConfigurationId: z.string().optional(),
+                  prebuiltCustomizable: z.boolean().optional(),
+                  prebuiltDesign: z.boolean().optional(),
+                  stockType: z.string().optional(),
+                  styleType: z.string().optional(),
+                })
+                .optional(),
+              displayGroup: z.string().optional(),
+              identifiers: z.record(z.any()).optional(),
+              media: z
+                .array(
+                  z.object({
+                    altText: z.string().optional(),
+                    label: z.string().optional(),
+                    mediaType: z.enum(["image", "video"]),
+                    previewUrl: z.string().optional(),
+                    tags: z
+                      .array(
+                        z.enum([
+                          "primary",
+                          "small",
+                          "thumbnail",
+                          "yourLogoHere",
+                          "insideView",
+                          "swatch",
+                          "amazon",
+                          "carousel",
+                          "other",
+                        ]),
+                      )
+                      .optional(),
+                    url: z.string(),
+                  }),
+                )
+                .optional(),
+              name: z.string(),
+              primaryCategory: z
+                .object({
+                  id: z.number().int(),
+                  label: z.string(),
+                  url: z.string(),
+                })
+                .optional(),
+              purchaseOptions: z
+                .object({
+                  allowsSample: z.boolean(),
+                  customLeadTimeDayRange: z
+                    .object({
+                      max: z.number().int().gte(0).optional(),
+                      min: z.number().int().gte(0),
+                    })
+                    .optional(),
+                  customizable: z.boolean(),
+                  designRequired: z.boolean(),
+                  inStock: z.boolean(),
+                  isReturnable: z.boolean(),
+                  maxPrice: z.number(),
+                  minCustomizationQty: z.number().int().gt(0).optional(),
+                  minPrice: z.number(),
+                  minSaleQty: z.number().int().gt(0).optional(),
+                  onSale: z.boolean().optional(),
+                  plainLeadTimeDayRange: z
+                    .object({
+                      max: z.number().int().gte(0).optional(),
+                      min: z.number().int().gte(0),
+                    })
+                    .optional(),
+                  pricePercentOff: z.number().optional(),
+                  quantityStepIncrements: z
+                    .array(
+                      z.object({
+                        requiredStepIncrement: z.number().int(),
+                        startingAtQty: z.number().int(),
+                      }),
+                    )
+                    .optional(),
+                  stockQty: z.number().int().gte(0),
+                  suggestedQuantityDisplays: z
+                    .array(z.number().int())
+                    .optional(),
+                  tierPrices: z.array(
+                    z.object({
+                      discountReason: z.string().optional(),
+                      price: z.number(),
+                      pricePercentOff: z.number().optional(),
+                      salePrice: z.number().optional(),
+                      startingAtQty: z.number().int(),
+                    }),
+                  ),
+                  toBeDiscontinued: z.boolean(),
+                })
+                .optional(),
+              searchable: z.boolean(),
+              sku: z.string(),
+              specs: z.record(z.string()),
+              status: z.string().optional(),
+              taxonomy: z.object({
+                master: z.string().optional(),
+                primary: z.string().optional(),
+                sub: z.string().optional(),
+              }),
+              upc: z.string().optional(),
+              updatedAt: z.string().datetime({ offset: true }).optional(),
+              url: z
+                .array(
+                  z.object({
+                    metaData: z
+                      .object({
+                        creativeEngine: z.enum(["chili", "alchemy"]).optional(),
+                        designer: z
+                          .enum(["chili", "luma", "addrLogo"])
+                          .optional(),
+                      })
+                      .optional(),
+                    url: z.string().optional(),
+                    urlType: z
+                      .enum(["product", "customProduct", "yourLogoHere"])
+                      .optional(),
+                  }),
+                )
+                .min(1),
             }),
           ),
         )

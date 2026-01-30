@@ -1,7 +1,18 @@
 import { z } from "zod";
 
 export const Order = z.object({
-  billingAddress: z.any(),
+  billingAddress: z.object({
+    city: z.string(),
+    company: z.string().optional(),
+    country: z.string().optional(),
+    firstName: z.string().optional(),
+    identifiers: z.record(z.any()).optional(),
+    lastName: z.string().optional(),
+    phone: z.string().optional(),
+    postal: z.string().optional(),
+    region: z.string().optional(),
+    streets: z.array(z.string()),
+  }),
   comments: z.string().optional(),
   currencyCode: z.string().optional(),
   customerIdentifiers: z.record(z.any()).optional(),
@@ -60,7 +71,20 @@ export const Order = z.object({
     )
     .optional(),
   salesChannel: z.string(),
-  shippingAddress: z.any().optional(),
+  shippingAddress: z
+    .object({
+      city: z.string(),
+      company: z.string().optional(),
+      country: z.string().optional(),
+      firstName: z.string().optional(),
+      identifiers: z.record(z.any()).optional(),
+      lastName: z.string().optional(),
+      phone: z.string().optional(),
+      postal: z.string().optional(),
+      region: z.string().optional(),
+      streets: z.array(z.string()),
+    })
+    .optional(),
   shippingAmount: z.number().gte(0),
   shippingInfo: z
     .object({

@@ -1,7 +1,126 @@
 import { z } from "zod";
 export declare const DesignerInitializationPayload: z.ZodObject<{
     config: z.ZodUnion<readonly [z.ZodRecord<z.ZodAny, z.core.SomeType>, z.ZodString]>;
-    product: z.ZodUnion<readonly [z.ZodAny, z.ZodString]>;
+    product: z.ZodUnion<readonly [z.ZodObject<{
+        badges: z.ZodOptional<z.ZodArray<z.ZodString>>;
+        brand: z.ZodOptional<z.ZodString>;
+        browsable: z.ZodBoolean;
+        content: z.ZodOptional<z.ZodObject<{
+            breadcrumbs: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                label: z.ZodString;
+                url: z.ZodOptional<z.ZodString>;
+            }, z.core.$strip>>>;
+            longDescription: z.ZodOptional<z.ZodString>;
+            metaDescription: z.ZodOptional<z.ZodString>;
+            metaKeywords: z.ZodOptional<z.ZodString>;
+            metaTitle: z.ZodOptional<z.ZodString>;
+            seoDescription: z.ZodOptional<z.ZodString>;
+            shortDescription: z.ZodOptional<z.ZodString>;
+            shortName: z.ZodOptional<z.ZodString>;
+        }, z.core.$strip>>;
+        createdAt: z.ZodOptional<z.ZodString>;
+        customization: z.ZodOptional<z.ZodObject<{
+            prebuiltConfigurationId: z.ZodOptional<z.ZodString>;
+            prebuiltCustomizable: z.ZodOptional<z.ZodBoolean>;
+            prebuiltDesign: z.ZodOptional<z.ZodBoolean>;
+            stockType: z.ZodOptional<z.ZodString>;
+            styleType: z.ZodOptional<z.ZodString>;
+        }, z.core.$strip>>;
+        displayGroup: z.ZodOptional<z.ZodString>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        media: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            altText: z.ZodOptional<z.ZodString>;
+            label: z.ZodOptional<z.ZodString>;
+            mediaType: z.ZodEnum<{
+                image: "image";
+                video: "video";
+            }>;
+            previewUrl: z.ZodOptional<z.ZodString>;
+            tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
+                primary: "primary";
+                small: "small";
+                thumbnail: "thumbnail";
+                yourLogoHere: "yourLogoHere";
+                insideView: "insideView";
+                swatch: "swatch";
+                amazon: "amazon";
+                carousel: "carousel";
+                other: "other";
+            }>>>;
+            url: z.ZodString;
+        }, z.core.$strip>>>;
+        name: z.ZodString;
+        primaryCategory: z.ZodOptional<z.ZodObject<{
+            id: z.ZodNumber;
+            label: z.ZodString;
+            url: z.ZodString;
+        }, z.core.$strip>>;
+        purchaseOptions: z.ZodOptional<z.ZodObject<{
+            allowsSample: z.ZodBoolean;
+            customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+                max: z.ZodOptional<z.ZodNumber>;
+                min: z.ZodNumber;
+            }, z.core.$strip>>;
+            customizable: z.ZodBoolean;
+            designRequired: z.ZodBoolean;
+            inStock: z.ZodBoolean;
+            isReturnable: z.ZodBoolean;
+            maxPrice: z.ZodNumber;
+            minCustomizationQty: z.ZodOptional<z.ZodNumber>;
+            minPrice: z.ZodNumber;
+            minSaleQty: z.ZodOptional<z.ZodNumber>;
+            onSale: z.ZodOptional<z.ZodBoolean>;
+            plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
+                max: z.ZodOptional<z.ZodNumber>;
+                min: z.ZodNumber;
+            }, z.core.$strip>>;
+            pricePercentOff: z.ZodOptional<z.ZodNumber>;
+            quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                requiredStepIncrement: z.ZodNumber;
+                startingAtQty: z.ZodNumber;
+            }, z.core.$strip>>>;
+            stockQty: z.ZodNumber;
+            suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+            tierPrices: z.ZodArray<z.ZodObject<{
+                discountReason: z.ZodOptional<z.ZodString>;
+                price: z.ZodNumber;
+                pricePercentOff: z.ZodOptional<z.ZodNumber>;
+                salePrice: z.ZodOptional<z.ZodNumber>;
+                startingAtQty: z.ZodNumber;
+            }, z.core.$strip>>;
+            toBeDiscontinued: z.ZodBoolean;
+        }, z.core.$strip>>;
+        searchable: z.ZodBoolean;
+        sku: z.ZodString;
+        specs: z.ZodRecord<z.ZodString, z.core.SomeType>;
+        status: z.ZodOptional<z.ZodString>;
+        taxonomy: z.ZodObject<{
+            master: z.ZodOptional<z.ZodString>;
+            primary: z.ZodOptional<z.ZodString>;
+            sub: z.ZodOptional<z.ZodString>;
+        }, z.core.$strip>;
+        upc: z.ZodOptional<z.ZodString>;
+        updatedAt: z.ZodOptional<z.ZodString>;
+        url: z.ZodArray<z.ZodObject<{
+            metaData: z.ZodOptional<z.ZodObject<{
+                creativeEngine: z.ZodOptional<z.ZodEnum<{
+                    chili: "chili";
+                    alchemy: "alchemy";
+                }>>;
+                designer: z.ZodOptional<z.ZodEnum<{
+                    chili: "chili";
+                    luma: "luma";
+                    addrLogo: "addrLogo";
+                }>>;
+            }, z.core.$strip>>;
+            url: z.ZodOptional<z.ZodString>;
+            urlType: z.ZodOptional<z.ZodEnum<{
+                yourLogoHere: "yourLogoHere";
+                product: "product";
+                customProduct: "customProduct";
+            }>>;
+        }, z.core.$strip>>;
+    }, z.core.$strip>, z.ZodString]>;
     endpoints: z.ZodObject<{
         design: z.ZodObject<{
             save: z.ZodString;
@@ -17,7 +136,80 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             get: z.ZodString;
         }, z.core.$strip>;
     }, z.core.$strip>;
-    auth: z.ZodAny;
+    auth: z.ZodObject<{
+        chiliAuth: z.ZodUnion<readonly [z.ZodObject<{
+            type: z.ZodLiteral<"bearer">;
+            token: z.ZodString;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"basic">;
+            username: z.ZodString;
+            password: z.ZodString;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"apiKey">;
+            key: z.ZodString;
+            headerName: z.ZodDefault<z.ZodString>;
+            in: z.ZodDefault<z.ZodEnum<{
+                header: "header";
+                query: "query";
+            }>>;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"oauth2_client_credentials">;
+            clientId: z.ZodString;
+            clientSecret: z.ZodString;
+            tokenUrl: z.ZodString;
+            scopes: z.ZodOptional<z.ZodArray<z.ZodString>>;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"oauth2_authorization_code">;
+            clientId: z.ZodString;
+            clientSecret: z.ZodString;
+            authorizationUrl: z.ZodString;
+            tokenUrl: z.ZodString;
+            redirectUri: z.ZodString;
+            scopes: z.ZodOptional<z.ZodArray<z.ZodString>>;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"oauth2_refresh_token">;
+            clientId: z.ZodString;
+            clientSecret: z.ZodOptional<z.ZodString>;
+            tokenUrl: z.ZodString;
+            refreshToken: z.ZodString;
+        }, z.core.$strict>]>;
+        endpointAuth: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+            type: z.ZodLiteral<"bearer">;
+            token: z.ZodString;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"basic">;
+            username: z.ZodString;
+            password: z.ZodString;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"apiKey">;
+            key: z.ZodString;
+            headerName: z.ZodDefault<z.ZodString>;
+            in: z.ZodDefault<z.ZodEnum<{
+                header: "header";
+                query: "query";
+            }>>;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"oauth2_client_credentials">;
+            clientId: z.ZodString;
+            clientSecret: z.ZodString;
+            tokenUrl: z.ZodString;
+            scopes: z.ZodOptional<z.ZodArray<z.ZodString>>;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"oauth2_authorization_code">;
+            clientId: z.ZodString;
+            clientSecret: z.ZodString;
+            authorizationUrl: z.ZodString;
+            tokenUrl: z.ZodString;
+            redirectUri: z.ZodString;
+            scopes: z.ZodOptional<z.ZodArray<z.ZodString>>;
+        }, z.core.$strict>, z.ZodObject<{
+            type: z.ZodLiteral<"oauth2_refresh_token">;
+            clientId: z.ZodString;
+            clientSecret: z.ZodOptional<z.ZodString>;
+            tokenUrl: z.ZodString;
+            refreshToken: z.ZodString;
+        }, z.core.$strict>]>>;
+    }, z.core.$strip>;
     pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
     uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
