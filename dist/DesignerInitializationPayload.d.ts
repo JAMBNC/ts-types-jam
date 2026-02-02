@@ -309,8 +309,19 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
     }, z.core.$loose>, z.ZodString]>>;
     fonts: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        uuid: z.ZodString;
-        name: z.ZodString;
+        familyName: z.ZodString;
+        fonts: z.ZodArray<z.ZodObject<{
+            uuid: z.ZodString;
+            style: z.ZodEnum<{
+                regular: "regular";
+                italic: "italic";
+                bold: "bold";
+                bold_italic: "bold_italic";
+                light: "light";
+                light_italic: "light_italic";
+            }>;
+            name: z.ZodOptional<z.ZodString>;
+        }, z.core.$strict>>;
     }, z.core.$strict>>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
 }, z.core.$loose>;
