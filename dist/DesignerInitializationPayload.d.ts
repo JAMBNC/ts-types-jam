@@ -135,9 +135,9 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             all: z.ZodOptional<z.ZodString>;
             get: z.ZodString;
         }, z.core.$strict>;
-        colors: z.ZodOptional<z.ZodObject<{
-            all: z.ZodOptional<z.ZodString>;
-        }, z.core.$strict>>;
+        colors: z.ZodObject<{
+            all: z.ZodString;
+        }, z.core.$strict>;
     }, z.core.$strict>;
     auth: z.ZodObject<{
         chiliAuth: z.ZodObject<{
@@ -186,7 +186,13 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             refreshToken: z.ZodString;
         }, z.core.$strict>]>>;
     }, z.core.$strict>;
-    pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
+    pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.ZodString, z.ZodArray<z.ZodObject<{
+        discountReason: z.ZodOptional<z.ZodString>;
+        price: z.ZodNumber;
+        pricePercentOff: z.ZodOptional<z.ZodNumber>;
+        salePrice: z.ZodOptional<z.ZodNumber>;
+        startingAtQty: z.ZodNumber;
+    }, z.core.$loose>>>, z.ZodString]>>;
     uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
         "menubar.undo.icon": z.ZodDefault<z.ZodString>;

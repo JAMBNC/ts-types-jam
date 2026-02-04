@@ -12,6 +12,9 @@ export const Color = z
     representations: z
       .record(
         z
+          .enum(["sRGB", "US_Web_Coated_SWOP_v2"])
+          .describe("Known color space names."),
+        z
           .array(z.number())
           .min(3)
           .max(4)

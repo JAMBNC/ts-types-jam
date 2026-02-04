@@ -13,9 +13,9 @@ export declare const DesignerEndpoints: z.ZodObject<{
         all: z.ZodOptional<z.ZodString>;
         get: z.ZodString;
     }, z.core.$strict>;
-    colors: z.ZodOptional<z.ZodObject<{
-        all: z.ZodOptional<z.ZodString>;
-    }, z.core.$strict>>;
+    colors: z.ZodObject<{
+        all: z.ZodString;
+    }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerEndpoints = z.infer<typeof DesignerEndpoints>;
 //# sourceMappingURL=DesignerEndpoints.d.ts.map

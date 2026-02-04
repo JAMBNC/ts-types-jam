@@ -1,7 +1,7 @@
 import { z } from "zod";
 /**Price tiers keyed by product SKU.*/
 export const DesignerPricing = z
-    .record(z.array(z
+    .record(z.string().describe("A product sku"), z.array(z
     .object({
     discountReason: z.string().optional(),
     price: z.number(),

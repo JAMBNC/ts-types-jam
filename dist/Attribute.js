@@ -9,7 +9,9 @@ export const Attribute = z
         .array(z
         .object({
         identifiers: z.record(z.any()),
-        swatches: z.record(z.string()).optional(),
+        swatches: z
+            .record(z.enum(["TEXT", "IMAGE", "RGB"]), z.string())
+            .optional(),
         value: z.string(),
     })
         .passthrough())

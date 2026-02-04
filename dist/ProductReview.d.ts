@@ -47,7 +47,10 @@ export declare const ProductReview: z.ZodObject<{
         sku: z.ZodString;
         source: z.ZodOptional<z.ZodLiteral<"email">>;
         title: z.ZodOptional<z.ZodString>;
-        votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
+        votes: z.ZodOptional<z.ZodRecord<z.ZodEnum<{
+            helpful: "helpful";
+            unhelpful: "unhelpful";
+        }>, z.ZodNumber>>;
     }, z.core.$loose>>;
     summary: z.ZodOptional<z.ZodObject<{
         displayGroupId: z.ZodOptional<z.ZodNumber>;

@@ -8,8 +8,7 @@ export const DesignerColorEndpoints = z
       .url()
       .describe(
         "The (optional) endpoint URL for retrieving all supported colors + palettes",
-      )
-      .optional(),
+      ),
   })
   .strict();
 export type DesignerColorEndpoints = z.infer<typeof DesignerColorEndpoints>;

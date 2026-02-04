@@ -46,7 +46,10 @@ export declare const ReviewDetail: z.ZodObject<{
     sku: z.ZodString;
     source: z.ZodOptional<z.ZodLiteral<"email">>;
     title: z.ZodOptional<z.ZodString>;
-    votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
+    votes: z.ZodOptional<z.ZodRecord<z.ZodEnum<{
+        helpful: "helpful";
+        unhelpful: "unhelpful";
+    }>, z.ZodNumber>>;
 }, z.core.$loose>;
 export type ReviewDetail = z.infer<typeof ReviewDetail>;
 //# sourceMappingURL=ReviewDetail.d.ts.map

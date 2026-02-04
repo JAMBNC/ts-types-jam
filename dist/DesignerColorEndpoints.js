@@ -5,7 +5,6 @@ export const DesignerColorEndpoints = z
     all: z
         .string()
         .url()
-        .describe("The (optional) endpoint URL for retrieving all supported colors + palettes")
-        .optional(),
+        .describe("The (optional) endpoint URL for retrieving all supported colors + palettes"),
 })
     .strict();

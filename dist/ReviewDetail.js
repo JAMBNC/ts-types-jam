@@ -58,6 +58,8 @@ export const ReviewDetail = z
     sku: z.string(),
     source: z.literal("email").optional(),
     title: z.string().optional(),
-    votes: z.record(z.number().int()).optional(),
+    votes: z
+        .record(z.enum(["helpful", "unhelpful"]), z.number().int())
+        .optional(),
 })
     .passthrough();

@@ -248,11 +248,9 @@ export const DesignerInitializationPayload = z
               .url()
               .describe(
                 "The (optional) endpoint URL for retrieving all supported colors + palettes",
-              )
-              .optional(),
+              ),
           })
-          .strict()
-          .optional(),
+          .strict(),
       })
       .strict(),
     auth: z
@@ -415,6 +413,7 @@ export const DesignerInitializationPayload = z
       .union([
         z
           .record(
+            z.string().describe("A product sku"),
             z.array(
               z
                 .object({

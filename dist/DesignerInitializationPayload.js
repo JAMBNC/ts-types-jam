@@ -219,11 +219,9 @@ export const DesignerInitializationPayload = z
             all: z
                 .string()
                 .url()
-                .describe("The (optional) endpoint URL for retrieving all supported colors + palettes")
-                .optional(),
+                .describe("The (optional) endpoint URL for retrieving all supported colors + palettes"),
         })
-            .strict()
-            .optional(),
+            .strict(),
     })
         .strict(),
     auth: z
@@ -369,7 +367,7 @@ export const DesignerInitializationPayload = z
     pricing: z
         .union([
         z
-            .record(z.array(z
+            .record(z.string().describe("A product sku"), z.array(z
             .object({
             discountReason: z.string().optional(),
             price: z.number(),

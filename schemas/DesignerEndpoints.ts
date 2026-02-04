@@ -68,11 +68,9 @@ export const DesignerEndpoints = z
           .url()
           .describe(
             "The (optional) endpoint URL for retrieving all supported colors + palettes",
-          )
-          .optional(),
+          ),
       })
-      .strict()
-      .optional(),
+      .strict(),
   })
   .strict();
 export type DesignerEndpoints = z.infer<typeof DesignerEndpoints>;

@@ -9,6 +9,18 @@ export const VendorColor = z
     /**Pricing group names keyed by supported process.*/
     processes: z
         .record(z
+        .enum([
+        "offset",
+        "digital",
+        "foil",
+        "emboss",
+        "screen",
+        "inkjet",
+        "flexography",
+        "sublimation",
+        "thermal",
+    ])
+        .describe("Defines how visual content is transferred to the medium."), z
         .object({
         pricingGroup: z.string().optional(),
         /**Pricing group names keyed by supported process.*/
