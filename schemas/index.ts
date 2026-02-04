@@ -54,6 +54,7 @@ export * from './Auth.js';
 export * from './DesignerSaveEndpoints.js';
 export * from './DesignerImageEndpoints.js';
 export * from './DesignerFontEndpoints.js';
+export * from './DesignerColorEndpoints.js';
 export * from './DesignerEndpoints.js';
 export * from './DesignerAuth.js';
 export * from './DesignerPricing.js';

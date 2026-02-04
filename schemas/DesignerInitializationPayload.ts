@@ -240,6 +240,19 @@ export const DesignerInitializationPayload = z
               .describe("The endpoint URL for retrieving a font file by uuid "),
           })
           .strict(),
+        colors: z
+          .object({
+            /**The (optional) endpoint URL for retrieving all supported colors + palettes*/
+            all: z
+              .string()
+              .url()
+              .describe(
+                "The (optional) endpoint URL for retrieving all supported colors + palettes",
+              )
+              .optional(),
+          })
+          .strict()
+          .optional(),
       })
       .strict(),
     auth: z
@@ -1097,57 +1110,6 @@ export const DesignerInitializationPayload = z
       .describe(
         "The UI Label schema used to configure the labels on the designer (optional)",
       )
-      .optional(),
-    /**A collection of font families available in the system.*/
-    fonts: z
-      .array(
-        z
-          .object({
-            /**The name of the font family.*/
-            familyName: z.string().describe("The name of the font family."),
-            /**An array of font entries that belong to this family.*/
-            fonts: z
-              .array(
-                z
-                  .object({
-                    /**A unique UUID identifier for the font. Used to retrieve the font.*/
-                    uuid: z
-                      .string()
-                      .uuid()
-                      .describe(
-                        "A unique UUID identifier for the font. Used to retrieve the font.",
-                      ),
-                    /**The style of the font.*/
-                    style: z
-                      .enum([
-                        "regular",
-                        "italic",
-                        "bold",
-                        "bold_italic",
-                        "light",
-                        "light_italic",
-                      ])
-                      .describe("The style of the font."),
-                    /**The name of the font. Can also inferred from the family + style*/
-                    name: z
-                      .string()
-                      .describe(
-                        "The name of the font. Can also inferred from the family + style",
-                      )
-                      .optional(),
-                  })
-                  .strict()
-                  .describe(
-                    "The schema required for a single font used throughout the system.",
-                  ),
-              )
-              .min(1)
-              .describe("An array of font entries that belong to this family."),
-          })
-          .strict()
-          .describe("A collection of fonts that make up a font family."),
-      )
-      .describe("A collection of font families available in the system.")
       .optional(),
     /**An (optional) object containing additional metadata for the designer initialization payload.*/
     metadata: z

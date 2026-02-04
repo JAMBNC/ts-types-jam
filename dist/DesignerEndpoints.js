@@ -49,5 +49,16 @@ export const DesignerEndpoints = z
             .describe("The endpoint URL for retrieving a font file by uuid "),
     })
         .strict(),
+    colors: z
+        .object({
+        /**The (optional) endpoint URL for retrieving all supported colors + palettes*/
+        all: z
+            .string()
+            .url()
+            .describe("The (optional) endpoint URL for retrieving all supported colors + palettes")
+            .optional(),
+    })
+        .strict()
+        .optional(),
 })
     .strict();
