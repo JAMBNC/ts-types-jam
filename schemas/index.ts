@@ -40,6 +40,7 @@ export * from './Shipment.js';
 export * from './Color.js';
 export * from './ColorSpaceName.js';
 export * from './ColorValue.js';
+export * from './ColorPalette.js';
 export * from './Process.js';
 export * from './VendorColor.js';
 export * from './VendorProcess.js';
