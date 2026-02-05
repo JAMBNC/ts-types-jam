@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { ResponseType } from "./ResponseType.js";
 
 export const MerchantResponse = z
   .object({
@@ -7,7 +8,7 @@ export const MerchantResponse = z
     location: z.string().optional(),
     nickname: z.string().optional(),
     response: z.string().optional(),
-    responseType: z.literal("merchantResponse").optional(),
+    responseType: ResponseType.optional(),
     updatedAt: z.string().datetime({ offset: true }).optional(),
     votes: z.record(z.number().int()).optional(),
   })

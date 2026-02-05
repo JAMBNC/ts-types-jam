@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { LineItem } from "./LineItem.js";
 export const Shipment = z
     .object({
     carrier: z.string().optional(),
@@ -6,24 +7,7 @@ export const Shipment = z
     currencyCode: z.string().optional(),
     estimatedDeliveryDate: z.string().datetime({ offset: true }).optional(),
     identifiers: z.record(z.any()).optional(),
-    lineItems: z
-        .array(z
-        .object({
-        children: z.array(z.any()).optional(),
-        discountAmount: z.number().gte(0).optional(),
-        identifiers: z.record(z.any()).optional(),
-        imageUrls: z.array(z.string()).optional(),
-        name: z.string(),
-        productIdentifiers: z.record(z.any()).optional(),
-        quantity: z.number().gt(0),
-        sku: z.string(),
-        subtotal: z.number().gte(0),
-        taxAmount: z.number().gte(0),
-        total: z.number().gte(0),
-        weightInPounds: z.number().gte(0),
-    })
-        .passthrough())
-        .optional(),
+    lineItems: z.array(LineItem).optional(),
     orderIdentifiers: z.record(z.any()).optional(),
     /**Globally unique orderNumber.  Usually a combination of sales channel and order number*/
     orderNumber: z

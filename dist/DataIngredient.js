@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Dimension } from "./Dimension.js";
 /**An ingredient that holds a generic data payload such as textures or backgrounds.*/
 export const DataIngredient = z
     .object({
@@ -28,53 +29,13 @@ export const DataIngredient = z
     data: z
         .object({
         /**A numeric value with a unit of measurement.*/
-        width: z
-            .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-                .enum(["mm", "in", "px", "pt"])
-                .describe("The unit of measurement for dimensions."),
-        })
-            .strict()
-            .describe("A numeric value with a unit of measurement."),
+        width: Dimension,
         /**A numeric value with a unit of measurement.*/
-        height: z
-            .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-                .enum(["mm", "in", "px", "pt"])
-                .describe("The unit of measurement for dimensions."),
-        })
-            .strict()
-            .describe("A numeric value with a unit of measurement."),
+        height: Dimension,
         /**A numeric value with a unit of measurement.*/
-        x: z
-            .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-                .enum(["mm", "in", "px", "pt"])
-                .describe("The unit of measurement for dimensions."),
-        })
-            .strict()
-            .describe("A numeric value with a unit of measurement."),
+        x: Dimension,
         /**A numeric value with a unit of measurement.*/
-        y: z
-            .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-                .enum(["mm", "in", "px", "pt"])
-                .describe("The unit of measurement for dimensions."),
-        })
-            .strict()
-            .describe("A numeric value with a unit of measurement."),
+        y: Dimension,
         type: z.string(),
         viewLayer: z.string(),
         layerName: z.string(),

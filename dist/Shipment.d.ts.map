@@ -1,1 +1,1 @@
-{"version":3,"file":"Shipment.d.ts","sourceRoot":"","sources":["../schemas/Shipment.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,QAAQ;;;;;;;;;;;;;;;;;;;;;;;;;iBAwCL,CAAC;AACjB,MAAM,MAAM,QAAQ,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,QAAQ,CAAC,CAAC"}
+{"version":3,"file":"Shipment.d.ts","sourceRoot":"","sources":["../schemas/Shipment.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAGxB,eAAO,MAAM,QAAQ;;;;;;;;;;;;;;;;;;;;;;;;;iBAqBL,CAAC;AACjB,MAAM,MAAM,QAAQ,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,QAAQ,CAAC,CAAC"}

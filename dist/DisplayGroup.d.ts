@@ -4,9 +4,9 @@ export declare const DisplayGroup: z.ZodObject<{
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
     pivots: z.ZodArray<z.ZodObject<{
         attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
-            swatches: "swatches";
             tabs: "tabs";
             dropdown: "dropdown";
+            swatches: "swatches";
             modal: "modal";
         }>>;
         code: z.ZodString;

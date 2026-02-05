@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { SwatchType } from "./SwatchType.js";
 
 export const PredefinedAttributeValue = z
   .object({

@@ -1,81 +1,22 @@
 import { z } from "zod";
+import { Dimension } from "./Dimension.js";
 
 /**A straight line control point with in-handle, out-handle, and anchor position.*/
 export const LinePoint = z
   .object({
     type: z.literal("line"),
     /**A numeric value with a unit of measurement.*/
-    ix: z
-      .object({
-        /**The numeric value.*/
-        v: z.number().describe("The numeric value."),
-        /**The unit of measurement for dimensions.*/
-        u: z
-          .enum(["mm", "in", "px", "pt"])
-          .describe("The unit of measurement for dimensions."),
-      })
-      .strict()
-      .describe("A numeric value with a unit of measurement."),
+    ix: Dimension,
     /**A numeric value with a unit of measurement.*/
-    iy: z
-      .object({
-        /**The numeric value.*/
-        v: z.number().describe("The numeric value."),
-        /**The unit of measurement for dimensions.*/
-        u: z
-          .enum(["mm", "in", "px", "pt"])
-          .describe("The unit of measurement for dimensions."),
-      })
-      .strict()
-      .describe("A numeric value with a unit of measurement."),
+    iy: Dimension,
     /**A numeric value with a unit of measurement.*/
-    ox: z
-      .object({
-        /**The numeric value.*/
-        v: z.number().describe("The numeric value."),
-        /**The unit of measurement for dimensions.*/
-        u: z
-          .enum(["mm", "in", "px", "pt"])
-          .describe("The unit of measurement for dimensions."),
-      })
-      .strict()
-      .describe("A numeric value with a unit of measurement."),
+    ox: Dimension,
     /**A numeric value with a unit of measurement.*/
-    oy: z
-      .object({
-        /**The numeric value.*/
-        v: z.number().describe("The numeric value."),
-        /**The unit of measurement for dimensions.*/
-        u: z
-          .enum(["mm", "in", "px", "pt"])
-          .describe("The unit of measurement for dimensions."),
-      })
-      .strict()
-      .describe("A numeric value with a unit of measurement."),
+    oy: Dimension,
     /**A numeric value with a unit of measurement.*/
-    x: z
-      .object({
-        /**The numeric value.*/
-        v: z.number().describe("The numeric value."),
-        /**The unit of measurement for dimensions.*/
-        u: z
-          .enum(["mm", "in", "px", "pt"])
-          .describe("The unit of measurement for dimensions."),
-      })
-      .strict()
-      .describe("A numeric value with a unit of measurement."),
+    x: Dimension,
     /**A numeric value with a unit of measurement.*/
-    y: z
-      .object({
-        /**The numeric value.*/
-        v: z.number().describe("The numeric value."),
-        /**The unit of measurement for dimensions.*/
-        u: z
-          .enum(["mm", "in", "px", "pt"])
-          .describe("The unit of measurement for dimensions."),
-      })
-      .strict()
-      .describe("A numeric value with a unit of measurement."),
+    y: Dimension,
   })
   .strict()
   .describe(

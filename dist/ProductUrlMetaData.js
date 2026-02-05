@@ -1,7 +1,9 @@
 import { z } from "zod";
+import { ProductUrlMetaDataCreativeEngine } from "./ProductUrlMetaDataCreativeEngine.js";
+import { ProductUrlMetaDataDesigner } from "./ProductUrlMetaDataDesigner.js";
 export const ProductUrlMetaData = z
     .object({
-    creativeEngine: z.enum(["chili", "alchemy"]).optional(),
-    designer: z.enum(["chili", "luma", "addrLogo"]).optional(),
+    creativeEngine: ProductUrlMetaDataCreativeEngine.optional(),
+    designer: ProductUrlMetaDataDesigner.optional(),
 })
     .passthrough();

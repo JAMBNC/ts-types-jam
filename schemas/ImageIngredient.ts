@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Rect } from "./Rect.js";
 
 /**An ingredient that renders a raster image.*/
 export const ImageIngredient = z
@@ -38,61 +39,7 @@ export const ImageIngredient = z
       .describe("The natural height of the image in pixels.")
       .optional(),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
-    rect: z
-      .object({
-        /**A numeric value with a unit of measurement.*/
-        x: z
-          .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-              .enum(["mm", "in", "px", "pt"])
-              .describe("The unit of measurement for dimensions."),
-          })
-          .strict()
-          .describe("A numeric value with a unit of measurement."),
-        /**A numeric value with a unit of measurement.*/
-        y: z
-          .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-              .enum(["mm", "in", "px", "pt"])
-              .describe("The unit of measurement for dimensions."),
-          })
-          .strict()
-          .describe("A numeric value with a unit of measurement."),
-        /**A numeric value with a unit of measurement.*/
-        width: z
-          .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-              .enum(["mm", "in", "px", "pt"])
-              .describe("The unit of measurement for dimensions."),
-          })
-          .strict()
-          .describe("A numeric value with a unit of measurement."),
-        /**A numeric value with a unit of measurement.*/
-        height: z
-          .object({
-            /**The numeric value.*/
-            v: z.number().describe("The numeric value."),
-            /**The unit of measurement for dimensions.*/
-            u: z
-              .enum(["mm", "in", "px", "pt"])
-              .describe("The unit of measurement for dimensions."),
-          })
-          .strict()
-          .describe("A numeric value with a unit of measurement."),
-      })
-      .strict()
-      .describe(
-        "A positioned rectangle defined by x, y, width, and height measurements.",
-      ),
+    rect: Rect,
   })
   .strict()
   .describe("An ingredient that renders a raster image.");

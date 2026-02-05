@@ -1,16 +1,12 @@
 import { z } from "zod";
+import { ProductUrlMetaData } from "./ProductUrlMetaData.js";
+import { ProductUrlType } from "./ProductUrlType.js";
 
 export const ProductUrl = z
   .object({
-    metaData: z
-      .object({
-        creativeEngine: z.enum(["chili", "alchemy"]).optional(),
-        designer: z.enum(["chili", "luma", "addrLogo"]).optional(),
-      })
-      .passthrough()
-      .optional(),
+    metaData: ProductUrlMetaData.optional(),
     url: z.string().optional(),
-    urlType: z.enum(["product", "customProduct", "yourLogoHere"]).optional(),
+    urlType: ProductUrlType.optional(),
   })
   .passthrough();
 export type ProductUrl = z.infer<typeof ProductUrl>;

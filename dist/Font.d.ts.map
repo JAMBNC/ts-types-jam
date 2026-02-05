@@ -1,1 +1,1 @@
-{"version":3,"file":"Font.d.ts","sourceRoot":"","sources":["../schemas/Font.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,sEAAsE;AACtE,eAAO,MAAM,IAAI;;;;;;;;;;;kBA+Bd,CAAC;AACJ,MAAM,MAAM,IAAI,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,IAAI,CAAC,CAAC"}
+{"version":3,"file":"Font.d.ts","sourceRoot":"","sources":["../schemas/Font.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAGxB,sEAAsE;AACtE,eAAO,MAAM,IAAI;;;;;;;;;;;kBAsBd,CAAC;AACJ,MAAM,MAAM,IAAI,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,IAAI,CAAC,CAAC"}

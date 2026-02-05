@@ -1,14 +1,11 @@
 import { z } from "zod";
+import { NonNegativeIntRange } from "./NonNegativeIntRange.js";
+import { QuantityStepIncrement } from "./QuantityStepIncrement.js";
+import { TierPrice } from "./TierPrice.js";
 export const PurchaseOptions = z
     .object({
     allowsSample: z.boolean(),
-    customLeadTimeDayRange: z
-        .object({
-        max: z.number().int().gte(0).optional(),
-        min: z.number().int().gte(0),
-    })
-        .passthrough()
-        .optional(),
+    customLeadTimeDayRange: NonNegativeIntRange.optional(),
     customizable: z.boolean(),
     designRequired: z.boolean(),
     inStock: z.boolean(),
@@ -18,33 +15,12 @@ export const PurchaseOptions = z
     minPrice: z.number(),
     minSaleQty: z.number().int().gt(0).optional(),
     onSale: z.boolean().optional(),
-    plainLeadTimeDayRange: z
-        .object({
-        max: z.number().int().gte(0).optional(),
-        min: z.number().int().gte(0),
-    })
-        .passthrough()
-        .optional(),
+    plainLeadTimeDayRange: NonNegativeIntRange.optional(),
     pricePercentOff: z.number().optional(),
-    quantityStepIncrements: z
-        .array(z
-        .object({
-        requiredStepIncrement: z.number().int(),
-        startingAtQty: z.number().int(),
-    })
-        .passthrough())
-        .optional(),
+    quantityStepIncrements: z.array(QuantityStepIncrement).optional(),
     stockQty: z.number().int().gte(0),
     suggestedQuantityDisplays: z.array(z.number().int()).optional(),
-    tierPrices: z.array(z
-        .object({
-        discountReason: z.string().optional(),
-        price: z.number(),
-        pricePercentOff: z.number().optional(),
-        salePrice: z.number().optional(),
-        startingAtQty: z.number().int(),
-    })
-        .passthrough()),
+    tierPrices: z.array(TierPrice),
     toBeDiscontinued: z.boolean(),
 })
     .passthrough();

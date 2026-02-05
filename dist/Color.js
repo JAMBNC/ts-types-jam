@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { ColorValue } from "./ColorValue.js";
 export const Color = z
     .object({
     /**The normalized name for a color, used for spot name in spot applications.*/
@@ -7,18 +8,7 @@ export const Color = z
         .describe("The normalized name for a color, used for spot name in spot applications."),
     /**Color representations keyed by color space name.*/
     representations: z
-        .object({
-        sRGB: z
-            .array(z.number())
-            .min(3)
-            .max(4)
-            .describe("The numeric value of a color, dependent on the color model/color space."),
-        US_Web_Coated_SWOP_v2: z
-            .array(z.number())
-            .min(3)
-            .max(4)
-            .describe("The numeric value of a color, dependent on the color model/color space."),
-    })
+        .object({ sRGB: ColorValue, US_Web_Coated_SWOP_v2: ColorValue })
         .partial()
         .describe("Color representations keyed by color space name."),
     /**A unique UUID identifier for the color.*/

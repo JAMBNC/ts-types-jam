@@ -1,1 +1,1 @@
-{"version":3,"file":"ShoutOut.d.ts","sourceRoot":"","sources":["../schemas/ShoutOut.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,QAAQ;;;;;;;;;;;iBAOL,CAAC;AACjB,MAAM,MAAM,QAAQ,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,QAAQ,CAAC,CAAC"}
+{"version":3,"file":"ShoutOut.d.ts","sourceRoot":"","sources":["../schemas/ShoutOut.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAGxB,eAAO,MAAM,QAAQ;;;;;;;;;;;iBAOL,CAAC;AACjB,MAAM,MAAM,QAAQ,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,QAAQ,CAAC,CAAC"}

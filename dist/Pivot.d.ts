@@ -1,9 +1,9 @@
 import { z } from "zod";
 export declare const Pivot: z.ZodObject<{
     attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
-        swatches: "swatches";
         tabs: "tabs";
         dropdown: "dropdown";
+        swatches: "swatches";
         modal: "modal";
     }>>;
     code: z.ZodString;

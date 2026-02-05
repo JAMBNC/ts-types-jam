@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { Process } from "./Process.js";
+import { VendorProcess } from "./VendorProcess.js";
 
 export const VendorColor = z
   .object({
@@ -10,96 +12,15 @@ export const VendorColor = z
     /**Pricing group names keyed by supported process.*/
     processes: z
       .object({
-        offset: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        digital: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        foil: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        emboss: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        screen: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        inkjet: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        flexography: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        sublimation: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
-        thermal: z
-          .object({
-            pricingGroup: z.string().optional(),
-            /**Pricing group names keyed by supported process.*/
-            vendorColorName: z
-              .string()
-              .describe("Pricing group names keyed by supported process.")
-              .optional(),
-          })
-          .passthrough(),
+        offset: VendorProcess,
+        digital: VendorProcess,
+        foil: VendorProcess,
+        emboss: VendorProcess,
+        screen: VendorProcess,
+        inkjet: VendorProcess,
+        flexography: VendorProcess,
+        sublimation: VendorProcess,
+        thermal: VendorProcess,
       })
       .partial()
       .describe("Pricing group names keyed by supported process."),

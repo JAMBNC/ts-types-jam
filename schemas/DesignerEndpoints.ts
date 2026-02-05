@@ -1,76 +1,15 @@
 import { z } from "zod";
+import { DesignerColorEndpoints } from "./DesignerColorEndpoints.js";
+import { DesignerFontEndpoints } from "./DesignerFontEndpoints.js";
+import { DesignerImageEndpoints } from "./DesignerImageEndpoints.js";
+import { DesignerSaveEndpoints } from "./DesignerSaveEndpoints.js";
 
 export const DesignerEndpoints = z
   .object({
-    design: z
-      .object({
-        /**The endpoint URL for saving the designer data*/
-        save: z
-          .string()
-          .url()
-          .describe("The endpoint URL for saving the designer data"),
-      })
-      .strict(),
-    image: z
-      .object({
-        /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
-        gallery: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)",
-          ),
-        /**The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)*/
-        upload: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for uploading a user image (uses the DesignerAuth.endpointAuth)",
-          ),
-        /**The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)*/
-        delete: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for removing an image from the gallery. (uses the DesignerAuth.endpointAuth)",
-          ),
-        /**The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)*/
-        rendition: z
-          .string()
-          .url()
-          .describe(
-            "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
-          ),
-      })
-      .strict(),
-    fonts: z
-      .object({
-        /**The (optional) endpoint URL for retrieving all supported fonts*/
-        all: z
-          .string()
-          .url()
-          .describe(
-            "The (optional) endpoint URL for retrieving all supported fonts",
-          )
-          .optional(),
-        /**The endpoint URL for retrieving a font file by uuid */
-        get: z
-          .string()
-          .url()
-          .describe("The endpoint URL for retrieving a font file by uuid "),
-      })
-      .strict(),
-    colors: z
-      .object({
-        /**The (optional) endpoint URL for retrieving all supported colors + palettes*/
-        all: z
-          .string()
-          .url()
-          .describe(
-            "The (optional) endpoint URL for retrieving all supported colors + palettes",
-          ),
-      })
-      .strict(),
+    design: DesignerSaveEndpoints,
+    image: DesignerImageEndpoints,
+    fonts: DesignerFontEndpoints,
+    colors: DesignerColorEndpoints,
   })
   .strict();
 export type DesignerEndpoints = z.infer<typeof DesignerEndpoints>;

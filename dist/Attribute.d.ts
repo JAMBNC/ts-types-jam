@@ -14,9 +14,9 @@ export declare const Attribute: z.ZodObject<{
         value: z.ZodString;
     }, z.core.$loose>>>;
     renderPreference: z.ZodEnum<{
-        swatches: "swatches";
         tabs: "tabs";
         dropdown: "dropdown";
+        swatches: "swatches";
         modal: "modal";
     }>;
     secondarySelectionEnabled: z.ZodBoolean;

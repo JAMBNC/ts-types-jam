@@ -1,8 +1,6 @@
 import { z } from "zod";
+import { BadgePosition } from "./BadgePosition.js";
+import { Context } from "./Context.js";
 export const BadgeImage = z
-    .object({
-    context: z.enum(["product_detail", "product_listing"]),
-    position: z.enum(["topRight", "bottomRight", "bottomLeft", "topLeft"]),
-    url: z.string(),
-})
+    .object({ context: Context, position: BadgePosition, url: z.string() })
     .passthrough();

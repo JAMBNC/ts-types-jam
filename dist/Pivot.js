@@ -1,21 +1,14 @@
 import { z } from "zod";
+import { AttributeRenderPreference } from "./AttributeRenderPreference.js";
+import { PivotType } from "./PivotType.js";
+import { PivotValue } from "./PivotValue.js";
 export const Pivot = z
     .object({
-    attributeRenderPreference: z
-        .enum(["tabs", "dropdown", "swatches", "modal"])
-        .optional(),
+    attributeRenderPreference: AttributeRenderPreference.optional(),
     code: z.string(),
     helpText: z.string().optional(),
     label: z.string().optional(),
-    pivotType: z.enum(["primary", "secondary"]).optional(),
-    values: z.array(z
-        .object({
-        helpText: z.string().optional(),
-        label: z.string(),
-        products: z.array(z.string()),
-        swatchType: z.enum(["TEXT", "IMAGE", "RGB"]).optional(),
-        swatchValue: z.string().optional(),
-    })
-        .passthrough()),
+    pivotType: PivotType.optional(),
+    values: z.array(PivotValue),
 })
     .passthrough();

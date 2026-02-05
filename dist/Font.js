@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { FontStyle } from "./FontStyle.js";
 /**The schema required for a single font used throughout the system.*/
 export const Font = z
     .object({
@@ -8,16 +9,7 @@ export const Font = z
         .uuid()
         .describe("A unique UUID identifier for the font. Used to retrieve the font."),
     /**The style of the font.*/
-    style: z
-        .enum([
-        "regular",
-        "italic",
-        "bold",
-        "bold_italic",
-        "light",
-        "light_italic",
-    ])
-        .describe("The style of the font."),
+    style: FontStyle,
     /**The name of the font. Can also inferred from the family + style*/
     name: z
         .string()

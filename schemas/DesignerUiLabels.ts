@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { InkSelectorV1ComponentLabels } from "./InkSelectorV1ComponentLabels.js";
+import { VariableAddressInputV1ComponentLabels } from "./VariableAddressInputV1ComponentLabels.js";
 
 export const DesignerUiLabels = z
   .object({
@@ -133,35 +135,8 @@ export const DesignerUiLabels = z
       .string()
       .describe("The return address color input label")
       .default("Color"),
-    "workspace.toolBar.tab.returnAddress.color.component": z
-      .object({
-        /**The label for the standard inks selection tab*/
-        "tabs.standard.label": z
-          .string()
-          .describe("The label for the standard inks selection tab")
-          .default("Standard Inks"),
-        /**The label for the metallic inks selection tab*/
-        "tabs.metallic.label": z
-          .string()
-          .describe("The label for the metallic inks selection tab")
-          .default("Metallic Inks"),
-        /**The label used to display the current selected ink. Can utilize $currentInk variable*/
-        "selectedInk.label": z
-          .string()
-          .describe(
-            "The label used to display the current selected ink. Can utilize $currentInk variable",
-          )
-          .default("Selected: $currentInk"),
-        /**The label used when presenting the current colors of the image*/
-        "imageColors.label": z
-          .string()
-          .describe(
-            "The label used when presenting the current colors of the image",
-          )
-          .default("My Image Colors"),
-      })
-      .passthrough()
-      .optional(),
+    "workspace.toolBar.tab.returnAddress.color.component":
+      InkSelectorV1ComponentLabels.optional(),
     /**The label used for the Mailing Address tool in the.toolBar*/
     "workspace.toolBar.stack.mailingAddress.label": z
       .string()
@@ -197,78 +172,8 @@ export const DesignerUiLabels = z
       .string()
       .describe("The label for the multiple address component")
       .default("Adding Multiple Addresses"),
-    "workspace.toolBar.tab.mailingAddress.multipleAddress.component": z
-      .object({
-        /**The text used as the description for downloading the address template*/
-        "download.description": z
-          .string()
-          .describe(
-            "The text used as the description for downloading the address template",
-          )
-          .default(
-            "Download our template spreadsheet and enter your desired addresses in the columns provided.",
-          ),
-        /**The label used for the download template button*/
-        "download.button.label": z
-          .string()
-          .describe("The label used for the download template button")
-          .default("Download Template"),
-        /**The icon used for the download template button*/
-        "download.button.icon": z
-          .string()
-          .describe("The icon used for the download template button")
-          .default("Download"),
-        /**The text used as the description for uploading the address template*/
-        "upload.description": z
-          .string()
-          .describe(
-            "The text used as the description for uploading the address template",
-          )
-          .default(
-            "Upload your completed spreadsheet here to add your addresses.",
-          ),
-        /**The label used for the upload addresses button*/
-        "upload.button.label": z
-          .string()
-          .describe("The label used for the upload addresses button")
-          .default("Upload Spreadsheet"),
-        /**The icon used for the upload addresses button*/
-        "upload.button.icon": z
-          .string()
-          .describe("The icon used for the upload addresses button")
-          .default("CloudUploadOutlined"),
-        /**The label used after addresses uploaded successfully, can use the $fileName variable*/
-        "upload.success.label": z
-          .string()
-          .describe(
-            "The label used after addresses uploaded successfully, can use the $fileName variable",
-          )
-          .default("$fileName uploaded successfully"),
-        /**The icon used with the success label*/
-        "upload.success.icon": z
-          .string()
-          .describe("The icon used with the success label")
-          .default("Check"),
-        /**The label if the address upload failed, can use the $fileName variable*/
-        "upload.error.label": z
-          .string()
-          .describe(
-            "The label if the address upload failed, can use the $fileName variable",
-          )
-          .default("Upload Error!"),
-        /**The icon used with the error label*/
-        "upload.error.icon": z
-          .string()
-          .describe("The icon used with the error label")
-          .default("ErrorOutline"),
-        /**The label for the address preview input*/
-        "addressPreview.label": z
-          .string()
-          .describe("The label for the address preview input")
-          .default("Address Preview"),
-      })
-      .passthrough()
-      .optional(),
+    "workspace.toolBar.tab.mailingAddress.multipleAddress.component":
+      VariableAddressInputV1ComponentLabels.optional(),
     /**The mailing address address input label*/
     "workspace.toolBar.tab.mailingAddress.address.label": z
       .string()
@@ -284,35 +189,8 @@ export const DesignerUiLabels = z
       .string()
       .describe("The return address color input label")
       .default("Color"),
-    "workspace.toolBar.tab.mailingAddress.color.component": z
-      .object({
-        /**The label for the standard inks selection tab*/
-        "tabs.standard.label": z
-          .string()
-          .describe("The label for the standard inks selection tab")
-          .default("Standard Inks"),
-        /**The label for the metallic inks selection tab*/
-        "tabs.metallic.label": z
-          .string()
-          .describe("The label for the metallic inks selection tab")
-          .default("Metallic Inks"),
-        /**The label used to display the current selected ink. Can utilize $currentInk variable*/
-        "selectedInk.label": z
-          .string()
-          .describe(
-            "The label used to display the current selected ink. Can utilize $currentInk variable",
-          )
-          .default("Selected: $currentInk"),
-        /**The label used when presenting the current colors of the image*/
-        "imageColors.label": z
-          .string()
-          .describe(
-            "The label used when presenting the current colors of the image",
-          )
-          .default("My Image Colors"),
-      })
-      .passthrough()
-      .optional(),
+    "workspace.toolBar.tab.mailingAddress.color.component":
+      InkSelectorV1ComponentLabels.optional(),
     /**The label used for the Image tool in the.toolBar*/
     "workspace.toolBar.stack.image.label": z
       .string()
