@@ -68,7 +68,8 @@ export const ReviewDetail = z
     source: z.literal("email").optional(),
     title: z.string().optional(),
     votes: z
-      .record(z.enum(["helpful", "unhelpful"]), z.number().int())
+      .object({ helpful: z.number().int(), unhelpful: z.number().int() })
+      .partial()
       .optional(),
   })
   .passthrough();

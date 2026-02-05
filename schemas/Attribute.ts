@@ -12,7 +12,8 @@ export const Attribute = z
           .object({
             identifiers: z.record(z.any()),
             swatches: z
-              .record(z.enum(["TEXT", "IMAGE", "RGB"]), z.string())
+              .object({ TEXT: z.string(), IMAGE: z.string(), RGB: z.string() })
+              .partial()
               .optional(),
             value: z.string(),
           })

@@ -1,1 +1,1 @@
-{"version":3,"file":"Attribute.d.ts","sourceRoot":"","sources":["../schemas/Attribute.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;iBAuBN,CAAC;AACjB,MAAM,MAAM,SAAS,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,SAAS,CAAC,CAAC"}
+{"version":3,"file":"Attribute.d.ts","sourceRoot":"","sources":["../schemas/Attribute.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,CAAC,EAAE,MAAM,KAAK,CAAC;AAExB,eAAO,MAAM,SAAS;;;;;;;;;;;;;;;;;;;;;;iBAwBN,CAAC;AACjB,MAAM,MAAM,SAAS,GAAG,CAAC,CAAC,KAAK,CAAC,OAAO,SAAS,CAAC,CAAC"}

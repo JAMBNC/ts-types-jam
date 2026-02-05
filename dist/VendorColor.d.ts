@@ -1,20 +1,44 @@
 import { z } from "zod";
 export declare const VendorColor: z.ZodObject<{
     colorId: z.ZodString;
-    processes: z.ZodRecord<z.ZodEnum<{
-        offset: "offset";
-        digital: "digital";
-        foil: "foil";
-        emboss: "emboss";
-        screen: "screen";
-        inkjet: "inkjet";
-        flexography: "flexography";
-        sublimation: "sublimation";
-        thermal: "thermal";
-    }>, z.ZodObject<{
-        pricingGroup: z.ZodOptional<z.ZodString>;
-        vendorColorName: z.ZodOptional<z.ZodString>;
-    }, z.core.$loose>>;
+    processes: z.ZodObject<{
+        offset: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        digital: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        foil: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        emboss: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        screen: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        inkjet: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        flexography: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        sublimation: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+        thermal: z.ZodOptional<z.ZodObject<{
+            pricingGroup: z.ZodOptional<z.ZodString>;
+            vendorColorName: z.ZodOptional<z.ZodString>;
+        }, z.core.$loose>>;
+    }, z.core.$strip>;
     vendorName: z.ZodString;
 }, z.core.$loose>;
 export type VendorColor = z.infer<typeof VendorColor>;

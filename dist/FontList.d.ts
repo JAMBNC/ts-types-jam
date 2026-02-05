@@ -5,9 +5,9 @@ export declare const FontList: z.ZodArray<z.ZodObject<{
     fonts: z.ZodArray<z.ZodObject<{
         uuid: z.ZodString;
         style: z.ZodEnum<{
+            bold: "bold";
             regular: "regular";
             italic: "italic";
-            bold: "bold";
             bold_italic: "bold_italic";
             light: "light";
             light_italic: "light_italic";

@@ -10,18 +10,23 @@ export const Color = z
       ),
     /**Color representations keyed by color space name.*/
     representations: z
-      .record(
-        z
-          .enum(["sRGB", "US_Web_Coated_SWOP_v2"])
-          .describe("Known color space names."),
-        z
+      .object({
+        sRGB: z
           .array(z.number())
           .min(3)
           .max(4)
           .describe(
             "The numeric value of a color, dependent on the color model/color space.",
           ),
-      )
+        US_Web_Coated_SWOP_v2: z
+          .array(z.number())
+          .min(3)
+          .max(4)
+          .describe(
+            "The numeric value of a color, dependent on the color model/color space.",
+          ),
+      })
+      .partial()
       .describe("Color representations keyed by color space name."),
     /**A unique UUID identifier for the color.*/
     uuid: z.string().uuid().describe("A unique UUID identifier for the color."),
