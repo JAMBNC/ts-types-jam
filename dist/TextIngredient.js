@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { Color } from "./Color.js";
 import { Dimension } from "./Dimension.js";
 import { Rect } from "./Rect.js";
+import { RgbColor } from "./RgbColor.js";
 /**An ingredient that renders text content with font and style properties.*/
 export const TextIngredient = z
     .object({
@@ -33,7 +33,8 @@ export const TextIngredient = z
     fontFamily: z.string().describe("The font family name."),
     /**A numeric value with a unit of measurement.*/
     fontSize: Dimension,
-    fontColor: Color,
+    /**A color with name, hex code, and optional RGBA components.*/
+    fontColor: RgbColor,
     /**The font weight (e.g. normal, bold).*/
     fontWeight: z
         .string()

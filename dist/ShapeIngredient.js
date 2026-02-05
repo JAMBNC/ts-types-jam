@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { Color } from "./Color.js";
 import { Path } from "./Path.js";
 import { Rect } from "./Rect.js";
+import { RgbColor } from "./RgbColor.js";
 /**An ingredient defined by vector paths with optional fill and stroke.*/
 export const ShapeIngredient = z
     .object({
@@ -28,10 +28,10 @@ export const ShapeIngredient = z
     opacity: z.number().gte(0).lte(1),
     zIndex: z.number().int(),
     hasFill: z.boolean(),
-    fillColor: z.union([Color, z.null()]),
+    fillColor: z.union([RgbColor, z.null()]),
     invertFill: z.boolean(),
     hasStroke: z.boolean(),
-    strokeColor: z.union([Color, z.null()]),
+    strokeColor: z.union([RgbColor, z.null()]),
     strokeWidth: z.number(),
     lineDash: z.union([z.array(z.number()), z.null()]),
     /**Map of path IDs to path definitions.*/

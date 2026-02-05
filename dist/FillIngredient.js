@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { Color } from "./Color.js";
 import { Rect } from "./Rect.js";
+import { RgbColor } from "./RgbColor.js";
 /**An ingredient that fills a rectangular area with a solid color.*/
 export const FillIngredient = z
     .object({
@@ -26,7 +26,8 @@ export const FillIngredient = z
     isValidatorBoundingShape: z.boolean(),
     opacity: z.number().gte(0).lte(1),
     zIndex: z.number().int(),
-    color: Color,
+    /**A color with name, hex code, and optional RGBA components.*/
+    color: RgbColor,
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
 })

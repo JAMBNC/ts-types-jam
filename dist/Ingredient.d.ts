@@ -74,12 +74,13 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     zIndex: z.ZodNumber;
     color: z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
             v: z.ZodNumber;
@@ -135,22 +136,24 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     hasFill: z.ZodBoolean;
     fillColor: z.ZodUnion<readonly [z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>, z.ZodNull]>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>, z.ZodNull]>;
     invertFill: z.ZodBoolean;
     hasStroke: z.ZodBoolean;
     strokeColor: z.ZodUnion<readonly [z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>, z.ZodNull]>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>, z.ZodNull]>;
     strokeWidth: z.ZodNumber;
     lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
     paths: z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>;
@@ -210,22 +213,24 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     hasFill: z.ZodBoolean;
     fillColor: z.ZodUnion<readonly [z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>, z.ZodNull]>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>, z.ZodNull]>;
     invertFill: z.ZodBoolean;
     hasStroke: z.ZodBoolean;
     strokeColor: z.ZodUnion<readonly [z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>, z.ZodNull]>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>, z.ZodNull]>;
     strokeWidth: z.ZodNumber;
     lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
     strokeCornerRadius: z.ZodObject<{
@@ -302,12 +307,13 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     }, z.core.$strict>;
     fontColor: z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>;
     fontWeight: z.ZodOptional<z.ZodString>;
     fontStyle: z.ZodOptional<z.ZodString>;
     textAlign: z.ZodOptional<z.ZodString>;

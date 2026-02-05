@@ -27,12 +27,13 @@ export declare const TextIngredient: z.ZodObject<{
     }, z.core.$strict>;
     fontColor: z.ZodObject<{
         name: z.ZodString;
-        representations: z.ZodObject<{
-            sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-        }, z.core.$strip>;
-        uuid: z.ZodString;
-    }, z.core.$loose>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        a: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>;
     fontWeight: z.ZodOptional<z.ZodString>;
     fontStyle: z.ZodOptional<z.ZodString>;
     textAlign: z.ZodOptional<z.ZodString>;
