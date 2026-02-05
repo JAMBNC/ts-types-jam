@@ -5,6 +5,11 @@ import { Page } from "./Page.js";
 /**The complete design state containing dimensions, pages, and ingredients.*/
 export const DesignState = z
     .object({
+    /**Version identifying the source of the design.*/
+    version: z
+        .string()
+        .describe("Version identifying the source of the design.")
+        .optional(),
     /**Map of coating location definitions.*/
     coatingLocations: z
         .record(z.string(), z.any())
