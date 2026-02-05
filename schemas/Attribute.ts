@@ -6,7 +6,7 @@ export const Attribute = z
   .object({
     code: z.string(),
     displayForCustomer: z.boolean(),
-    identifiers: z.record(z.any()).optional(),
+    identifiers: z.record(z.string(), z.any()).optional(),
     label: z.string(),
     predefinedValues: z.array(PredefinedAttributeValue).optional(),
     renderPreference: AttributeRenderPreference,

@@ -5,7 +5,7 @@ export declare const Order: z.ZodObject<{
         company: z.ZodOptional<z.ZodString>;
         country: z.ZodOptional<z.ZodString>;
         firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         lastName: z.ZodOptional<z.ZodString>;
         phone: z.ZodOptional<z.ZodString>;
         postal: z.ZodOptional<z.ZodString>;
@@ -14,24 +14,24 @@ export declare const Order: z.ZodObject<{
     }, z.core.$loose>;
     comments: z.ZodOptional<z.ZodString>;
     currencyCode: z.ZodOptional<z.ZodString>;
-    customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     discounts: z.ZodOptional<z.ZodArray<z.ZodObject<{
         amount: z.ZodOptional<z.ZodNumber>;
         code: z.ZodOptional<z.ZodString>;
         description: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     }, z.core.$loose>>>;
     email: z.ZodOptional<z.ZodString>;
     firstName: z.ZodOptional<z.ZodString>;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     lastName: z.ZodOptional<z.ZodString>;
     lineItems: z.ZodArray<z.ZodObject<{
         children: z.ZodOptional<z.ZodArray<z.ZodAny>>;
         discountAmount: z.ZodOptional<z.ZodNumber>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         imageUrls: z.ZodOptional<z.ZodArray<z.ZodString>>;
         name: z.ZodString;
-        productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         quantity: z.ZodNumber;
         sku: z.ZodString;
         subtotal: z.ZodNumber;
@@ -44,7 +44,7 @@ export declare const Order: z.ZodObject<{
     payments: z.ZodOptional<z.ZodArray<z.ZodObject<{
         amount: z.ZodOptional<z.ZodNumber>;
         billToName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         method: z.ZodEnum<{
             CASH: "CASH";
             PO: "PO";
@@ -61,7 +61,7 @@ export declare const Order: z.ZodObject<{
         company: z.ZodOptional<z.ZodString>;
         country: z.ZodOptional<z.ZodString>;
         firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         lastName: z.ZodOptional<z.ZodString>;
         phone: z.ZodOptional<z.ZodString>;
         postal: z.ZodOptional<z.ZodString>;

@@ -8,7 +8,7 @@ export const DesignState = z
   .object({
     /**Map of coating location definitions.*/
     coatingLocations: z
-      .record(z.any())
+      .record(z.string(), z.any())
       .describe("Map of coating location definitions."),
     /**A numeric value with a unit of measurement.*/
     dimHeight: Dimension,
@@ -17,14 +17,16 @@ export const DesignState = z
     /**Whether the design has a buffer zone.*/
     hasBuffer: z.boolean().describe("Whether the design has a buffer zone."),
     /**Map of page IDs to page definitions.*/
-    pages: z.record(Page).describe("Map of page IDs to page definitions."),
+    pages: z
+      .record(z.string(), Page)
+      .describe("Map of page IDs to page definitions."),
     /**Ordered list of page IDs defining page sequence.*/
     pagesOrdered: z
       .array(z.string())
       .describe("Ordered list of page IDs defining page sequence."),
     /**Map of ingredient IDs to ingredient definitions.*/
     ingredients: z
-      .record(Ingredient)
+      .record(z.string(), Ingredient)
       .describe("Map of ingredient IDs to ingredient definitions."),
   })
   .strict()

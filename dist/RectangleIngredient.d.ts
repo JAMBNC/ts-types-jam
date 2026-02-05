@@ -3,7 +3,7 @@ import { z } from "zod";
 export declare const RectangleIngredient: z.ZodObject<{
     id: z.ZodString;
     type: z.ZodLiteral<"rectangle">;
-    metadata: z.ZodRecord<z.ZodAny, z.core.SomeType>;
+    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;

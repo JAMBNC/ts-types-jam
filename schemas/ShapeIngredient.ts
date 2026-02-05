@@ -10,7 +10,7 @@ export const ShapeIngredient = z
     id: z.string().describe("Unique identifier for this ingredient."),
     type: z.literal("shape"),
     /**Arbitrary metadata.*/
-    metadata: z.record(z.any()).describe("Arbitrary metadata."),
+    metadata: z.record(z.string(), z.any()).describe("Arbitrary metadata."),
     isNew: z.boolean(),
     /**The view layer this ingredient belongs to.*/
     viewLayer: z
@@ -36,7 +36,9 @@ export const ShapeIngredient = z
     strokeWidth: z.number(),
     lineDash: z.union([z.array(z.number()), z.null()]),
     /**Map of path IDs to path definitions.*/
-    paths: z.record(Path).describe("Map of path IDs to path definitions."),
+    paths: z
+      .record(z.string(), Path)
+      .describe("Map of path IDs to path definitions."),
     /**Ordered list of path IDs.*/
     pathsOrdered: z.array(z.string()).describe("Ordered list of path IDs."),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/

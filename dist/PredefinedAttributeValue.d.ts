@@ -1,6 +1,6 @@
 import { z } from "zod";
 export declare const PredefinedAttributeValue: z.ZodObject<{
-    identifiers: z.ZodRecord<z.ZodAny, z.core.SomeType>;
+    identifiers: z.ZodRecord<z.ZodString, z.ZodAny>;
     swatches: z.ZodOptional<z.ZodObject<{
         TEXT: z.ZodOptional<z.ZodString>;
         IMAGE: z.ZodOptional<z.ZodString>;

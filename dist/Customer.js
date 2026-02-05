@@ -5,7 +5,7 @@ export const Customer = z
     addresses: z.array(Address).optional(),
     email: z.string().optional(),
     firstName: z.string().optional(),
-    identifiers: z.record(z.any()).optional(),
+    identifiers: z.record(z.string(), z.any()).optional(),
     lastName: z.string().optional(),
 })
     .passthrough();

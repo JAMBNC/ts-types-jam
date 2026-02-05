@@ -25,7 +25,7 @@ export declare const Product: z.ZodObject<{
         styleType: z.ZodOptional<z.ZodString>;
     }, z.core.$loose>>;
     displayGroup: z.ZodOptional<z.ZodString>;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     media: z.ZodOptional<z.ZodArray<z.ZodObject<{
         altText: z.ZodOptional<z.ZodString>;
         label: z.ZodOptional<z.ZodString>;
@@ -90,7 +90,7 @@ export declare const Product: z.ZodObject<{
     }, z.core.$loose>>;
     searchable: z.ZodBoolean;
     sku: z.ZodString;
-    specs: z.ZodRecord<z.ZodString, z.core.SomeType>;
+    specs: z.ZodRecord<z.ZodString, z.ZodString>;
     status: z.ZodOptional<z.ZodString>;
     taxonomy: z.ZodObject<{
         master: z.ZodOptional<z.ZodString>;

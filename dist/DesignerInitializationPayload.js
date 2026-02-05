@@ -8,7 +8,7 @@ export const DesignerInitializationPayload = z
     .object({
     /**The designer configuration schema or URI endpoint that returns a designer configuration schema*/
     config: z
-        .union([z.record(z.any()), z.string().url()])
+        .union([z.record(z.string(), z.any()), z.string().url()])
         .describe("The designer configuration schema or URI endpoint that returns a designer configuration schema"),
     /**A Product schema or URI endpoint that returns a Product schema*/
     product: z
@@ -28,7 +28,7 @@ export const DesignerInitializationPayload = z
         .optional(),
     /**An (optional) object containing additional metadata for the designer initialization payload.*/
     metadata: z
-        .record(z.any())
+        .record(z.string(), z.any())
         .describe("An (optional) object containing additional metadata for the designer initialization payload.")
         .optional(),
 })

@@ -5,7 +5,7 @@ import { ShoutOut } from "./ShoutOut.js";
 export const DisplayGroup = z
     .object({
     id: z.string(),
-    identifiers: z.record(z.any()).optional(),
+    identifiers: z.record(z.string(), z.any()).optional(),
     pivots: z.array(Pivot),
     products: z.array(ProductListing),
     shoutOuts: z.array(ShoutOut).optional(),

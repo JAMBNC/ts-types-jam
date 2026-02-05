@@ -8,7 +8,7 @@ export declare const ProductReview: z.ZodObject<{
         }, z.core.$loose>>>;
         comments: z.ZodOptional<z.ZodString>;
         createdAt: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         location: z.ZodOptional<z.ZodString>;
         maxRating: z.ZodOptional<z.ZodNumber>;
         media: z.ZodOptional<z.ZodArray<z.ZodObject<{
@@ -34,13 +34,13 @@ export declare const ProductReview: z.ZodObject<{
         }, z.core.$loose>>>;
         merchantResponses: z.ZodOptional<z.ZodArray<z.ZodObject<{
             createdAt: z.ZodOptional<z.ZodString>;
-            identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+            identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
             location: z.ZodOptional<z.ZodString>;
             nickname: z.ZodOptional<z.ZodString>;
             response: z.ZodOptional<z.ZodString>;
             responseType: z.ZodOptional<z.ZodLiteral<"merchantResponse">>;
             updatedAt: z.ZodOptional<z.ZodString>;
-            votes: z.ZodOptional<z.ZodRecord<z.ZodNumber, z.core.SomeType>>;
+            votes: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodNumber>>;
         }, z.core.$loose>>>;
         nickname: z.ZodOptional<z.ZodString>;
         rating: z.ZodOptional<z.ZodNumber>;

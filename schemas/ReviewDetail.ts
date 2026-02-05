@@ -10,7 +10,7 @@ export const ReviewDetail = z
     answeredQuestions: z.array(AnsweredQuestion).optional(),
     comments: z.string().optional(),
     createdAt: z.string().datetime({ offset: true }).optional(),
-    identifiers: z.record(z.any()).optional(),
+    identifiers: z.record(z.string(), z.any()).optional(),
     location: z.string().optional(),
     maxRating: z.number().optional(),
     media: z.array(Media).optional(),

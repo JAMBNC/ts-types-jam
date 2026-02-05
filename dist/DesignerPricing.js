@@ -2,7 +2,7 @@ import { z } from "zod";
 import { TierPrice } from "./TierPrice.js";
 /**Price tiers keyed by product SKU.*/
 export const DesignerPricing = z
-    .record(z.array(TierPrice))
+    .record(z.string(), z.array(TierPrice))
     .superRefine((value, ctx) => {
     for (const key in value) {
         const result = z.string().describe("A product sku").safeParse(key);

@@ -1,7 +1,7 @@
 import { z } from "zod";
 export declare const DisplayGroup: z.ZodObject<{
     id: z.ZodString;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     pivots: z.ZodArray<z.ZodObject<{
         attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
             tabs: "tabs";
@@ -31,7 +31,7 @@ export declare const DisplayGroup: z.ZodObject<{
     products: z.ZodArray<z.ZodObject<{
         isCustomizable: z.ZodBoolean;
         mainImageUrl: z.ZodOptional<z.ZodString>;
-        pivotValues: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        pivotValues: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         shortName: z.ZodOptional<z.ZodString>;
         sku: z.ZodString;
     }, z.core.$loose>>;

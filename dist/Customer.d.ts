@@ -5,7 +5,7 @@ export declare const Customer: z.ZodObject<{
         company: z.ZodOptional<z.ZodString>;
         country: z.ZodOptional<z.ZodString>;
         firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         lastName: z.ZodOptional<z.ZodString>;
         phone: z.ZodOptional<z.ZodString>;
         postal: z.ZodOptional<z.ZodString>;
@@ -14,7 +14,7 @@ export declare const Customer: z.ZodObject<{
     }, z.core.$loose>>>;
     email: z.ZodOptional<z.ZodString>;
     firstName: z.ZodOptional<z.ZodString>;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     lastName: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;
 export type Customer = z.infer<typeof Customer>;

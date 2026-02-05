@@ -7,7 +7,9 @@ export const Path = z
     /**Whether the path is closed.*/
     isClosed: z.string().describe("Whether the path is closed."),
     /**Map of point IDs to point definitions.*/
-    points: z.record(Point).describe("Map of point IDs to point definitions."),
+    points: z
+      .record(z.string(), Point)
+      .describe("Map of point IDs to point definitions."),
     /**Ordered list of point IDs defining the path sequence.*/
     pointsOrdered: z
       .array(z.string())

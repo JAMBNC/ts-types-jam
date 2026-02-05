@@ -2,10 +2,10 @@ import { z } from "zod";
 export declare const Attribute: z.ZodObject<{
     code: z.ZodString;
     displayForCustomer: z.ZodBoolean;
-    identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     label: z.ZodString;
     predefinedValues: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        identifiers: z.ZodRecord<z.ZodAny, z.core.SomeType>;
+        identifiers: z.ZodRecord<z.ZodString, z.ZodAny>;
         swatches: z.ZodOptional<z.ZodObject<{
             TEXT: z.ZodOptional<z.ZodString>;
             IMAGE: z.ZodOptional<z.ZodString>;

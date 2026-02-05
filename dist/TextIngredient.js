@@ -9,7 +9,7 @@ export const TextIngredient = z
     id: z.string().describe("Unique identifier for this ingredient."),
     type: z.literal("text"),
     /**Arbitrary metadata.*/
-    metadata: z.record(z.any()).describe("Arbitrary metadata."),
+    metadata: z.record(z.string(), z.any()).describe("Arbitrary metadata."),
     isNew: z.boolean(),
     /**The view layer this ingredient belongs to.*/
     viewLayer: z

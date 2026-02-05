@@ -6,7 +6,7 @@ export const Address = z
     company: z.string().optional(),
     country: z.string().optional(),
     firstName: z.string().optional(),
-    identifiers: z.record(z.any()).optional(),
+    identifiers: z.record(z.string(), z.any()).optional(),
     lastName: z.string().optional(),
     phone: z.string().optional(),
     postal: z.string().optional(),

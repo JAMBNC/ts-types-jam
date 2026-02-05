@@ -1,6 +1,6 @@
 import { z } from "zod";
 export declare const DesignerInitializationPayload: z.ZodObject<{
-    config: z.ZodUnion<readonly [z.ZodRecord<z.ZodAny, z.core.SomeType>, z.ZodString]>;
+    config: z.ZodUnion<readonly [z.ZodRecord<z.ZodString, z.ZodAny>, z.ZodString]>;
     product: z.ZodUnion<readonly [z.ZodObject<{
         badges: z.ZodOptional<z.ZodArray<z.ZodString>>;
         brand: z.ZodOptional<z.ZodString>;
@@ -27,7 +27,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             styleType: z.ZodOptional<z.ZodString>;
         }, z.core.$loose>>;
         displayGroup: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         media: z.ZodOptional<z.ZodArray<z.ZodObject<{
             altText: z.ZodOptional<z.ZodString>;
             label: z.ZodOptional<z.ZodString>;
@@ -92,7 +92,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         }, z.core.$loose>>;
         searchable: z.ZodBoolean;
         sku: z.ZodString;
-        specs: z.ZodRecord<z.ZodString, z.core.SomeType>;
+        specs: z.ZodRecord<z.ZodString, z.ZodString>;
         status: z.ZodOptional<z.ZodString>;
         taxonomy: z.ZodObject<{
             master: z.ZodOptional<z.ZodString>;
@@ -186,7 +186,13 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             refreshToken: z.ZodString;
         }, z.core.$strict>]>>;
     }, z.core.$strict>;
-    pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.core.$ZodRecordKey, z.core.SomeType>, z.ZodString]>>;
+    pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.ZodString, z.ZodArray<z.ZodObject<{
+        discountReason: z.ZodOptional<z.ZodString>;
+        price: z.ZodNumber;
+        pricePercentOff: z.ZodOptional<z.ZodNumber>;
+        salePrice: z.ZodOptional<z.ZodNumber>;
+        startingAtQty: z.ZodNumber;
+    }, z.core.$loose>>>, z.ZodString]>>;
     uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
         "menubar.undo.icon": z.ZodDefault<z.ZodString>;
@@ -311,7 +317,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
     }, z.core.$loose>, z.ZodString]>>;
-    metadata: z.ZodOptional<z.ZodRecord<z.ZodAny, z.core.SomeType>>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
 }, z.core.$loose>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;
 //# sourceMappingURL=DesignerInitializationPayload.d.ts.map
