@@ -1,7 +1,11 @@
 import { z } from "zod";
 /**The complete design state containing dimensions, pages, and ingredients.*/
 export declare const DesignState: z.ZodObject<{
-    version: z.ZodOptional<z.ZodString>;
+    expansion: z.ZodOptional<z.ZodObject<{
+        canUndo: z.ZodOptional<z.ZodBoolean>;
+        canRedo: z.ZodOptional<z.ZodBoolean>;
+    }, z.core.$loose>>;
+    version: z.ZodString;
     coatingLocations: z.ZodRecord<z.ZodString, z.ZodAny>;
     dimHeight: z.ZodObject<{
         v: z.ZodNumber;
