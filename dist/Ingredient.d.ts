@@ -7,6 +7,7 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
+    editable: z.ZodOptional<z.ZodBoolean>;
     isDirty: z.ZodBoolean;
     simulated: z.ZodBoolean;
     isDropshadow: z.ZodBoolean;
@@ -65,6 +66,7 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
+    editable: z.ZodOptional<z.ZodBoolean>;
     isDirty: z.ZodBoolean;
     simulated: z.ZodBoolean;
     isDropshadow: z.ZodBoolean;
@@ -126,6 +128,7 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
+    editable: z.ZodOptional<z.ZodBoolean>;
     isDirty: z.ZodBoolean;
     simulated: z.ZodBoolean;
     isDropshadow: z.ZodBoolean;
@@ -319,6 +322,7 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
+    editable: z.ZodOptional<z.ZodBoolean>;
     isDirty: z.ZodBoolean;
     simulated: z.ZodBoolean;
     isDropshadow: z.ZodBoolean;
@@ -403,6 +407,7 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
+    editable: z.ZodOptional<z.ZodBoolean>;
     isDirty: z.ZodBoolean;
     simulated: z.ZodBoolean;
     isDropshadow: z.ZodBoolean;
@@ -479,6 +484,7 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     isNew: z.ZodBoolean;
     viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
+    editable: z.ZodOptional<z.ZodBoolean>;
     isDirty: z.ZodBoolean;
     simulated: z.ZodBoolean;
     isDropshadow: z.ZodBoolean;

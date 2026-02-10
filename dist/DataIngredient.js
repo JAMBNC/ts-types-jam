@@ -18,6 +18,7 @@ export const DataIngredient = z
         .describe("The view layer this ingredient belongs to."),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
+    editable: z.boolean().optional(),
     isDirty: z.boolean(),
     simulated: z.boolean(),
     isDropshadow: z.boolean(),
