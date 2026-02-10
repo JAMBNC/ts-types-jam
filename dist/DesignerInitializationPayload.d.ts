@@ -139,6 +139,9 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             all: z.ZodString;
             palettes: z.ZodString;
         }, z.core.$strict>;
+        vendor: z.ZodOptional<z.ZodObject<{
+            colors: z.ZodString;
+        }, z.core.$strict>>;
     }, z.core.$strict>;
     auth: z.ZodObject<{
         chiliAuth: z.ZodObject<{
