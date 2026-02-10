@@ -140,7 +140,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             palettes: z.ZodString;
         }, z.core.$strict>;
         vendor: z.ZodOptional<z.ZodObject<{
-            colors: z.ZodString;
+            colors: z.ZodOptional<z.ZodString>;
         }, z.core.$strict>>;
     }, z.core.$strict>;
     auth: z.ZodObject<{

@@ -18,7 +18,7 @@ export declare const DesignerEndpoints: z.ZodObject<{
         palettes: z.ZodString;
     }, z.core.$strict>;
     vendor: z.ZodOptional<z.ZodObject<{
-        colors: z.ZodString;
+        colors: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>>;
 }, z.core.$strict>;
 export type DesignerEndpoints = z.infer<typeof DesignerEndpoints>;

@@ -6,7 +6,8 @@ export const DesignerVendorEndpoints = z
     colors: z
       .string()
       .url()
-      .describe("The endpoint URL for retrieving all supported vendor colors"),
+      .describe("The endpoint URL for retrieving all supported vendor colors")
+      .optional(),
   })
   .strict();
 export type DesignerVendorEndpoints = z.infer<typeof DesignerVendorEndpoints>;
