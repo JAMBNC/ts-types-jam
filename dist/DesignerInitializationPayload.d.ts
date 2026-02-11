@@ -197,7 +197,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         salePrice: z.ZodOptional<z.ZodNumber>;
         startingAtQty: z.ZodNumber;
     }, z.core.$loose>>>, z.ZodString]>>;
-    uiLabels: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+    uiLabels: z.ZodDefault<z.ZodUnion<readonly [z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
         "menubar.undo.icon": z.ZodDefault<z.ZodString>;
         "menubar.redo.label": z.ZodDefault<z.ZodString>;

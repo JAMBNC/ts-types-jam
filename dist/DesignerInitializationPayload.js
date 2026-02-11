@@ -25,7 +25,7 @@ export const DesignerInitializationPayload = z
     uiLabels: z
         .union([DesignerUiLabels, z.string().url()])
         .describe("The UI Label schema used to configure the labels on the designer (optional)")
-        .optional(),
+        .default({}),
     /**An (optional) object containing additional metadata for the designer initialization payload.*/
     metadata: z
         .record(z.string(), z.any())
