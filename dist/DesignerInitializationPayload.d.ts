@@ -321,7 +321,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$loose>, z.ZodString]>>;
+    }, z.core.$strict>, z.ZodString]>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
 }, z.core.$loose>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;

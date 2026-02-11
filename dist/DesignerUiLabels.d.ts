@@ -123,6 +123,6 @@ export declare const DesignerUiLabels: z.ZodObject<{
     "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
-}, z.core.$loose>;
+}, z.core.$strict>;
 export type DesignerUiLabels = z.infer<typeof DesignerUiLabels>;
 //# sourceMappingURL=DesignerUiLabels.d.ts.map

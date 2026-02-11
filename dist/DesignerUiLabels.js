@@ -497,4 +497,4 @@ export const DesignerUiLabels = z
         .describe("The ui label for variable addressing on side two")
         .default("Variable Addressing Side 2"),
 })
-    .passthrough();
+    .strict();
