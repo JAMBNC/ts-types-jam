@@ -90,6 +90,11 @@ export const DesignerUiLabels = z
       .string()
       .describe("The label used in the button to proceed to the next steps")
       .default("Next"),
+    /**The url to the logo used within the designer.*/
+    "workspace.toolBar.logo": z
+      .string()
+      .describe("The url to the logo used within the designer.")
+      .optional(),
     /**The label used for the return address tool in the tool bar*/
     "workspace.toolBar.stack.returnAddress.label": z
       .string()
