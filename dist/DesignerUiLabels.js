@@ -12,7 +12,7 @@ export const DesignerUiLabels = z
     "menubar.undo.icon": z
         .string()
         .describe("The icon showed with the undo button on the menu bar")
-        .default("Undo"),
+        .default("undo"),
     /**The label showed with the redo button on the menu bar*/
     "menubar.redo.label": z
         .string()
@@ -22,7 +22,7 @@ export const DesignerUiLabels = z
     "menubar.redo.icon": z
         .string()
         .describe("The icon showed with the redo button on the menu bar")
-        .default("Redo"),
+        .default("redo"),
     /**The label showed when there is nothing to save on the menu bar*/
     "menubar.saveStatus.none.label": z
         .string()
@@ -32,7 +32,7 @@ export const DesignerUiLabels = z
     "menubar.saveStatus.none.icon": z
         .string()
         .describe("The icon showed when there is nothing to save on the menu bar")
-        .default("AccessTime"),
+        .default("access_alarm"),
     /**The label showed when saving is in progress on the menu bar*/
     "menubar.saveStatus.progress.label": z
         .string()
@@ -42,7 +42,7 @@ export const DesignerUiLabels = z
     "menubar.saveStatus.progress.icon": z
         .string()
         .describe("The icon showed when saving is in progress on the menu bar")
-        .default("Update"),
+        .default("update"),
     /**The label showed when saving is complete on the menu bar*/
     "menubar.saveStatus.success.label": z
         .string()
@@ -52,7 +52,7 @@ export const DesignerUiLabels = z
     "menubar.saveStatus.success.icon": z
         .string()
         .describe("The icon showed when saving is complete on the menu bar")
-        .default("AlarmOn"),
+        .default("alarm_on"),
     /**The label showed with the printPreview button on the menu bar*/
     "menubar.printPreview.label": z
         .string()
@@ -62,7 +62,7 @@ export const DesignerUiLabels = z
     "menubar.printPreview.icon": z
         .string()
         .describe("The icon showed with the printPreview button on the menu bar")
-        .default("Preview"),
+        .default("preview"),
     /**The label showed with the downloadProof button on the menu bar*/
     "menubar.downloadProof.label": z
         .string()
@@ -72,9 +72,9 @@ export const DesignerUiLabels = z
     "menubar.downloadProof.icon": z
         .string()
         .describe("The icon showed with the downloadProof button on the menu bar")
-        .default("Download"),
+        .default("file_download"),
     /**The label showed on the menu bar pricing dropdown. This label can include $unitPrice and $totalPrice variable usage.*/
-    "menubar.pricingLabel.icon": z
+    "menubar.pricingLabel.label": z
         .string()
         .describe("The label showed on the menu bar pricing dropdown. This label can include $unitPrice and $totalPrice variable usage.")
         .default("Buy From $unitPrice each"),
@@ -83,6 +83,11 @@ export const DesignerUiLabels = z
         .string()
         .describe("The label used in the button to proceed to the next steps")
         .default("Next"),
+    /**The icon used in the button to proceed to the next steps*/
+    "menubar.nextButton.icon": z
+        .string()
+        .describe("The icon used in the button to proceed to the next steps")
+        .default("arrow_forward"),
     /**The url to the logo used within the designer.*/
     "menubar.logo": z
         .string()

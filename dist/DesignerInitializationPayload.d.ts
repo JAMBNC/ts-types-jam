@@ -212,8 +212,9 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "menubar.printPreview.icon": z.ZodDefault<z.ZodString>;
         "menubar.downloadProof.label": z.ZodDefault<z.ZodString>;
         "menubar.downloadProof.icon": z.ZodDefault<z.ZodString>;
-        "menubar.pricingLabel.icon": z.ZodDefault<z.ZodString>;
+        "menubar.pricingLabel.label": z.ZodDefault<z.ZodString>;
         "menubar.nextButton.label": z.ZodDefault<z.ZodString>;
+        "menubar.nextButton.icon": z.ZodDefault<z.ZodString>;
         "menubar.logo": z.ZodOptional<z.ZodString>;
         "workspace.toolBar.stack.returnAddress.label": z.ZodDefault<z.ZodString>;
         "workspace.toolBar.stack.returnAddress.icon": z.ZodDefault<z.ZodString>;
