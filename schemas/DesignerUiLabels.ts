@@ -124,7 +124,7 @@ export const DesignerUiLabels = z
     "tool.mailingAddress.icon": z
       .string()
       .describe("The icon for the Mailing Address tool")
-      .default("label_important"),
+      .default("label"),
     /**The label for the Mailing Address tool*/
     "tool.mailingAddress.label": z
       .string()
