@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const DesignerUiLabels: z.ZodObject<{
+export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "menubar.undo.label": z.ZodDefault<z.ZodString>;
     "menubar.undo.icon": z.ZodDefault<z.ZodString>;
     "menubar.redo.label": z.ZodDefault<z.ZodString>;
@@ -123,6 +123,6 @@ export declare const DesignerUiLabels: z.ZodObject<{
     "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
-}, z.core.$strict>;
+}, z.core.$loose>>;
 export type DesignerUiLabels = z.infer<typeof DesignerUiLabels>;
 //# sourceMappingURL=DesignerUiLabels.d.ts.map

@@ -21,11 +21,7 @@ export const DesignerInitializationPayload = z
         .union([DesignerPricing, z.string().url()])
         .describe("A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema")
         .optional(),
-    /**The UI Label schema used to configure the labels on the designer (optional)*/
-    uiLabels: z
-        .union([DesignerUiLabels, z.string().url()])
-        .describe("The UI Label schema used to configure the labels on the designer (optional)")
-        .default({}),
+    uiLabels: DesignerUiLabels,
     /**An (optional) object containing additional metadata for the designer initialization payload.*/
     metadata: z
         .record(z.string(), z.any())

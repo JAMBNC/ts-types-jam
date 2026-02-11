@@ -197,7 +197,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         salePrice: z.ZodOptional<z.ZodNumber>;
         startingAtQty: z.ZodNumber;
     }, z.core.$loose>>>, z.ZodString]>>;
-    uiLabels: z.ZodDefault<z.ZodUnion<readonly [z.ZodObject<{
+    uiLabels: z.ZodDefault<z.ZodObject<{
         "menubar.undo.label": z.ZodDefault<z.ZodString>;
         "menubar.undo.icon": z.ZodDefault<z.ZodString>;
         "menubar.redo.label": z.ZodDefault<z.ZodString>;
@@ -321,7 +321,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$strict>, z.ZodString]>>;
+    }, z.core.$loose>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
 }, z.core.$loose>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;
