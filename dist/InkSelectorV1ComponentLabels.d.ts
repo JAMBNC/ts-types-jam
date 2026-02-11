@@ -1,7 +1,5 @@
 import { z } from "zod";
 export declare const InkSelectorV1ComponentLabels: z.ZodObject<{
-    "tabs.standard.label": z.ZodDefault<z.ZodString>;
-    "tabs.metallic.label": z.ZodDefault<z.ZodString>;
     "selectedInk.label": z.ZodDefault<z.ZodString>;
     "imageColors.label": z.ZodDefault<z.ZodString>;
 }, z.core.$loose>;

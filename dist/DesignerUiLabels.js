@@ -93,6 +93,36 @@ export const DesignerUiLabels = z
         .string()
         .describe("The url to the logo used within the designer.")
         .optional(),
+    /**The icon for the Logo tool*/
+    "tool.logo.icon": z
+        .string()
+        .describe("The icon for the Logo tool")
+        .default("add_photo_alternate"),
+    /**The label for the logo tool*/
+    "tool.logo.label": z
+        .string()
+        .describe("The label for the logo tool")
+        .default("Logo"),
+    /**The icon for the Return Address tool*/
+    "tool.returnAddress.icon": z
+        .string()
+        .describe("The icon for the Return Address tool")
+        .default("add_home_work"),
+    /**The label for the Return Address tool*/
+    "tool.returnAddress.label": z
+        .string()
+        .describe("The label for the Return Address tool")
+        .default("Return Address"),
+    /**The icon for the Mailing Address tool*/
+    "tool.mailingAddress.icon": z
+        .string()
+        .describe("The icon for the Mailing Address tool")
+        .default("label_important"),
+    /**The label for the Mailing Address tool*/
+    "tool.mailingAddress.label": z
+        .string()
+        .describe("The label for the Mailing Address tool")
+        .default("Mailing Address"),
     /**The label used for the return address tool in the tool bar*/
     "workspace.toolBar.stack.returnAddress.label": z
         .string()
