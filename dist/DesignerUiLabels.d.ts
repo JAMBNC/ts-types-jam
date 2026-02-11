@@ -16,7 +16,7 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "menubar.downloadProof.icon": z.ZodDefault<z.ZodString>;
     "menubar.pricingLabel.icon": z.ZodDefault<z.ZodString>;
     "menubar.nextButton.label": z.ZodDefault<z.ZodString>;
-    "workspace.toolBar.logo": z.ZodOptional<z.ZodString>;
+    "menubar.logo": z.ZodOptional<z.ZodString>;
     "workspace.toolBar.stack.returnAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.returnAddress.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.returnAddress.label": z.ZodDefault<z.ZodString>;
