@@ -55,6 +55,7 @@ export * from './Auth.js';
 export * from './DimensionUnit.js';
 export * from './Dimension.js';
 export * from './RgbColor.js';
+export * from './TextProperties.js';
 export * from './Rect.js';
 export * from './Page.js';
 export * from './BezierPoint.js';
