@@ -1,7 +1,6 @@
 import { z } from "zod";
-import { Dimension } from "./Dimension.js";
+import { Font } from "./Font.js";
 import { Rect } from "./Rect.js";
-import { RgbColor } from "./RgbColor.js";
 
 /**An ingredient that renders text content with font and style properties.*/
 export const TextIngredient = z
@@ -29,31 +28,49 @@ export const TextIngredient = z
     isValidatorBoundingShape: z.boolean(),
     opacity: z.number().gte(0).lte(1),
     zIndex: z.number().int(),
-    /**The text content.*/
-    text: z.string().describe("The text content."),
-    /**The font family name.*/
-    fontFamily: z.string().describe("The font family name."),
-    /**A numeric value with a unit of measurement.*/
-    fontSize: Dimension,
-    /**A color with name, hex code, and optional RGBA components.*/
-    fontColor: RgbColor,
-    /**The font weight (e.g. normal, bold).*/
-    fontWeight: z
-      .string()
-      .describe("The font weight (e.g. normal, bold).")
-      .optional(),
-    /**The font style (e.g. normal, italic).*/
-    fontStyle: z
-      .string()
-      .describe("The font style (e.g. normal, italic).")
-      .optional(),
-    /**Text alignment (e.g. left, center, right).*/
-    textAlign: z
-      .string()
-      .describe("Text alignment (e.g. left, center, right).")
-      .optional(),
-    /**Line height multiplier.*/
-    lineHeight: z.number().describe("Line height multiplier.").optional(),
+    /**The text related data.*/
+    text: z
+      .object({
+        /**Text alignment (e.g. left, center, right).*/
+        alignment: z
+          .string()
+          .describe("Text alignment (e.g. left, center, right)."),
+        /**Body text broken up into lines. Can contain variables surrounded with %%*/
+        body: z
+          .array(z.string())
+          .describe(
+            "Body text broken up into lines. Can contain variables surrounded with %%",
+          ),
+        /**Record of variable replacement strings*/
+        dataSource: z
+          .record(z.string(), z.string())
+          .describe("Record of variable replacement strings")
+          .optional(),
+        /**DataSource to use for measurements and validation regardless of the current display*/
+        measurementDataSource: z
+          .record(z.string(), z.string())
+          .describe(
+            "DataSource to use for measurements and validation regardless of the current display",
+          )
+          .optional(),
+        /**Font size in pt*/
+        fontSize: z.string().describe("Font size in pt"),
+        /**Leading value as a percentage*/
+        leading: z
+          .number()
+          .describe("Leading value as a percentage")
+          .optional(),
+        /**Rotation angle in degrees.*/
+        rotation: z.number().describe("Rotation angle in degrees.").optional(),
+        /**Is strikethrough applied?*/
+        strikethrough: z.boolean().describe("Is strikethrough applied?"),
+        /**Is underline applied?*/
+        underline: z.boolean().describe("Is underline applied?"),
+        /**The schema required for a single font used throughout the system.*/
+        fontData: Font,
+      })
+      .passthrough()
+      .describe("The text related data."),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
   })

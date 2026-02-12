@@ -15,30 +15,29 @@ export declare const TextIngredient: z.ZodObject<{
     isValidatorBoundingShape: z.ZodBoolean;
     opacity: z.ZodNumber;
     zIndex: z.ZodNumber;
-    text: z.ZodString;
-    fontFamily: z.ZodString;
-    fontSize: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            px: "px";
-            pt: "pt";
-        }>;
-    }, z.core.$strict>;
-    fontColor: z.ZodObject<{
-        name: z.ZodString;
-        hex: z.ZodString;
-        id: z.ZodString;
-        r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>;
-    fontWeight: z.ZodOptional<z.ZodString>;
-    fontStyle: z.ZodOptional<z.ZodString>;
-    textAlign: z.ZodOptional<z.ZodString>;
-    lineHeight: z.ZodOptional<z.ZodNumber>;
+    text: z.ZodObject<{
+        alignment: z.ZodString;
+        body: z.ZodArray<z.ZodString>;
+        dataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        measurementDataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        fontSize: z.ZodString;
+        leading: z.ZodOptional<z.ZodNumber>;
+        rotation: z.ZodOptional<z.ZodNumber>;
+        strikethrough: z.ZodBoolean;
+        underline: z.ZodBoolean;
+        fontData: z.ZodObject<{
+            uuid: z.ZodString;
+            style: z.ZodEnum<{
+                regular: "regular";
+                italic: "italic";
+                bold: "bold";
+                bold_italic: "bold_italic";
+                light: "light";
+                light_italic: "light_italic";
+            }>;
+            name: z.ZodOptional<z.ZodString>;
+        }, z.core.$strict>;
+    }, z.core.$loose>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
             v: z.ZodNumber;

@@ -1,9 +1,9 @@
 import { z } from "zod";
 /**The style of the font.*/
 export declare const FontStyle: z.ZodEnum<{
-    bold: "bold";
     regular: "regular";
     italic: "italic";
+    bold: "bold";
     bold_italic: "bold_italic";
     light: "light";
     light_italic: "light_italic";
