@@ -37,6 +37,7 @@ export * from './Tag.js';
 export * from './Taxonomy.js';
 export * from './TierPrice.js';
 export * from './Shipment.js';
+export * from './Vendor.js';
 export * from './Color.js';
 export * from './ColorSpaceName.js';
 export * from './ColorValue.js';

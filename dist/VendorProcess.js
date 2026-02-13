@@ -1,9 +1,15 @@
 import { z } from "zod";
 export const VendorProcess = z
     .object({
-    pricingGroup: z.string().optional(),
+    /**Color*/
+    apiColorName: z.string().describe("Color").optional(),
+    /**Vendor process specific color name*/
+    colorName: z
+        .string()
+        .describe("Vendor process specific color name")
+        .optional(),
     /**Pricing group names keyed by supported process.*/
-    vendorColorName: z
+    pricingGroup: z
         .string()
         .describe("Pricing group names keyed by supported process.")
         .optional(),

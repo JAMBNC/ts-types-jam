@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Process } from "./Process.js";
+import { Vendor } from "./Vendor.js";
 import { VendorProcess } from "./VendorProcess.js";
 
 export const VendorColor = z
@@ -9,6 +10,8 @@ export const VendorColor = z
       .string()
       .uuid()
       .describe("The uuid for the color the vendor supports."),
+    /**Vendor specific color name*/
+    colorName: z.string().describe("Vendor specific color name").optional(),
     /**Pricing group names keyed by supported process.*/
     processes: z
       .object({
@@ -24,8 +27,7 @@ export const VendorColor = z
       })
       .partial()
       .describe("Pricing group names keyed by supported process."),
-    /**The string name of the vendor.*/
-    vendorName: z.string().describe("The string name of the vendor."),
+    vendor: Vendor,
   })
   .passthrough();
 export type VendorColor = z.infer<typeof VendorColor>;
