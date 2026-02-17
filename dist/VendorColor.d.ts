@@ -53,6 +53,7 @@ export declare const VendorColor: z.ZodObject<{
         ADMORE: "ADMORE";
         DUPLI: "DUPLI";
         GRAPHIC_AWARDS: "GRAPHIC_AWARDS";
+        JARED: "JARED";
         TRAFFICWORKS: "TRAFFICWORKS";
         TAYLOR_FOLDERWORKS: "TAYLOR_FOLDERWORKS";
         TAYLOR_NAVITOR: "TAYLOR_NAVITOR";
