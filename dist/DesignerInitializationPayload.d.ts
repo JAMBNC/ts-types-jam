@@ -192,6 +192,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
     }, z.core.$strict>;
     tracking: z.ZodOptional<z.ZodObject<{
         posthog: z.ZodOptional<z.ZodObject<{
+            userIdentity: z.ZodOptional<z.ZodAny>;
             apiHost: z.ZodString;
             apiKey: z.ZodObject<{
                 type: z.ZodLiteral<"apiKey">;

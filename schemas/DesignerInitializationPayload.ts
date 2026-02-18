@@ -26,6 +26,7 @@ export const DesignerInitializationPayload = z
       .object({
         posthog: z
           .object({
+            userIdentity: z.any().optional(),
             apiHost: z.string().url(),
             /**API key authentication, typically sent as a header or query parameter.*/
             apiKey: ApiKey,
