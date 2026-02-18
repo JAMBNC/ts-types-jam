@@ -190,21 +190,6 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             refreshToken: z.ZodString;
         }, z.core.$strict>]>>;
     }, z.core.$strict>;
-    tracking: z.ZodOptional<z.ZodObject<{
-        posthog: z.ZodOptional<z.ZodObject<{
-            userIdentity: z.ZodOptional<z.ZodAny>;
-            apiHost: z.ZodString;
-            apiKey: z.ZodObject<{
-                type: z.ZodLiteral<"apiKey">;
-                key: z.ZodString;
-                headerName: z.ZodDefault<z.ZodString>;
-                in: z.ZodDefault<z.ZodEnum<{
-                    header: "header";
-                    query: "query";
-                }>>;
-            }, z.core.$strict>;
-        }, z.core.$loose>>;
-    }, z.core.$loose>>;
     pricing: z.ZodOptional<z.ZodUnion<readonly [z.ZodRecord<z.ZodString, z.ZodArray<z.ZodObject<{
         discountReason: z.ZodOptional<z.ZodString>;
         price: z.ZodNumber;

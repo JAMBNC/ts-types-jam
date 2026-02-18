@@ -3,7 +3,6 @@ import { DesignerAuth } from "./DesignerAuth.js";
 import { DesignerEndpoints } from "./DesignerEndpoints.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
-import { PosthogInfo } from "./PosthogInfo.js";
 import { Product } from "./Product.js";
 export const DesignerInitializationPayload = z
     .object({
@@ -17,10 +16,6 @@ export const DesignerInitializationPayload = z
         .describe("A Product schema or URI endpoint that returns a Product schema"),
     endpoints: DesignerEndpoints,
     auth: DesignerAuth,
-    tracking: z
-        .object({ posthog: PosthogInfo.optional() })
-        .passthrough()
-        .optional(),
     /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
     pricing: z
         .union([DesignerPricing, z.string().url()])
