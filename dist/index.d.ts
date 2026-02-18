@@ -79,6 +79,7 @@ export * from './DesignerVendorEndpoints.js';
 export * from './DesignerEndpoints.js';
 export * from './DesignerAuth.js';
 export * from './DesignerPricing.js';
+export * from './PosthogInfo.js';
 export * from './DesignerInitializationPayload.js';
 export * from './FontStyle.js';
 export * from './Font.js';

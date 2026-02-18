@@ -1,9 +1,9 @@
 import { z } from "zod";
-import { ApiKey } from "./ApiKey.js";
 import { DesignerAuth } from "./DesignerAuth.js";
 import { DesignerEndpoints } from "./DesignerEndpoints.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
+import { PosthogInfo } from "./PosthogInfo.js";
 import { Product } from "./Product.js";
 export const DesignerInitializationPayload = z
     .object({
@@ -18,17 +18,7 @@ export const DesignerInitializationPayload = z
     endpoints: DesignerEndpoints,
     auth: DesignerAuth,
     tracking: z
-        .object({
-        posthog: z
-            .object({
-            userIdentity: z.any().optional(),
-            apiHost: z.string().url(),
-            /**API key authentication, typically sent as a header or query parameter.*/
-            apiKey: ApiKey,
-        })
-            .passthrough()
-            .optional(),
-    })
+        .object({ posthog: PosthogInfo.optional() })
         .passthrough()
         .optional(),
     /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
