@@ -23,22 +23,94 @@ export declare const TextProperties: z.ZodObject<{
         name: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
     textLines: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        x: z.ZodNumber;
-        y: z.ZodNumber;
-        width: z.ZodNumber;
-        height: z.ZodNumber;
+        x: z.ZodObject<{
+            v: z.ZodNumber;
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+        }, z.core.$strict>;
+        y: z.ZodObject<{
+            v: z.ZodNumber;
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+        }, z.core.$strict>;
+        width: z.ZodObject<{
+            v: z.ZodNumber;
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+        }, z.core.$strict>;
+        height: z.ZodObject<{
+            v: z.ZodNumber;
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+        }, z.core.$strict>;
         span: z.ZodObject<{
             charPositions: z.ZodString;
-            fontSize: z.ZodNumber;
+            fontSize: z.ZodObject<{
+                v: z.ZodNumber;
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+            }, z.core.$strict>;
             glyphIds: z.ZodString;
             glyphPositions: z.ZodString;
             glyphXOffsets: z.ZodString;
             glyphYOffsets: z.ZodString;
             text: z.ZodString;
-            x: z.ZodNumber;
-            y: z.ZodNumber;
-            width: z.ZodNumber;
-            height: z.ZodNumber;
+            x: z.ZodObject<{
+                v: z.ZodNumber;
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+            }, z.core.$strict>;
+            y: z.ZodObject<{
+                v: z.ZodNumber;
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+            }, z.core.$strict>;
+            width: z.ZodObject<{
+                v: z.ZodNumber;
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+            }, z.core.$strict>;
+            height: z.ZodObject<{
+                v: z.ZodNumber;
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+            }, z.core.$strict>;
         }, z.core.$loose>;
     }, z.core.$loose>>>;
 }, z.core.$loose>;

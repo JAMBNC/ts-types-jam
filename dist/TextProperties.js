@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Dimension } from "./Dimension.js";
 import { Font } from "./Font.js";
 /**Properties for displayed text*/
 export const TextProperties = z
@@ -37,14 +38,14 @@ export const TextProperties = z
     textLines: z
         .array(z
         .object({
-        /**Origin x cord for the line*/
-        x: z.number().describe("Origin x cord for the line"),
-        /**Origin y cord for the line*/
-        y: z.number().describe("Origin y cord for the line"),
-        /**Width of the entire line in pt*/
-        width: z.number().describe("Width of the entire line in pt"),
-        /**Height of the entire line in pt*/
-        height: z.number().describe("Height of the entire line in pt"),
+        /**A numeric value with a unit of measurement.*/
+        x: Dimension,
+        /**A numeric value with a unit of measurement.*/
+        y: Dimension,
+        /**A numeric value with a unit of measurement.*/
+        width: Dimension,
+        /**A numeric value with a unit of measurement.*/
+        height: Dimension,
         /**Sub details about the specific line and its glyphs*/
         span: z
             .object({
@@ -52,8 +53,8 @@ export const TextProperties = z
             charPositions: z
                 .string()
                 .describe("Semicolon separated list of character positions"),
-            /**Line font size in pt*/
-            fontSize: z.number().describe("Line font size in pt"),
+            /**A numeric value with a unit of measurement.*/
+            fontSize: Dimension,
             /**Semicolon separated list of glyph ids*/
             glyphIds: z
                 .string()
@@ -72,16 +73,14 @@ export const TextProperties = z
                 .describe("Semicolon separated list of glyph y offsets"),
             /**Plaintext string of the line text*/
             text: z.string().describe("Plaintext string of the line text"),
-            /**Origin X offset for the line in pt.*/
-            x: z.number().describe("Origin X offset for the line in pt."),
-            /**Origin y offset for the line in pt.*/
-            y: z.number().describe("Origin y offset for the line in pt."),
-            /**Width of the text in pt.*/
-            width: z.number().describe("Width of the text in pt."),
-            /**Height of the font's typo ascender in pt.*/
-            height: z
-                .number()
-                .describe("Height of the font's typo ascender in pt."),
+            /**A numeric value with a unit of measurement.*/
+            x: Dimension,
+            /**A numeric value with a unit of measurement.*/
+            y: Dimension,
+            /**A numeric value with a unit of measurement.*/
+            width: Dimension,
+            /**A numeric value with a unit of measurement.*/
+            height: Dimension,
         })
             .passthrough()
             .describe("Sub details about the specific line and its glyphs"),
