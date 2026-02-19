@@ -22,6 +22,25 @@ export declare const TextProperties: z.ZodObject<{
         }>;
         name: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
+    textLines: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        x: z.ZodNumber;
+        y: z.ZodNumber;
+        width: z.ZodNumber;
+        height: z.ZodNumber;
+        span: z.ZodObject<{
+            charPositions: z.ZodString;
+            fontSize: z.ZodNumber;
+            glyphIds: z.ZodString;
+            glyphPositions: z.ZodString;
+            glyphXOffsets: z.ZodString;
+            glyphYOffsets: z.ZodString;
+            text: z.ZodString;
+            x: z.ZodNumber;
+            y: z.ZodNumber;
+            width: z.ZodNumber;
+            height: z.ZodNumber;
+        }, z.core.$loose>;
+    }, z.core.$loose>>>;
 }, z.core.$loose>;
 export type TextProperties = z.infer<typeof TextProperties>;
 //# sourceMappingURL=TextProperties.d.ts.map
