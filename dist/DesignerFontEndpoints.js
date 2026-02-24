@@ -5,8 +5,7 @@ export const DesignerFontEndpoints = z
     all: z
         .string()
         .url()
-        .describe("The (optional) endpoint URL for retrieving all supported fonts")
-        .optional(),
+        .describe("The (optional) endpoint URL for retrieving all supported fonts"),
     /**The endpoint URL for retrieving a font file by uuid */
     get: z
         .string()

@@ -10,7 +10,7 @@ export declare const DesignerEndpoints: z.ZodObject<{
         rendition: z.ZodString;
     }, z.core.$strict>;
     fonts: z.ZodObject<{
-        all: z.ZodOptional<z.ZodString>;
+        all: z.ZodString;
         get: z.ZodString;
     }, z.core.$strict>;
     colors: z.ZodObject<{
