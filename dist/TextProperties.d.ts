@@ -3,6 +3,7 @@ import { z } from "zod";
 export declare const TextProperties: z.ZodObject<{
     alignment: z.ZodString;
     body: z.ZodArray<z.ZodString>;
+    isPlaceholder: z.ZodOptional<z.ZodBoolean>;
     dataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
     measurementDataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
     fontSize: z.ZodString;

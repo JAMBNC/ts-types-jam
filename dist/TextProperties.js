@@ -12,6 +12,11 @@ export const TextProperties = z
     body: z
         .array(z.string())
         .describe("Body text broken up into lines. Can contain variables surrounded with %%"),
+    /**Is this text Placeholder text?*/
+    isPlaceholder: z
+        .boolean()
+        .describe("Is this text Placeholder text?")
+        .optional(),
     /**Record of variable replacement strings*/
     dataSource: z
         .record(z.string(), z.string())
