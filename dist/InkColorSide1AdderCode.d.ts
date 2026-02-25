@@ -1,0 +1,30 @@
+import { z } from "zod";
+export declare const InkColorSide1AdderCode: z.ZodEnum<{
+    color_side1_blk: "color_side1_blk";
+    color_side1_std: "color_side1_std";
+    color_side1_pms: "color_side1_pms";
+    color_side1_blk_std: "color_side1_blk_std";
+    color_side1_blk_pms: "color_side1_blk_pms";
+    color_side1_2std: "color_side1_2std";
+    color_side1_std_pms: "color_side1_std_pms";
+    color_side1_2pms: "color_side1_2pms";
+    color_side1_blk_2std: "color_side1_blk_2std";
+    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+    color_side1_blk_2pms: "color_side1_blk_2pms";
+    color_side1_3std: "color_side1_3std";
+    color_side1_2std_pms: "color_side1_2std_pms";
+    color_side1_std_2pms: "color_side1_std_2pms";
+    color_side1_3pms: "color_side1_3pms";
+    color_side1_blk_3std: "color_side1_blk_3std";
+    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+    color_side1_blk_3pms: "color_side1_blk_3pms";
+    color_side1_4std: "color_side1_4std";
+    color_side1_3std_pms: "color_side1_3std_pms";
+    color_side1_2std_2pms: "color_side1_2std_2pms";
+    color_side1_std_3pms: "color_side1_std_3pms";
+    color_side1_4pms: "color_side1_4pms";
+    color_side1_cmyk: "color_side1_cmyk";
+}>;
+export type InkColorSide1AdderCode = z.infer<typeof InkColorSide1AdderCode>;
+//# sourceMappingURL=InkColorSide1AdderCode.d.ts.map

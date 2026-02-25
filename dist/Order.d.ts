@@ -27,17 +27,17 @@ export declare const Order: z.ZodObject<{
     lastName: z.ZodOptional<z.ZodString>;
     lineItems: z.ZodArray<z.ZodObject<{
         children: z.ZodOptional<z.ZodArray<z.ZodAny>>;
-        discountAmount: z.ZodOptional<z.ZodNumber>;
+        discountAmount: z.ZodDefault<z.ZodNumber>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         imageUrls: z.ZodOptional<z.ZodArray<z.ZodString>>;
         name: z.ZodString;
         productIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         quantity: z.ZodNumber;
         sku: z.ZodString;
-        subtotal: z.ZodNumber;
-        taxAmount: z.ZodNumber;
-        total: z.ZodNumber;
-        weightInPounds: z.ZodNumber;
+        subtotal: z.ZodDefault<z.ZodNumber>;
+        taxAmount: z.ZodDefault<z.ZodNumber>;
+        total: z.ZodDefault<z.ZodNumber>;
+        weightInPounds: z.ZodDefault<z.ZodNumber>;
     }, z.core.$loose>>;
     orderDate: z.ZodOptional<z.ZodString>;
     orderNumber: z.ZodString;
@@ -68,24 +68,24 @@ export declare const Order: z.ZodObject<{
         region: z.ZodOptional<z.ZodString>;
         streets: z.ZodArray<z.ZodString>;
     }, z.core.$loose>>;
-    shippingAmount: z.ZodNumber;
+    shippingAmount: z.ZodDefault<z.ZodNumber>;
     shippingInfo: z.ZodOptional<z.ZodObject<{
         accountNumber: z.ZodOptional<z.ZodString>;
         accountType: z.ZodOptional<z.ZodString>;
-        isBlindShipping: z.ZodBoolean;
+        isBlindShipping: z.ZodDefault<z.ZodBoolean>;
         method: z.ZodOptional<z.ZodString>;
-        provider: z.ZodEnum<{
+        provider: z.ZodOptional<z.ZodEnum<{
             FedEx: "FedEx";
             UPS: "UPS";
             USPS: "USPS";
             Other: "Other";
-        }>;
+        }>>;
         weightInPounds: z.ZodOptional<z.ZodNumber>;
     }, z.core.$loose>>;
     status: z.ZodOptional<z.ZodLiteral<"CREATED">>;
-    subtotal: z.ZodNumber;
-    taxAmount: z.ZodNumber;
-    total: z.ZodNumber;
+    subtotal: z.ZodDefault<z.ZodNumber>;
+    taxAmount: z.ZodDefault<z.ZodNumber>;
+    total: z.ZodDefault<z.ZodNumber>;
 }, z.core.$loose>;
 export type Order = z.infer<typeof Order>;
 //# sourceMappingURL=Order.d.ts.map

@@ -8,7 +8,7 @@ export declare const PurchaseOptions: z.ZodObject<{
     customizable: z.ZodBoolean;
     designRequired: z.ZodBoolean;
     inStock: z.ZodBoolean;
-    isReturnable: z.ZodBoolean;
+    isReturnable: z.ZodDefault<z.ZodBoolean>;
     maxPrice: z.ZodNumber;
     minCustomizationQty: z.ZodOptional<z.ZodNumber>;
     minPrice: z.ZodNumber;

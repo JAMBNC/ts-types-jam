@@ -28,6 +28,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         }, z.core.$loose>>;
         displayGroup: z.ZodOptional<z.ZodString>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        internalSku: z.ZodOptional<z.ZodString>;
         media: z.ZodOptional<z.ZodArray<z.ZodObject<{
             altText: z.ZodOptional<z.ZodString>;
             label: z.ZodOptional<z.ZodString>;
@@ -64,7 +65,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             customizable: z.ZodBoolean;
             designRequired: z.ZodBoolean;
             inStock: z.ZodBoolean;
-            isReturnable: z.ZodBoolean;
+            isReturnable: z.ZodDefault<z.ZodBoolean>;
             maxPrice: z.ZodNumber;
             minCustomizationQty: z.ZodOptional<z.ZodNumber>;
             minPrice: z.ZodNumber;

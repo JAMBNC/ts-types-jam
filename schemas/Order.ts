@@ -30,12 +30,12 @@ export const Order = z
     payments: z.array(Payment).optional(),
     salesChannel: z.string(),
     shippingAddress: Address.optional(),
-    shippingAmount: z.number().gte(0),
+    shippingAmount: z.number().gte(0).default(0),
     shippingInfo: ShippingInfo.optional(),
     status: Status.optional(),
-    subtotal: z.number().gte(0),
-    taxAmount: z.number().gte(0),
-    total: z.number().gte(0),
+    subtotal: z.number().gte(0).default(0),
+    taxAmount: z.number().gte(0).default(0),
+    total: z.number().gte(0).default(0),
   })
   .passthrough();
 export type Order = z.infer<typeof Order>;

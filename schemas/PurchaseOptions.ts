@@ -10,7 +10,7 @@ export const PurchaseOptions = z
     customizable: z.boolean(),
     designRequired: z.boolean(),
     inStock: z.boolean(),
-    isReturnable: z.boolean(),
+    isReturnable: z.boolean().default(true),
     maxPrice: z.number(),
     minCustomizationQty: z.number().int().gt(0).optional(),
     minPrice: z.number(),

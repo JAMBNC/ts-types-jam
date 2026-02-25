@@ -16,6 +16,7 @@ export const Product = z
     customization: ProductCustomization.optional(),
     displayGroup: z.string().optional(),
     identifiers: z.record(z.string(), z.any()).optional(),
+    internalSku: z.string().optional(),
     media: z.array(Media).optional(),
     name: z.string(),
     primaryCategory: CategoryReference.optional(),

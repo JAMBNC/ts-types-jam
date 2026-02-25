@@ -4,9 +4,9 @@ export const ShippingInfo = z
     .object({
     accountNumber: z.string().optional(),
     accountType: z.string().optional(),
-    isBlindShipping: z.boolean(),
+    isBlindShipping: z.boolean().default(false),
     method: z.string().optional(),
-    provider: Provider,
+    provider: Provider.optional(),
     weightInPounds: z.number().gte(0).optional(),
 })
     .passthrough();
