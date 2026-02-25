@@ -123,9 +123,6 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         }, z.core.$loose>>;
     }, z.core.$loose>, z.ZodString]>;
     endpoints: z.ZodObject<{
-        design: z.ZodObject<{
-            save: z.ZodString;
-        }, z.core.$strict>;
         image: z.ZodObject<{
             gallery: z.ZodString;
             upload: z.ZodString;

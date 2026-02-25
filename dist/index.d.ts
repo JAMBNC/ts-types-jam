@@ -89,7 +89,6 @@ export * from './TextIngredient.js';
 export * from './ImageIngredient.js';
 export * from './Ingredient.js';
 export * from './DesignState.js';
-export * from './DesignerSaveEndpoints.js';
 export * from './DesignerImageEndpoints.js';
 export * from './DesignerFontEndpoints.js';
 export * from './DesignerColorEndpoints.js';

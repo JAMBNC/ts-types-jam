@@ -1,8 +1,5 @@
 import { z } from "zod";
 export declare const DesignerEndpoints: z.ZodObject<{
-    design: z.ZodObject<{
-        save: z.ZodString;
-    }, z.core.$strict>;
     image: z.ZodObject<{
         gallery: z.ZodString;
         upload: z.ZodString;
