@@ -1,5 +1,6 @@
 import { z } from "zod";
 export declare const DesignerInitializationPayload: z.ZodObject<{
+    design: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     config: z.ZodUnion<readonly [z.ZodRecord<z.ZodString, z.ZodAny>, z.ZodString]>;
     product: z.ZodUnion<readonly [z.ZodObject<{
         badges: z.ZodOptional<z.ZodArray<z.ZodString>>;

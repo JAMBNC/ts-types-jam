@@ -6,6 +6,7 @@ import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
 export const DesignerInitializationPayload = z
     .object({
+    design: z.record(z.string(), z.any()).optional(),
     /**The designer configuration schema or URI endpoint that returns a designer configuration schema*/
     config: z
         .union([z.record(z.string(), z.any()), z.string().url()])
