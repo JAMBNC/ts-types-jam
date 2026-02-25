@@ -1,6 +1,32 @@
 import { z } from "zod";
-/**The response from the media rendition endpoint.*/
-export declare const DesignerMediaRenditionResponse: z.ZodUnion<readonly [z.ZodObject<{
+/**A union of all possible Designer REST API request and response types.*/
+export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
+    page: z.ZodNumber;
+    hasNextPage: z.ZodBoolean;
+    images: z.ZodArray<z.ZodObject<{
+        mediaId: z.ZodString;
+        thumbnailUrl: z.ZodString;
+        label: z.ZodString;
+        isVector: z.ZodBoolean;
+    }, z.core.$strict>>;
+}, z.core.$strict>, z.ZodObject<{
+    data: z.ZodObject<{
+        label: z.ZodString;
+        mediaBase64: z.ZodString;
+        contentType: z.ZodOptional<z.ZodString>;
+    }, z.core.$strict>;
+}, z.core.$strict>, z.ZodUnion<readonly [z.ZodObject<{
+    success: z.ZodLiteral<true>;
+    mediaInfo: z.ZodObject<{
+        mediaId: z.ZodString;
+        thumbnailUrl: z.ZodString;
+        label: z.ZodString;
+        isVector: z.ZodBoolean;
+    }, z.core.$strict>;
+}, z.core.$strict>, z.ZodObject<{
+    success: z.ZodLiteral<false>;
+    error: z.ZodString;
+}, z.core.$strict>]>, z.ZodUnion<readonly [z.ZodObject<{
     success: z.ZodLiteral<true>;
     renditionInfo: z.ZodObject<{
         rgb: z.ZodObject<{
@@ -50,6 +76,9 @@ export declare const DesignerMediaRenditionResponse: z.ZodUnion<readonly [z.ZodO
 }, z.core.$strict>, z.ZodObject<{
     success: z.ZodLiteral<false>;
     error: z.ZodString;
+}, z.core.$strict>]>, z.ZodObject<{
+    status: z.ZodBoolean;
+    designId: z.ZodString;
 }, z.core.$strict>]>;
-export type DesignerMediaRenditionResponse = z.infer<typeof DesignerMediaRenditionResponse>;
-//# sourceMappingURL=DesignerMediaRenditionResponse.d.ts.map
+export type DesignerRestPayloads = z.infer<typeof DesignerRestPayloads>;
+//# sourceMappingURL=DesignerRestPayloads.d.ts.map

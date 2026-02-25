@@ -1,6 +1,6 @@
 import { z } from "zod";
-/**The response from the media rendition endpoint.*/
-export declare const DesignerMediaRenditionResponse: z.ZodUnion<readonly [z.ZodObject<{
+/**The response from the media rendition endpoint when the rendition succeeds.*/
+export declare const DesignerMediaRenditionSuccessResponse: z.ZodObject<{
     success: z.ZodLiteral<true>;
     renditionInfo: z.ZodObject<{
         rgb: z.ZodObject<{
@@ -47,9 +47,6 @@ export declare const DesignerMediaRenditionResponse: z.ZodUnion<readonly [z.ZodO
         }, z.core.$strict>;
         type: z.ZodLiteral<"color">;
     }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    success: z.ZodLiteral<false>;
-    error: z.ZodString;
-}, z.core.$strict>]>;
-export type DesignerMediaRenditionResponse = z.infer<typeof DesignerMediaRenditionResponse>;
-//# sourceMappingURL=DesignerMediaRenditionResponse.d.ts.map
+}, z.core.$strict>;
+export type DesignerMediaRenditionSuccessResponse = z.infer<typeof DesignerMediaRenditionSuccessResponse>;
+//# sourceMappingURL=DesignerMediaRenditionSuccessResponse.d.ts.map
