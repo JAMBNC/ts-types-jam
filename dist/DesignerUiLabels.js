@@ -48,6 +48,16 @@ export const DesignerUiLabels = z
         .string()
         .describe("The label showed when saving is complete on the menu bar")
         .default("Changes Saved"),
+    /**The icon showed on the menu bar if saving failed*/
+    "menubar.saveStatus.failure.icon": z
+        .string()
+        .describe("The icon showed on the menu bar if saving failed")
+        .default("error"),
+    /**The label showed on the menu bar if saving failed*/
+    "menubar.saveStatus.failure.label": z
+        .string()
+        .describe("The label showed on the menu bar if saving failed")
+        .default("Save Failed"),
     /**The icon showed when saving is complete on the menu bar*/
     "menubar.saveStatus.success.icon": z
         .string()

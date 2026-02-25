@@ -9,6 +9,8 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "menubar.saveStatus.progress.label": z.ZodDefault<z.ZodString>;
     "menubar.saveStatus.progress.icon": z.ZodDefault<z.ZodString>;
     "menubar.saveStatus.success.label": z.ZodDefault<z.ZodString>;
+    "menubar.saveStatus.failure.icon": z.ZodDefault<z.ZodString>;
+    "menubar.saveStatus.failure.label": z.ZodDefault<z.ZodString>;
     "menubar.saveStatus.success.icon": z.ZodDefault<z.ZodString>;
     "menubar.printPreview.label": z.ZodDefault<z.ZodString>;
     "menubar.printPreview.icon": z.ZodDefault<z.ZodString>;
