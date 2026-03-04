@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { DesignSaveResponse } from "./DesignSaveResponse.js";
 import { DesignerMediaGalleryResponse } from "./DesignerMediaGalleryResponse.js";
+import { DesignerMediaRenditionRequest } from "./DesignerMediaRenditionRequest.js";
 import { DesignerMediaRenditionResponse } from "./DesignerMediaRenditionResponse.js";
 import { DesignerMediaUploadRequest } from "./DesignerMediaUploadRequest.js";
 import { DesignerMediaUploadResponse } from "./DesignerMediaUploadResponse.js";
@@ -10,6 +11,7 @@ export const DesignerRestPayloads = z
     DesignerMediaGalleryResponse,
     DesignerMediaUploadRequest,
     DesignerMediaUploadResponse,
+    DesignerMediaRenditionRequest,
     DesignerMediaRenditionResponse,
     DesignSaveResponse,
 ])

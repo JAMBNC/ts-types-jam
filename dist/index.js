@@ -100,6 +100,7 @@ export * from './DesignerInitializationPayload.js';
 export * from './MediaEntry.js';
 export * from './DesignerMediaGalleryResponse.js';
 export * from './DesignerMediaUploadRequest.js';
+export * from './DesignerMediaRenditionRequest.js';
 export * from './DesignerMediaUploadSuccessResponse.js';
 export * from './DesignerMediaUploadErrorResponse.js';
 export * from './DesignerMediaUploadResponse.js';
