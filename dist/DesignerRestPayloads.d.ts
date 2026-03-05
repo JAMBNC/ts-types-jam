@@ -91,7 +91,10 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
     success: z.ZodLiteral<false>;
     error: z.ZodString;
 }, z.core.$strict>]>, z.ZodObject<{
-    status: z.ZodBoolean;
+    success: z.ZodBoolean;
+    message: z.ZodOptional<z.ZodString>;
+}, z.core.$strict>, z.ZodObject<{
+    success: z.ZodBoolean;
     designId: z.ZodString;
 }, z.core.$strict>]>;
 export type DesignerRestPayloads = z.infer<typeof DesignerRestPayloads>;

@@ -110,6 +110,7 @@ export * from './DesignerMediaRenditionInfo.js';
 export * from './DesignerMediaRenditionSuccessResponse.js';
 export * from './DesignerMediaRenditionErrorResponse.js';
 export * from './DesignerMediaRenditionResponse.js';
+export * from './DesignerMediaDeleteResponse.js';
 export * from './DesignerSaveResponse.js';
 export * from './DesignerRestPayloads.js';
 export * from './FontStyle.js';

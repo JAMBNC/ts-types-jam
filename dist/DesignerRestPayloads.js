@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { DesignerMediaDeleteResponse } from "./DesignerMediaDeleteResponse.js";
 import { DesignerMediaGalleryResponse } from "./DesignerMediaGalleryResponse.js";
 import { DesignerMediaRenditionRequest } from "./DesignerMediaRenditionRequest.js";
 import { DesignerMediaRenditionResponse } from "./DesignerMediaRenditionResponse.js";
@@ -13,6 +14,7 @@ export const DesignerRestPayloads = z
     DesignerMediaUploadResponse,
     DesignerMediaRenditionRequest,
     DesignerMediaRenditionResponse,
+    DesignerMediaDeleteResponse,
     DesignerSaveResponse,
 ])
     .describe("A union of all possible Designer REST API request and response types.");

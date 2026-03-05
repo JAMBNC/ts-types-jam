@@ -3,7 +3,7 @@ import { z } from "zod";
 export const DesignerSaveResponse = z
     .object({
     /**Whether the save was successful.*/
-    status: z.boolean().describe("Whether the save was successful."),
+    success: z.boolean().describe("Whether the save was successful."),
     /**The unique identifier for the saved design.*/
     designId: z
         .string()
