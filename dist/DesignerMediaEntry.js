@@ -1,6 +1,6 @@
 import { z } from "zod";
 /**A single media item in the user's gallery.*/
-export const MediaEntry = z
+export const DesignerMediaEntry = z
     .object({
     /**The unique identifier for the media item.*/
     mediaId: z.string().describe("The unique identifier for the media item."),

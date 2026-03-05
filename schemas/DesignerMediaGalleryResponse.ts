@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { MediaEntry } from "./MediaEntry.js";
+import { DesignerMediaEntry } from "./DesignerMediaEntry.js";
 
 /**The response from the media gallery endpoint.*/
 export const DesignerMediaGalleryResponse = z
@@ -12,7 +12,7 @@ export const DesignerMediaGalleryResponse = z
       .describe("Whether there are more pages of results available."),
     /**The list of media items on the current page.*/
     images: z
-      .array(MediaEntry)
+      .array(DesignerMediaEntry)
       .describe("The list of media items on the current page."),
   })
   .strict()

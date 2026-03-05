@@ -97,7 +97,7 @@ export * from './DesignerEndpoints.js';
 export * from './DesignerAuth.js';
 export * from './DesignerPricing.js';
 export * from './DesignerInitializationPayload.js';
-export * from './MediaEntry.js';
+export * from './DesignerMediaEntry.js';
 export * from './DesignerMediaGalleryResponse.js';
 export * from './DesignerMediaUploadRequest.js';
 export * from './DesignerMediaRenditionRequest.js';
