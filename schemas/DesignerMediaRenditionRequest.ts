@@ -7,7 +7,7 @@ export const DesignerMediaRenditionRequest = z
     /**The media rendition payload.*/
     data: z
       .object({
-        /**The color process to use for the rendition.*/
+        /**Defines how visual content is transferred to the medium.*/
         process: Process,
       })
       .strict()
