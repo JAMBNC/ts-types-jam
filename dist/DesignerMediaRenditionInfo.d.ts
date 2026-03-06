@@ -29,7 +29,16 @@ export declare const DesignerMediaRenditionInfo: z.ZodObject<{
         hasProcessCMY: z.ZodBoolean;
         hasProcessBlack: z.ZodBoolean;
         layerNames: z.ZodArray<z.ZodString>;
-        spotColors: z.ZodArray<z.ZodString>;
+        spotColors: z.ZodArray<z.ZodObject<{
+            values: z.ZodArray<z.ZodString>;
+            cmykApproximation: z.ZodObject<{
+                c: z.ZodNumber;
+                m: z.ZodNumber;
+                y: z.ZodNumber;
+                k: z.ZodNumber;
+                name: z.ZodString;
+            }, z.core.$strict>;
+        }, z.core.$strict>>;
     }, z.core.$strict>;
     is_vector: z.ZodEnum<{
         0: "0";

@@ -24,7 +24,20 @@ export const DesignerMediaRenditionInfo = z
             .describe("The names of the layers in the media."),
         /**The spot colors present in the media.*/
         spotColors: z
-            .array(z.string())
+            .array(z
+            .object({
+            values: z.array(z.string()),
+            cmykApproximation: z
+                .object({
+                c: z.number(),
+                m: z.number(),
+                y: z.number(),
+                k: z.number(),
+                name: z.string(),
+            })
+                .strict(),
+        })
+            .strict())
             .describe("The spot colors present in the media."),
     })
         .strict()
