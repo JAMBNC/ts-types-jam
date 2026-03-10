@@ -8,7 +8,11 @@ export const Color = z
         .describe("The normalized name for a color, used for spot name in spot applications."),
     /**Color representations keyed by color space name.*/
     representations: z
-        .object({ sRGB: ColorValue, US_Web_Coated_SWOP_v2: ColorValue })
+        .object({
+        sRGB: ColorValue,
+        US_Web_Coated_SWOP_v2: ColorValue,
+        CIELAB: ColorValue,
+    })
         .partial()
         .describe("Color representations keyed by color space name."),
     /**A unique UUID identifier for the color.*/

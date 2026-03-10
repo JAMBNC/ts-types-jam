@@ -4,6 +4,7 @@ export declare const Color: z.ZodObject<{
     representations: z.ZodObject<{
         sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
         US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+        CIELAB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
     }, z.core.$strip>;
     uuid: z.ZodString;
 }, z.core.$loose>;
