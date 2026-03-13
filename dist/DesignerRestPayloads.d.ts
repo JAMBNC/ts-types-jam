@@ -29,9 +29,9 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
 }, z.core.$strict>]>, z.ZodObject<{
     data: z.ZodObject<{
         process: z.ZodEnum<{
+            foil: "foil";
             offset: "offset";
             digital: "digital";
-            foil: "foil";
             emboss: "emboss";
             screen: "screen";
             inkjet: "inkjet";
