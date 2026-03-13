@@ -66,6 +66,10 @@ export declare const AdderCodeEnum: z.ZodUnion<readonly [z.ZodEnum<{
 }>, z.ZodEnum<{
     varaddress_side1: "varaddress_side1";
     varaddress_side2: "varaddress_side2";
+}>, z.ZodEnum<{
+    white_ink_side1: "white_ink_side1";
+    white_ink_side2: "white_ink_side2";
+    white_ink: "white_ink";
 }>]>;
 export type AdderCodeEnum = z.infer<typeof AdderCodeEnum>;
 //# sourceMappingURL=AdderCodeEnum.d.ts.map

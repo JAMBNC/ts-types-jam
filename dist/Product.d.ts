@@ -103,6 +103,10 @@ export declare const Product: z.ZodObject<{
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                        white_ink: "white_ink";
                     }>]>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -180,6 +184,10 @@ export declare const Product: z.ZodObject<{
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                        white_ink: "white_ink";
                     }>]>>>;
                     colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
@@ -258,6 +266,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -338,6 +350,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -415,6 +431,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -493,6 +513,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -571,6 +595,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -648,6 +676,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -726,6 +758,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -804,6 +840,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -881,6 +921,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -959,6 +1003,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -1037,6 +1085,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -1114,6 +1166,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -1192,6 +1248,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -1270,6 +1330,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -1347,6 +1411,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -1425,6 +1493,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -1505,6 +1577,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -1582,6 +1658,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -1660,6 +1740,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -1738,6 +1822,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -1815,6 +1903,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -1893,6 +1985,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -1971,6 +2067,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -2048,6 +2148,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -2126,6 +2230,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -2206,6 +2314,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -2283,6 +2395,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -2361,6 +2477,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -2439,6 +2559,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -2516,6 +2640,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -2594,6 +2722,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -2672,6 +2804,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -2749,6 +2885,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -2827,6 +2967,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -2905,6 +3049,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -2982,6 +3130,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -3060,6 +3212,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -3140,6 +3296,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -3217,6 +3377,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -3295,6 +3459,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -3373,6 +3541,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -3450,6 +3622,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -3528,6 +3704,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -3606,6 +3786,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -3683,6 +3867,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -3761,6 +3949,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -3839,6 +4031,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -3916,6 +4112,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -3994,6 +4194,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -4074,6 +4278,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -4151,6 +4359,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -4229,6 +4441,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -4307,6 +4523,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -4384,6 +4604,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -4462,6 +4686,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -4540,6 +4768,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -4617,6 +4849,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -4695,6 +4931,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -4773,6 +5013,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -4850,6 +5094,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
@@ -4928,6 +5176,10 @@ export declare const Product: z.ZodObject<{
                                 }>, z.ZodEnum<{
                                     varaddress_side1: "varaddress_side1";
                                     varaddress_side2: "varaddress_side2";
+                                }>, z.ZodEnum<{
+                                    white_ink_side1: "white_ink_side1";
+                                    white_ink_side2: "white_ink_side2";
+                                    white_ink: "white_ink";
                                 }>]>>>;
                                 optionUse: z.ZodOptional<z.ZodEnum<{
                                     selected: "selected";
@@ -5009,6 +5261,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -5086,6 +5342,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -5164,6 +5424,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -5242,6 +5506,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -5319,6 +5587,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -5397,6 +5669,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -5475,6 +5751,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -5552,6 +5832,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -5630,6 +5914,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -5708,6 +5996,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -5785,6 +6077,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -5863,6 +6159,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -5941,6 +6241,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -6018,6 +6322,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -6096,6 +6404,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -6174,6 +6486,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -6251,6 +6567,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -6329,6 +6649,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -6409,6 +6733,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -6486,6 +6814,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -6564,6 +6896,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -6642,6 +6978,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -6719,6 +7059,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -6797,6 +7141,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -6877,6 +7225,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -6954,6 +7306,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -7032,6 +7388,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -7110,6 +7470,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -7187,6 +7551,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -7265,6 +7633,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -7345,6 +7717,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -7422,6 +7798,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -7500,6 +7880,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -7578,6 +7962,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -7655,6 +8043,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -7733,6 +8125,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -7811,6 +8207,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -7888,6 +8288,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -7966,6 +8370,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -8046,6 +8454,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -8123,6 +8535,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -8201,6 +8617,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -8279,6 +8699,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -8356,6 +8780,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -8434,6 +8862,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -8512,6 +8944,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -8589,6 +9025,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -8667,6 +9107,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -8745,6 +9189,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
                             selected: "selected";
@@ -8822,6 +9270,10 @@ export declare const Product: z.ZodObject<{
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                            white_ink: "white_ink";
                         }>]>>>;
                         colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                         optionUse: z.ZodOptional<z.ZodEnum<{
@@ -8900,6 +9352,10 @@ export declare const Product: z.ZodObject<{
                             }>, z.ZodEnum<{
                                 varaddress_side1: "varaddress_side1";
                                 varaddress_side2: "varaddress_side2";
+                            }>, z.ZodEnum<{
+                                white_ink_side1: "white_ink_side1";
+                                white_ink_side2: "white_ink_side2";
+                                white_ink: "white_ink";
                             }>]>>>;
                             optionUse: z.ZodOptional<z.ZodEnum<{
                                 selected: "selected";
@@ -8979,6 +9435,10 @@ export declare const Product: z.ZodObject<{
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                    white_ink: "white_ink";
                 }>]>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -9056,6 +9516,10 @@ export declare const Product: z.ZodObject<{
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                    white_ink: "white_ink";
                 }>]>>>;
                 colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
@@ -9134,6 +9598,10 @@ export declare const Product: z.ZodObject<{
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                        white_ink: "white_ink";
                     }>]>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -9215,6 +9683,10 @@ export declare const Product: z.ZodObject<{
             }>, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
+            }>, z.ZodEnum<{
+                white_ink_side1: "white_ink_side1";
+                white_ink_side2: "white_ink_side2";
+                white_ink: "white_ink";
             }>]>>>;
         }, z.core.$loose>>;
         prebuiltConfigurationId: z.ZodOptional<z.ZodString>;

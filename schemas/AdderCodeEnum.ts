@@ -10,6 +10,7 @@ import { InkCoverageAdderCode } from "./InkCoverageAdderCode.js";
 import { InkStampAdderCode } from "./InkStampAdderCode.js";
 import { PrintMethodAdderCode } from "./PrintMethodAdderCode.js";
 import { VariableAddressAdderCode } from "./VariableAddressAdderCode.js";
+import { WhiteInkAdderCode } from "./WhiteInkAdderCode.js";
 
 export const AdderCodeEnum = z.union([
   FoilColorAdderCode,
@@ -23,5 +24,6 @@ export const AdderCodeEnum = z.union([
   InkStampAdderCode,
   PrintMethodAdderCode,
   VariableAddressAdderCode,
+  WhiteInkAdderCode,
 ]);
 export type AdderCodeEnum = z.infer<typeof AdderCodeEnum>;

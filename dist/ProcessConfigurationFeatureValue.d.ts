@@ -69,6 +69,10 @@ export declare const ProcessConfigurationFeatureValue: z.ZodObject<{
     }>, z.ZodEnum<{
         varaddress_side1: "varaddress_side1";
         varaddress_side2: "varaddress_side2";
+    }>, z.ZodEnum<{
+        white_ink_side1: "white_ink_side1";
+        white_ink_side2: "white_ink_side2";
+        white_ink: "white_ink";
     }>]>>>;
     colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
     optionUse: z.ZodOptional<z.ZodEnum<{

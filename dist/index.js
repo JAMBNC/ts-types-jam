@@ -66,6 +66,7 @@ export * from './PrintMethodAdderCode.js';
 export * from './ProcessConfigurationFeatureValue.js';
 export * from './SidedFeatureValue.js';
 export * from './VariableAddressAdderCode.js';
+export * from './WhiteInkAdderCode.js';
 export * from './SimpleBearer.js';
 export * from './Basic.js';
 export * from './ApiKey.js';
