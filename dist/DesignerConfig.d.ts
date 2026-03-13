@@ -1,7 +1,7 @@
 import { z } from "zod";
 export declare const DesignerConfig: z.ZodObject<{
     adders: z.ZodRecord<z.ZodString, z.ZodString>;
-    default_content_placement: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+    default_content_placement: z.ZodOptional<z.ZodArray<z.ZodObject<{
         side: z.ZodOptional<z.ZodString>;
         type: z.ZodOptional<z.ZodString>;
         x: z.ZodOptional<z.ZodString>;

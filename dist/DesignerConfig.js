@@ -19,9 +19,7 @@ export const DesignerConfig = z
             }
         }
     }),
-    default_content_placement: z
-        .record(z.string(), ContentPlacement)
-        .optional(),
+    default_content_placement: z.array(ContentPlacement).optional(),
     features: z.any(),
     initial_on_load: InitialOnLoad.optional(),
     product_category: z.string(),
