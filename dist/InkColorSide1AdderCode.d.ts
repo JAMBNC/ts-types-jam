@@ -25,6 +25,7 @@ export declare const InkColorSide1AdderCode: z.ZodEnum<{
     color_side1_std_3pms: "color_side1_std_3pms";
     color_side1_4pms: "color_side1_4pms";
     color_side1_cmyk: "color_side1_cmyk";
+    color_side1_white_ink: "color_side1_white_ink";
 }>;
 export type InkColorSide1AdderCode = z.infer<typeof InkColorSide1AdderCode>;
 //# sourceMappingURL=InkColorSide1AdderCode.d.ts.map

@@ -20,10 +20,10 @@ export const DesignerConfig = z
         }
       }
     }),
-    default_content_placement: z.array(ContentPlacement).optional(),
+    defaultContentPlacement: z.array(ContentPlacement).optional(),
     features: z.any(),
-    initial_on_load: InitialOnLoad.optional(),
-    product_category: z.string(),
+    initialOnLoad: InitialOnLoad.optional(),
+    productCategory: z.string(),
     vendors: z.record(z.string(), z.array(AdderCodeEnum)),
   })
   .passthrough();

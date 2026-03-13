@@ -6,9 +6,9 @@ export const ProcessConfigurationFeatureValue = z
   .object({
     allowBackgroundColor: z.boolean().optional(),
     allowCustomColors: z.boolean().optional(),
-    available_options: z.array(AdderCodeEnum).optional(),
+    availableOptions: z.array(AdderCodeEnum).optional(),
     colors: z.array(z.string().uuid()).optional(),
-    option_use: OptionUse.optional(),
+    optionUse: OptionUse.optional(),
     restrictColors: z.boolean().optional(),
     type: z.literal("processConfigurationFeatureValue"),
   })

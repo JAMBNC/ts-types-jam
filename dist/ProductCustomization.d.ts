@@ -2,7 +2,7 @@ import { z } from "zod";
 export declare const ProductCustomization: z.ZodObject<{
     designerConfig: z.ZodOptional<z.ZodObject<{
         adders: z.ZodRecord<z.ZodString, z.ZodString>;
-        default_content_placement: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        defaultContentPlacement: z.ZodOptional<z.ZodArray<z.ZodObject<{
             side: z.ZodOptional<z.ZodString>;
             type: z.ZodOptional<z.ZodString>;
             x: z.ZodOptional<z.ZodString>;
@@ -17,10 +17,10 @@ export declare const ProductCustomization: z.ZodObject<{
             }>>;
         }, z.core.$loose>>>;
         features: z.ZodAny;
-        initial_on_load: z.ZodOptional<z.ZodObject<{
-            force_adders: z.ZodOptional<z.ZodArray<z.ZodString>>;
+        initialOnLoad: z.ZodOptional<z.ZodObject<{
+            forceAdders: z.ZodOptional<z.ZodArray<z.ZodString>>;
         }, z.core.$loose>>;
-        product_category: z.ZodString;
+        productCategory: z.ZodString;
         vendors: z.ZodRecord<z.ZodString, z.ZodArray<z.ZodUnion<readonly [z.ZodEnum<{
             foil_first_color: "foil_first_color";
             foil_second_color: "foil_second_color";
@@ -38,7 +38,7 @@ export declare const ProductCustomization: z.ZodObject<{
             foil_stamp_3: "foil_stamp_3";
             foil_stamp_4: "foil_stamp_4";
             foil_stamp_5: "foil_stamp_5";
-        }>, z.ZodEnum<{
+        }>, z.ZodLiteral<"setup_charge">, z.ZodEnum<{
             text: "text";
             image: "image";
         }>, z.ZodEnum<{
@@ -67,12 +67,19 @@ export declare const ProductCustomization: z.ZodObject<{
             color_side1_std_3pms: "color_side1_std_3pms";
             color_side1_4pms: "color_side1_4pms";
             color_side1_cmyk: "color_side1_cmyk";
+            color_side1_white_ink: "color_side1_white_ink";
         }>, z.ZodEnum<{
             color_side2_one_color: "color_side2_one_color";
             color_side2_two_color: "color_side2_two_color";
             color_side2_three_color: "color_side2_three_color";
             color_side2_four_color: "color_side2_four_color";
             color_side2_cmyk: "color_side2_cmyk";
+        }>, z.ZodEnum<{
+            ink_coverage_sm: "ink_coverage_sm";
+            ink_coverage_std: "ink_coverage_std";
+        }>, z.ZodEnum<{
+            ink_stamp_1: "ink_stamp_1";
+            ink_stamp_2: "ink_stamp_2";
         }>, z.ZodEnum<{
             print_method_auto: "print_method_auto";
             print_method_digital: "print_method_digital";

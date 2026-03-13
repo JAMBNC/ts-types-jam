@@ -16,7 +16,7 @@ export declare const AdderCodeEnum: z.ZodUnion<readonly [z.ZodEnum<{
     foil_stamp_3: "foil_stamp_3";
     foil_stamp_4: "foil_stamp_4";
     foil_stamp_5: "foil_stamp_5";
-}>, z.ZodEnum<{
+}>, z.ZodLiteral<"setup_charge">, z.ZodEnum<{
     text: "text";
     image: "image";
 }>, z.ZodEnum<{
@@ -45,12 +45,19 @@ export declare const AdderCodeEnum: z.ZodUnion<readonly [z.ZodEnum<{
     color_side1_std_3pms: "color_side1_std_3pms";
     color_side1_4pms: "color_side1_4pms";
     color_side1_cmyk: "color_side1_cmyk";
+    color_side1_white_ink: "color_side1_white_ink";
 }>, z.ZodEnum<{
     color_side2_one_color: "color_side2_one_color";
     color_side2_two_color: "color_side2_two_color";
     color_side2_three_color: "color_side2_three_color";
     color_side2_four_color: "color_side2_four_color";
     color_side2_cmyk: "color_side2_cmyk";
+}>, z.ZodEnum<{
+    ink_coverage_sm: "ink_coverage_sm";
+    ink_coverage_std: "ink_coverage_std";
+}>, z.ZodEnum<{
+    ink_stamp_1: "ink_stamp_1";
+    ink_stamp_2: "ink_stamp_2";
 }>, z.ZodEnum<{
     print_method_auto: "print_method_auto";
     print_method_digital: "print_method_digital";

@@ -4,8 +4,8 @@ import { OptionUse } from "./OptionUse.js";
 
 export const FeatureValue = z
   .object({
-    available_options: z.array(AdderCodeEnum).optional(),
-    option_use: OptionUse.optional(),
+    availableOptions: z.array(AdderCodeEnum).optional(),
+    optionUse: OptionUse.optional(),
     type: z.literal("featureValue"),
   })
   .passthrough();
