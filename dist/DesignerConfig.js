@@ -117,7 +117,33 @@ export const DesignerConfig = z
             .passthrough()
             .optional(),
     })
-        .catchall(DesignerConfigFeatureValue),
+        .passthrough()
+        .superRefine((value, ctx) => {
+        const defined_keys = new Set([
+            "processes",
+            "process",
+            "slits",
+            "addressing",
+            "coatings",
+            "roll",
+            "sign",
+        ]);
+        for (const key in value) {
+            if (!defined_keys.has(key)) {
+                const result = DesignerConfigFeatureValue.safeParse(value[key]);
+                if (!result.success) {
+                    ctx.addIssue({
+                        path: [...ctx.path, key],
+                        code: "custom",
+                        message: `Invalid input: must match additionalProperties schema`,
+                        params: {
+                            issues: result.error.issues,
+                        },
+                    });
+                }
+            }
+        }
+    }),
     initialOnLoad: InitialOnLoad.optional(),
     productCategory: z.string(),
     vendors: z.record(z.string(), z.array(AdderCodeEnum)),
