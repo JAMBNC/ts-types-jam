@@ -22,9 +22,7 @@ export const DesignState = z
     coatingLocations: z
         .record(z.string(), z.any())
         .describe("Map of coating location definitions."),
-    /**A numeric value with a unit of measurement.*/
     dimHeight: Dimension,
-    /**A numeric value with a unit of measurement.*/
     dimWidth: Dimension,
     /**Whether the design has a buffer zone.*/
     hasBuffer: z.boolean().describe("Whether the design has a buffer zone."),

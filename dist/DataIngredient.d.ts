@@ -17,41 +17,41 @@ export declare const DataIngredient: z.ZodObject<{
     zIndex: z.ZodNumber;
     data: z.ZodObject<{
         width: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         height: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         x: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         y: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         type: z.ZodString;
         viewLayer: z.ZodString;
         layerName: z.ZodString;

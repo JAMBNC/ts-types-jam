@@ -3,115 +3,115 @@ import { z } from "zod";
 export declare const Point: z.ZodDiscriminatedUnion<[z.ZodObject<{
     type: z.ZodLiteral<"bezier">;
     ix: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     iy: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     ox: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     oy: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     x: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     y: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"line">;
     ix: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     iy: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     ox: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     oy: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     x: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     y: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
 }, z.core.$strict>]>;
 export type Point = z.infer<typeof Point>;
 //# sourceMappingURL=Point.d.ts.map

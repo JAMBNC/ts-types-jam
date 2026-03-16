@@ -1,6 +1,12 @@
 import { z } from "zod";
 export declare const FeatureValue: z.ZodObject<{
-    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodEnum<{
+    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+    }, z.core.$loose>, z.ZodEnum<{
+        handling_charge: "handling_charge";
+        print_charge: "print_charge";
+        setup_charge: "setup_charge";
+    }>, z.ZodEnum<{
         foil_first_color: "foil_first_color";
         foil_second_color: "foil_second_color";
         foil_third_color: "foil_third_color";
@@ -17,7 +23,7 @@ export declare const FeatureValue: z.ZodObject<{
         foil_stamp_3: "foil_stamp_3";
         foil_stamp_4: "foil_stamp_4";
         foil_stamp_5: "foil_stamp_5";
-    }>, z.ZodLiteral<"setup_charge">, z.ZodEnum<{
+    }>, z.ZodEnum<{
         text: "text";
         image: "image";
     }>, z.ZodEnum<{
@@ -65,6 +71,9 @@ export declare const FeatureValue: z.ZodObject<{
         print_method_offset: "print_method_offset";
         letterpress_ink1: "letterpress_ink1";
     }>, z.ZodEnum<{
+        retaddress_side1: "retaddress_side1";
+        retaddress_side2: "retaddress_side2";
+    }>, z.ZodEnum<{
         varaddress_side1: "varaddress_side1";
         varaddress_side2: "varaddress_side2";
     }>, z.ZodEnum<{
@@ -74,8 +83,8 @@ export declare const FeatureValue: z.ZodObject<{
     }>]>>>;
     optionUse: z.ZodOptional<z.ZodEnum<{
         selected: "selected";
-        all: "all";
         none: "none";
+        all: "all";
     }>>;
     type: z.ZodLiteral<"featureValue">;
 }, z.core.$loose>;

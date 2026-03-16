@@ -30,13 +30,9 @@ export const DataIngredient = z
     /**The data payload describing the content.*/
     data: z
       .object({
-        /**A numeric value with a unit of measurement.*/
         width: Dimension,
-        /**A numeric value with a unit of measurement.*/
         height: Dimension,
-        /**A numeric value with a unit of measurement.*/
         x: Dimension,
-        /**A numeric value with a unit of measurement.*/
         y: Dimension,
         type: z.string(),
         viewLayer: z.string(),

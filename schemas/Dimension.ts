@@ -1,14 +1,12 @@
 import { z } from "zod";
-import { DimensionUnit } from "./DimensionUnit.js";
+import { Unit } from "./Unit.js";
 
-/**A numeric value with a unit of measurement.*/
 export const Dimension = z
   .object({
-    /**The numeric value.*/
-    v: z.number().describe("The numeric value."),
     /**The unit of measurement for dimensions.*/
-    u: DimensionUnit,
+    unit: Unit,
+    /**The numeric value.*/
+    value: z.number().describe("The numeric value."),
   })
-  .strict()
-  .describe("A numeric value with a unit of measurement.");
+  .passthrough();
 export type Dimension = z.infer<typeof Dimension>;

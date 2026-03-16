@@ -3,59 +3,59 @@ import { z } from "zod";
 export declare const LinePoint: z.ZodObject<{
     type: z.ZodLiteral<"line">;
     ix: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     iy: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     ox: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     oy: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     x: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     y: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
 }, z.core.$strict>;
 export type LinePoint = z.infer<typeof LinePoint>;
 //# sourceMappingURL=LinePoint.d.ts.map

@@ -20,41 +20,41 @@ export declare const ImageIngredient: z.ZodObject<{
     naturalHeight: z.ZodOptional<z.ZodNumber>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         y: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         width: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         height: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type ImageIngredient = z.infer<typeof ImageIngredient>;

@@ -39,51 +39,51 @@ export declare const RectangleIngredient: z.ZodObject<{
     strokeWidth: z.ZodNumber;
     lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
     strokeCornerRadius: z.ZodObject<{
-        v: z.ZodNumber;
-        u: z.ZodEnum<{
+        unit: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-    }, z.core.$strict>;
+        value: z.ZodNumber;
+    }, z.core.$loose>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         y: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         width: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         height: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type RectangleIngredient = z.infer<typeof RectangleIngredient>;

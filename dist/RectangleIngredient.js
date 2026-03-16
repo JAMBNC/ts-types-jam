@@ -35,7 +35,6 @@ export const RectangleIngredient = z
     strokeColor: z.union([RgbColor, z.null()]),
     strokeWidth: z.number(),
     lineDash: z.union([z.array(z.number()), z.null()]),
-    /**A numeric value with a unit of measurement.*/
     strokeCornerRadius: Dimension,
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,

@@ -40,133 +40,133 @@ export declare const TextIngredient: z.ZodObject<{
         }, z.core.$strict>;
         textLines: z.ZodOptional<z.ZodArray<z.ZodObject<{
             x: z.ZodObject<{
-                v: z.ZodNumber;
-                u: z.ZodEnum<{
+                unit: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-            }, z.core.$strict>;
+                value: z.ZodNumber;
+            }, z.core.$loose>;
             y: z.ZodObject<{
-                v: z.ZodNumber;
-                u: z.ZodEnum<{
+                unit: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-            }, z.core.$strict>;
+                value: z.ZodNumber;
+            }, z.core.$loose>;
             width: z.ZodObject<{
-                v: z.ZodNumber;
-                u: z.ZodEnum<{
+                unit: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-            }, z.core.$strict>;
+                value: z.ZodNumber;
+            }, z.core.$loose>;
             height: z.ZodObject<{
-                v: z.ZodNumber;
-                u: z.ZodEnum<{
+                unit: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-            }, z.core.$strict>;
+                value: z.ZodNumber;
+            }, z.core.$loose>;
             span: z.ZodObject<{
                 charPositions: z.ZodString;
                 fontSize: z.ZodObject<{
-                    v: z.ZodNumber;
-                    u: z.ZodEnum<{
+                    unit: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                }, z.core.$strict>;
+                    value: z.ZodNumber;
+                }, z.core.$loose>;
                 glyphIds: z.ZodString;
                 glyphPositions: z.ZodString;
                 glyphXOffsets: z.ZodString;
                 glyphYOffsets: z.ZodString;
                 text: z.ZodString;
                 x: z.ZodObject<{
-                    v: z.ZodNumber;
-                    u: z.ZodEnum<{
+                    unit: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                }, z.core.$strict>;
+                    value: z.ZodNumber;
+                }, z.core.$loose>;
                 y: z.ZodObject<{
-                    v: z.ZodNumber;
-                    u: z.ZodEnum<{
+                    unit: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                }, z.core.$strict>;
+                    value: z.ZodNumber;
+                }, z.core.$loose>;
                 width: z.ZodObject<{
-                    v: z.ZodNumber;
-                    u: z.ZodEnum<{
+                    unit: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                }, z.core.$strict>;
+                    value: z.ZodNumber;
+                }, z.core.$loose>;
                 height: z.ZodObject<{
-                    v: z.ZodNumber;
-                    u: z.ZodEnum<{
+                    unit: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                }, z.core.$strict>;
+                    value: z.ZodNumber;
+                }, z.core.$loose>;
             }, z.core.$loose>;
         }, z.core.$loose>>>;
     }, z.core.$loose>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         y: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         width: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
         height: z.ZodObject<{
-            v: z.ZodNumber;
-            u: z.ZodEnum<{
+            unit: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-        }, z.core.$strict>;
+            value: z.ZodNumber;
+        }, z.core.$loose>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type TextIngredient = z.infer<typeof TextIngredient>;

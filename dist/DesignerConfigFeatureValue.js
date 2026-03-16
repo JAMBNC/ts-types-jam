@@ -1,8 +1,10 @@
 import { z } from "zod";
+import { CoverageFeatureValue } from "./CoverageFeatureValue.js";
 import { FeatureValue } from "./FeatureValue.js";
 import { ProcessConfigurationFeatureValue } from "./ProcessConfigurationFeatureValue.js";
 import { SidedFeatureValue } from "./SidedFeatureValue.js";
 export const DesignerConfigFeatureValue = z.union([
+    CoverageFeatureValue,
     FeatureValue,
     ProcessConfigurationFeatureValue,
     SidedFeatureValue,

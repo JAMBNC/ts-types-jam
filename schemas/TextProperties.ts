@@ -49,13 +49,9 @@ export const TextProperties = z
       .array(
         z
           .object({
-            /**A numeric value with a unit of measurement.*/
             x: Dimension,
-            /**A numeric value with a unit of measurement.*/
             y: Dimension,
-            /**A numeric value with a unit of measurement.*/
             width: Dimension,
-            /**A numeric value with a unit of measurement.*/
             height: Dimension,
             /**Sub details about the specific line and its glyphs*/
             span: z
@@ -64,7 +60,6 @@ export const TextProperties = z
                 charPositions: z
                   .string()
                   .describe("Semicolon separated list of character positions"),
-                /**A numeric value with a unit of measurement.*/
                 fontSize: Dimension,
                 /**Semicolon separated list of glyph ids*/
                 glyphIds: z
@@ -84,13 +79,9 @@ export const TextProperties = z
                   .describe("Semicolon separated list of glyph y offsets"),
                 /**Plaintext string of the line text*/
                 text: z.string().describe("Plaintext string of the line text"),
-                /**A numeric value with a unit of measurement.*/
                 x: Dimension,
-                /**A numeric value with a unit of measurement.*/
                 y: Dimension,
-                /**A numeric value with a unit of measurement.*/
                 width: Dimension,
-                /**A numeric value with a unit of measurement.*/
                 height: Dimension,
               })
               .passthrough()
