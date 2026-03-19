@@ -1,9 +1,17 @@
 import { z } from "zod";
 export declare const SidedFeatureValue: z.ZodObject<{
     sides: z.ZodArray<z.ZodObject<{
-        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-        }, z.core.$loose>, z.ZodEnum<{
+        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+            foil_coverage_sm: "foil_coverage_sm";
+            foil_coverage_std: "foil_coverage_std";
+            foil_coverage_lg: "foil_coverage_lg";
+            foil_coverage_xl: "foil_coverage_xl";
+        }>, z.ZodEnum<{
+            ink_coverage_sm: "ink_coverage_sm";
+            ink_coverage_std: "ink_coverage_std";
+        }>]>>, z.ZodEnum<{
             handling_charge: "handling_charge";
             print_charge: "print_charge";
             setup_charge: "setup_charge";

@@ -1,8 +1,16 @@
 import { z } from "zod";
 export declare const CoverageFeatureValue: z.ZodObject<{
-    availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+    availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
         type: z.ZodLiteral<"coverageAdderCodeEnum">;
-    }, z.core.$loose>>>;
+    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+        foil_coverage_sm: "foil_coverage_sm";
+        foil_coverage_std: "foil_coverage_std";
+        foil_coverage_lg: "foil_coverage_lg";
+        foil_coverage_xl: "foil_coverage_xl";
+    }>, z.ZodEnum<{
+        ink_coverage_sm: "ink_coverage_sm";
+        ink_coverage_std: "ink_coverage_std";
+    }>]>>>>;
     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
         u: z.ZodEnum<{
             in: "in";

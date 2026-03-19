@@ -20,9 +20,17 @@ export declare const Product: z.ZodObject<{
     customization: z.ZodOptional<z.ZodObject<{
         designerConfig: z.ZodOptional<z.ZodObject<{
             adders: z.ZodRecord<z.ZodString, z.ZodString>;
-            defaultAdders: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<readonly [z.ZodObject<{
+            defaultAdders: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-            }, z.core.$loose>, z.ZodEnum<{
+            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                foil_coverage_sm: "foil_coverage_sm";
+                foil_coverage_std: "foil_coverage_std";
+                foil_coverage_lg: "foil_coverage_lg";
+                foil_coverage_xl: "foil_coverage_xl";
+            }>, z.ZodEnum<{
+                ink_coverage_sm: "ink_coverage_sm";
+                ink_coverage_std: "ink_coverage_std";
+            }>]>>, z.ZodEnum<{
                 handling_charge: "handling_charge";
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
@@ -117,9 +125,17 @@ export declare const Product: z.ZodObject<{
             }, z.core.$loose>>>;
             features: z.ZodObject<{
                 processes: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                    }, z.core.$loose>>>;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                         u: z.ZodEnum<{
                             in: "in";
@@ -136,9 +152,17 @@ export declare const Product: z.ZodObject<{
                     }>>;
                     type: z.ZodLiteral<"coverageFeatureValue">;
                 }, z.core.$loose>, z.ZodObject<{
-                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                    }, z.core.$loose>, z.ZodEnum<{
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -226,9 +250,17 @@ export declare const Product: z.ZodObject<{
                 }, z.core.$loose>, z.ZodObject<{
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                     allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                    }, z.core.$loose>, z.ZodEnum<{
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -317,9 +349,17 @@ export declare const Product: z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 }, z.core.$loose>, z.ZodObject<{
                     sides: z.ZodArray<z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -410,9 +450,17 @@ export declare const Product: z.ZodObject<{
                 process: z.ZodOptional<z.ZodObject<{
                     ink: z.ZodOptional<z.ZodObject<{
                         configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -429,9 +477,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -519,9 +575,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -610,9 +674,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -701,9 +773,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -720,9 +800,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -810,9 +898,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -901,9 +997,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -992,9 +1096,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -1011,9 +1123,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1101,9 +1221,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1192,9 +1320,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -1283,9 +1419,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         colors: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -1302,9 +1446,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1392,9 +1544,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1483,9 +1643,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -1574,9 +1742,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         white: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -1593,9 +1769,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1683,9 +1867,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1774,9 +1966,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -1867,9 +2067,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>>;
                     embossing: z.ZodOptional<z.ZodObject<{
                         stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -1886,9 +2094,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -1976,9 +2192,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2067,9 +2291,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -2158,9 +2390,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         border: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -2177,9 +2417,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2267,9 +2515,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2358,9 +2614,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -2449,9 +2713,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -2468,9 +2740,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2558,9 +2838,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2649,9 +2937,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -2742,9 +3038,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>>;
                     foil: z.ZodOptional<z.ZodObject<{
                         configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -2761,9 +3065,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2851,9 +3163,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -2942,9 +3262,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -3033,9 +3361,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         color: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -3052,9 +3388,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -3142,9 +3486,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -3233,9 +3585,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -3324,9 +3684,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -3343,9 +3711,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -3433,9 +3809,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -3524,9 +3908,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -3615,9 +4007,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -3634,9 +4034,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -3724,9 +4132,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -3815,9 +4231,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -3908,9 +4332,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>>;
                     engraving: z.ZodOptional<z.ZodObject<{
                         configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -3927,9 +4359,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4017,9 +4457,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4108,9 +4556,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -4199,9 +4655,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -4218,9 +4682,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4308,9 +4780,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4399,9 +4879,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -4490,9 +4978,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -4509,9 +5005,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4599,9 +5103,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4690,9 +5202,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -4781,9 +5301,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         colors: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -4800,9 +5328,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4890,9 +5426,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -4981,9 +5525,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -5074,9 +5626,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>>;
                     letterpress: z.ZodOptional<z.ZodObject<{
                         configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -5093,9 +5653,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -5183,9 +5751,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -5274,9 +5850,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -5365,9 +5949,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -5384,9 +5976,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -5474,9 +6074,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -5565,9 +6173,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -5656,9 +6272,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -5675,9 +6299,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -5765,9 +6397,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -5856,9 +6496,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -5947,9 +6595,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"sidedFeatureValue">;
                         }, z.core.$loose>]>>;
                         colors: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>>>;
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>>>;
                             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                                 u: z.ZodEnum<{
                                     in: "in";
@@ -5966,9 +6622,17 @@ export declare const Product: z.ZodObject<{
                             }>>;
                             type: z.ZodLiteral<"coverageFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -6056,9 +6720,17 @@ export declare const Product: z.ZodObject<{
                         }, z.core.$loose>, z.ZodObject<{
                             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                             allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -6147,9 +6819,17 @@ export declare const Product: z.ZodObject<{
                             type: z.ZodLiteral<"processConfigurationFeatureValue">;
                         }, z.core.$loose>, z.ZodObject<{
                             sides: z.ZodArray<z.ZodObject<{
-                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                                }, z.core.$loose>, z.ZodEnum<{
+                                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                    foil_coverage_sm: "foil_coverage_sm";
+                                    foil_coverage_std: "foil_coverage_std";
+                                    foil_coverage_lg: "foil_coverage_lg";
+                                    foil_coverage_xl: "foil_coverage_xl";
+                                }>, z.ZodEnum<{
+                                    ink_coverage_sm: "ink_coverage_sm";
+                                    ink_coverage_std: "ink_coverage_std";
+                                }>]>>, z.ZodEnum<{
                                     handling_charge: "handling_charge";
                                     print_charge: "print_charge";
                                     setup_charge: "setup_charge";
@@ -6241,9 +6921,17 @@ export declare const Product: z.ZodObject<{
                 }, z.core.$loose>>;
                 slits: z.ZodOptional<z.ZodObject<{
                     left: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -6260,9 +6948,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6350,9 +7046,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6441,9 +7145,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -6532,9 +7244,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     middle: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -6551,9 +7271,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6641,9 +7369,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6732,9 +7468,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -6823,9 +7567,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     right: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -6842,9 +7594,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6932,9 +7692,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7023,9 +7791,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -7114,9 +7890,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     frontCover: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -7133,9 +7917,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7223,9 +8015,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7314,9 +8114,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -7405,9 +8213,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     certificate: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -7424,9 +8240,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7514,9 +8338,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7605,9 +8437,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -7696,9 +8536,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     flap: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -7715,9 +8563,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7805,9 +8661,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7896,9 +8760,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -7989,9 +8861,17 @@ export declare const Product: z.ZodObject<{
                 }, z.core.$loose>>;
                 addressing: z.ZodOptional<z.ZodObject<{
                     variable: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -8008,9 +8888,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8098,9 +8986,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8189,9 +9085,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -8280,9 +9184,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     return: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -8299,9 +9211,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8389,9 +9309,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8480,9 +9408,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -8573,9 +9509,17 @@ export declare const Product: z.ZodObject<{
                 }, z.core.$loose>>;
                 coatings: z.ZodOptional<z.ZodObject<{
                     uv: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -8592,9 +9536,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8682,9 +9634,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8773,9 +9733,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -8864,9 +9832,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     aqueous: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -8883,9 +9859,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8973,9 +9957,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9064,9 +10056,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -9157,9 +10157,17 @@ export declare const Product: z.ZodObject<{
                 }, z.core.$loose>>;
                 roll: z.ZodOptional<z.ZodObject<{
                     qty: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -9176,9 +10184,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9266,9 +10282,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9357,9 +10381,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -9448,9 +10480,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     perforation: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -9467,9 +10507,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9557,9 +10605,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9648,9 +10704,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -9739,9 +10803,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     core: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -9758,9 +10830,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9848,9 +10928,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9939,9 +11027,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -10032,9 +11128,17 @@ export declare const Product: z.ZodObject<{
                 }, z.core.$loose>>;
                 sign: z.ZodOptional<z.ZodObject<{
                     accessory: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -10051,9 +11155,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10141,9 +11253,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10232,9 +11352,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -10323,9 +11451,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     fastener: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -10342,9 +11478,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10432,9 +11576,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10523,9 +11675,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -10614,9 +11774,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     wallholder: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -10633,9 +11801,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10723,9 +11899,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10814,9 +11998,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -10905,9 +12097,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"sidedFeatureValue">;
                     }, z.core.$loose>]>>;
                     backing: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>>>;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>>>;
                         coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
                             u: z.ZodEnum<{
                                 in: "in";
@@ -10924,9 +12124,17 @@ export declare const Product: z.ZodObject<{
                         }>>;
                         type: z.ZodLiteral<"coverageFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -11014,9 +12222,17 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>, z.ZodObject<{
                         allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
                         allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                             type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                        }, z.core.$loose>, z.ZodEnum<{
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -11105,9 +12321,17 @@ export declare const Product: z.ZodObject<{
                         type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     }, z.core.$loose>, z.ZodObject<{
                         sides: z.ZodArray<z.ZodObject<{
-                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+                            availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                            }, z.core.$loose>, z.ZodEnum<{
+                            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                                foil_coverage_sm: "foil_coverage_sm";
+                                foil_coverage_std: "foil_coverage_std";
+                                foil_coverage_lg: "foil_coverage_lg";
+                                foil_coverage_xl: "foil_coverage_xl";
+                            }>, z.ZodEnum<{
+                                ink_coverage_sm: "ink_coverage_sm";
+                                ink_coverage_std: "ink_coverage_std";
+                            }>]>>, z.ZodEnum<{
                                 handling_charge: "handling_charge";
                                 print_charge: "print_charge";
                                 setup_charge: "setup_charge";
@@ -11201,9 +12425,17 @@ export declare const Product: z.ZodObject<{
                 forceAdders: z.ZodOptional<z.ZodArray<z.ZodString>>;
             }, z.core.$loose>>;
             productCategory: z.ZodString;
-            vendors: z.ZodRecord<z.ZodString, z.ZodArray<z.ZodUnion<readonly [z.ZodObject<{
+            vendors: z.ZodRecord<z.ZodString, z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
-            }, z.core.$loose>, z.ZodEnum<{
+            }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                foil_coverage_sm: "foil_coverage_sm";
+                foil_coverage_std: "foil_coverage_std";
+                foil_coverage_lg: "foil_coverage_lg";
+                foil_coverage_xl: "foil_coverage_xl";
+            }>, z.ZodEnum<{
+                ink_coverage_sm: "ink_coverage_sm";
+                ink_coverage_std: "ink_coverage_std";
+            }>]>>, z.ZodEnum<{
                 handling_charge: "handling_charge";
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
