@@ -8,7 +8,7 @@ export declare const ProductUrl: z.ZodObject<{
         designer: z.ZodOptional<z.ZodEnum<{
             chili: "chili";
             luma: "luma";
-            addrLogo: "addrLogo";
+            hermes: "hermes";
         }>>;
     }, z.core.$loose>>;
     url: z.ZodOptional<z.ZodString>;

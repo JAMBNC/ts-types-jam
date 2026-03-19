@@ -21,6 +21,7 @@ export const DesignerConfig = z
         }
       }
     }),
+    defaultAdders: z.record(z.string(), AdderCodeEnum).optional(),
     defaultContentPlacement: z.array(ContentPlacement).optional(),
     features: z
       .object({
