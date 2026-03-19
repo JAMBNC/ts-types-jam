@@ -12822,6 +12822,23 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
+        errors: z.ZodOptional<z.ZodObject<{
+            ProductQuantityLessThanMinimumOrderQuantity: z.ZodDefault<z.ZodString>;
+            ProductQuantityIncrementNotValid: z.ZodDefault<z.ZodString>;
+            VariableAddressMultipleFrames: z.ZodDefault<z.ZodString>;
+            VariableAddressCountExceedsOrderQuantity: z.ZodDefault<z.ZodString>;
+            ExceedsMaxFoilColorAllowance: z.ZodDefault<z.ZodString>;
+            ExceedsMaxFoilCoverageAllowance: z.ZodDefault<z.ZodString>;
+            ExceedsMaxFoilStampAllowance: z.ZodDefault<z.ZodString>;
+            FoilAndInkNotAllowed: z.ZodDefault<z.ZodString>;
+            ExceedsMaxInkColorAllowance: z.ZodDefault<z.ZodString>;
+            ExceedsMaxInkCoverageAllowance: z.ZodDefault<z.ZodString>;
+            ExceedsMaxInkStampAllowance: z.ZodDefault<z.ZodString>;
+            InvalidInkCombination: z.ZodDefault<z.ZodString>;
+            CannotDigitallyPrintMetallicInk: z.ZodDefault<z.ZodString>;
+            VendorDoesNotSupportAdders: z.ZodDefault<z.ZodString>;
+            WhiteInkAndOtherProcessNotAllowed: z.ZodDefault<z.ZodString>;
+        }, z.core.$strict>>;
     }, z.core.$loose>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
 }, z.core.$loose>;

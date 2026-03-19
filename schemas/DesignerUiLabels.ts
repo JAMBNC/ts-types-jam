@@ -561,6 +561,66 @@ export const DesignerUiLabels = z
       .string()
       .describe("The ui label for variable addressing on side two")
       .default("Variable Addressing Side 2"),
+    /**UI labels for validation error messages, keyed by ValidationError enum string.*/
+    errors: z
+      .object({
+        ProductQuantityLessThanMinimumOrderQuantity: z
+          .string()
+          .default(
+            "The quantity is below the minimum order quantity for this product.",
+          ),
+        ProductQuantityIncrementNotValid: z
+          .string()
+          .default("The quantity is not a valid increment for this product."),
+        VariableAddressMultipleFrames: z
+          .string()
+          .default("Variable address data can only be used in a single frame."),
+        VariableAddressCountExceedsOrderQuantity: z
+          .string()
+          .default(
+            "The number of variable addresses exceeds the order quantity.",
+          ),
+        ExceedsMaxFoilColorAllowance: z
+          .string()
+          .default("Too many foil colors have been used."),
+        ExceedsMaxFoilCoverageAllowance: z
+          .string()
+          .default("Foil coverage area exceeds the maximum allowed."),
+        ExceedsMaxFoilStampAllowance: z
+          .string()
+          .default("Too many foil stamp elements have been used."),
+        FoilAndInkNotAllowed: z
+          .string()
+          .default("Foil and ink cannot be combined on this product."),
+        ExceedsMaxInkColorAllowance: z
+          .string()
+          .default("Too many ink colors have been used for offset printing."),
+        ExceedsMaxInkCoverageAllowance: z
+          .string()
+          .default("Ink coverage area exceeds the maximum allowed."),
+        ExceedsMaxInkStampAllowance: z
+          .string()
+          .default("Too many ink stamp elements have been used."),
+        InvalidInkCombination: z
+          .string()
+          .default("The selected ink colors cannot be combined."),
+        CannotDigitallyPrintMetallicInk: z
+          .string()
+          .default("Metallic ink colors cannot be digitally printed."),
+        VendorDoesNotSupportAdders: z
+          .string()
+          .default(
+            "One or more print options are not supported by any vendor.",
+          ),
+        WhiteInkAndOtherProcessNotAllowed: z
+          .string()
+          .default("White ink cannot be combined with other print processes."),
+      })
+      .strict()
+      .describe(
+        "UI labels for validation error messages, keyed by ValidationError enum string.",
+      )
+      .optional(),
   })
   .passthrough()
   .default({});
