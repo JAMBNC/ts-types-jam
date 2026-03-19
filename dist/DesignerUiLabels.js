@@ -541,58 +541,81 @@ export const DesignerUiLabels = z
         .string()
         .describe("The ui label for variable addressing on side two")
         .default("Variable Addressing Side 2"),
-    /**UI labels for validation error messages, keyed by ValidationError enum string.*/
-    errors: z
-        .object({
-        ProductQuantityLessThanMinimumOrderQuantity: z
-            .string()
-            .default("The quantity is below the minimum order quantity for this product."),
-        ProductQuantityIncrementNotValid: z
-            .string()
-            .default("The quantity is not a valid increment for this product."),
-        VariableAddressMultipleFrames: z
-            .string()
-            .default("Variable address data can only be used in a single frame."),
-        VariableAddressCountExceedsOrderQuantity: z
-            .string()
-            .default("The number of variable addresses exceeds the order quantity."),
-        ExceedsMaxFoilColorAllowance: z
-            .string()
-            .default("Too many foil colors have been used."),
-        ExceedsMaxFoilCoverageAllowance: z
-            .string()
-            .default("Foil coverage area exceeds the maximum allowed."),
-        ExceedsMaxFoilStampAllowance: z
-            .string()
-            .default("Too many foil stamp elements have been used."),
-        FoilAndInkNotAllowed: z
-            .string()
-            .default("Foil and ink cannot be combined on this product."),
-        ExceedsMaxInkColorAllowance: z
-            .string()
-            .default("Too many ink colors have been used for offset printing."),
-        ExceedsMaxInkCoverageAllowance: z
-            .string()
-            .default("Ink coverage area exceeds the maximum allowed."),
-        ExceedsMaxInkStampAllowance: z
-            .string()
-            .default("Too many ink stamp elements have been used."),
-        InvalidInkCombination: z
-            .string()
-            .default("The selected ink colors cannot be combined."),
-        CannotDigitallyPrintMetallicInk: z
-            .string()
-            .default("Metallic ink colors cannot be digitally printed."),
-        VendorDoesNotSupportAdders: z
-            .string()
-            .default("One or more print options are not supported by any vendor."),
-        WhiteInkAndOtherProcessNotAllowed: z
-            .string()
-            .default("White ink cannot be combined with other print processes."),
-    })
-        .strict()
-        .describe("UI labels for validation error messages, keyed by ValidationError enum string.")
-        .optional(),
+    /**Error message when quantity is below the minimum order quantity.*/
+    "error.ProductQuantityLessThanMinimumOrderQuantity": z
+        .string()
+        .describe("Error message when quantity is below the minimum order quantity.")
+        .default("The quantity is below the minimum order quantity for this product."),
+    /**Error message when quantity is not a valid increment.*/
+    "error.ProductQuantityIncrementNotValid": z
+        .string()
+        .describe("Error message when quantity is not a valid increment.")
+        .default("The quantity is not a valid increment for this product."),
+    /**Error message when variable address data is used in more than one frame.*/
+    "error.VariableAddressMultipleFrames": z
+        .string()
+        .describe("Error message when variable address data is used in more than one frame.")
+        .default("Variable address data can only be used in a single frame."),
+    /**Error message when the number of variable addresses exceeds the order quantity.*/
+    "error.VariableAddressCountExceedsOrderQuantity": z
+        .string()
+        .describe("Error message when the number of variable addresses exceeds the order quantity.")
+        .default("The number of variable addresses exceeds the order quantity."),
+    /**Error message when too many foil colors are used.*/
+    "error.ExceedsMaxFoilColorAllowance": z
+        .string()
+        .describe("Error message when too many foil colors are used.")
+        .default("Too many foil colors have been used."),
+    /**Error message when foil coverage area exceeds the maximum.*/
+    "error.ExceedsMaxFoilCoverageAllowance": z
+        .string()
+        .describe("Error message when foil coverage area exceeds the maximum.")
+        .default("Foil coverage area exceeds the maximum allowed."),
+    /**Error message when too many foil stamp elements are used.*/
+    "error.ExceedsMaxFoilStampAllowance": z
+        .string()
+        .describe("Error message when too many foil stamp elements are used.")
+        .default("Too many foil stamp elements have been used."),
+    /**Error message when foil and ink are combined on a product that does not allow it.*/
+    "error.FoilAndInkNotAllowed": z
+        .string()
+        .describe("Error message when foil and ink are combined on a product that does not allow it.")
+        .default("Foil and ink cannot be combined on this product."),
+    /**Error message when too many ink colors are used.*/
+    "error.ExceedsMaxInkColorAllowance": z
+        .string()
+        .describe("Error message when too many ink colors are used.")
+        .default("Too many ink colors have been used for offset printing."),
+    /**Error message when ink coverage area exceeds the maximum.*/
+    "error.ExceedsMaxInkCoverageAllowance": z
+        .string()
+        .describe("Error message when ink coverage area exceeds the maximum.")
+        .default("Ink coverage area exceeds the maximum allowed."),
+    /**Error message when too many ink stamp elements are used.*/
+    "error.ExceedsMaxInkStampAllowance": z
+        .string()
+        .describe("Error message when too many ink stamp elements are used.")
+        .default("Too many ink stamp elements have been used."),
+    /**Error message when the selected ink colors cannot be combined.*/
+    "error.InvalidInkCombination": z
+        .string()
+        .describe("Error message when the selected ink colors cannot be combined.")
+        .default("The selected ink colors cannot be combined."),
+    /**Error message when metallic ink colors cannot be digitally printed.*/
+    "error.CannotDigitallyPrintMetallicInk": z
+        .string()
+        .describe("Error message when metallic ink colors cannot be digitally printed.")
+        .default("Metallic ink colors cannot be digitally printed."),
+    /**Error message when one or more print options are not supported by any vendor.*/
+    "error.VendorDoesNotSupportAdders": z
+        .string()
+        .describe("Error message when one or more print options are not supported by any vendor.")
+        .default("One or more print options are not supported by any vendor."),
+    /**Error message when white ink is combined with other print processes.*/
+    "error.WhiteInkAndOtherProcessNotAllowed": z
+        .string()
+        .describe("Error message when white ink is combined with other print processes.")
+        .default("White ink cannot be combined with other print processes."),
 })
     .passthrough()
     .default({});
