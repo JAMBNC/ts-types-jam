@@ -39,50 +39,50 @@ export declare const RectangleIngredient: z.ZodObject<{
     strokeWidth: z.ZodNumber;
     lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
     strokeCornerRadius: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         y: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         width: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         height: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
     }, z.core.$strict>;
 }, z.core.$strict>;

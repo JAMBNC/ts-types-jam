@@ -102,13 +102,13 @@ export declare const DesignerConfig: z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
             }, z.core.$loose>>>;
             coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>>>;
             optionUse: z.ZodOptional<z.ZodEnum<{
                 selected: "selected";
@@ -395,13 +395,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -686,13 +686,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -977,13 +977,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -1268,13 +1268,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -1559,13 +1559,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -1852,13 +1852,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -2143,13 +2143,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -2434,13 +2434,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -2727,13 +2727,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -3018,13 +3018,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -3309,13 +3309,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -3600,13 +3600,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -3893,13 +3893,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -4184,13 +4184,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -4475,13 +4475,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -4766,13 +4766,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -5059,13 +5059,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -5350,13 +5350,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -5641,13 +5641,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -5932,13 +5932,13 @@ export declare const DesignerConfig: z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
                     }, z.core.$loose>>>;
                     coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>>>;
                     optionUse: z.ZodOptional<z.ZodEnum<{
                         selected: "selected";
@@ -6226,13 +6226,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -6517,13 +6517,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -6808,13 +6808,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -7099,13 +7099,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -7390,13 +7390,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -7681,13 +7681,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -7974,13 +7974,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -8265,13 +8265,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -8558,13 +8558,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -8849,13 +8849,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -9142,13 +9142,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -9433,13 +9433,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -9724,13 +9724,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -10017,13 +10017,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -10308,13 +10308,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -10599,13 +10599,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";
@@ -10890,13 +10890,13 @@ export declare const DesignerConfig: z.ZodObject<{
                     type: z.ZodLiteral<"coverageAdderCodeEnum">;
                 }, z.core.$loose>>>;
                 coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>>>;
                 optionUse: z.ZodOptional<z.ZodEnum<{
                     selected: "selected";

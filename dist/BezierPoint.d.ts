@@ -3,58 +3,58 @@ import { z } from "zod";
 export declare const BezierPoint: z.ZodObject<{
     type: z.ZodLiteral<"bezier">;
     ix: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     iy: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     ox: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     oy: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     x: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     y: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
 }, z.core.$strict>;
 export type BezierPoint = z.infer<typeof BezierPoint>;

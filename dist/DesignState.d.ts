@@ -8,22 +8,22 @@ export declare const DesignState: z.ZodObject<{
     version: z.ZodString;
     coatingLocations: z.ZodRecord<z.ZodString, z.ZodAny>;
     dimHeight: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     dimWidth: z.ZodObject<{
-        unit: z.ZodEnum<{
+        u: z.ZodEnum<{
             in: "in";
             mm: "mm";
             px: "px";
             pt: "pt";
         }>;
-        value: z.ZodNumber;
+        v: z.ZodNumber;
     }, z.core.$loose>;
     hasBuffer: z.ZodBoolean;
     pages: z.ZodRecord<z.ZodString, z.ZodObject<{
@@ -48,40 +48,40 @@ export declare const DesignState: z.ZodObject<{
         zIndex: z.ZodNumber;
         data: z.ZodObject<{
             width: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             height: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             x: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             y: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             type: z.ZodString;
             viewLayer: z.ZodString;
@@ -116,40 +116,40 @@ export declare const DesignState: z.ZodObject<{
         }, z.core.$strict>;
         rect: z.ZodObject<{
             x: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             y: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             width: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             height: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -195,114 +195,114 @@ export declare const DesignState: z.ZodObject<{
             points: z.ZodRecord<z.ZodString, z.ZodDiscriminatedUnion<[z.ZodObject<{
                 type: z.ZodLiteral<"bezier">;
                 ix: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 iy: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 ox: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 oy: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 x: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 y: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
             }, z.core.$strict>, z.ZodObject<{
                 type: z.ZodLiteral<"line">;
                 ix: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 iy: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 ox: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 oy: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 x: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 y: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
             }, z.core.$strict>]>>;
             pointsOrdered: z.ZodArray<z.ZodString>;
@@ -310,40 +310,40 @@ export declare const DesignState: z.ZodObject<{
         pathsOrdered: z.ZodArray<z.ZodString>;
         rect: z.ZodObject<{
             x: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             y: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             width: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             height: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -385,50 +385,50 @@ export declare const DesignState: z.ZodObject<{
         strokeWidth: z.ZodNumber;
         lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
         strokeCornerRadius: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         rect: z.ZodObject<{
             x: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             y: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             width: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             height: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -471,51 +471,51 @@ export declare const DesignState: z.ZodObject<{
             }, z.core.$strict>;
             textLines: z.ZodOptional<z.ZodArray<z.ZodObject<{
                 x: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 y: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 width: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 height: z.ZodObject<{
-                    unit: z.ZodEnum<{
+                    u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
                         px: "px";
                         pt: "pt";
                     }>;
-                    value: z.ZodNumber;
+                    v: z.ZodNumber;
                 }, z.core.$loose>;
                 span: z.ZodObject<{
                     charPositions: z.ZodString;
                     fontSize: z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>;
                     glyphIds: z.ZodString;
                     glyphPositions: z.ZodString;
@@ -523,80 +523,80 @@ export declare const DesignState: z.ZodObject<{
                     glyphYOffsets: z.ZodString;
                     text: z.ZodString;
                     x: z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>;
                     y: z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>;
                     width: z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>;
                     height: z.ZodObject<{
-                        unit: z.ZodEnum<{
+                        u: z.ZodEnum<{
                             in: "in";
                             mm: "mm";
                             px: "px";
                             pt: "pt";
                         }>;
-                        value: z.ZodNumber;
+                        v: z.ZodNumber;
                     }, z.core.$loose>;
                 }, z.core.$loose>;
             }, z.core.$loose>>>;
         }, z.core.$loose>;
         rect: z.ZodObject<{
             x: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             y: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             width: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             height: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -619,40 +619,40 @@ export declare const DesignState: z.ZodObject<{
         naturalHeight: z.ZodOptional<z.ZodNumber>;
         rect: z.ZodObject<{
             x: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             y: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             width: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
             height: z.ZodObject<{
-                unit: z.ZodEnum<{
+                u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
                     px: "px";
                     pt: "pt";
                 }>;
-                value: z.ZodNumber;
+                v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$strict>;
     }, z.core.$strict>]>>;

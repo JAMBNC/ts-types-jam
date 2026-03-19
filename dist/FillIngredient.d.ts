@@ -26,40 +26,40 @@ export declare const FillIngredient: z.ZodObject<{
     }, z.core.$strict>;
     rect: z.ZodObject<{
         x: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         y: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         width: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
         height: z.ZodObject<{
-            unit: z.ZodEnum<{
+            u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
                 px: "px";
                 pt: "pt";
             }>;
-            value: z.ZodNumber;
+            v: z.ZodNumber;
         }, z.core.$loose>;
     }, z.core.$strict>;
 }, z.core.$strict>;
