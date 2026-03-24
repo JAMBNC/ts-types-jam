@@ -12421,9 +12421,6 @@ export declare const Product: z.ZodObject<{
                     }, z.core.$loose>]>>;
                 }, z.core.$loose>>;
             }, z.core.$loose>;
-            initialOnLoad: z.ZodOptional<z.ZodObject<{
-                forceAdders: z.ZodOptional<z.ZodArray<z.ZodString>>;
-            }, z.core.$loose>>;
             productCategory: z.ZodString;
             vendors: z.ZodRecord<z.ZodString, z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;

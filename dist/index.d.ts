@@ -59,7 +59,6 @@ export * from './FoilColorAdderCode.js';
 export * from './FoilCoverageAdderCode.js';
 export * from './FoilStampAdderCode.js';
 export * from './FrameTypeAdderCode.js';
-export * from './InitialOnLoad.js';
 export * from './InkColorSide1AdderCode.js';
 export * from './InkColorSide2AdderCode.js';
 export * from './InkCoverageAdderCode.js';

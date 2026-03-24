@@ -2,7 +2,6 @@ import { z } from "zod";
 import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { ContentPlacement } from "./ContentPlacement.js";
 import { DesignerConfigFeatureValue } from "./DesignerConfigFeatureValue.js";
-import { InitialOnLoad } from "./InitialOnLoad.js";
 export const DesignerConfig = z
     .object({
     adders: z.record(z.string(), z.string()).superRefine((value, ctx) => {
@@ -145,7 +144,6 @@ export const DesignerConfig = z
             }
         }
     }),
-    initialOnLoad: InitialOnLoad.optional(),
     productCategory: z.string(),
     vendors: z.record(z.string(), z.array(AdderCodeEnum)),
 })
