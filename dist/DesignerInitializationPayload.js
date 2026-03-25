@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { DesignerAuth } from "./DesignerAuth.js";
 import { DesignerEndpoints } from "./DesignerEndpoints.js";
+import { DesignerImageReductionConfig } from "./DesignerImageReductionConfig.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
@@ -28,5 +29,6 @@ export const DesignerInitializationPayload = z
         .record(z.string(), z.any())
         .describe("An (optional) object containing additional metadata for the designer initialization payload.")
         .optional(),
+    imageReduction: DesignerImageReductionConfig,
 })
     .passthrough();
