@@ -143,6 +143,8 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "error.CannotDigitallyPrintMetallicInk": z.ZodDefault<z.ZodString>;
     "error.VendorDoesNotSupportAdders": z.ZodDefault<z.ZodString>;
     "error.WhiteInkAndOtherProcessNotAllowed": z.ZodDefault<z.ZodString>;
+    "error.SelectedColorRequiresOffsetPrinting": z.ZodDefault<z.ZodString>;
+    "error.SelectedColorRequiresDigitalPrinting": z.ZodDefault<z.ZodString>;
 }, z.core.$loose>>;
 export type DesignerUiLabels = z.infer<typeof DesignerUiLabels>;
 //# sourceMappingURL=DesignerUiLabels.d.ts.map

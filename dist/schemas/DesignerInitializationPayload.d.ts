@@ -12834,6 +12834,8 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "error.CannotDigitallyPrintMetallicInk": z.ZodDefault<z.ZodString>;
         "error.VendorDoesNotSupportAdders": z.ZodDefault<z.ZodString>;
         "error.WhiteInkAndOtherProcessNotAllowed": z.ZodDefault<z.ZodString>;
+        "error.SelectedColorRequiresOffsetPrinting": z.ZodDefault<z.ZodString>;
+        "error.SelectedColorRequiresDigitalPrinting": z.ZodDefault<z.ZodString>;
     }, z.core.$loose>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     imageReduction: z.ZodDefault<z.ZodObject<{

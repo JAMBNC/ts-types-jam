@@ -654,6 +654,20 @@ export const DesignerUiLabels = z
         "Error message when white ink is combined with other print processes.",
       )
       .default("White ink cannot be combined with other print processes."),
+    /**Error when offset color like a Pantone attempts to print digitally*/
+    "error.SelectedColorRequiresOffsetPrinting": z
+      .string()
+      .describe(
+        "Error when offset color like a Pantone attempts to print digitally",
+      )
+      .default("You have a color that requires offset printing."),
+    /**Error message when a digital only custom color attempts to print offset*/
+    "error.SelectedColorRequiresDigitalPrinting": z
+      .string()
+      .describe(
+        "Error message when a digital only custom color attempts to print offset",
+      )
+      .default("You have a color that requires digital printing."),
   })
   .passthrough()
   .default({});
