@@ -1,4 +1,14 @@
 import { z } from "zod";
-export declare const ProductUrlMetaData: any;
+export declare const ProductUrlMetaData: z.ZodObject<{
+    creativeEngine: z.ZodOptional<z.ZodEnum<{
+        chili: "chili";
+        alchemy: "alchemy";
+    }>>;
+    designer: z.ZodOptional<z.ZodEnum<{
+        chili: "chili";
+        luma: "luma";
+        hermes: "hermes";
+    }>>;
+}, z.core.$loose>;
 export type ProductUrlMetaData = z.infer<typeof ProductUrlMetaData>;
 //# sourceMappingURL=ProductUrlMetaData.d.ts.map
