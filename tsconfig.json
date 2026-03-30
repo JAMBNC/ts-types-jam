@@ -5,6 +5,7 @@
     "moduleResolution": "nodenext",
     "declaration": true,
     "declarationMap": true,
+    "rootDir": "./schemas",
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
