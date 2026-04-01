@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { DesignerAuth } from "./DesignerAuth.js";
+import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerEndpoints } from "./DesignerEndpoints.js";
 import { DesignerImageReductionConfig } from "./DesignerImageReductionConfig.js";
 import { DesignerPricing } from "./DesignerPricing.js";
@@ -11,7 +12,7 @@ export const DesignerInitializationPayload = z
     design: z.record(z.string(), z.any()).optional(),
     /**The designer configuration schema or URI endpoint that returns a designer configuration schema*/
     config: z
-      .union([z.record(z.string(), z.any()), z.string().url()])
+      .union([DesignerConfig, z.string().url()])
       .describe(
         "The designer configuration schema or URI endpoint that returns a designer configuration schema",
       ),
