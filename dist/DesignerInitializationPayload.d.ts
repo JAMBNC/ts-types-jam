@@ -25335,6 +25335,7 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         enabled: z.ZodDefault<z.ZodBoolean>;
         maxColors: z.ZodDefault<z.ZodNumber>;
         reductionEndpointUrl: z.ZodOptional<z.ZodString>;
+        recolorEndpointUrl: z.ZodOptional<z.ZodString>;
     }, z.core.$loose>>;
 }, z.core.$loose>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;

@@ -17,6 +17,12 @@ export const DesignerImageReductionConfig = z
         .url()
         .describe("The url for performing the image reduction itself")
         .optional(),
+    /**The url for performing the image recolor operations*/
+    recolorEndpointUrl: z
+        .string()
+        .url()
+        .describe("The url for performing the image recolor operations")
+        .optional(),
 })
     .passthrough()
     .default({});
