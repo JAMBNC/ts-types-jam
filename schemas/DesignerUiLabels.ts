@@ -94,7 +94,7 @@ export const DesignerUiLabels = z
       .describe(
         "The label showed on the menu bar pricing dropdown. This label can include $unitPrice and $totalPrice variable usage.",
       )
-      .default("Select Your Quantity"),
+      .default("Select Quantity"),
     /**The label used in the button to proceed to the next steps*/
     "menubar.nextButton.label": z
       .string()
