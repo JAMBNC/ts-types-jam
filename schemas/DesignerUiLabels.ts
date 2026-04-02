@@ -94,17 +94,17 @@ export const DesignerUiLabels = z
       .describe(
         "The label showed on the menu bar pricing dropdown. This label can include $unitPrice and $totalPrice variable usage.",
       )
-      .default("Buy From $unitPrice each"),
+      .default("Select Your Quantity"),
     /**The label used in the button to proceed to the next steps*/
     "menubar.nextButton.label": z
       .string()
       .describe("The label used in the button to proceed to the next steps")
-      .default("Next"),
+      .default("Review & Add to Cart"),
     /**The icon used in the button to proceed to the next steps*/
     "menubar.nextButton.icon": z
       .string()
       .describe("The icon used in the button to proceed to the next steps")
-      .default("arrow_forward"),
+      .default("add_shopping_cart"),
     /**The url to the logo used within the designer.*/
     "menubar.logo": z
       .string()
