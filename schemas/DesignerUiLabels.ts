@@ -110,6 +110,16 @@ export const DesignerUiLabels = z
       .string()
       .describe("The url to the logo used within the designer.")
       .optional(),
+    /**The icon for the free text tool*/
+    "tool.freeText.icon": z
+      .string()
+      .describe("The icon for the free text tool")
+      .default("format_shapes"),
+    /**The label for the free text tool*/
+    "tool.freeText.label": z
+      .string()
+      .describe("The label for the free text tool")
+      .default("Free Text"),
     /**The icon for the Logo tool*/
     "tool.logo.icon": z
       .string()

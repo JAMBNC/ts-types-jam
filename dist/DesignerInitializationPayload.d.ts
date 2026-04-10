@@ -25204,6 +25204,8 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "menubar.nextButton.label": z.ZodDefault<z.ZodString>;
         "menubar.nextButton.icon": z.ZodDefault<z.ZodString>;
         "menubar.logo": z.ZodOptional<z.ZodString>;
+        "tool.freeText.icon": z.ZodDefault<z.ZodString>;
+        "tool.freeText.label": z.ZodDefault<z.ZodString>;
         "tool.logo.icon": z.ZodDefault<z.ZodString>;
         "tool.logo.label": z.ZodDefault<z.ZodString>;
         "tool.returnAddress.icon": z.ZodDefault<z.ZodString>;
