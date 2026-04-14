@@ -5,9 +5,9 @@ export declare const ProductUrlMetaData: z.ZodObject<{
         alchemy: "alchemy";
     }>>;
     designer: z.ZodOptional<z.ZodEnum<{
+        hermes: "hermes";
         chili: "chili";
         luma: "luma";
-        hermes: "hermes";
     }>>;
 }, z.core.$loose>;
 export type ProductUrlMetaData = z.infer<typeof ProductUrlMetaData>;

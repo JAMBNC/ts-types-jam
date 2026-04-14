@@ -4,8 +4,8 @@ export declare const DesignerMediaRenditionRequest: z.ZodObject<{
     data: z.ZodObject<{
         process: z.ZodEnum<{
             offset: "offset";
-            foil: "foil";
             digital: "digital";
+            foil: "foil";
             emboss: "emboss";
             screen: "screen";
             inkjet: "inkjet";

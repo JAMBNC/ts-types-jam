@@ -6,15 +6,15 @@ export declare const ProductUrl: z.ZodObject<{
             alchemy: "alchemy";
         }>>;
         designer: z.ZodOptional<z.ZodEnum<{
+            hermes: "hermes";
             chili: "chili";
             luma: "luma";
-            hermes: "hermes";
         }>>;
     }, z.core.$loose>>;
     url: z.ZodOptional<z.ZodString>;
     urlType: z.ZodOptional<z.ZodEnum<{
-        yourLogoHere: "yourLogoHere";
         product: "product";
+        yourLogoHere: "yourLogoHere";
         customProduct: "customProduct";
     }>>;
 }, z.core.$loose>;

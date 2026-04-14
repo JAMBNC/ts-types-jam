@@ -2,8 +2,8 @@ import { z } from "zod";
 /**Defines how visual content is transferred to the medium.*/
 export declare const Process: z.ZodEnum<{
     offset: "offset";
-    foil: "foil";
     digital: "digital";
+    foil: "foil";
     emboss: "emboss";
     screen: "screen";
     inkjet: "inkjet";
