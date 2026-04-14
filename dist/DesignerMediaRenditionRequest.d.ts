@@ -3,8 +3,8 @@ import { z } from "zod";
 export declare const DesignerMediaRenditionRequest: z.ZodObject<{
     data: z.ZodObject<{
         process: z.ZodEnum<{
-            foil: "foil";
             offset: "offset";
+            foil: "foil";
             digital: "digital";
             emboss: "emboss";
             screen: "screen";
