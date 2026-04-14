@@ -1,9 +1,9 @@
 import { z } from "zod";
-import { AddressBookRequest } from "./AddressBookRequest.js";
-import { AddressBookResponse } from "./AddressBookResponse.js";
-import { AddressBookUploadRequest } from "./AddressBookUploadRequest.js";
-import { AddressBookUploadResponse } from "./AddressBookUploadResponse.js";
-import { AddressBooksResponse } from "./AddressBooksResponse.js";
+import { DesignerAddressBookRequest } from "./DesignerAddressBookRequest.js";
+import { DesignerAddressBookResponse } from "./DesignerAddressBookResponse.js";
+import { DesignerAddressBookUploadRequest } from "./DesignerAddressBookUploadRequest.js";
+import { DesignerAddressBookUploadResponse } from "./DesignerAddressBookUploadResponse.js";
+import { DesignerAddressBooksResponse } from "./DesignerAddressBooksResponse.js";
 import { DesignerMediaDeleteResponse } from "./DesignerMediaDeleteResponse.js";
 import { DesignerMediaGalleryResponse } from "./DesignerMediaGalleryResponse.js";
 import { DesignerMediaRenditionRequest } from "./DesignerMediaRenditionRequest.js";
@@ -21,10 +21,10 @@ export const DesignerRestPayloads = z
     DesignerMediaRenditionResponse,
     DesignerMediaDeleteResponse,
     DesignerSaveResponse,
-    AddressBooksResponse,
-    AddressBookRequest,
-    AddressBookResponse,
-    AddressBookUploadRequest,
-    AddressBookUploadResponse,
+    DesignerAddressBooksResponse,
+    DesignerAddressBookRequest,
+    DesignerAddressBookResponse,
+    DesignerAddressBookUploadRequest,
+    DesignerAddressBookUploadResponse,
 ])
     .describe("A union of all possible Designer REST API request and response types.");
