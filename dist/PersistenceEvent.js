@@ -1,9 +1,0 @@
-import { z } from "zod";
-/**Event emitted when the designer's dirty state changes.*/
-export const PersistenceEvent = z
-    .object({
-    type: z.literal("persistence"),
-    payload: z.object({ isDirty: z.boolean() }).strict(),
-})
-    .strict()
-    .describe("Event emitted when the designer's dirty state changes.");

@@ -1,6 +1,6 @@
 import { z } from "zod";
-/**A discriminated union of events emitted by the designer, keyed by event type.*/
-export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
+/**An analytics/tracking event emitted by the designer.*/
+export declare const DesignerAnalyticsEvent: z.ZodObject<{
     type: z.ZodLiteral<"analytics">;
     payload: z.ZodUnion<readonly [z.ZodObject<{
         event: z.ZodLiteral<"designer_load">;
@@ -152,38 +152,6 @@ export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
             }, z.core.$strict>>;
         }, z.core.$strict>;
     }, z.core.$strict>]>;
-}, z.core.$strict>, z.ZodObject<{
-    type: z.ZodLiteral<"save">;
-    payload: z.ZodObject<{
-        addressListId: z.ZodNumber;
-        alchemySnapshots: z.ZodString;
-        autoSeparated: z.ZodBoolean;
-        config: z.ZodString;
-        isCmyk: z.ZodBoolean;
-        orientation: z.ZodNumber;
-        pages: z.ZodString;
-        pagesOrdered: z.ZodString;
-        preflight: z.ZodString;
-        productSku: z.ZodString;
-        qty: z.ZodNumber;
-        returnAddressString: z.ZodString;
-        sRecipAddressString: z.ZodString;
-        designerInstanceCode: z.ZodString;
-    }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    type: z.ZodLiteral<"review">;
-    payload: z.ZodObject<{
-        product: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-        quantity: z.ZodNumber;
-    }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    type: z.ZodLiteral<"persistence">;
-    payload: z.ZodObject<{
-        isDirty: z.ZodBoolean;
-    }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    type: z.ZodLiteral<"logoClick">;
-    payload: z.ZodRecord<z.ZodString, z.ZodNever>;
-}, z.core.$strict>]>;
-export type DesignerEvent = z.infer<typeof DesignerEvent>;
-//# sourceMappingURL=DesignerEvent.d.ts.map
+}, z.core.$strict>;
+export type DesignerAnalyticsEvent = z.infer<typeof DesignerAnalyticsEvent>;
+//# sourceMappingURL=DesignerAnalyticsEvent.d.ts.map

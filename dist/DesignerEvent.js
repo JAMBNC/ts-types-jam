@@ -1,16 +1,16 @@
 import { z } from "zod";
-import { AnalyticsEvent } from "./AnalyticsEvent.js";
-import { LogoClickEvent } from "./LogoClickEvent.js";
-import { PersistenceEvent } from "./PersistenceEvent.js";
-import { ReviewEvent } from "./ReviewEvent.js";
-import { SaveEvent } from "./SaveEvent.js";
+import { DesignerAnalyticsEvent } from "./DesignerAnalyticsEvent.js";
+import { DesignerLogoClickEvent } from "./DesignerLogoClickEvent.js";
+import { DesignerPersistenceEvent } from "./DesignerPersistenceEvent.js";
+import { DesignerReviewEvent } from "./DesignerReviewEvent.js";
+import { DesignerSaveEvent } from "./DesignerSaveEvent.js";
 /**A discriminated union of events emitted by the designer, keyed by event type.*/
 export const DesignerEvent = z
     .union([
-    AnalyticsEvent,
-    SaveEvent,
-    ReviewEvent,
-    PersistenceEvent,
-    LogoClickEvent,
+    DesignerAnalyticsEvent,
+    DesignerSaveEvent,
+    DesignerReviewEvent,
+    DesignerPersistenceEvent,
+    DesignerLogoClickEvent,
 ])
     .describe("A discriminated union of events emitted by the designer, keyed by event type.");
