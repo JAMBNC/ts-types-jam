@@ -150,6 +150,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 url: z.ZodString;
                 label: z.ZodString;
             }, z.core.$strict>>;
+            designReturnUrl: z.ZodString;
         }, z.core.$strict>;
     }, z.core.$strict>]>;
 }, z.core.$strict>;

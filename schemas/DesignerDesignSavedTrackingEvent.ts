@@ -9,6 +9,7 @@ export const DesignerDesignSavedTrackingEvent = z
         snapshots: z.array(
           z.object({ url: z.string().url(), label: z.string() }).strict(),
         ),
+        designReturnUrl: z.string().url(),
       })
       .strict(),
   })
