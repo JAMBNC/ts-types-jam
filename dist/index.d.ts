@@ -122,6 +122,7 @@ export * from './DesignerReviewEvent.js';
 export * from './DesignerPersistenceEvent.js';
 export * from './DesignerLogoClickEvent.js';
 export * from './DesignerImageEndpoints.js';
+export * from './DesignerAddressEndpoints.js';
 export * from './DesignerFontEndpoints.js';
 export * from './DesignerColorEndpoints.js';
 export * from './DesignerVendorEndpoints.js';

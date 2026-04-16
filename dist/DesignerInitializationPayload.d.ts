@@ -25117,6 +25117,11 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
             delete: z.ZodString;
             rendition: z.ZodString;
         }, z.core.$strict>;
+        address: z.ZodOptional<z.ZodObject<{
+            addressBooks: z.ZodString;
+            addressBook: z.ZodString;
+            upload: z.ZodString;
+        }, z.core.$strict>>;
         fonts: z.ZodObject<{
             all: z.ZodString;
             get: z.ZodString;
