@@ -110,11 +110,7 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
         bookId: z.ZodString;
         name: z.ZodString;
     }, z.core.$strict>>>;
-}, z.core.$strict>, z.ZodObject<{
-    data: z.ZodOptional<z.ZodObject<{
-        bookId: z.ZodString;
-    }, z.core.$strict>>;
-}, z.core.$loose>, z.ZodUnion<readonly [z.ZodObject<{
+}, z.core.$strict>, z.ZodUnion<readonly [z.ZodObject<{
     addressBook: z.ZodObject<{
         bookId: z.ZodOptional<z.ZodString>;
         name: z.ZodOptional<z.ZodString>;

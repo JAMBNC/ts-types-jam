@@ -149,7 +149,6 @@ export * from './DesignerSaveResponse.js';
 export * from './DesignerAddressBookItem.js';
 export * from './DesignerAddressBook.js';
 export * from './DesignerAddressBooksResponse.js';
-export * from './DesignerAddressBookRequest.js';
 export * from './DesignerAddressBookSuccessResponse.js';
 export * from './DesignerAddressBookErrorResponse.js';
 export * from './DesignerAddressBookResponse.js';

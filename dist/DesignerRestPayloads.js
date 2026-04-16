@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { DesignerAddressBookRequest } from "./DesignerAddressBookRequest.js";
 import { DesignerAddressBookResponse } from "./DesignerAddressBookResponse.js";
 import { DesignerAddressBookUploadRequest } from "./DesignerAddressBookUploadRequest.js";
 import { DesignerAddressBookUploadResponse } from "./DesignerAddressBookUploadResponse.js";
@@ -22,7 +21,6 @@ export const DesignerRestPayloads = z
     DesignerMediaDeleteResponse,
     DesignerSaveResponse,
     DesignerAddressBooksResponse,
-    DesignerAddressBookRequest,
     DesignerAddressBookResponse,
     DesignerAddressBookUploadRequest,
     DesignerAddressBookUploadResponse,
