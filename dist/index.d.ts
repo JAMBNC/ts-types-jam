@@ -116,6 +116,7 @@ export * from './DesignerImageRemovedFromGalleryTrackingEvent.js';
 export * from './DesignerPrintPreviewViewedTrackingEvent.js';
 export * from './DesignerDownloadProofTrackingEvent.js';
 export * from './DesignerDesignSavedTrackingEvent.js';
+export * from './DesignerLoginEvent.js';
 export * from './DesignerSaveEvent.js';
 export * from './DesignerReviewEvent.js';
 export * from './DesignerPersistenceEvent.js';
