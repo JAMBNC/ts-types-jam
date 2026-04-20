@@ -23,6 +23,12 @@ export const DesignerAddressBookUploadRequest = z
           .string()
           .describe('The MIME type of the media file (e.g. "image/csv").')
           .optional(),
+        /**The uuid for the design related to this address upload.*/
+        designUuid: z
+          .string()
+          .uuid()
+          .describe("The uuid for the design related to this address upload.")
+          .optional(),
       })
       .strict()
       .describe("The address bookupload payload."),

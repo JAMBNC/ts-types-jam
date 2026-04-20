@@ -5,6 +5,7 @@ export declare const DesignerAddressBookUploadRequest: z.ZodObject<{
         fileName: z.ZodOptional<z.ZodString>;
         addressBook64: z.ZodString;
         contentType: z.ZodOptional<z.ZodString>;
+        designUuid: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerAddressBookUploadRequest = z.infer<typeof DesignerAddressBookUploadRequest>;

@@ -153,6 +153,7 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
         fileName: z.ZodOptional<z.ZodString>;
         addressBook64: z.ZodString;
         contentType: z.ZodOptional<z.ZodString>;
+        designUuid: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
 }, z.core.$strict>, z.ZodUnion<readonly [z.ZodObject<{
     addressBook: z.ZodObject<{
