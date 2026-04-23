@@ -101,6 +101,7 @@ export const DesignerUiLabels = z
     /**The url to the logo used within the designer.*/
     "menubar.logo": z
         .string()
+        .url()
         .describe("The url to the logo used within the designer.")
         .optional(),
     /**The icon for the free text tool*/
@@ -143,6 +144,12 @@ export const DesignerUiLabels = z
         .string()
         .describe("The label for the Mailing Address tool")
         .default("Mailing Address"),
+    /**The url to use for the address csv example download.*/
+    "tool.mailingAddress.addressExample": z
+        .string()
+        .url()
+        .describe("The url to use for the address csv example download.")
+        .optional(),
     /**The label used for the return address tool in the tool bar*/
     "workspace.toolBar.stack.returnAddress.label": z
         .string()
