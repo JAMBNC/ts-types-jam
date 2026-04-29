@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { DesignState } from "./DesignState.js";
 import { DesignerAuth } from "./DesignerAuth.js";
 import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerEndpoints } from "./DesignerEndpoints.js";
@@ -8,7 +9,8 @@ import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
 export const DesignerInitializationPayload = z
     .object({
-    design: z.record(z.string(), z.any()).optional(),
+    /**The complete design state containing dimensions, pages, and ingredients.*/
+    design: DesignState.optional(),
     /**The designer configuration schema or URI endpoint that returns a designer configuration schema*/
     config: z
         .union([DesignerConfig, z.string().url()])
