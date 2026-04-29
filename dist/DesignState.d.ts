@@ -656,6 +656,7 @@ export declare const DesignState: z.ZodObject<{
             }, z.core.$loose>;
         }, z.core.$strict>;
     }, z.core.$strict>]>>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
 }, z.core.$strict>;
 export type DesignState = z.infer<typeof DesignState>;
 //# sourceMappingURL=DesignState.d.ts.map

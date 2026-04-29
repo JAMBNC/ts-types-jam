@@ -39,6 +39,11 @@ export const DesignState = z
     ingredients: z
       .record(z.string(), Ingredient)
       .describe("Map of ingredient IDs to ingredient definitions."),
+    /**Design metadata*/
+    metadata: z
+      .record(z.string(), z.any())
+      .describe("Design metadata")
+      .optional(),
   })
   .strict()
   .describe(
