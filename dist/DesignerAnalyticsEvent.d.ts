@@ -27,16 +27,44 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_review_design">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_design_started">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_text">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_image">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_mailing_address">;
         payload: z.ZodObject<{
@@ -53,7 +81,14 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_return_address">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_remove_item">;
         payload: z.ZodObject<{
@@ -170,16 +205,44 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_image_uploaded">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_image_removed_from_gallery">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_print_preview_viewed">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_download_proof">;
-        payload: z.ZodAny;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_design_saved">;
         payload: z.ZodObject<{
