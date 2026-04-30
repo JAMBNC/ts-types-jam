@@ -121,6 +121,7 @@ export * from './DesignerSaveEvent.js';
 export * from './DesignerReviewEvent.js';
 export * from './DesignerPersistenceEvent.js';
 export * from './DesignerLogoClickEvent.js';
+export * from './CommonEventProperties.js';
 export * from './DesignerImageEndpoints.js';
 export * from './DesignerAddressEndpoints.js';
 export * from './DesignerFontEndpoints.js';
