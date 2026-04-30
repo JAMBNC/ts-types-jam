@@ -1,5 +1,8 @@
 import { z } from "zod";
+import { DeltaTime } from "./DeltaTime.js";
+import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
+import { MerchantCode } from "./MerchantCode.js";
 import { Process } from "./Process.js";
 
 export const DesignerChangeProcessTrackingEvent = z
@@ -10,6 +13,12 @@ export const DesignerChangeProcessTrackingEvent = z
         type: z.union([IngredientMetadataType, z.null()]).optional(),
         oldProcess: z.union([Process, z.null()]).optional(),
         newProcess: z.union([Process, z.null()]).optional(),
+        /**An analytics/tracking code to help id the designer event source.*/
+        designer: DesignerCode,
+        /**An analytics/tracking code to help id the merchant for the event.*/
+        merchant: MerchantCode,
+        /**Time since the initial load in seconds*/
+        deltaTime: DeltaTime,
       })
       .strict(),
   })

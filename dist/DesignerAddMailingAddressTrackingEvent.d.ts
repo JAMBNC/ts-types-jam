@@ -6,6 +6,12 @@ export declare const DesignerAddMailingAddressTrackingEvent: z.ZodObject<{
             single: "single";
             variable: "variable";
         }>;
+        designer: z.ZodEnum<{
+            base: "base";
+            hermes: "hermes";
+        }>;
+        merchant: z.ZodString;
+        deltaTime: z.ZodNumber;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerAddMailingAddressTrackingEvent = z.infer<typeof DesignerAddMailingAddressTrackingEvent>;

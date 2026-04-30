@@ -32,6 +32,12 @@ export declare const DesignerChangeProcessTrackingEvent: z.ZodObject<{
             sublimation: "sublimation";
             thermal: "thermal";
         }>, z.ZodNull]>>;
+        designer: z.ZodEnum<{
+            base: "base";
+            hermes: "hermes";
+        }>;
+        merchant: z.ZodString;
+        deltaTime: z.ZodNumber;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerChangeProcessTrackingEvent = z.infer<typeof DesignerChangeProcessTrackingEvent>;

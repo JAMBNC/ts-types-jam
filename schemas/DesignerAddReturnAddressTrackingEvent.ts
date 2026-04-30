@@ -1,10 +1,7 @@
 import { z } from "zod";
 
 export const DesignerAddReturnAddressTrackingEvent = z
-  .object({
-    event: z.literal("designer_add_return_address"),
-    payload: z.record(z.string(), z.never()),
-  })
+  .object({ event: z.literal("designer_add_return_address"), payload: z.any() })
   .strict();
 export type DesignerAddReturnAddressTrackingEvent = z.infer<
   typeof DesignerAddReturnAddressTrackingEvent

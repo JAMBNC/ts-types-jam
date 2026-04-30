@@ -18,19 +18,25 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         event: z.ZodLiteral<"designer_tool_interaction">;
         payload: z.ZodObject<{
             tool: z.ZodString;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_review_design">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_design_started">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_text">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_image">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_mailing_address">;
         payload: z.ZodObject<{
@@ -38,10 +44,16 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 single: "single";
                 variable: "variable";
             }>;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_add_return_address">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_remove_item">;
         payload: z.ZodObject<{
@@ -53,6 +65,12 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 returnAddress: "returnAddress";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_change_color">;
@@ -83,6 +101,12 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 }, z.core.$strip>;
                 uuid: z.ZodString;
             }, z.core.$loose>>;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_change_font">;
@@ -97,6 +121,12 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
             }>, z.ZodNull]>>;
             oldFont: z.ZodString;
             newFont: z.ZodString;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_change_process">;
@@ -131,19 +161,25 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 sublimation: "sublimation";
                 thermal: "thermal";
             }>, z.ZodNull]>>;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_image_uploaded">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_image_removed_from_gallery">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_print_preview_viewed">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_download_proof">;
-        payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+        payload: z.ZodAny;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_design_saved">;
         payload: z.ZodObject<{
@@ -153,6 +189,12 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 label: z.ZodString;
             }, z.core.$strict>>;
             designReturnUrl: z.ZodString;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>]>;
 }, z.core.$strict>;

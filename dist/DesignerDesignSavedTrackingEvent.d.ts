@@ -8,6 +8,12 @@ export declare const DesignerDesignSavedTrackingEvent: z.ZodObject<{
             label: z.ZodString;
         }, z.core.$strict>>;
         designReturnUrl: z.ZodString;
+        designer: z.ZodEnum<{
+            base: "base";
+            hermes: "hermes";
+        }>;
+        merchant: z.ZodString;
+        deltaTime: z.ZodNumber;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerDesignSavedTrackingEvent = z.infer<typeof DesignerDesignSavedTrackingEvent>;

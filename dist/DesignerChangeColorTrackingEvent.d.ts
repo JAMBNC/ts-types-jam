@@ -28,6 +28,12 @@ export declare const DesignerChangeColorTrackingEvent: z.ZodObject<{
             }, z.core.$strip>;
             uuid: z.ZodString;
         }, z.core.$loose>>;
+        designer: z.ZodEnum<{
+            base: "base";
+            hermes: "hermes";
+        }>;
+        merchant: z.ZodString;
+        deltaTime: z.ZodNumber;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerChangeColorTrackingEvent = z.infer<typeof DesignerChangeColorTrackingEvent>;

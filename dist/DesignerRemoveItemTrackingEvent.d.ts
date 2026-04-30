@@ -10,6 +10,12 @@ export declare const DesignerRemoveItemTrackingEvent: z.ZodObject<{
             returnAddress: "returnAddress";
             variableData: "variableData";
         }>, z.ZodNull]>>;
+        designer: z.ZodEnum<{
+            base: "base";
+            hermes: "hermes";
+        }>;
+        merchant: z.ZodString;
+        deltaTime: z.ZodNumber;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerRemoveItemTrackingEvent = z.infer<typeof DesignerRemoveItemTrackingEvent>;
