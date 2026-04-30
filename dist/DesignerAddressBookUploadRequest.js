@@ -23,7 +23,7 @@ export const DesignerAddressBookUploadRequest = z
         /**The uuid for the design related to this address upload.*/
         designUuid: z
             .string()
-            .uuid()
+            .regex(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/)
             .describe("The uuid for the design related to this address upload.")
             .optional(),
     })

@@ -8,7 +8,9 @@ export const VendorColor = z
     /**The uuid for the color the vendor supports.*/
     colorId: z
       .string()
-      .uuid()
+      .regex(
+        /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/,
+      )
       .describe("The uuid for the color the vendor supports."),
     /**Vendor specific color name*/
     colorName: z.string().describe("Vendor specific color name").optional(),

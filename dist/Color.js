@@ -16,6 +16,9 @@ export const Color = z
         .partial()
         .describe("Color representations keyed by color space name."),
     /**A unique UUID identifier for the color.*/
-    uuid: z.string().uuid().describe("A unique UUID identifier for the color."),
+    uuid: z
+        .string()
+        .regex(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/)
+        .describe("A unique UUID identifier for the color."),
 })
     .passthrough();

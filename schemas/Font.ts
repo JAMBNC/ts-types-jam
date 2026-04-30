@@ -7,7 +7,9 @@ export const Font = z
     /**A unique UUID identifier for the font. Used to retrieve the font.*/
     uuid: z
       .string()
-      .uuid()
+      .regex(
+        /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/,
+      )
       .describe(
         "A unique UUID identifier for the font. Used to retrieve the font.",
       ),
