@@ -4,17 +4,16 @@ export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
     type: z.ZodLiteral<"analytics">;
     payload: z.ZodUnion<readonly [z.ZodObject<{
         event: z.ZodLiteral<"designer_load">;
-        payload: z.ZodIntersection<z.ZodObject<{
+        payload: z.ZodObject<{
             loadTime: z.ZodNumber;
             productUrl: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>, z.ZodObject<{
             designer: z.ZodEnum<{
                 base: "base";
                 hermes: "hermes";
             }>;
             merchant: z.ZodString;
             deltaTime: z.ZodNumber;
-        }, z.core.$loose>>;
+        }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_tool_interaction">;
         payload: z.ZodObject<{
