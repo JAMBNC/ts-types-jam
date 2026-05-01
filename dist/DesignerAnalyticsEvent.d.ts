@@ -257,6 +257,26 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
             deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
+        event: z.ZodLiteral<"designer_change_quantity">;
+        payload: z.ZodObject<{
+            type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
+                text: "text";
+                image: "image";
+                sRecipientAddress: "sRecipientAddress";
+                recipientAddress: "recipientAddress";
+                returnAddress: "returnAddress";
+                variableData: "variableData";
+            }>, z.ZodNull]>>;
+            oldQuantity: z.ZodOptional<z.ZodNumber>;
+            newQuantity: z.ZodOptional<z.ZodNumber>;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
+    }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_change_process">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
@@ -345,6 +365,16 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 label: z.ZodString;
             }, z.core.$strict>>;
             designReturnUrl: z.ZodString;
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
+    }, z.core.$strict>, z.ZodObject<{
+        event: z.ZodLiteral<"designer_price_summary_viewed">;
+        payload: z.ZodObject<{
             designer: z.ZodEnum<{
                 base: "base";
                 hermes: "hermes";

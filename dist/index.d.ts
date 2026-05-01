@@ -110,6 +110,7 @@ export * from './DesignerAddReturnAddressTrackingEvent.js';
 export * from './DesignerRemoveItemTrackingEvent.js';
 export * from './DesignerChangeColorTrackingEvent.js';
 export * from './DesignerChangeFontTrackingEvent.js';
+export * from './DesignerChangeQuantityTrackingEvent.js';
 export * from './DesignerChangeProcessTrackingEvent.js';
 export * from './DesignerImageUploadedTrackingEvent.js';
 export * from './DesignerImageRemovedFromGalleryTrackingEvent.js';
