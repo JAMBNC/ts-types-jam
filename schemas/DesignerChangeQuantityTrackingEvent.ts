@@ -10,8 +10,8 @@ export const DesignerChangeQuantityTrackingEvent = z
     payload: z
       .object({
         type: z.union([IngredientMetadataType, z.null()]).optional(),
-        oldQuantity: z.number().optional(),
-        newQuantity: z.number().optional(),
+        oldQuantity: z.number(),
+        newQuantity: z.number(),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
         /**An analytics/tracking code to help id the merchant for the event.*/

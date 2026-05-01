@@ -267,8 +267,8 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 returnAddress: "returnAddress";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
-            oldQuantity: z.ZodOptional<z.ZodNumber>;
-            newQuantity: z.ZodOptional<z.ZodNumber>;
+            oldQuantity: z.ZodNumber;
+            newQuantity: z.ZodNumber;
             designer: z.ZodEnum<{
                 base: "base";
                 hermes: "hermes";
