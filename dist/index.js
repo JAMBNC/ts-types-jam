@@ -118,6 +118,7 @@ export * from './DesignerPrintPreviewViewedTrackingEvent.js';
 export * from './DesignerPriceSummaryViewedTrackingEvent.js';
 export * from './DesignerDownloadProofTrackingEvent.js';
 export * from './DesignerDesignSavedTrackingEvent.js';
+export * from './DesignerMiscInteractionTrackingEvent.js';
 export * from './DesignerLoginEvent.js';
 export * from './DesignerSaveEvent.js';
 export * from './DesignerReviewEvent.js';

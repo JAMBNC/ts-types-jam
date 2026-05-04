@@ -13,6 +13,7 @@ import { DesignerDownloadProofTrackingEvent } from "./DesignerDownloadProofTrack
 import { DesignerImageRemovedFromGalleryTrackingEvent } from "./DesignerImageRemovedFromGalleryTrackingEvent.js";
 import { DesignerImageUploadedTrackingEvent } from "./DesignerImageUploadedTrackingEvent.js";
 import { DesignerLoadTrackingEvent } from "./DesignerLoadTrackingEvent.js";
+import { DesignerMiscInteractionTrackingEvent } from "./DesignerMiscInteractionTrackingEvent.js";
 import { DesignerPriceSummaryViewedTrackingEvent } from "./DesignerPriceSummaryViewedTrackingEvent.js";
 import { DesignerPrintPreviewViewedTrackingEvent } from "./DesignerPrintPreviewViewedTrackingEvent.js";
 import { DesignerRemoveItemTrackingEvent } from "./DesignerRemoveItemTrackingEvent.js";
@@ -43,6 +44,7 @@ export const DesignerAnalyticsEvent = z
       DesignerDownloadProofTrackingEvent,
       DesignerDesignSavedTrackingEvent,
       DesignerPriceSummaryViewedTrackingEvent,
+      DesignerMiscInteractionTrackingEvent,
     ]),
   })
   .strict()
