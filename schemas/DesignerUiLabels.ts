@@ -120,7 +120,7 @@ export const DesignerUiLabels = z
     "tool.freeText.label": z
       .string()
       .describe("The label for the free text tool")
-      .default("Free Text"),
+      .default("Text"),
     /**The icon for the Logo tool*/
     "tool.logo.icon": z
       .string()
