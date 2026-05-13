@@ -4,6 +4,7 @@ import { DesignerChangeProductEvent } from "./DesignerChangeProductEvent.js";
 import { DesignerLoginEvent } from "./DesignerLoginEvent.js";
 import { DesignerLogoClickEvent } from "./DesignerLogoClickEvent.js";
 import { DesignerPersistenceEvent } from "./DesignerPersistenceEvent.js";
+import { DesignerReinitializeEvent } from "./DesignerReinitializeEvent.js";
 import { DesignerReviewEvent } from "./DesignerReviewEvent.js";
 import { DesignerSaveEvent } from "./DesignerSaveEvent.js";
 
@@ -17,6 +18,7 @@ export const DesignerEvent = z
     DesignerLogoClickEvent,
     DesignerLoginEvent,
     DesignerChangeProductEvent,
+    DesignerReinitializeEvent,
   ])
   .describe(
     "A discriminated union of events emitted by the designer, keyed by event type.",

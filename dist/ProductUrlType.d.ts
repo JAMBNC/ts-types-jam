@@ -1,7 +1,7 @@
 import { z } from "zod";
 export declare const ProductUrlType: z.ZodEnum<{
-    product: "product";
     yourLogoHere: "yourLogoHere";
+    product: "product";
     customProduct: "customProduct";
 }>;
 export type ProductUrlType = z.infer<typeof ProductUrlType>;

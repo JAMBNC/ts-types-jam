@@ -12608,8 +12608,8 @@ export declare const Product: z.ZodObject<{
         }, z.core.$loose>>;
         url: z.ZodOptional<z.ZodString>;
         urlType: z.ZodOptional<z.ZodEnum<{
-            product: "product";
             yourLogoHere: "yourLogoHere";
+            product: "product";
             customProduct: "customProduct";
         }>>;
     }, z.core.$loose>>;
