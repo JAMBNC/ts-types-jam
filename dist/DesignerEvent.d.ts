@@ -429,6 +429,11 @@ export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"login">;
     payload: z.ZodRecord<z.ZodString, z.ZodNever>;
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"changeProduct">;
+    payload: z.ZodObject<{
+        sku: z.ZodString;
+    }, z.core.$strict>;
 }, z.core.$strict>]>;
 export type DesignerEvent = z.infer<typeof DesignerEvent>;
 //# sourceMappingURL=DesignerEvent.d.ts.map

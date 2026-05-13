@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { DesignerAnalyticsEvent } from "./DesignerAnalyticsEvent.js";
+import { DesignerChangeProductEvent } from "./DesignerChangeProductEvent.js";
 import { DesignerLoginEvent } from "./DesignerLoginEvent.js";
 import { DesignerLogoClickEvent } from "./DesignerLogoClickEvent.js";
 import { DesignerPersistenceEvent } from "./DesignerPersistenceEvent.js";
@@ -14,5 +15,6 @@ export const DesignerEvent = z
     DesignerPersistenceEvent,
     DesignerLogoClickEvent,
     DesignerLoginEvent,
+    DesignerChangeProductEvent,
 ])
     .describe("A discriminated union of events emitted by the designer, keyed by event type.");
