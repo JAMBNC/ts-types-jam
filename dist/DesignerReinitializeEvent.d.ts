@@ -1,7 +1,7 @@
 import { z } from "zod";
 /**Event emitted when the designer should reinitialize with the payload data*/
 export declare const DesignerReinitializeEvent: z.ZodObject<{
-    type: z.ZodLiteral<"changedProduct">;
+    type: z.ZodLiteral<"reinitialize">;
     payload: z.ZodObject<{
         design: z.ZodRecord<z.ZodString, z.ZodAny>;
         config: z.ZodUnion<readonly [z.ZodObject<{

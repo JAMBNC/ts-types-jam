@@ -5,7 +5,7 @@ import { Product } from "./Product.js";
 /**Event emitted when the designer should reinitialize with the payload data*/
 export const DesignerReinitializeEvent = z
     .object({
-    type: z.literal("changedProduct"),
+    type: z.literal("reinitialize"),
     payload: z
         .object({
         /**Currently the design formula, to be the design state*/

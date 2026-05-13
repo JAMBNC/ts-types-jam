@@ -435,7 +435,7 @@ export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
         sku: z.ZodString;
     }, z.core.$strict>;
 }, z.core.$strict>, z.ZodObject<{
-    type: z.ZodLiteral<"changedProduct">;
+    type: z.ZodLiteral<"reinitialize">;
     payload: z.ZodObject<{
         design: z.ZodRecord<z.ZodString, z.ZodAny>;
         config: z.ZodUnion<readonly [z.ZodObject<{
