@@ -411,6 +411,7 @@ export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
         returnAddressString: z.ZodString;
         sRecipAddressString: z.ZodString;
         designerInstanceCode: z.ZodString;
+        saveRequestUuid: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"review">;

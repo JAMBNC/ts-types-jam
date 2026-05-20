@@ -17,6 +17,7 @@ export declare const DesignerSaveEvent: z.ZodObject<{
         returnAddressString: z.ZodString;
         sRecipAddressString: z.ZodString;
         designerInstanceCode: z.ZodString;
+        saveRequestUuid: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 export type DesignerSaveEvent = z.infer<typeof DesignerSaveEvent>;

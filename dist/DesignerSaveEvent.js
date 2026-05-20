@@ -19,6 +19,12 @@ export const DesignerSaveEvent = z
         returnAddressString: z.string(),
         sRecipAddressString: z.string(),
         designerInstanceCode: z.string(),
+        /**Uuid to pass back with the response*/
+        saveRequestUuid: z
+            .string()
+            .regex(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/)
+            .describe("Uuid to pass back with the response")
+            .optional(),
     })
         .strict(),
 })
