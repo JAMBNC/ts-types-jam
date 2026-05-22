@@ -3,6 +3,8 @@ import { DesignerAddImageTrackingEvent } from "./DesignerAddImageTrackingEvent.j
 import { DesignerAddMailingAddressTrackingEvent } from "./DesignerAddMailingAddressTrackingEvent.js";
 import { DesignerAddReturnAddressTrackingEvent } from "./DesignerAddReturnAddressTrackingEvent.js";
 import { DesignerAddTextTrackingEvent } from "./DesignerAddTextTrackingEvent.js";
+import { DesignerAddToCartTrackingEvent } from "./DesignerAddToCartTrackingEvent.js";
+import { DesignerCartTrackingEvent } from "./DesignerCartTrackingEvent.js";
 import { DesignerChangeColorTrackingEvent } from "./DesignerChangeColorTrackingEvent.js";
 import { DesignerChangeFontTrackingEvent } from "./DesignerChangeFontTrackingEvent.js";
 import { DesignerChangeProcessTrackingEvent } from "./DesignerChangeProcessTrackingEvent.js";
@@ -28,6 +30,8 @@ export const DesignerAnalyticsEvent = z
       DesignerLoadTrackingEvent,
       DesignerToolInteractionTrackingEvent,
       DesignerReviewDesignTrackingEvent,
+      DesignerAddToCartTrackingEvent,
+      DesignerCartTrackingEvent,
       DesignerDesignStartedTrackingEvent,
       DesignerAddTextTrackingEvent,
       DesignerAddImageTrackingEvent,

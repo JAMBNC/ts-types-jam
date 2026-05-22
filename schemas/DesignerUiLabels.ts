@@ -66,6 +66,16 @@ export const DesignerUiLabels = z
       .string()
       .describe("The icon showed when saving is complete on the menu bar")
       .default("alarm_on"),
+    /**The icon shown when saving is pending on the menu bar*/
+    "menubar.saveStatus.pending.icon": z
+      .string()
+      .describe("The icon shown when saving is pending on the menu bar")
+      .default("alarm_on"),
+    /**The label shown when saving is pending on the menu bar*/
+    "menubar.saveStatus.pending.label": z
+      .string()
+      .describe("The label shown when saving is pending on the menu bar")
+      .default("Save Pending..."),
     /**The label showed with the printPreview button on the menu bar*/
     "menubar.printPreview.label": z
       .string()

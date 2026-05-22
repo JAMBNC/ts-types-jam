@@ -25201,6 +25201,8 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "menubar.saveStatus.failure.icon": z.ZodDefault<z.ZodString>;
         "menubar.saveStatus.failure.label": z.ZodDefault<z.ZodString>;
         "menubar.saveStatus.success.icon": z.ZodDefault<z.ZodString>;
+        "menubar.saveStatus.pending.icon": z.ZodDefault<z.ZodString>;
+        "menubar.saveStatus.pending.label": z.ZodDefault<z.ZodString>;
         "menubar.printPreview.label": z.ZodDefault<z.ZodString>;
         "menubar.printPreview.icon": z.ZodDefault<z.ZodString>;
         "menubar.downloadProof.label": z.ZodDefault<z.ZodString>;

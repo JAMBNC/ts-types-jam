@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { DesignerAnalyticsEvent } from "./DesignerAnalyticsEvent.js";
+import { DesignerCartEvent } from "./DesignerCartEvent.js";
 import { DesignerChangeProductEvent } from "./DesignerChangeProductEvent.js";
 import { DesignerLoginEvent } from "./DesignerLoginEvent.js";
 import { DesignerLogoClickEvent } from "./DesignerLogoClickEvent.js";
@@ -17,6 +18,7 @@ export const DesignerEvent = z
     DesignerPersistenceEvent,
     DesignerLogoClickEvent,
     DesignerLoginEvent,
+    DesignerCartEvent,
     DesignerChangeProductEvent,
     DesignerReinitializeEvent,
   ])
