@@ -494,22 +494,22 @@ export declare const DesignerEvent: z.ZodUnion<readonly [z.ZodObject<{
                 variableData: "variableData";
             }>, z.ZodNull]>>;
             oldProcess: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
+                screen: "screen";
                 offset: "offset";
                 digital: "digital";
                 foil: "foil";
                 emboss: "emboss";
-                screen: "screen";
                 inkjet: "inkjet";
                 flexography: "flexography";
                 sublimation: "sublimation";
                 thermal: "thermal";
             }>, z.ZodNull]>>;
             newProcess: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
+                screen: "screen";
                 offset: "offset";
                 digital: "digital";
                 foil: "foil";
                 emboss: "emboss";
-                screen: "screen";
                 inkjet: "inkjet";
                 flexography: "flexography";
                 sublimation: "sublimation";

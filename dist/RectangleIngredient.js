@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { CompositeOperation } from "./CompositeOperation.js";
 import { Dimension } from "./Dimension.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
@@ -10,6 +11,10 @@ export const RectangleIngredient = z
     type: z.literal("rectangle"),
     /**Arbitrary metadata.*/
     metadata: z.record(z.string(), z.any()).describe("Arbitrary metadata."),
+    /**Composite operations used for rendering and previews*/
+    workingTextureCompositeOperation: CompositeOperation,
+    /**Composite operations used for rendering and previews*/
+    outputTextureCompositeOperation: CompositeOperation,
     isNew: z.boolean(),
     /**The view layer this ingredient belongs to.*/
     viewLayer: z
