@@ -15,7 +15,7 @@ export const RectangleIngredient = z
     /**Composite operations used for rendering and previews*/
     workingTextureCompositeOperation: CompositeOperation,
     /**Composite operations used for rendering and previews*/
-    outputTextureCompositeOperation: CompositeOperation,
+    printTextureCompositeOperation: CompositeOperation,
     isNew: z.boolean(),
     /**The view layer this ingredient belongs to.*/
     viewLayer: z

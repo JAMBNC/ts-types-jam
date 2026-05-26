@@ -32,7 +32,7 @@ export declare const FillIngredient: z.ZodObject<{
         color: "color";
         luminosity: "luminosity";
     }>;
-    outputTextureCompositeOperation: z.ZodEnum<{
+    printTextureCompositeOperation: z.ZodEnum<{
         "source-over": "source-over";
         "source-in": "source-in";
         "source-out": "source-out";
