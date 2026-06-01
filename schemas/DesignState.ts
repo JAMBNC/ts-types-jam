@@ -52,7 +52,7 @@ export const DesignState = z
             /**The material code for the material being printed upon*/
             code: MaterialCode.optional(),
           })
-          .passthrough(),
+          .strict(),
       )
       .optional(),
   })

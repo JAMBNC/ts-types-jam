@@ -662,7 +662,7 @@ export declare const DesignState: z.ZodObject<{
             nonPorous: "nonPorous";
             porous: "porous";
         }>>;
-    }, z.core.$loose>>>;
+    }, z.core.$strict>>>;
 }, z.core.$strict>;
 export type DesignState = z.infer<typeof DesignState>;
 //# sourceMappingURL=DesignState.d.ts.map
