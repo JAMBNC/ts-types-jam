@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { CompositeOperation } from "./CompositeOperation.js";
 import { Dimension } from "./Dimension.js";
 
 /**An ingredient that holds a generic data payload such as textures or backgrounds.*/
@@ -10,10 +9,6 @@ export const DataIngredient = z
     type: z.literal("data"),
     /**Arbitrary metadata.*/
     metadata: z.record(z.string(), z.any()).describe("Arbitrary metadata."),
-    /**Composite operations used for rendering and previews*/
-    workingTextureCompositeOperation: CompositeOperation,
-    /**Composite operations used for rendering and previews*/
-    printTextureCompositeOperation: CompositeOperation,
     isNew: z.boolean(),
     /**The view layer this ingredient belongs to.*/
     viewLayer: z

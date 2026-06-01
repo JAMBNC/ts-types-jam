@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
 import { Ingredient } from "./Ingredient.js";
+import { MaterialCode } from "./MaterialCode.js";
 import { Page } from "./Page.js";
 /**The complete design state containing dimensions, pages, and ingredients.*/
 export const DesignState = z
@@ -42,6 +43,14 @@ export const DesignState = z
     metadata: z
         .record(z.string(), z.any())
         .describe("Design metadata")
+        .optional(),
+    materials: z
+        .array(z
+        .object({
+        /**The material code for the material being printed upon*/
+        code: MaterialCode.optional(),
+    })
+        .passthrough())
         .optional(),
 })
     .strict()

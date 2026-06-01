@@ -81,7 +81,7 @@ export * from './OAuth2RefreshToken.js';
 export * from './Auth.js';
 export * from './IngredientMetadataType.js';
 export * from './DimensionUnit.js';
-export * from './CompositeOperation.js';
+export * from './MaterialCode.js';
 export * from './RgbColor.js';
 export * from './TextProperties.js';
 export * from './Rect.js';

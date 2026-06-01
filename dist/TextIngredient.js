@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { CompositeOperation } from "./CompositeOperation.js";
 import { Rect } from "./Rect.js";
 import { TextProperties } from "./TextProperties.js";
 /**An ingredient that renders text content with font and style properties.*/
@@ -10,10 +9,6 @@ export const TextIngredient = z
     type: z.literal("text"),
     /**Arbitrary metadata.*/
     metadata: z.record(z.string(), z.any()).describe("Arbitrary metadata."),
-    /**Composite operations used for rendering and previews*/
-    workingTextureCompositeOperation: CompositeOperation,
-    /**Composite operations used for rendering and previews*/
-    printTextureCompositeOperation: CompositeOperation,
     isNew: z.boolean(),
     /**The view layer this ingredient belongs to.*/
     viewLayer: z
