@@ -2,6 +2,7 @@ import { z } from "zod";
 /**An ingredient that renders text content with font and style properties.*/
 export declare const TextIngredient: z.ZodObject<{
     type: z.ZodLiteral<"text">;
+    allowRewrite: z.ZodOptional<z.ZodBoolean>;
     dropshadow: z.ZodOptional<z.ZodBoolean>;
     editable: z.ZodOptional<z.ZodBoolean>;
     id: z.ZodString;

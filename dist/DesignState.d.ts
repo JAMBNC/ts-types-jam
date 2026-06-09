@@ -548,6 +548,7 @@ export declare const DesignState: z.ZodObject<{
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"text">;
+        allowRewrite: z.ZodOptional<z.ZodBoolean>;
         dropshadow: z.ZodOptional<z.ZodBoolean>;
         editable: z.ZodOptional<z.ZodBoolean>;
         id: z.ZodString;

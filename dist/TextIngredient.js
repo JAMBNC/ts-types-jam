@@ -6,6 +6,7 @@ import { ViewLayer } from "./ViewLayer.js";
 export const TextIngredient = z
     .object({
     type: z.literal("text"),
+    allowRewrite: z.boolean().optional(),
     dropshadow: z.boolean().optional(),
     editable: z.boolean().optional(),
     /**Unique identifier for this ingredient.*/
