@@ -1,6 +1,8 @@
 import { z } from "zod";
 export declare const SidedFeatureValue: z.ZodObject<{
+    type: z.ZodLiteral<"sidedFeatureValue">;
     sides: z.ZodArray<z.ZodObject<{
+        type: z.ZodLiteral<"featureValue">;
         availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
             type: z.ZodLiteral<"coverageAdderCodeEnum">;
         }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
@@ -95,9 +97,7 @@ export declare const SidedFeatureValue: z.ZodObject<{
             none: "none";
             all: "all";
         }>>;
-        type: z.ZodLiteral<"featureValue">;
     }, z.core.$loose>>;
-    type: z.ZodLiteral<"sidedFeatureValue">;
 }, z.core.$loose>;
 export type SidedFeatureValue = z.infer<typeof SidedFeatureValue>;
 //# sourceMappingURL=SidedFeatureValue.d.ts.map

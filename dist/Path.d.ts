@@ -1,7 +1,7 @@
 import { z } from "zod";
 /**A vector path consisting of ordered control points.*/
 export declare const Path: z.ZodObject<{
-    isClosed: z.ZodString;
+    closed: z.ZodBoolean;
     points: z.ZodRecord<z.ZodString, z.ZodDiscriminatedUnion<[z.ZodObject<{
         type: z.ZodLiteral<"bezier">;
         ix: z.ZodObject<{

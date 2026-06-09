@@ -1,45 +1,25 @@
 import { z } from "zod";
 /**An ingredient defined by vector paths with optional fill and stroke.*/
 export declare const ShapeIngredient: z.ZodObject<{
-    id: z.ZodString;
     type: z.ZodLiteral<"shape">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-    rotation: z.ZodNumber;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
     editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
-    zIndex: z.ZodNumber;
-    hasFill: z.ZodBoolean;
-    fillColor: z.ZodUnion<readonly [z.ZodObject<{
-        name: z.ZodString;
+    fillColor: z.ZodOptional<z.ZodObject<{
+        a: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
         hex: z.ZodString;
         id: z.ZodString;
+        name: z.ZodString;
         r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>, z.ZodNull]>;
+    }, z.core.$strict>>;
+    id: z.ZodString;
     invertFill: z.ZodBoolean;
-    hasStroke: z.ZodBoolean;
-    strokeColor: z.ZodUnion<readonly [z.ZodObject<{
-        name: z.ZodString;
-        hex: z.ZodString;
-        id: z.ZodString;
-        r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>, z.ZodNull]>;
-    strokeWidth: z.ZodNumber;
-    lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
+    lineDash: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
     paths: z.ZodRecord<z.ZodString, z.ZodObject<{
-        isClosed: z.ZodString;
+        closed: z.ZodBoolean;
         points: z.ZodRecord<z.ZodString, z.ZodDiscriminatedUnion<[z.ZodObject<{
             type: z.ZodLiteral<"bezier">;
             ix: z.ZodObject<{
@@ -157,6 +137,24 @@ export declare const ShapeIngredient: z.ZodObject<{
     }, z.core.$strict>>;
     pathsOrdered: z.ZodArray<z.ZodString>;
     rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
         x: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
@@ -175,25 +173,35 @@ export declare const ShapeIngredient: z.ZodObject<{
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
     }, z.core.$strict>;
+    rotation: z.ZodNumber;
+    strokeColor: z.ZodOptional<z.ZodObject<{
+        a: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        name: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>>;
+    strokeWidth: z.ZodOptional<z.ZodObject<{
+        u: z.ZodEnum<{
+            in: "in";
+            mm: "mm";
+            px: "px";
+            pt: "pt";
+        }>;
+        v: z.ZodNumber;
+    }, z.core.$loose>>;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
 }, z.core.$strict>;
 export type ShapeIngredient = z.infer<typeof ShapeIngredient>;
 //# sourceMappingURL=ShapeIngredient.d.ts.map

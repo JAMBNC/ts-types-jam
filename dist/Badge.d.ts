@@ -1,5 +1,6 @@
 import { z } from "zod";
 export declare const Badge: z.ZodObject<{
+    title: z.ZodOptional<z.ZodString>;
     code: z.ZodString;
     images: z.ZodOptional<z.ZodArray<z.ZodObject<{
         context: z.ZodEnum<{
@@ -15,7 +16,6 @@ export declare const Badge: z.ZodObject<{
         url: z.ZodString;
     }, z.core.$loose>>>;
     priority: z.ZodOptional<z.ZodNumber>;
-    title: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;
 export type Badge = z.infer<typeof Badge>;
 //# sourceMappingURL=Badge.d.ts.map

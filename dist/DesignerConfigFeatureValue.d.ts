@@ -1,5 +1,6 @@
 import { z } from "zod";
 export declare const DesignerConfigFeatureValue: z.ZodUnion<readonly [z.ZodObject<{
+    type: z.ZodLiteral<"coverageFeatureValue">;
     availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
         type: z.ZodLiteral<"coverageAdderCodeEnum">;
     }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
@@ -25,8 +26,8 @@ export declare const DesignerConfigFeatureValue: z.ZodUnion<readonly [z.ZodObjec
         none: "none";
         all: "all";
     }>>;
-    type: z.ZodLiteral<"coverageFeatureValue">;
 }, z.core.$loose>, z.ZodObject<{
+    type: z.ZodLiteral<"featureValue">;
     availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
         type: z.ZodLiteral<"coverageAdderCodeEnum">;
     }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
@@ -121,8 +122,8 @@ export declare const DesignerConfigFeatureValue: z.ZodUnion<readonly [z.ZodObjec
         none: "none";
         all: "all";
     }>>;
-    type: z.ZodLiteral<"featureValue">;
 }, z.core.$loose>, z.ZodObject<{
+    type: z.ZodLiteral<"processConfigurationFeatureValue">;
     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
     allowCustomColors: z.ZodOptional<z.ZodBoolean>;
     availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
@@ -221,9 +222,10 @@ export declare const DesignerConfigFeatureValue: z.ZodUnion<readonly [z.ZodObjec
         all: "all";
     }>>;
     restrictColors: z.ZodOptional<z.ZodBoolean>;
-    type: z.ZodLiteral<"processConfigurationFeatureValue">;
 }, z.core.$loose>, z.ZodObject<{
+    type: z.ZodLiteral<"sidedFeatureValue">;
     sides: z.ZodArray<z.ZodObject<{
+        type: z.ZodLiteral<"featureValue">;
         availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
             type: z.ZodLiteral<"coverageAdderCodeEnum">;
         }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
@@ -318,9 +320,7 @@ export declare const DesignerConfigFeatureValue: z.ZodUnion<readonly [z.ZodObjec
             none: "none";
             all: "all";
         }>>;
-        type: z.ZodLiteral<"featureValue">;
     }, z.core.$loose>>;
-    type: z.ZodLiteral<"sidedFeatureValue">;
 }, z.core.$loose>]>;
 export type DesignerConfigFeatureValue = z.infer<typeof DesignerConfigFeatureValue>;
 //# sourceMappingURL=DesignerConfigFeatureValue.d.ts.map

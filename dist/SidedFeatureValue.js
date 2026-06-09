@@ -2,7 +2,7 @@ import { z } from "zod";
 import { FeatureValue } from "./FeatureValue.js";
 export const SidedFeatureValue = z
     .object({
-    sides: z.array(FeatureValue),
     type: z.literal("sidedFeatureValue"),
+    sides: z.array(FeatureValue),
 })
     .passthrough();

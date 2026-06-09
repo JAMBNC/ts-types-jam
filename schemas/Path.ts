@@ -5,7 +5,7 @@ import { Point } from "./Point.js";
 export const Path = z
   .object({
     /**Whether the path is closed.*/
-    isClosed: z.string().describe("Whether the path is closed."),
+    closed: z.boolean().describe("Whether the path is closed."),
     /**Map of point IDs to point definitions.*/
     points: z
       .record(z.string(), Point)

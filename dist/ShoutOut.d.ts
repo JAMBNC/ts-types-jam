@@ -1,6 +1,5 @@
 import { z } from "zod";
 export declare const ShoutOut: z.ZodObject<{
-    display: z.ZodString;
     type: z.ZodEnum<{
         product: "product";
         generic: "generic";
@@ -8,6 +7,7 @@ export declare const ShoutOut: z.ZodObject<{
         group: "group";
         similar: "similar";
     }>;
+    display: z.ZodString;
     url: z.ZodString;
     value: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;

@@ -8,6 +8,7 @@ export const ProductCustomization = z
     prebuiltCustomizable: z.boolean().optional(),
     prebuiltDesign: z.boolean().optional(),
     stockType: z.string().optional(),
+    styleCode: z.string().optional(),
     styleType: z.string().optional(),
   })
   .passthrough();

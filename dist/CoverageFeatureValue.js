@@ -4,9 +4,9 @@ import { Dimension } from "./Dimension.js";
 import { OptionUse } from "./OptionUse.js";
 export const CoverageFeatureValue = z
     .object({
+    type: z.literal("coverageFeatureValue"),
     availableOptions: z.array(CoverageAdderCodeEnum).optional(),
     coverageMap: z.record(z.string(), Dimension).optional(),
     optionUse: OptionUse.optional(),
-    type: z.literal("coverageFeatureValue"),
 })
     .passthrough();

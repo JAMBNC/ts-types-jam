@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
-import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 
 export const DesignerChangeFontTrackingEvent = z
@@ -9,7 +8,21 @@ export const DesignerChangeFontTrackingEvent = z
     event: z.literal("designer_change_font"),
     payload: z
       .object({
-        type: z.union([IngredientMetadataType, z.null()]).optional(),
+        type: z
+          .union([
+            z
+              .enum([
+                "sRecipientAddress",
+                "recipientAddress",
+                "returnAddress",
+                "image",
+                "text",
+                "variableData",
+              ])
+              .describe("The type of ingredient in the designer."),
+            z.null(),
+          ])
+          .optional(),
         oldFont: z.string(),
         newFont: z.string(),
         /**An analytics/tracking code to help id the designer event source.*/

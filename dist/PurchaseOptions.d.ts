@@ -6,6 +6,7 @@ export declare const PurchaseOptions: z.ZodObject<{
         min: z.ZodNumber;
     }, z.core.$loose>>;
     customizable: z.ZodBoolean;
+    defaultDisplayQty: z.ZodOptional<z.ZodNumber>;
     designRequired: z.ZodBoolean;
     inStock: z.ZodBoolean;
     isReturnable: z.ZodDefault<z.ZodBoolean>;
@@ -24,6 +25,7 @@ export declare const PurchaseOptions: z.ZodObject<{
         startingAtQty: z.ZodNumber;
     }, z.core.$loose>>>;
     stockQty: z.ZodNumber;
+    strikeThroughQty: z.ZodOptional<z.ZodNumber>;
     suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
     tierPrices: z.ZodArray<z.ZodObject<{
         discountReason: z.ZodOptional<z.ZodString>;

@@ -16,9 +16,9 @@ export declare const Order: z.ZodObject<{
     currencyCode: z.ZodOptional<z.ZodString>;
     customerIdentifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     discounts: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        description: z.ZodOptional<z.ZodString>;
         amount: z.ZodOptional<z.ZodNumber>;
         code: z.ZodOptional<z.ZodString>;
-        description: z.ZodOptional<z.ZodString>;
         identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     }, z.core.$loose>>>;
     email: z.ZodOptional<z.ZodString>;

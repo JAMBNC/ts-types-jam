@@ -1,22 +1,9 @@
 import { z } from "zod";
 /**A discriminated union of all supported ingredient types.*/
 export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
-    id: z.ZodString;
     type: z.ZodLiteral<"data">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-    rotation: z.ZodNumber;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
-    zIndex: z.ZodNumber;
     data: z.ZodObject<{
-        width: z.ZodObject<{
+        height: z.ZodOptional<z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
@@ -24,8 +11,11 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                 pt: "pt";
             }>;
             v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
+        }, z.core.$loose>>;
+        layerName: z.ZodOptional<z.ZodString>;
+        path: z.ZodOptional<z.ZodString>;
+        tag: z.ZodOptional<z.ZodString>;
+        width: z.ZodOptional<z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
@@ -33,8 +23,8 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                 pt: "pt";
             }>;
             v: z.ZodNumber;
-        }, z.core.$loose>;
-        x: z.ZodObject<{
+        }, z.core.$loose>>;
+        x: z.ZodOptional<z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
@@ -42,8 +32,8 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                 pt: "pt";
             }>;
             v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
+        }, z.core.$loose>>;
+        y: z.ZodOptional<z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
@@ -51,39 +41,59 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                 pt: "pt";
             }>;
             v: z.ZodNumber;
-        }, z.core.$loose>;
-        type: z.ZodString;
-        viewLayer: z.ZodString;
-        layerName: z.ZodString;
-        isTextureMask: z.ZodBoolean;
-        tag: z.ZodString;
-        path: z.ZodString;
-    }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
+        }, z.core.$loose>>;
+        additionalProperties: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    }, z.core.$loose>;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
     id: z.ZodString;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
+    rotation: z.ZodNumber;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
+}, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"fill">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-    rotation: z.ZodNumber;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
-    zIndex: z.ZodNumber;
     color: z.ZodObject<{
-        name: z.ZodString;
+        a: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
         hex: z.ZodString;
         id: z.ZodString;
+        name: z.ZodString;
         r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
     }, z.core.$strict>;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    id: z.ZodString;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
     rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
         x: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
@@ -102,15 +112,27 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
+    }, z.core.$strict>;
+    rotation: z.ZodNumber;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"image">;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    id: z.ZodString;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    naturalHeight: z.ZodOptional<z.ZodNumber>;
+    naturalWidth: z.ZodOptional<z.ZodNumber>;
+    opacity: z.ZodNumber;
+    rect: z.ZodObject<{
         height: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
@@ -120,47 +142,213 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        x: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        y: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
     }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    id: z.ZodString;
-    type: z.ZodLiteral<"shape">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
+    src: z.ZodString;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
     zIndex: z.ZodNumber;
-    hasFill: z.ZodBoolean;
-    fillColor: z.ZodUnion<readonly [z.ZodObject<{
-        name: z.ZodString;
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"line">;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    id: z.ZodString;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
+    rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        x: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        y: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+    }, z.core.$strict>;
+    rotation: z.ZodNumber;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"rectangle">;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    fillColor: z.ZodOptional<z.ZodObject<{
+        a: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
         hex: z.ZodString;
         id: z.ZodString;
+        name: z.ZodString;
         r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>>;
+    id: z.ZodString;
+    invertFill: z.ZodOptional<z.ZodBoolean>;
+    lineDash: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
+    rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        x: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        y: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+    }, z.core.$strict>;
+    rotation: z.ZodNumber;
+    strokeColor: z.ZodOptional<z.ZodObject<{
         a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>, z.ZodNull]>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        name: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>>;
+    strokeCornerRadius: z.ZodOptional<z.ZodObject<{
+        u: z.ZodEnum<{
+            in: "in";
+            mm: "mm";
+            px: "px";
+            pt: "pt";
+        }>;
+        v: z.ZodNumber;
+    }, z.core.$loose>>;
+    strokeWidth: z.ZodOptional<z.ZodObject<{
+        u: z.ZodEnum<{
+            in: "in";
+            mm: "mm";
+            px: "px";
+            pt: "pt";
+        }>;
+        v: z.ZodNumber;
+    }, z.core.$loose>>;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"shape">;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    fillColor: z.ZodOptional<z.ZodObject<{
+        a: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
+        hex: z.ZodString;
+        id: z.ZodString;
+        name: z.ZodString;
+        r: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>>;
+    id: z.ZodString;
     invertFill: z.ZodBoolean;
-    hasStroke: z.ZodBoolean;
-    strokeColor: z.ZodUnion<readonly [z.ZodObject<{
-        name: z.ZodString;
-        hex: z.ZodString;
-        id: z.ZodString;
-        r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>, z.ZodNull]>;
-    strokeWidth: z.ZodNumber;
-    lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
+    lineDash: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
     paths: z.ZodRecord<z.ZodString, z.ZodObject<{
-        isClosed: z.ZodString;
+        closed: z.ZodBoolean;
         points: z.ZodRecord<z.ZodString, z.ZodDiscriminatedUnion<[z.ZodObject<{
             type: z.ZodLiteral<"bezier">;
             ix: z.ZodObject<{
@@ -278,6 +466,24 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     }, z.core.$strict>>;
     pathsOrdered: z.ZodArray<z.ZodString>;
     rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
         x: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
@@ -296,64 +502,18 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
     }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    id: z.ZodString;
-    type: z.ZodLiteral<"rectangle">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
-    zIndex: z.ZodNumber;
-    hasFill: z.ZodBoolean;
-    fillColor: z.ZodUnion<readonly [z.ZodObject<{
-        name: z.ZodString;
+    strokeColor: z.ZodOptional<z.ZodObject<{
+        a: z.ZodOptional<z.ZodNumber>;
+        b: z.ZodOptional<z.ZodNumber>;
+        g: z.ZodOptional<z.ZodNumber>;
         hex: z.ZodString;
         id: z.ZodString;
-        r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>, z.ZodNull]>;
-    invertFill: z.ZodBoolean;
-    hasStroke: z.ZodBoolean;
-    strokeColor: z.ZodUnion<readonly [z.ZodObject<{
         name: z.ZodString;
-        hex: z.ZodString;
-        id: z.ZodString;
         r: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        a: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>, z.ZodNull]>;
-    strokeWidth: z.ZodNumber;
-    lineDash: z.ZodUnion<readonly [z.ZodArray<z.ZodNumber>, z.ZodNull]>;
-    strokeCornerRadius: z.ZodObject<{
+    }, z.core.$strict>>;
+    strokeWidth: z.ZodOptional<z.ZodObject<{
         u: z.ZodEnum<{
             in: "in";
             mm: "mm";
@@ -361,8 +521,42 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
             pt: "pt";
         }>;
         v: z.ZodNumber;
-    }, z.core.$loose>;
+    }, z.core.$loose>>;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
+}, z.core.$strict>, z.ZodObject<{
+    type: z.ZodLiteral<"text">;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    id: z.ZodString;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    opacity: z.ZodNumber;
     rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
         x: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
@@ -381,53 +575,25 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
     }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    id: z.ZodString;
-    type: z.ZodLiteral<"text">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     rotation: z.ZodNumber;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
-    zIndex: z.ZodNumber;
     text: z.ZodObject<{
-        alignment: z.ZodString;
+        alignment: z.ZodEnum<{
+            left: "left";
+            center: "center";
+            right: "right";
+        }>;
         body: z.ZodArray<z.ZodString>;
-        isPlaceholder: z.ZodOptional<z.ZodBoolean>;
         dataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
-        measurementDataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
-        fontSize: z.ZodString;
-        leading: z.ZodOptional<z.ZodNumber>;
-        rotation: z.ZodOptional<z.ZodNumber>;
-        strikethrough: z.ZodBoolean;
-        underline: z.ZodBoolean;
         fontData: z.ZodObject<{
-            uuid: z.ZodString;
+            family: z.ZodString;
+            format: z.ZodOptional<z.ZodEnum<{
+                otf: "otf";
+                ttf: "ttf";
+            }>>;
+            name: z.ZodOptional<z.ZodString>;
+            previewImageUrl: z.ZodOptional<z.ZodString>;
+            priority: z.ZodOptional<z.ZodNumber>;
             style: z.ZodEnum<{
                 regular: "regular";
                 italic: "italic";
@@ -436,36 +602,17 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                 light: "light";
                 light_italic: "light_italic";
             }>;
-            name: z.ZodOptional<z.ZodString>;
+            url: z.ZodOptional<z.ZodString>;
+            uuid: z.ZodString;
+            id: z.ZodOptional<z.ZodString>;
         }, z.core.$strict>;
+        fontSize: z.ZodString;
+        leading: z.ZodOptional<z.ZodNumber>;
+        measurementDataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
+        placeholder: z.ZodOptional<z.ZodBoolean>;
+        rotation: z.ZodOptional<z.ZodNumber>;
+        strikethrough: z.ZodBoolean;
         textLines: z.ZodOptional<z.ZodArray<z.ZodObject<{
-            x: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    px: "px";
-                    pt: "pt";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
-            y: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    px: "px";
-                    pt: "pt";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
-            width: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    px: "px";
-                    pt: "pt";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
             height: z.ZodObject<{
                 u: z.ZodEnum<{
                     in: "in";
@@ -490,7 +637,25 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                 glyphPositions: z.ZodString;
                 glyphXOffsets: z.ZodString;
                 glyphYOffsets: z.ZodString;
+                height: z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        px: "px";
+                        pt: "pt";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>;
                 text: z.ZodString;
+                width: z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        px: "px";
+                        pt: "pt";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>;
                 x: z.ZodObject<{
                     u: z.ZodEnum<{
                         in: "in";
@@ -509,121 +674,46 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
                     }>;
                     v: z.ZodNumber;
                 }, z.core.$loose>;
-                width: z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        px: "px";
-                        pt: "pt";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>;
-                height: z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        px: "px";
-                        pt: "pt";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>;
+            }, z.core.$loose>;
+            width: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            x: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            y: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$loose>>>;
+        underline: z.ZodBoolean;
     }, z.core.$loose>;
-    rect: z.ZodObject<{
-        x: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-    }, z.core.$strict>;
-}, z.core.$strict>, z.ZodObject<{
-    id: z.ZodString;
-    type: z.ZodLiteral<"image">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-    rotation: z.ZodNumber;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
     zIndex: z.ZodNumber;
-    src: z.ZodString;
-    naturalWidth: z.ZodOptional<z.ZodNumber>;
-    naturalHeight: z.ZodOptional<z.ZodNumber>;
-    rect: z.ZodObject<{
-        x: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-    }, z.core.$strict>;
 }, z.core.$strict>]>;
 export type Ingredient = z.infer<typeof Ingredient>;
 //# sourceMappingURL=Ingredient.d.ts.map

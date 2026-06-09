@@ -1,5 +1,6 @@
 import { z } from "zod";
 export declare const ProcessConfigurationFeatureValue: z.ZodObject<{
+    type: z.ZodLiteral<"processConfigurationFeatureValue">;
     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
     allowCustomColors: z.ZodOptional<z.ZodBoolean>;
     availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
@@ -98,7 +99,6 @@ export declare const ProcessConfigurationFeatureValue: z.ZodObject<{
         all: "all";
     }>>;
     restrictColors: z.ZodOptional<z.ZodBoolean>;
-    type: z.ZodLiteral<"processConfigurationFeatureValue">;
 }, z.core.$loose>;
 export type ProcessConfigurationFeatureValue = z.infer<typeof ProcessConfigurationFeatureValue>;
 //# sourceMappingURL=ProcessConfigurationFeatureValue.d.ts.map

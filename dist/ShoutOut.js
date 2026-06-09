@@ -2,8 +2,8 @@ import { z } from "zod";
 import { ShoutOutType } from "./ShoutOutType.js";
 export const ShoutOut = z
     .object({
-    display: z.string(),
     type: ShoutOutType,
+    display: z.string(),
     url: z.string(),
     value: z.string().optional(),
 })

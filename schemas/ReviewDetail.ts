@@ -7,6 +7,7 @@ import { VoteType } from "./VoteType.js";
 
 export const ReviewDetail = z
   .object({
+    title: z.string().optional(),
     answeredQuestions: z.array(AnsweredQuestion).optional(),
     comments: z.string().optional(),
     createdAt: z.string().datetime({ offset: true }).optional(),
@@ -19,7 +20,6 @@ export const ReviewDetail = z
     rating: z.number().optional(),
     sku: z.string(),
     source: ReviewSource.optional(),
-    title: z.string().optional(),
     votes: z
       .object({ helpful: z.number().int(), unhelpful: z.number().int() })
       .partial()

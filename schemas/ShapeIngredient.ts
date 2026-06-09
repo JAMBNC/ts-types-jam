@@ -1,41 +1,28 @@
 import { z } from "zod";
+import { Dimension } from "./Dimension.js";
 import { Path } from "./Path.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
+import { ViewLayer } from "./ViewLayer.js";
 
 /**An ingredient defined by vector paths with optional fill and stroke.*/
 export const ShapeIngredient = z
   .object({
+    type: z.literal("shape"),
+    dropshadow: z.boolean().optional(),
+    editable: z.boolean().optional(),
+    /**A color with name, hex code, and optional RGBA components.*/
+    fillColor: RgbColor.optional(),
     /**Unique identifier for this ingredient.*/
     id: z.string().describe("Unique identifier for this ingredient."),
-    type: z.literal("shape"),
-    /**Arbitrary metadata.*/
-    metadata: z.record(z.string(), z.any()).describe("Arbitrary metadata."),
-    isNew: z.boolean(),
-    /**The view layer this ingredient belongs to.*/
-    viewLayer: z
-      .union([
-        z.string().describe("The view layer this ingredient belongs to."),
-        z.null().describe("The view layer this ingredient belongs to."),
-      ])
-      .describe("The view layer this ingredient belongs to."),
-    /**Rotation angle in degrees.*/
-    rotation: z.number().describe("Rotation angle in degrees."),
-    editable: z.boolean().optional(),
-    isDirty: z.boolean(),
-    simulated: z.boolean(),
-    isDropshadow: z.boolean(),
-    isTextureMask: z.boolean(),
-    isValidatorBoundingShape: z.boolean(),
-    opacity: z.number().gte(0).lte(1),
-    zIndex: z.number().int(),
-    hasFill: z.boolean(),
-    fillColor: z.union([RgbColor, z.null()]),
     invertFill: z.boolean(),
-    hasStroke: z.boolean(),
-    strokeColor: z.union([RgbColor, z.null()]),
-    strokeWidth: z.number(),
-    lineDash: z.union([z.array(z.number()), z.null()]),
+    lineDash: z.array(z.number()).optional(),
+    /**Arbitrary metadata.*/
+    metadata: z
+      .record(z.string(), z.any())
+      .describe("Arbitrary metadata.")
+      .optional(),
+    opacity: z.number().gte(0).lte(1),
     /**Map of path IDs to path definitions.*/
     paths: z
       .record(z.string(), Path)
@@ -44,6 +31,18 @@ export const ShapeIngredient = z
     pathsOrdered: z.array(z.string()).describe("Ordered list of path IDs."),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
+    /**Rotation angle in degrees.*/
+    rotation: z.number().describe("Rotation angle in degrees."),
+    /**A color with name, hex code, and optional RGBA components.*/
+    strokeColor: RgbColor.optional(),
+    strokeWidth: Dimension.optional(),
+    textureMask: z.boolean().optional(),
+    validatorBoundingShape: z.boolean().optional(),
+    /**The view layer this ingredient belongs to.*/
+    viewLayer: z
+      .union([z.null(), ViewLayer])
+      .describe("The view layer this ingredient belongs to."),
+    zIndex: z.number().int(),
   })
   .strict()
   .describe(

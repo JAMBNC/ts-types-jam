@@ -1,7 +1,7 @@
 import { z } from "zod";
 export declare const ContentPlacement: z.ZodObject<{
-    side: z.ZodOptional<z.ZodString>;
     type: z.ZodOptional<z.ZodString>;
+    side: z.ZodOptional<z.ZodString>;
     x: z.ZodOptional<z.ZodString>;
     xType: z.ZodOptional<z.ZodEnum<{
         relative: "relative";

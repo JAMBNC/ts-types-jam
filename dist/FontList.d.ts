@@ -3,7 +3,14 @@ import { z } from "zod";
 export declare const FontList: z.ZodArray<z.ZodObject<{
     familyName: z.ZodString;
     fonts: z.ZodArray<z.ZodObject<{
-        uuid: z.ZodString;
+        family: z.ZodString;
+        format: z.ZodOptional<z.ZodEnum<{
+            otf: "otf";
+            ttf: "ttf";
+        }>>;
+        name: z.ZodOptional<z.ZodString>;
+        previewImageUrl: z.ZodOptional<z.ZodString>;
+        priority: z.ZodOptional<z.ZodNumber>;
         style: z.ZodEnum<{
             regular: "regular";
             italic: "italic";
@@ -12,7 +19,9 @@ export declare const FontList: z.ZodArray<z.ZodObject<{
             light: "light";
             light_italic: "light_italic";
         }>;
-        name: z.ZodOptional<z.ZodString>;
+        url: z.ZodOptional<z.ZodString>;
+        uuid: z.ZodString;
+        id: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>>;
 }, z.core.$strict>>;
 export type FontList = z.infer<typeof FontList>;

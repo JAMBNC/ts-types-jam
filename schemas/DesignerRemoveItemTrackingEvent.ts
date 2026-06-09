@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
-import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 
 export const DesignerRemoveItemTrackingEvent = z
@@ -9,7 +8,21 @@ export const DesignerRemoveItemTrackingEvent = z
     event: z.literal("designer_remove_item"),
     payload: z
       .object({
-        type: z.union([IngredientMetadataType, z.null()]).optional(),
+        type: z
+          .union([
+            z
+              .enum([
+                "sRecipientAddress",
+                "recipientAddress",
+                "returnAddress",
+                "image",
+                "text",
+                "variableData",
+              ])
+              .describe("The type of ingredient in the designer."),
+            z.null(),
+          ])
+          .optional(),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
         /**An analytics/tracking code to help id the merchant for the event.*/

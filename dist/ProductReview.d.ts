@@ -1,10 +1,11 @@
 import { z } from "zod";
 export declare const ProductReview: z.ZodObject<{
     detail: z.ZodOptional<z.ZodObject<{
+        title: z.ZodOptional<z.ZodString>;
         answeredQuestions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            type: z.ZodLiteral<"Tag">;
             choices: z.ZodArray<z.ZodString>;
             selected: z.ZodOptional<z.ZodArray<z.ZodString>>;
-            type: z.ZodLiteral<"Tag">;
         }, z.core.$loose>>>;
         comments: z.ZodOptional<z.ZodString>;
         createdAt: z.ZodOptional<z.ZodString>;
@@ -46,7 +47,6 @@ export declare const ProductReview: z.ZodObject<{
         rating: z.ZodOptional<z.ZodNumber>;
         sku: z.ZodString;
         source: z.ZodOptional<z.ZodLiteral<"email">>;
-        title: z.ZodOptional<z.ZodString>;
         votes: z.ZodOptional<z.ZodObject<{
             helpful: z.ZodOptional<z.ZodNumber>;
             unhelpful: z.ZodOptional<z.ZodNumber>;

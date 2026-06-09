@@ -1,5 +1,6 @@
 import { z } from "zod";
 export declare const CoverageFeatureValue: z.ZodObject<{
+    type: z.ZodLiteral<"coverageFeatureValue">;
     availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
         type: z.ZodLiteral<"coverageAdderCodeEnum">;
     }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
@@ -25,7 +26,6 @@ export declare const CoverageFeatureValue: z.ZodObject<{
         none: "none";
         all: "all";
     }>>;
-    type: z.ZodLiteral<"coverageFeatureValue">;
 }, z.core.$loose>;
 export type CoverageFeatureValue = z.infer<typeof CoverageFeatureValue>;
 //# sourceMappingURL=CoverageFeatureValue.d.ts.map

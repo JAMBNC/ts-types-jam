@@ -36,7 +36,6 @@ export declare const DisplayGroup: z.ZodObject<{
         sku: z.ZodString;
     }, z.core.$loose>>;
     shoutOuts: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        display: z.ZodString;
         type: z.ZodEnum<{
             product: "product";
             generic: "generic";
@@ -44,6 +43,7 @@ export declare const DisplayGroup: z.ZodObject<{
             group: "group";
             similar: "similar";
         }>;
+        display: z.ZodString;
         url: z.ZodString;
         value: z.ZodOptional<z.ZodString>;
     }, z.core.$loose>>>;

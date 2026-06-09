@@ -1,24 +1,33 @@
 import { z } from "zod";
 /**An ingredient that renders a raster image.*/
 export declare const ImageIngredient: z.ZodObject<{
-    id: z.ZodString;
     type: z.ZodLiteral<"image">;
-    metadata: z.ZodRecord<z.ZodString, z.ZodAny>;
-    isNew: z.ZodBoolean;
-    viewLayer: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-    rotation: z.ZodNumber;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
     editable: z.ZodOptional<z.ZodBoolean>;
-    isDirty: z.ZodBoolean;
-    simulated: z.ZodBoolean;
-    isDropshadow: z.ZodBoolean;
-    isTextureMask: z.ZodBoolean;
-    isValidatorBoundingShape: z.ZodBoolean;
-    opacity: z.ZodNumber;
-    zIndex: z.ZodNumber;
-    src: z.ZodString;
-    naturalWidth: z.ZodOptional<z.ZodNumber>;
+    id: z.ZodString;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     naturalHeight: z.ZodOptional<z.ZodNumber>;
+    naturalWidth: z.ZodOptional<z.ZodNumber>;
+    opacity: z.ZodNumber;
     rect: z.ZodObject<{
+        height: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
+        width: z.ZodObject<{
+            u: z.ZodEnum<{
+                in: "in";
+                mm: "mm";
+                px: "px";
+                pt: "pt";
+            }>;
+            v: z.ZodNumber;
+        }, z.core.$loose>;
         x: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
@@ -37,25 +46,18 @@ export declare const ImageIngredient: z.ZodObject<{
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                px: "px";
-                pt: "pt";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
     }, z.core.$strict>;
+    rotation: z.ZodNumber;
+    src: z.ZodString;
+    textureMask: z.ZodOptional<z.ZodBoolean>;
+    validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
+    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        background: "background";
+        bleed: "bleed";
+        mask: "mask";
+        print: "print";
+    }>]>;
+    zIndex: z.ZodNumber;
 }, z.core.$strict>;
 export type ImageIngredient = z.infer<typeof ImageIngredient>;
 //# sourceMappingURL=ImageIngredient.d.ts.map
