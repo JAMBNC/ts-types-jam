@@ -55,12 +55,11 @@ export declare const TextIngredient: z.ZodObject<{
         body: z.ZodArray<z.ZodString>;
         dataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
         fontData: z.ZodObject<{
-            family: z.ZodString;
             format: z.ZodOptional<z.ZodEnum<{
                 otf: "otf";
                 ttf: "ttf";
             }>>;
-            name: z.ZodOptional<z.ZodString>;
+            name: z.ZodString;
             previewImageUrl: z.ZodOptional<z.ZodString>;
             priority: z.ZodOptional<z.ZodNumber>;
             style: z.ZodEnum<{
@@ -103,6 +102,7 @@ export declare const TextIngredient: z.ZodObject<{
                     v: z.ZodNumber;
                 }, z.core.$loose>;
                 glyphIds: z.ZodString;
+                glyphIDs: z.ZodOptional<z.ZodString>;
                 glyphPositions: z.ZodString;
                 glyphXOffsets: z.ZodString;
                 glyphYOffsets: z.ZodString;

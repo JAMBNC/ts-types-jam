@@ -52,6 +52,11 @@ export const TextProperties = z
             glyphIds: z
                 .string()
                 .describe("Semicolon separated list of glyph ids"),
+            /**Deprecated capitalization for glyphIds. Exported only to support mage systems.*/
+            glyphIDs: z
+                .string()
+                .describe("Deprecated capitalization for glyphIds. Exported only to support mage systems.")
+                .optional(),
             /**Semicolon separated list of glyph positions.*/
             glyphPositions: z
                 .string()

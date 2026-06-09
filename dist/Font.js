@@ -2,18 +2,13 @@ import { z } from "zod";
 /**Schema for a single font used throughout the system.*/
 export const Font = z
     .object({
-    /**The family of the font.*/
-    family: z.string().describe("The family of the font."),
     /**The format of font file.*/
     format: z
         .enum(["otf", "ttf"])
         .describe("The format of font file.")
         .optional(),
-    /**The name of the font. Can also inferred from the family + style*/
-    name: z
-        .string()
-        .describe("The name of the font. Can also inferred from the family + style")
-        .optional(),
+    /**The family name for the font*/
+    name: z.string().describe("The family name for the font"),
     /**URL of preview image displaying the font name written in the font.*/
     previewImageUrl: z
         .string()

@@ -3,12 +3,11 @@ import { z } from "zod";
 export declare const FontFamily: z.ZodObject<{
     familyName: z.ZodString;
     fonts: z.ZodArray<z.ZodObject<{
-        family: z.ZodString;
         format: z.ZodOptional<z.ZodEnum<{
             otf: "otf";
             ttf: "ttf";
         }>>;
-        name: z.ZodOptional<z.ZodString>;
+        name: z.ZodString;
         previewImageUrl: z.ZodOptional<z.ZodString>;
         priority: z.ZodOptional<z.ZodNumber>;
         style: z.ZodEnum<{

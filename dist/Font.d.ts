@@ -1,12 +1,11 @@
 import { z } from "zod";
 /**Schema for a single font used throughout the system.*/
 export declare const Font: z.ZodObject<{
-    family: z.ZodString;
     format: z.ZodOptional<z.ZodEnum<{
         otf: "otf";
         ttf: "ttf";
     }>>;
-    name: z.ZodOptional<z.ZodString>;
+    name: z.ZodString;
     previewImageUrl: z.ZodOptional<z.ZodString>;
     priority: z.ZodOptional<z.ZodNumber>;
     style: z.ZodEnum<{
