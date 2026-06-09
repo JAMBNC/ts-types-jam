@@ -31,10 +31,7 @@ export const RectangleIngredient = z
     strokeWidth: Dimension.optional(),
     textureMask: z.boolean().optional(),
     validatorBoundingShape: z.boolean().optional(),
-    /**The view layer this ingredient belongs to.*/
-    viewLayer: z
-        .union([z.null(), ViewLayer])
-        .describe("The view layer this ingredient belongs to."),
+    viewLayer: ViewLayer.optional(),
     zIndex: z.number().int(),
 })
     .strict()

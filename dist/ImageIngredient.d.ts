@@ -51,12 +51,12 @@ export declare const ImageIngredient: z.ZodObject<{
     src: z.ZodString;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>;
 export type ImageIngredient = z.infer<typeof ImageIngredient>;

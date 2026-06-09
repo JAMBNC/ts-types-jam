@@ -52,12 +52,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     rotation: z.ZodNumber;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"fill">;
@@ -116,12 +116,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     rotation: z.ZodNumber;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"image">;
@@ -174,12 +174,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     src: z.ZodString;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"line">;
@@ -229,12 +229,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     rotation: z.ZodNumber;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"rectangle">;
@@ -322,12 +322,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     }, z.core.$loose>>;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"shape">;
@@ -524,12 +524,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     }, z.core.$loose>>;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>, z.ZodObject<{
     type: z.ZodLiteral<"text">;
@@ -707,12 +707,12 @@ export declare const Ingredient: z.ZodDiscriminatedUnion<[z.ZodObject<{
     }, z.core.$loose>;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+    viewLayer: z.ZodOptional<z.ZodEnum<{
         background: "background";
         bleed: "bleed";
         mask: "mask";
         print: "print";
-    }>]>;
+    }>>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>]>;
 export type Ingredient = z.infer<typeof Ingredient>;

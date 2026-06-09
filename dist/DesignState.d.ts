@@ -67,12 +67,12 @@ export declare const DesignState: z.ZodObject<{
         rotation: z.ZodNumber;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"fill">;
@@ -131,12 +131,12 @@ export declare const DesignState: z.ZodObject<{
         rotation: z.ZodNumber;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"image">;
@@ -189,12 +189,12 @@ export declare const DesignState: z.ZodObject<{
         src: z.ZodString;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"line">;
@@ -244,12 +244,12 @@ export declare const DesignState: z.ZodObject<{
         rotation: z.ZodNumber;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"rectangle">;
@@ -337,12 +337,12 @@ export declare const DesignState: z.ZodObject<{
         }, z.core.$loose>>;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"shape">;
@@ -539,12 +539,12 @@ export declare const DesignState: z.ZodObject<{
         }, z.core.$loose>>;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"text">;
@@ -722,12 +722,12 @@ export declare const DesignState: z.ZodObject<{
         }, z.core.$loose>;
         textureMask: z.ZodOptional<z.ZodBoolean>;
         validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-        viewLayer: z.ZodUnion<readonly [z.ZodNull, z.ZodEnum<{
+        viewLayer: z.ZodOptional<z.ZodEnum<{
             background: "background";
             bleed: "bleed";
             mask: "mask";
             print: "print";
-        }>]>;
+        }>>;
         zIndex: z.ZodNumber;
     }, z.core.$strict>]>>;
     coatings: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
