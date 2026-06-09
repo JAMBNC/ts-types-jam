@@ -56,6 +56,7 @@ export * from './FillIngredient.js';
 export * from './Font.js';
 export * from './ImageIngredient.js';
 export * from './Ingredient.js';
+export * from './IngredientMetadataType.js';
 export * from './LineIngredient.js';
 export * from './LinePoint.js';
 export * from './MaterialCode.js';
