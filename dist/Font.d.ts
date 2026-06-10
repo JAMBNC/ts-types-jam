@@ -5,7 +5,8 @@ export declare const Font: z.ZodObject<{
         otf: "otf";
         ttf: "ttf";
     }>>;
-    name: z.ZodString;
+    family: z.ZodString;
+    name: z.ZodOptional<z.ZodString>;
     previewImageUrl: z.ZodOptional<z.ZodString>;
     priority: z.ZodOptional<z.ZodNumber>;
     style: z.ZodEnum<{

@@ -7,8 +7,13 @@ export const Font = z
         .enum(["otf", "ttf"])
         .describe("The format of font file.")
         .optional(),
-    /**The family name for the font*/
-    name: z.string().describe("The family name for the font"),
+    /**The family of the font.*/
+    family: z.string().describe("The family of the font."),
+    /**The name of the font. Can also inferred from the family + style*/
+    name: z
+        .string()
+        .describe("The name of the font. Can also inferred from the family + style")
+        .optional(),
     /**URL of preview image displaying the font name written in the font.*/
     previewImageUrl: z
         .string()
