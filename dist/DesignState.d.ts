@@ -185,6 +185,50 @@ export declare const DesignState: z.ZodObject<{
                 v: z.ZodNumber;
             }, z.core.$loose>;
         }, z.core.$strict>;
+        imageRect: z.ZodOptional<z.ZodObject<{
+            height: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            width: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            x: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            y: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+        }, z.core.$strict>>;
+        legacyPixelData: z.ZodOptional<z.ZodObject<{
+            realWidthPixels: z.ZodOptional<z.ZodNumber>;
+            realHeightPixels: z.ZodOptional<z.ZodNumber>;
+            imgWidthPixels: z.ZodOptional<z.ZodNumber>;
+            imgHeightPixels: z.ZodOptional<z.ZodNumber>;
+        }, z.core.$strict>>;
         rotation: z.ZodNumber;
         src: z.ZodString;
         textureMask: z.ZodOptional<z.ZodBoolean>;

@@ -28,6 +28,19 @@ export const ImageIngredient = z
     opacity: z.number().gte(0).lte(1),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
+    /**A positioned rectangle defined by x, y, width, and height measurements.*/
+    imageRect: Rect.optional(),
+    /**Legacy Pixel Data for the chili save*/
+    legacyPixelData: z
+      .object({
+        realWidthPixels: z.number().optional(),
+        realHeightPixels: z.number().optional(),
+        imgWidthPixels: z.number().optional(),
+        imgHeightPixels: z.number().optional(),
+      })
+      .strict()
+      .describe("Legacy Pixel Data for the chili save")
+      .optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     /**The image source path or URL.*/
