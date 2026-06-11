@@ -775,23 +775,58 @@ export declare const DesignState: z.ZodObject<{
             print: "print";
         }>>;
         zIndex: z.ZodNumber;
-    }, z.core.$strict>]>>;
-    coatings: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-        identifier: z.ZodString;
-        opacity: z.ZodNumber;
+    }, z.core.$strict>, z.ZodObject<{
+        id: z.ZodString;
+        rect: z.ZodOptional<z.ZodObject<{
+            height: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            width: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            x: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+            y: z.ZodObject<{
+                u: z.ZodEnum<{
+                    in: "in";
+                    mm: "mm";
+                    px: "px";
+                    pt: "pt";
+                }>;
+                v: z.ZodNumber;
+            }, z.core.$loose>;
+        }, z.core.$strict>>;
+        type: z.ZodLiteral<"coating">;
+        editable: z.ZodOptional<z.ZodBoolean>;
+        metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        code: z.ZodString;
+        opacity: z.ZodOptional<z.ZodNumber>;
         texture: z.ZodUnion<readonly [z.ZodObject<{
             hex: z.ZodString;
         }, z.core.$strict>, z.ZodObject<{
             src: z.ZodString;
         }, z.core.$strict>]>;
-        type: z.ZodEnum<{
-            image: "image";
-            color: "color";
-            blank: "blank";
-        }>;
-        zIndex: z.ZodNumber;
-        metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-    }, z.core.$strict>>>;
+        zIndex: z.ZodOptional<z.ZodNumber>;
+    }, z.core.$strict>]>>;
     materials: z.ZodOptional<z.ZodArray<z.ZodObject<{
         code: z.ZodOptional<z.ZodEnum<{
             nonPorous: "nonPorous";
@@ -807,47 +842,6 @@ export declare const DesignState: z.ZodObject<{
     pages: z.ZodRecord<z.ZodString, z.ZodObject<{
         id: z.ZodString;
         ingredientsOrdered: z.ZodArray<z.ZodString>;
-        coatings: z.ZodOptional<z.ZodArray<z.ZodObject<{
-            identifier: z.ZodOptional<z.ZodString>;
-            rect: z.ZodOptional<z.ZodObject<{
-                height: z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        px: "px";
-                        pt: "pt";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>;
-                width: z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        px: "px";
-                        pt: "pt";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>;
-                x: z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        px: "px";
-                        pt: "pt";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>;
-                y: z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        px: "px";
-                        pt: "pt";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>;
-            }, z.core.$strict>>;
-        }, z.core.$strict>>>;
     }, z.core.$strict>>;
     pagesOrdered: z.ZodArray<z.ZodString>;
     version: z.ZodString;

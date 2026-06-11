@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { Coating } from "./Coating.js";
 import { Dimension } from "./Dimension.js";
 import { Ingredient } from "./Ingredient.js";
 import { MaterialCode } from "./MaterialCode.js";
@@ -25,11 +24,6 @@ export const DesignState = z
     ingredients: z
         .record(z.string(), Ingredient)
         .describe("Map of ingredient IDs to ingredient definitions."),
-    /**Map of coating identifiers to coating definitions.*/
-    coatings: z
-        .record(z.string(), Coating)
-        .describe("Map of coating identifiers to coating definitions.")
-        .optional(),
     materials: z
         .array(z
         .object({

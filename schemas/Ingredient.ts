@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { CoatingIngredient } from "./CoatingIngredient.js";
 import { DataIngredient } from "./DataIngredient.js";
 import { FillIngredient } from "./FillIngredient.js";
 import { ImageIngredient } from "./ImageIngredient.js";
@@ -17,6 +18,7 @@ export const Ingredient = z
     RectangleIngredient,
     ShapeIngredient,
     TextIngredient,
+    CoatingIngredient,
   ])
   .describe("A discriminated union of all supported ingredient types.");
 export type Ingredient = z.infer<typeof Ingredient>;

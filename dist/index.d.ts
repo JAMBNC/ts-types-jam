@@ -49,7 +49,7 @@ export * from './VendorColor.js';
 export * from './VendorProcess.js';
 export * from './Alignment.js';
 export * from './BezierPoint.js';
-export * from './Coating.js';
+export * from './CoatingIngredient.js';
 export * from './DataIngredient.js';
 export * from './DesignState.js';
 export * from './FillIngredient.js';
