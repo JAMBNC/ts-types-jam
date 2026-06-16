@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { ChiliAssetIngredient } from "./ChiliAssetIngredient.js";
+import { CircleIngredient } from "./CircleIngredient.js";
 import { CoatingIngredient } from "./CoatingIngredient.js";
 import { DataIngredient } from "./DataIngredient.js";
 import { FillIngredient } from "./FillIngredient.js";
@@ -18,5 +20,7 @@ export const Ingredient = z
     ShapeIngredient,
     TextIngredient,
     CoatingIngredient,
+    CircleIngredient,
+    ChiliAssetIngredient,
 ])
     .describe("A discriminated union of all supported ingredient types.");

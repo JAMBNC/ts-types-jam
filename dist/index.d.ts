@@ -49,6 +49,8 @@ export * from './VendorColor.js';
 export * from './VendorProcess.js';
 export * from './Alignment.js';
 export * from './BezierPoint.js';
+export * from './ChiliAssetIngredient.js';
+export * from './CircleIngredient.js';
 export * from './CoatingIngredient.js';
 export * from './DataIngredient.js';
 export * from './DesignState.js';
