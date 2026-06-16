@@ -389,6 +389,26 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
             deltaTime: z.ZodNumber;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
+        event: z.ZodLiteral<"designer_add_coating">;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
+    }, z.core.$strict>, z.ZodObject<{
+        event: z.ZodLiteral<"designer_remove_coating">;
+        payload: z.ZodObject<{
+            designer: z.ZodEnum<{
+                base: "base";
+                hermes: "hermes";
+            }>;
+            merchant: z.ZodString;
+            deltaTime: z.ZodNumber;
+        }, z.core.$strict>;
+    }, z.core.$strict>, z.ZodObject<{
         event: z.ZodLiteral<"designer_remove_item">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
