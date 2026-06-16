@@ -25165,7 +25165,6 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         }, z.core.$strict>>;
         fonts: z.ZodObject<{
             all: z.ZodString;
-            get: z.ZodString;
         }, z.core.$strict>;
         colors: z.ZodObject<{
             all: z.ZodString;

@@ -9,11 +9,6 @@ export const DesignerFontEndpoints = z
       .describe(
         "The (optional) endpoint URL for retrieving all supported fonts",
       ),
-    /**The endpoint URL for retrieving a font file by uuid */
-    get: z
-      .string()
-      .url()
-      .describe("The endpoint URL for retrieving a font file by uuid "),
   })
   .strict();
 export type DesignerFontEndpoints = z.infer<typeof DesignerFontEndpoints>;
