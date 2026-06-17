@@ -31,6 +31,8 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "tool.mailingAddress.icon": z.ZodDefault<z.ZodString>;
     "tool.mailingAddress.label": z.ZodDefault<z.ZodString>;
     "tool.mailingAddress.addressExample": z.ZodOptional<z.ZodString>;
+    "tool.backgroundColor.icon": z.ZodDefault<z.ZodString>;
+    "tool.backgroundColor.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.returnAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.returnAddress.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.returnAddress.label": z.ZodDefault<z.ZodString>;

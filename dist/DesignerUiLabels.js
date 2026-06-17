@@ -160,6 +160,16 @@ export const DesignerUiLabels = z
         .url()
         .describe("The url to use for the address csv example download.")
         .optional(),
+    /**The icon for the Background Color tool*/
+    "tool.backgroundColor.icon": z
+        .string()
+        .describe("The icon for the Background Color tool")
+        .default("format_color_fill"),
+    /**The label for the Background Color tool*/
+    "tool.backgroundColor.label": z
+        .string()
+        .describe("The label for the Background Color tool")
+        .default("Background"),
     /**The label used for the return address tool in the tool bar*/
     "workspace.toolBar.stack.returnAddress.label": z
         .string()
