@@ -418,6 +418,31 @@ export const DesignerUiLabels = z
         .string()
         .describe("The ui label for five foil impressions")
         .default("Five Foil Impressions"),
+    /**The ui label for first foil color*/
+    "adder.foil_first_color.label": z
+        .string()
+        .describe("The ui label for first foil color")
+        .default("First Foil Color"),
+    /**The ui label for second foil color*/
+    "adder.foil_second_color.label": z
+        .string()
+        .describe("The ui label for second foil color")
+        .default("Second Foil Color"),
+    /**The ui label for third foil color*/
+    "adder.foil_third_color.label": z
+        .string()
+        .describe("The ui label for third foil color")
+        .default("Third Foil Color"),
+    /**The ui label for fourth foil color*/
+    "adder.foil_fourth_color.label": z
+        .string()
+        .describe("The ui label for fourth foil color")
+        .default("Fourth Foil Color"),
+    /**The ui label for fifth foil color*/
+    "adder.foil_fifth_color.label": z
+        .string()
+        .describe("The ui label for fifth foil color")
+        .default("Fifth Foil Color"),
     /**Label for 1 Black ink*/
     "adder.color_side1_blk.label": z
         .string()

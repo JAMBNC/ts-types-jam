@@ -103,6 +103,11 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "adder.foil_stamp_3.label": z.ZodDefault<z.ZodString>;
     "adder.foil_stamp_4.label": z.ZodDefault<z.ZodString>;
     "adder.foil_stamp_5.label": z.ZodDefault<z.ZodString>;
+    "adder.foil_first_color.label": z.ZodDefault<z.ZodString>;
+    "adder.foil_second_color.label": z.ZodDefault<z.ZodString>;
+    "adder.foil_third_color.label": z.ZodDefault<z.ZodString>;
+    "adder.foil_fourth_color.label": z.ZodDefault<z.ZodString>;
+    "adder.foil_fifth_color.label": z.ZodDefault<z.ZodString>;
     "adder.color_side1_blk.label": z.ZodDefault<z.ZodString>;
     "adder.color_side1_std.label": z.ZodDefault<z.ZodString>;
     "adder.color_side1_pms.label": z.ZodDefault<z.ZodString>;
