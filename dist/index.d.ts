@@ -158,6 +158,8 @@ export * from './DesignerInitializationPayload.js';
 export * from './DesignerMediaEntry.js';
 export * from './DesignerMediaGalleryResponse.js';
 export * from './DesignerMediaUploadRequest.js';
+export * from './DesignerMediaRenditionBaseRequestData.js';
+export * from './DesignerMediaRenditionFoilRequestData.js';
 export * from './DesignerMediaRenditionRequest.js';
 export * from './DesignerMediaUploadSuccessResponse.js';
 export * from './DesignerMediaUploadErrorResponse.js';

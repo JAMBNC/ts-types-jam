@@ -27,8 +27,8 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
     success: z.ZodLiteral<false>;
     error: z.ZodString;
 }, z.core.$strict>]>, z.ZodObject<{
-    data: z.ZodObject<{
-        process: z.ZodEnum<{
+    data: z.ZodUnion<readonly [z.ZodObject<{
+        process: z.ZodIntersection<z.ZodEnum<{
             offset: "offset";
             digital: "digital";
             foil: "foil";
@@ -38,8 +38,11 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
             flexography: "flexography";
             sublimation: "sublimation";
             thermal: "thermal";
-        }>;
-    }, z.core.$strict>;
+        }>, z.ZodAny>;
+    }, z.core.$strict>, z.ZodObject<{
+        process: z.ZodLiteral<"foil">;
+        color: z.ZodString;
+    }, z.core.$strict>]>;
 }, z.core.$strict>, z.ZodUnion<readonly [z.ZodObject<{
     success: z.ZodLiteral<true>;
     renditionInfo: z.ZodObject<{
