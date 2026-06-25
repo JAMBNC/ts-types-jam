@@ -1,18 +1,21 @@
 import { z } from "zod";
-import { Process } from "./Process.js";
 
 /**The request body data for the media rendition endpoint for basic requests that require only process*/
 export const DesignerMediaRenditionBaseRequestData = z
   .object({
-    process: z.intersection(
-      Process,
-      z
-        .any()
-        .refine(
-          (value) => !z.literal("foil").safeParse(value).success,
-          "Invalid input: Should NOT be valid against schema",
-        ),
-    ),
+    /**Defines how visual content is transferred to the medium.*/
+    process: z
+      .enum([
+        "offset",
+        "digital",
+        "emboss",
+        "screen",
+        "inkjet",
+        "flexography",
+        "sublimation",
+        "thermal",
+      ])
+      .describe("Defines how visual content is transferred to the medium."),
   })
   .strict()
   .describe(

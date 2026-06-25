@@ -2,17 +2,16 @@ import { z } from "zod";
 /**The request body for the media rendition endpoint.*/
 export declare const DesignerMediaRenditionRequest: z.ZodObject<{
     data: z.ZodUnion<readonly [z.ZodObject<{
-        process: z.ZodIntersection<z.ZodEnum<{
+        process: z.ZodEnum<{
             offset: "offset";
             digital: "digital";
-            foil: "foil";
             emboss: "emboss";
             screen: "screen";
             inkjet: "inkjet";
             flexography: "flexography";
             sublimation: "sublimation";
             thermal: "thermal";
-        }>, z.ZodAny>;
+        }>;
     }, z.core.$strict>, z.ZodObject<{
         process: z.ZodLiteral<"foil">;
         color: z.ZodString;
