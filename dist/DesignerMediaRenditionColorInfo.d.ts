@@ -1,10 +1,6 @@
 import { z } from "zod";
 /**The color rendition data returned on a successful media rendition request.*/
 export declare const DesignerMediaRenditionColorInfo: z.ZodIntersection<z.ZodObject<{
-    isVector: z.ZodBoolean;
-    mediaId: z.ZodString;
-    guest: z.ZodBoolean;
-}, z.core.$loose>, z.ZodIntersection<z.ZodObject<{
     rgb: z.ZodObject<{
         source: z.ZodObject<{
             colorspace: z.ZodString;
@@ -45,6 +41,10 @@ export declare const DesignerMediaRenditionColorInfo: z.ZodIntersection<z.ZodObj
         }, z.core.$strict>>;
     }, z.core.$strict>;
     type: z.ZodLiteral<"color">;
-}, z.core.$loose>, z.ZodRecord<z.ZodString, z.ZodNever>>>;
+}, z.core.$loose>, z.ZodObject<{
+    isVector: z.ZodBoolean;
+    mediaId: z.ZodString;
+    guest: z.ZodBoolean;
+}, z.core.$loose>>;
 export type DesignerMediaRenditionColorInfo = z.infer<typeof DesignerMediaRenditionColorInfo>;
 //# sourceMappingURL=DesignerMediaRenditionColorInfo.d.ts.map

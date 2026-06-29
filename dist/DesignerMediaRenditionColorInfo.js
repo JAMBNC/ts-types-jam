@@ -1,9 +1,7 @@
 import { z } from "zod";
-import { DesignerMediaRenditionBaseInfo } from "./DesignerMediaRenditionBaseInfo.js";
 import { RenditionChannel } from "./RenditionChannel.js";
 /**The color rendition data returned on a successful media rendition request.*/
 export const DesignerMediaRenditionColorInfo = z
-    .intersection(DesignerMediaRenditionBaseInfo, z.intersection(z
     .object({
     /**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
     rgb: RenditionChannel,
@@ -47,5 +45,20 @@ export const DesignerMediaRenditionColorInfo = z
     /**The rendition type.*/
     type: z.literal("color").describe("The rendition type."),
 })
-    .passthrough(), z.record(z.string(), z.never())))
+    .passthrough()
+    .and(z
+    .object({
+    /**Whether the media is a vector graphic*/
+    isVector: z.boolean().describe("Whether the media is a vector graphic"),
+    /**The unique identifier for the media item.*/
+    mediaId: z
+        .string()
+        .describe("The unique identifier for the media item."),
+    /**Whether the media was uploaded by a guest user.*/
+    guest: z
+        .boolean()
+        .describe("Whether the media was uploaded by a guest user."),
+})
+    .passthrough()
+    .describe("The shared rendition data returned on a successful media rendition request."))
     .describe("The color rendition data returned on a successful media rendition request.");

@@ -3,10 +3,6 @@ import { z } from "zod";
 export declare const DesignerMediaRenditionSuccessResponse: z.ZodObject<{
     success: z.ZodLiteral<true>;
     renditionInfo: z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
-        isVector: z.ZodBoolean;
-        mediaId: z.ZodString;
-        guest: z.ZodBoolean;
-    }, z.core.$loose>, z.ZodIntersection<z.ZodObject<{
         rgb: z.ZodObject<{
             source: z.ZodObject<{
                 colorspace: z.ZodString;
@@ -47,11 +43,11 @@ export declare const DesignerMediaRenditionSuccessResponse: z.ZodObject<{
             }, z.core.$strict>>;
         }, z.core.$strict>;
         type: z.ZodLiteral<"color">;
-    }, z.core.$loose>, z.ZodRecord<z.ZodString, z.ZodNever>>>, z.ZodIntersection<z.ZodObject<{
+    }, z.core.$loose>, z.ZodObject<{
         isVector: z.ZodBoolean;
         mediaId: z.ZodString;
         guest: z.ZodBoolean;
-    }, z.core.$loose>, z.ZodIntersection<z.ZodObject<{
+    }, z.core.$loose>>, z.ZodIntersection<z.ZodObject<{
         bw: z.ZodObject<{
             source: z.ZodObject<{
                 colorspace: z.ZodString;
@@ -77,7 +73,11 @@ export declare const DesignerMediaRenditionSuccessResponse: z.ZodObject<{
             url: z.ZodString;
         }, z.core.$strict>;
         type: z.ZodLiteral<"foil">;
-    }, z.core.$loose>, z.ZodRecord<z.ZodString, z.ZodNever>>>]>;
+    }, z.core.$loose>, z.ZodObject<{
+        isVector: z.ZodBoolean;
+        mediaId: z.ZodString;
+        guest: z.ZodBoolean;
+    }, z.core.$loose>>]>;
 }, z.core.$strict>;
 export type DesignerMediaRenditionSuccessResponse = z.infer<typeof DesignerMediaRenditionSuccessResponse>;
 //# sourceMappingURL=DesignerMediaRenditionSuccessResponse.d.ts.map
