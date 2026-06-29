@@ -52,7 +52,7 @@ export declare const DesignerMediaRenditionResponse: z.ZodUnion<readonly [z.ZodO
         mediaId: z.ZodString;
         guest: z.ZodBoolean;
     }, z.core.$loose>, z.ZodIntersection<z.ZodObject<{
-        bw: z.ZodOptional<z.ZodObject<{
+        bw: z.ZodObject<{
             source: z.ZodObject<{
                 colorspace: z.ZodString;
                 dpi: z.ZodNumber;
@@ -63,7 +63,7 @@ export declare const DesignerMediaRenditionResponse: z.ZodUnion<readonly [z.ZodO
                 url: z.ZodString;
             }, z.core.$strict>;
             url: z.ZodString;
-        }, z.core.$strict>>;
+        }, z.core.$strict>;
         cmyk: z.ZodObject<{
             source: z.ZodObject<{
                 colorspace: z.ZodString;

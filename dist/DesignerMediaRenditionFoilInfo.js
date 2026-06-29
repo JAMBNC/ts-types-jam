@@ -6,7 +6,7 @@ export const DesignerMediaRenditionFoilInfo = z
     .intersection(DesignerMediaRenditionBaseInfo, z.intersection(z
     .object({
     /**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
-    bw: RenditionChannel.optional(),
+    bw: RenditionChannel,
     /**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
     cmyk: RenditionChannel,
     /**The rendition type.*/

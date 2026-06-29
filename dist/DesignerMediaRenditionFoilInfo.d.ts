@@ -5,7 +5,7 @@ export declare const DesignerMediaRenditionFoilInfo: z.ZodIntersection<z.ZodObje
     mediaId: z.ZodString;
     guest: z.ZodBoolean;
 }, z.core.$loose>, z.ZodIntersection<z.ZodObject<{
-    bw: z.ZodOptional<z.ZodObject<{
+    bw: z.ZodObject<{
         source: z.ZodObject<{
             colorspace: z.ZodString;
             dpi: z.ZodNumber;
@@ -16,7 +16,7 @@ export declare const DesignerMediaRenditionFoilInfo: z.ZodIntersection<z.ZodObje
             url: z.ZodString;
         }, z.core.$strict>;
         url: z.ZodString;
-    }, z.core.$strict>>;
+    }, z.core.$strict>;
     cmyk: z.ZodObject<{
         source: z.ZodObject<{
             colorspace: z.ZodString;
