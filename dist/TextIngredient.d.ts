@@ -65,9 +65,9 @@ export declare const TextIngredient: z.ZodObject<{
             previewImageUrl: z.ZodOptional<z.ZodString>;
             priority: z.ZodOptional<z.ZodNumber>;
             style: z.ZodEnum<{
+                bold: "bold";
                 regular: "regular";
                 italic: "italic";
-                bold: "bold";
                 bold_italic: "bold_italic";
                 light: "light";
                 light_italic: "light_italic";
