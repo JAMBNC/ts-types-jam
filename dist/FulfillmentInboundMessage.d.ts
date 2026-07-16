@@ -139,23 +139,12 @@ export declare const FulfillmentInboundMessage: z.ZodUnion<readonly [z.ZodObject
                     }, z.core.$strict>, z.ZodNull]>>;
                 }, z.core.$strict>>>;
                 customer: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                    addresses: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                        city: z.ZodString;
-                        company: z.ZodOptional<z.ZodString>;
-                        country: z.ZodOptional<z.ZodString>;
-                        firstName: z.ZodOptional<z.ZodString>;
-                        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-                        lastName: z.ZodOptional<z.ZodString>;
-                        phone: z.ZodOptional<z.ZodString>;
-                        postal: z.ZodOptional<z.ZodString>;
-                        region: z.ZodOptional<z.ZodString>;
-                        streets: z.ZodArray<z.ZodString>;
-                    }, z.core.$loose>>>;
-                    email: z.ZodOptional<z.ZodString>;
-                    firstName: z.ZodOptional<z.ZodString>;
-                    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-                    lastName: z.ZodOptional<z.ZodString>;
-                }, z.core.$loose>, z.ZodNull]>>;
+                    id: z.ZodString;
+                    firstName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                    lastName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                    email: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                    phone: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                }, z.core.$strict>, z.ZodNull]>>;
                 billingAddress: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
                     firstName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
                     lastName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
@@ -312,23 +301,12 @@ export declare const FulfillmentInboundMessage: z.ZodUnion<readonly [z.ZodObject
                     }, z.core.$strict>, z.ZodNull]>>;
                 }, z.core.$strict>>>;
                 customer: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                    addresses: z.ZodOptional<z.ZodArray<z.ZodObject<{
-                        city: z.ZodString;
-                        company: z.ZodOptional<z.ZodString>;
-                        country: z.ZodOptional<z.ZodString>;
-                        firstName: z.ZodOptional<z.ZodString>;
-                        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-                        lastName: z.ZodOptional<z.ZodString>;
-                        phone: z.ZodOptional<z.ZodString>;
-                        postal: z.ZodOptional<z.ZodString>;
-                        region: z.ZodOptional<z.ZodString>;
-                        streets: z.ZodArray<z.ZodString>;
-                    }, z.core.$loose>>>;
-                    email: z.ZodOptional<z.ZodString>;
-                    firstName: z.ZodOptional<z.ZodString>;
-                    identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-                    lastName: z.ZodOptional<z.ZodString>;
-                }, z.core.$loose>, z.ZodNull]>>;
+                    id: z.ZodString;
+                    firstName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                    lastName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                    email: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                    phone: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
+                }, z.core.$strict>, z.ZodNull]>>;
                 billingAddress: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
                     firstName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
                     lastName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;

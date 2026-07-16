@@ -1,8 +1,8 @@
 import { z } from "zod";
 import { ExternalId } from "./ExternalId.js";
 import { FulfillmentOrderDestination } from "./FulfillmentOrderDestination.js";
+import { FulfillmentOrderDetails } from "./FulfillmentOrderDetails.js";
 import { FulfillmentOrderLineItem } from "./FulfillmentOrderLineItem.js";
-import { OrderDetails } from "./OrderDetails.js";
 
 /**A mapper-hydrated fulfillment order: enough for the backend to fulfill without calling the channel.*/
 export const FulfillmentOrder = z
@@ -61,7 +61,7 @@ export const FulfillmentOrder = z
       .optional(),
     /**Order-level detail (financials, parties). Present when the mapper hydrates the order.*/
     order: z
-      .union([OrderDetails, z.null()])
+      .union([FulfillmentOrderDetails, z.null()])
       .describe(
         "Order-level detail (financials, parties). Present when the mapper hydrates the order.",
       )
