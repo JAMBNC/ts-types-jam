@@ -29,12 +29,12 @@ export declare const DesignerRestPayloads: z.ZodUnion<readonly [z.ZodObject<{
 }, z.core.$strict>]>, z.ZodObject<{
     data: z.ZodUnion<readonly [z.ZodObject<{
         process: z.ZodEnum<{
-            offset: "offset";
             digital: "digital";
             emboss: "emboss";
-            screen: "screen";
-            inkjet: "inkjet";
             flexography: "flexography";
+            inkjet: "inkjet";
+            offset: "offset";
+            screen: "screen";
             sublimation: "sublimation";
             thermal: "thermal";
         }>;

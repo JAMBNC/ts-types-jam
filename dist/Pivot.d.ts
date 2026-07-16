@@ -1,10 +1,10 @@
 import { z } from "zod";
 export declare const Pivot: z.ZodObject<{
     attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
-        tabs: "tabs";
         dropdown: "dropdown";
-        swatches: "swatches";
         modal: "modal";
+        swatches: "swatches";
+        tabs: "tabs";
     }>>;
     code: z.ZodString;
     helpText: z.ZodOptional<z.ZodString>;
@@ -18,9 +18,9 @@ export declare const Pivot: z.ZodObject<{
         label: z.ZodString;
         products: z.ZodArray<z.ZodString>;
         swatchType: z.ZodOptional<z.ZodEnum<{
-            TEXT: "TEXT";
             IMAGE: "IMAGE";
             RGB: "RGB";
+            TEXT: "TEXT";
         }>>;
         swatchValue: z.ZodOptional<z.ZodString>;
     }, z.core.$loose>>;

@@ -6,9 +6,9 @@ export declare const ShippingInfo: z.ZodObject<{
     method: z.ZodOptional<z.ZodString>;
     provider: z.ZodOptional<z.ZodEnum<{
         FedEx: "FedEx";
+        Other: "Other";
         UPS: "UPS";
         USPS: "USPS";
-        Other: "Other";
     }>>;
     weightInPounds: z.ZodOptional<z.ZodNumber>;
 }, z.core.$loose>;

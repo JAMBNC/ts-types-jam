@@ -2,12 +2,12 @@ import { z } from "zod";
 /**The request body data for the media rendition endpoint for basic requests that require only process*/
 export declare const DesignerMediaRenditionBaseRequestData: z.ZodObject<{
     process: z.ZodEnum<{
-        offset: "offset";
         digital: "digital";
         emboss: "emboss";
-        screen: "screen";
-        inkjet: "inkjet";
         flexography: "flexography";
+        inkjet: "inkjet";
+        offset: "offset";
+        screen: "screen";
         sublimation: "sublimation";
         thermal: "thermal";
     }>;

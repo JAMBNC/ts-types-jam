@@ -1,8 +1,8 @@
 import { z } from "zod";
 export declare const SwatchType: z.ZodEnum<{
-    TEXT: "TEXT";
     IMAGE: "IMAGE";
     RGB: "RGB";
+    TEXT: "TEXT";
 }>;
 export type SwatchType = z.infer<typeof SwatchType>;
 //# sourceMappingURL=SwatchType.d.ts.map

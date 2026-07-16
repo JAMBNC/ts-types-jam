@@ -3,11 +3,11 @@ export declare const DesignerRemoveItemTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_remove_item">;
     payload: z.ZodObject<{
         type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            text: "text";
             image: "image";
-            sRecipientAddress: "sRecipientAddress";
             recipientAddress: "recipientAddress";
             returnAddress: "returnAddress";
+            sRecipientAddress: "sRecipientAddress";
+            text: "text";
             variableData: "variableData";
         }>, z.ZodNull]>>;
         designer: z.ZodEnum<{

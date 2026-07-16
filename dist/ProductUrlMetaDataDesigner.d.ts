@@ -1,7 +1,7 @@
 import { z } from "zod";
 export declare const ProductUrlMetaDataDesigner: z.ZodEnum<{
-    hermes: "hermes";
     chili: "chili";
+    hermes: "hermes";
     luma: "luma";
 }>;
 export type ProductUrlMetaDataDesigner = z.infer<typeof ProductUrlMetaDataDesigner>;

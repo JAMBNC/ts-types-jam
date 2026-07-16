@@ -5,9 +5,9 @@ export declare const Payment: z.ZodObject<{
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     method: z.ZodEnum<{
         CASH: "CASH";
-        PO: "PO";
         CREDIT_CARD: "CREDIT_CARD";
         ON_ACCOUNT: "ON_ACCOUNT";
+        PO: "PO";
     }>;
     paymentDate: z.ZodOptional<z.ZodString>;
     poNumber: z.ZodOptional<z.ZodString>;

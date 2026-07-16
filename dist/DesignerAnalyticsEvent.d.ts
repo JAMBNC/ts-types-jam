@@ -41,9 +41,9 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
             adders: z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
             }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_sm: "foil_coverage_sm";
                 foil_coverage_std: "foil_coverage_std";
-                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_xl: "foil_coverage_xl";
             }>, z.ZodEnum<{
                 ink_coverage_sm: "ink_coverage_sm";
@@ -53,15 +53,15 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
             }>, z.ZodEnum<{
+                foil_fifth_color: "foil_fifth_color";
                 foil_first_color: "foil_first_color";
+                foil_fourth_color: "foil_fourth_color";
                 foil_second_color: "foil_second_color";
                 foil_third_color: "foil_third_color";
-                foil_fourth_color: "foil_fourth_color";
-                foil_fifth_color: "foil_fifth_color";
             }>, z.ZodEnum<{
+                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_sm: "foil_coverage_sm";
                 foil_coverage_std: "foil_coverage_std";
-                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_xl: "foil_coverage_xl";
             }>, z.ZodEnum<{
                 foil_stamp_1: "foil_stamp_1";
@@ -70,41 +70,41 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 foil_stamp_4: "foil_stamp_4";
                 foil_stamp_5: "foil_stamp_5";
             }>, z.ZodEnum<{
-                text: "text";
                 image: "image";
+                text: "text";
             }>, z.ZodEnum<{
-                color_side1_blk: "color_side1_blk";
-                color_side1_std: "color_side1_std";
-                color_side1_pms: "color_side1_pms";
-                color_side1_blk_std: "color_side1_blk_std";
-                color_side1_blk_pms: "color_side1_blk_pms";
-                color_side1_2std: "color_side1_2std";
-                color_side1_std_pms: "color_side1_std_pms";
                 color_side1_2pms: "color_side1_2pms";
-                color_side1_blk_2std: "color_side1_blk_2std";
-                color_side1_blk_std_pms: "color_side1_blk_std_pms";
-                color_side1_blk_2pms: "color_side1_blk_2pms";
-                color_side1_3std: "color_side1_3std";
-                color_side1_2std_pms: "color_side1_2std_pms";
-                color_side1_std_2pms: "color_side1_std_2pms";
-                color_side1_3pms: "color_side1_3pms";
-                color_side1_blk_3std: "color_side1_blk_3std";
-                color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
-                color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
-                color_side1_blk_3pms: "color_side1_blk_3pms";
-                color_side1_4std: "color_side1_4std";
-                color_side1_3std_pms: "color_side1_3std_pms";
+                color_side1_2std: "color_side1_2std";
                 color_side1_2std_2pms: "color_side1_2std_2pms";
-                color_side1_std_3pms: "color_side1_std_3pms";
+                color_side1_2std_pms: "color_side1_2std_pms";
+                color_side1_3pms: "color_side1_3pms";
+                color_side1_3std: "color_side1_3std";
+                color_side1_3std_pms: "color_side1_3std_pms";
                 color_side1_4pms: "color_side1_4pms";
+                color_side1_4std: "color_side1_4std";
+                color_side1_blk: "color_side1_blk";
+                color_side1_blk_2pms: "color_side1_blk_2pms";
+                color_side1_blk_2std: "color_side1_blk_2std";
+                color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                color_side1_blk_3pms: "color_side1_blk_3pms";
+                color_side1_blk_3std: "color_side1_blk_3std";
+                color_side1_blk_pms: "color_side1_blk_pms";
+                color_side1_blk_std: "color_side1_blk_std";
+                color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                color_side1_blk_std_pms: "color_side1_blk_std_pms";
                 color_side1_cmyk: "color_side1_cmyk";
+                color_side1_pms: "color_side1_pms";
+                color_side1_std: "color_side1_std";
+                color_side1_std_2pms: "color_side1_std_2pms";
+                color_side1_std_3pms: "color_side1_std_3pms";
+                color_side1_std_pms: "color_side1_std_pms";
                 color_side1_white_ink: "color_side1_white_ink";
             }>, z.ZodEnum<{
-                color_side2_one_color: "color_side2_one_color";
-                color_side2_two_color: "color_side2_two_color";
-                color_side2_three_color: "color_side2_three_color";
-                color_side2_four_color: "color_side2_four_color";
                 color_side2_cmyk: "color_side2_cmyk";
+                color_side2_four_color: "color_side2_four_color";
+                color_side2_one_color: "color_side2_one_color";
+                color_side2_three_color: "color_side2_three_color";
+                color_side2_two_color: "color_side2_two_color";
             }>, z.ZodEnum<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
@@ -112,10 +112,10 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 ink_stamp_1: "ink_stamp_1";
                 ink_stamp_2: "ink_stamp_2";
             }>, z.ZodEnum<{
+                letterpress_ink1: "letterpress_ink1";
                 print_method_auto: "print_method_auto";
                 print_method_digital: "print_method_digital";
                 print_method_offset: "print_method_offset";
-                letterpress_ink1: "letterpress_ink1";
             }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
@@ -123,9 +123,9 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
+                white_ink: "white_ink";
                 white_ink_side1: "white_ink_side1";
                 white_ink_side2: "white_ink_side2";
-                white_ink: "white_ink";
             }>]>>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -144,9 +144,9 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
             adders: z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
             }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_sm: "foil_coverage_sm";
                 foil_coverage_std: "foil_coverage_std";
-                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_xl: "foil_coverage_xl";
             }>, z.ZodEnum<{
                 ink_coverage_sm: "ink_coverage_sm";
@@ -156,15 +156,15 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
             }>, z.ZodEnum<{
+                foil_fifth_color: "foil_fifth_color";
                 foil_first_color: "foil_first_color";
+                foil_fourth_color: "foil_fourth_color";
                 foil_second_color: "foil_second_color";
                 foil_third_color: "foil_third_color";
-                foil_fourth_color: "foil_fourth_color";
-                foil_fifth_color: "foil_fifth_color";
             }>, z.ZodEnum<{
+                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_sm: "foil_coverage_sm";
                 foil_coverage_std: "foil_coverage_std";
-                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_xl: "foil_coverage_xl";
             }>, z.ZodEnum<{
                 foil_stamp_1: "foil_stamp_1";
@@ -173,41 +173,41 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 foil_stamp_4: "foil_stamp_4";
                 foil_stamp_5: "foil_stamp_5";
             }>, z.ZodEnum<{
-                text: "text";
                 image: "image";
+                text: "text";
             }>, z.ZodEnum<{
-                color_side1_blk: "color_side1_blk";
-                color_side1_std: "color_side1_std";
-                color_side1_pms: "color_side1_pms";
-                color_side1_blk_std: "color_side1_blk_std";
-                color_side1_blk_pms: "color_side1_blk_pms";
-                color_side1_2std: "color_side1_2std";
-                color_side1_std_pms: "color_side1_std_pms";
                 color_side1_2pms: "color_side1_2pms";
-                color_side1_blk_2std: "color_side1_blk_2std";
-                color_side1_blk_std_pms: "color_side1_blk_std_pms";
-                color_side1_blk_2pms: "color_side1_blk_2pms";
-                color_side1_3std: "color_side1_3std";
-                color_side1_2std_pms: "color_side1_2std_pms";
-                color_side1_std_2pms: "color_side1_std_2pms";
-                color_side1_3pms: "color_side1_3pms";
-                color_side1_blk_3std: "color_side1_blk_3std";
-                color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
-                color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
-                color_side1_blk_3pms: "color_side1_blk_3pms";
-                color_side1_4std: "color_side1_4std";
-                color_side1_3std_pms: "color_side1_3std_pms";
+                color_side1_2std: "color_side1_2std";
                 color_side1_2std_2pms: "color_side1_2std_2pms";
-                color_side1_std_3pms: "color_side1_std_3pms";
+                color_side1_2std_pms: "color_side1_2std_pms";
+                color_side1_3pms: "color_side1_3pms";
+                color_side1_3std: "color_side1_3std";
+                color_side1_3std_pms: "color_side1_3std_pms";
                 color_side1_4pms: "color_side1_4pms";
+                color_side1_4std: "color_side1_4std";
+                color_side1_blk: "color_side1_blk";
+                color_side1_blk_2pms: "color_side1_blk_2pms";
+                color_side1_blk_2std: "color_side1_blk_2std";
+                color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                color_side1_blk_3pms: "color_side1_blk_3pms";
+                color_side1_blk_3std: "color_side1_blk_3std";
+                color_side1_blk_pms: "color_side1_blk_pms";
+                color_side1_blk_std: "color_side1_blk_std";
+                color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                color_side1_blk_std_pms: "color_side1_blk_std_pms";
                 color_side1_cmyk: "color_side1_cmyk";
+                color_side1_pms: "color_side1_pms";
+                color_side1_std: "color_side1_std";
+                color_side1_std_2pms: "color_side1_std_2pms";
+                color_side1_std_3pms: "color_side1_std_3pms";
+                color_side1_std_pms: "color_side1_std_pms";
                 color_side1_white_ink: "color_side1_white_ink";
             }>, z.ZodEnum<{
-                color_side2_one_color: "color_side2_one_color";
-                color_side2_two_color: "color_side2_two_color";
-                color_side2_three_color: "color_side2_three_color";
-                color_side2_four_color: "color_side2_four_color";
                 color_side2_cmyk: "color_side2_cmyk";
+                color_side2_four_color: "color_side2_four_color";
+                color_side2_one_color: "color_side2_one_color";
+                color_side2_three_color: "color_side2_three_color";
+                color_side2_two_color: "color_side2_two_color";
             }>, z.ZodEnum<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
@@ -215,10 +215,10 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 ink_stamp_1: "ink_stamp_1";
                 ink_stamp_2: "ink_stamp_2";
             }>, z.ZodEnum<{
+                letterpress_ink1: "letterpress_ink1";
                 print_method_auto: "print_method_auto";
                 print_method_digital: "print_method_digital";
                 print_method_offset: "print_method_offset";
-                letterpress_ink1: "letterpress_ink1";
             }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
@@ -226,9 +226,9 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
+                white_ink: "white_ink";
                 white_ink_side1: "white_ink_side1";
                 white_ink_side2: "white_ink_side2";
-                white_ink: "white_ink";
             }>]>>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -247,9 +247,9 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
             adders: z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                 type: z.ZodLiteral<"coverageAdderCodeEnum">;
             }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_sm: "foil_coverage_sm";
                 foil_coverage_std: "foil_coverage_std";
-                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_xl: "foil_coverage_xl";
             }>, z.ZodEnum<{
                 ink_coverage_sm: "ink_coverage_sm";
@@ -259,15 +259,15 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
             }>, z.ZodEnum<{
+                foil_fifth_color: "foil_fifth_color";
                 foil_first_color: "foil_first_color";
+                foil_fourth_color: "foil_fourth_color";
                 foil_second_color: "foil_second_color";
                 foil_third_color: "foil_third_color";
-                foil_fourth_color: "foil_fourth_color";
-                foil_fifth_color: "foil_fifth_color";
             }>, z.ZodEnum<{
+                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_sm: "foil_coverage_sm";
                 foil_coverage_std: "foil_coverage_std";
-                foil_coverage_lg: "foil_coverage_lg";
                 foil_coverage_xl: "foil_coverage_xl";
             }>, z.ZodEnum<{
                 foil_stamp_1: "foil_stamp_1";
@@ -276,41 +276,41 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 foil_stamp_4: "foil_stamp_4";
                 foil_stamp_5: "foil_stamp_5";
             }>, z.ZodEnum<{
-                text: "text";
                 image: "image";
+                text: "text";
             }>, z.ZodEnum<{
-                color_side1_blk: "color_side1_blk";
-                color_side1_std: "color_side1_std";
-                color_side1_pms: "color_side1_pms";
-                color_side1_blk_std: "color_side1_blk_std";
-                color_side1_blk_pms: "color_side1_blk_pms";
-                color_side1_2std: "color_side1_2std";
-                color_side1_std_pms: "color_side1_std_pms";
                 color_side1_2pms: "color_side1_2pms";
-                color_side1_blk_2std: "color_side1_blk_2std";
-                color_side1_blk_std_pms: "color_side1_blk_std_pms";
-                color_side1_blk_2pms: "color_side1_blk_2pms";
-                color_side1_3std: "color_side1_3std";
-                color_side1_2std_pms: "color_side1_2std_pms";
-                color_side1_std_2pms: "color_side1_std_2pms";
-                color_side1_3pms: "color_side1_3pms";
-                color_side1_blk_3std: "color_side1_blk_3std";
-                color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
-                color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
-                color_side1_blk_3pms: "color_side1_blk_3pms";
-                color_side1_4std: "color_side1_4std";
-                color_side1_3std_pms: "color_side1_3std_pms";
+                color_side1_2std: "color_side1_2std";
                 color_side1_2std_2pms: "color_side1_2std_2pms";
-                color_side1_std_3pms: "color_side1_std_3pms";
+                color_side1_2std_pms: "color_side1_2std_pms";
+                color_side1_3pms: "color_side1_3pms";
+                color_side1_3std: "color_side1_3std";
+                color_side1_3std_pms: "color_side1_3std_pms";
                 color_side1_4pms: "color_side1_4pms";
+                color_side1_4std: "color_side1_4std";
+                color_side1_blk: "color_side1_blk";
+                color_side1_blk_2pms: "color_side1_blk_2pms";
+                color_side1_blk_2std: "color_side1_blk_2std";
+                color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                color_side1_blk_3pms: "color_side1_blk_3pms";
+                color_side1_blk_3std: "color_side1_blk_3std";
+                color_side1_blk_pms: "color_side1_blk_pms";
+                color_side1_blk_std: "color_side1_blk_std";
+                color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                color_side1_blk_std_pms: "color_side1_blk_std_pms";
                 color_side1_cmyk: "color_side1_cmyk";
+                color_side1_pms: "color_side1_pms";
+                color_side1_std: "color_side1_std";
+                color_side1_std_2pms: "color_side1_std_2pms";
+                color_side1_std_3pms: "color_side1_std_3pms";
+                color_side1_std_pms: "color_side1_std_pms";
                 color_side1_white_ink: "color_side1_white_ink";
             }>, z.ZodEnum<{
-                color_side2_one_color: "color_side2_one_color";
-                color_side2_two_color: "color_side2_two_color";
-                color_side2_three_color: "color_side2_three_color";
-                color_side2_four_color: "color_side2_four_color";
                 color_side2_cmyk: "color_side2_cmyk";
+                color_side2_four_color: "color_side2_four_color";
+                color_side2_one_color: "color_side2_one_color";
+                color_side2_three_color: "color_side2_three_color";
+                color_side2_two_color: "color_side2_two_color";
             }>, z.ZodEnum<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
@@ -318,10 +318,10 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 ink_stamp_1: "ink_stamp_1";
                 ink_stamp_2: "ink_stamp_2";
             }>, z.ZodEnum<{
+                letterpress_ink1: "letterpress_ink1";
                 print_method_auto: "print_method_auto";
                 print_method_digital: "print_method_digital";
                 print_method_offset: "print_method_offset";
-                letterpress_ink1: "letterpress_ink1";
             }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
@@ -329,9 +329,9 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
+                white_ink: "white_ink";
                 white_ink_side1: "white_ink_side1";
                 white_ink_side2: "white_ink_side2";
-                white_ink: "white_ink";
             }>]>>;
         }, z.core.$strict>;
     }, z.core.$strict>, z.ZodObject<{
@@ -412,11 +412,11 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         event: z.ZodLiteral<"designer_remove_item">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                text: "text";
                 image: "image";
-                sRecipientAddress: "sRecipientAddress";
                 recipientAddress: "recipientAddress";
                 returnAddress: "returnAddress";
+                sRecipientAddress: "sRecipientAddress";
+                text: "text";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
             designer: z.ZodEnum<{
@@ -430,11 +430,11 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         event: z.ZodLiteral<"designer_change_color">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                text: "text";
                 image: "image";
-                sRecipientAddress: "sRecipientAddress";
                 recipientAddress: "recipientAddress";
                 returnAddress: "returnAddress";
+                sRecipientAddress: "sRecipientAddress";
+                text: "text";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
             oldColors: z.ZodArray<z.ZodObject<{
@@ -466,11 +466,11 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         event: z.ZodLiteral<"designer_change_font">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                text: "text";
                 image: "image";
-                sRecipientAddress: "sRecipientAddress";
                 recipientAddress: "recipientAddress";
                 returnAddress: "returnAddress";
+                sRecipientAddress: "sRecipientAddress";
+                text: "text";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
             oldFont: z.ZodString;
@@ -486,11 +486,11 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         event: z.ZodLiteral<"designer_change_quantity">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                text: "text";
                 image: "image";
-                sRecipientAddress: "sRecipientAddress";
                 recipientAddress: "recipientAddress";
                 returnAddress: "returnAddress";
+                sRecipientAddress: "sRecipientAddress";
+                text: "text";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
             oldQuantity: z.ZodNumber;
@@ -506,32 +506,32 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
         event: z.ZodLiteral<"designer_change_process">;
         payload: z.ZodObject<{
             type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                text: "text";
                 image: "image";
-                sRecipientAddress: "sRecipientAddress";
                 recipientAddress: "recipientAddress";
                 returnAddress: "returnAddress";
+                sRecipientAddress: "sRecipientAddress";
+                text: "text";
                 variableData: "variableData";
             }>, z.ZodNull]>>;
             oldProcess: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                offset: "offset";
                 digital: "digital";
-                foil: "foil";
                 emboss: "emboss";
-                screen: "screen";
-                inkjet: "inkjet";
                 flexography: "flexography";
+                foil: "foil";
+                inkjet: "inkjet";
+                offset: "offset";
+                screen: "screen";
                 sublimation: "sublimation";
                 thermal: "thermal";
             }>, z.ZodNull]>>;
             newProcess: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-                offset: "offset";
                 digital: "digital";
-                foil: "foil";
                 emboss: "emboss";
-                screen: "screen";
-                inkjet: "inkjet";
                 flexography: "flexography";
+                foil: "foil";
+                inkjet: "inkjet";
+                offset: "offset";
+                screen: "screen";
                 sublimation: "sublimation";
                 thermal: "thermal";
             }>, z.ZodNull]>>;

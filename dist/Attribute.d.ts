@@ -14,10 +14,10 @@ export declare const Attribute: z.ZodObject<{
         value: z.ZodString;
     }, z.core.$loose>>>;
     renderPreference: z.ZodEnum<{
-        tabs: "tabs";
         dropdown: "dropdown";
-        swatches: "swatches";
         modal: "modal";
+        swatches: "swatches";
+        tabs: "tabs";
     }>;
     secondarySelectionEnabled: z.ZodBoolean;
     usedForProductSelection: z.ZodBoolean;

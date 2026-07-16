@@ -3,11 +3,11 @@ export declare const DesignerChangeColorTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_change_color">;
     payload: z.ZodObject<{
         type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            text: "text";
             image: "image";
-            sRecipientAddress: "sRecipientAddress";
             recipientAddress: "recipientAddress";
             returnAddress: "returnAddress";
+            sRecipientAddress: "sRecipientAddress";
+            text: "text";
             variableData: "variableData";
         }>, z.ZodNull]>>;
         oldColors: z.ZodArray<z.ZodObject<{

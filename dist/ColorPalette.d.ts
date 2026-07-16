@@ -2,13 +2,13 @@ import { z } from "zod";
 export declare const ColorPalette: z.ZodObject<{
     colors: z.ZodArray<z.ZodString>;
     process: z.ZodOptional<z.ZodEnum<{
-        offset: "offset";
         digital: "digital";
-        foil: "foil";
         emboss: "emboss";
-        screen: "screen";
-        inkjet: "inkjet";
         flexography: "flexography";
+        foil: "foil";
+        inkjet: "inkjet";
+        offset: "offset";
+        screen: "screen";
         sublimation: "sublimation";
         thermal: "thermal";
     }>>;

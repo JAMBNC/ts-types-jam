@@ -1,5 +1,9 @@
 import { z } from "zod";
+import { DiscountAllocation } from "./DiscountAllocation.js";
 import { ExternalId } from "./ExternalId.js";
+import { LineAttribute } from "./LineAttribute.js";
+import { Money } from "./Money.js";
+import { TaxLine } from "./TaxLine.js";
 /**A single line item on a hydrated fulfillment order.*/
 export const FulfillmentOrderLineItem = z
     .object({
@@ -18,6 +22,21 @@ export const FulfillmentOrderLineItem = z
         .describe("Channel SKU as configured on the store."),
     quantity: z.number().int().gte(0),
     remainingQuantity: z.union([z.number().int().gte(0), z.null()]).optional(),
+    title: z.union([z.string(), z.null()]).optional(),
+    variantTitle: z.union([z.string(), z.null()]).optional(),
+    /**Original per-unit price before line discounts.*/
+    unitPrice: z
+        .union([Money, z.null()])
+        .describe("Original per-unit price before line discounts.")
+        .optional(),
+    /**Per-unit price after line discounts.*/
+    discountedUnitPrice: z
+        .union([Money, z.null()])
+        .describe("Per-unit price after line discounts.")
+        .optional(),
+    discountAllocations: z.array(DiscountAllocation).optional(),
+    attributes: z.array(LineAttribute).optional(),
+    taxLines: z.array(TaxLine).optional(),
 })
     .strict()
     .describe("A single line item on a hydrated fulfillment order.");

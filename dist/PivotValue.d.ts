@@ -4,9 +4,9 @@ export declare const PivotValue: z.ZodObject<{
     label: z.ZodString;
     products: z.ZodArray<z.ZodString>;
     swatchType: z.ZodOptional<z.ZodEnum<{
-        TEXT: "TEXT";
         IMAGE: "IMAGE";
         RGB: "RGB";
+        TEXT: "TEXT";
     }>>;
     swatchValue: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;

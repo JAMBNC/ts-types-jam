@@ -5,10 +5,10 @@ export declare const BadgeImage: z.ZodObject<{
         product_listing: "product_listing";
     }>;
     position: z.ZodEnum<{
-        topRight: "topRight";
-        bottomRight: "bottomRight";
         bottomLeft: "bottomLeft";
+        bottomRight: "bottomRight";
         topLeft: "topLeft";
+        topRight: "topRight";
     }>;
     url: z.ZodString;
 }, z.core.$loose>;

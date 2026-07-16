@@ -3,11 +3,11 @@ export declare const DesignerChangeQuantityTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_change_quantity">;
     payload: z.ZodObject<{
         type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            text: "text";
             image: "image";
-            sRecipientAddress: "sRecipientAddress";
             recipientAddress: "recipientAddress";
             returnAddress: "returnAddress";
+            sRecipientAddress: "sRecipientAddress";
+            text: "text";
             variableData: "variableData";
         }>, z.ZodNull]>>;
         oldQuantity: z.ZodNumber;

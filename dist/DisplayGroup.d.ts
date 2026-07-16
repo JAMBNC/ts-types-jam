@@ -4,10 +4,10 @@ export declare const DisplayGroup: z.ZodObject<{
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     pivots: z.ZodArray<z.ZodObject<{
         attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
-            tabs: "tabs";
             dropdown: "dropdown";
-            swatches: "swatches";
             modal: "modal";
+            swatches: "swatches";
+            tabs: "tabs";
         }>>;
         code: z.ZodString;
         helpText: z.ZodOptional<z.ZodString>;
@@ -21,9 +21,9 @@ export declare const DisplayGroup: z.ZodObject<{
             label: z.ZodString;
             products: z.ZodArray<z.ZodString>;
             swatchType: z.ZodOptional<z.ZodEnum<{
-                TEXT: "TEXT";
                 IMAGE: "IMAGE";
                 RGB: "RGB";
+                TEXT: "TEXT";
             }>>;
             swatchValue: z.ZodOptional<z.ZodString>;
         }, z.core.$loose>>;
@@ -37,10 +37,10 @@ export declare const DisplayGroup: z.ZodObject<{
     }, z.core.$loose>>;
     shoutOuts: z.ZodOptional<z.ZodArray<z.ZodObject<{
         type: z.ZodEnum<{
-            product: "product";
-            generic: "generic";
             category: "category";
+            generic: "generic";
             group: "group";
+            product: "product";
             similar: "similar";
         }>;
         display: z.ZodString;

@@ -12,8 +12,8 @@ export declare const LineIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -21,8 +21,8 @@ export declare const LineIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -30,8 +30,8 @@ export declare const LineIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -39,8 +39,8 @@ export declare const LineIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;

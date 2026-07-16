@@ -3,8 +3,8 @@ import { z } from "zod";
 export declare const Unit: z.ZodEnum<{
     in: "in";
     mm: "mm";
-    px: "px";
     pt: "pt";
+    px: "px";
 }>;
 export type Unit = z.infer<typeof Unit>;
 //# sourceMappingURL=Unit.d.ts.map

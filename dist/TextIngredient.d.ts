@@ -13,8 +13,8 @@ export declare const TextIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -22,8 +22,8 @@ export declare const TextIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -31,8 +31,8 @@ export declare const TextIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -40,8 +40,8 @@ export declare const TextIngredient: z.ZodObject<{
             u: z.ZodEnum<{
                 in: "in";
                 mm: "mm";
-                px: "px";
                 pt: "pt";
+                px: "px";
             }>;
             v: z.ZodNumber;
         }, z.core.$loose>;
@@ -49,8 +49,8 @@ export declare const TextIngredient: z.ZodObject<{
     rotation: z.ZodNumber;
     text: z.ZodObject<{
         alignment: z.ZodEnum<{
-            left: "left";
             center: "center";
+            left: "left";
             right: "right";
         }>;
         body: z.ZodArray<z.ZodString>;
@@ -66,11 +66,11 @@ export declare const TextIngredient: z.ZodObject<{
             priority: z.ZodOptional<z.ZodNumber>;
             style: z.ZodEnum<{
                 bold: "bold";
-                regular: "regular";
-                italic: "italic";
                 bold_italic: "bold_italic";
+                italic: "italic";
                 light: "light";
                 light_italic: "light_italic";
+                regular: "regular";
             }>;
             url: z.ZodOptional<z.ZodString>;
             uuid: z.ZodString;
@@ -87,8 +87,8 @@ export declare const TextIngredient: z.ZodObject<{
                 u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
-                    px: "px";
                     pt: "pt";
+                    px: "px";
                 }>;
                 v: z.ZodNumber;
             }, z.core.$loose>;
@@ -98,8 +98,8 @@ export declare const TextIngredient: z.ZodObject<{
                     u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
-                        px: "px";
                         pt: "pt";
+                        px: "px";
                     }>;
                     v: z.ZodNumber;
                 }, z.core.$loose>;
@@ -112,8 +112,8 @@ export declare const TextIngredient: z.ZodObject<{
                     u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
-                        px: "px";
                         pt: "pt";
+                        px: "px";
                     }>;
                     v: z.ZodNumber;
                 }, z.core.$loose>;
@@ -122,8 +122,8 @@ export declare const TextIngredient: z.ZodObject<{
                     u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
-                        px: "px";
                         pt: "pt";
+                        px: "px";
                     }>;
                     v: z.ZodNumber;
                 }, z.core.$loose>;
@@ -131,8 +131,8 @@ export declare const TextIngredient: z.ZodObject<{
                     u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
-                        px: "px";
                         pt: "pt";
+                        px: "px";
                     }>;
                     v: z.ZodNumber;
                 }, z.core.$loose>;
@@ -140,8 +140,8 @@ export declare const TextIngredient: z.ZodObject<{
                     u: z.ZodEnum<{
                         in: "in";
                         mm: "mm";
-                        px: "px";
                         pt: "pt";
+                        px: "px";
                     }>;
                     v: z.ZodNumber;
                 }, z.core.$loose>;
@@ -150,8 +150,8 @@ export declare const TextIngredient: z.ZodObject<{
                 u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
-                    px: "px";
                     pt: "pt";
+                    px: "px";
                 }>;
                 v: z.ZodNumber;
             }, z.core.$loose>;
@@ -159,8 +159,8 @@ export declare const TextIngredient: z.ZodObject<{
                 u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
-                    px: "px";
                     pt: "pt";
+                    px: "px";
                 }>;
                 v: z.ZodNumber;
             }, z.core.$loose>;
@@ -168,8 +168,8 @@ export declare const TextIngredient: z.ZodObject<{
                 u: z.ZodEnum<{
                     in: "in";
                     mm: "mm";
-                    px: "px";
                     pt: "pt";
+                    px: "px";
                 }>;
                 v: z.ZodNumber;
             }, z.core.$loose>;

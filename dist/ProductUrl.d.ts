@@ -2,20 +2,20 @@ import { z } from "zod";
 export declare const ProductUrl: z.ZodObject<{
     metaData: z.ZodOptional<z.ZodObject<{
         creativeEngine: z.ZodOptional<z.ZodEnum<{
-            chili: "chili";
             alchemy: "alchemy";
+            chili: "chili";
         }>>;
         designer: z.ZodOptional<z.ZodEnum<{
-            hermes: "hermes";
             chili: "chili";
+            hermes: "hermes";
             luma: "luma";
         }>>;
     }, z.core.$loose>>;
     url: z.ZodOptional<z.ZodString>;
     urlType: z.ZodOptional<z.ZodEnum<{
-        yourLogoHere: "yourLogoHere";
-        product: "product";
         customProduct: "customProduct";
+        product: "product";
+        yourLogoHere: "yourLogoHere";
     }>>;
 }, z.core.$loose>;
 export type ProductUrl = z.infer<typeof ProductUrl>;

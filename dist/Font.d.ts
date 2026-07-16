@@ -11,11 +11,11 @@ export declare const Font: z.ZodObject<{
     priority: z.ZodOptional<z.ZodNumber>;
     style: z.ZodEnum<{
         bold: "bold";
-        regular: "regular";
-        italic: "italic";
         bold_italic: "bold_italic";
+        italic: "italic";
         light: "light";
         light_italic: "light_italic";
+        regular: "regular";
     }>;
     url: z.ZodOptional<z.ZodString>;
     uuid: z.ZodString;

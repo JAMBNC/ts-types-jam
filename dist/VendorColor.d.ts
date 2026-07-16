@@ -54,11 +54,11 @@ export declare const VendorColor: z.ZodObject<{
         DUPLI: "DUPLI";
         GRAPHIC_AWARDS: "GRAPHIC_AWARDS";
         JARED: "JARED";
-        TRAFFICWORKS: "TRAFFICWORKS";
         TAYLOR_FOLDERWORKS: "TAYLOR_FOLDERWORKS";
+        TAYLOR_LABELWORKS: "TAYLOR_LABELWORKS";
         TAYLOR_NAVITOR: "TAYLOR_NAVITOR";
         TAYLOR_SIGNS: "TAYLOR_SIGNS";
-        TAYLOR_LABELWORKS: "TAYLOR_LABELWORKS";
+        TRAFFICWORKS: "TRAFFICWORKS";
     }>;
 }, z.core.$loose>;
 export type VendorColor = z.infer<typeof VendorColor>;

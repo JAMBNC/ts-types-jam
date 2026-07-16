@@ -2,6 +2,7 @@ import { z } from "zod";
 import { ExternalId } from "./ExternalId.js";
 import { FulfillmentOrderDestination } from "./FulfillmentOrderDestination.js";
 import { FulfillmentOrderLineItem } from "./FulfillmentOrderLineItem.js";
+import { OrderDetails } from "./OrderDetails.js";
 /**A mapper-hydrated fulfillment order: enough for the backend to fulfill without calling the channel.*/
 export const FulfillmentOrder = z
     .object({
@@ -32,6 +33,24 @@ export const FulfillmentOrder = z
     requestStatus: z.string(),
     destination: z.union([FulfillmentOrderDestination, z.null()]),
     lineItems: z.array(FulfillmentOrderLineItem),
+    /**The shipping/delivery method type, e.g. SHIPPING, PICKUP, LOCAL.*/
+    deliveryMethod: z
+        .union([
+        z
+            .object({ methodType: z.union([z.string(), z.null()]).optional() })
+            .strict()
+            .describe("The shipping/delivery method type, e.g. SHIPPING, PICKUP, LOCAL."),
+        z
+            .null()
+            .describe("The shipping/delivery method type, e.g. SHIPPING, PICKUP, LOCAL."),
+    ])
+        .describe("The shipping/delivery method type, e.g. SHIPPING, PICKUP, LOCAL.")
+        .optional(),
+    /**Order-level detail (financials, parties). Present when the mapper hydrates the order.*/
+    order: z
+        .union([OrderDetails, z.null()])
+        .describe("Order-level detail (financials, parties). Present when the mapper hydrates the order.")
+        .optional(),
     /**Message/reason the merchant attached to the request, if any.*/
     merchantMessage: z
         .union([

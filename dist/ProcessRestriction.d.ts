@@ -1,18 +1,18 @@
 import { z } from "zod";
 export declare const ProcessRestriction: z.ZodObject<{
     type: z.ZodEnum<{
-        oneOf: "oneOf";
         anyOf: "anyOf";
+        oneOf: "oneOf";
         zeroOrOneOf: "zeroOrOneOf";
     }>;
     processes: z.ZodArray<z.ZodArray<z.ZodEnum<{
-        offset: "offset";
         digital: "digital";
-        foil: "foil";
         emboss: "emboss";
-        screen: "screen";
-        inkjet: "inkjet";
         flexography: "flexography";
+        foil: "foil";
+        inkjet: "inkjet";
+        offset: "offset";
+        screen: "screen";
         sublimation: "sublimation";
         thermal: "thermal";
     }>>>;

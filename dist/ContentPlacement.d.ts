@@ -4,13 +4,13 @@ export declare const ContentPlacement: z.ZodObject<{
     side: z.ZodOptional<z.ZodString>;
     x: z.ZodOptional<z.ZodString>;
     xType: z.ZodOptional<z.ZodEnum<{
-        relative: "relative";
         absolute: "absolute";
+        relative: "relative";
     }>>;
     y: z.ZodOptional<z.ZodString>;
     yType: z.ZodOptional<z.ZodEnum<{
-        relative: "relative";
         absolute: "absolute";
+        relative: "relative";
     }>>;
 }, z.core.$loose>;
 export type ContentPlacement = z.infer<typeof ContentPlacement>;
