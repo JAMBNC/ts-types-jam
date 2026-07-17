@@ -6,6 +6,7 @@ import { DesignerImageReductionConfig } from "./DesignerImageReductionConfig.js"
 import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
+import { WorkspaceOption } from "./WorkspaceOption.js";
 
 export const DesignerInitializationPayload = z
   .object({
@@ -44,6 +45,11 @@ export const DesignerInitializationPayload = z
       )
       .optional(),
     imageReduction: DesignerImageReductionConfig,
+    /**List of workspace options for the product.*/
+    workspaceOptions: z
+      .array(WorkspaceOption)
+      .describe("List of workspace options for the product.")
+      .optional(),
   })
   .passthrough();
 export type DesignerInitializationPayload = z.infer<

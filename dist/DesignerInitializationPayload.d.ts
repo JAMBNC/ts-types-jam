@@ -25394,6 +25394,44 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         reductionEndpointUrl: z.ZodOptional<z.ZodString>;
         recolorEndpointUrl: z.ZodOptional<z.ZodString>;
     }, z.core.$loose>>;
+    workspaceOptions: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        uuid: z.ZodString;
+        workspace: z.ZodObject<{
+            tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
+                colorInk: "colorInk";
+                foil: "foil";
+                whiteInk: "whiteInk";
+            }>>>;
+            allowlists: z.ZodOptional<z.ZodObject<{
+                processes: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    process: z.ZodEnum<{
+                        digital: "digital";
+                        emboss: "emboss";
+                        flexography: "flexography";
+                        foil: "foil";
+                        inkjet: "inkjet";
+                        offset: "offset";
+                        screen: "screen";
+                        sublimation: "sublimation";
+                        thermal: "thermal";
+                    }>;
+                    allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                    allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$strict>>>;
+                palettes: z.ZodOptional<z.ZodArray<z.ZodObject<{
+                    uuid: z.ZodString;
+                    allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                    allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                    allowlist: z.ZodOptional<z.ZodObject<{
+                        colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                    }, z.core.$strict>>;
+                }, z.core.$strict>>>;
+            }, z.core.$strict>>;
+        }, z.core.$strict>;
+        label: z.ZodString;
+        description: z.ZodString;
+        bannerUrl: z.ZodString;
+    }, z.core.$strict>>>;
 }, z.core.$loose>;
 export type DesignerInitializationPayload = z.infer<typeof DesignerInitializationPayload>;
 //# sourceMappingURL=DesignerInitializationPayload.d.ts.map
