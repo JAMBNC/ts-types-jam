@@ -93,6 +93,19 @@ export declare const FulfillmentOutboundMessage: z.ZodUnion<readonly [z.ZodObjec
         fulfillmentOrderId: z.ZodString;
         message: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
     }, z.core.$strict>;
+}, z.core.$strict>, z.ZodObject<{
+    version: z.ZodLiteral<"v1">;
+    messageId: z.ZodString;
+    correlationId: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
+    channel: z.ZodString;
+    sentAt: z.ZodString;
+    kind: z.ZodLiteral<"set_inventory">;
+    payload: z.ZodObject<{
+        levels: z.ZodArray<z.ZodObject<{
+            sku: z.ZodString;
+            available: z.ZodNumber;
+        }, z.core.$strict>>;
+    }, z.core.$strict>;
 }, z.core.$strict>]>;
 export type FulfillmentOutboundMessage = z.infer<typeof FulfillmentOutboundMessage>;
 //# sourceMappingURL=FulfillmentOutboundMessage.d.ts.map
