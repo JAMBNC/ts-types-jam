@@ -5,7 +5,7 @@ export declare const DesignState: z.ZodObject<{
         canRedo: z.ZodOptional<z.ZodBoolean>;
         canUndo: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$loose>>;
-    hasBuffer: z.ZodBoolean;
+    orientation: z.ZodOptional<z.ZodUnion<readonly [z.ZodLiteral<0>, z.ZodLiteral<1>, z.ZodLiteral<2>, z.ZodLiteral<3>]>>;
     height: z.ZodObject<{
         u: z.ZodEnum<{
             in: "in";

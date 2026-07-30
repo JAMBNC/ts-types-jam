@@ -18,8 +18,13 @@ export const DesignState = z
       .passthrough()
       .describe("Stores some session based design information")
       .optional(),
-    /**Whether the design has a buffer zone.*/
-    hasBuffer: z.boolean().describe("Whether the design has a buffer zone."),
+    /**Documentation orientation 0-3 representing the rotation of this design state relative to its preferred orientation. 0 is default and each number represents a 90 degree rotation.*/
+    orientation: z
+      .union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)])
+      .describe(
+        "Documentation orientation 0-3 representing the rotation of this design state relative to its preferred orientation. 0 is default and each number represents a 90 degree rotation.",
+      )
+      .optional(),
     height: Dimension,
     /**Map of ingredient IDs to ingredient definitions.*/
     ingredients: z
