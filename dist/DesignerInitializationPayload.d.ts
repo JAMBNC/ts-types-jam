@@ -25369,6 +25369,17 @@ export declare const DesignerInitializationPayload: z.ZodObject<{
         "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
         "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_qty_125.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_qty_250.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_qty_500.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_qty_1000.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_core_1.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_core_3.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_perforation.label": z.ZodDefault<z.ZodString>;
+        "adder.roll_no_perforation.label": z.ZodDefault<z.ZodString>;
+        "adder.lamination_gloss.label": z.ZodDefault<z.ZodString>;
+        "adder.lamination_sunscreen.label": z.ZodDefault<z.ZodString>;
+        "adder.lamination_soft_touch.label": z.ZodDefault<z.ZodString>;
         "error.ProductQuantityLessThanMinimumOrderQuantity": z.ZodDefault<z.ZodString>;
         "error.ProductQuantityIncrementNotValid": z.ZodDefault<z.ZodString>;
         "error.VariableAddressMultipleFrames": z.ZodDefault<z.ZodString>;

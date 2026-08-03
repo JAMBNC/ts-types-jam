@@ -603,6 +603,61 @@ export const DesignerUiLabels = z
         .string()
         .describe("The ui label for variable addressing on side two")
         .default("Variable Addressing Side 2"),
+    /**The ui label for roll qty 125*/
+    "adder.roll_qty_125.label": z
+        .string()
+        .describe("The ui label for roll qty 125")
+        .default("Roll Qty 125"),
+    /**The ui label for roll qty 250*/
+    "adder.roll_qty_250.label": z
+        .string()
+        .describe("The ui label for roll qty 250")
+        .default("Roll Qty 250"),
+    /**The ui label for roll qty 500*/
+    "adder.roll_qty_500.label": z
+        .string()
+        .describe("The ui label for roll qty 500")
+        .default("Roll Qty 500"),
+    /**The ui label for roll qty 1000*/
+    "adder.roll_qty_1000.label": z
+        .string()
+        .describe("The ui label for roll qty 1000")
+        .default("Roll Qty 1000"),
+    /**The ui label for roll core 1 inch*/
+    "adder.roll_core_1.label": z
+        .string()
+        .describe("The ui label for roll core 1 inch")
+        .default('Roll Core 1"'),
+    /**The ui label for roll core 3 inch*/
+    "adder.roll_core_3.label": z
+        .string()
+        .describe("The ui label for roll core 3 inch")
+        .default('Roll Core 3"'),
+    /**The ui label for roll perforation*/
+    "adder.roll_perforation.label": z
+        .string()
+        .describe("The ui label for roll perforation")
+        .default("Roll Perforation"),
+    /**The ui label for roll no perforation*/
+    "adder.roll_no_perforation.label": z
+        .string()
+        .describe("The ui label for roll no perforation")
+        .default("Roll w/o Perforation"),
+    /**The ui label for gloss lamination*/
+    "adder.lamination_gloss.label": z
+        .string()
+        .describe("The ui label for gloss lamination")
+        .default("Gloss Lamination"),
+    /**The ui label for sunscreen lamination*/
+    "adder.lamination_sunscreen.label": z
+        .string()
+        .describe("The ui label for sunscreen lamination")
+        .default("Sunscreen Lamination"),
+    /**The ui label for soft touch lamination*/
+    "adder.lamination_soft_touch.label": z
+        .string()
+        .describe("The ui label for soft touch lamination")
+        .default("Soft Touch Lamination"),
     /**Error message when quantity is below the minimum order quantity.*/
     "error.ProductQuantityLessThanMinimumOrderQuantity": z
         .string()
