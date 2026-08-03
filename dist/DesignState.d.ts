@@ -820,11 +820,11 @@ export declare const DesignState: z.ZodObject<{
         metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         code: z.ZodString;
         opacity: z.ZodOptional<z.ZodNumber>;
-        texture: z.ZodUnion<readonly [z.ZodObject<{
+        texture: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
             hex: z.ZodString;
         }, z.core.$strict>, z.ZodObject<{
             src: z.ZodString;
-        }, z.core.$strict>]>;
+        }, z.core.$strict>]>>;
         zIndex: z.ZodOptional<z.ZodNumber>;
     }, z.core.$strict>, z.ZodObject<{
         type: z.ZodLiteral<"circle">;

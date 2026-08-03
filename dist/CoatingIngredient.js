@@ -21,7 +21,7 @@ export const CoatingIngredient = z
         .string()
         .describe("Code for this coating. Two coatings with the same code should not be on the same page."),
     opacity: z.number().optional(),
-    texture: z.union([TextureColor, TextureImage]),
+    texture: z.union([TextureColor, TextureImage]).optional(),
     zIndex: z.number().int().optional(),
 })
     .strict()
