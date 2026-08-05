@@ -14,6 +14,7 @@ import { LayoutAdderCode } from "./LayoutAdderCode.js";
 import { PrintMethodAdderCode } from "./PrintMethodAdderCode.js";
 import { ProofAdderCode } from "./ProofAdderCode.js";
 import { ReturnAddressAdderCode } from "./ReturnAddressAdderCode.js";
+import { RollAdderCode } from "./RollAdderCode.js";
 import { SheetAdderCode } from "./SheetAdderCode.js";
 import { VariableAddressAdderCode } from "./VariableAddressAdderCode.js";
 import { WhiteInkAdderCode } from "./WhiteInkAdderCode.js";
@@ -34,6 +35,7 @@ export const AdderCodeEnum = z.union([
   PrintMethodAdderCode,
   ProofAdderCode,
   ReturnAddressAdderCode,
+  RollAdderCode,
   SheetAdderCode,
   VariableAddressAdderCode,
   WhiteInkAdderCode,

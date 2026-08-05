@@ -11,6 +11,7 @@ export declare const CoatingAdderCode: z.ZodEnum<{
     lamination_gloss: "lamination_gloss";
     lamination_matte: "lamination_matte";
     lamination_soft_touch: "lamination_soft_touch";
+    lamination_sunscreen: "lamination_sunscreen";
     uv_side1_gloss: "uv_side1_gloss";
     uv_side1_matte: "uv_side1_matte";
     uv_side2_gloss: "uv_side2_gloss";

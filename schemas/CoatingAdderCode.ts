@@ -3,6 +3,7 @@ import { z } from "zod";
 export const CoatingAdderCode = z.enum([
   "lamination_gloss",
   "lamination_matte",
+  "lamination_sunscreen",
   "lamination_soft_touch",
   "aqueous_side1_gloss",
   "aqueous_side1_satin",

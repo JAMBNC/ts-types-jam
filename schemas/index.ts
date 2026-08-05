@@ -99,6 +99,7 @@ export * from './ProcessConfigurationFeatureValue.js';
 export * from './ProcessRestriction.js';
 export * from './ProofAdderCode.js';
 export * from './ReturnAddressAdderCode.js';
+export * from './RollAdderCode.js';
 export * from './SheetAdderCode.js';
 export * from './SidedFeatureValue.js';
 export * from './VariableAddressAdderCode.js';
