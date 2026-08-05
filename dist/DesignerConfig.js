@@ -100,13 +100,6 @@ export const DesignerConfig = z
         })
             .passthrough()
             .optional(),
-        sheet: z
-            .object({
-            mirroring: DesignerConfigFeatureValue.optional(),
-            cutting: DesignerConfigFeatureValue.optional(),
-        })
-            .passthrough()
-            .optional(),
         proof: z
             .object({ digital: DesignerConfigFeatureValue.optional() })
             .passthrough()
@@ -116,6 +109,8 @@ export const DesignerConfig = z
             core: DesignerConfigFeatureValue.optional(),
             perforation: DesignerConfigFeatureValue.optional(),
             qty: DesignerConfigFeatureValue.optional(),
+            mirroring: DesignerConfigFeatureValue.optional(),
+            cutting: DesignerConfigFeatureValue.optional(),
         })
             .passthrough()
             .optional(),
@@ -148,7 +143,6 @@ export const DesignerConfig = z
             "process",
             "processes",
             "layout",
-            "sheet",
             "proof",
             "roll",
             "sign",

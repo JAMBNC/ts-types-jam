@@ -147,6 +147,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
             }>, z.ZodEnum<{
+                individual_cut: "individual_cut";
                 roll_core_1: "roll_core_1";
                 roll_core_3: "roll_core_3";
                 roll_no_perforation: "roll_no_perforation";
@@ -155,7 +156,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 roll_qty_125: "roll_qty_125";
                 roll_qty_250: "roll_qty_250";
                 roll_qty_500: "roll_qty_500";
-            }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+            }>, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
@@ -286,6 +287,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
             }>, z.ZodEnum<{
+                individual_cut: "individual_cut";
                 roll_core_1: "roll_core_1";
                 roll_core_3: "roll_core_3";
                 roll_no_perforation: "roll_no_perforation";
@@ -294,7 +296,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 roll_qty_125: "roll_qty_125";
                 roll_qty_250: "roll_qty_250";
                 roll_qty_500: "roll_qty_500";
-            }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+            }>, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
@@ -425,6 +427,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
             }>, z.ZodEnum<{
+                individual_cut: "individual_cut";
                 roll_core_1: "roll_core_1";
                 roll_core_3: "roll_core_3";
                 roll_no_perforation: "roll_no_perforation";
@@ -433,7 +436,7 @@ export declare const DesignerAnalyticsEvent: z.ZodObject<{
                 roll_qty_125: "roll_qty_125";
                 roll_qty_250: "roll_qty_250";
                 roll_qty_500: "roll_qty_500";
-            }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+            }>, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{

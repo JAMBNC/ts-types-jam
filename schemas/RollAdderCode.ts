@@ -9,5 +9,6 @@ export const RollAdderCode = z.enum([
   "roll_core_1",
   "roll_perforation",
   "roll_no_perforation",
+  "individual_cut",
 ]);
 export type RollAdderCode = z.infer<typeof RollAdderCode>;

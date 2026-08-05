@@ -1,5 +1,6 @@
 import { z } from "zod";
 export declare const RollAdderCode: z.ZodEnum<{
+    individual_cut: "individual_cut";
     roll_core_1: "roll_core_1";
     roll_core_3: "roll_core_3";
     roll_no_perforation: "roll_no_perforation";
