@@ -668,16 +668,37 @@ export const DesignerUiLabels = z
       .string()
       .describe("The ui label for gloss lamination")
       .default("Gloss Lamination"),
+    /**The more details message for this adder.*/
+    "adder.lamination_gloss.details": z
+      .string()
+      .describe("The more details message for this adder.")
+      .default(
+        "A protective film that adds durability and resists scratches, moisture, and everyday wear. Ideal for menus, signs, placemats, and other frequently handled prints.",
+      ),
     /**The ui label for sunscreen lamination*/
     "adder.lamination_sunscreen.label": z
       .string()
       .describe("The ui label for sunscreen lamination")
       .default("Sunscreen Lamination"),
+    /**The more details message for this adder.*/
+    "adder.lamination_sunscreen.details": z
+      .string()
+      .describe("The more details message for this adder.")
+      .default(
+        "A UV-protective coating that helps prevent fading and keeps colors vibrant for longer. Best for outdoor signage, window displays, and prints exposed to sunlight.",
+      ),
     /**The ui label for soft touch lamination*/
     "adder.lamination_soft_touch.label": z
       .string()
       .describe("The ui label for soft touch lamination")
       .default("Soft Touch Lamination"),
+    /**The more details message for this adder.*/
+    "adder.lamination_soft_touch.details": z
+      .string()
+      .describe("The more details message for this adder.")
+      .default(
+        "A premium finish with a smooth, velvety feel that creates an elegant, high-end look. Popular for business cards, presentation folders, invitations, and luxury packaging.",
+      ),
     /**Error message when quantity is below the minimum order quantity.*/
     "error.ProductQuantityLessThanMinimumOrderQuantity": z
       .string()

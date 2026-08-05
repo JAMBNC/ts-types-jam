@@ -149,8 +149,11 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "adder.roll_perforation.label": z.ZodDefault<z.ZodString>;
     "adder.roll_no_perforation.label": z.ZodDefault<z.ZodString>;
     "adder.lamination_gloss.label": z.ZodDefault<z.ZodString>;
+    "adder.lamination_gloss.details": z.ZodDefault<z.ZodString>;
     "adder.lamination_sunscreen.label": z.ZodDefault<z.ZodString>;
+    "adder.lamination_sunscreen.details": z.ZodDefault<z.ZodString>;
     "adder.lamination_soft_touch.label": z.ZodDefault<z.ZodString>;
+    "adder.lamination_soft_touch.details": z.ZodDefault<z.ZodString>;
     "error.ProductQuantityLessThanMinimumOrderQuantity": z.ZodDefault<z.ZodString>;
     "error.ProductQuantityIncrementNotValid": z.ZodDefault<z.ZodString>;
     "error.VariableAddressMultipleFrames": z.ZodDefault<z.ZodString>;
