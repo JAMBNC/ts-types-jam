@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The response from the media rendition endpoint when the rendition fails.*/
-export const DesignerMediaRenditionErrorResponse = z
+const _DesignerMediaRenditionErrorResponse = z
     .object({
     success: z.literal(false),
     /**A message describing why the rendition failed.*/
@@ -10,3 +9,5 @@ export const DesignerMediaRenditionErrorResponse = z
 })
     .strict()
     .describe("The response from the media rendition endpoint when the rendition fails.");
+/**The response from the media rendition endpoint when the rendition fails.*/
+export const DesignerMediaRenditionErrorResponse = _DesignerMediaRenditionErrorResponse;

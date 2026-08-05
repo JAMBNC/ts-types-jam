@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The request body for the address book upload endpoint.*/
-export const DesignerAddressBookUploadRequest = z
+const _DesignerAddressBookUploadRequest = z
     .object({
     /**The address bookupload payload.*/
     data: z
@@ -32,3 +31,5 @@ export const DesignerAddressBookUploadRequest = z
 })
     .strict()
     .describe("The request body for the address book upload endpoint.");
+/**The request body for the address book upload endpoint.*/
+export const DesignerAddressBookUploadRequest = _DesignerAddressBookUploadRequest;

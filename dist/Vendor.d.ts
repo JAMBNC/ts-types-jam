@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const Vendor: z.ZodEnum<{
+declare const _Vendor: z.ZodEnum<{
     ADMORE: "ADMORE";
     DUPLI: "DUPLI";
     GRAPHIC_AWARDS: "GRAPHIC_AWARDS";
@@ -10,5 +10,10 @@ export declare const Vendor: z.ZodEnum<{
     TAYLOR_SIGNS: "TAYLOR_SIGNS";
     TRAFFICWORKS: "TRAFFICWORKS";
 }>;
+type _VendorSchema = typeof _Vendor;
+export interface VendorSchema extends _VendorSchema {
+}
+export declare const Vendor: VendorSchema;
 export type Vendor = z.infer<typeof Vendor>;
+export {};
 //# sourceMappingURL=Vendor.d.ts.map

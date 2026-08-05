@@ -1,21 +1,16 @@
 import { z } from "zod";
-export declare const ProcessRestriction: z.ZodObject<{
+declare const _ProcessRestriction: z.ZodObject<{
     type: z.ZodEnum<{
         anyOf: "anyOf";
         oneOf: "oneOf";
         zeroOrOneOf: "zeroOrOneOf";
     }>;
-    processes: z.ZodArray<z.ZodArray<z.ZodEnum<{
-        digital: "digital";
-        emboss: "emboss";
-        flexography: "flexography";
-        foil: "foil";
-        inkjet: "inkjet";
-        offset: "offset";
-        screen: "screen";
-        sublimation: "sublimation";
-        thermal: "thermal";
-    }>>>;
+    processes: z.ZodArray<z.ZodArray<import("./Process.js").ProcessSchema>>;
 }, z.core.$loose>;
+type _ProcessRestrictionSchema = typeof _ProcessRestriction;
+export interface ProcessRestrictionSchema extends _ProcessRestrictionSchema {
+}
+export declare const ProcessRestriction: ProcessRestrictionSchema;
 export type ProcessRestriction = z.infer<typeof ProcessRestriction>;
+export {};
 //# sourceMappingURL=ProcessRestriction.d.ts.map

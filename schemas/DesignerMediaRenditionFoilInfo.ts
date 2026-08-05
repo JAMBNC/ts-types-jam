@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { RenditionChannel } from "./RenditionChannel.js";
 
-/**The color rendition data returned on a successful media rendition request.*/
-export const DesignerMediaRenditionFoilInfo = z
+const _DesignerMediaRenditionFoilInfo = z
   .object({
     /**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
     bw: RenditionChannel,
@@ -34,6 +33,12 @@ export const DesignerMediaRenditionFoilInfo = z
   .describe(
     "The color rendition data returned on a successful media rendition request.",
   );
+type _DesignerMediaRenditionFoilInfoSchema =
+  typeof _DesignerMediaRenditionFoilInfo;
+export interface DesignerMediaRenditionFoilInfoSchema extends _DesignerMediaRenditionFoilInfoSchema {}
+/**The color rendition data returned on a successful media rendition request.*/
+export const DesignerMediaRenditionFoilInfo: DesignerMediaRenditionFoilInfoSchema =
+  _DesignerMediaRenditionFoilInfo;
 export type DesignerMediaRenditionFoilInfo = z.infer<
   typeof DesignerMediaRenditionFoilInfo
 >;

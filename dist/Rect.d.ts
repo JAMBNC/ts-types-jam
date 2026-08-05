@@ -1,42 +1,15 @@
 import { z } from "zod";
-/**A positioned rectangle defined by x, y, width, and height measurements.*/
-export declare const Rect: z.ZodObject<{
-    height: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    width: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    x: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    y: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
+declare const _Rect: z.ZodObject<{
+    height: import("./Dimension.js").DimensionSchema;
+    width: import("./Dimension.js").DimensionSchema;
+    x: import("./Dimension.js").DimensionSchema;
+    y: import("./Dimension.js").DimensionSchema;
 }, z.core.$strict>;
+type _RectSchema = typeof _Rect;
+export interface RectSchema extends _RectSchema {
+}
+/**A positioned rectangle defined by x, y, width, and height measurements.*/
+export declare const Rect: RectSchema;
 export type Rect = z.infer<typeof Rect>;
+export {};
 //# sourceMappingURL=Rect.d.ts.map

@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
+declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "menubar.undo.label": z.ZodDefault<z.ZodString>;
     "menubar.undo.icon": z.ZodDefault<z.ZodString>;
     "menubar.redo.label": z.ZodDefault<z.ZodString>;
@@ -42,10 +42,7 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "workspace.toolBar.tab.returnAddress.address.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.returnAddress.address.placeholder": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.returnAddress.color.label": z.ZodDefault<z.ZodString>;
-    "workspace.toolBar.tab.returnAddress.color.component": z.ZodOptional<z.ZodObject<{
-        "selectedInk.label": z.ZodDefault<z.ZodString>;
-        "imageColors.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$loose>>;
+    "workspace.toolBar.tab.returnAddress.color.component": z.ZodOptional<import("./InkSelectorV1ComponentLabels.js").InkSelectorV1ComponentLabelsSchema>;
     "workspace.toolBar.stack.mailingAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.mailingAddress.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAddress.label": z.ZodDefault<z.ZodString>;
@@ -53,26 +50,11 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "workspace.toolBar.tab.mailingAddress.type.singleAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAddress.type.multipleAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAddress.multipleAddress.label": z.ZodDefault<z.ZodString>;
-    "workspace.toolBar.tab.mailingAddress.multipleAddress.component": z.ZodOptional<z.ZodObject<{
-        "download.description": z.ZodDefault<z.ZodString>;
-        "download.button.label": z.ZodDefault<z.ZodString>;
-        "download.button.icon": z.ZodDefault<z.ZodString>;
-        "upload.description": z.ZodDefault<z.ZodString>;
-        "upload.button.label": z.ZodDefault<z.ZodString>;
-        "upload.button.icon": z.ZodDefault<z.ZodString>;
-        "upload.success.label": z.ZodDefault<z.ZodString>;
-        "upload.success.icon": z.ZodDefault<z.ZodString>;
-        "upload.error.label": z.ZodDefault<z.ZodString>;
-        "upload.error.icon": z.ZodDefault<z.ZodString>;
-        "addressPreview.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$loose>>;
+    "workspace.toolBar.tab.mailingAddress.multipleAddress.component": z.ZodOptional<import("./VariableAddressInputV1ComponentLabels.js").VariableAddressInputV1ComponentLabelsSchema>;
     "workspace.toolBar.tab.mailingAddress.address.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAddress.address.placeholder": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.mailingAdress.color.label": z.ZodDefault<z.ZodString>;
-    "workspace.toolBar.tab.mailingAddress.color.component": z.ZodOptional<z.ZodObject<{
-        "selectedInk.label": z.ZodDefault<z.ZodString>;
-        "imageColors.label": z.ZodDefault<z.ZodString>;
-    }, z.core.$loose>>;
+    "workspace.toolBar.tab.mailingAddress.color.component": z.ZodOptional<import("./InkSelectorV1ComponentLabels.js").InkSelectorV1ComponentLabelsSchema>;
     "workspace.toolBar.stack.image.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.image.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.label": z.ZodDefault<z.ZodString>;
@@ -172,5 +154,10 @@ export declare const DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "error.SelectedColorRequiresOffsetPrinting": z.ZodDefault<z.ZodString>;
     "error.SelectedColorRequiresDigitalPrinting": z.ZodDefault<z.ZodString>;
 }, z.core.$loose>>;
+type _DesignerUiLabelsSchema = typeof _DesignerUiLabels;
+export interface DesignerUiLabelsSchema extends _DesignerUiLabelsSchema {
+}
+export declare const DesignerUiLabels: DesignerUiLabelsSchema;
 export type DesignerUiLabels = z.infer<typeof DesignerUiLabels>;
+export {};
 //# sourceMappingURL=DesignerUiLabels.d.ts.map

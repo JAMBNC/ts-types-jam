@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const ViewLayer = z.enum(["background", "bleed", "mask", "print"]);
+const _ViewLayer = z.enum(["background", "bleed", "mask", "print"]);
+export const ViewLayer = _ViewLayer;

@@ -6,8 +6,7 @@ import { OAuth2ClientCredentials } from "./OAuth2ClientCredentials.js";
 import { OAuth2RefreshToken } from "./OAuth2RefreshToken.js";
 import { SimpleBearer } from "./SimpleBearer.js";
 
-/**A discriminated union of all supported authentication types.*/
-export const Auth = z
+const _Auth = z
   .discriminatedUnion("type", [
     SimpleBearer,
     Basic,
@@ -17,4 +16,8 @@ export const Auth = z
     OAuth2RefreshToken,
   ])
   .describe("A discriminated union of all supported authentication types.");
+type _AuthSchema = typeof _Auth;
+export interface AuthSchema extends _AuthSchema {}
+/**A discriminated union of all supported authentication types.*/
+export const Auth: AuthSchema = _Auth;
 export type Auth = z.infer<typeof Auth>;

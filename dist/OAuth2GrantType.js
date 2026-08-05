@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The OAuth2 grant type to use for obtaining tokens.*/
-export const OAuth2GrantType = z
+const _OAuth2GrantType = z
     .enum([
     "client_credentials",
     "authorization_code",
@@ -8,3 +7,5 @@ export const OAuth2GrantType = z
     "password",
 ])
     .describe("The OAuth2 grant type to use for obtaining tokens.");
+/**The OAuth2 grant type to use for obtaining tokens.*/
+export const OAuth2GrantType = _OAuth2GrantType;

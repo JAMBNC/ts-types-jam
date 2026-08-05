@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { Rect } from "./Rect.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**An ingredient that renders a raster image.*/
-export const ImageIngredient = z
+const _ImageIngredient = z
     .object({
     type: z.literal("image"),
     dropshadow: z.boolean().optional(),
@@ -51,3 +50,5 @@ export const ImageIngredient = z
 })
     .strict()
     .describe("An ingredient that renders a raster image.");
+/**An ingredient that renders a raster image.*/
+export const ImageIngredient = _ImageIngredient;

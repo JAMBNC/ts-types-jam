@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { InkSelectorV1ComponentLabels } from "./InkSelectorV1ComponentLabels.js";
 import { VariableAddressInputV1ComponentLabels } from "./VariableAddressInputV1ComponentLabels.js";
-export const DesignerUiLabels = z
+const _DesignerUiLabels = z
     .object({
     /**The label showed with the undo button on the menu bar*/
     "menubar.undo.label": z
@@ -761,3 +761,4 @@ export const DesignerUiLabels = z
 })
     .passthrough()
     .default({});
+export const DesignerUiLabels = _DesignerUiLabels;

@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const DesignerAddressEndpoints = z
+const _DesignerAddressEndpoints = z
   .object({
     /**The endpoint URL for fetching the user's address books list.  (uses the DesignerAuth.endpointAuth)*/
     addressBooks: z
@@ -25,4 +25,8 @@ export const DesignerAddressEndpoints = z
       ),
   })
   .strict();
+type _DesignerAddressEndpointsSchema = typeof _DesignerAddressEndpoints;
+export interface DesignerAddressEndpointsSchema extends _DesignerAddressEndpointsSchema {}
+export const DesignerAddressEndpoints: DesignerAddressEndpointsSchema =
+  _DesignerAddressEndpoints;
 export type DesignerAddressEndpoints = z.infer<typeof DesignerAddressEndpoints>;

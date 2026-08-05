@@ -1,35 +1,15 @@
 import { z } from "zod";
-export declare const Workspace: z.ZodObject<{
-    tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
-        colorInk: "colorInk";
-        foil: "foil";
-        whiteInk: "whiteInk";
-    }>>>;
+declare const _Workspace: z.ZodObject<{
+    tags: z.ZodOptional<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
     allowlists: z.ZodOptional<z.ZodObject<{
-        processes: z.ZodOptional<z.ZodArray<z.ZodObject<{
-            process: z.ZodEnum<{
-                digital: "digital";
-                emboss: "emboss";
-                flexography: "flexography";
-                foil: "foil";
-                inkjet: "inkjet";
-                offset: "offset";
-                screen: "screen";
-                sublimation: "sublimation";
-                thermal: "thermal";
-            }>;
-            allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-            allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
-        }, z.core.$strict>>>;
-        palettes: z.ZodOptional<z.ZodArray<z.ZodObject<{
-            uuid: z.ZodString;
-            allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-            allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
-            allowlist: z.ZodOptional<z.ZodObject<{
-                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
-            }, z.core.$strict>>;
-        }, z.core.$strict>>>;
+        processes: z.ZodOptional<z.ZodArray<import("./ProcessAllowlistItem.js").ProcessAllowlistItemSchema>>;
+        palettes: z.ZodOptional<z.ZodArray<import("./PaletteAllowlistItem.js").PaletteAllowlistItemSchema>>;
     }, z.core.$strict>>;
 }, z.core.$strict>;
+type _WorkspaceSchema = typeof _Workspace;
+export interface WorkspaceSchema extends _WorkspaceSchema {
+}
+export declare const Workspace: WorkspaceSchema;
 export type Workspace = z.infer<typeof Workspace>;
+export {};
 //# sourceMappingURL=Workspace.d.ts.map

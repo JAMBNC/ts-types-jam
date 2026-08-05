@@ -2,8 +2,7 @@ import { z } from "zod";
 import { Alignment } from "./Alignment.js";
 import { Dimension } from "./Dimension.js";
 import { Font } from "./Font.js";
-/**Properties for displayed text*/
-export const TextProperties = z
+const _TextProperties = z
     .object({
     alignment: Alignment,
     /**Body text broken up into lines. Can contain variables surrounded with %%*/
@@ -91,3 +90,5 @@ export const TextProperties = z
 })
     .passthrough()
     .describe("Properties for displayed text");
+/**Properties for displayed text*/
+export const TextProperties = _TextProperties;

@@ -1,11 +1,10 @@
 import { z } from "zod";
+declare const _DesignerPricing: z.ZodRecord<z.ZodString, z.ZodArray<import("./TierPrice.js").TierPriceSchema>>;
+type _DesignerPricingSchema = typeof _DesignerPricing;
+export interface DesignerPricingSchema extends _DesignerPricingSchema {
+}
 /**Price tiers keyed by product SKU.*/
-export declare const DesignerPricing: z.ZodRecord<z.ZodString, z.ZodArray<z.ZodObject<{
-    discountReason: z.ZodOptional<z.ZodString>;
-    price: z.ZodNumber;
-    pricePercentOff: z.ZodOptional<z.ZodNumber>;
-    salePrice: z.ZodOptional<z.ZodNumber>;
-    startingAtQty: z.ZodNumber;
-}, z.core.$loose>>>;
+export declare const DesignerPricing: DesignerPricingSchema;
 export type DesignerPricing = z.infer<typeof DesignerPricing>;
+export {};
 //# sourceMappingURL=DesignerPricing.d.ts.map

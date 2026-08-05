@@ -1,15 +1,17 @@
 import { z } from "zod";
-export declare const CloseFulfillmentOrderMessage: z.ZodObject<{
+declare const _CloseFulfillmentOrderMessage: z.ZodObject<{
     version: z.ZodLiteral<"v1">;
     messageId: z.ZodString;
     correlationId: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     channel: z.ZodString;
     sentAt: z.ZodString;
     kind: z.ZodLiteral<"close_fulfillment_order">;
-    payload: z.ZodObject<{
-        fulfillmentOrderId: z.ZodString;
-        message: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
-    }, z.core.$strict>;
+    payload: import("./CloseFulfillmentOrderPayload.js").CloseFulfillmentOrderPayloadSchema;
 }, z.core.$strict>;
+type _CloseFulfillmentOrderMessageSchema = typeof _CloseFulfillmentOrderMessage;
+export interface CloseFulfillmentOrderMessageSchema extends _CloseFulfillmentOrderMessageSchema {
+}
+export declare const CloseFulfillmentOrderMessage: CloseFulfillmentOrderMessageSchema;
 export type CloseFulfillmentOrderMessage = z.infer<typeof CloseFulfillmentOrderMessage>;
+export {};
 //# sourceMappingURL=CloseFulfillmentOrderMessage.d.ts.map

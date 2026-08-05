@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const ProductListing = z
+const _ProductListing = z
     .object({
     isCustomizable: z.boolean(),
     mainImageUrl: z.string().optional(),
@@ -8,3 +8,4 @@ export const ProductListing = z
     sku: z.string(),
 })
     .passthrough();
+export const ProductListing = _ProductListing;

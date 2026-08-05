@@ -4,8 +4,7 @@ import { Path } from "./Path.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**An ingredient defined by vector paths with optional fill and stroke.*/
-export const ShapeIngredient = z
+const _ShapeIngredient = z
     .object({
     type: z.literal("shape"),
     dropshadow: z.boolean().optional(),
@@ -42,3 +41,5 @@ export const ShapeIngredient = z
 })
     .strict()
     .describe("An ingredient defined by vector paths with optional fill and stroke.");
+/**An ingredient defined by vector paths with optional fill and stroke.*/
+export const ShapeIngredient = _ShapeIngredient;

@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const ProofAdderCode = z.enum(["dig_proof_s1", "dig_proof_s2"]);
+const _ProofAdderCode = z.enum(["dig_proof_s1", "dig_proof_s2"]);
+export const ProofAdderCode = _ProofAdderCode;

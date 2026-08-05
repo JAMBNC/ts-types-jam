@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const PivotType = z.enum(["primary", "secondary"]);
+const _PivotType = z.enum(["primary", "secondary"]);
+export const PivotType = _PivotType;

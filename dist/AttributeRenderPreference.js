@@ -1,7 +1,8 @@
 import { z } from "zod";
-export const AttributeRenderPreference = z.enum([
+const _AttributeRenderPreference = z.enum([
     "tabs",
     "dropdown",
     "swatches",
     "modal",
 ]);
+export const AttributeRenderPreference = _AttributeRenderPreference;

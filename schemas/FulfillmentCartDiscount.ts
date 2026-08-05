@@ -2,8 +2,7 @@ import { z } from "zod";
 import { FulfillmentDiscountType } from "./FulfillmentDiscountType.js";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
 
-/**An order-level (cart) discount application.*/
-export const FulfillmentCartDiscount = z
+const _FulfillmentCartDiscount = z
   .object({
     /**How a discount was applied. `code` = a customer-entered discount code (couponed); the rest are merchant/automatic (non-couponed).*/
     type: FulfillmentDiscountType,
@@ -29,4 +28,9 @@ export const FulfillmentCartDiscount = z
   })
   .strict()
   .describe("An order-level (cart) discount application.");
+type _FulfillmentCartDiscountSchema = typeof _FulfillmentCartDiscount;
+export interface FulfillmentCartDiscountSchema extends _FulfillmentCartDiscountSchema {}
+/**An order-level (cart) discount application.*/
+export const FulfillmentCartDiscount: FulfillmentCartDiscountSchema =
+  _FulfillmentCartDiscount;
 export type FulfillmentCartDiscount = z.infer<typeof FulfillmentCartDiscount>;

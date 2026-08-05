@@ -1,65 +1,24 @@
 import { z } from "zod";
-export declare const VendorColor: z.ZodObject<{
+declare const _VendorColor: z.ZodObject<{
     colorId: z.ZodString;
     colorName: z.ZodOptional<z.ZodString>;
     processes: z.ZodObject<{
-        offset: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        digital: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        foil: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        emboss: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        screen: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        inkjet: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        flexography: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        sublimation: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
-        thermal: z.ZodOptional<z.ZodObject<{
-            apiColorName: z.ZodOptional<z.ZodString>;
-            colorName: z.ZodOptional<z.ZodString>;
-            pricingGroup: z.ZodOptional<z.ZodString>;
-        }, z.core.$loose>>;
+        offset: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        digital: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        foil: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        emboss: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        screen: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        inkjet: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        flexography: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        sublimation: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        thermal: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
     }, z.core.$strip>;
-    vendor: z.ZodEnum<{
-        ADMORE: "ADMORE";
-        DUPLI: "DUPLI";
-        GRAPHIC_AWARDS: "GRAPHIC_AWARDS";
-        JARED: "JARED";
-        TAYLOR_FOLDERWORKS: "TAYLOR_FOLDERWORKS";
-        TAYLOR_LABELWORKS: "TAYLOR_LABELWORKS";
-        TAYLOR_NAVITOR: "TAYLOR_NAVITOR";
-        TAYLOR_SIGNS: "TAYLOR_SIGNS";
-        TRAFFICWORKS: "TRAFFICWORKS";
-    }>;
+    vendor: import("./Vendor.js").VendorSchema;
 }, z.core.$loose>;
+type _VendorColorSchema = typeof _VendorColor;
+export interface VendorColorSchema extends _VendorColorSchema {
+}
+export declare const VendorColor: VendorColorSchema;
 export type VendorColor = z.infer<typeof VendorColor>;
+export {};
 //# sourceMappingURL=VendorColor.d.ts.map

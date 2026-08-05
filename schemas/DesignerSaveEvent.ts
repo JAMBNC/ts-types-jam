@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**Event emitted when the designer saves the current design state.*/
-export const DesignerSaveEvent = z
+const _DesignerSaveEvent = z
   .object({
     type: z.literal("save"),
     payload: z
@@ -33,4 +32,8 @@ export const DesignerSaveEvent = z
   })
   .strict()
   .describe("Event emitted when the designer saves the current design state.");
+type _DesignerSaveEventSchema = typeof _DesignerSaveEvent;
+export interface DesignerSaveEventSchema extends _DesignerSaveEventSchema {}
+/**Event emitted when the designer saves the current design state.*/
+export const DesignerSaveEvent: DesignerSaveEventSchema = _DesignerSaveEvent;
 export type DesignerSaveEvent = z.infer<typeof DesignerSaveEvent>;

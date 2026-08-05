@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Event emitted when the user proceeds to review their design.*/
-export const DesignerReviewEvent = z
+const _DesignerReviewEvent = z
     .object({
     type: z.literal("review"),
     payload: z
@@ -16,3 +15,5 @@ export const DesignerReviewEvent = z
 })
     .strict()
     .describe("Event emitted when the user proceeds to review their design.");
+/**Event emitted when the user proceeds to review their design.*/
+export const DesignerReviewEvent = _DesignerReviewEvent;

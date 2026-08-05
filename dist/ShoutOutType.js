@@ -1,8 +1,9 @@
 import { z } from "zod";
-export const ShoutOutType = z.enum([
+const _ShoutOutType = z.enum([
     "generic",
     "product",
     "category",
     "group",
     "similar",
 ]);
+export const ShoutOutType = _ShoutOutType;

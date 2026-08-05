@@ -4,7 +4,7 @@ import { DesignerColorEndpoints } from "./DesignerColorEndpoints.js";
 import { DesignerFontEndpoints } from "./DesignerFontEndpoints.js";
 import { DesignerImageEndpoints } from "./DesignerImageEndpoints.js";
 import { DesignerVendorEndpoints } from "./DesignerVendorEndpoints.js";
-export const DesignerEndpoints = z
+const _DesignerEndpoints = z
     .object({
     image: DesignerImageEndpoints,
     address: DesignerAddressEndpoints.optional(),
@@ -13,3 +13,4 @@ export const DesignerEndpoints = z
     vendor: DesignerVendorEndpoints.optional(),
 })
     .strict();
+export const DesignerEndpoints = _DesignerEndpoints;

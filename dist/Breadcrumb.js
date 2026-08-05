@@ -1,4 +1,5 @@
 import { z } from "zod";
-export const Breadcrumb = z
+const _Breadcrumb = z
     .object({ label: z.string(), url: z.string().optional() })
     .passthrough();
+export const Breadcrumb = _Breadcrumb;

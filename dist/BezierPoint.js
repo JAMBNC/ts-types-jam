@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
-/**A bezier curve control point with in-handle, out-handle, and anchor position.*/
-export const BezierPoint = z
+const _BezierPoint = z
     .object({
     type: z.literal("bezier"),
     ix: Dimension,
@@ -13,3 +12,5 @@ export const BezierPoint = z
 })
     .strict()
     .describe("A bezier curve control point with in-handle, out-handle, and anchor position.");
+/**A bezier curve control point with in-handle, out-handle, and anchor position.*/
+export const BezierPoint = _BezierPoint;

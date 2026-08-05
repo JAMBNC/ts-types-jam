@@ -1,28 +1,10 @@
 import { z } from "zod";
+declare const _FontList: z.ZodArray<import("./FontFamily.js").FontFamilySchema>;
+type _FontListSchema = typeof _FontList;
+export interface FontListSchema extends _FontListSchema {
+}
 /**A collection of font families available in the system.*/
-export declare const FontList: z.ZodArray<z.ZodObject<{
-    familyName: z.ZodString;
-    fonts: z.ZodArray<z.ZodObject<{
-        format: z.ZodOptional<z.ZodEnum<{
-            otf: "otf";
-            ttf: "ttf";
-        }>>;
-        family: z.ZodString;
-        name: z.ZodOptional<z.ZodString>;
-        previewImageUrl: z.ZodOptional<z.ZodString>;
-        priority: z.ZodOptional<z.ZodNumber>;
-        style: z.ZodEnum<{
-            bold: "bold";
-            bold_italic: "bold_italic";
-            italic: "italic";
-            light: "light";
-            light_italic: "light_italic";
-            regular: "regular";
-        }>;
-        url: z.ZodOptional<z.ZodString>;
-        uuid: z.ZodString;
-        id: z.ZodOptional<z.ZodString>;
-    }, z.core.$strict>>;
-}, z.core.$strict>>;
+export declare const FontList: FontListSchema;
 export type FontList = z.infer<typeof FontList>;
+export {};
 //# sourceMappingURL=FontList.d.ts.map

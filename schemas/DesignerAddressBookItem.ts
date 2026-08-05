@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**A single address within an address book.*/
-export const DesignerAddressBookItem = z
+const _DesignerAddressBookItem = z
   .object({
     /**Id for the address.*/
     addressId: z.string().describe("Id for the address.").optional(),
@@ -43,4 +42,9 @@ export const DesignerAddressBookItem = z
   })
   .strict()
   .describe("A single address within an address book.");
+type _DesignerAddressBookItemSchema = typeof _DesignerAddressBookItem;
+export interface DesignerAddressBookItemSchema extends _DesignerAddressBookItemSchema {}
+/**A single address within an address book.*/
+export const DesignerAddressBookItem: DesignerAddressBookItemSchema =
+  _DesignerAddressBookItem;
 export type DesignerAddressBookItem = z.infer<typeof DesignerAddressBookItem>;

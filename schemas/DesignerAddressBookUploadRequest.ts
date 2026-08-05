@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**The request body for the address book upload endpoint.*/
-export const DesignerAddressBookUploadRequest = z
+const _DesignerAddressBookUploadRequest = z
   .object({
     /**The address bookupload payload.*/
     data: z
@@ -37,6 +36,12 @@ export const DesignerAddressBookUploadRequest = z
   })
   .strict()
   .describe("The request body for the address book upload endpoint.");
+type _DesignerAddressBookUploadRequestSchema =
+  typeof _DesignerAddressBookUploadRequest;
+export interface DesignerAddressBookUploadRequestSchema extends _DesignerAddressBookUploadRequestSchema {}
+/**The request body for the address book upload endpoint.*/
+export const DesignerAddressBookUploadRequest: DesignerAddressBookUploadRequestSchema =
+  _DesignerAddressBookUploadRequest;
 export type DesignerAddressBookUploadRequest = z.infer<
   typeof DesignerAddressBookUploadRequest
 >;

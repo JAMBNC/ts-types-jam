@@ -1,15 +1,17 @@
 import { z } from "zod";
-export declare const DesignerToolInteractionTrackingEvent: z.ZodObject<{
+declare const _DesignerToolInteractionTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_tool_interaction">;
     payload: z.ZodObject<{
         tool: z.ZodString;
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
+        designer: import("./DesignerCode.js").DesignerCodeSchema;
+        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
+type _DesignerToolInteractionTrackingEventSchema = typeof _DesignerToolInteractionTrackingEvent;
+export interface DesignerToolInteractionTrackingEventSchema extends _DesignerToolInteractionTrackingEventSchema {
+}
+export declare const DesignerToolInteractionTrackingEvent: DesignerToolInteractionTrackingEventSchema;
 export type DesignerToolInteractionTrackingEvent = z.infer<typeof DesignerToolInteractionTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerToolInteractionTrackingEvent.d.ts.map

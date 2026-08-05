@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { CloseFulfillmentOrderPayload } from "./CloseFulfillmentOrderPayload.js";
-export const CloseFulfillmentOrderMessage = z
+const _CloseFulfillmentOrderMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -12,3 +12,4 @@ export const CloseFulfillmentOrderMessage = z
     payload: CloseFulfillmentOrderPayload,
 })
     .strict();
+export const CloseFulfillmentOrderMessage = _CloseFulfillmentOrderMessage;

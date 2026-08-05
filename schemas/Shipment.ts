@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { LineItem } from "./LineItem.js";
 
-export const Shipment = z
+const _Shipment = z
   .object({
     carrier: z.string().optional(),
     comments: z.string().optional(),
@@ -23,4 +23,7 @@ export const Shipment = z
     trackingUrl: z.string().optional(),
   })
   .passthrough();
+type _ShipmentSchema = typeof _Shipment;
+export interface ShipmentSchema extends _ShipmentSchema {}
+export const Shipment: ShipmentSchema = _Shipment;
 export type Shipment = z.infer<typeof Shipment>;

@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The request body data for the media rendition endpoint for basic requests that require only process*/
-export declare const DesignerMediaRenditionBaseRequestData: z.ZodObject<{
+declare const _DesignerMediaRenditionBaseRequestData: z.ZodObject<{
     process: z.ZodEnum<{
         digital: "digital";
         emboss: "emboss";
@@ -12,5 +11,11 @@ export declare const DesignerMediaRenditionBaseRequestData: z.ZodObject<{
         thermal: "thermal";
     }>;
 }, z.core.$strict>;
+type _DesignerMediaRenditionBaseRequestDataSchema = typeof _DesignerMediaRenditionBaseRequestData;
+export interface DesignerMediaRenditionBaseRequestDataSchema extends _DesignerMediaRenditionBaseRequestDataSchema {
+}
+/**The request body data for the media rendition endpoint for basic requests that require only process*/
+export declare const DesignerMediaRenditionBaseRequestData: DesignerMediaRenditionBaseRequestDataSchema;
 export type DesignerMediaRenditionBaseRequestData = z.infer<typeof DesignerMediaRenditionBaseRequestData>;
+export {};
 //# sourceMappingURL=DesignerMediaRenditionBaseRequestData.d.ts.map

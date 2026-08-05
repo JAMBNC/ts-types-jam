@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Response for getting customer address books.*/
-export const DesignerAddressBooksResponse = z
+const _DesignerAddressBooksResponse = z
     .object({
     /**The list of address books for the customer.*/
     addressBooks: z
@@ -22,3 +21,5 @@ export const DesignerAddressBooksResponse = z
 })
     .strict()
     .describe("Response for getting customer address books.");
+/**Response for getting customer address books.*/
+export const DesignerAddressBooksResponse = _DesignerAddressBooksResponse;

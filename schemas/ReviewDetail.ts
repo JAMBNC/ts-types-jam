@@ -5,7 +5,7 @@ import { MerchantResponse } from "./MerchantResponse.js";
 import { ReviewSource } from "./ReviewSource.js";
 import { VoteType } from "./VoteType.js";
 
-export const ReviewDetail = z
+const _ReviewDetail = z
   .object({
     title: z.string().optional(),
     answeredQuestions: z.array(AnsweredQuestion).optional(),
@@ -26,4 +26,7 @@ export const ReviewDetail = z
       .optional(),
   })
   .passthrough();
+type _ReviewDetailSchema = typeof _ReviewDetail;
+export interface ReviewDetailSchema extends _ReviewDetailSchema {}
+export const ReviewDetail: ReviewDetailSchema = _ReviewDetail;
 export type ReviewDetail = z.infer<typeof ReviewDetail>;

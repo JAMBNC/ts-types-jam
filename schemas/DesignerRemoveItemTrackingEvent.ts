@@ -4,7 +4,7 @@ import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerRemoveItemTrackingEvent = z
+const _DesignerRemoveItemTrackingEvent = z
   .object({
     event: z.literal("designer_remove_item"),
     payload: z
@@ -20,6 +20,11 @@ export const DesignerRemoveItemTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerRemoveItemTrackingEventSchema =
+  typeof _DesignerRemoveItemTrackingEvent;
+export interface DesignerRemoveItemTrackingEventSchema extends _DesignerRemoveItemTrackingEventSchema {}
+export const DesignerRemoveItemTrackingEvent: DesignerRemoveItemTrackingEventSchema =
+  _DesignerRemoveItemTrackingEvent;
 export type DesignerRemoveItemTrackingEvent = z.infer<
   typeof DesignerRemoveItemTrackingEvent
 >;

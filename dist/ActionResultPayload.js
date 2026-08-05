@@ -3,8 +3,7 @@ import { ActionError } from "./ActionError.js";
 import { ActionResultStatus } from "./ActionResultStatus.js";
 import { ExternalId } from "./ExternalId.js";
 import { FulfillmentActionKind } from "./FulfillmentActionKind.js";
-/**Reports the real channel outcome of one outbound action, so the backend can reconcile state instead of assuming success on send.*/
-export const ActionResultPayload = z
+const _ActionResultPayload = z
     .object({
     /**The outbound action a fulfillment action result reports on.*/
     action: FulfillmentActionKind,
@@ -21,3 +20,5 @@ export const ActionResultPayload = z
 })
     .strict()
     .describe("Reports the real channel outcome of one outbound action, so the backend can reconcile state instead of assuming success on send.");
+/**Reports the real channel outcome of one outbound action, so the backend can reconcile state instead of assuming success on send.*/
+export const ActionResultPayload = _ActionResultPayload;

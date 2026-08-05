@@ -1,6 +1,11 @@
 import { z } from "zod";
 
-export const ProductUrlMetaDataCreativeEngine = z.enum(["chili", "alchemy"]);
+const _ProductUrlMetaDataCreativeEngine = z.enum(["chili", "alchemy"]);
+type _ProductUrlMetaDataCreativeEngineSchema =
+  typeof _ProductUrlMetaDataCreativeEngine;
+export interface ProductUrlMetaDataCreativeEngineSchema extends _ProductUrlMetaDataCreativeEngineSchema {}
+export const ProductUrlMetaDataCreativeEngine: ProductUrlMetaDataCreativeEngineSchema =
+  _ProductUrlMetaDataCreativeEngine;
 export type ProductUrlMetaDataCreativeEngine = z.infer<
   typeof ProductUrlMetaDataCreativeEngine
 >;

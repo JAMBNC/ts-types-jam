@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**OAuth2 authorization code grant for user-delegated authentication.*/
-export const OAuth2AuthorizationCode = z
+const _OAuth2AuthorizationCode = z
   .object({
     type: z.literal("oauth2_authorization_code"),
     /**The OAuth2 client ID.*/
@@ -30,4 +29,9 @@ export const OAuth2AuthorizationCode = z
   .describe(
     "OAuth2 authorization code grant for user-delegated authentication.",
   );
+type _OAuth2AuthorizationCodeSchema = typeof _OAuth2AuthorizationCode;
+export interface OAuth2AuthorizationCodeSchema extends _OAuth2AuthorizationCodeSchema {}
+/**OAuth2 authorization code grant for user-delegated authentication.*/
+export const OAuth2AuthorizationCode: OAuth2AuthorizationCodeSchema =
+  _OAuth2AuthorizationCode;
 export type OAuth2AuthorizationCode = z.infer<typeof OAuth2AuthorizationCode>;

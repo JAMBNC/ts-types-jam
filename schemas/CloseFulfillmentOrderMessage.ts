@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { CloseFulfillmentOrderPayload } from "./CloseFulfillmentOrderPayload.js";
 
-export const CloseFulfillmentOrderMessage = z
+const _CloseFulfillmentOrderMessage = z
   .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -13,6 +13,10 @@ export const CloseFulfillmentOrderMessage = z
     payload: CloseFulfillmentOrderPayload,
   })
   .strict();
+type _CloseFulfillmentOrderMessageSchema = typeof _CloseFulfillmentOrderMessage;
+export interface CloseFulfillmentOrderMessageSchema extends _CloseFulfillmentOrderMessageSchema {}
+export const CloseFulfillmentOrderMessage: CloseFulfillmentOrderMessageSchema =
+  _CloseFulfillmentOrderMessage;
 export type CloseFulfillmentOrderMessage = z.infer<
   typeof CloseFulfillmentOrderMessage
 >;

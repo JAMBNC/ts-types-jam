@@ -2,8 +2,7 @@ import { z } from "zod";
 import { Rect } from "./Rect.js";
 import { TextProperties } from "./TextProperties.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**An ingredient that renders text content with font and style properties.*/
-export const TextIngredient = z
+const _TextIngredient = z
     .object({
     type: z.literal("text"),
     allowRewrite: z.boolean().optional(),
@@ -30,3 +29,5 @@ export const TextIngredient = z
 })
     .strict()
     .describe("An ingredient that renders text content with font and style properties.");
+/**An ingredient that renders text content with font and style properties.*/
+export const TextIngredient = _TextIngredient;

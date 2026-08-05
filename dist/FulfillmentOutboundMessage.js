@@ -7,8 +7,7 @@ import { RejectCancellationRequestMessage } from "./RejectCancellationRequestMes
 import { RejectFulfillmentRequestMessage } from "./RejectFulfillmentRequestMessage.js";
 import { SetInventoryMessage } from "./SetInventoryMessage.js";
 import { UpdateTrackingMessage } from "./UpdateTrackingMessage.js";
-/**Discriminated union of all backend-to-mapper action messages.*/
-export const FulfillmentOutboundMessage = z
+const _FulfillmentOutboundMessage = z
     .union([
     AcceptFulfillmentRequestMessage,
     RejectFulfillmentRequestMessage,
@@ -20,3 +19,5 @@ export const FulfillmentOutboundMessage = z
     SetInventoryMessage,
 ])
     .describe("Discriminated union of all backend-to-mapper action messages.");
+/**Discriminated union of all backend-to-mapper action messages.*/
+export const FulfillmentOutboundMessage = _FulfillmentOutboundMessage;

@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The response from the design save endpoint.*/
-export const DesignerSaveResponse = z
+const _DesignerSaveResponse = z
     .object({
     /**Whether the save was successful.*/
     success: z.boolean().describe("Whether the save was successful."),
@@ -11,3 +10,5 @@ export const DesignerSaveResponse = z
 })
     .strict()
     .describe("The response from the design save endpoint.");
+/**The response from the design save endpoint.*/
+export const DesignerSaveResponse = _DesignerSaveResponse;

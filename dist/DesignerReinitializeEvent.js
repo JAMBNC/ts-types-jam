@@ -2,8 +2,7 @@ import { z } from "zod";
 import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { Product } from "./Product.js";
-/**Event emitted when the designer should reinitialize with the payload data*/
-export const DesignerReinitializeEvent = z
+const _DesignerReinitializeEvent = z
     .object({
     type: z.literal("reinitialize"),
     payload: z
@@ -34,3 +33,5 @@ export const DesignerReinitializeEvent = z
 })
     .strict()
     .describe("Event emitted when the designer should reinitialize with the payload data");
+/**Event emitted when the designer should reinitialize with the payload data*/
+export const DesignerReinitializeEvent = _DesignerReinitializeEvent;

@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerMiscInteractionTrackingEvent = z
+const _DesignerMiscInteractionTrackingEvent = z
   .object({
     event: z.literal("designer_misc_interaction"),
     payload: z
@@ -19,6 +19,11 @@ export const DesignerMiscInteractionTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerMiscInteractionTrackingEventSchema =
+  typeof _DesignerMiscInteractionTrackingEvent;
+export interface DesignerMiscInteractionTrackingEventSchema extends _DesignerMiscInteractionTrackingEventSchema {}
+export const DesignerMiscInteractionTrackingEvent: DesignerMiscInteractionTrackingEventSchema =
+  _DesignerMiscInteractionTrackingEvent;
 export type DesignerMiscInteractionTrackingEvent = z.infer<
   typeof DesignerMiscInteractionTrackingEvent
 >;

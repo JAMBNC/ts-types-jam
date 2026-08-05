@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const DesignerAddressEndpoints = z
+const _DesignerAddressEndpoints = z
     .object({
     /**The endpoint URL for fetching the user's address books list.  (uses the DesignerAuth.endpointAuth)*/
     addressBooks: z
@@ -18,3 +18,4 @@ export const DesignerAddressEndpoints = z
         .describe("The endpoint URL for uploading a new address book for the user.  (uses the DesignerAuth.endpointAuth)"),
 })
     .strict();
+export const DesignerAddressEndpoints = _DesignerAddressEndpoints;

@@ -1,7 +1,8 @@
 import { z } from "zod";
-export const QuantityStepIncrement = z
+const _QuantityStepIncrement = z
     .object({
     requiredStepIncrement: z.number().int(),
     startingAtQty: z.number().int(),
 })
     .passthrough();
+export const QuantityStepIncrement = _QuantityStepIncrement;

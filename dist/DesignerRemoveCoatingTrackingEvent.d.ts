@@ -1,14 +1,12 @@
 import { z } from "zod";
-export declare const DesignerRemoveCoatingTrackingEvent: z.ZodObject<{
+declare const _DesignerRemoveCoatingTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_remove_coating">;
-    payload: z.ZodObject<{
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
-    }, z.core.$strict>;
+    payload: import("./DefaultTrackingPayload.js").DefaultTrackingPayloadSchema;
 }, z.core.$strict>;
+type _DesignerRemoveCoatingTrackingEventSchema = typeof _DesignerRemoveCoatingTrackingEvent;
+export interface DesignerRemoveCoatingTrackingEventSchema extends _DesignerRemoveCoatingTrackingEventSchema {
+}
+export declare const DesignerRemoveCoatingTrackingEvent: DesignerRemoveCoatingTrackingEventSchema;
 export type DesignerRemoveCoatingTrackingEvent = z.infer<typeof DesignerRemoveCoatingTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerRemoveCoatingTrackingEvent.d.ts.map

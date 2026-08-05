@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const FrameTypeAdderCode = z.enum(["text", "image"]);
+const _FrameTypeAdderCode = z.enum(["text", "image"]);
+export const FrameTypeAdderCode = _FrameTypeAdderCode;

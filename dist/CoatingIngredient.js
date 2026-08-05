@@ -2,8 +2,7 @@ import { z } from "zod";
 import { Rect } from "./Rect.js";
 import { TextureColor } from "./TextureColor.js";
 import { TextureImage } from "./TextureImage.js";
-/**Ingredient for coatings that cover an entire page.*/
-export const CoatingIngredient = z
+const _CoatingIngredient = z
     .object({
     /**Unique identifier for this ingredient.*/
     id: z.string().describe("Unique identifier for this ingredient."),
@@ -26,3 +25,5 @@ export const CoatingIngredient = z
 })
     .strict()
     .describe("Ingredient for coatings that cover an entire page.");
+/**Ingredient for coatings that cover an entire page.*/
+export const CoatingIngredient = _CoatingIngredient;

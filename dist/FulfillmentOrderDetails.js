@@ -6,8 +6,7 @@ import { FulfillmentOrderDestination } from "./FulfillmentOrderDestination.js";
 import { FulfillmentShippingLine } from "./FulfillmentShippingLine.js";
 import { FulfillmentTaxLine } from "./FulfillmentTaxLine.js";
 import { FulfillmentTransaction } from "./FulfillmentTransaction.js";
-/**Order-level financial and party detail hydrated alongside the fulfillment order. Amounts are in the shop currency.*/
-export const FulfillmentOrderDetails = z
+const _FulfillmentOrderDetails = z
     .object({
     subtotal: z.union([FulfillmentMoney, z.null()]).optional(),
     totalTax: z.union([FulfillmentMoney, z.null()]).optional(),
@@ -27,3 +26,5 @@ export const FulfillmentOrderDetails = z
 })
     .strict()
     .describe("Order-level financial and party detail hydrated alongside the fulfillment order. Amounts are in the shop currency.");
+/**Order-level financial and party detail hydrated alongside the fulfillment order. Amounts are in the shop currency.*/
+export const FulfillmentOrderDetails = _FulfillmentOrderDetails;

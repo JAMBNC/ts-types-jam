@@ -3,7 +3,7 @@ import { AnsweredQuestion } from "./AnsweredQuestion.js";
 import { Media } from "./Media.js";
 import { MerchantResponse } from "./MerchantResponse.js";
 import { ReviewSource } from "./ReviewSource.js";
-export const ReviewDetail = z
+const _ReviewDetail = z
     .object({
     title: z.string().optional(),
     answeredQuestions: z.array(AnsweredQuestion).optional(),
@@ -24,3 +24,4 @@ export const ReviewDetail = z
         .optional(),
 })
     .passthrough();
+export const ReviewDetail = _ReviewDetail;

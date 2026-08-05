@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { TierPrice } from "./TierPrice.js";
-/**Price tiers keyed by product SKU.*/
-export const DesignerPricing = z
+const _DesignerPricing = z
     .record(z.string(), z.array(TierPrice))
     .superRefine((value, ctx) => {
     for (const key in value) {
@@ -19,3 +18,5 @@ export const DesignerPricing = z
     }
 })
     .describe("Price tiers keyed by product SKU.");
+/**Price tiers keyed by product SKU.*/
+export const DesignerPricing = _DesignerPricing;

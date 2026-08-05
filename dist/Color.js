@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { ColorValue } from "./ColorValue.js";
-export const Color = z
+const _Color = z
     .object({
     /**The normalized name for a color, used for spot name in spot applications.*/
     name: z
@@ -22,3 +22,4 @@ export const Color = z
         .describe("A unique UUID identifier for the color."),
 })
     .passthrough();
+export const Color = _Color;

@@ -1,44 +1,19 @@
 import { z } from "zod";
-export declare const DesignerChangeProcessTrackingEvent: z.ZodObject<{
+declare const _DesignerChangeProcessTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_change_process">;
     payload: z.ZodObject<{
-        type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            image: "image";
-            recipientAddress: "recipientAddress";
-            returnAddress: "returnAddress";
-            sRecipientAddress: "sRecipientAddress";
-            text: "text";
-            variableData: "variableData";
-        }>, z.ZodNull]>>;
-        oldProcess: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            digital: "digital";
-            emboss: "emboss";
-            flexography: "flexography";
-            foil: "foil";
-            inkjet: "inkjet";
-            offset: "offset";
-            screen: "screen";
-            sublimation: "sublimation";
-            thermal: "thermal";
-        }>, z.ZodNull]>>;
-        newProcess: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            digital: "digital";
-            emboss: "emboss";
-            flexography: "flexography";
-            foil: "foil";
-            inkjet: "inkjet";
-            offset: "offset";
-            screen: "screen";
-            sublimation: "sublimation";
-            thermal: "thermal";
-        }>, z.ZodNull]>>;
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
+        type: z.ZodOptional<z.ZodUnion<readonly [import("./IngredientMetadataType.js").IngredientMetadataTypeSchema, z.ZodNull]>>;
+        oldProcess: z.ZodOptional<z.ZodUnion<readonly [import("./Process.js").ProcessSchema, z.ZodNull]>>;
+        newProcess: z.ZodOptional<z.ZodUnion<readonly [import("./Process.js").ProcessSchema, z.ZodNull]>>;
+        designer: import("./DesignerCode.js").DesignerCodeSchema;
+        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
+type _DesignerChangeProcessTrackingEventSchema = typeof _DesignerChangeProcessTrackingEvent;
+export interface DesignerChangeProcessTrackingEventSchema extends _DesignerChangeProcessTrackingEventSchema {
+}
+export declare const DesignerChangeProcessTrackingEvent: DesignerChangeProcessTrackingEventSchema;
 export type DesignerChangeProcessTrackingEvent = z.infer<typeof DesignerChangeProcessTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerChangeProcessTrackingEvent.d.ts.map

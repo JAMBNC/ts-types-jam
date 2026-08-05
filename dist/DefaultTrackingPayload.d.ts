@@ -1,11 +1,13 @@
 import { z } from "zod";
-export declare const DefaultTrackingPayload: z.ZodObject<{
-    designer: z.ZodEnum<{
-        base: "base";
-        hermes: "hermes";
-    }>;
-    merchant: z.ZodString;
-    deltaTime: z.ZodNumber;
+declare const _DefaultTrackingPayload: z.ZodObject<{
+    designer: import("./DesignerCode.js").DesignerCodeSchema;
+    merchant: import("./MerchantCode.js").MerchantCodeSchema;
+    deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
 }, z.core.$strict>;
+type _DefaultTrackingPayloadSchema = typeof _DefaultTrackingPayload;
+export interface DefaultTrackingPayloadSchema extends _DefaultTrackingPayloadSchema {
+}
+export declare const DefaultTrackingPayload: DefaultTrackingPayloadSchema;
 export type DefaultTrackingPayload = z.infer<typeof DefaultTrackingPayload>;
+export {};
 //# sourceMappingURL=DefaultTrackingPayload.d.ts.map

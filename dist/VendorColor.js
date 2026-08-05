@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { Vendor } from "./Vendor.js";
 import { VendorProcess } from "./VendorProcess.js";
-export const VendorColor = z
+const _VendorColor = z
     .object({
     /**The uuid for the color the vendor supports.*/
     colorId: z
@@ -28,3 +28,4 @@ export const VendorColor = z
     vendor: Vendor,
 })
     .passthrough();
+export const VendorColor = _VendorColor;

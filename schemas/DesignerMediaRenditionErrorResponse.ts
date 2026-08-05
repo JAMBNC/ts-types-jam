@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**The response from the media rendition endpoint when the rendition fails.*/
-export const DesignerMediaRenditionErrorResponse = z
+const _DesignerMediaRenditionErrorResponse = z
   .object({
     success: z.literal(false),
     /**A message describing why the rendition failed.*/
@@ -13,6 +12,12 @@ export const DesignerMediaRenditionErrorResponse = z
   .describe(
     "The response from the media rendition endpoint when the rendition fails.",
   );
+type _DesignerMediaRenditionErrorResponseSchema =
+  typeof _DesignerMediaRenditionErrorResponse;
+export interface DesignerMediaRenditionErrorResponseSchema extends _DesignerMediaRenditionErrorResponseSchema {}
+/**The response from the media rendition endpoint when the rendition fails.*/
+export const DesignerMediaRenditionErrorResponse: DesignerMediaRenditionErrorResponseSchema =
+  _DesignerMediaRenditionErrorResponse;
 export type DesignerMediaRenditionErrorResponse = z.infer<
   typeof DesignerMediaRenditionErrorResponse
 >;

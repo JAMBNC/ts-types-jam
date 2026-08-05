@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The outbound action a fulfillment action result reports on.*/
-export const FulfillmentActionKind = z
+const _FulfillmentActionKind = z
     .enum([
     "accept_fulfillment_request",
     "reject_fulfillment_request",
@@ -11,3 +10,5 @@ export const FulfillmentActionKind = z
     "close_fulfillment_order",
 ])
     .describe("The outbound action a fulfillment action result reports on.");
+/**The outbound action a fulfillment action result reports on.*/
+export const FulfillmentActionKind = _FulfillmentActionKind;

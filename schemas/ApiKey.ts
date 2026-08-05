@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**API key authentication, typically sent as a header or query parameter.*/
-export const ApiKey = z
+const _ApiKey = z
   .object({
     type: z.literal("apiKey"),
     /**The API key value.*/
@@ -21,4 +20,8 @@ export const ApiKey = z
   .describe(
     "API key authentication, typically sent as a header or query parameter.",
   );
+type _ApiKeySchema = typeof _ApiKey;
+export interface ApiKeySchema extends _ApiKeySchema {}
+/**API key authentication, typically sent as a header or query parameter.*/
+export const ApiKey: ApiKeySchema = _ApiKey;
 export type ApiKey = z.infer<typeof ApiKey>;

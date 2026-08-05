@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Provider } from "./Provider.js";
-export const ShippingInfo = z
+const _ShippingInfo = z
     .object({
     accountNumber: z.string().optional(),
     accountType: z.string().optional(),
@@ -10,3 +10,4 @@ export const ShippingInfo = z
     weightInPounds: z.number().gte(0).optional(),
 })
     .passthrough();
+export const ShippingInfo = _ShippingInfo;

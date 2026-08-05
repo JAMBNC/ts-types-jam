@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**Basic authentication using a username and password.*/
-export const Basic = z
+const _Basic = z
   .object({
     type: z.literal("basic"),
     /**The username for authentication.*/
@@ -11,4 +10,8 @@ export const Basic = z
   })
   .strict()
   .describe("Basic authentication using a username and password.");
+type _BasicSchema = typeof _Basic;
+export interface BasicSchema extends _BasicSchema {}
+/**Basic authentication using a username and password.*/
+export const Basic: BasicSchema = _Basic;
 export type Basic = z.infer<typeof Basic>;

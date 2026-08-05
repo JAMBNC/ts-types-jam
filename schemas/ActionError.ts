@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**A channel-reported error or a transport error captured when an action failed.*/
-export const ActionError = z
+const _ActionError = z
   .object({
     field: z.union([z.array(z.string()), z.null()]).optional(),
     message: z.string(),
@@ -10,4 +9,8 @@ export const ActionError = z
   .describe(
     "A channel-reported error or a transport error captured when an action failed.",
   );
+type _ActionErrorSchema = typeof _ActionError;
+export interface ActionErrorSchema extends _ActionErrorSchema {}
+/**A channel-reported error or a transport error captured when an action failed.*/
+export const ActionError: ActionErrorSchema = _ActionError;
 export type ActionError = z.infer<typeof ActionError>;

@@ -1,109 +1,32 @@
 import { z } from "zod";
-/**A circle ingredient with fill and stroke.*/
-export declare const CircleIngredient: z.ZodObject<{
+declare const _CircleIngredient: z.ZodObject<{
     type: z.ZodLiteral<"circle">;
     dropshadow: z.ZodOptional<z.ZodBoolean>;
     editable: z.ZodOptional<z.ZodBoolean>;
-    fillColor: z.ZodOptional<z.ZodObject<{
-        a: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        hex: z.ZodString;
-        id: z.ZodString;
-        name: z.ZodString;
-        r: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>>;
+    fillColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
     id: z.ZodString;
     invertFill: z.ZodOptional<z.ZodBoolean>;
     lineDash: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     opacity: z.ZodNumber;
-    rect: z.ZodObject<{
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        x: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-    }, z.core.$strict>;
+    rect: import("./Rect.js").RectSchema;
     radius: z.ZodObject<{
-        x: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
+        x: import("./Dimension.js").DimensionSchema;
+        y: import("./Dimension.js").DimensionSchema;
     }, z.core.$strict>;
     rotation: z.ZodNumber;
-    strokeColor: z.ZodOptional<z.ZodObject<{
-        a: z.ZodOptional<z.ZodNumber>;
-        b: z.ZodOptional<z.ZodNumber>;
-        g: z.ZodOptional<z.ZodNumber>;
-        hex: z.ZodString;
-        id: z.ZodString;
-        name: z.ZodString;
-        r: z.ZodOptional<z.ZodNumber>;
-    }, z.core.$strict>>;
-    strokeWidth: z.ZodOptional<z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>>;
+    strokeColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
+    strokeWidth: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodOptional<z.ZodEnum<{
-        background: "background";
-        bleed: "bleed";
-        mask: "mask";
-        print: "print";
-    }>>;
+    viewLayer: z.ZodOptional<import("./ViewLayer.js").ViewLayerSchema>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>;
+type _CircleIngredientSchema = typeof _CircleIngredient;
+export interface CircleIngredientSchema extends _CircleIngredientSchema {
+}
+/**A circle ingredient with fill and stroke.*/
+export declare const CircleIngredient: CircleIngredientSchema;
 export type CircleIngredient = z.infer<typeof CircleIngredient>;
+export {};
 //# sourceMappingURL=CircleIngredient.d.ts.map

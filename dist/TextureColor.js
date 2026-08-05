@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const TextureColor = z.object({ hex: z.string() }).strict();
+const _TextureColor = z.object({ hex: z.string() }).strict();
+export const TextureColor = _TextureColor;

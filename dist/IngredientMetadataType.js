@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The type of ingredient in the designer.*/
-export const IngredientMetadataType = z
+const _IngredientMetadataType = z
     .enum([
     "sRecipientAddress",
     "recipientAddress",
@@ -10,3 +9,5 @@ export const IngredientMetadataType = z
     "variableData",
 ])
     .describe("The type of ingredient in the designer.");
+/**The type of ingredient in the designer.*/
+export const IngredientMetadataType = _IngredientMetadataType;

@@ -4,7 +4,7 @@ import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 import { Process } from "./Process.js";
-export const DesignerChangeProcessTrackingEvent = z
+const _DesignerChangeProcessTrackingEvent = z
     .object({
     event: z.literal("designer_change_process"),
     payload: z
@@ -22,3 +22,4 @@ export const DesignerChangeProcessTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerChangeProcessTrackingEvent = _DesignerChangeProcessTrackingEvent;

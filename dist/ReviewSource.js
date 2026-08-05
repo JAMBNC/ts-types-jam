@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const ReviewSource = z.literal("email");
+const _ReviewSource = z.literal("email");
+export const ReviewSource = _ReviewSource;

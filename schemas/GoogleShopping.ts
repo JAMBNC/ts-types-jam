@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**Google Shopping / merchant metafields.*/
-export const GoogleShopping = z
+const _GoogleShopping = z
   .object({
     productCategory: z.string().optional(),
     color: z.string().optional(),
@@ -15,4 +14,8 @@ export const GoogleShopping = z
   })
   .passthrough()
   .describe("Google Shopping / merchant metafields.");
+type _GoogleShoppingSchema = typeof _GoogleShopping;
+export interface GoogleShoppingSchema extends _GoogleShoppingSchema {}
+/**Google Shopping / merchant metafields.*/
+export const GoogleShopping: GoogleShoppingSchema = _GoogleShopping;
 export type GoogleShopping = z.infer<typeof GoogleShopping>;

@@ -4,8 +4,7 @@ import { FulfillmentOrderDestination } from "./FulfillmentOrderDestination.js";
 import { FulfillmentOrderDetails } from "./FulfillmentOrderDetails.js";
 import { FulfillmentOrderLineItem } from "./FulfillmentOrderLineItem.js";
 
-/**A mapper-hydrated fulfillment order: enough for the backend to fulfill without calling the channel.*/
-export const FulfillmentOrder = z
+const _FulfillmentOrder = z
   .object({
     /**An id meaningful to the source channel, treated as an opaque string by the backend (e.g. a Shopify GID like gid://shopify/FulfillmentOrder/123).*/
     id: ExternalId,
@@ -87,4 +86,8 @@ export const FulfillmentOrder = z
   .describe(
     "A mapper-hydrated fulfillment order: enough for the backend to fulfill without calling the channel.",
   );
+type _FulfillmentOrderSchema = typeof _FulfillmentOrder;
+export interface FulfillmentOrderSchema extends _FulfillmentOrderSchema {}
+/**A mapper-hydrated fulfillment order: enough for the backend to fulfill without calling the channel.*/
+export const FulfillmentOrder: FulfillmentOrderSchema = _FulfillmentOrder;
 export type FulfillmentOrder = z.infer<typeof FulfillmentOrder>;

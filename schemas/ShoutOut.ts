@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { ShoutOutType } from "./ShoutOutType.js";
 
-export const ShoutOut = z
+const _ShoutOut = z
   .object({
     type: ShoutOutType,
     display: z.string(),
@@ -9,4 +9,7 @@ export const ShoutOut = z
     value: z.string().optional(),
   })
   .passthrough();
+type _ShoutOutSchema = typeof _ShoutOut;
+export interface ShoutOutSchema extends _ShoutOutSchema {}
+export const ShoutOut: ShoutOutSchema = _ShoutOut;
 export type ShoutOut = z.infer<typeof ShoutOut>;

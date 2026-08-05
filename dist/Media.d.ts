@@ -1,24 +1,16 @@
 import { z } from "zod";
-export declare const Media: z.ZodObject<{
+declare const _Media: z.ZodObject<{
     altText: z.ZodOptional<z.ZodString>;
     label: z.ZodOptional<z.ZodString>;
-    mediaType: z.ZodEnum<{
-        image: "image";
-        video: "video";
-    }>;
+    mediaType: import("./MediaType.js").MediaTypeSchema;
     previewUrl: z.ZodOptional<z.ZodString>;
-    tags: z.ZodOptional<z.ZodArray<z.ZodEnum<{
-        amazon: "amazon";
-        carousel: "carousel";
-        insideView: "insideView";
-        other: "other";
-        primary: "primary";
-        small: "small";
-        swatch: "swatch";
-        thumbnail: "thumbnail";
-        yourLogoHere: "yourLogoHere";
-    }>>>;
+    tags: z.ZodOptional<z.ZodArray<import("./Tag.js").TagSchema>>;
     url: z.ZodString;
 }, z.core.$loose>;
+type _MediaSchema = typeof _Media;
+export interface MediaSchema extends _MediaSchema {
+}
+export declare const Media: MediaSchema;
 export type Media = z.infer<typeof Media>;
+export {};
 //# sourceMappingURL=Media.d.ts.map

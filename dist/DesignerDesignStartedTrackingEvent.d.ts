@@ -1,14 +1,12 @@
 import { z } from "zod";
-export declare const DesignerDesignStartedTrackingEvent: z.ZodObject<{
+declare const _DesignerDesignStartedTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_design_started">;
-    payload: z.ZodObject<{
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
-    }, z.core.$strict>;
+    payload: import("./DefaultTrackingPayload.js").DefaultTrackingPayloadSchema;
 }, z.core.$strict>;
+type _DesignerDesignStartedTrackingEventSchema = typeof _DesignerDesignStartedTrackingEvent;
+export interface DesignerDesignStartedTrackingEventSchema extends _DesignerDesignStartedTrackingEventSchema {
+}
+export declare const DesignerDesignStartedTrackingEvent: DesignerDesignStartedTrackingEventSchema;
 export type DesignerDesignStartedTrackingEvent = z.infer<typeof DesignerDesignStartedTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerDesignStartedTrackingEvent.d.ts.map

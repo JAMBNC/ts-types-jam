@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { ResponseType } from "./ResponseType.js";
 
-export const MerchantResponse = z
+const _MerchantResponse = z
   .object({
     createdAt: z.string().datetime({ offset: true }).optional(),
     identifiers: z.record(z.string(), z.any()).optional(),
@@ -13,4 +13,7 @@ export const MerchantResponse = z
     votes: z.record(z.string(), z.number().int()).optional(),
   })
   .passthrough();
+type _MerchantResponseSchema = typeof _MerchantResponse;
+export interface MerchantResponseSchema extends _MerchantResponseSchema {}
+export const MerchantResponse: MerchantResponseSchema = _MerchantResponse;
 export type MerchantResponse = z.infer<typeof MerchantResponse>;

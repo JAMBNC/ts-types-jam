@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { ActionResultPayload } from "./ActionResultPayload.js";
 
-/**The mapper's ack for one outbound action. correlationId is the outbound action message's messageId.*/
-export const ActionResultMessage = z
+const _ActionResultMessage = z
   .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -21,4 +20,9 @@ export const ActionResultMessage = z
   .describe(
     "The mapper's ack for one outbound action. correlationId is the outbound action message's messageId.",
   );
+type _ActionResultMessageSchema = typeof _ActionResultMessage;
+export interface ActionResultMessageSchema extends _ActionResultMessageSchema {}
+/**The mapper's ack for one outbound action. correlationId is the outbound action message's messageId.*/
+export const ActionResultMessage: ActionResultMessageSchema =
+  _ActionResultMessage;
 export type ActionResultMessage = z.infer<typeof ActionResultMessage>;

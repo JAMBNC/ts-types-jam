@@ -8,7 +8,7 @@ import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
 import { WorkspaceOption } from "./WorkspaceOption.js";
 
-export const DesignerInitializationPayload = z
+const _DesignerInitializationPayload = z
   .object({
     /**Currently the design formula, to be the design state*/
     design: z
@@ -52,6 +52,11 @@ export const DesignerInitializationPayload = z
       .optional(),
   })
   .passthrough();
+type _DesignerInitializationPayloadSchema =
+  typeof _DesignerInitializationPayload;
+export interface DesignerInitializationPayloadSchema extends _DesignerInitializationPayloadSchema {}
+export const DesignerInitializationPayload: DesignerInitializationPayloadSchema =
+  _DesignerInitializationPayload;
 export type DesignerInitializationPayload = z.infer<
   typeof DesignerInitializationPayload
 >;

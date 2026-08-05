@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const Vendor = z.enum([
+const _Vendor = z.enum([
     "ADMORE",
     "DUPLI",
     "GRAPHIC_AWARDS",
@@ -10,3 +10,4 @@ export const Vendor = z.enum([
     "TAYLOR_SIGNS",
     "TAYLOR_LABELWORKS",
 ]);
+export const Vendor = _Vendor;

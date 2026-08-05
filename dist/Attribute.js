@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { AttributeRenderPreference } from "./AttributeRenderPreference.js";
 import { PredefinedAttributeValue } from "./PredefinedAttributeValue.js";
-export const Attribute = z
+const _Attribute = z
     .object({
     code: z.string(),
     displayForCustomer: z.boolean(),
@@ -13,3 +13,4 @@ export const Attribute = z
     usedForProductSelection: z.boolean(),
 })
     .passthrough();
+export const Attribute = _Attribute;

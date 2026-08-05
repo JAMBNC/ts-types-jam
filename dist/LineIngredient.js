@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { Rect } from "./Rect.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**A line ingredient*/
-export const LineIngredient = z
+const _LineIngredient = z
     .object({
     type: z.literal("line"),
     dropshadow: z.boolean().optional(),
@@ -26,3 +25,5 @@ export const LineIngredient = z
 })
     .strict()
     .describe("A line ingredient");
+/**A line ingredient*/
+export const LineIngredient = _LineIngredient;

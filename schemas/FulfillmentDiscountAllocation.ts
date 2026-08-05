@@ -2,8 +2,7 @@ import { z } from "zod";
 import { FulfillmentDiscountType } from "./FulfillmentDiscountType.js";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
 
-/**A discount applied to a single line item.*/
-export const FulfillmentDiscountAllocation = z
+const _FulfillmentDiscountAllocation = z
   .object({
     /**A monetary amount in the shop's currency.*/
     amount: FulfillmentMoney,
@@ -28,6 +27,12 @@ export const FulfillmentDiscountAllocation = z
   })
   .strict()
   .describe("A discount applied to a single line item.");
+type _FulfillmentDiscountAllocationSchema =
+  typeof _FulfillmentDiscountAllocation;
+export interface FulfillmentDiscountAllocationSchema extends _FulfillmentDiscountAllocationSchema {}
+/**A discount applied to a single line item.*/
+export const FulfillmentDiscountAllocation: FulfillmentDiscountAllocationSchema =
+  _FulfillmentDiscountAllocation;
 export type FulfillmentDiscountAllocation = z.infer<
   typeof FulfillmentDiscountAllocation
 >;

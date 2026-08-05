@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const ReviewSummary = z
+const _ReviewSummary = z
     .object({
     displayGroupId: z.number().int().optional(),
     maxRating: z.number().optional(),
@@ -8,3 +8,4 @@ export const ReviewSummary = z
     sku: z.string().optional(),
 })
     .passthrough();
+export const ReviewSummary = _ReviewSummary;

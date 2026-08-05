@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { ExternalId } from "./ExternalId.js";
 
-export const RejectFulfillmentRequestPayload = z
+const _RejectFulfillmentRequestPayload = z
   .object({
     /**An id meaningful to the source channel, treated as an opaque string by the backend (e.g. a Shopify GID like gid://shopify/FulfillmentOrder/123).*/
     fulfillmentOrderId: ExternalId,
@@ -26,6 +26,11 @@ export const RejectFulfillmentRequestPayload = z
     message: z.union([z.string(), z.null()]).optional(),
   })
   .strict();
+type _RejectFulfillmentRequestPayloadSchema =
+  typeof _RejectFulfillmentRequestPayload;
+export interface RejectFulfillmentRequestPayloadSchema extends _RejectFulfillmentRequestPayloadSchema {}
+export const RejectFulfillmentRequestPayload: RejectFulfillmentRequestPayloadSchema =
+  _RejectFulfillmentRequestPayload;
 export type RejectFulfillmentRequestPayload = z.infer<
   typeof RejectFulfillmentRequestPayload
 >;

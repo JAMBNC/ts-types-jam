@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const PaletteAllowlistItem = z
+const _PaletteAllowlistItem = z
   .object({
     /**The allowed palette's uuid*/
     uuid: z
@@ -37,4 +37,8 @@ export const PaletteAllowlistItem = z
       .optional(),
   })
   .strict();
+type _PaletteAllowlistItemSchema = typeof _PaletteAllowlistItem;
+export interface PaletteAllowlistItemSchema extends _PaletteAllowlistItemSchema {}
+export const PaletteAllowlistItem: PaletteAllowlistItemSchema =
+  _PaletteAllowlistItem;
 export type PaletteAllowlistItem = z.infer<typeof PaletteAllowlistItem>;

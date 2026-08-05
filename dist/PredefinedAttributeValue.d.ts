@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const PredefinedAttributeValue: z.ZodObject<{
+declare const _PredefinedAttributeValue: z.ZodObject<{
     identifiers: z.ZodRecord<z.ZodString, z.ZodAny>;
     swatches: z.ZodOptional<z.ZodObject<{
         TEXT: z.ZodOptional<z.ZodString>;
@@ -8,5 +8,10 @@ export declare const PredefinedAttributeValue: z.ZodObject<{
     }, z.core.$strip>>;
     value: z.ZodString;
 }, z.core.$loose>;
+type _PredefinedAttributeValueSchema = typeof _PredefinedAttributeValue;
+export interface PredefinedAttributeValueSchema extends _PredefinedAttributeValueSchema {
+}
+export declare const PredefinedAttributeValue: PredefinedAttributeValueSchema;
 export type PredefinedAttributeValue = z.infer<typeof PredefinedAttributeValue>;
+export {};
 //# sourceMappingURL=PredefinedAttributeValue.d.ts.map

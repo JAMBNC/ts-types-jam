@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
-export const DesignerChangeQuantityTrackingEvent = z
+const _DesignerChangeQuantityTrackingEvent = z
     .object({
     event: z.literal("designer_change_quantity"),
     payload: z
@@ -21,3 +21,4 @@ export const DesignerChangeQuantityTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerChangeQuantityTrackingEvent = _DesignerChangeQuantityTrackingEvent;

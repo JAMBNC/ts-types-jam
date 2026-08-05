@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const FoilStampAdderCode = z.enum([
+const _FoilStampAdderCode = z.enum([
   "foil_stamp_1",
   "foil_stamp_2",
   "foil_stamp_3",
@@ -9,4 +9,7 @@ export const FoilStampAdderCode = z.enum([
   "foil_stamp_6",
   "foil_stamp_7",
 ]);
+type _FoilStampAdderCodeSchema = typeof _FoilStampAdderCode;
+export interface FoilStampAdderCodeSchema extends _FoilStampAdderCodeSchema {}
+export const FoilStampAdderCode: FoilStampAdderCodeSchema = _FoilStampAdderCode;
 export type FoilStampAdderCode = z.infer<typeof FoilStampAdderCode>;

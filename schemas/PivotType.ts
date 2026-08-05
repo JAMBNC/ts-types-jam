@@ -1,4 +1,7 @@
 import { z } from "zod";
 
-export const PivotType = z.enum(["primary", "secondary"]);
+const _PivotType = z.enum(["primary", "secondary"]);
+type _PivotTypeSchema = typeof _PivotType;
+export interface PivotTypeSchema extends _PivotTypeSchema {}
+export const PivotType: PivotTypeSchema = _PivotType;
 export type PivotType = z.infer<typeof PivotType>;

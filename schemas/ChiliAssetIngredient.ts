@@ -2,8 +2,7 @@ import { z } from "zod";
 import { Rect } from "./Rect.js";
 import { ViewLayer } from "./ViewLayer.js";
 
-/**An ingredient for representing chili asset images*/
-export const ChiliAssetIngredient = z
+const _ChiliAssetIngredient = z
   .object({
     type: z.literal("chiliAsset"),
     dropshadow: z.boolean().optional(),
@@ -28,4 +27,9 @@ export const ChiliAssetIngredient = z
   })
   .strict()
   .describe("An ingredient for representing chili asset images");
+type _ChiliAssetIngredientSchema = typeof _ChiliAssetIngredient;
+export interface ChiliAssetIngredientSchema extends _ChiliAssetIngredientSchema {}
+/**An ingredient for representing chili asset images*/
+export const ChiliAssetIngredient: ChiliAssetIngredientSchema =
+  _ChiliAssetIngredient;
 export type ChiliAssetIngredient = z.infer<typeof ChiliAssetIngredient>;

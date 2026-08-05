@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { ShoutOutType } from "./ShoutOutType.js";
-export const ShoutOut = z
+const _ShoutOut = z
     .object({
     type: ShoutOutType,
     display: z.string(),
@@ -8,3 +8,4 @@ export const ShoutOut = z
     value: z.string().optional(),
 })
     .passthrough();
+export const ShoutOut = _ShoutOut;

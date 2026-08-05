@@ -2,7 +2,7 @@ import { z } from "zod";
 import { QuantityStepIncrement } from "./QuantityStepIncrement.js";
 import { TierPrice } from "./TierPrice.js";
 
-export const PricingDataFeed = z
+const _PricingDataFeed = z
   .object({
     /**Product SKU. Identity for the feed object and S3 key.*/
     sku: z
@@ -74,4 +74,7 @@ export const PricingDataFeed = z
       .optional(),
   })
   .passthrough();
+type _PricingDataFeedSchema = typeof _PricingDataFeed;
+export interface PricingDataFeedSchema extends _PricingDataFeedSchema {}
+export const PricingDataFeed: PricingDataFeedSchema = _PricingDataFeed;
 export type PricingDataFeed = z.infer<typeof PricingDataFeed>;

@@ -1,21 +1,17 @@
 import { z } from "zod";
-export declare const UpdateTrackingMessage: z.ZodObject<{
+declare const _UpdateTrackingMessage: z.ZodObject<{
     version: z.ZodLiteral<"v1">;
     messageId: z.ZodString;
     correlationId: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
     channel: z.ZodString;
     sentAt: z.ZodString;
     kind: z.ZodLiteral<"update_tracking">;
-    payload: z.ZodObject<{
-        fulfillmentId: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-        fulfillmentOrderId: z.ZodString;
-        tracking: z.ZodObject<{
-            company: z.ZodUnion<readonly [z.ZodString, z.ZodNull]>;
-            numbers: z.ZodArray<z.ZodString>;
-            url: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
-        }, z.core.$strict>;
-        notifyCustomer: z.ZodDefault<z.ZodBoolean>;
-    }, z.core.$strict>;
+    payload: import("./UpdateTrackingPayload.js").UpdateTrackingPayloadSchema;
 }, z.core.$strict>;
+type _UpdateTrackingMessageSchema = typeof _UpdateTrackingMessage;
+export interface UpdateTrackingMessageSchema extends _UpdateTrackingMessageSchema {
+}
+export declare const UpdateTrackingMessage: UpdateTrackingMessageSchema;
 export type UpdateTrackingMessage = z.infer<typeof UpdateTrackingMessage>;
+export {};
 //# sourceMappingURL=UpdateTrackingMessage.d.ts.map

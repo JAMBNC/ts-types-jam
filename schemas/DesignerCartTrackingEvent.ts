@@ -4,7 +4,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerCartTrackingEvent = z
+const _DesignerCartTrackingEvent = z
   .object({
     event: z.literal("designer_cart"),
     payload: z
@@ -24,6 +24,10 @@ export const DesignerCartTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerCartTrackingEventSchema = typeof _DesignerCartTrackingEvent;
+export interface DesignerCartTrackingEventSchema extends _DesignerCartTrackingEventSchema {}
+export const DesignerCartTrackingEvent: DesignerCartTrackingEventSchema =
+  _DesignerCartTrackingEvent;
 export type DesignerCartTrackingEvent = z.infer<
   typeof DesignerCartTrackingEvent
 >;

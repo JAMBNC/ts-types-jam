@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
-export const FulfillmentTaxLine = z
+const _FulfillmentTaxLine = z
     .object({
     title: z.union([z.string(), z.null()]).optional(),
     /**Tax rate as a percentage, e.g. 8.25.*/
@@ -15,3 +15,4 @@ export const FulfillmentTaxLine = z
     amount: FulfillmentMoney,
 })
     .strict();
+export const FulfillmentTaxLine = _FulfillmentTaxLine;

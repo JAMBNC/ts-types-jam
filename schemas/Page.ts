@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**A page in the design containing ordered references to ingredients.*/
-export const Page = z
+const _Page = z
   .object({
     /**Unique identifier for this page.*/
     id: z.string().describe("Unique identifier for this page."),
@@ -14,4 +13,8 @@ export const Page = z
   .describe(
     "A page in the design containing ordered references to ingredients.",
   );
+type _PageSchema = typeof _Page;
+export interface PageSchema extends _PageSchema {}
+/**A page in the design containing ordered references to ingredients.*/
+export const Page: PageSchema = _Page;
 export type Page = z.infer<typeof Page>;

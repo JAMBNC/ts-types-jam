@@ -7,7 +7,7 @@ import { ProductUrl } from "./ProductUrl.js";
 import { PurchaseOptions } from "./PurchaseOptions.js";
 import { Taxonomy } from "./Taxonomy.js";
 
-export const Product = z
+const _Product = z
   .object({
     badges: z.array(z.string()).optional(),
     brand: z.string().optional(),
@@ -32,4 +32,7 @@ export const Product = z
     url: z.array(ProductUrl).min(1),
   })
   .passthrough();
+type _ProductSchema = typeof _Product;
+export interface ProductSchema extends _ProductSchema {}
+export const Product: ProductSchema = _Product;
 export type Product = z.infer<typeof Product>;

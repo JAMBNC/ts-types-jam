@@ -3,7 +3,7 @@ import { NonNegativeIntRange } from "./NonNegativeIntRange.js";
 import { QuantityStepIncrement } from "./QuantityStepIncrement.js";
 import { TierPrice } from "./TierPrice.js";
 
-export const PurchaseOptions = z
+const _PurchaseOptions = z
   .object({
     allowsSample: z.boolean(),
     customLeadTimeDayRange: NonNegativeIntRange.optional(),
@@ -27,4 +27,7 @@ export const PurchaseOptions = z
     toBeDiscontinued: z.boolean(),
   })
   .passthrough();
+type _PurchaseOptionsSchema = typeof _PurchaseOptions;
+export interface PurchaseOptionsSchema extends _PurchaseOptionsSchema {}
+export const PurchaseOptions: PurchaseOptionsSchema = _PurchaseOptions;
 export type PurchaseOptions = z.infer<typeof PurchaseOptions>;

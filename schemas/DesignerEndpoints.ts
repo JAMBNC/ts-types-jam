@@ -5,7 +5,7 @@ import { DesignerFontEndpoints } from "./DesignerFontEndpoints.js";
 import { DesignerImageEndpoints } from "./DesignerImageEndpoints.js";
 import { DesignerVendorEndpoints } from "./DesignerVendorEndpoints.js";
 
-export const DesignerEndpoints = z
+const _DesignerEndpoints = z
   .object({
     image: DesignerImageEndpoints,
     address: DesignerAddressEndpoints.optional(),
@@ -14,4 +14,7 @@ export const DesignerEndpoints = z
     vendor: DesignerVendorEndpoints.optional(),
   })
   .strict();
+type _DesignerEndpointsSchema = typeof _DesignerEndpoints;
+export interface DesignerEndpointsSchema extends _DesignerEndpointsSchema {}
+export const DesignerEndpoints: DesignerEndpointsSchema = _DesignerEndpoints;
 export type DesignerEndpoints = z.infer<typeof DesignerEndpoints>;

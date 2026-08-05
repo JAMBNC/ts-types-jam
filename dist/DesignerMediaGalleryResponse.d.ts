@@ -1,14 +1,14 @@
 import { z } from "zod";
-/**The response from the media gallery endpoint.*/
-export declare const DesignerMediaGalleryResponse: z.ZodObject<{
+declare const _DesignerMediaGalleryResponse: z.ZodObject<{
     page: z.ZodNumber;
     hasNextPage: z.ZodBoolean;
-    images: z.ZodArray<z.ZodObject<{
-        mediaId: z.ZodString;
-        thumbnailUrl: z.ZodString;
-        label: z.ZodString;
-        isVector: z.ZodBoolean;
-    }, z.core.$strict>>;
+    images: z.ZodArray<import("./DesignerMediaEntry.js").DesignerMediaEntrySchema>;
 }, z.core.$strict>;
+type _DesignerMediaGalleryResponseSchema = typeof _DesignerMediaGalleryResponse;
+export interface DesignerMediaGalleryResponseSchema extends _DesignerMediaGalleryResponseSchema {
+}
+/**The response from the media gallery endpoint.*/
+export declare const DesignerMediaGalleryResponse: DesignerMediaGalleryResponseSchema;
 export type DesignerMediaGalleryResponse = z.infer<typeof DesignerMediaGalleryResponse>;
+export {};
 //# sourceMappingURL=DesignerMediaGalleryResponse.d.ts.map

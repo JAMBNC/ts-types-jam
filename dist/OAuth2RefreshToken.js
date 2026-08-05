@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**OAuth2 refresh token grant for obtaining new access tokens.*/
-export const OAuth2RefreshToken = z
+const _OAuth2RefreshToken = z
     .object({
     type: z.literal("oauth2_refresh_token"),
     /**The OAuth2 client ID.*/
@@ -14,3 +13,5 @@ export const OAuth2RefreshToken = z
 })
     .strict()
     .describe("OAuth2 refresh token grant for obtaining new access tokens.");
+/**OAuth2 refresh token grant for obtaining new access tokens.*/
+export const OAuth2RefreshToken = _OAuth2RefreshToken;

@@ -4,7 +4,7 @@ import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerChangeQuantityTrackingEvent = z
+const _DesignerChangeQuantityTrackingEvent = z
   .object({
     event: z.literal("designer_change_quantity"),
     payload: z
@@ -22,6 +22,11 @@ export const DesignerChangeQuantityTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerChangeQuantityTrackingEventSchema =
+  typeof _DesignerChangeQuantityTrackingEvent;
+export interface DesignerChangeQuantityTrackingEventSchema extends _DesignerChangeQuantityTrackingEventSchema {}
+export const DesignerChangeQuantityTrackingEvent: DesignerChangeQuantityTrackingEventSchema =
+  _DesignerChangeQuantityTrackingEvent;
 export type DesignerChangeQuantityTrackingEvent = z.infer<
   typeof DesignerChangeQuantityTrackingEvent
 >;

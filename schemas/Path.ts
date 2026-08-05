@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { Point } from "./Point.js";
 
-/**A vector path consisting of ordered control points.*/
-export const Path = z
+const _Path = z
   .object({
     /**Whether the path is closed.*/
     closed: z.boolean().describe("Whether the path is closed."),
@@ -17,4 +16,8 @@ export const Path = z
   })
   .strict()
   .describe("A vector path consisting of ordered control points.");
+type _PathSchema = typeof _Path;
+export interface PathSchema extends _PathSchema {}
+/**A vector path consisting of ordered control points.*/
+export const Path: PathSchema = _Path;
 export type Path = z.infer<typeof Path>;

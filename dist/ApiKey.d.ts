@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**API key authentication, typically sent as a header or query parameter.*/
-export declare const ApiKey: z.ZodObject<{
+declare const _ApiKey: z.ZodObject<{
     type: z.ZodLiteral<"apiKey">;
     key: z.ZodString;
     headerName: z.ZodDefault<z.ZodString>;
@@ -9,5 +8,11 @@ export declare const ApiKey: z.ZodObject<{
         query: "query";
     }>>;
 }, z.core.$strict>;
+type _ApiKeySchema = typeof _ApiKey;
+export interface ApiKeySchema extends _ApiKeySchema {
+}
+/**API key authentication, typically sent as a header or query parameter.*/
+export declare const ApiKey: ApiKeySchema;
 export type ApiKey = z.infer<typeof ApiKey>;
+export {};
 //# sourceMappingURL=ApiKey.d.ts.map

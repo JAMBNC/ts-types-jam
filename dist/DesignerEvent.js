@@ -8,8 +8,7 @@ import { DesignerPersistenceEvent } from "./DesignerPersistenceEvent.js";
 import { DesignerReinitializeEvent } from "./DesignerReinitializeEvent.js";
 import { DesignerReviewEvent } from "./DesignerReviewEvent.js";
 import { DesignerSaveEvent } from "./DesignerSaveEvent.js";
-/**A discriminated union of events emitted by the designer, keyed by event type.*/
-export const DesignerEvent = z
+const _DesignerEvent = z
     .union([
     DesignerAnalyticsEvent,
     DesignerSaveEvent,
@@ -22,3 +21,5 @@ export const DesignerEvent = z
     DesignerReinitializeEvent,
 ])
     .describe("A discriminated union of events emitted by the designer, keyed by event type.");
+/**A discriminated union of events emitted by the designer, keyed by event type.*/
+export const DesignerEvent = _DesignerEvent;

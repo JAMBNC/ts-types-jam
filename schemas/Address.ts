@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const Address = z
+const _Address = z
   .object({
     city: z.string(),
     company: z.string().optional(),
@@ -14,4 +14,7 @@ export const Address = z
     streets: z.array(z.string()),
   })
   .passthrough();
+type _AddressSchema = typeof _Address;
+export interface AddressSchema extends _AddressSchema {}
+export const Address: AddressSchema = _Address;
 export type Address = z.infer<typeof Address>;

@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Schema for a single font used throughout the system.*/
-export const Font = z
+const _Font = z
     .object({
     /**The format of font file.*/
     format: z
@@ -47,3 +46,5 @@ export const Font = z
 })
     .strict()
     .describe("Schema for a single font used throughout the system.");
+/**Schema for a single font used throughout the system.*/
+export const Font = _Font;

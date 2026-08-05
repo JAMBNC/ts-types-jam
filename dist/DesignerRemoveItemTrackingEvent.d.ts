@@ -1,22 +1,17 @@
 import { z } from "zod";
-export declare const DesignerRemoveItemTrackingEvent: z.ZodObject<{
+declare const _DesignerRemoveItemTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_remove_item">;
     payload: z.ZodObject<{
-        type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            image: "image";
-            recipientAddress: "recipientAddress";
-            returnAddress: "returnAddress";
-            sRecipientAddress: "sRecipientAddress";
-            text: "text";
-            variableData: "variableData";
-        }>, z.ZodNull]>>;
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
+        type: z.ZodOptional<z.ZodUnion<readonly [import("./IngredientMetadataType.js").IngredientMetadataTypeSchema, z.ZodNull]>>;
+        designer: import("./DesignerCode.js").DesignerCodeSchema;
+        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
+type _DesignerRemoveItemTrackingEventSchema = typeof _DesignerRemoveItemTrackingEvent;
+export interface DesignerRemoveItemTrackingEventSchema extends _DesignerRemoveItemTrackingEventSchema {
+}
+export declare const DesignerRemoveItemTrackingEvent: DesignerRemoveItemTrackingEventSchema;
 export type DesignerRemoveItemTrackingEvent = z.infer<typeof DesignerRemoveItemTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerRemoveItemTrackingEvent.d.ts.map

@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const PaletteAllowlistItem = z
+const _PaletteAllowlistItem = z
     .object({
     /**The allowed palette's uuid*/
     uuid: z
@@ -30,3 +30,4 @@ export const PaletteAllowlistItem = z
         .optional(),
 })
     .strict();
+export const PaletteAllowlistItem = _PaletteAllowlistItem;

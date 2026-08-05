@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { ApiKey } from "./ApiKey.js";
 import { Auth } from "./Auth.js";
-export const DesignerAuth = z
+const _DesignerAuth = z
     .object({
     /**API key authentication, typically sent as a header or query parameter.*/
     chiliAuth: ApiKey,
@@ -9,3 +9,4 @@ export const DesignerAuth = z
     endpointAuth: Auth.optional(),
 })
     .strict();
+export const DesignerAuth = _DesignerAuth;

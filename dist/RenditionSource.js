@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Metadata about the source file for a rendition.*/
-export const RenditionSource = z
+const _RenditionSource = z
     .object({
     /**The colorspace of the source file (e.g. "sRGB").*/
     colorspace: z
@@ -29,3 +28,5 @@ export const RenditionSource = z
 })
     .strict()
     .describe("Metadata about the source file for a rendition.");
+/**Metadata about the source file for a rendition.*/
+export const RenditionSource = _RenditionSource;

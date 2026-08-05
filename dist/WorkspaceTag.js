@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const WorkspaceTag = z.enum(["foil", "whiteInk", "colorInk"]);
+const _WorkspaceTag = z.enum(["foil", "whiteInk", "colorInk"]);
+export const WorkspaceTag = _WorkspaceTag;

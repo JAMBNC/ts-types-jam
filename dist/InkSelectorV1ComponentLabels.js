@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const InkSelectorV1ComponentLabels = z
+const _InkSelectorV1ComponentLabels = z
     .object({
     /**The label used to display the current selected ink. Can utilize $currentInk variable*/
     "selectedInk.label": z
@@ -13,3 +13,4 @@ export const InkSelectorV1ComponentLabels = z
         .default("My Image Colors"),
 })
     .passthrough();
+export const InkSelectorV1ComponentLabels = _InkSelectorV1ComponentLabels;

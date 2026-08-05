@@ -11,8 +11,7 @@ import { DesignerMediaUploadRequest } from "./DesignerMediaUploadRequest.js";
 import { DesignerMediaUploadResponse } from "./DesignerMediaUploadResponse.js";
 import { DesignerSaveResponse } from "./DesignerSaveResponse.js";
 
-/**A union of all possible Designer REST API request and response types.*/
-export const DesignerRestPayloads = z
+const _DesignerRestPayloads = z
   .union([
     DesignerMediaGalleryResponse,
     DesignerMediaUploadRequest,
@@ -29,4 +28,9 @@ export const DesignerRestPayloads = z
   .describe(
     "A union of all possible Designer REST API request and response types.",
   );
+type _DesignerRestPayloadsSchema = typeof _DesignerRestPayloads;
+export interface DesignerRestPayloadsSchema extends _DesignerRestPayloadsSchema {}
+/**A union of all possible Designer REST API request and response types.*/
+export const DesignerRestPayloads: DesignerRestPayloadsSchema =
+  _DesignerRestPayloads;
 export type DesignerRestPayloads = z.infer<typeof DesignerRestPayloads>;

@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const Context = z.enum(["product_detail", "product_listing"]);
+const _Context = z.enum(["product_detail", "product_listing"]);
+export const Context = _Context;

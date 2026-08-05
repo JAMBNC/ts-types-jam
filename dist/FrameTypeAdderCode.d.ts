@@ -1,7 +1,12 @@
 import { z } from "zod";
-export declare const FrameTypeAdderCode: z.ZodEnum<{
+declare const _FrameTypeAdderCode: z.ZodEnum<{
     image: "image";
     text: "text";
 }>;
+type _FrameTypeAdderCodeSchema = typeof _FrameTypeAdderCode;
+export interface FrameTypeAdderCodeSchema extends _FrameTypeAdderCodeSchema {
+}
+export declare const FrameTypeAdderCode: FrameTypeAdderCodeSchema;
 export type FrameTypeAdderCode = z.infer<typeof FrameTypeAdderCode>;
+export {};
 //# sourceMappingURL=FrameTypeAdderCode.d.ts.map

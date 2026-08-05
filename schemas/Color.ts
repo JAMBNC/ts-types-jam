@@ -2,7 +2,7 @@ import { z } from "zod";
 import { ColorSpaceName } from "./ColorSpaceName.js";
 import { ColorValue } from "./ColorValue.js";
 
-export const Color = z
+const _Color = z
   .object({
     /**The normalized name for a color, used for spot name in spot applications.*/
     name: z
@@ -28,4 +28,7 @@ export const Color = z
       .describe("A unique UUID identifier for the color."),
   })
   .passthrough();
+type _ColorSchema = typeof _Color;
+export interface ColorSchema extends _ColorSchema {}
+export const Color: ColorSchema = _Color;
 export type Color = z.infer<typeof Color>;

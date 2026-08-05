@@ -2,7 +2,7 @@ import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
-export const DesignerMiscInteractionTrackingEvent = z
+const _DesignerMiscInteractionTrackingEvent = z
     .object({
     event: z.literal("designer_misc_interaction"),
     payload: z
@@ -18,3 +18,4 @@ export const DesignerMiscInteractionTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerMiscInteractionTrackingEvent = _DesignerMiscInteractionTrackingEvent;

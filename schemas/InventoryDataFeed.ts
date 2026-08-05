@@ -2,7 +2,7 @@ import { z } from "zod";
 import { LocationStock } from "./LocationStock.js";
 import { NonNegativeIntRange } from "./NonNegativeIntRange.js";
 
-export const InventoryDataFeed = z
+const _InventoryDataFeed = z
   .object({
     /**Product SKU. Identity for the feed object and S3 key.*/
     sku: z
@@ -44,4 +44,7 @@ export const InventoryDataFeed = z
       .optional(),
   })
   .passthrough();
+type _InventoryDataFeedSchema = typeof _InventoryDataFeed;
+export interface InventoryDataFeedSchema extends _InventoryDataFeedSchema {}
+export const InventoryDataFeed: InventoryDataFeedSchema = _InventoryDataFeed;
 export type InventoryDataFeed = z.infer<typeof InventoryDataFeed>;

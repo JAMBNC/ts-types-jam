@@ -2,8 +2,7 @@ import { z } from "zod";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**An ingredient that fills a rectangular area with a solid color.*/
-export const FillIngredient = z
+const _FillIngredient = z
     .object({
     type: z.literal("fill"),
     /**A color with name, hex code, and optional RGBA components.*/
@@ -29,3 +28,5 @@ export const FillIngredient = z
 })
     .strict()
     .describe("An ingredient that fills a rectangular area with a solid color.");
+/**An ingredient that fills a rectangular area with a solid color.*/
+export const FillIngredient = _FillIngredient;

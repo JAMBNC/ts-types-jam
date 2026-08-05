@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { RenditionSource } from "./RenditionSource.js";
-/**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
-export const RenditionChannel = z
+const _RenditionChannel = z
     .object({
     /**Metadata about the source file for a rendition.*/
     source: RenditionSource,
@@ -10,3 +9,5 @@ export const RenditionChannel = z
 })
     .strict()
     .describe("A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.");
+/**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
+export const RenditionChannel = _RenditionChannel;

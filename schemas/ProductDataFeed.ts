@@ -7,7 +7,7 @@ import { ProductCustomization } from "./ProductCustomization.js";
 import { ShoutOut } from "./ShoutOut.js";
 import { Taxonomy } from "./Taxonomy.js";
 
-export const ProductDataFeed = z
+const _ProductDataFeed = z
   .object({
     /**Product SKU. Identity for the feed object and S3 key.*/
     sku: z
@@ -104,4 +104,7 @@ export const ProductDataFeed = z
     googleShopping: GoogleShopping.optional(),
   })
   .passthrough();
+type _ProductDataFeedSchema = typeof _ProductDataFeed;
+export interface ProductDataFeedSchema extends _ProductDataFeedSchema {}
+export const ProductDataFeed: ProductDataFeedSchema = _ProductDataFeed;
 export type ProductDataFeed = z.infer<typeof ProductDataFeed>;

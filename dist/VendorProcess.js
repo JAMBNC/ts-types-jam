@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const VendorProcess = z
+const _VendorProcess = z
     .object({
     /**Color*/
     apiColorName: z.string().describe("Color").optional(),
@@ -15,3 +15,4 @@ export const VendorProcess = z
         .optional(),
 })
     .passthrough();
+export const VendorProcess = _VendorProcess;

@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const ResponseType = z.literal("merchantResponse");
+const _ResponseType = z.literal("merchantResponse");
+export const ResponseType = _ResponseType;

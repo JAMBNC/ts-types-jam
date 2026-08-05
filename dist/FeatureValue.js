@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { OptionUse } from "./OptionUse.js";
-export const FeatureValue = z
+const _FeatureValue = z
     .object({
     type: z.literal("featureValue"),
     availableOptions: z.array(AdderCodeEnum).optional(),
@@ -9,3 +9,4 @@ export const FeatureValue = z
     required: z.boolean().optional(),
 })
     .passthrough();
+export const FeatureValue = _FeatureValue;

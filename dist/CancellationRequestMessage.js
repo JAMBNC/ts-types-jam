@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { CancellationRequestPayload } from "./CancellationRequestPayload.js";
-/**A merchant requested cancellation of an accepted fulfillment order.*/
-export const CancellationRequestMessage = z
+const _CancellationRequestMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -13,3 +12,5 @@ export const CancellationRequestMessage = z
 })
     .strict()
     .describe("A merchant requested cancellation of an accepted fulfillment order.");
+/**A merchant requested cancellation of an accepted fulfillment order.*/
+export const CancellationRequestMessage = _CancellationRequestMessage;

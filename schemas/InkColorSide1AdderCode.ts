@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const InkColorSide1AdderCode = z.enum([
+const _InkColorSide1AdderCode = z.enum([
   "color_side1_blk",
   "color_side1_std",
   "color_side1_pms",
@@ -28,4 +28,8 @@ export const InkColorSide1AdderCode = z.enum([
   "color_side1_cmyk",
   "color_side1_white_ink",
 ]);
+type _InkColorSide1AdderCodeSchema = typeof _InkColorSide1AdderCode;
+export interface InkColorSide1AdderCodeSchema extends _InkColorSide1AdderCodeSchema {}
+export const InkColorSide1AdderCode: InkColorSide1AdderCodeSchema =
+  _InkColorSide1AdderCode;
 export type InkColorSide1AdderCode = z.infer<typeof InkColorSide1AdderCode>;

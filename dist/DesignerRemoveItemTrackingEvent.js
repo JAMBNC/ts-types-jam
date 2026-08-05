@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
-export const DesignerRemoveItemTrackingEvent = z
+const _DesignerRemoveItemTrackingEvent = z
     .object({
     event: z.literal("designer_remove_item"),
     payload: z
@@ -19,3 +19,4 @@ export const DesignerRemoveItemTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerRemoveItemTrackingEvent = _DesignerRemoveItemTrackingEvent;

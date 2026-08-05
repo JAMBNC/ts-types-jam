@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DefaultTrackingPayload = z
+const _DefaultTrackingPayload = z
   .object({
     /**An analytics/tracking code to help id the designer event source.*/
     designer: DesignerCode,
@@ -13,4 +13,8 @@ export const DefaultTrackingPayload = z
     deltaTime: DeltaTime,
   })
   .strict();
+type _DefaultTrackingPayloadSchema = typeof _DefaultTrackingPayload;
+export interface DefaultTrackingPayloadSchema extends _DefaultTrackingPayloadSchema {}
+export const DefaultTrackingPayload: DefaultTrackingPayloadSchema =
+  _DefaultTrackingPayload;
 export type DefaultTrackingPayload = z.infer<typeof DefaultTrackingPayload>;

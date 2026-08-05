@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The response from the media upload endpoint when the upload fails.*/
-export const DesignerMediaUploadErrorResponse = z
+const _DesignerMediaUploadErrorResponse = z
     .object({
     success: z.literal(false),
     /**A message describing why the upload failed.*/
@@ -8,3 +7,5 @@ export const DesignerMediaUploadErrorResponse = z
 })
     .strict()
     .describe("The response from the media upload endpoint when the upload fails.");
+/**The response from the media upload endpoint when the upload fails.*/
+export const DesignerMediaUploadErrorResponse = _DesignerMediaUploadErrorResponse;

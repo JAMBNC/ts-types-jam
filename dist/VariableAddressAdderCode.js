@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const VariableAddressAdderCode = z.enum([
+const _VariableAddressAdderCode = z.enum([
     "varaddress_side1",
     "varaddress_side2",
 ]);
+export const VariableAddressAdderCode = _VariableAddressAdderCode;

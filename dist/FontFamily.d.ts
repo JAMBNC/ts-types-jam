@@ -1,28 +1,13 @@
 import { z } from "zod";
-/**A collection of fonts that make up a font family.*/
-export declare const FontFamily: z.ZodObject<{
+declare const _FontFamily: z.ZodObject<{
     familyName: z.ZodString;
-    fonts: z.ZodArray<z.ZodObject<{
-        format: z.ZodOptional<z.ZodEnum<{
-            otf: "otf";
-            ttf: "ttf";
-        }>>;
-        family: z.ZodString;
-        name: z.ZodOptional<z.ZodString>;
-        previewImageUrl: z.ZodOptional<z.ZodString>;
-        priority: z.ZodOptional<z.ZodNumber>;
-        style: z.ZodEnum<{
-            bold: "bold";
-            bold_italic: "bold_italic";
-            italic: "italic";
-            light: "light";
-            light_italic: "light_italic";
-            regular: "regular";
-        }>;
-        url: z.ZodOptional<z.ZodString>;
-        uuid: z.ZodString;
-        id: z.ZodOptional<z.ZodString>;
-    }, z.core.$strict>>;
+    fonts: z.ZodArray<import("./Font.js").FontSchema>;
 }, z.core.$strict>;
+type _FontFamilySchema = typeof _FontFamily;
+export interface FontFamilySchema extends _FontFamilySchema {
+}
+/**A collection of fonts that make up a font family.*/
+export declare const FontFamily: FontFamilySchema;
 export type FontFamily = z.infer<typeof FontFamily>;
+export {};
 //# sourceMappingURL=FontFamily.d.ts.map

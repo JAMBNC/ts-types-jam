@@ -1,37 +1,16 @@
 import { z } from "zod";
-/**A single customer address book.*/
-export declare const DesignerAddressBook: z.ZodObject<{
+declare const _DesignerAddressBook: z.ZodObject<{
     bookId: z.ZodOptional<z.ZodString>;
     name: z.ZodOptional<z.ZodString>;
-    addresses: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        addressId: z.ZodOptional<z.ZodString>;
-        bookId: z.ZodOptional<z.ZodString>;
-        isCompany: z.ZodOptional<z.ZodBoolean>;
-        nameLines: z.ZodOptional<z.ZodArray<z.ZodString>>;
-        streets: z.ZodOptional<z.ZodArray<z.ZodString>>;
-        city: z.ZodOptional<z.ZodString>;
-        state: z.ZodOptional<z.ZodString>;
-        postal: z.ZodOptional<z.ZodString>;
-        country: z.ZodOptional<z.ZodString>;
-        firstName: z.ZodOptional<z.ZodString>;
-        lastName: z.ZodOptional<z.ZodString>;
-        createdAt: z.ZodOptional<z.ZodString>;
-    }, z.core.$strict>>>;
-    measurementAddress: z.ZodOptional<z.ZodObject<{
-        addressId: z.ZodOptional<z.ZodString>;
-        bookId: z.ZodOptional<z.ZodString>;
-        isCompany: z.ZodOptional<z.ZodBoolean>;
-        nameLines: z.ZodOptional<z.ZodArray<z.ZodString>>;
-        streets: z.ZodOptional<z.ZodArray<z.ZodString>>;
-        city: z.ZodOptional<z.ZodString>;
-        state: z.ZodOptional<z.ZodString>;
-        postal: z.ZodOptional<z.ZodString>;
-        country: z.ZodOptional<z.ZodString>;
-        firstName: z.ZodOptional<z.ZodString>;
-        lastName: z.ZodOptional<z.ZodString>;
-        createdAt: z.ZodOptional<z.ZodString>;
-    }, z.core.$strict>>;
+    addresses: z.ZodOptional<z.ZodArray<import("./DesignerAddressBookItem.js").DesignerAddressBookItemSchema>>;
+    measurementAddress: z.ZodOptional<import("./DesignerAddressBookItem.js").DesignerAddressBookItemSchema>;
     lastModified: z.ZodOptional<z.ZodString>;
 }, z.core.$strict>;
+type _DesignerAddressBookSchema = typeof _DesignerAddressBook;
+export interface DesignerAddressBookSchema extends _DesignerAddressBookSchema {
+}
+/**A single customer address book.*/
+export declare const DesignerAddressBook: DesignerAddressBookSchema;
 export type DesignerAddressBook = z.infer<typeof DesignerAddressBook>;
+export {};
 //# sourceMappingURL=DesignerAddressBook.d.ts.map

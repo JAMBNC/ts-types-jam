@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { DesignerMediaEntry } from "./DesignerMediaEntry.js";
 
-/**The response from the media gallery endpoint.*/
-export const DesignerMediaGalleryResponse = z
+const _DesignerMediaGalleryResponse = z
   .object({
     /**The current page number.*/
     page: z.number().int().gte(1).describe("The current page number."),
@@ -17,6 +16,11 @@ export const DesignerMediaGalleryResponse = z
   })
   .strict()
   .describe("The response from the media gallery endpoint.");
+type _DesignerMediaGalleryResponseSchema = typeof _DesignerMediaGalleryResponse;
+export interface DesignerMediaGalleryResponseSchema extends _DesignerMediaGalleryResponseSchema {}
+/**The response from the media gallery endpoint.*/
+export const DesignerMediaGalleryResponse: DesignerMediaGalleryResponseSchema =
+  _DesignerMediaGalleryResponse;
 export type DesignerMediaGalleryResponse = z.infer<
   typeof DesignerMediaGalleryResponse
 >;

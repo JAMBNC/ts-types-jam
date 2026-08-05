@@ -1,21 +1,15 @@
 import { z } from "zod";
-export declare const Customer: z.ZodObject<{
-    addresses: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        city: z.ZodString;
-        company: z.ZodOptional<z.ZodString>;
-        country: z.ZodOptional<z.ZodString>;
-        firstName: z.ZodOptional<z.ZodString>;
-        identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-        lastName: z.ZodOptional<z.ZodString>;
-        phone: z.ZodOptional<z.ZodString>;
-        postal: z.ZodOptional<z.ZodString>;
-        region: z.ZodOptional<z.ZodString>;
-        streets: z.ZodArray<z.ZodString>;
-    }, z.core.$loose>>>;
+declare const _Customer: z.ZodObject<{
+    addresses: z.ZodOptional<z.ZodArray<import("./Address.js").AddressSchema>>;
     email: z.ZodOptional<z.ZodString>;
     firstName: z.ZodOptional<z.ZodString>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     lastName: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;
+type _CustomerSchema = typeof _Customer;
+export interface CustomerSchema extends _CustomerSchema {
+}
+export declare const Customer: CustomerSchema;
 export type Customer = z.infer<typeof Customer>;
+export {};
 //# sourceMappingURL=Customer.d.ts.map

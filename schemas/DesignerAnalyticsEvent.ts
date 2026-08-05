@@ -24,8 +24,7 @@ import { DesignerRemoveItemTrackingEvent } from "./DesignerRemoveItemTrackingEve
 import { DesignerReviewDesignTrackingEvent } from "./DesignerReviewDesignTrackingEvent.js";
 import { DesignerToolInteractionTrackingEvent } from "./DesignerToolInteractionTrackingEvent.js";
 
-/**An analytics/tracking event emitted by the designer.*/
-export const DesignerAnalyticsEvent = z
+const _DesignerAnalyticsEvent = z
   .object({
     type: z.literal("analytics"),
     payload: z.union([
@@ -57,4 +56,9 @@ export const DesignerAnalyticsEvent = z
   })
   .strict()
   .describe("An analytics/tracking event emitted by the designer.");
+type _DesignerAnalyticsEventSchema = typeof _DesignerAnalyticsEvent;
+export interface DesignerAnalyticsEventSchema extends _DesignerAnalyticsEventSchema {}
+/**An analytics/tracking event emitted by the designer.*/
+export const DesignerAnalyticsEvent: DesignerAnalyticsEventSchema =
+  _DesignerAnalyticsEvent;
 export type DesignerAnalyticsEvent = z.infer<typeof DesignerAnalyticsEvent>;

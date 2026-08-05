@@ -2,7 +2,7 @@ import { z } from "zod";
 import { Pivot } from "./Pivot.js";
 import { ProductListing } from "./ProductListing.js";
 import { ShoutOut } from "./ShoutOut.js";
-export const DisplayGroup = z
+const _DisplayGroup = z
     .object({
     id: z.string(),
     identifiers: z.record(z.string(), z.any()).optional(),
@@ -11,3 +11,4 @@ export const DisplayGroup = z
     shoutOuts: z.array(ShoutOut).optional(),
 })
     .passthrough();
+export const DisplayGroup = _DisplayGroup;

@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const Type = z.literal("Tag");
+const _Type = z.literal("Tag");
+export const Type = _Type;

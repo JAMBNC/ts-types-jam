@@ -1,5 +1,6 @@
 import { z } from "zod";
-export const ReturnAddressAdderCode = z.enum([
+const _ReturnAddressAdderCode = z.enum([
     "retaddress_side1",
     "retaddress_side2",
 ]);
+export const ReturnAddressAdderCode = _ReturnAddressAdderCode;

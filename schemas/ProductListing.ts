@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const ProductListing = z
+const _ProductListing = z
   .object({
     isCustomizable: z.boolean(),
     mainImageUrl: z.string().optional(),
@@ -9,4 +9,7 @@ export const ProductListing = z
     sku: z.string(),
   })
   .passthrough();
+type _ProductListingSchema = typeof _ProductListing;
+export interface ProductListingSchema extends _ProductListingSchema {}
+export const ProductListing: ProductListingSchema = _ProductListing;
 export type ProductListing = z.infer<typeof ProductListing>;

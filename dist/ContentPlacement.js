@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { PositionType } from "./PositionType.js";
-export const ContentPlacement = z
+const _ContentPlacement = z
     .object({
     type: z.string().optional(),
     side: z.string().optional(),
@@ -10,3 +10,4 @@ export const ContentPlacement = z
     yType: PositionType.optional(),
 })
     .passthrough();
+export const ContentPlacement = _ContentPlacement;

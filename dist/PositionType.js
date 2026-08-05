@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const PositionType = z.enum(["relative", "absolute"]);
+const _PositionType = z.enum(["relative", "absolute"]);
+export const PositionType = _PositionType;

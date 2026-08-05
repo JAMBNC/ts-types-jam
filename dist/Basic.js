@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Basic authentication using a username and password.*/
-export const Basic = z
+const _Basic = z
     .object({
     type: z.literal("basic"),
     /**The username for authentication.*/
@@ -10,3 +9,5 @@ export const Basic = z
 })
     .strict()
     .describe("Basic authentication using a username and password.");
+/**Basic authentication using a username and password.*/
+export const Basic = _Basic;

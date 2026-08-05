@@ -1,14 +1,12 @@
 import { z } from "zod";
-export declare const DesignerAddImageTrackingEvent: z.ZodObject<{
+declare const _DesignerAddImageTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_add_image">;
-    payload: z.ZodObject<{
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
-    }, z.core.$strict>;
+    payload: import("./DefaultTrackingPayload.js").DefaultTrackingPayloadSchema;
 }, z.core.$strict>;
+type _DesignerAddImageTrackingEventSchema = typeof _DesignerAddImageTrackingEvent;
+export interface DesignerAddImageTrackingEventSchema extends _DesignerAddImageTrackingEventSchema {
+}
+export declare const DesignerAddImageTrackingEvent: DesignerAddImageTrackingEventSchema;
 export type DesignerAddImageTrackingEvent = z.infer<typeof DesignerAddImageTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerAddImageTrackingEvent.d.ts.map

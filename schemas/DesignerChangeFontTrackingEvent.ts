@@ -4,7 +4,7 @@ import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerChangeFontTrackingEvent = z
+const _DesignerChangeFontTrackingEvent = z
   .object({
     event: z.literal("designer_change_font"),
     payload: z
@@ -22,6 +22,11 @@ export const DesignerChangeFontTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerChangeFontTrackingEventSchema =
+  typeof _DesignerChangeFontTrackingEvent;
+export interface DesignerChangeFontTrackingEventSchema extends _DesignerChangeFontTrackingEventSchema {}
+export const DesignerChangeFontTrackingEvent: DesignerChangeFontTrackingEventSchema =
+  _DesignerChangeFontTrackingEvent;
 export type DesignerChangeFontTrackingEvent = z.infer<
   typeof DesignerChangeFontTrackingEvent
 >;

@@ -3,7 +3,7 @@ import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { ContentPlacement } from "./ContentPlacement.js";
 import { DesignerConfigFeatureValue } from "./DesignerConfigFeatureValue.js";
 import { ProcessRestriction } from "./ProcessRestriction.js";
-export const DesignerConfig = z
+const _DesignerConfig = z
     .object({
     adders: z.record(z.string(), z.string()).superRefine((value, ctx) => {
         for (const key in value) {
@@ -114,6 +114,26 @@ export const DesignerConfig = z
         })
             .passthrough()
             .optional(),
+        sign: z
+            .object({
+            accessory: DesignerConfigFeatureValue.optional(),
+            backing: DesignerConfigFeatureValue.optional(),
+            fastener: DesignerConfigFeatureValue.optional(),
+            wallholder: DesignerConfigFeatureValue.optional(),
+        })
+            .passthrough()
+            .optional(),
+        slits: z
+            .object({
+            certificate: DesignerConfigFeatureValue.optional(),
+            flap: DesignerConfigFeatureValue.optional(),
+            frontCover: DesignerConfigFeatureValue.optional(),
+            left: DesignerConfigFeatureValue.optional(),
+            middle: DesignerConfigFeatureValue.optional(),
+            right: DesignerConfigFeatureValue.optional(),
+        })
+            .passthrough()
+            .optional(),
     })
         .passthrough()
         .superRefine((value, ctx) => {
@@ -125,6 +145,8 @@ export const DesignerConfig = z
             "layout",
             "proof",
             "roll",
+            "sign",
+            "slits",
         ]);
         for (const key in value) {
             if (!defined_keys.has(key)) {
@@ -148,3 +170,4 @@ export const DesignerConfig = z
     vendors: z.record(z.string(), z.array(AdderCodeEnum)),
 })
     .passthrough();
+export const DesignerConfig = _DesignerConfig;

@@ -1,7 +1,8 @@
 import { z } from "zod";
-export const BadgePosition = z.enum([
+const _BadgePosition = z.enum([
     "topRight",
     "bottomRight",
     "bottomLeft",
     "topLeft",
 ]);
+export const BadgePosition = _BadgePosition;

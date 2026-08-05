@@ -1,8 +1,13 @@
 import { z } from "zod";
-export declare const ProductUrlMetaDataDesigner: z.ZodEnum<{
+declare const _ProductUrlMetaDataDesigner: z.ZodEnum<{
     chili: "chili";
     hermes: "hermes";
     luma: "luma";
 }>;
+type _ProductUrlMetaDataDesignerSchema = typeof _ProductUrlMetaDataDesigner;
+export interface ProductUrlMetaDataDesignerSchema extends _ProductUrlMetaDataDesignerSchema {
+}
+export declare const ProductUrlMetaDataDesigner: ProductUrlMetaDataDesignerSchema;
 export type ProductUrlMetaDataDesigner = z.infer<typeof ProductUrlMetaDataDesigner>;
+export {};
 //# sourceMappingURL=ProductUrlMetaDataDesigner.d.ts.map

@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const Provider = z.enum(["FedEx", "UPS", "USPS", "Other"]);
+const _Provider = z.enum(["FedEx", "UPS", "USPS", "Other"]);
+export const Provider = _Provider;

@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Address } from "./Address.js";
-export const Customer = z
+const _Customer = z
     .object({
     addresses: z.array(Address).optional(),
     email: z.string().optional(),
@@ -9,3 +9,4 @@ export const Customer = z
     lastName: z.string().optional(),
 })
     .passthrough();
+export const Customer = _Customer;

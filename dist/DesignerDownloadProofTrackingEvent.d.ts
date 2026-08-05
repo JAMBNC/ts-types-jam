@@ -1,14 +1,12 @@
 import { z } from "zod";
-export declare const DesignerDownloadProofTrackingEvent: z.ZodObject<{
+declare const _DesignerDownloadProofTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_download_proof">;
-    payload: z.ZodObject<{
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
-    }, z.core.$strict>;
+    payload: import("./DefaultTrackingPayload.js").DefaultTrackingPayloadSchema;
 }, z.core.$strict>;
+type _DesignerDownloadProofTrackingEventSchema = typeof _DesignerDownloadProofTrackingEvent;
+export interface DesignerDownloadProofTrackingEventSchema extends _DesignerDownloadProofTrackingEventSchema {
+}
+export declare const DesignerDownloadProofTrackingEvent: DesignerDownloadProofTrackingEventSchema;
 export type DesignerDownloadProofTrackingEvent = z.infer<typeof DesignerDownloadProofTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerDownloadProofTrackingEvent.d.ts.map

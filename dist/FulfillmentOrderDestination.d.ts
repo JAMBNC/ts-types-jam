@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The ship-to address on a fulfillment order. Extra fields are allowed to tolerate channel-specific additions.*/
-export declare const FulfillmentOrderDestination: z.ZodObject<{
+declare const _FulfillmentOrderDestination: z.ZodObject<{
     firstName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
     lastName: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
     company: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
@@ -13,5 +12,11 @@ export declare const FulfillmentOrderDestination: z.ZodObject<{
     phone: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
     email: z.ZodOptional<z.ZodUnion<readonly [z.ZodString, z.ZodNull]>>;
 }, z.core.$loose>;
+type _FulfillmentOrderDestinationSchema = typeof _FulfillmentOrderDestination;
+export interface FulfillmentOrderDestinationSchema extends _FulfillmentOrderDestinationSchema {
+}
+/**The ship-to address on a fulfillment order. Extra fields are allowed to tolerate channel-specific additions.*/
+export declare const FulfillmentOrderDestination: FulfillmentOrderDestinationSchema;
 export type FulfillmentOrderDestination = z.infer<typeof FulfillmentOrderDestination>;
+export {};
 //# sourceMappingURL=FulfillmentOrderDestination.d.ts.map

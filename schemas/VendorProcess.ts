@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const VendorProcess = z
+const _VendorProcess = z
   .object({
     /**Color*/
     apiColorName: z.string().describe("Color").optional(),
@@ -16,4 +16,7 @@ export const VendorProcess = z
       .optional(),
   })
   .passthrough();
+type _VendorProcessSchema = typeof _VendorProcess;
+export interface VendorProcessSchema extends _VendorProcessSchema {}
+export const VendorProcess: VendorProcessSchema = _VendorProcess;
 export type VendorProcess = z.infer<typeof VendorProcess>;

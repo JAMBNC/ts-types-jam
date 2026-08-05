@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const SwatchType = z.enum(["TEXT", "IMAGE", "RGB"]);
+const _SwatchType = z.enum(["TEXT", "IMAGE", "RGB"]);
+export const SwatchType = _SwatchType;

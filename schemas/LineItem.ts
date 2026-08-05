@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const LineItem = z
+const _LineItem = z
   .object({
     children: z.array(z.any()).optional(),
     discountAmount: z.number().gte(0).default(0),
@@ -16,4 +16,7 @@ export const LineItem = z
     weightInPounds: z.number().gte(0).default(0),
   })
   .passthrough();
+type _LineItemSchema = typeof _LineItem;
+export interface LineItemSchema extends _LineItemSchema {}
+export const LineItem: LineItemSchema = _LineItem;
 export type LineItem = z.infer<typeof LineItem>;

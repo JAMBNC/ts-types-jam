@@ -5,7 +5,7 @@ import { LineItem } from "./LineItem.js";
 import { Payment } from "./Payment.js";
 import { ShippingInfo } from "./ShippingInfo.js";
 import { Status } from "./Status.js";
-export const Order = z
+const _Order = z
     .object({
     billingAddress: Address,
     comments: z.string().optional(),
@@ -35,3 +35,4 @@ export const Order = z
     total: z.number().gte(0).default(0),
 })
     .passthrough();
+export const Order = _Order;

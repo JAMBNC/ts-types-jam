@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
-/**A straight line control point with in-handle, out-handle, and anchor position.*/
-export const LinePoint = z
+const _LinePoint = z
     .object({
     type: z.literal("line"),
     ix: Dimension,
@@ -13,3 +12,5 @@ export const LinePoint = z
 })
     .strict()
     .describe("A straight line control point with in-handle, out-handle, and anchor position.");
+/**A straight line control point with in-handle, out-handle, and anchor position.*/
+export const LinePoint = _LinePoint;

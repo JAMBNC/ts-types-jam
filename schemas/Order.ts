@@ -6,7 +6,7 @@ import { Payment } from "./Payment.js";
 import { ShippingInfo } from "./ShippingInfo.js";
 import { Status } from "./Status.js";
 
-export const Order = z
+const _Order = z
   .object({
     billingAddress: Address,
     comments: z.string().optional(),
@@ -38,4 +38,7 @@ export const Order = z
     total: z.number().gte(0).default(0),
   })
   .passthrough();
+type _OrderSchema = typeof _Order;
+export interface OrderSchema extends _OrderSchema {}
+export const Order: OrderSchema = _Order;
 export type Order = z.infer<typeof Order>;

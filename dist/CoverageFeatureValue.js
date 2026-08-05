@@ -2,7 +2,7 @@ import { z } from "zod";
 import { CoverageAdderCodeEnum } from "./CoverageAdderCodeEnum.js";
 import { Dimension } from "./Dimension.js";
 import { OptionUse } from "./OptionUse.js";
-export const CoverageFeatureValue = z
+const _CoverageFeatureValue = z
     .object({
     type: z.literal("coverageFeatureValue"),
     availableOptions: z.array(CoverageAdderCodeEnum).optional(),
@@ -10,3 +10,4 @@ export const CoverageFeatureValue = z
     optionUse: OptionUse.optional(),
 })
     .passthrough();
+export const CoverageFeatureValue = _CoverageFeatureValue;

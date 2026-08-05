@@ -1,9 +1,10 @@
 import { z } from "zod";
-/**Event emitted when the user requests a login.*/
-export const DesignerLoginEvent = z
+const _DesignerLoginEvent = z
     .object({
     type: z.literal("login"),
     payload: z.record(z.string(), z.never()),
 })
     .strict()
     .describe("Event emitted when the user requests a login.");
+/**Event emitted when the user requests a login.*/
+export const DesignerLoginEvent = _DesignerLoginEvent;

@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerDesignSavedTrackingEvent = z
+const _DesignerDesignSavedTrackingEvent = z
   .object({
     event: z.literal("designer_design_saved"),
     payload: z
@@ -23,6 +23,11 @@ export const DesignerDesignSavedTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerDesignSavedTrackingEventSchema =
+  typeof _DesignerDesignSavedTrackingEvent;
+export interface DesignerDesignSavedTrackingEventSchema extends _DesignerDesignSavedTrackingEventSchema {}
+export const DesignerDesignSavedTrackingEvent: DesignerDesignSavedTrackingEventSchema =
+  _DesignerDesignSavedTrackingEvent;
 export type DesignerDesignSavedTrackingEvent = z.infer<
   typeof DesignerDesignSavedTrackingEvent
 >;

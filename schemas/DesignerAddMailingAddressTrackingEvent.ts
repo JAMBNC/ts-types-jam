@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerAddMailingAddressTrackingEvent = z
+const _DesignerAddMailingAddressTrackingEvent = z
   .object({
     event: z.literal("designer_add_mailing_address"),
     payload: z
@@ -19,6 +19,11 @@ export const DesignerAddMailingAddressTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerAddMailingAddressTrackingEventSchema =
+  typeof _DesignerAddMailingAddressTrackingEvent;
+export interface DesignerAddMailingAddressTrackingEventSchema extends _DesignerAddMailingAddressTrackingEventSchema {}
+export const DesignerAddMailingAddressTrackingEvent: DesignerAddMailingAddressTrackingEventSchema =
+  _DesignerAddMailingAddressTrackingEvent;
 export type DesignerAddMailingAddressTrackingEvent = z.infer<
   typeof DesignerAddMailingAddressTrackingEvent
 >;

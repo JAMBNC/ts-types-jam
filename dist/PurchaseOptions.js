@@ -2,7 +2,7 @@ import { z } from "zod";
 import { NonNegativeIntRange } from "./NonNegativeIntRange.js";
 import { QuantityStepIncrement } from "./QuantityStepIncrement.js";
 import { TierPrice } from "./TierPrice.js";
-export const PurchaseOptions = z
+const _PurchaseOptions = z
     .object({
     allowsSample: z.boolean(),
     customLeadTimeDayRange: NonNegativeIntRange.optional(),
@@ -26,3 +26,4 @@ export const PurchaseOptions = z
     toBeDiscontinued: z.boolean(),
 })
     .passthrough();
+export const PurchaseOptions = _PurchaseOptions;

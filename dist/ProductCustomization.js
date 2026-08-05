@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { DesignerConfig } from "./DesignerConfig.js";
-export const ProductCustomization = z
+const _ProductCustomization = z
     .object({
     designerConfig: DesignerConfig.optional(),
     prebuiltConfigurationId: z.string().optional(),
@@ -11,3 +11,4 @@ export const ProductCustomization = z
     styleType: z.string().optional(),
 })
     .passthrough();
+export const ProductCustomization = _ProductCustomization;

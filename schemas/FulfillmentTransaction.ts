@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
 
-/**A payment transaction on the order.*/
-export const FulfillmentTransaction = z
+const _FulfillmentTransaction = z
   .object({
     /**e.g. SALE, AUTHORIZATION, CAPTURE, REFUND, VOID.*/
     kind: z
@@ -18,4 +17,9 @@ export const FulfillmentTransaction = z
   })
   .strict()
   .describe("A payment transaction on the order.");
+type _FulfillmentTransactionSchema = typeof _FulfillmentTransaction;
+export interface FulfillmentTransactionSchema extends _FulfillmentTransactionSchema {}
+/**A payment transaction on the order.*/
+export const FulfillmentTransaction: FulfillmentTransactionSchema =
+  _FulfillmentTransaction;
 export type FulfillmentTransaction = z.infer<typeof FulfillmentTransaction>;

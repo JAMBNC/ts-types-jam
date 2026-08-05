@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { SwatchType } from "./SwatchType.js";
-export const PivotValue = z
+const _PivotValue = z
     .object({
     helpText: z.string().optional(),
     label: z.string(),
@@ -9,3 +9,4 @@ export const PivotValue = z
     swatchValue: z.string().optional(),
 })
     .passthrough();
+export const PivotValue = _PivotValue;

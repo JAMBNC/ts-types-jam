@@ -3,7 +3,7 @@ import { PaletteAllowlistItem } from "./PaletteAllowlistItem.js";
 import { ProcessAllowlistItem } from "./ProcessAllowlistItem.js";
 import { WorkspaceTag } from "./WorkspaceTag.js";
 
-export const Workspace = z
+const _Workspace = z
   .object({
     /**Workspace tags for triggering very specific logic or triggering built-in expansions to a minified workspace.*/
     tags: z
@@ -21,4 +21,7 @@ export const Workspace = z
       .optional(),
   })
   .strict();
+type _WorkspaceSchema = typeof _Workspace;
+export interface WorkspaceSchema extends _WorkspaceSchema {}
+export const Workspace: WorkspaceSchema = _Workspace;
 export type Workspace = z.infer<typeof Workspace>;

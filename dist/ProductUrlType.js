@@ -1,6 +1,3 @@
 import { z } from "zod";
-export const ProductUrlType = z.enum([
-    "product",
-    "customProduct",
-    "yourLogoHere",
-]);
+const _ProductUrlType = z.enum(["product", "customProduct", "yourLogoHere"]);
+export const ProductUrlType = _ProductUrlType;

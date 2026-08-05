@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const PricingDataFeed: z.ZodObject<{
+declare const _PricingDataFeed: z.ZodObject<{
     sku: z.ZodString;
     generatedAt: z.ZodOptional<z.ZodString>;
     basePrice: z.ZodOptional<z.ZodNumber>;
@@ -8,20 +8,16 @@ export declare const PricingDataFeed: z.ZodObject<{
     compareAtPrice: z.ZodOptional<z.ZodNumber>;
     onSale: z.ZodOptional<z.ZodBoolean>;
     pricePercentOff: z.ZodOptional<z.ZodNumber>;
-    tierPrices: z.ZodArray<z.ZodObject<{
-        discountReason: z.ZodOptional<z.ZodString>;
-        price: z.ZodNumber;
-        pricePercentOff: z.ZodOptional<z.ZodNumber>;
-        salePrice: z.ZodOptional<z.ZodNumber>;
-        startingAtQty: z.ZodNumber;
-    }, z.core.$loose>>;
+    tierPrices: z.ZodArray<import("./TierPrice.js").TierPriceSchema>;
     minSaleQty: z.ZodOptional<z.ZodNumber>;
     minCustomizationQty: z.ZodOptional<z.ZodNumber>;
-    quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        requiredStepIncrement: z.ZodNumber;
-        startingAtQty: z.ZodNumber;
-    }, z.core.$loose>>>;
+    quantityStepIncrements: z.ZodOptional<z.ZodArray<import("./QuantityStepIncrement.js").QuantityStepIncrementSchema>>;
     suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
 }, z.core.$loose>;
+type _PricingDataFeedSchema = typeof _PricingDataFeed;
+export interface PricingDataFeedSchema extends _PricingDataFeedSchema {
+}
+export declare const PricingDataFeed: PricingDataFeedSchema;
 export type PricingDataFeed = z.infer<typeof PricingDataFeed>;
+export {};
 //# sourceMappingURL=PricingDataFeed.d.ts.map

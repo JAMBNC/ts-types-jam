@@ -3,7 +3,7 @@ import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
-export const DesignerReviewDesignTrackingEvent = z
+const _DesignerReviewDesignTrackingEvent = z
     .object({
     event: z.literal("designer_review_design"),
     payload: z
@@ -23,3 +23,4 @@ export const DesignerReviewDesignTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerReviewDesignTrackingEvent = _DesignerReviewDesignTrackingEvent;

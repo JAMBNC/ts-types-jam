@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const DesignerImageEndpoints = z
+const _DesignerImageEndpoints = z
   .object({
     /**The endpoint URL for fetching the users image gallery. (uses the DesignerAuth.endpointAuth)*/
     gallery: z
@@ -32,4 +32,8 @@ export const DesignerImageEndpoints = z
       ),
   })
   .strict();
+type _DesignerImageEndpointsSchema = typeof _DesignerImageEndpoints;
+export interface DesignerImageEndpointsSchema extends _DesignerImageEndpointsSchema {}
+export const DesignerImageEndpoints: DesignerImageEndpointsSchema =
+  _DesignerImageEndpoints;
 export type DesignerImageEndpoints = z.infer<typeof DesignerImageEndpoints>;

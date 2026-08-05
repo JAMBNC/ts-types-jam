@@ -3,8 +3,7 @@ import { Dimension } from "./Dimension.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**A circle ingredient with fill and stroke.*/
-export const CircleIngredient = z
+const _CircleIngredient = z
     .object({
     type: z.literal("circle"),
     dropshadow: z.boolean().optional(),
@@ -36,3 +35,5 @@ export const CircleIngredient = z
 })
     .strict()
     .describe("A circle ingredient with fill and stroke.");
+/**A circle ingredient with fill and stroke.*/
+export const CircleIngredient = _CircleIngredient;

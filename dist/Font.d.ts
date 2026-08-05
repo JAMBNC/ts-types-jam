@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Schema for a single font used throughout the system.*/
-export declare const Font: z.ZodObject<{
+declare const _Font: z.ZodObject<{
     format: z.ZodOptional<z.ZodEnum<{
         otf: "otf";
         ttf: "ttf";
@@ -21,5 +20,11 @@ export declare const Font: z.ZodObject<{
     uuid: z.ZodString;
     id: z.ZodOptional<z.ZodString>;
 }, z.core.$strict>;
+type _FontSchema = typeof _Font;
+export interface FontSchema extends _FontSchema {
+}
+/**Schema for a single font used throughout the system.*/
+export declare const Font: FontSchema;
 export type Font = z.infer<typeof Font>;
+export {};
 //# sourceMappingURL=Font.d.ts.map

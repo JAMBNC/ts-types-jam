@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**A bearer token that is sent in the Authorization header.*/
-export const SimpleBearer = z
+const _SimpleBearer = z
   .object({
     type: z.literal("bearer"),
     /**The bearer token value.*/
@@ -9,4 +8,8 @@ export const SimpleBearer = z
   })
   .strict()
   .describe("A bearer token that is sent in the Authorization header.");
+type _SimpleBearerSchema = typeof _SimpleBearer;
+export interface SimpleBearerSchema extends _SimpleBearerSchema {}
+/**A bearer token that is sent in the Authorization header.*/
+export const SimpleBearer: SimpleBearerSchema = _SimpleBearer;
 export type SimpleBearer = z.infer<typeof SimpleBearer>;

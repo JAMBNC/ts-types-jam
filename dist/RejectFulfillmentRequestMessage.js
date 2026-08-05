@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { RejectFulfillmentRequestPayload } from "./RejectFulfillmentRequestPayload.js";
-export const RejectFulfillmentRequestMessage = z
+const _RejectFulfillmentRequestMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -11,3 +11,4 @@ export const RejectFulfillmentRequestMessage = z
     payload: RejectFulfillmentRequestPayload,
 })
     .strict();
+export const RejectFulfillmentRequestMessage = _RejectFulfillmentRequestMessage;

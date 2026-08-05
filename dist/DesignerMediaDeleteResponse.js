@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The response from the design media delete endpoint.*/
-export const DesignerMediaDeleteResponse = z
+const _DesignerMediaDeleteResponse = z
     .object({
     /**Whether the delete was successful.*/
     success: z.boolean().describe("Whether the delete was successful."),
@@ -12,3 +11,5 @@ export const DesignerMediaDeleteResponse = z
 })
     .strict()
     .describe("The response from the design media delete endpoint.");
+/**The response from the design media delete endpoint.*/
+export const DesignerMediaDeleteResponse = _DesignerMediaDeleteResponse;

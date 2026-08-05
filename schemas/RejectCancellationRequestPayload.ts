@@ -1,13 +1,18 @@
 import { z } from "zod";
 import { ExternalId } from "./ExternalId.js";
 
-export const RejectCancellationRequestPayload = z
+const _RejectCancellationRequestPayload = z
   .object({
     /**An id meaningful to the source channel, treated as an opaque string by the backend (e.g. a Shopify GID like gid://shopify/FulfillmentOrder/123).*/
     fulfillmentOrderId: ExternalId,
     message: z.union([z.string(), z.null()]).optional(),
   })
   .strict();
+type _RejectCancellationRequestPayloadSchema =
+  typeof _RejectCancellationRequestPayload;
+export interface RejectCancellationRequestPayloadSchema extends _RejectCancellationRequestPayloadSchema {}
+export const RejectCancellationRequestPayload: RejectCancellationRequestPayloadSchema =
+  _RejectCancellationRequestPayload;
 export type RejectCancellationRequestPayload = z.infer<
   typeof RejectCancellationRequestPayload
 >;

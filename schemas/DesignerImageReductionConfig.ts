@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const DesignerImageReductionConfig = z
+const _DesignerImageReductionConfig = z
   .object({
     /**If the designer will attempt image reduction or not*/
     enabled: z
@@ -29,6 +29,10 @@ export const DesignerImageReductionConfig = z
   })
   .passthrough()
   .default({});
+type _DesignerImageReductionConfigSchema = typeof _DesignerImageReductionConfig;
+export interface DesignerImageReductionConfigSchema extends _DesignerImageReductionConfigSchema {}
+export const DesignerImageReductionConfig: DesignerImageReductionConfigSchema =
+  _DesignerImageReductionConfig;
 export type DesignerImageReductionConfig = z.infer<
   typeof DesignerImageReductionConfig
 >;

@@ -2,7 +2,7 @@ import { z } from "zod";
 import { AttributeRenderPreference } from "./AttributeRenderPreference.js";
 import { PredefinedAttributeValue } from "./PredefinedAttributeValue.js";
 
-export const Attribute = z
+const _Attribute = z
   .object({
     code: z.string(),
     displayForCustomer: z.boolean(),
@@ -14,4 +14,7 @@ export const Attribute = z
     usedForProductSelection: z.boolean(),
   })
   .passthrough();
+type _AttributeSchema = typeof _Attribute;
+export interface AttributeSchema extends _AttributeSchema {}
+export const Attribute: AttributeSchema = _Attribute;
 export type Attribute = z.infer<typeof Attribute>;

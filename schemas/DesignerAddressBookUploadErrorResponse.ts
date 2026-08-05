@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**The error response from uploading an address book.*/
-export const DesignerAddressBookUploadErrorResponse = z
+const _DesignerAddressBookUploadErrorResponse = z
   .object({
     /**A message describing why the upload failed.*/
     error: z
@@ -12,6 +11,12 @@ export const DesignerAddressBookUploadErrorResponse = z
   })
   .strict()
   .describe("The error response from uploading an address book.");
+type _DesignerAddressBookUploadErrorResponseSchema =
+  typeof _DesignerAddressBookUploadErrorResponse;
+export interface DesignerAddressBookUploadErrorResponseSchema extends _DesignerAddressBookUploadErrorResponseSchema {}
+/**The error response from uploading an address book.*/
+export const DesignerAddressBookUploadErrorResponse: DesignerAddressBookUploadErrorResponseSchema =
+  _DesignerAddressBookUploadErrorResponse;
 export type DesignerAddressBookUploadErrorResponse = z.infer<
   typeof DesignerAddressBookUploadErrorResponse
 >;

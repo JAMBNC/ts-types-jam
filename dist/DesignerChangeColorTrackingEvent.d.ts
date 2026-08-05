@@ -1,40 +1,19 @@
 import { z } from "zod";
-export declare const DesignerChangeColorTrackingEvent: z.ZodObject<{
+declare const _DesignerChangeColorTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_change_color">;
     payload: z.ZodObject<{
-        type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            image: "image";
-            recipientAddress: "recipientAddress";
-            returnAddress: "returnAddress";
-            sRecipientAddress: "sRecipientAddress";
-            text: "text";
-            variableData: "variableData";
-        }>, z.ZodNull]>>;
-        oldColors: z.ZodArray<z.ZodObject<{
-            name: z.ZodString;
-            representations: z.ZodObject<{
-                sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-                US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-                CIELAB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            }, z.core.$strip>;
-            uuid: z.ZodString;
-        }, z.core.$loose>>;
-        newColors: z.ZodArray<z.ZodObject<{
-            name: z.ZodString;
-            representations: z.ZodObject<{
-                sRGB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-                US_Web_Coated_SWOP_v2: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-                CIELAB: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-            }, z.core.$strip>;
-            uuid: z.ZodString;
-        }, z.core.$loose>>;
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
+        type: z.ZodOptional<z.ZodUnion<readonly [import("./IngredientMetadataType.js").IngredientMetadataTypeSchema, z.ZodNull]>>;
+        oldColors: z.ZodArray<import("./Color.js").ColorSchema>;
+        newColors: z.ZodArray<import("./Color.js").ColorSchema>;
+        designer: import("./DesignerCode.js").DesignerCodeSchema;
+        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
+type _DesignerChangeColorTrackingEventSchema = typeof _DesignerChangeColorTrackingEvent;
+export interface DesignerChangeColorTrackingEventSchema extends _DesignerChangeColorTrackingEventSchema {
+}
+export declare const DesignerChangeColorTrackingEvent: DesignerChangeColorTrackingEventSchema;
 export type DesignerChangeColorTrackingEvent = z.infer<typeof DesignerChangeColorTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerChangeColorTrackingEvent.d.ts.map

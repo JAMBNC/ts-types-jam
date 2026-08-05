@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const LocationStock = z
+const _LocationStock = z
   .object({
     /**Fulfillment source code, e.g. "northvale" or "syracuse".*/
     sourceCode: z
@@ -10,4 +10,7 @@ export const LocationStock = z
     inStock: z.boolean().optional(),
   })
   .passthrough();
+type _LocationStockSchema = typeof _LocationStock;
+export interface LocationStockSchema extends _LocationStockSchema {}
+export const LocationStock: LocationStockSchema = _LocationStock;
 export type LocationStock = z.infer<typeof LocationStock>;

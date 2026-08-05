@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { ExternalId } from "./ExternalId.js";
-export const FulfillmentCustomer = z
+const _FulfillmentCustomer = z
     .object({
     /**An id meaningful to the source channel, treated as an opaque string by the backend (e.g. a Shopify GID like gid://shopify/FulfillmentOrder/123).*/
     id: ExternalId,
@@ -10,3 +10,4 @@ export const FulfillmentCustomer = z
     phone: z.union([z.string(), z.null()]).optional(),
 })
     .strict();
+export const FulfillmentCustomer = _FulfillmentCustomer;

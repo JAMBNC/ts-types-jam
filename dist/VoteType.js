@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const VoteType = z.enum(["helpful", "unhelpful"]);
+const _VoteType = z.enum(["helpful", "unhelpful"]);
+export const VoteType = _VoteType;

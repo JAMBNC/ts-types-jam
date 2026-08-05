@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { UpdateTrackingPayload } from "./UpdateTrackingPayload.js";
-export const UpdateTrackingMessage = z
+const _UpdateTrackingMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -12,3 +12,4 @@ export const UpdateTrackingMessage = z
     payload: UpdateTrackingPayload,
 })
     .strict();
+export const UpdateTrackingMessage = _UpdateTrackingMessage;

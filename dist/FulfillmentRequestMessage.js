@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { FulfillmentRequestPayload } from "./FulfillmentRequestPayload.js";
-/**A merchant requested fulfillment; the mapper hydrated the fulfillment orders.*/
-export const FulfillmentRequestMessage = z
+const _FulfillmentRequestMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -13,3 +12,5 @@ export const FulfillmentRequestMessage = z
 })
     .strict()
     .describe("A merchant requested fulfillment; the mapper hydrated the fulfillment orders.");
+/**A merchant requested fulfillment; the mapper hydrated the fulfillment orders.*/
+export const FulfillmentRequestMessage = _FulfillmentRequestMessage;

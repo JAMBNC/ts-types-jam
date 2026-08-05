@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { UpdateTrackingPayload } from "./UpdateTrackingPayload.js";
 
-export const UpdateTrackingMessage = z
+const _UpdateTrackingMessage = z
   .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -13,4 +13,8 @@ export const UpdateTrackingMessage = z
     payload: UpdateTrackingPayload,
   })
   .strict();
+type _UpdateTrackingMessageSchema = typeof _UpdateTrackingMessage;
+export interface UpdateTrackingMessageSchema extends _UpdateTrackingMessageSchema {}
+export const UpdateTrackingMessage: UpdateTrackingMessageSchema =
+  _UpdateTrackingMessage;
 export type UpdateTrackingMessage = z.infer<typeof UpdateTrackingMessage>;

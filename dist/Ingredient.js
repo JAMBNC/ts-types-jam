@@ -9,8 +9,7 @@ import { LineIngredient } from "./LineIngredient.js";
 import { RectangleIngredient } from "./RectangleIngredient.js";
 import { ShapeIngredient } from "./ShapeIngredient.js";
 import { TextIngredient } from "./TextIngredient.js";
-/**A discriminated union of all supported ingredient types.*/
-export const Ingredient = z
+const _Ingredient = z
     .discriminatedUnion("type", [
     DataIngredient,
     FillIngredient,
@@ -24,3 +23,5 @@ export const Ingredient = z
     ChiliAssetIngredient,
 ])
     .describe("A discriminated union of all supported ingredient types.");
+/**A discriminated union of all supported ingredient types.*/
+export const Ingredient = _Ingredient;

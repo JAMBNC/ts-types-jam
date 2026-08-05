@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**OAuth2 refresh token grant for obtaining new access tokens.*/
-export const OAuth2RefreshToken = z
+const _OAuth2RefreshToken = z
   .object({
     type: z.literal("oauth2_refresh_token"),
     /**The OAuth2 client ID.*/
@@ -15,4 +14,8 @@ export const OAuth2RefreshToken = z
   })
   .strict()
   .describe("OAuth2 refresh token grant for obtaining new access tokens.");
+type _OAuth2RefreshTokenSchema = typeof _OAuth2RefreshToken;
+export interface OAuth2RefreshTokenSchema extends _OAuth2RefreshTokenSchema {}
+/**OAuth2 refresh token grant for obtaining new access tokens.*/
+export const OAuth2RefreshToken: OAuth2RefreshTokenSchema = _OAuth2RefreshToken;
 export type OAuth2RefreshToken = z.infer<typeof OAuth2RefreshToken>;

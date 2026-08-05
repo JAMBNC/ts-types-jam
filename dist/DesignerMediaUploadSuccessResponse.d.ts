@@ -1,13 +1,13 @@
 import { z } from "zod";
-/**The response from the media upload endpoint when the upload succeeds.*/
-export declare const DesignerMediaUploadSuccessResponse: z.ZodObject<{
+declare const _DesignerMediaUploadSuccessResponse: z.ZodObject<{
     success: z.ZodLiteral<true>;
-    mediaInfo: z.ZodObject<{
-        mediaId: z.ZodString;
-        thumbnailUrl: z.ZodString;
-        label: z.ZodString;
-        isVector: z.ZodBoolean;
-    }, z.core.$strict>;
+    mediaInfo: import("./DesignerMediaEntry.js").DesignerMediaEntrySchema;
 }, z.core.$strict>;
+type _DesignerMediaUploadSuccessResponseSchema = typeof _DesignerMediaUploadSuccessResponse;
+export interface DesignerMediaUploadSuccessResponseSchema extends _DesignerMediaUploadSuccessResponseSchema {
+}
+/**The response from the media upload endpoint when the upload succeeds.*/
+export declare const DesignerMediaUploadSuccessResponse: DesignerMediaUploadSuccessResponseSchema;
 export type DesignerMediaUploadSuccessResponse = z.infer<typeof DesignerMediaUploadSuccessResponse>;
+export {};
 //# sourceMappingURL=DesignerMediaUploadSuccessResponse.d.ts.map

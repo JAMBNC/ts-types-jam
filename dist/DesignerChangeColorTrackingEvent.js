@@ -4,7 +4,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
-export const DesignerChangeColorTrackingEvent = z
+const _DesignerChangeColorTrackingEvent = z
     .object({
     event: z.literal("designer_change_color"),
     payload: z
@@ -22,3 +22,4 @@ export const DesignerChangeColorTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerChangeColorTrackingEvent = _DesignerChangeColorTrackingEvent;

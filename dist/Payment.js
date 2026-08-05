@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Method } from "./Method.js";
-export const Payment = z
+const _Payment = z
     .object({
     amount: z.number().gte(0).optional(),
     billToName: z.string().optional(),
@@ -11,3 +11,4 @@ export const Payment = z
     status: z.string().optional(),
 })
     .passthrough();
+export const Payment = _Payment;

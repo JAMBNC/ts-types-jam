@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { SetInventoryPayload } from "./SetInventoryPayload.js";
-/**The backend asserts current stock for a set of SKUs; the mapper applies them at its channel's fulfillment-service location. Not tied to a fulfillment order.*/
-export const SetInventoryMessage = z
+const _SetInventoryMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -14,3 +13,5 @@ export const SetInventoryMessage = z
 })
     .strict()
     .describe("The backend asserts current stock for a set of SKUs; the mapper applies them at its channel's fulfillment-service location. Not tied to a fulfillment order.");
+/**The backend asserts current stock for a set of SKUs; the mapper applies them at its channel's fulfillment-service location. Not tied to a fulfillment order.*/
+export const SetInventoryMessage = _SetInventoryMessage;

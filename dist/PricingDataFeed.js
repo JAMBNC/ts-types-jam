@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { QuantityStepIncrement } from "./QuantityStepIncrement.js";
 import { TierPrice } from "./TierPrice.js";
-export const PricingDataFeed = z
+const _PricingDataFeed = z
     .object({
     /**Product SKU. Identity for the feed object and S3 key.*/
     sku: z
@@ -63,3 +63,4 @@ export const PricingDataFeed = z
         .optional(),
 })
     .passthrough();
+export const PricingDataFeed = _PricingDataFeed;

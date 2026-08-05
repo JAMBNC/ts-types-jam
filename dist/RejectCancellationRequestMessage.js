@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { RejectCancellationRequestPayload } from "./RejectCancellationRequestPayload.js";
-export const RejectCancellationRequestMessage = z
+const _RejectCancellationRequestMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -11,3 +11,4 @@ export const RejectCancellationRequestMessage = z
     payload: RejectCancellationRequestPayload,
 })
     .strict();
+export const RejectCancellationRequestMessage = _RejectCancellationRequestMessage;

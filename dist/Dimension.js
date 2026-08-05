@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Unit } from "./Unit.js";
-export const Dimension = z
+const _Dimension = z
     .object({
     /**The unit of measurement for dimensions.*/
     u: Unit,
@@ -8,3 +8,4 @@ export const Dimension = z
     v: z.number().describe("The numeric value."),
 })
     .passthrough();
+export const Dimension = _Dimension;

@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { RenditionSource } from "./RenditionSource.js";
 
-/**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
-export const RenditionChannel = z
+const _RenditionChannel = z
   .object({
     /**Metadata about the source file for a rendition.*/
     source: RenditionSource,
@@ -13,4 +12,8 @@ export const RenditionChannel = z
   .describe(
     "A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.",
   );
+type _RenditionChannelSchema = typeof _RenditionChannel;
+export interface RenditionChannelSchema extends _RenditionChannelSchema {}
+/**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
+export const RenditionChannel: RenditionChannelSchema = _RenditionChannel;
 export type RenditionChannel = z.infer<typeof RenditionChannel>;

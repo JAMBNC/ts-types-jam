@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Process } from "./Process.js";
-export const ProcessAllowlistItem = z
+const _ProcessAllowlistItem = z
     .object({
     /**Defines how visual content is transferred to the medium.*/
     process: Process,
@@ -16,3 +16,4 @@ export const ProcessAllowlistItem = z
         .optional(),
 })
     .strict();
+export const ProcessAllowlistItem = _ProcessAllowlistItem;

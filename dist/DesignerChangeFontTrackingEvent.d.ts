@@ -1,24 +1,19 @@
 import { z } from "zod";
-export declare const DesignerChangeFontTrackingEvent: z.ZodObject<{
+declare const _DesignerChangeFontTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_change_font">;
     payload: z.ZodObject<{
-        type: z.ZodOptional<z.ZodUnion<readonly [z.ZodEnum<{
-            image: "image";
-            recipientAddress: "recipientAddress";
-            returnAddress: "returnAddress";
-            sRecipientAddress: "sRecipientAddress";
-            text: "text";
-            variableData: "variableData";
-        }>, z.ZodNull]>>;
+        type: z.ZodOptional<z.ZodUnion<readonly [import("./IngredientMetadataType.js").IngredientMetadataTypeSchema, z.ZodNull]>>;
         oldFont: z.ZodString;
         newFont: z.ZodString;
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
+        designer: import("./DesignerCode.js").DesignerCodeSchema;
+        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
+type _DesignerChangeFontTrackingEventSchema = typeof _DesignerChangeFontTrackingEvent;
+export interface DesignerChangeFontTrackingEventSchema extends _DesignerChangeFontTrackingEventSchema {
+}
+export declare const DesignerChangeFontTrackingEvent: DesignerChangeFontTrackingEventSchema;
 export type DesignerChangeFontTrackingEvent = z.infer<typeof DesignerChangeFontTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerChangeFontTrackingEvent.d.ts.map

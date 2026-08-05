@@ -1,4 +1,7 @@
 import { z } from "zod";
 
-export const Alignment = z.enum(["left", "center", "right"]);
+const _Alignment = z.enum(["left", "center", "right"]);
+type _AlignmentSchema = typeof _Alignment;
+export interface AlignmentSchema extends _AlignmentSchema {}
+export const Alignment: AlignmentSchema = _Alignment;
 export type Alignment = z.infer<typeof Alignment>;

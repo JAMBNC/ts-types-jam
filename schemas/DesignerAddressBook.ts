@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { DesignerAddressBookItem } from "./DesignerAddressBookItem.js";
 
-/**A single customer address book.*/
-export const DesignerAddressBook = z
+const _DesignerAddressBook = z
   .object({
     /**The unique identifier for the address book.*/
     bookId: z
@@ -27,4 +26,9 @@ export const DesignerAddressBook = z
   })
   .strict()
   .describe("A single customer address book.");
+type _DesignerAddressBookSchema = typeof _DesignerAddressBook;
+export interface DesignerAddressBookSchema extends _DesignerAddressBookSchema {}
+/**A single customer address book.*/
+export const DesignerAddressBook: DesignerAddressBookSchema =
+  _DesignerAddressBook;
 export type DesignerAddressBook = z.infer<typeof DesignerAddressBook>;

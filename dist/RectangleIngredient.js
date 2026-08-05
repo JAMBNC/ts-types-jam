@@ -3,8 +3,7 @@ import { Dimension } from "./Dimension.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**A rectangular ingredient with optional fill, stroke, and corner radius.*/
-export const RectangleIngredient = z
+const _RectangleIngredient = z
     .object({
     type: z.literal("rectangle"),
     dropshadow: z.boolean().optional(),
@@ -36,3 +35,5 @@ export const RectangleIngredient = z
 })
     .strict()
     .describe("A rectangular ingredient with optional fill, stroke, and corner radius.");
+/**A rectangular ingredient with optional fill, stroke, and corner radius.*/
+export const RectangleIngredient = _RectangleIngredient;

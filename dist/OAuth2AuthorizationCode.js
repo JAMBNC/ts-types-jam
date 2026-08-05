@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**OAuth2 authorization code grant for user-delegated authentication.*/
-export const OAuth2AuthorizationCode = z
+const _OAuth2AuthorizationCode = z
     .object({
     type: z.literal("oauth2_authorization_code"),
     /**The OAuth2 client ID.*/
@@ -27,3 +26,5 @@ export const OAuth2AuthorizationCode = z
 })
     .strict()
     .describe("OAuth2 authorization code grant for user-delegated authentication.");
+/**OAuth2 authorization code grant for user-delegated authentication.*/
+export const OAuth2AuthorizationCode = _OAuth2AuthorizationCode;

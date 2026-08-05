@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { CancellationRequestPayload } from "./CancellationRequestPayload.js";
 
-/**A merchant requested cancellation of an accepted fulfillment order.*/
-export const CancellationRequestMessage = z
+const _CancellationRequestMessage = z
   .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -16,6 +15,11 @@ export const CancellationRequestMessage = z
   .describe(
     "A merchant requested cancellation of an accepted fulfillment order.",
   );
+type _CancellationRequestMessageSchema = typeof _CancellationRequestMessage;
+export interface CancellationRequestMessageSchema extends _CancellationRequestMessageSchema {}
+/**A merchant requested cancellation of an accepted fulfillment order.*/
+export const CancellationRequestMessage: CancellationRequestMessageSchema =
+  _CancellationRequestMessage;
 export type CancellationRequestMessage = z.infer<
   typeof CancellationRequestMessage
 >;

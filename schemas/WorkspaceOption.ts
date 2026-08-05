@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { Workspace } from "./Workspace.js";
 
-export const WorkspaceOption = z
+const _WorkspaceOption = z
   .object({
     /**The workspace option uuid*/
     uuid: z
@@ -27,4 +27,7 @@ export const WorkspaceOption = z
       ),
   })
   .strict();
+type _WorkspaceOptionSchema = typeof _WorkspaceOption;
+export interface WorkspaceOptionSchema extends _WorkspaceOptionSchema {}
+export const WorkspaceOption: WorkspaceOptionSchema = _WorkspaceOption;
 export type WorkspaceOption = z.infer<typeof WorkspaceOption>;

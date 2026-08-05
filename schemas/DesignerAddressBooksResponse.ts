@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**Response for getting customer address books.*/
-export const DesignerAddressBooksResponse = z
+const _DesignerAddressBooksResponse = z
   .object({
     /**The list of address books for the customer.*/
     addressBooks: z
@@ -25,6 +24,11 @@ export const DesignerAddressBooksResponse = z
   })
   .strict()
   .describe("Response for getting customer address books.");
+type _DesignerAddressBooksResponseSchema = typeof _DesignerAddressBooksResponse;
+export interface DesignerAddressBooksResponseSchema extends _DesignerAddressBooksResponseSchema {}
+/**Response for getting customer address books.*/
+export const DesignerAddressBooksResponse: DesignerAddressBooksResponseSchema =
+  _DesignerAddressBooksResponse;
 export type DesignerAddressBooksResponse = z.infer<
   typeof DesignerAddressBooksResponse
 >;

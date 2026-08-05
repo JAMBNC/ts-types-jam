@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**The response from the design save endpoint.*/
-export const DesignerSaveResponse = z
+const _DesignerSaveResponse = z
   .object({
     /**Whether the save was successful.*/
     success: z.boolean().describe("Whether the save was successful."),
@@ -12,4 +11,9 @@ export const DesignerSaveResponse = z
   })
   .strict()
   .describe("The response from the design save endpoint.");
+type _DesignerSaveResponseSchema = typeof _DesignerSaveResponse;
+export interface DesignerSaveResponseSchema extends _DesignerSaveResponseSchema {}
+/**The response from the design save endpoint.*/
+export const DesignerSaveResponse: DesignerSaveResponseSchema =
+  _DesignerSaveResponse;
 export type DesignerSaveResponse = z.infer<typeof DesignerSaveResponse>;

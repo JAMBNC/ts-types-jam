@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The request body for the media upload endpoint.*/
-export const DesignerMediaUploadRequest = z
+const _DesignerMediaUploadRequest = z
     .object({
     /**The media upload payload.*/
     data: z
@@ -25,3 +24,5 @@ export const DesignerMediaUploadRequest = z
 })
     .strict()
     .describe("The request body for the media upload endpoint.");
+/**The request body for the media upload endpoint.*/
+export const DesignerMediaUploadRequest = _DesignerMediaUploadRequest;

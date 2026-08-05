@@ -1,61 +1,18 @@
 import { z } from "zod";
-/**A bezier curve control point with in-handle, out-handle, and anchor position.*/
-export declare const BezierPoint: z.ZodObject<{
+declare const _BezierPoint: z.ZodObject<{
     type: z.ZodLiteral<"bezier">;
-    ix: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    iy: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    ox: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    oy: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    x: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
-    y: z.ZodObject<{
-        u: z.ZodEnum<{
-            in: "in";
-            mm: "mm";
-            pt: "pt";
-            px: "px";
-        }>;
-        v: z.ZodNumber;
-    }, z.core.$loose>;
+    ix: import("./Dimension.js").DimensionSchema;
+    iy: import("./Dimension.js").DimensionSchema;
+    ox: import("./Dimension.js").DimensionSchema;
+    oy: import("./Dimension.js").DimensionSchema;
+    x: import("./Dimension.js").DimensionSchema;
+    y: import("./Dimension.js").DimensionSchema;
 }, z.core.$strict>;
+type _BezierPointSchema = typeof _BezierPoint;
+export interface BezierPointSchema extends _BezierPointSchema {
+}
+/**A bezier curve control point with in-handle, out-handle, and anchor position.*/
+export declare const BezierPoint: BezierPointSchema;
 export type BezierPoint = z.infer<typeof BezierPoint>;
+export {};
 //# sourceMappingURL=BezierPoint.d.ts.map

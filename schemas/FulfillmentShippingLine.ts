@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
 
-export const FulfillmentShippingLine = z
+const _FulfillmentShippingLine = z
   .object({
     title: z.union([z.string(), z.null()]).optional(),
     code: z.union([z.string(), z.null()]).optional(),
@@ -16,4 +16,8 @@ export const FulfillmentShippingLine = z
     price: z.union([FulfillmentMoney, z.null()]).optional(),
   })
   .strict();
+type _FulfillmentShippingLineSchema = typeof _FulfillmentShippingLine;
+export interface FulfillmentShippingLineSchema extends _FulfillmentShippingLineSchema {}
+export const FulfillmentShippingLine: FulfillmentShippingLineSchema =
+  _FulfillmentShippingLine;
 export type FulfillmentShippingLine = z.infer<typeof FulfillmentShippingLine>;

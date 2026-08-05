@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**Event emitted when the user proceeds to review their design.*/
-export const DesignerReviewEvent = z
+const _DesignerReviewEvent = z
   .object({
     type: z.literal("review"),
     payload: z
@@ -17,4 +16,9 @@ export const DesignerReviewEvent = z
   })
   .strict()
   .describe("Event emitted when the user proceeds to review their design.");
+type _DesignerReviewEventSchema = typeof _DesignerReviewEvent;
+export interface DesignerReviewEventSchema extends _DesignerReviewEventSchema {}
+/**Event emitted when the user proceeds to review their design.*/
+export const DesignerReviewEvent: DesignerReviewEventSchema =
+  _DesignerReviewEvent;
 export type DesignerReviewEvent = z.infer<typeof DesignerReviewEvent>;

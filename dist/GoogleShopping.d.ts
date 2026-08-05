@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Google Shopping / merchant metafields.*/
-export declare const GoogleShopping: z.ZodObject<{
+declare const _GoogleShopping: z.ZodObject<{
     productCategory: z.ZodOptional<z.ZodString>;
     color: z.ZodOptional<z.ZodString>;
     size: z.ZodOptional<z.ZodString>;
@@ -11,5 +10,11 @@ export declare const GoogleShopping: z.ZodObject<{
     customLabel3: z.ZodOptional<z.ZodString>;
     customLabel4: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;
+type _GoogleShoppingSchema = typeof _GoogleShopping;
+export interface GoogleShoppingSchema extends _GoogleShoppingSchema {
+}
+/**Google Shopping / merchant metafields.*/
+export declare const GoogleShopping: GoogleShoppingSchema;
 export type GoogleShopping = z.infer<typeof GoogleShopping>;
+export {};
 //# sourceMappingURL=GoogleShopping.d.ts.map

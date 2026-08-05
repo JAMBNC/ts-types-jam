@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Workspace } from "./Workspace.js";
-export const WorkspaceOption = z
+const _WorkspaceOption = z
     .object({
     /**The workspace option uuid*/
     uuid: z
@@ -22,3 +22,4 @@ export const WorkspaceOption = z
         .describe("Url for the banner image used for this option on the frontend"),
 })
     .strict();
+export const WorkspaceOption = _WorkspaceOption;

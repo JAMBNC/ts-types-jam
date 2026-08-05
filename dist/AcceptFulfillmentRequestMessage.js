@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { AcceptFulfillmentRequestPayload } from "./AcceptFulfillmentRequestPayload.js";
-export const AcceptFulfillmentRequestMessage = z
+const _AcceptFulfillmentRequestMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -11,3 +11,4 @@ export const AcceptFulfillmentRequestMessage = z
     payload: AcceptFulfillmentRequestPayload,
 })
     .strict();
+export const AcceptFulfillmentRequestMessage = _AcceptFulfillmentRequestMessage;

@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const ProductUrlMetaDataDesigner = z.enum(["chili", "luma", "hermes"]);
+const _ProductUrlMetaDataDesigner = z.enum(["chili", "luma", "hermes"]);
+export const ProductUrlMetaDataDesigner = _ProductUrlMetaDataDesigner;

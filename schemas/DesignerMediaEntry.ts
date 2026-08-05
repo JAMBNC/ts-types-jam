@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**A single media item in the user's gallery.*/
-export const DesignerMediaEntry = z
+const _DesignerMediaEntry = z
   .object({
     /**The unique identifier for the media item.*/
     mediaId: z.string().describe("The unique identifier for the media item."),
@@ -21,4 +20,8 @@ export const DesignerMediaEntry = z
   })
   .strict()
   .describe("A single media item in the user's gallery.");
+type _DesignerMediaEntrySchema = typeof _DesignerMediaEntry;
+export interface DesignerMediaEntrySchema extends _DesignerMediaEntrySchema {}
+/**A single media item in the user's gallery.*/
+export const DesignerMediaEntry: DesignerMediaEntrySchema = _DesignerMediaEntry;
 export type DesignerMediaEntry = z.infer<typeof DesignerMediaEntry>;

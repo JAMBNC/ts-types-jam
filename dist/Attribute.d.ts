@@ -1,26 +1,18 @@
 import { z } from "zod";
-export declare const Attribute: z.ZodObject<{
+declare const _Attribute: z.ZodObject<{
     code: z.ZodString;
     displayForCustomer: z.ZodBoolean;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     label: z.ZodString;
-    predefinedValues: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        identifiers: z.ZodRecord<z.ZodString, z.ZodAny>;
-        swatches: z.ZodOptional<z.ZodObject<{
-            TEXT: z.ZodOptional<z.ZodString>;
-            IMAGE: z.ZodOptional<z.ZodString>;
-            RGB: z.ZodOptional<z.ZodString>;
-        }, z.core.$strip>>;
-        value: z.ZodString;
-    }, z.core.$loose>>>;
-    renderPreference: z.ZodEnum<{
-        dropdown: "dropdown";
-        modal: "modal";
-        swatches: "swatches";
-        tabs: "tabs";
-    }>;
+    predefinedValues: z.ZodOptional<z.ZodArray<import("./PredefinedAttributeValue.js").PredefinedAttributeValueSchema>>;
+    renderPreference: import("./AttributeRenderPreference.js").AttributeRenderPreferenceSchema;
     secondarySelectionEnabled: z.ZodBoolean;
     usedForProductSelection: z.ZodBoolean;
 }, z.core.$loose>;
+type _AttributeSchema = typeof _Attribute;
+export interface AttributeSchema extends _AttributeSchema {
+}
+export declare const Attribute: AttributeSchema;
 export type Attribute = z.infer<typeof Attribute>;
+export {};
 //# sourceMappingURL=Attribute.d.ts.map

@@ -1,14 +1,12 @@
 import { z } from "zod";
-export declare const DesignerAddReturnAddressTrackingEvent: z.ZodObject<{
+declare const _DesignerAddReturnAddressTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_add_return_address">;
-    payload: z.ZodObject<{
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
-    }, z.core.$strict>;
+    payload: import("./DefaultTrackingPayload.js").DefaultTrackingPayloadSchema;
 }, z.core.$strict>;
+type _DesignerAddReturnAddressTrackingEventSchema = typeof _DesignerAddReturnAddressTrackingEvent;
+export interface DesignerAddReturnAddressTrackingEventSchema extends _DesignerAddReturnAddressTrackingEventSchema {
+}
+export declare const DesignerAddReturnAddressTrackingEvent: DesignerAddReturnAddressTrackingEventSchema;
 export type DesignerAddReturnAddressTrackingEvent = z.infer<typeof DesignerAddReturnAddressTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerAddReturnAddressTrackingEvent.d.ts.map

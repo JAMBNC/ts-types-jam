@@ -5,8 +5,7 @@ import { FulfillmentLineAttribute } from "./FulfillmentLineAttribute.js";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
 import { FulfillmentTaxLine } from "./FulfillmentTaxLine.js";
 
-/**A single line item on a hydrated fulfillment order.*/
-export const FulfillmentOrderLineItem = z
+const _FulfillmentOrderLineItem = z
   .object({
     /**An id meaningful to the source channel, treated as an opaque string by the backend (e.g. a Shopify GID like gid://shopify/FulfillmentOrder/123).*/
     id: ExternalId,
@@ -43,4 +42,9 @@ export const FulfillmentOrderLineItem = z
   })
   .strict()
   .describe("A single line item on a hydrated fulfillment order.");
+type _FulfillmentOrderLineItemSchema = typeof _FulfillmentOrderLineItem;
+export interface FulfillmentOrderLineItemSchema extends _FulfillmentOrderLineItemSchema {}
+/**A single line item on a hydrated fulfillment order.*/
+export const FulfillmentOrderLineItem: FulfillmentOrderLineItemSchema =
+  _FulfillmentOrderLineItem;
 export type FulfillmentOrderLineItem = z.infer<typeof FulfillmentOrderLineItem>;

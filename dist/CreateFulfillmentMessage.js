@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { CreateFulfillmentPayload } from "./CreateFulfillmentPayload.js";
-export const CreateFulfillmentMessage = z
+const _CreateFulfillmentMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -12,3 +12,4 @@ export const CreateFulfillmentMessage = z
     payload: CreateFulfillmentPayload,
 })
     .strict();
+export const CreateFulfillmentMessage = _CreateFulfillmentMessage;

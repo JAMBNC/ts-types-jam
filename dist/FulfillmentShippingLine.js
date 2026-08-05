@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { FulfillmentMoney } from "./FulfillmentMoney.js";
-export const FulfillmentShippingLine = z
+const _FulfillmentShippingLine = z
     .object({
     title: z.union([z.string(), z.null()]).optional(),
     code: z.union([z.string(), z.null()]).optional(),
@@ -15,3 +15,4 @@ export const FulfillmentShippingLine = z
     price: z.union([FulfillmentMoney, z.null()]).optional(),
 })
     .strict();
+export const FulfillmentShippingLine = _FulfillmentShippingLine;

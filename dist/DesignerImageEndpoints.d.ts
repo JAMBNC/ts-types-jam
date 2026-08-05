@@ -1,9 +1,14 @@
 import { z } from "zod";
-export declare const DesignerImageEndpoints: z.ZodObject<{
+declare const _DesignerImageEndpoints: z.ZodObject<{
     gallery: z.ZodString;
     upload: z.ZodString;
     delete: z.ZodString;
     rendition: z.ZodString;
 }, z.core.$strict>;
+type _DesignerImageEndpointsSchema = typeof _DesignerImageEndpoints;
+export interface DesignerImageEndpointsSchema extends _DesignerImageEndpointsSchema {
+}
+export declare const DesignerImageEndpoints: DesignerImageEndpointsSchema;
 export type DesignerImageEndpoints = z.infer<typeof DesignerImageEndpoints>;
+export {};
 //# sourceMappingURL=DesignerImageEndpoints.d.ts.map

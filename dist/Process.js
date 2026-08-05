@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**Defines how visual content is transferred to the medium.*/
-export const Process = z
+const _Process = z
     .enum([
     "offset",
     "digital",
@@ -13,3 +12,5 @@ export const Process = z
     "thermal",
 ])
     .describe("Defines how visual content is transferred to the medium.");
+/**Defines how visual content is transferred to the medium.*/
+export const Process = _Process;

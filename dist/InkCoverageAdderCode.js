@@ -1,5 +1,3 @@
 import { z } from "zod";
-export const InkCoverageAdderCode = z.enum([
-    "ink_coverage_sm",
-    "ink_coverage_std",
-]);
+const _InkCoverageAdderCode = z.enum(["ink_coverage_sm", "ink_coverage_std"]);
+export const InkCoverageAdderCode = _InkCoverageAdderCode;

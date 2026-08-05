@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The ship-to address on a fulfillment order. Extra fields are allowed to tolerate channel-specific additions.*/
-export const FulfillmentOrderDestination = z
+const _FulfillmentOrderDestination = z
     .object({
     firstName: z.union([z.string(), z.null()]).optional(),
     lastName: z.union([z.string(), z.null()]).optional(),
@@ -46,3 +45,5 @@ export const FulfillmentOrderDestination = z
     }
 })
     .describe("The ship-to address on a fulfillment order. Extra fields are allowed to tolerate channel-specific additions.");
+/**The ship-to address on a fulfillment order. Extra fields are allowed to tolerate channel-specific additions.*/
+export const FulfillmentOrderDestination = _FulfillmentOrderDestination;

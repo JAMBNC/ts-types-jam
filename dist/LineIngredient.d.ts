@@ -1,60 +1,23 @@
 import { z } from "zod";
-/**A line ingredient*/
-export declare const LineIngredient: z.ZodObject<{
+declare const _LineIngredient: z.ZodObject<{
     type: z.ZodLiteral<"line">;
     dropshadow: z.ZodOptional<z.ZodBoolean>;
     editable: z.ZodOptional<z.ZodBoolean>;
     id: z.ZodString;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     opacity: z.ZodNumber;
-    rect: z.ZodObject<{
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        x: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-    }, z.core.$strict>;
+    rect: import("./Rect.js").RectSchema;
     rotation: z.ZodNumber;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodOptional<z.ZodEnum<{
-        background: "background";
-        bleed: "bleed";
-        mask: "mask";
-        print: "print";
-    }>>;
+    viewLayer: z.ZodOptional<import("./ViewLayer.js").ViewLayerSchema>;
     zIndex: z.ZodNumber;
 }, z.core.$strict>;
+type _LineIngredientSchema = typeof _LineIngredient;
+export interface LineIngredientSchema extends _LineIngredientSchema {
+}
+/**A line ingredient*/
+export declare const LineIngredient: LineIngredientSchema;
 export type LineIngredient = z.infer<typeof LineIngredient>;
+export {};
 //# sourceMappingURL=LineIngredient.d.ts.map

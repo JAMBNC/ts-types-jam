@@ -3,7 +3,7 @@ import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerToolInteractionTrackingEvent = z
+const _DesignerToolInteractionTrackingEvent = z
   .object({
     event: z.literal("designer_tool_interaction"),
     payload: z
@@ -19,6 +19,11 @@ export const DesignerToolInteractionTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerToolInteractionTrackingEventSchema =
+  typeof _DesignerToolInteractionTrackingEvent;
+export interface DesignerToolInteractionTrackingEventSchema extends _DesignerToolInteractionTrackingEventSchema {}
+export const DesignerToolInteractionTrackingEvent: DesignerToolInteractionTrackingEventSchema =
+  _DesignerToolInteractionTrackingEvent;
 export type DesignerToolInteractionTrackingEvent = z.infer<
   typeof DesignerToolInteractionTrackingEvent
 >;

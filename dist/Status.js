@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const Status = z.literal("CREATED");
+const _Status = z.literal("CREATED");
+export const Status = _Status;

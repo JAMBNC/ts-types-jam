@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const DesignerVendorEndpoints = z
+const _DesignerVendorEndpoints = z
     .object({
     /**The endpoint URL for retrieving all supported vendor colors*/
     colors: z
@@ -9,3 +9,4 @@ export const DesignerVendorEndpoints = z
         .optional(),
 })
     .strict();
+export const DesignerVendorEndpoints = _DesignerVendorEndpoints;

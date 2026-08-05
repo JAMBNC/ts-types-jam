@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const Discount = z
+const _Discount = z
     .object({
     description: z.string().optional(),
     amount: z.number().gte(0).optional(),
@@ -7,3 +7,4 @@ export const Discount = z
     identifiers: z.record(z.string(), z.any()).optional(),
 })
     .passthrough();
+export const Discount = _Discount;

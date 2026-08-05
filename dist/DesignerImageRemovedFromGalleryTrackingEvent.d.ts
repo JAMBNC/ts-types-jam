@@ -1,14 +1,12 @@
 import { z } from "zod";
-export declare const DesignerImageRemovedFromGalleryTrackingEvent: z.ZodObject<{
+declare const _DesignerImageRemovedFromGalleryTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_image_removed_from_gallery">;
-    payload: z.ZodObject<{
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
-    }, z.core.$strict>;
+    payload: import("./DefaultTrackingPayload.js").DefaultTrackingPayloadSchema;
 }, z.core.$strict>;
+type _DesignerImageRemovedFromGalleryTrackingEventSchema = typeof _DesignerImageRemovedFromGalleryTrackingEvent;
+export interface DesignerImageRemovedFromGalleryTrackingEventSchema extends _DesignerImageRemovedFromGalleryTrackingEventSchema {
+}
+export declare const DesignerImageRemovedFromGalleryTrackingEvent: DesignerImageRemovedFromGalleryTrackingEventSchema;
 export type DesignerImageRemovedFromGalleryTrackingEvent = z.infer<typeof DesignerImageRemovedFromGalleryTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerImageRemovedFromGalleryTrackingEvent.d.ts.map

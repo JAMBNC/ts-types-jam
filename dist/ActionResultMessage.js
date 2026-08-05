@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { ActionResultPayload } from "./ActionResultPayload.js";
-/**The mapper's ack for one outbound action. correlationId is the outbound action message's messageId.*/
-export const ActionResultMessage = z
+const _ActionResultMessage = z
     .object({
     version: z.literal("v1"),
     messageId: z.string().min(1),
@@ -18,3 +17,5 @@ export const ActionResultMessage = z
 })
     .strict()
     .describe("The mapper's ack for one outbound action. correlationId is the outbound action message's messageId.");
+/**The mapper's ack for one outbound action. correlationId is the outbound action message's messageId.*/
+export const ActionResultMessage = _ActionResultMessage;

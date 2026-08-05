@@ -1,22 +1,13 @@
 import { z } from "zod";
-export declare const ProductUrl: z.ZodObject<{
-    metaData: z.ZodOptional<z.ZodObject<{
-        creativeEngine: z.ZodOptional<z.ZodEnum<{
-            alchemy: "alchemy";
-            chili: "chili";
-        }>>;
-        designer: z.ZodOptional<z.ZodEnum<{
-            chili: "chili";
-            hermes: "hermes";
-            luma: "luma";
-        }>>;
-    }, z.core.$loose>>;
+declare const _ProductUrl: z.ZodObject<{
+    metaData: z.ZodOptional<import("./ProductUrlMetaData.js").ProductUrlMetaDataSchema>;
     url: z.ZodOptional<z.ZodString>;
-    urlType: z.ZodOptional<z.ZodEnum<{
-        customProduct: "customProduct";
-        product: "product";
-        yourLogoHere: "yourLogoHere";
-    }>>;
+    urlType: z.ZodOptional<import("./ProductUrlType.js").ProductUrlTypeSchema>;
 }, z.core.$loose>;
+type _ProductUrlSchema = typeof _ProductUrl;
+export interface ProductUrlSchema extends _ProductUrlSchema {
+}
+export declare const ProductUrl: ProductUrlSchema;
 export type ProductUrl = z.infer<typeof ProductUrl>;
+export {};
 //# sourceMappingURL=ProductUrl.d.ts.map

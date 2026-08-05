@@ -3,7 +3,7 @@ import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
-export const DesignerAddToCartTrackingEvent = z
+const _DesignerAddToCartTrackingEvent = z
     .object({
     event: z.literal("designer_add_to_cart"),
     payload: z
@@ -23,3 +23,4 @@ export const DesignerAddToCartTrackingEvent = z
         .strict(),
 })
     .strict();
+export const DesignerAddToCartTrackingEvent = _DesignerAddToCartTrackingEvent;

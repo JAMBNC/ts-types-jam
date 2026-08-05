@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const InkColorSide1AdderCode: z.ZodEnum<{
+declare const _InkColorSide1AdderCode: z.ZodEnum<{
     color_side1_2pms: "color_side1_2pms";
     color_side1_2std: "color_side1_2std";
     color_side1_2std_2pms: "color_side1_2std_2pms";
@@ -27,5 +27,10 @@ export declare const InkColorSide1AdderCode: z.ZodEnum<{
     color_side1_std_pms: "color_side1_std_pms";
     color_side1_white_ink: "color_side1_white_ink";
 }>;
+type _InkColorSide1AdderCodeSchema = typeof _InkColorSide1AdderCode;
+export interface InkColorSide1AdderCodeSchema extends _InkColorSide1AdderCodeSchema {
+}
+export declare const InkColorSide1AdderCode: InkColorSide1AdderCodeSchema;
 export type InkColorSide1AdderCode = z.infer<typeof InkColorSide1AdderCode>;
+export {};
 //# sourceMappingURL=InkColorSide1AdderCode.d.ts.map

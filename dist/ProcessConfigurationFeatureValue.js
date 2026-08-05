@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { OptionUse } from "./OptionUse.js";
-export const ProcessConfigurationFeatureValue = z
+const _ProcessConfigurationFeatureValue = z
     .object({
     type: z.literal("processConfigurationFeatureValue"),
     allowBackgroundColor: z.boolean().optional(),
@@ -16,3 +16,4 @@ export const ProcessConfigurationFeatureValue = z
     restrictColors: z.boolean().optional(),
 })
     .passthrough();
+export const ProcessConfigurationFeatureValue = _ProcessConfigurationFeatureValue;

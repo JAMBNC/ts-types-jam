@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const DesignerColorEndpoints = z
+const _DesignerColorEndpoints = z
     .object({
     /**The endpoint URL for retrieving all supported colors + vendor colors*/
     all: z
@@ -13,3 +13,4 @@ export const DesignerColorEndpoints = z
         .describe("The endpoint URL for retrieving color palettes"),
 })
     .strict();
+export const DesignerColorEndpoints = _DesignerColorEndpoints;

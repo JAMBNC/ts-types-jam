@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const DesignerFontEndpoints = z
+const _DesignerFontEndpoints = z
   .object({
     /**The (optional) endpoint URL for retrieving all supported fonts*/
     all: z
@@ -11,4 +11,8 @@ export const DesignerFontEndpoints = z
       ),
   })
   .strict();
+type _DesignerFontEndpointsSchema = typeof _DesignerFontEndpoints;
+export interface DesignerFontEndpointsSchema extends _DesignerFontEndpointsSchema {}
+export const DesignerFontEndpoints: DesignerFontEndpointsSchema =
+  _DesignerFontEndpoints;
 export type DesignerFontEndpoints = z.infer<typeof DesignerFontEndpoints>;

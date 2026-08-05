@@ -6,8 +6,7 @@ import { Page } from "./Page.js";
 import { TextureColor } from "./TextureColor.js";
 import { TextureImage } from "./TextureImage.js";
 
-/**The complete design state containing dimensions, pages, and ingredients.*/
-export const DesignState = z
+const _DesignState = z
   .object({
     /**Stores some session based design information*/
     expansion: z
@@ -68,4 +67,8 @@ export const DesignState = z
   .describe(
     "The complete design state containing dimensions, pages, and ingredients.",
   );
+type _DesignStateSchema = typeof _DesignState;
+export interface DesignStateSchema extends _DesignStateSchema {}
+/**The complete design state containing dimensions, pages, and ingredients.*/
+export const DesignState: DesignStateSchema = _DesignState;
 export type DesignState = z.infer<typeof DesignState>;

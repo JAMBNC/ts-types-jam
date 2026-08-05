@@ -1,19 +1,14 @@
 import { z } from "zod";
-export declare const ColorPalette: z.ZodObject<{
+declare const _ColorPalette: z.ZodObject<{
     colors: z.ZodArray<z.ZodString>;
-    process: z.ZodOptional<z.ZodEnum<{
-        digital: "digital";
-        emboss: "emboss";
-        flexography: "flexography";
-        foil: "foil";
-        inkjet: "inkjet";
-        offset: "offset";
-        screen: "screen";
-        sublimation: "sublimation";
-        thermal: "thermal";
-    }>>;
+    process: z.ZodOptional<import("./Process.js").ProcessSchema>;
     name: z.ZodString;
     uuid: z.ZodString;
 }, z.core.$loose>;
+type _ColorPaletteSchema = typeof _ColorPalette;
+export interface ColorPaletteSchema extends _ColorPaletteSchema {
+}
+export declare const ColorPalette: ColorPaletteSchema;
 export type ColorPalette = z.infer<typeof ColorPalette>;
+export {};
 //# sourceMappingURL=ColorPalette.d.ts.map

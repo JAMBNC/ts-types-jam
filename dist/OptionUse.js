@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const OptionUse = z.enum(["none", "selected", "all"]);
+const _OptionUse = z.enum(["none", "selected", "all"]);
+export const OptionUse = _OptionUse;

@@ -1,10 +1,7 @@
 import { z } from "zod";
-export declare const PurchaseOptions: z.ZodObject<{
+declare const _PurchaseOptions: z.ZodObject<{
     allowsSample: z.ZodBoolean;
-    customLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
-        max: z.ZodOptional<z.ZodNumber>;
-        min: z.ZodNumber;
-    }, z.core.$loose>>;
+    customLeadTimeDayRange: z.ZodOptional<import("./NonNegativeIntRange.js").NonNegativeIntRangeSchema>;
     customizable: z.ZodBoolean;
     defaultDisplayQty: z.ZodOptional<z.ZodNumber>;
     designRequired: z.ZodBoolean;
@@ -15,26 +12,19 @@ export declare const PurchaseOptions: z.ZodObject<{
     minPrice: z.ZodNumber;
     minSaleQty: z.ZodOptional<z.ZodNumber>;
     onSale: z.ZodOptional<z.ZodBoolean>;
-    plainLeadTimeDayRange: z.ZodOptional<z.ZodObject<{
-        max: z.ZodOptional<z.ZodNumber>;
-        min: z.ZodNumber;
-    }, z.core.$loose>>;
+    plainLeadTimeDayRange: z.ZodOptional<import("./NonNegativeIntRange.js").NonNegativeIntRangeSchema>;
     pricePercentOff: z.ZodOptional<z.ZodNumber>;
-    quantityStepIncrements: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        requiredStepIncrement: z.ZodNumber;
-        startingAtQty: z.ZodNumber;
-    }, z.core.$loose>>>;
+    quantityStepIncrements: z.ZodOptional<z.ZodArray<import("./QuantityStepIncrement.js").QuantityStepIncrementSchema>>;
     stockQty: z.ZodNumber;
     strikeThroughQty: z.ZodOptional<z.ZodNumber>;
     suggestedQuantityDisplays: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
-    tierPrices: z.ZodArray<z.ZodObject<{
-        discountReason: z.ZodOptional<z.ZodString>;
-        price: z.ZodNumber;
-        pricePercentOff: z.ZodOptional<z.ZodNumber>;
-        salePrice: z.ZodOptional<z.ZodNumber>;
-        startingAtQty: z.ZodNumber;
-    }, z.core.$loose>>;
+    tierPrices: z.ZodArray<import("./TierPrice.js").TierPriceSchema>;
     toBeDiscontinued: z.ZodBoolean;
 }, z.core.$loose>;
+type _PurchaseOptionsSchema = typeof _PurchaseOptions;
+export interface PurchaseOptionsSchema extends _PurchaseOptionsSchema {
+}
+export declare const PurchaseOptions: PurchaseOptionsSchema;
 export type PurchaseOptions = z.infer<typeof PurchaseOptions>;
+export {};
 //# sourceMappingURL=PurchaseOptions.d.ts.map

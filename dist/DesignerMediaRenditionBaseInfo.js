@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**The shared rendition data returned on a successful media rendition request.*/
-export const DesignerMediaRenditionBaseInfo = z
+const _DesignerMediaRenditionBaseInfo = z
     .object({
     /**Whether the media is a vector graphic*/
     isVector: z.boolean().describe("Whether the media is a vector graphic"),
@@ -13,3 +12,5 @@ export const DesignerMediaRenditionBaseInfo = z
 })
     .passthrough()
     .describe("The shared rendition data returned on a successful media rendition request.");
+/**The shared rendition data returned on a successful media rendition request.*/
+export const DesignerMediaRenditionBaseInfo = _DesignerMediaRenditionBaseInfo;

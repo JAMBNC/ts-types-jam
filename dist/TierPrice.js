@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const TierPrice = z
+const _TierPrice = z
     .object({
     discountReason: z.string().optional(),
     price: z.number(),
@@ -8,3 +8,4 @@ export const TierPrice = z
     startingAtQty: z.number().int(),
 })
     .passthrough();
+export const TierPrice = _TierPrice;

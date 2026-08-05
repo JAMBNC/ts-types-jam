@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const Method = z.enum(["CASH", "PO", "CREDIT_CARD", "ON_ACCOUNT"]);
+const _Method = z.enum(["CASH", "PO", "CREDIT_CARD", "ON_ACCOUNT"]);
+export const Method = _Method;

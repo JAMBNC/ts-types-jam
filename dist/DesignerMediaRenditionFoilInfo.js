@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { RenditionChannel } from "./RenditionChannel.js";
-/**The color rendition data returned on a successful media rendition request.*/
-export const DesignerMediaRenditionFoilInfo = z
+const _DesignerMediaRenditionFoilInfo = z
     .object({
     /**A single color-profile rendition (e.g. rgb or cmyk) with its source metadata and output URL.*/
     bw: RenditionChannel,
@@ -27,3 +26,5 @@ export const DesignerMediaRenditionFoilInfo = z
     .passthrough()
     .describe("The shared rendition data returned on a successful media rendition request."))
     .describe("The color rendition data returned on a successful media rendition request.");
+/**The color rendition data returned on a successful media rendition request.*/
+export const DesignerMediaRenditionFoilInfo = _DesignerMediaRenditionFoilInfo;

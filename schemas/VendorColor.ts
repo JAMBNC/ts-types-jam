@@ -3,7 +3,7 @@ import { Process } from "./Process.js";
 import { Vendor } from "./Vendor.js";
 import { VendorProcess } from "./VendorProcess.js";
 
-export const VendorColor = z
+const _VendorColor = z
   .object({
     /**The uuid for the color the vendor supports.*/
     colorId: z
@@ -32,4 +32,7 @@ export const VendorColor = z
     vendor: Vendor,
   })
   .passthrough();
+type _VendorColorSchema = typeof _VendorColor;
+export interface VendorColorSchema extends _VendorColorSchema {}
+export const VendorColor: VendorColorSchema = _VendorColor;
 export type VendorColor = z.infer<typeof VendorColor>;

@@ -5,7 +5,7 @@ import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 import { Process } from "./Process.js";
 
-export const DesignerChangeProcessTrackingEvent = z
+const _DesignerChangeProcessTrackingEvent = z
   .object({
     event: z.literal("designer_change_process"),
     payload: z
@@ -23,6 +23,11 @@ export const DesignerChangeProcessTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerChangeProcessTrackingEventSchema =
+  typeof _DesignerChangeProcessTrackingEvent;
+export interface DesignerChangeProcessTrackingEventSchema extends _DesignerChangeProcessTrackingEventSchema {}
+export const DesignerChangeProcessTrackingEvent: DesignerChangeProcessTrackingEventSchema =
+  _DesignerChangeProcessTrackingEvent;
 export type DesignerChangeProcessTrackingEvent = z.infer<
   typeof DesignerChangeProcessTrackingEvent
 >;

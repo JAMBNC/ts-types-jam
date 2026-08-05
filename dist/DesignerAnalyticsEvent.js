@@ -23,8 +23,7 @@ import { DesignerRemoveCoatingTrackingEvent } from "./DesignerRemoveCoatingTrack
 import { DesignerRemoveItemTrackingEvent } from "./DesignerRemoveItemTrackingEvent.js";
 import { DesignerReviewDesignTrackingEvent } from "./DesignerReviewDesignTrackingEvent.js";
 import { DesignerToolInteractionTrackingEvent } from "./DesignerToolInteractionTrackingEvent.js";
-/**An analytics/tracking event emitted by the designer.*/
-export const DesignerAnalyticsEvent = z
+const _DesignerAnalyticsEvent = z
     .object({
     type: z.literal("analytics"),
     payload: z.union([
@@ -56,3 +55,5 @@ export const DesignerAnalyticsEvent = z
 })
     .strict()
     .describe("An analytics/tracking event emitted by the designer.");
+/**An analytics/tracking event emitted by the designer.*/
+export const DesignerAnalyticsEvent = _DesignerAnalyticsEvent;

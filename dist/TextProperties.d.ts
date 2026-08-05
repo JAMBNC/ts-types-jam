@@ -1,34 +1,9 @@
 import { z } from "zod";
-/**Properties for displayed text*/
-export declare const TextProperties: z.ZodObject<{
-    alignment: z.ZodEnum<{
-        center: "center";
-        left: "left";
-        right: "right";
-    }>;
+declare const _TextProperties: z.ZodObject<{
+    alignment: import("./Alignment.js").AlignmentSchema;
     body: z.ZodArray<z.ZodString>;
     dataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
-    fontData: z.ZodObject<{
-        format: z.ZodOptional<z.ZodEnum<{
-            otf: "otf";
-            ttf: "ttf";
-        }>>;
-        family: z.ZodString;
-        name: z.ZodOptional<z.ZodString>;
-        previewImageUrl: z.ZodOptional<z.ZodString>;
-        priority: z.ZodOptional<z.ZodNumber>;
-        style: z.ZodEnum<{
-            bold: "bold";
-            bold_italic: "bold_italic";
-            italic: "italic";
-            light: "light";
-            light_italic: "light_italic";
-            regular: "regular";
-        }>;
-        url: z.ZodOptional<z.ZodString>;
-        uuid: z.ZodString;
-        id: z.ZodOptional<z.ZodString>;
-    }, z.core.$strict>;
+    fontData: import("./Font.js").FontSchema;
     fontSize: z.ZodString;
     leading: z.ZodOptional<z.ZodNumber>;
     measurementDataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
@@ -36,98 +11,32 @@ export declare const TextProperties: z.ZodObject<{
     rotation: z.ZodOptional<z.ZodNumber>;
     strikethrough: z.ZodBoolean;
     textLines: z.ZodOptional<z.ZodArray<z.ZodObject<{
-        height: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
+        height: import("./Dimension.js").DimensionSchema;
         span: z.ZodObject<{
             charPositions: z.ZodString;
-            fontSize: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    pt: "pt";
-                    px: "px";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
+            fontSize: import("./Dimension.js").DimensionSchema;
             glyphIds: z.ZodString;
             glyphIDs: z.ZodOptional<z.ZodString>;
             glyphPositions: z.ZodString;
             glyphXOffsets: z.ZodString;
             glyphYOffsets: z.ZodString;
-            height: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    pt: "pt";
-                    px: "px";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
+            height: import("./Dimension.js").DimensionSchema;
             text: z.ZodString;
-            width: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    pt: "pt";
-                    px: "px";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
-            x: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    pt: "pt";
-                    px: "px";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
-            y: z.ZodObject<{
-                u: z.ZodEnum<{
-                    in: "in";
-                    mm: "mm";
-                    pt: "pt";
-                    px: "px";
-                }>;
-                v: z.ZodNumber;
-            }, z.core.$loose>;
+            width: import("./Dimension.js").DimensionSchema;
+            x: import("./Dimension.js").DimensionSchema;
+            y: import("./Dimension.js").DimensionSchema;
         }, z.core.$loose>;
-        width: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        x: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
-        y: z.ZodObject<{
-            u: z.ZodEnum<{
-                in: "in";
-                mm: "mm";
-                pt: "pt";
-                px: "px";
-            }>;
-            v: z.ZodNumber;
-        }, z.core.$loose>;
+        width: import("./Dimension.js").DimensionSchema;
+        x: import("./Dimension.js").DimensionSchema;
+        y: import("./Dimension.js").DimensionSchema;
     }, z.core.$loose>>>;
     underline: z.ZodBoolean;
 }, z.core.$loose>;
+type _TextPropertiesSchema = typeof _TextProperties;
+export interface TextPropertiesSchema extends _TextPropertiesSchema {
+}
+/**Properties for displayed text*/
+export declare const TextProperties: TextPropertiesSchema;
 export type TextProperties = z.infer<typeof TextProperties>;
+export {};
 //# sourceMappingURL=TextProperties.d.ts.map

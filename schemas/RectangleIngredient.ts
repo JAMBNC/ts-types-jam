@@ -4,8 +4,7 @@ import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
 import { ViewLayer } from "./ViewLayer.js";
 
-/**A rectangular ingredient with optional fill, stroke, and corner radius.*/
-export const RectangleIngredient = z
+const _RectangleIngredient = z
   .object({
     type: z.literal("rectangle"),
     dropshadow: z.boolean().optional(),
@@ -39,4 +38,9 @@ export const RectangleIngredient = z
   .describe(
     "A rectangular ingredient with optional fill, stroke, and corner radius.",
   );
+type _RectangleIngredientSchema = typeof _RectangleIngredient;
+export interface RectangleIngredientSchema extends _RectangleIngredientSchema {}
+/**A rectangular ingredient with optional fill, stroke, and corner radius.*/
+export const RectangleIngredient: RectangleIngredientSchema =
+  _RectangleIngredient;
 export type RectangleIngredient = z.infer<typeof RectangleIngredient>;

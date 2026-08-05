@@ -1,16 +1,18 @@
 import { z } from "zod";
-export declare const DesignerLoadTrackingEvent: z.ZodObject<{
+declare const _DesignerLoadTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_load">;
     payload: z.ZodObject<{
         loadTime: z.ZodNumber;
         productUrl: z.ZodOptional<z.ZodString>;
-        designer: z.ZodEnum<{
-            base: "base";
-            hermes: "hermes";
-        }>;
-        merchant: z.ZodString;
-        deltaTime: z.ZodNumber;
+        designer: import("./DesignerCode.js").DesignerCodeSchema;
+        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
+type _DesignerLoadTrackingEventSchema = typeof _DesignerLoadTrackingEvent;
+export interface DesignerLoadTrackingEventSchema extends _DesignerLoadTrackingEventSchema {
+}
+export declare const DesignerLoadTrackingEvent: DesignerLoadTrackingEventSchema;
 export type DesignerLoadTrackingEvent = z.infer<typeof DesignerLoadTrackingEvent>;
+export {};
 //# sourceMappingURL=DesignerLoadTrackingEvent.d.ts.map

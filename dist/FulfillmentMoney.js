@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**A monetary amount in the shop's currency.*/
-export const FulfillmentMoney = z
+const _FulfillmentMoney = z
     .object({
     /**Decimal string, e.g. "12.50".*/
     amount: z.string().describe('Decimal string, e.g. "12.50".'),
@@ -9,3 +8,5 @@ export const FulfillmentMoney = z
 })
     .strict()
     .describe("A monetary amount in the shop's currency.");
+/**A monetary amount in the shop's currency.*/
+export const FulfillmentMoney = _FulfillmentMoney;

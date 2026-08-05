@@ -1,4 +1,7 @@
 import { z } from "zod";
 
-export const WorkspaceTag = z.enum(["foil", "whiteInk", "colorInk"]);
+const _WorkspaceTag = z.enum(["foil", "whiteInk", "colorInk"]);
+type _WorkspaceTagSchema = typeof _WorkspaceTag;
+export interface WorkspaceTagSchema extends _WorkspaceTagSchema {}
+export const WorkspaceTag: WorkspaceTagSchema = _WorkspaceTag;
 export type WorkspaceTag = z.infer<typeof WorkspaceTag>;

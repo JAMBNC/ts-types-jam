@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const LocationStock = z
+const _LocationStock = z
     .object({
     /**Fulfillment source code, e.g. "northvale" or "syracuse".*/
     sourceCode: z
@@ -9,3 +9,4 @@ export const LocationStock = z
     inStock: z.boolean().optional(),
 })
     .passthrough();
+export const LocationStock = _LocationStock;

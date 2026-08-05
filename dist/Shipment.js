@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { LineItem } from "./LineItem.js";
-export const Shipment = z
+const _Shipment = z
     .object({
     carrier: z.string().optional(),
     comments: z.string().optional(),
@@ -20,3 +20,4 @@ export const Shipment = z
     trackingUrl: z.string().optional(),
 })
     .passthrough();
+export const Shipment = _Shipment;

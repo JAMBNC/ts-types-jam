@@ -1,2 +1,3 @@
 import { z } from "zod";
-export const TextureImage = z.object({ src: z.string() }).strict();
+const _TextureImage = z.object({ src: z.string() }).strict();
+export const TextureImage = _TextureImage;

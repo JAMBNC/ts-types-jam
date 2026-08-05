@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const LineItem: z.ZodObject<{
+declare const _LineItem: z.ZodObject<{
     children: z.ZodOptional<z.ZodArray<z.ZodAny>>;
     discountAmount: z.ZodDefault<z.ZodNumber>;
     identifiers: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
@@ -13,5 +13,10 @@ export declare const LineItem: z.ZodObject<{
     total: z.ZodDefault<z.ZodNumber>;
     weightInPounds: z.ZodDefault<z.ZodNumber>;
 }, z.core.$loose>;
+type _LineItemSchema = typeof _LineItem;
+export interface LineItemSchema extends _LineItemSchema {
+}
+export declare const LineItem: LineItemSchema;
 export type LineItem = z.infer<typeof LineItem>;
+export {};
 //# sourceMappingURL=LineItem.d.ts.map

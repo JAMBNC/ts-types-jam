@@ -1,8 +1,7 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
 import { ViewLayer } from "./ViewLayer.js";
-/**An ingredient that holds a generic data payload such as textures or backgrounds.*/
-export const DataIngredient = z
+const _DataIngredient = z
     .object({
     type: z.literal("data"),
     /**The data payload describing the content.*/
@@ -38,3 +37,5 @@ export const DataIngredient = z
 })
     .strict()
     .describe("An ingredient that holds a generic data payload such as textures or backgrounds.");
+/**An ingredient that holds a generic data payload such as textures or backgrounds.*/
+export const DataIngredient = _DataIngredient;

@@ -1,7 +1,6 @@
 import { z } from "zod";
 
-/**OAuth2 client credentials for machine-to-machine.*/
-export const OAuth2ClientCredentials = z
+const _OAuth2ClientCredentials = z
   .object({
     type: z.literal("oauth2_client_credentials"),
     /**The OAuth2 client ID.*/
@@ -18,4 +17,9 @@ export const OAuth2ClientCredentials = z
   })
   .strict()
   .describe("OAuth2 client credentials for machine-to-machine.");
+type _OAuth2ClientCredentialsSchema = typeof _OAuth2ClientCredentials;
+export interface OAuth2ClientCredentialsSchema extends _OAuth2ClientCredentialsSchema {}
+/**OAuth2 client credentials for machine-to-machine.*/
+export const OAuth2ClientCredentials: OAuth2ClientCredentialsSchema =
+  _OAuth2ClientCredentials;
 export type OAuth2ClientCredentials = z.infer<typeof OAuth2ClientCredentials>;

@@ -1,5 +1,5 @@
 import { z } from "zod";
-export declare const VariableAddressInputV1ComponentLabels: z.ZodObject<{
+declare const _VariableAddressInputV1ComponentLabels: z.ZodObject<{
     "download.description": z.ZodDefault<z.ZodString>;
     "download.button.label": z.ZodDefault<z.ZodString>;
     "download.button.icon": z.ZodDefault<z.ZodString>;
@@ -12,5 +12,10 @@ export declare const VariableAddressInputV1ComponentLabels: z.ZodObject<{
     "upload.error.icon": z.ZodDefault<z.ZodString>;
     "addressPreview.label": z.ZodDefault<z.ZodString>;
 }, z.core.$loose>;
+type _VariableAddressInputV1ComponentLabelsSchema = typeof _VariableAddressInputV1ComponentLabels;
+export interface VariableAddressInputV1ComponentLabelsSchema extends _VariableAddressInputV1ComponentLabelsSchema {
+}
+export declare const VariableAddressInputV1ComponentLabels: VariableAddressInputV1ComponentLabelsSchema;
 export type VariableAddressInputV1ComponentLabels = z.infer<typeof VariableAddressInputV1ComponentLabels>;
+export {};
 //# sourceMappingURL=VariableAddressInputV1ComponentLabels.d.ts.map

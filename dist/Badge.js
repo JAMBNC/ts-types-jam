@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { BadgeImage } from "./BadgeImage.js";
-export const Badge = z
+const _Badge = z
     .object({
     title: z.string().optional(),
     code: z.string(),
@@ -8,3 +8,4 @@ export const Badge = z
     priority: z.number().int().optional(),
 })
     .passthrough();
+export const Badge = _Badge;

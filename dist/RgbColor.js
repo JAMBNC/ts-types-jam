@@ -1,6 +1,5 @@
 import { z } from "zod";
-/**A color with name, hex code, and optional RGBA components.*/
-export const RgbColor = z
+const _RgbColor = z
     .object({
     /**Alpha component (0-1).*/
     a: z.number().gte(0).lte(1).describe("Alpha component (0-1).").optional(),
@@ -37,3 +36,5 @@ export const RgbColor = z
 })
     .strict()
     .describe("A color with name, hex code, and optional RGBA components.");
+/**A color with name, hex code, and optional RGBA components.*/
+export const RgbColor = _RgbColor;

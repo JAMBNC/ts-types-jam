@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { Process } from "./Process.js";
-export const ColorPalette = z
+const _ColorPalette = z
     .object({
     /**A list of color uuids found within the palette.*/
     colors: z
@@ -19,3 +19,4 @@ export const ColorPalette = z
         .describe("A unique UUID identifier for the color."),
 })
     .passthrough();
+export const ColorPalette = _ColorPalette;

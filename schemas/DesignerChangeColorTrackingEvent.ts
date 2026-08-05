@@ -5,7 +5,7 @@ import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
 import { MerchantCode } from "./MerchantCode.js";
 
-export const DesignerChangeColorTrackingEvent = z
+const _DesignerChangeColorTrackingEvent = z
   .object({
     event: z.literal("designer_change_color"),
     payload: z
@@ -23,6 +23,11 @@ export const DesignerChangeColorTrackingEvent = z
       .strict(),
   })
   .strict();
+type _DesignerChangeColorTrackingEventSchema =
+  typeof _DesignerChangeColorTrackingEvent;
+export interface DesignerChangeColorTrackingEventSchema extends _DesignerChangeColorTrackingEventSchema {}
+export const DesignerChangeColorTrackingEvent: DesignerChangeColorTrackingEventSchema =
+  _DesignerChangeColorTrackingEvent;
 export type DesignerChangeColorTrackingEvent = z.infer<
   typeof DesignerChangeColorTrackingEvent
 >;

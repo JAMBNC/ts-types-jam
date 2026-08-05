@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { Breadcrumb } from "./Breadcrumb.js";
 
-export const ProductContent = z
+const _ProductContent = z
   .object({
     breadcrumbs: z.array(Breadcrumb).optional(),
     longDescription: z.string().optional(),
@@ -13,4 +13,7 @@ export const ProductContent = z
     shortName: z.string().optional(),
   })
   .passthrough();
+type _ProductContentSchema = typeof _ProductContent;
+export interface ProductContentSchema extends _ProductContentSchema {}
+export const ProductContent: ProductContentSchema = _ProductContent;
 export type ProductContent = z.infer<typeof ProductContent>;

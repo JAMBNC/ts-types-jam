@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const PredefinedAttributeValue = z
+const _PredefinedAttributeValue = z
     .object({
     identifiers: z.record(z.string(), z.any()),
     swatches: z
@@ -9,3 +9,4 @@ export const PredefinedAttributeValue = z
     value: z.string(),
 })
     .passthrough();
+export const PredefinedAttributeValue = _PredefinedAttributeValue;

@@ -1,29 +1,16 @@
 import { z } from "zod";
-export declare const Pivot: z.ZodObject<{
-    attributeRenderPreference: z.ZodOptional<z.ZodEnum<{
-        dropdown: "dropdown";
-        modal: "modal";
-        swatches: "swatches";
-        tabs: "tabs";
-    }>>;
+declare const _Pivot: z.ZodObject<{
+    attributeRenderPreference: z.ZodOptional<import("./AttributeRenderPreference.js").AttributeRenderPreferenceSchema>;
     code: z.ZodString;
     helpText: z.ZodOptional<z.ZodString>;
     label: z.ZodOptional<z.ZodString>;
-    pivotType: z.ZodOptional<z.ZodEnum<{
-        primary: "primary";
-        secondary: "secondary";
-    }>>;
-    values: z.ZodArray<z.ZodObject<{
-        helpText: z.ZodOptional<z.ZodString>;
-        label: z.ZodString;
-        products: z.ZodArray<z.ZodString>;
-        swatchType: z.ZodOptional<z.ZodEnum<{
-            IMAGE: "IMAGE";
-            RGB: "RGB";
-            TEXT: "TEXT";
-        }>>;
-        swatchValue: z.ZodOptional<z.ZodString>;
-    }, z.core.$loose>>;
+    pivotType: z.ZodOptional<import("./PivotType.js").PivotTypeSchema>;
+    values: z.ZodArray<import("./PivotValue.js").PivotValueSchema>;
 }, z.core.$loose>;
+type _PivotSchema = typeof _Pivot;
+export interface PivotSchema extends _PivotSchema {
+}
+export declare const Pivot: PivotSchema;
 export type Pivot = z.infer<typeof Pivot>;
+export {};
 //# sourceMappingURL=Pivot.d.ts.map

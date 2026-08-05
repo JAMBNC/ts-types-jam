@@ -1,5 +1,5 @@
 import { z } from "zod";
-export const InkColorSide1AdderCode = z.enum([
+const _InkColorSide1AdderCode = z.enum([
     "color_side1_blk",
     "color_side1_std",
     "color_side1_pms",
@@ -27,3 +27,4 @@ export const InkColorSide1AdderCode = z.enum([
     "color_side1_cmyk",
     "color_side1_white_ink",
 ]);
+export const InkColorSide1AdderCode = _InkColorSide1AdderCode;
