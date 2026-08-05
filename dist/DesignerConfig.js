@@ -114,6 +114,26 @@ export const DesignerConfig = z
         })
             .passthrough()
             .optional(),
+        sign: z
+            .object({
+            accessory: DesignerConfigFeatureValue.optional(),
+            backing: DesignerConfigFeatureValue.optional(),
+            fastener: DesignerConfigFeatureValue.optional(),
+            wallholder: DesignerConfigFeatureValue.optional(),
+        })
+            .passthrough()
+            .optional(),
+        slits: z
+            .object({
+            certificate: DesignerConfigFeatureValue.optional(),
+            flap: DesignerConfigFeatureValue.optional(),
+            frontCover: DesignerConfigFeatureValue.optional(),
+            left: DesignerConfigFeatureValue.optional(),
+            middle: DesignerConfigFeatureValue.optional(),
+            right: DesignerConfigFeatureValue.optional(),
+        })
+            .passthrough()
+            .optional(),
     })
         .passthrough()
         .superRefine((value, ctx) => {
@@ -125,6 +145,8 @@ export const DesignerConfig = z
             "layout",
             "proof",
             "roll",
+            "sign",
+            "slits",
         ]);
         for (const key in value) {
             if (!defined_keys.has(key)) {
