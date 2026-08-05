@@ -12,23 +12,6 @@ export declare const DesignerConfig: z.ZodObject<{
         ink_coverage_sm: "ink_coverage_sm";
         ink_coverage_std: "ink_coverage_std";
     }>]>>, z.ZodEnum<{
-        aqueous_side1_gloss: "aqueous_side1_gloss";
-        aqueous_side1_matte: "aqueous_side1_matte";
-        aqueous_side1_satin: "aqueous_side1_satin";
-        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-        aqueous_side2_gloss: "aqueous_side2_gloss";
-        aqueous_side2_matte: "aqueous_side2_matte";
-        aqueous_side2_satin: "aqueous_side2_satin";
-        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-        lamination_gloss: "lamination_gloss";
-        lamination_matte: "lamination_matte";
-        lamination_soft_touch: "lamination_soft_touch";
-        lamination_sunscreen: "lamination_sunscreen";
-        uv_side1_gloss: "uv_side1_gloss";
-        uv_side1_matte: "uv_side1_matte";
-        uv_side2_gloss: "uv_side2_gloss";
-        uv_side2_matte: "uv_side2_matte";
-    }>, z.ZodEnum<{
         handling_charge: "handling_charge";
         print_charge: "print_charge";
         setup_charge: "setup_charge";
@@ -109,16 +92,6 @@ export declare const DesignerConfig: z.ZodObject<{
     }>, z.ZodEnum<{
         retaddress_side1: "retaddress_side1";
         retaddress_side2: "retaddress_side2";
-    }>, z.ZodEnum<{
-        individual_cut: "individual_cut";
-        roll_core_1: "roll_core_1";
-        roll_core_3: "roll_core_3";
-        roll_no_perforation: "roll_no_perforation";
-        roll_perforation: "roll_perforation";
-        roll_qty_1000: "roll_qty_1000";
-        roll_qty_125: "roll_qty_125";
-        roll_qty_250: "roll_qty_250";
-        roll_qty_500: "roll_qty_500";
     }>, z.ZodEnum<{
         varaddress_side1: "varaddress_side1";
         varaddress_side2: "varaddress_side2";
@@ -183,23 +156,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -280,16 +236,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -319,23 +265,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -416,16 +345,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -456,23 +375,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -553,16 +455,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -619,23 +511,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -716,16 +591,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -755,23 +620,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -852,16 +700,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -892,23 +730,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -989,16 +810,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -1057,23 +868,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -1154,16 +948,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -1193,23 +977,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -1290,16 +1057,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -1330,23 +1087,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1427,16 +1167,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -1493,23 +1223,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -1590,16 +1303,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -1629,23 +1332,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -1726,16 +1412,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -1766,23 +1442,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1863,16 +1522,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -1929,23 +1578,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -2026,16 +1658,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -2065,23 +1687,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -2162,16 +1767,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -2202,23 +1797,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2299,16 +1877,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -2368,23 +1936,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2465,16 +2016,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -2504,23 +2045,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2601,16 +2125,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -2641,23 +2155,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -2738,16 +2235,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -2804,23 +2291,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2901,16 +2371,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -2940,23 +2400,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3037,16 +2480,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -3077,23 +2510,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -3174,16 +2590,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -3240,23 +2646,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3337,16 +2726,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -3376,23 +2755,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3473,16 +2835,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -3513,23 +2865,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -3610,16 +2945,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -3678,23 +3003,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3775,16 +3083,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -3814,23 +3112,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3911,16 +3192,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -3951,23 +3222,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -4048,16 +3302,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -4114,23 +3358,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4211,16 +3438,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -4250,23 +3467,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4347,16 +3547,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -4387,23 +3577,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -4484,16 +3657,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -4550,23 +3713,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4647,16 +3793,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -4686,23 +3822,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4783,16 +3902,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -4823,23 +3932,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -4920,16 +4012,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -4986,23 +4068,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5083,16 +4148,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -5122,23 +4177,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5219,16 +4257,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -5259,23 +4287,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -5356,16 +4367,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -5424,23 +4425,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5521,16 +4505,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -5560,23 +4534,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5657,16 +4614,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -5697,23 +4644,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -5794,16 +4724,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -5860,23 +4780,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5957,16 +4860,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -5996,23 +4889,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6093,16 +4969,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -6133,23 +4999,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6230,16 +5079,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -6296,23 +5135,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6393,16 +5215,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -6432,23 +5244,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6529,16 +5324,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -6569,23 +5354,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6666,16 +5434,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -6732,23 +5490,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6829,16 +5570,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -6868,23 +5599,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6965,16 +5679,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -7005,23 +5709,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7102,16 +5789,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -7170,23 +5847,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7267,16 +5927,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -7306,23 +5956,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7403,16 +6036,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -7443,23 +6066,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7540,16 +6146,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -7606,23 +6202,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7703,16 +6282,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -7742,23 +6311,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7839,16 +6391,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -7879,23 +6421,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7976,16 +6501,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -8042,23 +6557,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -8139,16 +6637,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -8178,23 +6666,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -8275,16 +6746,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -8315,23 +6776,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8412,16 +6856,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -8478,23 +6912,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -8575,16 +6992,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -8614,23 +7021,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -8711,16 +7101,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -8751,23 +7131,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -8848,16 +7211,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -8914,23 +7267,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9011,16 +7347,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -9050,23 +7376,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9147,16 +7456,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -9187,23 +7486,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9284,16 +7566,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -9352,23 +7624,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9449,16 +7704,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -9488,23 +7733,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9585,16 +7813,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -9625,23 +7843,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -9722,16 +7923,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -9788,23 +7979,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9885,16 +8059,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -9924,23 +8088,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10021,16 +8168,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -10061,23 +8198,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10158,16 +8278,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -10224,23 +8334,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10321,16 +8414,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -10360,23 +8443,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10457,16 +8523,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -10497,23 +8553,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -10594,16 +8633,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -10660,23 +8689,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10757,16 +8769,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -10796,23 +8798,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10893,16 +8878,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -10933,23 +8908,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -11030,16 +8988,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
                         }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
@@ -11098,23 +9046,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
             }>]>>, z.ZodEnum<{
-                aqueous_side1_gloss: "aqueous_side1_gloss";
-                aqueous_side1_matte: "aqueous_side1_matte";
-                aqueous_side1_satin: "aqueous_side1_satin";
-                aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                aqueous_side2_gloss: "aqueous_side2_gloss";
-                aqueous_side2_matte: "aqueous_side2_matte";
-                aqueous_side2_satin: "aqueous_side2_satin";
-                aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                lamination_gloss: "lamination_gloss";
-                lamination_matte: "lamination_matte";
-                lamination_soft_touch: "lamination_soft_touch";
-                lamination_sunscreen: "lamination_sunscreen";
-                uv_side1_gloss: "uv_side1_gloss";
-                uv_side1_matte: "uv_side1_matte";
-                uv_side2_gloss: "uv_side2_gloss";
-                uv_side2_matte: "uv_side2_matte";
-            }>, z.ZodEnum<{
                 handling_charge: "handling_charge";
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
@@ -11195,16 +9126,6 @@ export declare const DesignerConfig: z.ZodObject<{
             }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
-            }>, z.ZodEnum<{
-                individual_cut: "individual_cut";
-                roll_core_1: "roll_core_1";
-                roll_core_3: "roll_core_3";
-                roll_no_perforation: "roll_no_perforation";
-                roll_perforation: "roll_perforation";
-                roll_qty_1000: "roll_qty_1000";
-                roll_qty_125: "roll_qty_125";
-                roll_qty_250: "roll_qty_250";
-                roll_qty_500: "roll_qty_500";
             }>, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
@@ -11234,23 +9155,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
             }>]>>, z.ZodEnum<{
-                aqueous_side1_gloss: "aqueous_side1_gloss";
-                aqueous_side1_matte: "aqueous_side1_matte";
-                aqueous_side1_satin: "aqueous_side1_satin";
-                aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                aqueous_side2_gloss: "aqueous_side2_gloss";
-                aqueous_side2_matte: "aqueous_side2_matte";
-                aqueous_side2_satin: "aqueous_side2_satin";
-                aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                lamination_gloss: "lamination_gloss";
-                lamination_matte: "lamination_matte";
-                lamination_soft_touch: "lamination_soft_touch";
-                lamination_sunscreen: "lamination_sunscreen";
-                uv_side1_gloss: "uv_side1_gloss";
-                uv_side1_matte: "uv_side1_matte";
-                uv_side2_gloss: "uv_side2_gloss";
-                uv_side2_matte: "uv_side2_matte";
-            }>, z.ZodEnum<{
                 handling_charge: "handling_charge";
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
@@ -11331,16 +9235,6 @@ export declare const DesignerConfig: z.ZodObject<{
             }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
-            }>, z.ZodEnum<{
-                individual_cut: "individual_cut";
-                roll_core_1: "roll_core_1";
-                roll_core_3: "roll_core_3";
-                roll_no_perforation: "roll_no_perforation";
-                roll_perforation: "roll_perforation";
-                roll_qty_1000: "roll_qty_1000";
-                roll_qty_125: "roll_qty_125";
-                roll_qty_250: "roll_qty_250";
-                roll_qty_500: "roll_qty_500";
             }>, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
@@ -11371,23 +9265,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11469,16 +9346,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
                 }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
-                }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11536,23 +9403,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -11633,16 +9483,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -11672,23 +9512,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -11769,16 +9592,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -11809,23 +9622,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
-                            aqueous_side1_gloss: "aqueous_side1_gloss";
-                            aqueous_side1_matte: "aqueous_side1_matte";
-                            aqueous_side1_satin: "aqueous_side1_satin";
-                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                            aqueous_side2_gloss: "aqueous_side2_gloss";
-                            aqueous_side2_matte: "aqueous_side2_matte";
-                            aqueous_side2_satin: "aqueous_side2_satin";
-                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                            lamination_gloss: "lamination_gloss";
-                            lamination_matte: "lamination_matte";
-                            lamination_soft_touch: "lamination_soft_touch";
-                            lamination_sunscreen: "lamination_sunscreen";
-                            uv_side1_gloss: "uv_side1_gloss";
-                            uv_side1_matte: "uv_side1_matte";
-                            uv_side2_gloss: "uv_side2_gloss";
-                            uv_side2_matte: "uv_side2_matte";
-                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -11907,16 +9703,6 @@ export declare const DesignerConfig: z.ZodObject<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
                         }>, z.ZodEnum<{
-                            individual_cut: "individual_cut";
-                            roll_core_1: "roll_core_1";
-                            roll_core_3: "roll_core_3";
-                            roll_no_perforation: "roll_no_perforation";
-                            roll_perforation: "roll_perforation";
-                            roll_qty_1000: "roll_qty_1000";
-                            roll_qty_125: "roll_qty_125";
-                            roll_qty_250: "roll_qty_250";
-                            roll_qty_500: "roll_qty_500";
-                        }>, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -11973,23 +9759,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12070,16 +9839,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -12109,23 +9868,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12206,16 +9948,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -12246,23 +9978,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -12343,16 +10058,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -12411,23 +10116,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12508,16 +10196,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -12547,23 +10225,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12644,16 +10305,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -12684,23 +10335,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -12781,16 +10415,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -12849,23 +10473,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12946,16 +10553,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -12985,23 +10582,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -13082,16 +10662,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -13122,23 +10692,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -13219,16 +10772,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -13285,23 +10828,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -13382,16 +10908,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -13421,23 +10937,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -13518,16 +11017,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -13558,23 +11047,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -13655,16 +11127,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -13721,23 +11183,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -13818,16 +11263,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -13857,23 +11292,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -13954,16 +11372,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -13994,23 +11402,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -14091,16 +11482,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -14157,23 +11538,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -14254,16 +11618,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -14293,23 +11647,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -14390,16 +11727,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -14430,23 +11757,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -14527,16 +11837,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -14593,23 +11893,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -14690,16 +11973,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -14729,23 +12002,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -14826,16 +12082,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -14866,23 +12112,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -14963,16 +12192,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -15031,23 +12250,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -15128,16 +12330,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -15167,23 +12359,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -15264,16 +12439,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -15304,23 +12469,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -15401,16 +12549,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -15467,23 +12605,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -15564,16 +12685,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -15603,23 +12714,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -15700,16 +12794,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -15740,23 +12824,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -15837,16 +12904,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -15903,23 +12960,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -16000,16 +13040,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -16039,23 +13069,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -16136,16 +13149,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -16176,23 +13179,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -16273,16 +13259,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -16339,23 +13315,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -16436,16 +13395,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -16475,23 +13424,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -16572,16 +13504,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -16612,23 +13534,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -16709,16 +13614,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -16777,23 +13672,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -16874,16 +13752,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -16913,23 +13781,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -17010,16 +13861,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -17050,23 +13891,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -17147,16 +13971,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -17213,23 +14027,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -17310,16 +14107,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -17349,23 +14136,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -17446,16 +14216,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -17486,23 +14246,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -17583,16 +14326,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -17649,23 +14382,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -17746,16 +14462,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -17785,23 +14491,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -17882,16 +14571,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -17922,23 +14601,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -18019,16 +14681,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -18085,23 +14737,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -18182,16 +14817,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -18221,23 +14846,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -18318,16 +14926,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -18358,23 +14956,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -18455,16 +15036,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -18521,23 +15092,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -18618,16 +15172,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -18657,23 +15201,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -18754,16 +15281,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -18794,23 +15311,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -18891,16 +15391,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
                     }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
@@ -18957,23 +15447,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -19054,16 +15527,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -19093,23 +15556,6 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
-                    aqueous_side1_gloss: "aqueous_side1_gloss";
-                    aqueous_side1_matte: "aqueous_side1_matte";
-                    aqueous_side1_satin: "aqueous_side1_satin";
-                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                    aqueous_side2_gloss: "aqueous_side2_gloss";
-                    aqueous_side2_matte: "aqueous_side2_matte";
-                    aqueous_side2_satin: "aqueous_side2_satin";
-                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                    lamination_gloss: "lamination_gloss";
-                    lamination_matte: "lamination_matte";
-                    lamination_soft_touch: "lamination_soft_touch";
-                    lamination_sunscreen: "lamination_sunscreen";
-                    uv_side1_gloss: "uv_side1_gloss";
-                    uv_side1_matte: "uv_side1_matte";
-                    uv_side2_gloss: "uv_side2_gloss";
-                    uv_side2_matte: "uv_side2_matte";
-                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -19190,16 +15636,6 @@ export declare const DesignerConfig: z.ZodObject<{
                 }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    individual_cut: "individual_cut";
-                    roll_core_1: "roll_core_1";
-                    roll_core_3: "roll_core_3";
-                    roll_no_perforation: "roll_no_perforation";
-                    roll_perforation: "roll_perforation";
-                    roll_qty_1000: "roll_qty_1000";
-                    roll_qty_125: "roll_qty_125";
-                    roll_qty_250: "roll_qty_250";
-                    roll_qty_500: "roll_qty_500";
                 }>, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
@@ -19230,23 +15666,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
-                        aqueous_side1_gloss: "aqueous_side1_gloss";
-                        aqueous_side1_matte: "aqueous_side1_matte";
-                        aqueous_side1_satin: "aqueous_side1_satin";
-                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-                        aqueous_side2_gloss: "aqueous_side2_gloss";
-                        aqueous_side2_matte: "aqueous_side2_matte";
-                        aqueous_side2_satin: "aqueous_side2_satin";
-                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-                        lamination_gloss: "lamination_gloss";
-                        lamination_matte: "lamination_matte";
-                        lamination_soft_touch: "lamination_soft_touch";
-                        lamination_sunscreen: "lamination_sunscreen";
-                        uv_side1_gloss: "uv_side1_gloss";
-                        uv_side1_matte: "uv_side1_matte";
-                        uv_side2_gloss: "uv_side2_gloss";
-                        uv_side2_matte: "uv_side2_matte";
-                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -19328,16 +15747,6 @@ export declare const DesignerConfig: z.ZodObject<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
                     }>, z.ZodEnum<{
-                        individual_cut: "individual_cut";
-                        roll_core_1: "roll_core_1";
-                        roll_core_3: "roll_core_3";
-                        roll_no_perforation: "roll_no_perforation";
-                        roll_perforation: "roll_perforation";
-                        roll_qty_1000: "roll_qty_1000";
-                        roll_qty_125: "roll_qty_125";
-                        roll_qty_250: "roll_qty_250";
-                        roll_qty_500: "roll_qty_500";
-                    }>, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -19386,23 +15795,6 @@ export declare const DesignerConfig: z.ZodObject<{
         ink_coverage_sm: "ink_coverage_sm";
         ink_coverage_std: "ink_coverage_std";
     }>]>>, z.ZodEnum<{
-        aqueous_side1_gloss: "aqueous_side1_gloss";
-        aqueous_side1_matte: "aqueous_side1_matte";
-        aqueous_side1_satin: "aqueous_side1_satin";
-        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
-        aqueous_side2_gloss: "aqueous_side2_gloss";
-        aqueous_side2_matte: "aqueous_side2_matte";
-        aqueous_side2_satin: "aqueous_side2_satin";
-        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
-        lamination_gloss: "lamination_gloss";
-        lamination_matte: "lamination_matte";
-        lamination_soft_touch: "lamination_soft_touch";
-        lamination_sunscreen: "lamination_sunscreen";
-        uv_side1_gloss: "uv_side1_gloss";
-        uv_side1_matte: "uv_side1_matte";
-        uv_side2_gloss: "uv_side2_gloss";
-        uv_side2_matte: "uv_side2_matte";
-    }>, z.ZodEnum<{
         handling_charge: "handling_charge";
         print_charge: "print_charge";
         setup_charge: "setup_charge";
@@ -19483,16 +15875,6 @@ export declare const DesignerConfig: z.ZodObject<{
     }>, z.ZodEnum<{
         retaddress_side1: "retaddress_side1";
         retaddress_side2: "retaddress_side2";
-    }>, z.ZodEnum<{
-        individual_cut: "individual_cut";
-        roll_core_1: "roll_core_1";
-        roll_core_3: "roll_core_3";
-        roll_no_perforation: "roll_no_perforation";
-        roll_perforation: "roll_perforation";
-        roll_qty_1000: "roll_qty_1000";
-        roll_qty_125: "roll_qty_125";
-        roll_qty_250: "roll_qty_250";
-        roll_qty_500: "roll_qty_500";
     }>, z.ZodEnum<{
         varaddress_side1: "varaddress_side1";
         varaddress_side2: "varaddress_side2";
