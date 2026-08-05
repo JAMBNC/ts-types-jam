@@ -4,6 +4,8 @@ export declare const FoilColorAdderCode: z.ZodEnum<{
     foil_first_color: "foil_first_color";
     foil_fourth_color: "foil_fourth_color";
     foil_second_color: "foil_second_color";
+    foil_seventh_color: "foil_seventh_color";
+    foil_sixth_color: "foil_sixth_color";
     foil_third_color: "foil_third_color";
 }>;
 export type FoilColorAdderCode = z.infer<typeof FoilColorAdderCode>;

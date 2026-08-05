@@ -35,6 +35,7 @@ export const DesignerConfig = z
             .object({
             aqueous: DesignerConfigFeatureValue.optional(),
             uv: DesignerConfigFeatureValue.optional(),
+            lamination: DesignerConfigFeatureValue.optional(),
         })
             .passthrough()
             .optional(),
@@ -89,6 +90,27 @@ export const DesignerConfig = z
             .passthrough()
             .optional(),
         processes: DesignerConfigFeatureValue.optional(),
+        layout: z
+            .object({
+            transpose: z
+                .object({ sheet: DesignerConfigFeatureValue.optional() })
+                .passthrough()
+                .optional(),
+            orientation: DesignerConfigFeatureValue.optional(),
+        })
+            .passthrough()
+            .optional(),
+        sheet: z
+            .object({
+            mirroring: DesignerConfigFeatureValue.optional(),
+            cutting: DesignerConfigFeatureValue.optional(),
+        })
+            .passthrough()
+            .optional(),
+        proof: z
+            .object({ digital: DesignerConfigFeatureValue.optional() })
+            .passthrough()
+            .optional(),
         roll: z
             .object({
             core: DesignerConfigFeatureValue.optional(),
@@ -125,6 +147,9 @@ export const DesignerConfig = z
             "coatings",
             "process",
             "processes",
+            "layout",
+            "sheet",
+            "proof",
             "roll",
             "sign",
             "slits",

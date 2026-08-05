@@ -6,5 +6,6 @@ export const FeatureValue = z
     type: z.literal("featureValue"),
     availableOptions: z.array(AdderCodeEnum).optional(),
     optionUse: OptionUse.optional(),
+    required: z.boolean().optional(),
 })
     .passthrough();

@@ -12,6 +12,22 @@ export declare const DesignerConfig: z.ZodObject<{
         ink_coverage_sm: "ink_coverage_sm";
         ink_coverage_std: "ink_coverage_std";
     }>]>>, z.ZodEnum<{
+        aqueous_side1_gloss: "aqueous_side1_gloss";
+        aqueous_side1_matte: "aqueous_side1_matte";
+        aqueous_side1_satin: "aqueous_side1_satin";
+        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+        aqueous_side2_gloss: "aqueous_side2_gloss";
+        aqueous_side2_matte: "aqueous_side2_matte";
+        aqueous_side2_satin: "aqueous_side2_satin";
+        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+        lamination_gloss: "lamination_gloss";
+        lamination_matte: "lamination_matte";
+        lamination_soft_touch: "lamination_soft_touch";
+        uv_side1_gloss: "uv_side1_gloss";
+        uv_side1_matte: "uv_side1_matte";
+        uv_side2_gloss: "uv_side2_gloss";
+        uv_side2_matte: "uv_side2_matte";
+    }>, z.ZodEnum<{
         handling_charge: "handling_charge";
         print_charge: "print_charge";
         setup_charge: "setup_charge";
@@ -20,6 +36,8 @@ export declare const DesignerConfig: z.ZodObject<{
         foil_first_color: "foil_first_color";
         foil_fourth_color: "foil_fourth_color";
         foil_second_color: "foil_second_color";
+        foil_seventh_color: "foil_seventh_color";
+        foil_sixth_color: "foil_sixth_color";
         foil_third_color: "foil_third_color";
     }>, z.ZodEnum<{
         foil_coverage_lg: "foil_coverage_lg";
@@ -32,6 +50,8 @@ export declare const DesignerConfig: z.ZodObject<{
         foil_stamp_3: "foil_stamp_3";
         foil_stamp_4: "foil_stamp_4";
         foil_stamp_5: "foil_stamp_5";
+        foil_stamp_6: "foil_stamp_6";
+        foil_stamp_7: "foil_stamp_7";
     }>, z.ZodEnum<{
         image: "image";
         text: "text";
@@ -75,14 +95,20 @@ export declare const DesignerConfig: z.ZodObject<{
         ink_stamp_1: "ink_stamp_1";
         ink_stamp_2: "ink_stamp_2";
     }>, z.ZodEnum<{
+        orientation_landscape: "orientation_landscape";
+        orientation_portrait: "orientation_portrait";
+    }>, z.ZodEnum<{
         letterpress_ink1: "letterpress_ink1";
         print_method_auto: "print_method_auto";
         print_method_digital: "print_method_digital";
         print_method_offset: "print_method_offset";
     }>, z.ZodEnum<{
+        dig_proof_s1: "dig_proof_s1";
+        dig_proof_s2: "dig_proof_s2";
+    }>, z.ZodEnum<{
         retaddress_side1: "retaddress_side1";
         retaddress_side2: "retaddress_side2";
-    }>, z.ZodEnum<{
+    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
         varaddress_side1: "varaddress_side1";
         varaddress_side2: "varaddress_side2";
     }>, z.ZodEnum<{
@@ -146,6 +172,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -154,6 +196,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -166,6 +210,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -209,14 +255,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -229,6 +281,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -244,6 +297,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -252,6 +321,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -264,6 +335,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -307,14 +380,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -344,6 +423,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -352,6 +447,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -364,6 +461,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -407,14 +506,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -427,6 +532,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             variable: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -469,6 +575,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -477,6 +599,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -489,6 +613,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -532,14 +658,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -552,6 +684,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -567,6 +700,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -575,6 +724,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -587,6 +738,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -630,14 +783,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -667,6 +826,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -675,6 +850,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -687,6 +864,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -730,14 +909,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -750,6 +935,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
         }, z.core.$loose>>;
@@ -794,6 +980,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -802,6 +1004,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -814,6 +1018,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -857,14 +1063,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -877,6 +1089,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -892,6 +1105,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -900,6 +1129,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -912,6 +1143,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -955,14 +1188,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -992,6 +1231,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1000,6 +1255,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -1012,6 +1269,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -1055,14 +1314,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -1075,6 +1340,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             uv: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -1117,6 +1383,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -1125,6 +1407,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -1137,6 +1421,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -1180,14 +1466,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -1200,6 +1492,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -1215,6 +1508,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -1223,6 +1532,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -1235,6 +1546,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -1278,14 +1591,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -1315,6 +1634,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1323,6 +1658,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -1335,6 +1672,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -1378,14 +1717,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -1398,6 +1743,410 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>>;
+            }, z.core.$loose>]>>;
+            lamination: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                type: z.ZodLiteral<"coverageFeatureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>>>;
+                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        pt: "pt";
+                        px: "px";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"featureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                restrictColors: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"sidedFeatureValue">;
+                sides: z.ZodArray<z.ZodObject<{
+                    type: z.ZodLiteral<"featureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
         }, z.core.$loose>>;
@@ -1443,6 +2192,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1451,6 +2216,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -1463,6 +2230,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -1506,14 +2275,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -1526,6 +2301,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -1541,6 +2317,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1549,6 +2341,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -1561,6 +2355,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -1604,14 +2400,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -1641,6 +2443,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -1649,6 +2467,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -1661,6 +2481,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -1704,14 +2526,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -1724,6 +2552,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -1766,6 +2595,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1774,6 +2619,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -1786,6 +2633,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -1829,14 +2678,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -1849,6 +2704,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -1864,6 +2720,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -1872,6 +2744,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -1884,6 +2758,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -1927,14 +2803,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -1964,6 +2846,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -1972,6 +2870,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -1984,6 +2884,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -2027,14 +2929,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -2047,6 +2955,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -2089,6 +2998,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2097,6 +3022,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -2109,6 +3036,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -2152,14 +3081,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -2172,6 +3107,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -2187,6 +3123,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2195,6 +3147,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -2207,6 +3161,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -2250,14 +3206,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -2287,6 +3249,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -2295,6 +3273,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -2307,6 +3287,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -2350,14 +3332,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -2370,6 +3358,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
             }, z.core.$loose>>;
@@ -2414,6 +3403,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2422,6 +3427,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -2434,6 +3441,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -2477,14 +3486,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -2497,6 +3512,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -2512,6 +3528,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2520,6 +3552,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -2532,6 +3566,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -2575,14 +3611,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -2612,6 +3654,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -2620,6 +3678,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -2632,6 +3692,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -2675,14 +3737,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -2695,6 +3763,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -2737,6 +3806,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2745,6 +3830,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -2757,6 +3844,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -2800,14 +3889,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -2820,6 +3915,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -2835,6 +3931,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -2843,6 +3955,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -2855,6 +3969,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -2898,14 +4014,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -2935,6 +4057,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -2943,6 +4081,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -2955,6 +4095,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -2998,14 +4140,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -3018,6 +4166,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -3060,6 +4209,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3068,6 +4233,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -3080,6 +4247,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -3123,14 +4292,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -3143,6 +4318,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -3158,6 +4334,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3166,6 +4358,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -3178,6 +4372,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -3221,14 +4417,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -3258,6 +4460,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -3266,6 +4484,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -3278,6 +4498,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -3321,14 +4543,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -3341,6 +4569,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -3383,6 +4612,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3391,6 +4636,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -3403,6 +4650,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -3446,14 +4695,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -3466,6 +4721,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -3481,6 +4737,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3489,6 +4761,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -3501,6 +4775,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -3544,14 +4820,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -3581,6 +4863,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -3589,6 +4887,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -3601,6 +4901,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -3644,14 +4946,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -3664,6 +4972,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
             }, z.core.$loose>>;
@@ -3708,6 +5017,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3716,6 +5041,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -3728,6 +5055,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -3771,14 +5100,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -3791,6 +5126,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -3806,6 +5142,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -3814,6 +5166,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -3826,6 +5180,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -3869,14 +5225,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -3906,6 +5268,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -3914,6 +5292,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -3926,6 +5306,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -3969,14 +5351,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -3989,6 +5377,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -4031,6 +5420,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4039,6 +5444,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -4051,6 +5458,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -4094,14 +5503,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -4114,6 +5529,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -4129,6 +5545,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4137,6 +5569,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -4149,6 +5583,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -4192,14 +5628,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -4229,6 +5671,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -4237,6 +5695,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -4249,6 +5709,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -4292,14 +5754,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -4312,6 +5780,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -4354,6 +5823,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4362,6 +5847,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -4374,6 +5861,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -4417,14 +5906,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -4437,6 +5932,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -4452,6 +5948,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4460,6 +5972,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -4472,6 +5986,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -4515,14 +6031,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -4552,6 +6074,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -4560,6 +6098,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -4572,6 +6112,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -4615,14 +6157,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -4635,6 +6183,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -4677,6 +6226,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4685,6 +6250,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -4697,6 +6264,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -4740,14 +6309,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -4760,6 +6335,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -4775,6 +6351,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -4783,6 +6375,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -4795,6 +6389,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -4838,14 +6434,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -4875,6 +6477,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -4883,6 +6501,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -4895,6 +6515,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -4938,14 +6560,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -4958,6 +6586,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
             }, z.core.$loose>>;
@@ -5002,6 +6631,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5010,6 +6655,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5022,6 +6669,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -5065,14 +6714,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -5085,6 +6740,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -5100,6 +6756,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5108,6 +6780,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5120,6 +6794,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -5163,14 +6839,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -5200,6 +6882,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -5208,6 +6906,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -5220,6 +6920,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -5263,14 +6965,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -5283,6 +6991,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -5325,6 +7034,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5333,6 +7058,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5345,6 +7072,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -5388,14 +7117,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -5408,6 +7143,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -5423,6 +7159,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5431,6 +7183,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5443,6 +7197,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -5486,14 +7242,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -5523,6 +7285,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -5531,6 +7309,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -5543,6 +7323,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -5586,14 +7368,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -5606,6 +7394,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -5648,6 +7437,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5656,6 +7461,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5668,6 +7475,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -5711,14 +7520,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -5731,6 +7546,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -5746,6 +7562,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5754,6 +7586,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5766,6 +7600,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -5809,14 +7645,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -5846,6 +7688,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -5854,6 +7712,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -5866,6 +7726,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -5909,14 +7771,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -5929,6 +7797,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -5971,6 +7840,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -5979,6 +7864,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -5991,6 +7878,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -6034,14 +7923,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -6054,6 +7949,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -6069,6 +7965,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6077,6 +7989,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -6089,6 +8003,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -6132,14 +8048,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -6169,6 +8091,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6177,6 +8115,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -6189,6 +8129,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -6232,14 +8174,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -6252,6 +8200,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 white: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -6294,6 +8243,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6302,6 +8267,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -6314,6 +8281,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -6357,14 +8326,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -6377,6 +8352,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -6392,6 +8368,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6400,6 +8392,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -6412,6 +8406,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -6455,14 +8451,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -6492,6 +8494,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6500,6 +8518,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -6512,6 +8532,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -6555,14 +8577,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -6575,6 +8603,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
             }, z.core.$loose>>;
@@ -6619,6 +8648,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6627,6 +8672,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -6639,6 +8686,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -6682,14 +8731,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -6702,6 +8757,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -6717,6 +8773,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6725,6 +8797,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -6737,6 +8811,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -6780,14 +8856,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -6817,6 +8899,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -6825,6 +8923,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -6837,6 +8937,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -6880,14 +8982,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -6900,6 +9008,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 configuration: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -6942,6 +9051,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -6950,6 +9075,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -6962,6 +9089,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -7005,14 +9134,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -7025,6 +9160,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -7040,6 +9176,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7048,6 +9200,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -7060,6 +9214,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -7103,14 +9259,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -7140,6 +9302,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7148,6 +9326,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -7160,6 +9340,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -7203,14 +9385,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -7223,6 +9411,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 coverage: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -7265,6 +9454,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7273,6 +9478,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -7285,6 +9492,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -7328,14 +9537,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -7348,6 +9563,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -7363,6 +9579,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7371,6 +9603,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -7383,6 +9617,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -7426,14 +9662,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -7463,6 +9705,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7471,6 +9729,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -7483,6 +9743,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -7526,14 +9788,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -7546,6 +9814,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
                 stamps: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -7588,6 +9857,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7596,6 +9881,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -7608,6 +9895,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -7651,14 +9940,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -7671,6 +9966,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"processConfigurationFeatureValue">;
                     allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -7686,6 +9982,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -7694,6 +10006,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -7706,6 +10020,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -7749,14 +10065,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -7786,6 +10108,22 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_coverage_sm: "ink_coverage_sm";
                             ink_coverage_std: "ink_coverage_std";
                         }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
                             handling_charge: "handling_charge";
                             print_charge: "print_charge";
                             setup_charge: "setup_charge";
@@ -7794,6 +10132,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_first_color: "foil_first_color";
                             foil_fourth_color: "foil_fourth_color";
                             foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
                             foil_third_color: "foil_third_color";
                         }>, z.ZodEnum<{
                             foil_coverage_lg: "foil_coverage_lg";
@@ -7806,6 +10146,8 @@ export declare const DesignerConfig: z.ZodObject<{
                             foil_stamp_3: "foil_stamp_3";
                             foil_stamp_4: "foil_stamp_4";
                             foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
                         }>, z.ZodEnum<{
                             image: "image";
                             text: "text";
@@ -7849,14 +10191,20 @@ export declare const DesignerConfig: z.ZodObject<{
                             ink_stamp_1: "ink_stamp_1";
                             ink_stamp_2: "ink_stamp_2";
                         }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
                             letterpress_ink1: "letterpress_ink1";
                             print_method_auto: "print_method_auto";
                             print_method_digital: "print_method_digital";
                             print_method_offset: "print_method_offset";
                         }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
                             retaddress_side1: "retaddress_side1";
                             retaddress_side2: "retaddress_side2";
-                        }>, z.ZodEnum<{
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                             varaddress_side1: "varaddress_side1";
                             varaddress_side2: "varaddress_side2";
                         }>, z.ZodEnum<{
@@ -7869,6 +10217,7 @@ export declare const DesignerConfig: z.ZodObject<{
                             none: "none";
                             selected: "selected";
                         }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
                     }, z.core.$loose>>;
                 }, z.core.$loose>]>>;
             }, z.core.$loose>>;
@@ -7913,6 +10262,22 @@ export declare const DesignerConfig: z.ZodObject<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
             }>]>>, z.ZodEnum<{
+                aqueous_side1_gloss: "aqueous_side1_gloss";
+                aqueous_side1_matte: "aqueous_side1_matte";
+                aqueous_side1_satin: "aqueous_side1_satin";
+                aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                aqueous_side2_gloss: "aqueous_side2_gloss";
+                aqueous_side2_matte: "aqueous_side2_matte";
+                aqueous_side2_satin: "aqueous_side2_satin";
+                aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                lamination_gloss: "lamination_gloss";
+                lamination_matte: "lamination_matte";
+                lamination_soft_touch: "lamination_soft_touch";
+                uv_side1_gloss: "uv_side1_gloss";
+                uv_side1_matte: "uv_side1_matte";
+                uv_side2_gloss: "uv_side2_gloss";
+                uv_side2_matte: "uv_side2_matte";
+            }>, z.ZodEnum<{
                 handling_charge: "handling_charge";
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
@@ -7921,6 +10286,8 @@ export declare const DesignerConfig: z.ZodObject<{
                 foil_first_color: "foil_first_color";
                 foil_fourth_color: "foil_fourth_color";
                 foil_second_color: "foil_second_color";
+                foil_seventh_color: "foil_seventh_color";
+                foil_sixth_color: "foil_sixth_color";
                 foil_third_color: "foil_third_color";
             }>, z.ZodEnum<{
                 foil_coverage_lg: "foil_coverage_lg";
@@ -7933,6 +10300,8 @@ export declare const DesignerConfig: z.ZodObject<{
                 foil_stamp_3: "foil_stamp_3";
                 foil_stamp_4: "foil_stamp_4";
                 foil_stamp_5: "foil_stamp_5";
+                foil_stamp_6: "foil_stamp_6";
+                foil_stamp_7: "foil_stamp_7";
             }>, z.ZodEnum<{
                 image: "image";
                 text: "text";
@@ -7976,14 +10345,20 @@ export declare const DesignerConfig: z.ZodObject<{
                 ink_stamp_1: "ink_stamp_1";
                 ink_stamp_2: "ink_stamp_2";
             }>, z.ZodEnum<{
+                orientation_landscape: "orientation_landscape";
+                orientation_portrait: "orientation_portrait";
+            }>, z.ZodEnum<{
                 letterpress_ink1: "letterpress_ink1";
                 print_method_auto: "print_method_auto";
                 print_method_digital: "print_method_digital";
                 print_method_offset: "print_method_offset";
             }>, z.ZodEnum<{
+                dig_proof_s1: "dig_proof_s1";
+                dig_proof_s2: "dig_proof_s2";
+            }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
-            }>, z.ZodEnum<{
+            }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
@@ -7996,6 +10371,7 @@ export declare const DesignerConfig: z.ZodObject<{
                 none: "none";
                 selected: "selected";
             }>>;
+            required: z.ZodOptional<z.ZodBoolean>;
         }, z.core.$loose>, z.ZodObject<{
             type: z.ZodLiteral<"processConfigurationFeatureValue">;
             allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -8011,6 +10387,22 @@ export declare const DesignerConfig: z.ZodObject<{
                 ink_coverage_sm: "ink_coverage_sm";
                 ink_coverage_std: "ink_coverage_std";
             }>]>>, z.ZodEnum<{
+                aqueous_side1_gloss: "aqueous_side1_gloss";
+                aqueous_side1_matte: "aqueous_side1_matte";
+                aqueous_side1_satin: "aqueous_side1_satin";
+                aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                aqueous_side2_gloss: "aqueous_side2_gloss";
+                aqueous_side2_matte: "aqueous_side2_matte";
+                aqueous_side2_satin: "aqueous_side2_satin";
+                aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                lamination_gloss: "lamination_gloss";
+                lamination_matte: "lamination_matte";
+                lamination_soft_touch: "lamination_soft_touch";
+                uv_side1_gloss: "uv_side1_gloss";
+                uv_side1_matte: "uv_side1_matte";
+                uv_side2_gloss: "uv_side2_gloss";
+                uv_side2_matte: "uv_side2_matte";
+            }>, z.ZodEnum<{
                 handling_charge: "handling_charge";
                 print_charge: "print_charge";
                 setup_charge: "setup_charge";
@@ -8019,6 +10411,8 @@ export declare const DesignerConfig: z.ZodObject<{
                 foil_first_color: "foil_first_color";
                 foil_fourth_color: "foil_fourth_color";
                 foil_second_color: "foil_second_color";
+                foil_seventh_color: "foil_seventh_color";
+                foil_sixth_color: "foil_sixth_color";
                 foil_third_color: "foil_third_color";
             }>, z.ZodEnum<{
                 foil_coverage_lg: "foil_coverage_lg";
@@ -8031,6 +10425,8 @@ export declare const DesignerConfig: z.ZodObject<{
                 foil_stamp_3: "foil_stamp_3";
                 foil_stamp_4: "foil_stamp_4";
                 foil_stamp_5: "foil_stamp_5";
+                foil_stamp_6: "foil_stamp_6";
+                foil_stamp_7: "foil_stamp_7";
             }>, z.ZodEnum<{
                 image: "image";
                 text: "text";
@@ -8074,14 +10470,20 @@ export declare const DesignerConfig: z.ZodObject<{
                 ink_stamp_1: "ink_stamp_1";
                 ink_stamp_2: "ink_stamp_2";
             }>, z.ZodEnum<{
+                orientation_landscape: "orientation_landscape";
+                orientation_portrait: "orientation_portrait";
+            }>, z.ZodEnum<{
                 letterpress_ink1: "letterpress_ink1";
                 print_method_auto: "print_method_auto";
                 print_method_digital: "print_method_digital";
                 print_method_offset: "print_method_offset";
             }>, z.ZodEnum<{
+                dig_proof_s1: "dig_proof_s1";
+                dig_proof_s2: "dig_proof_s2";
+            }>, z.ZodEnum<{
                 retaddress_side1: "retaddress_side1";
                 retaddress_side2: "retaddress_side2";
-            }>, z.ZodEnum<{
+            }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                 varaddress_side1: "varaddress_side1";
                 varaddress_side2: "varaddress_side2";
             }>, z.ZodEnum<{
@@ -8111,6 +10513,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -8119,6 +10537,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -8131,6 +10551,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -8174,14 +10596,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -8194,235 +10622,39 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>>;
         }, z.core.$loose>]>>;
-        roll: z.ZodOptional<z.ZodObject<{
-            core: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
-                type: z.ZodLiteral<"coverageFeatureValue">;
-                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
-                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
-                    foil_coverage_lg: "foil_coverage_lg";
-                    foil_coverage_sm: "foil_coverage_sm";
-                    foil_coverage_std: "foil_coverage_std";
-                    foil_coverage_xl: "foil_coverage_xl";
-                }>, z.ZodEnum<{
-                    ink_coverage_sm: "ink_coverage_sm";
-                    ink_coverage_std: "ink_coverage_std";
-                }>]>>>>;
-                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
-                    u: z.ZodEnum<{
-                        in: "in";
-                        mm: "mm";
-                        pt: "pt";
-                        px: "px";
-                    }>;
-                    v: z.ZodNumber;
-                }, z.core.$loose>>>;
-                optionUse: z.ZodOptional<z.ZodEnum<{
-                    all: "all";
-                    none: "none";
-                    selected: "selected";
-                }>>;
-            }, z.core.$loose>, z.ZodObject<{
-                type: z.ZodLiteral<"featureValue">;
-                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
-                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
-                    foil_coverage_lg: "foil_coverage_lg";
-                    foil_coverage_sm: "foil_coverage_sm";
-                    foil_coverage_std: "foil_coverage_std";
-                    foil_coverage_xl: "foil_coverage_xl";
-                }>, z.ZodEnum<{
-                    ink_coverage_sm: "ink_coverage_sm";
-                    ink_coverage_std: "ink_coverage_std";
-                }>]>>, z.ZodEnum<{
-                    handling_charge: "handling_charge";
-                    print_charge: "print_charge";
-                    setup_charge: "setup_charge";
-                }>, z.ZodEnum<{
-                    foil_fifth_color: "foil_fifth_color";
-                    foil_first_color: "foil_first_color";
-                    foil_fourth_color: "foil_fourth_color";
-                    foil_second_color: "foil_second_color";
-                    foil_third_color: "foil_third_color";
-                }>, z.ZodEnum<{
-                    foil_coverage_lg: "foil_coverage_lg";
-                    foil_coverage_sm: "foil_coverage_sm";
-                    foil_coverage_std: "foil_coverage_std";
-                    foil_coverage_xl: "foil_coverage_xl";
-                }>, z.ZodEnum<{
-                    foil_stamp_1: "foil_stamp_1";
-                    foil_stamp_2: "foil_stamp_2";
-                    foil_stamp_3: "foil_stamp_3";
-                    foil_stamp_4: "foil_stamp_4";
-                    foil_stamp_5: "foil_stamp_5";
-                }>, z.ZodEnum<{
-                    image: "image";
-                    text: "text";
-                }>, z.ZodEnum<{
-                    color_side1_2pms: "color_side1_2pms";
-                    color_side1_2std: "color_side1_2std";
-                    color_side1_2std_2pms: "color_side1_2std_2pms";
-                    color_side1_2std_pms: "color_side1_2std_pms";
-                    color_side1_3pms: "color_side1_3pms";
-                    color_side1_3std: "color_side1_3std";
-                    color_side1_3std_pms: "color_side1_3std_pms";
-                    color_side1_4pms: "color_side1_4pms";
-                    color_side1_4std: "color_side1_4std";
-                    color_side1_blk: "color_side1_blk";
-                    color_side1_blk_2pms: "color_side1_blk_2pms";
-                    color_side1_blk_2std: "color_side1_blk_2std";
-                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
-                    color_side1_blk_3pms: "color_side1_blk_3pms";
-                    color_side1_blk_3std: "color_side1_blk_3std";
-                    color_side1_blk_pms: "color_side1_blk_pms";
-                    color_side1_blk_std: "color_side1_blk_std";
-                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
-                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
-                    color_side1_cmyk: "color_side1_cmyk";
-                    color_side1_pms: "color_side1_pms";
-                    color_side1_std: "color_side1_std";
-                    color_side1_std_2pms: "color_side1_std_2pms";
-                    color_side1_std_3pms: "color_side1_std_3pms";
-                    color_side1_std_pms: "color_side1_std_pms";
-                    color_side1_white_ink: "color_side1_white_ink";
-                }>, z.ZodEnum<{
-                    color_side2_cmyk: "color_side2_cmyk";
-                    color_side2_four_color: "color_side2_four_color";
-                    color_side2_one_color: "color_side2_one_color";
-                    color_side2_three_color: "color_side2_three_color";
-                    color_side2_two_color: "color_side2_two_color";
-                }>, z.ZodEnum<{
-                    ink_coverage_sm: "ink_coverage_sm";
-                    ink_coverage_std: "ink_coverage_std";
-                }>, z.ZodEnum<{
-                    ink_stamp_1: "ink_stamp_1";
-                    ink_stamp_2: "ink_stamp_2";
-                }>, z.ZodEnum<{
-                    letterpress_ink1: "letterpress_ink1";
-                    print_method_auto: "print_method_auto";
-                    print_method_digital: "print_method_digital";
-                    print_method_offset: "print_method_offset";
-                }>, z.ZodEnum<{
-                    retaddress_side1: "retaddress_side1";
-                    retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    varaddress_side1: "varaddress_side1";
-                    varaddress_side2: "varaddress_side2";
-                }>, z.ZodEnum<{
-                    white_ink: "white_ink";
-                    white_ink_side1: "white_ink_side1";
-                    white_ink_side2: "white_ink_side2";
-                }>]>>>;
-                optionUse: z.ZodOptional<z.ZodEnum<{
-                    all: "all";
-                    none: "none";
-                    selected: "selected";
-                }>>;
-            }, z.core.$loose>, z.ZodObject<{
-                type: z.ZodLiteral<"processConfigurationFeatureValue">;
-                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
-                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
-                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
-                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
-                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
-                    foil_coverage_lg: "foil_coverage_lg";
-                    foil_coverage_sm: "foil_coverage_sm";
-                    foil_coverage_std: "foil_coverage_std";
-                    foil_coverage_xl: "foil_coverage_xl";
-                }>, z.ZodEnum<{
-                    ink_coverage_sm: "ink_coverage_sm";
-                    ink_coverage_std: "ink_coverage_std";
-                }>]>>, z.ZodEnum<{
-                    handling_charge: "handling_charge";
-                    print_charge: "print_charge";
-                    setup_charge: "setup_charge";
-                }>, z.ZodEnum<{
-                    foil_fifth_color: "foil_fifth_color";
-                    foil_first_color: "foil_first_color";
-                    foil_fourth_color: "foil_fourth_color";
-                    foil_second_color: "foil_second_color";
-                    foil_third_color: "foil_third_color";
-                }>, z.ZodEnum<{
-                    foil_coverage_lg: "foil_coverage_lg";
-                    foil_coverage_sm: "foil_coverage_sm";
-                    foil_coverage_std: "foil_coverage_std";
-                    foil_coverage_xl: "foil_coverage_xl";
-                }>, z.ZodEnum<{
-                    foil_stamp_1: "foil_stamp_1";
-                    foil_stamp_2: "foil_stamp_2";
-                    foil_stamp_3: "foil_stamp_3";
-                    foil_stamp_4: "foil_stamp_4";
-                    foil_stamp_5: "foil_stamp_5";
-                }>, z.ZodEnum<{
-                    image: "image";
-                    text: "text";
-                }>, z.ZodEnum<{
-                    color_side1_2pms: "color_side1_2pms";
-                    color_side1_2std: "color_side1_2std";
-                    color_side1_2std_2pms: "color_side1_2std_2pms";
-                    color_side1_2std_pms: "color_side1_2std_pms";
-                    color_side1_3pms: "color_side1_3pms";
-                    color_side1_3std: "color_side1_3std";
-                    color_side1_3std_pms: "color_side1_3std_pms";
-                    color_side1_4pms: "color_side1_4pms";
-                    color_side1_4std: "color_side1_4std";
-                    color_side1_blk: "color_side1_blk";
-                    color_side1_blk_2pms: "color_side1_blk_2pms";
-                    color_side1_blk_2std: "color_side1_blk_2std";
-                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
-                    color_side1_blk_3pms: "color_side1_blk_3pms";
-                    color_side1_blk_3std: "color_side1_blk_3std";
-                    color_side1_blk_pms: "color_side1_blk_pms";
-                    color_side1_blk_std: "color_side1_blk_std";
-                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
-                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
-                    color_side1_cmyk: "color_side1_cmyk";
-                    color_side1_pms: "color_side1_pms";
-                    color_side1_std: "color_side1_std";
-                    color_side1_std_2pms: "color_side1_std_2pms";
-                    color_side1_std_3pms: "color_side1_std_3pms";
-                    color_side1_std_pms: "color_side1_std_pms";
-                    color_side1_white_ink: "color_side1_white_ink";
-                }>, z.ZodEnum<{
-                    color_side2_cmyk: "color_side2_cmyk";
-                    color_side2_four_color: "color_side2_four_color";
-                    color_side2_one_color: "color_side2_one_color";
-                    color_side2_three_color: "color_side2_three_color";
-                    color_side2_two_color: "color_side2_two_color";
-                }>, z.ZodEnum<{
-                    ink_coverage_sm: "ink_coverage_sm";
-                    ink_coverage_std: "ink_coverage_std";
-                }>, z.ZodEnum<{
-                    ink_stamp_1: "ink_stamp_1";
-                    ink_stamp_2: "ink_stamp_2";
-                }>, z.ZodEnum<{
-                    letterpress_ink1: "letterpress_ink1";
-                    print_method_auto: "print_method_auto";
-                    print_method_digital: "print_method_digital";
-                    print_method_offset: "print_method_offset";
-                }>, z.ZodEnum<{
-                    retaddress_side1: "retaddress_side1";
-                    retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
-                    varaddress_side1: "varaddress_side1";
-                    varaddress_side2: "varaddress_side2";
-                }>, z.ZodEnum<{
-                    white_ink: "white_ink";
-                    white_ink_side1: "white_ink_side1";
-                    white_ink_side2: "white_ink_side2";
-                }>]>>>;
-                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
-                optionUse: z.ZodOptional<z.ZodEnum<{
-                    all: "all";
-                    none: "none";
-                    selected: "selected";
-                }>>;
-                restrictColors: z.ZodOptional<z.ZodBoolean>;
-            }, z.core.$loose>, z.ZodObject<{
-                type: z.ZodLiteral<"sidedFeatureValue">;
-                sides: z.ZodArray<z.ZodObject<{
+        layout: z.ZodOptional<z.ZodObject<{
+            transpose: z.ZodOptional<z.ZodObject<{
+                sheet: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                    type: z.ZodLiteral<"coverageFeatureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>>>;
+                    coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                        u: z.ZodEnum<{
+                            in: "in";
+                            mm: "mm";
+                            pt: "pt";
+                            px: "px";
+                        }>;
+                        v: z.ZodNumber;
+                    }, z.core.$loose>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                }, z.core.$loose>, z.ZodObject<{
                     type: z.ZodLiteral<"featureValue">;
                     availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
                         type: z.ZodLiteral<"coverageAdderCodeEnum">;
@@ -8435,6 +10667,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -8443,6 +10691,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -8455,6 +10705,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -8498,14 +10750,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -8518,6 +10776,2280 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>, z.ZodObject<{
+                    type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                    allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                    allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    restrictColors: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>, z.ZodObject<{
+                    type: z.ZodLiteral<"sidedFeatureValue">;
+                    sides: z.ZodArray<z.ZodObject<{
+                        type: z.ZodLiteral<"featureValue">;
+                        availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                            type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                        }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>]>>, z.ZodEnum<{
+                            aqueous_side1_gloss: "aqueous_side1_gloss";
+                            aqueous_side1_matte: "aqueous_side1_matte";
+                            aqueous_side1_satin: "aqueous_side1_satin";
+                            aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                            aqueous_side2_gloss: "aqueous_side2_gloss";
+                            aqueous_side2_matte: "aqueous_side2_matte";
+                            aqueous_side2_satin: "aqueous_side2_satin";
+                            aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                            lamination_gloss: "lamination_gloss";
+                            lamination_matte: "lamination_matte";
+                            lamination_soft_touch: "lamination_soft_touch";
+                            uv_side1_gloss: "uv_side1_gloss";
+                            uv_side1_matte: "uv_side1_matte";
+                            uv_side2_gloss: "uv_side2_gloss";
+                            uv_side2_matte: "uv_side2_matte";
+                        }>, z.ZodEnum<{
+                            handling_charge: "handling_charge";
+                            print_charge: "print_charge";
+                            setup_charge: "setup_charge";
+                        }>, z.ZodEnum<{
+                            foil_fifth_color: "foil_fifth_color";
+                            foil_first_color: "foil_first_color";
+                            foil_fourth_color: "foil_fourth_color";
+                            foil_second_color: "foil_second_color";
+                            foil_seventh_color: "foil_seventh_color";
+                            foil_sixth_color: "foil_sixth_color";
+                            foil_third_color: "foil_third_color";
+                        }>, z.ZodEnum<{
+                            foil_coverage_lg: "foil_coverage_lg";
+                            foil_coverage_sm: "foil_coverage_sm";
+                            foil_coverage_std: "foil_coverage_std";
+                            foil_coverage_xl: "foil_coverage_xl";
+                        }>, z.ZodEnum<{
+                            foil_stamp_1: "foil_stamp_1";
+                            foil_stamp_2: "foil_stamp_2";
+                            foil_stamp_3: "foil_stamp_3";
+                            foil_stamp_4: "foil_stamp_4";
+                            foil_stamp_5: "foil_stamp_5";
+                            foil_stamp_6: "foil_stamp_6";
+                            foil_stamp_7: "foil_stamp_7";
+                        }>, z.ZodEnum<{
+                            image: "image";
+                            text: "text";
+                        }>, z.ZodEnum<{
+                            color_side1_2pms: "color_side1_2pms";
+                            color_side1_2std: "color_side1_2std";
+                            color_side1_2std_2pms: "color_side1_2std_2pms";
+                            color_side1_2std_pms: "color_side1_2std_pms";
+                            color_side1_3pms: "color_side1_3pms";
+                            color_side1_3std: "color_side1_3std";
+                            color_side1_3std_pms: "color_side1_3std_pms";
+                            color_side1_4pms: "color_side1_4pms";
+                            color_side1_4std: "color_side1_4std";
+                            color_side1_blk: "color_side1_blk";
+                            color_side1_blk_2pms: "color_side1_blk_2pms";
+                            color_side1_blk_2std: "color_side1_blk_2std";
+                            color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                            color_side1_blk_3pms: "color_side1_blk_3pms";
+                            color_side1_blk_3std: "color_side1_blk_3std";
+                            color_side1_blk_pms: "color_side1_blk_pms";
+                            color_side1_blk_std: "color_side1_blk_std";
+                            color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                            color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                            color_side1_cmyk: "color_side1_cmyk";
+                            color_side1_pms: "color_side1_pms";
+                            color_side1_std: "color_side1_std";
+                            color_side1_std_2pms: "color_side1_std_2pms";
+                            color_side1_std_3pms: "color_side1_std_3pms";
+                            color_side1_std_pms: "color_side1_std_pms";
+                            color_side1_white_ink: "color_side1_white_ink";
+                        }>, z.ZodEnum<{
+                            color_side2_cmyk: "color_side2_cmyk";
+                            color_side2_four_color: "color_side2_four_color";
+                            color_side2_one_color: "color_side2_one_color";
+                            color_side2_three_color: "color_side2_three_color";
+                            color_side2_two_color: "color_side2_two_color";
+                        }>, z.ZodEnum<{
+                            ink_coverage_sm: "ink_coverage_sm";
+                            ink_coverage_std: "ink_coverage_std";
+                        }>, z.ZodEnum<{
+                            ink_stamp_1: "ink_stamp_1";
+                            ink_stamp_2: "ink_stamp_2";
+                        }>, z.ZodEnum<{
+                            orientation_landscape: "orientation_landscape";
+                            orientation_portrait: "orientation_portrait";
+                        }>, z.ZodEnum<{
+                            letterpress_ink1: "letterpress_ink1";
+                            print_method_auto: "print_method_auto";
+                            print_method_digital: "print_method_digital";
+                            print_method_offset: "print_method_offset";
+                        }>, z.ZodEnum<{
+                            dig_proof_s1: "dig_proof_s1";
+                            dig_proof_s2: "dig_proof_s2";
+                        }>, z.ZodEnum<{
+                            retaddress_side1: "retaddress_side1";
+                            retaddress_side2: "retaddress_side2";
+                        }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                            varaddress_side1: "varaddress_side1";
+                            varaddress_side2: "varaddress_side2";
+                        }>, z.ZodEnum<{
+                            white_ink: "white_ink";
+                            white_ink_side1: "white_ink_side1";
+                            white_ink_side2: "white_ink_side2";
+                        }>]>>>;
+                        optionUse: z.ZodOptional<z.ZodEnum<{
+                            all: "all";
+                            none: "none";
+                            selected: "selected";
+                        }>>;
+                        required: z.ZodOptional<z.ZodBoolean>;
+                    }, z.core.$loose>>;
+                }, z.core.$loose>]>>;
+            }, z.core.$loose>>;
+            orientation: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                type: z.ZodLiteral<"coverageFeatureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>>>;
+                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        pt: "pt";
+                        px: "px";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"featureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                restrictColors: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"sidedFeatureValue">;
+                sides: z.ZodArray<z.ZodObject<{
+                    type: z.ZodLiteral<"featureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>>;
+            }, z.core.$loose>]>>;
+        }, z.core.$loose>>;
+        sheet: z.ZodOptional<z.ZodObject<{
+            mirroring: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                type: z.ZodLiteral<"coverageFeatureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>>>;
+                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        pt: "pt";
+                        px: "px";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"featureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                restrictColors: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"sidedFeatureValue">;
+                sides: z.ZodArray<z.ZodObject<{
+                    type: z.ZodLiteral<"featureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>>;
+            }, z.core.$loose>]>>;
+            cutting: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                type: z.ZodLiteral<"coverageFeatureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>>>;
+                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        pt: "pt";
+                        px: "px";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"featureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                restrictColors: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"sidedFeatureValue">;
+                sides: z.ZodArray<z.ZodObject<{
+                    type: z.ZodLiteral<"featureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>>;
+            }, z.core.$loose>]>>;
+        }, z.core.$loose>>;
+        proof: z.ZodOptional<z.ZodObject<{
+            digital: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                type: z.ZodLiteral<"coverageFeatureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>>>;
+                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        pt: "pt";
+                        px: "px";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"featureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                restrictColors: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"sidedFeatureValue">;
+                sides: z.ZodArray<z.ZodObject<{
+                    type: z.ZodLiteral<"featureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
+                }, z.core.$loose>>;
+            }, z.core.$loose>]>>;
+        }, z.core.$loose>>;
+        roll: z.ZodOptional<z.ZodObject<{
+            core: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
+                type: z.ZodLiteral<"coverageFeatureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>>>;
+                coverageMap: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodObject<{
+                    u: z.ZodEnum<{
+                        in: "in";
+                        mm: "mm";
+                        pt: "pt";
+                        px: "px";
+                    }>;
+                    v: z.ZodNumber;
+                }, z.core.$loose>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"featureValue">;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"processConfigurationFeatureValue">;
+                allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
+                allowCustomColors: z.ZodOptional<z.ZodBoolean>;
+                availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                    type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
+                    handling_charge: "handling_charge";
+                    print_charge: "print_charge";
+                    setup_charge: "setup_charge";
+                }>, z.ZodEnum<{
+                    foil_fifth_color: "foil_fifth_color";
+                    foil_first_color: "foil_first_color";
+                    foil_fourth_color: "foil_fourth_color";
+                    foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
+                    foil_third_color: "foil_third_color";
+                }>, z.ZodEnum<{
+                    foil_coverage_lg: "foil_coverage_lg";
+                    foil_coverage_sm: "foil_coverage_sm";
+                    foil_coverage_std: "foil_coverage_std";
+                    foil_coverage_xl: "foil_coverage_xl";
+                }>, z.ZodEnum<{
+                    foil_stamp_1: "foil_stamp_1";
+                    foil_stamp_2: "foil_stamp_2";
+                    foil_stamp_3: "foil_stamp_3";
+                    foil_stamp_4: "foil_stamp_4";
+                    foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
+                }>, z.ZodEnum<{
+                    image: "image";
+                    text: "text";
+                }>, z.ZodEnum<{
+                    color_side1_2pms: "color_side1_2pms";
+                    color_side1_2std: "color_side1_2std";
+                    color_side1_2std_2pms: "color_side1_2std_2pms";
+                    color_side1_2std_pms: "color_side1_2std_pms";
+                    color_side1_3pms: "color_side1_3pms";
+                    color_side1_3std: "color_side1_3std";
+                    color_side1_3std_pms: "color_side1_3std_pms";
+                    color_side1_4pms: "color_side1_4pms";
+                    color_side1_4std: "color_side1_4std";
+                    color_side1_blk: "color_side1_blk";
+                    color_side1_blk_2pms: "color_side1_blk_2pms";
+                    color_side1_blk_2std: "color_side1_blk_2std";
+                    color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                    color_side1_blk_3pms: "color_side1_blk_3pms";
+                    color_side1_blk_3std: "color_side1_blk_3std";
+                    color_side1_blk_pms: "color_side1_blk_pms";
+                    color_side1_blk_std: "color_side1_blk_std";
+                    color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                    color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                    color_side1_cmyk: "color_side1_cmyk";
+                    color_side1_pms: "color_side1_pms";
+                    color_side1_std: "color_side1_std";
+                    color_side1_std_2pms: "color_side1_std_2pms";
+                    color_side1_std_3pms: "color_side1_std_3pms";
+                    color_side1_std_pms: "color_side1_std_pms";
+                    color_side1_white_ink: "color_side1_white_ink";
+                }>, z.ZodEnum<{
+                    color_side2_cmyk: "color_side2_cmyk";
+                    color_side2_four_color: "color_side2_four_color";
+                    color_side2_one_color: "color_side2_one_color";
+                    color_side2_three_color: "color_side2_three_color";
+                    color_side2_two_color: "color_side2_two_color";
+                }>, z.ZodEnum<{
+                    ink_coverage_sm: "ink_coverage_sm";
+                    ink_coverage_std: "ink_coverage_std";
+                }>, z.ZodEnum<{
+                    ink_stamp_1: "ink_stamp_1";
+                    ink_stamp_2: "ink_stamp_2";
+                }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
+                    letterpress_ink1: "letterpress_ink1";
+                    print_method_auto: "print_method_auto";
+                    print_method_digital: "print_method_digital";
+                    print_method_offset: "print_method_offset";
+                }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
+                    retaddress_side1: "retaddress_side1";
+                    retaddress_side2: "retaddress_side2";
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                    varaddress_side1: "varaddress_side1";
+                    varaddress_side2: "varaddress_side2";
+                }>, z.ZodEnum<{
+                    white_ink: "white_ink";
+                    white_ink_side1: "white_ink_side1";
+                    white_ink_side2: "white_ink_side2";
+                }>]>>>;
+                colors: z.ZodOptional<z.ZodArray<z.ZodString>>;
+                optionUse: z.ZodOptional<z.ZodEnum<{
+                    all: "all";
+                    none: "none";
+                    selected: "selected";
+                }>>;
+                restrictColors: z.ZodOptional<z.ZodBoolean>;
+            }, z.core.$loose>, z.ZodObject<{
+                type: z.ZodLiteral<"sidedFeatureValue">;
+                sides: z.ZodArray<z.ZodObject<{
+                    type: z.ZodLiteral<"featureValue">;
+                    availableOptions: z.ZodOptional<z.ZodArray<z.ZodUnion<readonly [z.ZodIntersection<z.ZodObject<{
+                        type: z.ZodLiteral<"coverageAdderCodeEnum">;
+                    }, z.core.$loose>, z.ZodUnion<readonly [z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
+                        handling_charge: "handling_charge";
+                        print_charge: "print_charge";
+                        setup_charge: "setup_charge";
+                    }>, z.ZodEnum<{
+                        foil_fifth_color: "foil_fifth_color";
+                        foil_first_color: "foil_first_color";
+                        foil_fourth_color: "foil_fourth_color";
+                        foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
+                        foil_third_color: "foil_third_color";
+                    }>, z.ZodEnum<{
+                        foil_coverage_lg: "foil_coverage_lg";
+                        foil_coverage_sm: "foil_coverage_sm";
+                        foil_coverage_std: "foil_coverage_std";
+                        foil_coverage_xl: "foil_coverage_xl";
+                    }>, z.ZodEnum<{
+                        foil_stamp_1: "foil_stamp_1";
+                        foil_stamp_2: "foil_stamp_2";
+                        foil_stamp_3: "foil_stamp_3";
+                        foil_stamp_4: "foil_stamp_4";
+                        foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
+                    }>, z.ZodEnum<{
+                        image: "image";
+                        text: "text";
+                    }>, z.ZodEnum<{
+                        color_side1_2pms: "color_side1_2pms";
+                        color_side1_2std: "color_side1_2std";
+                        color_side1_2std_2pms: "color_side1_2std_2pms";
+                        color_side1_2std_pms: "color_side1_2std_pms";
+                        color_side1_3pms: "color_side1_3pms";
+                        color_side1_3std: "color_side1_3std";
+                        color_side1_3std_pms: "color_side1_3std_pms";
+                        color_side1_4pms: "color_side1_4pms";
+                        color_side1_4std: "color_side1_4std";
+                        color_side1_blk: "color_side1_blk";
+                        color_side1_blk_2pms: "color_side1_blk_2pms";
+                        color_side1_blk_2std: "color_side1_blk_2std";
+                        color_side1_blk_2std_pms: "color_side1_blk_2std_pms";
+                        color_side1_blk_3pms: "color_side1_blk_3pms";
+                        color_side1_blk_3std: "color_side1_blk_3std";
+                        color_side1_blk_pms: "color_side1_blk_pms";
+                        color_side1_blk_std: "color_side1_blk_std";
+                        color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
+                        color_side1_blk_std_pms: "color_side1_blk_std_pms";
+                        color_side1_cmyk: "color_side1_cmyk";
+                        color_side1_pms: "color_side1_pms";
+                        color_side1_std: "color_side1_std";
+                        color_side1_std_2pms: "color_side1_std_2pms";
+                        color_side1_std_3pms: "color_side1_std_3pms";
+                        color_side1_std_pms: "color_side1_std_pms";
+                        color_side1_white_ink: "color_side1_white_ink";
+                    }>, z.ZodEnum<{
+                        color_side2_cmyk: "color_side2_cmyk";
+                        color_side2_four_color: "color_side2_four_color";
+                        color_side2_one_color: "color_side2_one_color";
+                        color_side2_three_color: "color_side2_three_color";
+                        color_side2_two_color: "color_side2_two_color";
+                    }>, z.ZodEnum<{
+                        ink_coverage_sm: "ink_coverage_sm";
+                        ink_coverage_std: "ink_coverage_std";
+                    }>, z.ZodEnum<{
+                        ink_stamp_1: "ink_stamp_1";
+                        ink_stamp_2: "ink_stamp_2";
+                    }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
+                        letterpress_ink1: "letterpress_ink1";
+                        print_method_auto: "print_method_auto";
+                        print_method_digital: "print_method_digital";
+                        print_method_offset: "print_method_offset";
+                    }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
+                        retaddress_side1: "retaddress_side1";
+                        retaddress_side2: "retaddress_side2";
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
+                        varaddress_side1: "varaddress_side1";
+                        varaddress_side2: "varaddress_side2";
+                    }>, z.ZodEnum<{
+                        white_ink: "white_ink";
+                        white_ink_side1: "white_ink_side1";
+                        white_ink_side2: "white_ink_side2";
+                    }>]>>>;
+                    optionUse: z.ZodOptional<z.ZodEnum<{
+                        all: "all";
+                        none: "none";
+                        selected: "selected";
+                    }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             perforation: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -8560,6 +13092,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -8568,6 +13116,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -8580,6 +13130,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -8623,14 +13175,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -8643,6 +13201,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -8658,6 +13217,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -8666,6 +13241,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -8678,6 +13255,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -8721,14 +13300,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -8758,6 +13343,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -8766,6 +13367,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -8778,6 +13381,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -8821,14 +13426,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -8841,6 +13452,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             qty: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -8883,6 +13495,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -8891,6 +13519,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -8903,6 +13533,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -8946,14 +13578,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -8966,6 +13604,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -8981,6 +13620,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -8989,6 +13644,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9001,6 +13658,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -9044,14 +13703,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -9081,6 +13746,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9089,6 +13770,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -9101,6 +13784,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -9144,14 +13829,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -9164,6 +13855,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
         }, z.core.$loose>>;
@@ -9208,6 +13900,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -9216,6 +13924,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9228,6 +13938,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -9271,14 +13983,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -9291,6 +14009,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -9306,6 +14025,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -9314,6 +14049,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9326,6 +14063,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -9369,14 +14108,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -9406,6 +14151,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9414,6 +14175,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -9426,6 +14189,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -9469,14 +14234,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -9489,6 +14260,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             backing: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -9531,6 +14303,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -9539,6 +14327,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9551,6 +14341,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -9594,14 +14386,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -9614,6 +14412,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -9629,6 +14428,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -9637,6 +14452,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9649,6 +14466,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -9692,14 +14511,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -9729,6 +14554,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -9737,6 +14578,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -9749,6 +14592,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -9792,14 +14637,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -9812,6 +14663,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             fastener: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -9854,6 +14706,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -9862,6 +14730,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9874,6 +14744,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -9917,14 +14789,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -9937,6 +14815,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -9952,6 +14831,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -9960,6 +14855,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -9972,6 +14869,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10015,14 +14914,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -10052,6 +14957,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10060,6 +14981,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -10072,6 +14995,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -10115,14 +15040,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -10135,6 +15066,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             wallholder: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -10177,6 +15109,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -10185,6 +15133,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -10197,6 +15147,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10240,14 +15192,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -10260,6 +15218,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -10275,6 +15234,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -10283,6 +15258,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -10295,6 +15272,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10338,14 +15317,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -10375,6 +15360,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10383,6 +15384,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -10395,6 +15398,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -10438,14 +15443,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -10458,6 +15469,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
         }, z.core.$loose>>;
@@ -10502,6 +15514,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -10510,6 +15538,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -10522,6 +15552,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10565,14 +15597,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -10585,6 +15623,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -10600,6 +15639,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -10608,6 +15663,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -10620,6 +15677,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10663,14 +15722,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -10700,6 +15765,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -10708,6 +15789,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -10720,6 +15803,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -10763,14 +15848,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -10783,6 +15874,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             flap: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -10825,6 +15917,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -10833,6 +15941,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -10845,6 +15955,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10888,14 +16000,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -10908,6 +16026,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -10923,6 +16042,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -10931,6 +16066,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -10943,6 +16080,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -10986,14 +16125,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11023,6 +16168,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -11031,6 +16192,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -11043,6 +16206,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -11086,14 +16251,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -11106,6 +16277,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             frontCover: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -11148,6 +16320,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11156,6 +16344,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -11168,6 +16358,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -11211,14 +16403,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11231,6 +16429,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -11246,6 +16445,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11254,6 +16469,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -11266,6 +16483,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -11309,14 +16528,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11346,6 +16571,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -11354,6 +16595,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -11366,6 +16609,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -11409,14 +16654,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -11429,6 +16680,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             left: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -11471,6 +16723,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11479,6 +16747,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -11491,6 +16761,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -11534,14 +16806,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11554,6 +16832,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -11569,6 +16848,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11577,6 +16872,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -11589,6 +16886,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -11632,14 +16931,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11669,6 +16974,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -11677,6 +16998,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -11689,6 +17012,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -11732,14 +17057,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -11752,6 +17083,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             middle: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -11794,6 +17126,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11802,6 +17150,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -11814,6 +17164,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -11857,14 +17209,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11877,6 +17235,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -11892,6 +17251,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -11900,6 +17275,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -11912,6 +17289,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -11955,14 +17334,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -11992,6 +17377,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -12000,6 +17401,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -12012,6 +17415,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -12055,14 +17460,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -12075,6 +17486,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
             right: z.ZodOptional<z.ZodUnion<readonly [z.ZodObject<{
@@ -12117,6 +17529,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12125,6 +17553,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -12137,6 +17567,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -12180,14 +17612,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -12200,6 +17638,7 @@ export declare const DesignerConfig: z.ZodObject<{
                     none: "none";
                     selected: "selected";
                 }>>;
+                required: z.ZodOptional<z.ZodBoolean>;
             }, z.core.$loose>, z.ZodObject<{
                 type: z.ZodLiteral<"processConfigurationFeatureValue">;
                 allowBackgroundColor: z.ZodOptional<z.ZodBoolean>;
@@ -12215,6 +17654,22 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_coverage_sm: "ink_coverage_sm";
                     ink_coverage_std: "ink_coverage_std";
                 }>]>>, z.ZodEnum<{
+                    aqueous_side1_gloss: "aqueous_side1_gloss";
+                    aqueous_side1_matte: "aqueous_side1_matte";
+                    aqueous_side1_satin: "aqueous_side1_satin";
+                    aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                    aqueous_side2_gloss: "aqueous_side2_gloss";
+                    aqueous_side2_matte: "aqueous_side2_matte";
+                    aqueous_side2_satin: "aqueous_side2_satin";
+                    aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                    lamination_gloss: "lamination_gloss";
+                    lamination_matte: "lamination_matte";
+                    lamination_soft_touch: "lamination_soft_touch";
+                    uv_side1_gloss: "uv_side1_gloss";
+                    uv_side1_matte: "uv_side1_matte";
+                    uv_side2_gloss: "uv_side2_gloss";
+                    uv_side2_matte: "uv_side2_matte";
+                }>, z.ZodEnum<{
                     handling_charge: "handling_charge";
                     print_charge: "print_charge";
                     setup_charge: "setup_charge";
@@ -12223,6 +17678,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_first_color: "foil_first_color";
                     foil_fourth_color: "foil_fourth_color";
                     foil_second_color: "foil_second_color";
+                    foil_seventh_color: "foil_seventh_color";
+                    foil_sixth_color: "foil_sixth_color";
                     foil_third_color: "foil_third_color";
                 }>, z.ZodEnum<{
                     foil_coverage_lg: "foil_coverage_lg";
@@ -12235,6 +17692,8 @@ export declare const DesignerConfig: z.ZodObject<{
                     foil_stamp_3: "foil_stamp_3";
                     foil_stamp_4: "foil_stamp_4";
                     foil_stamp_5: "foil_stamp_5";
+                    foil_stamp_6: "foil_stamp_6";
+                    foil_stamp_7: "foil_stamp_7";
                 }>, z.ZodEnum<{
                     image: "image";
                     text: "text";
@@ -12278,14 +17737,20 @@ export declare const DesignerConfig: z.ZodObject<{
                     ink_stamp_1: "ink_stamp_1";
                     ink_stamp_2: "ink_stamp_2";
                 }>, z.ZodEnum<{
+                    orientation_landscape: "orientation_landscape";
+                    orientation_portrait: "orientation_portrait";
+                }>, z.ZodEnum<{
                     letterpress_ink1: "letterpress_ink1";
                     print_method_auto: "print_method_auto";
                     print_method_digital: "print_method_digital";
                     print_method_offset: "print_method_offset";
                 }>, z.ZodEnum<{
+                    dig_proof_s1: "dig_proof_s1";
+                    dig_proof_s2: "dig_proof_s2";
+                }>, z.ZodEnum<{
                     retaddress_side1: "retaddress_side1";
                     retaddress_side2: "retaddress_side2";
-                }>, z.ZodEnum<{
+                }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                     varaddress_side1: "varaddress_side1";
                     varaddress_side2: "varaddress_side2";
                 }>, z.ZodEnum<{
@@ -12315,6 +17780,22 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_coverage_sm: "ink_coverage_sm";
                         ink_coverage_std: "ink_coverage_std";
                     }>]>>, z.ZodEnum<{
+                        aqueous_side1_gloss: "aqueous_side1_gloss";
+                        aqueous_side1_matte: "aqueous_side1_matte";
+                        aqueous_side1_satin: "aqueous_side1_satin";
+                        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+                        aqueous_side2_gloss: "aqueous_side2_gloss";
+                        aqueous_side2_matte: "aqueous_side2_matte";
+                        aqueous_side2_satin: "aqueous_side2_satin";
+                        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+                        lamination_gloss: "lamination_gloss";
+                        lamination_matte: "lamination_matte";
+                        lamination_soft_touch: "lamination_soft_touch";
+                        uv_side1_gloss: "uv_side1_gloss";
+                        uv_side1_matte: "uv_side1_matte";
+                        uv_side2_gloss: "uv_side2_gloss";
+                        uv_side2_matte: "uv_side2_matte";
+                    }>, z.ZodEnum<{
                         handling_charge: "handling_charge";
                         print_charge: "print_charge";
                         setup_charge: "setup_charge";
@@ -12323,6 +17804,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_first_color: "foil_first_color";
                         foil_fourth_color: "foil_fourth_color";
                         foil_second_color: "foil_second_color";
+                        foil_seventh_color: "foil_seventh_color";
+                        foil_sixth_color: "foil_sixth_color";
                         foil_third_color: "foil_third_color";
                     }>, z.ZodEnum<{
                         foil_coverage_lg: "foil_coverage_lg";
@@ -12335,6 +17818,8 @@ export declare const DesignerConfig: z.ZodObject<{
                         foil_stamp_3: "foil_stamp_3";
                         foil_stamp_4: "foil_stamp_4";
                         foil_stamp_5: "foil_stamp_5";
+                        foil_stamp_6: "foil_stamp_6";
+                        foil_stamp_7: "foil_stamp_7";
                     }>, z.ZodEnum<{
                         image: "image";
                         text: "text";
@@ -12378,14 +17863,20 @@ export declare const DesignerConfig: z.ZodObject<{
                         ink_stamp_1: "ink_stamp_1";
                         ink_stamp_2: "ink_stamp_2";
                     }>, z.ZodEnum<{
+                        orientation_landscape: "orientation_landscape";
+                        orientation_portrait: "orientation_portrait";
+                    }>, z.ZodEnum<{
                         letterpress_ink1: "letterpress_ink1";
                         print_method_auto: "print_method_auto";
                         print_method_digital: "print_method_digital";
                         print_method_offset: "print_method_offset";
                     }>, z.ZodEnum<{
+                        dig_proof_s1: "dig_proof_s1";
+                        dig_proof_s2: "dig_proof_s2";
+                    }>, z.ZodEnum<{
                         retaddress_side1: "retaddress_side1";
                         retaddress_side2: "retaddress_side2";
-                    }>, z.ZodEnum<{
+                    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
                         varaddress_side1: "varaddress_side1";
                         varaddress_side2: "varaddress_side2";
                     }>, z.ZodEnum<{
@@ -12398,6 +17889,7 @@ export declare const DesignerConfig: z.ZodObject<{
                         none: "none";
                         selected: "selected";
                     }>>;
+                    required: z.ZodOptional<z.ZodBoolean>;
                 }, z.core.$loose>>;
             }, z.core.$loose>]>>;
         }, z.core.$loose>>;
@@ -12433,6 +17925,22 @@ export declare const DesignerConfig: z.ZodObject<{
         ink_coverage_sm: "ink_coverage_sm";
         ink_coverage_std: "ink_coverage_std";
     }>]>>, z.ZodEnum<{
+        aqueous_side1_gloss: "aqueous_side1_gloss";
+        aqueous_side1_matte: "aqueous_side1_matte";
+        aqueous_side1_satin: "aqueous_side1_satin";
+        aqueous_side1_soft_touch: "aqueous_side1_soft_touch";
+        aqueous_side2_gloss: "aqueous_side2_gloss";
+        aqueous_side2_matte: "aqueous_side2_matte";
+        aqueous_side2_satin: "aqueous_side2_satin";
+        aqueous_side2_soft_touch: "aqueous_side2_soft_touch";
+        lamination_gloss: "lamination_gloss";
+        lamination_matte: "lamination_matte";
+        lamination_soft_touch: "lamination_soft_touch";
+        uv_side1_gloss: "uv_side1_gloss";
+        uv_side1_matte: "uv_side1_matte";
+        uv_side2_gloss: "uv_side2_gloss";
+        uv_side2_matte: "uv_side2_matte";
+    }>, z.ZodEnum<{
         handling_charge: "handling_charge";
         print_charge: "print_charge";
         setup_charge: "setup_charge";
@@ -12441,6 +17949,8 @@ export declare const DesignerConfig: z.ZodObject<{
         foil_first_color: "foil_first_color";
         foil_fourth_color: "foil_fourth_color";
         foil_second_color: "foil_second_color";
+        foil_seventh_color: "foil_seventh_color";
+        foil_sixth_color: "foil_sixth_color";
         foil_third_color: "foil_third_color";
     }>, z.ZodEnum<{
         foil_coverage_lg: "foil_coverage_lg";
@@ -12453,6 +17963,8 @@ export declare const DesignerConfig: z.ZodObject<{
         foil_stamp_3: "foil_stamp_3";
         foil_stamp_4: "foil_stamp_4";
         foil_stamp_5: "foil_stamp_5";
+        foil_stamp_6: "foil_stamp_6";
+        foil_stamp_7: "foil_stamp_7";
     }>, z.ZodEnum<{
         image: "image";
         text: "text";
@@ -12496,14 +18008,20 @@ export declare const DesignerConfig: z.ZodObject<{
         ink_stamp_1: "ink_stamp_1";
         ink_stamp_2: "ink_stamp_2";
     }>, z.ZodEnum<{
+        orientation_landscape: "orientation_landscape";
+        orientation_portrait: "orientation_portrait";
+    }>, z.ZodEnum<{
         letterpress_ink1: "letterpress_ink1";
         print_method_auto: "print_method_auto";
         print_method_digital: "print_method_digital";
         print_method_offset: "print_method_offset";
     }>, z.ZodEnum<{
+        dig_proof_s1: "dig_proof_s1";
+        dig_proof_s2: "dig_proof_s2";
+    }>, z.ZodEnum<{
         retaddress_side1: "retaddress_side1";
         retaddress_side2: "retaddress_side2";
-    }>, z.ZodEnum<{
+    }>, z.ZodLiteral<"individual_cut">, z.ZodEnum<{
         varaddress_side1: "varaddress_side1";
         varaddress_side2: "varaddress_side2";
     }>, z.ZodEnum<{
