@@ -136,6 +136,8 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "adder.lamination_sunscreen.details": z.ZodDefault<z.ZodString>;
     "adder.lamination_soft_touch.label": z.ZodDefault<z.ZodString>;
     "adder.lamination_soft_touch.details": z.ZodDefault<z.ZodString>;
+    "adder.individual_cut.label": z.ZodDefault<z.ZodString>;
+    "adder.mirroring.label": z.ZodDefault<z.ZodString>;
     "error.ProductQuantityLessThanMinimumOrderQuantity": z.ZodDefault<z.ZodString>;
     "error.ProductQuantityIncrementNotValid": z.ZodDefault<z.ZodString>;
     "error.VariableAddressMultipleFrames": z.ZodDefault<z.ZodString>;

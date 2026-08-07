@@ -10,6 +10,7 @@ const _RollAdderCode = z.enum([
   "roll_perforation",
   "roll_no_perforation",
   "individual_cut",
+  "mirroring",
 ]);
 type _RollAdderCodeSchema = typeof _RollAdderCode;
 export interface RollAdderCodeSchema extends _RollAdderCodeSchema {}

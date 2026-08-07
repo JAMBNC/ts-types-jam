@@ -699,6 +699,16 @@ const _DesignerUiLabels = z
       .default(
         "A premium finish with a smooth, velvety feel that creates an elegant, high-end look. Popular for business cards, presentation folders, invitations, and luxury packaging.",
       ),
+    /**The ui label for individual cut adder.*/
+    "adder.individual_cut.label": z
+      .string()
+      .describe("The ui label for individual cut adder.")
+      .default("Individual Cut"),
+    /**The ui label for mirroring adder.*/
+    "adder.mirroring.label": z
+      .string()
+      .describe("The ui label for mirroring adder.")
+      .default("Face Outside"),
     /**Error message when quantity is below the minimum order quantity.*/
     "error.ProductQuantityLessThanMinimumOrderQuantity": z
       .string()
