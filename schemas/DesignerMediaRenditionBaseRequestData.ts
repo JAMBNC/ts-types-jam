@@ -1,20 +1,10 @@
 import { z } from "zod";
+import { Process } from "./Process.js";
 
 const _DesignerMediaRenditionBaseRequestData = z
   .object({
     /**Defines how visual content is transferred to the medium.*/
-    process: z
-      .enum([
-        "offset",
-        "digital",
-        "emboss",
-        "screen",
-        "inkjet",
-        "flexography",
-        "sublimation",
-        "thermal",
-      ])
-      .describe("Defines how visual content is transferred to the medium."),
+    process: Process,
   })
   .strict()
   .describe(

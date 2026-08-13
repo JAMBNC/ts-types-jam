@@ -1,15 +1,6 @@
 import { z } from "zod";
 declare const _DesignerMediaRenditionBaseRequestData: z.ZodObject<{
-    process: z.ZodEnum<{
-        digital: "digital";
-        emboss: "emboss";
-        flexography: "flexography";
-        inkjet: "inkjet";
-        offset: "offset";
-        screen: "screen";
-        sublimation: "sublimation";
-        thermal: "thermal";
-    }>;
+    process: import("./Process.js").ProcessSchema;
 }, z.core.$strict>;
 type _DesignerMediaRenditionBaseRequestDataSchema = typeof _DesignerMediaRenditionBaseRequestData;
 export interface DesignerMediaRenditionBaseRequestDataSchema extends _DesignerMediaRenditionBaseRequestDataSchema {
