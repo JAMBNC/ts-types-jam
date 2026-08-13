@@ -12,6 +12,9 @@ declare const _VendorColor: z.ZodObject<{
         flexography: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
         sublimation: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
         thermal: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        whiteInk: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        engraving: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
+        letterpress: z.ZodOptional<import("./VendorProcess.js").VendorProcessSchema>;
     }, z.core.$strip>;
     vendor: import("./Vendor.js").VendorSchema;
 }, z.core.$loose>;

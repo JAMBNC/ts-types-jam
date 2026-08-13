@@ -10,6 +10,9 @@ const _Process = z
     "flexography",
     "sublimation",
     "thermal",
+    "whiteInk",
+    "engraving",
+    "letterpress",
 ])
     .describe("Defines how visual content is transferred to the medium.");
 /**Defines how visual content is transferred to the medium.*/

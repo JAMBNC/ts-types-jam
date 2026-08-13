@@ -26,6 +26,9 @@ const _VendorColor = z
         flexography: VendorProcess,
         sublimation: VendorProcess,
         thermal: VendorProcess,
+        whiteInk: VendorProcess,
+        engraving: VendorProcess,
+        letterpress: VendorProcess,
       })
       .partial()
       .describe("Pricing group names keyed by supported process."),
