@@ -7,6 +7,7 @@ import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
 import { WorkspaceOption } from "./WorkspaceOption.js";
+import { WorkspaceTag } from "./WorkspaceTag.js";
 const _DesignerInitializationPayload = z
     .object({
     /**Currently the design formula, to be the design state*/
@@ -40,6 +41,11 @@ const _DesignerInitializationPayload = z
     workspaceOptions: z
         .array(WorkspaceOption)
         .describe("List of workspace options for the product.")
+        .optional(),
+    /**List of workspace tags that are auto-applied to the active workspace (before workspace expansion).*/
+    workspaceSessionTags: z
+        .array(WorkspaceTag)
+        .describe("List of workspace tags that are auto-applied to the active workspace (before workspace expansion).")
         .optional(),
 })
     .passthrough();

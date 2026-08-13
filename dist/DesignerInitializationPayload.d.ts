@@ -10,6 +10,7 @@ declare const _DesignerInitializationPayload: z.ZodObject<{
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     imageReduction: import("./DesignerImageReductionConfig.js").DesignerImageReductionConfigSchema;
     workspaceOptions: z.ZodOptional<z.ZodArray<import("./WorkspaceOption.js").WorkspaceOptionSchema>>;
+    workspaceSessionTags: z.ZodOptional<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
 }, z.core.$loose>;
 type _DesignerInitializationPayloadSchema = typeof _DesignerInitializationPayload;
 export interface DesignerInitializationPayloadSchema extends _DesignerInitializationPayloadSchema {
