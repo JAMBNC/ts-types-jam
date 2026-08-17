@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { CoatingAdderCode } from "./CoatingAdderCode.js";
 import { CoverageAdderCodeEnum } from "./CoverageAdderCodeEnum.js";
+import { EmbossAdderCode } from "./EmbossAdderCode.js";
 import { ExtraAdderCode } from "./ExtraAdderCode.js";
 import { FoilColorAdderCode } from "./FoilColorAdderCode.js";
 import { FoilCoverageAdderCode } from "./FoilCoverageAdderCode.js";
@@ -21,6 +22,7 @@ import { WhiteInkAdderCode } from "./WhiteInkAdderCode.js";
 const _AdderCodeEnum = z.union([
   CoatingAdderCode,
   CoverageAdderCodeEnum,
+  EmbossAdderCode,
   ExtraAdderCode,
   FoilColorAdderCode,
   FoilCoverageAdderCode,

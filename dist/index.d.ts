@@ -81,6 +81,7 @@ export * from './CoverageAdderCodeEnum.js';
 export * from './CoverageFeatureValue.js';
 export * from './DesignerConfig.js';
 export * from './DesignerConfigFeatureValue.js';
+export * from './EmbossAdderCode.js';
 export * from './ExtraAdderCode.js';
 export * from './FeatureValue.js';
 export * from './FoilColorAdderCode.js';
