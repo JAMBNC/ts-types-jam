@@ -3,12 +3,11 @@ import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { MerchantCode } from "./MerchantCode.js";
-
-const _DesignerCartTrackingEvent = z
-  .object({
-    event: z.literal("designer_cart"),
+const _DesignerUpdateInCartTrackingEvent = z
+    .object({
+    event: z.literal("designer_update_in_cart"),
     payload: z
-      .object({
+        .object({
         productUrl: z.string().url().optional(),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
@@ -20,14 +19,8 @@ const _DesignerCartTrackingEvent = z
         quantity: z.number().int(),
         price: z.number(),
         adders: z.array(AdderCodeEnum),
-      })
-      .strict(),
-  })
-  .strict();
-type _DesignerCartTrackingEventSchema = typeof _DesignerCartTrackingEvent;
-export interface DesignerCartTrackingEventSchema extends _DesignerCartTrackingEventSchema {}
-export const DesignerCartTrackingEvent: DesignerCartTrackingEventSchema =
-  _DesignerCartTrackingEvent;
-export type DesignerCartTrackingEvent = z.infer<
-  typeof DesignerCartTrackingEvent
->;
+    })
+        .strict(),
+})
+    .strict();
+export const DesignerUpdateInCartTrackingEvent = _DesignerUpdateInCartTrackingEvent;

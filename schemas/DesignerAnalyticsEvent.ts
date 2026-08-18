@@ -5,7 +5,6 @@ import { DesignerAddMailingAddressTrackingEvent } from "./DesignerAddMailingAddr
 import { DesignerAddReturnAddressTrackingEvent } from "./DesignerAddReturnAddressTrackingEvent.js";
 import { DesignerAddTextTrackingEvent } from "./DesignerAddTextTrackingEvent.js";
 import { DesignerAddToCartTrackingEvent } from "./DesignerAddToCartTrackingEvent.js";
-import { DesignerCartTrackingEvent } from "./DesignerCartTrackingEvent.js";
 import { DesignerChangeColorTrackingEvent } from "./DesignerChangeColorTrackingEvent.js";
 import { DesignerChangeFontTrackingEvent } from "./DesignerChangeFontTrackingEvent.js";
 import { DesignerChangeProcessTrackingEvent } from "./DesignerChangeProcessTrackingEvent.js";
@@ -20,9 +19,11 @@ import { DesignerMiscInteractionTrackingEvent } from "./DesignerMiscInteractionT
 import { DesignerPriceSummaryViewedTrackingEvent } from "./DesignerPriceSummaryViewedTrackingEvent.js";
 import { DesignerPrintPreviewViewedTrackingEvent } from "./DesignerPrintPreviewViewedTrackingEvent.js";
 import { DesignerRemoveCoatingTrackingEvent } from "./DesignerRemoveCoatingTrackingEvent.js";
+import { DesignerRemoveFromCartTrackingEvent } from "./DesignerRemoveFromCartTrackingEvent.js";
 import { DesignerRemoveItemTrackingEvent } from "./DesignerRemoveItemTrackingEvent.js";
 import { DesignerReviewDesignTrackingEvent } from "./DesignerReviewDesignTrackingEvent.js";
 import { DesignerToolInteractionTrackingEvent } from "./DesignerToolInteractionTrackingEvent.js";
+import { DesignerUpdateInCartTrackingEvent } from "./DesignerUpdateInCartTrackingEvent.js";
 
 const _DesignerAnalyticsEvent = z
   .object({
@@ -32,7 +33,8 @@ const _DesignerAnalyticsEvent = z
       DesignerToolInteractionTrackingEvent,
       DesignerReviewDesignTrackingEvent,
       DesignerAddToCartTrackingEvent,
-      DesignerCartTrackingEvent,
+      DesignerRemoveFromCartTrackingEvent,
+      DesignerUpdateInCartTrackingEvent,
       DesignerDesignStartedTrackingEvent,
       DesignerAddTextTrackingEvent,
       DesignerAddImageTrackingEvent,

@@ -11,6 +11,9 @@ declare const _DesignerInitializationPayload: z.ZodObject<{
     imageReduction: import("./DesignerImageReductionConfig.js").DesignerImageReductionConfigSchema;
     workspaceOptions: z.ZodOptional<z.ZodArray<import("./WorkspaceOption.js").WorkspaceOptionSchema>>;
     workspaceSessionTags: z.ZodOptional<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
+    designCartItem: z.ZodOptional<z.ZodObject<{
+        quantity: z.ZodNumber;
+    }, z.core.$loose>>;
 }, z.core.$loose>;
 type _DesignerInitializationPayloadSchema = typeof _DesignerInitializationPayload;
 export interface DesignerInitializationPayloadSchema extends _DesignerInitializationPayloadSchema {

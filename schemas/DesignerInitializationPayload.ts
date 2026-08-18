@@ -58,6 +58,12 @@ const _DesignerInitializationPayload = z
         "List of workspace tags that are auto-applied to the active workspace (before workspace expansion).",
       )
       .optional(),
+    /**The properties of the cart item holding the design.*/
+    designCartItem: z
+      .object({ quantity: z.number().int() })
+      .passthrough()
+      .describe("The properties of the cart item holding the design.")
+      .optional(),
   })
   .passthrough();
 type _DesignerInitializationPayloadSchema =
