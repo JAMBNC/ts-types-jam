@@ -74,7 +74,6 @@ const _DesignerConfig = z
                 configuration: DesignerConfigFeatureValue.optional(),
                 coverage: DesignerConfigFeatureValue.optional(),
                 stamps: DesignerConfigFeatureValue.optional(),
-                white: DesignerConfigFeatureValue.optional(),
               })
               .passthrough()
               .optional(),
@@ -85,6 +84,10 @@ const _DesignerConfig = z
                 coverage: DesignerConfigFeatureValue.optional(),
                 stamps: DesignerConfigFeatureValue.optional(),
               })
+              .passthrough()
+              .optional(),
+            whiteInk: z
+              .object({ configuration: DesignerConfigFeatureValue.optional() })
               .passthrough()
               .optional(),
           })

@@ -36,13 +36,15 @@ declare const _DesignerConfig: z.ZodObject<{
                 configuration: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
                 coverage: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
                 stamps: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
-                white: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
             }, z.core.$loose>>;
             letterpress: z.ZodOptional<z.ZodObject<{
                 colors: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
                 configuration: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
                 coverage: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
                 stamps: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
+            }, z.core.$loose>>;
+            whiteInk: z.ZodOptional<z.ZodObject<{
+                configuration: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
             }, z.core.$loose>>;
         }, z.core.$loose>>;
         processes: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
