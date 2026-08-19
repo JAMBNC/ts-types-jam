@@ -86,7 +86,10 @@ const _DesignerConfig = z
                 .passthrough()
                 .optional(),
             whiteInk: z
-                .object({ configuration: DesignerConfigFeatureValue.optional() })
+                .object({
+                color: DesignerConfigFeatureValue.optional(),
+                configuration: DesignerConfigFeatureValue.optional(),
+            })
                 .passthrough()
                 .optional(),
         })

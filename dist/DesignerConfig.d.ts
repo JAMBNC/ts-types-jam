@@ -44,6 +44,7 @@ declare const _DesignerConfig: z.ZodObject<{
                 stamps: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
             }, z.core.$loose>>;
             whiteInk: z.ZodOptional<z.ZodObject<{
+                color: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
                 configuration: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
             }, z.core.$loose>>;
         }, z.core.$loose>>;
