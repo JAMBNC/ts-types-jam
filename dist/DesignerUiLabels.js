@@ -593,6 +593,16 @@ const _DesignerUiLabels = z
         .string()
         .describe("The ui label for full color (CMYK) printing on side two")
         .default("Second Side Full Color"),
+    /**The ui label for white ink on side one*/
+    "adder.white_ink_side1.label": z
+        .string()
+        .describe("The ui label for white ink on side one")
+        .default("White Ink"),
+    /**The ui label for white ink on side two*/
+    "adder.white_ink_side2.label": z
+        .string()
+        .describe("The ui label for white ink on side two")
+        .default("Second Side White Ink"),
     /**The ui label for variable addressing on side one*/
     "adder.varaddress_side1.label": z
         .string()

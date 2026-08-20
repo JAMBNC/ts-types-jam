@@ -120,6 +120,8 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "adder.color_side2_three_color.label": z.ZodDefault<z.ZodString>;
     "adder.color_side2_four_color.label": z.ZodDefault<z.ZodString>;
     "adder.color_side2_cmyk.label": z.ZodDefault<z.ZodString>;
+    "adder.white_ink_side1.label": z.ZodDefault<z.ZodString>;
+    "adder.white_ink_side2.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side1.label": z.ZodDefault<z.ZodString>;
     "adder.varaddress_side2.label": z.ZodDefault<z.ZodString>;
     "adder.roll_qty_125.label": z.ZodDefault<z.ZodString>;
