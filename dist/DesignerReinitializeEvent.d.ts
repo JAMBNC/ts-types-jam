@@ -7,6 +7,11 @@ declare const _DesignerReinitializeEvent: z.ZodObject<{
         product: z.ZodUnion<readonly [import("./Product.js").ProductSchema, z.ZodString]>;
         pricing: z.ZodUnion<readonly [import("./DesignerPricing.js").DesignerPricingSchema, z.ZodString]>;
         metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+        workspaceOptions: z.ZodOptional<z.ZodArray<import("./WorkspaceOption.js").WorkspaceOptionSchema>>;
+        workspaceSessionTags: z.ZodOptional<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
+        designCartItem: z.ZodOptional<z.ZodObject<{
+            quantity: z.ZodNumber;
+        }, z.core.$loose>>;
     }, z.core.$loose>;
 }, z.core.$strict>;
 type _DesignerReinitializeEventSchema = typeof _DesignerReinitializeEvent;

@@ -2,6 +2,8 @@ import { z } from "zod";
 import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { Product } from "./Product.js";
+import { WorkspaceOption } from "./WorkspaceOption.js";
+import { WorkspaceTag } from "./WorkspaceTag.js";
 
 const _DesignerReinitializeEvent = z
   .object({
@@ -36,6 +38,24 @@ const _DesignerReinitializeEvent = z
           .describe(
             "An (optional) object containing additional metadata for the designer initialization payload.",
           )
+          .optional(),
+        /**List of workspace options for the product.*/
+        workspaceOptions: z
+          .array(WorkspaceOption)
+          .describe("List of workspace options for the product.")
+          .optional(),
+        /**List of workspace tags that are auto-applied to the active workspace (before workspace expansion).*/
+        workspaceSessionTags: z
+          .array(WorkspaceTag)
+          .describe(
+            "List of workspace tags that are auto-applied to the active workspace (before workspace expansion).",
+          )
+          .optional(),
+        /**The properties of the cart item holding the design.*/
+        designCartItem: z
+          .object({ quantity: z.number().int() })
+          .passthrough()
+          .describe("The properties of the cart item holding the design.")
           .optional(),
       })
       .passthrough(),
