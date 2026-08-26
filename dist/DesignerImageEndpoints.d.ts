@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignerImageEndpoints: z.ZodObject<{
     gallery: z.ZodString;
-    upload: z.ZodString;
+    upload: z.ZodAny;
     delete: z.ZodString;
     rendition: z.ZodString;
 }, z.core.$strict>;

@@ -53,6 +53,10 @@ const _DesignerInitializationPayload = z
         .passthrough()
         .describe("The properties of the cart item holding the design.")
         .optional(),
+    /**Partner Code*/
+    partner: z.string().describe("Partner Code").optional(),
+    /**Channel Code*/
+    channel: z.string().describe("Channel Code").optional(),
 })
     .passthrough();
 export const DesignerInitializationPayload = _DesignerInitializationPayload;

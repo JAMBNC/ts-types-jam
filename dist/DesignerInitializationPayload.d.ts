@@ -14,6 +14,8 @@ declare const _DesignerInitializationPayload: z.ZodObject<{
     designCartItem: z.ZodOptional<z.ZodObject<{
         quantity: z.ZodNumber;
     }, z.core.$loose>>;
+    partner: z.ZodOptional<z.ZodString>;
+    channel: z.ZodOptional<z.ZodString>;
 }, z.core.$loose>;
 type _DesignerInitializationPayloadSchema = typeof _DesignerInitializationPayload;
 export interface DesignerInitializationPayloadSchema extends _DesignerInitializationPayloadSchema {
