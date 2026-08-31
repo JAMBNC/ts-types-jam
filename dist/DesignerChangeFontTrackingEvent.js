@@ -2,7 +2,6 @@ import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
-import { MerchantCode } from "./MerchantCode.js";
 const _DesignerChangeFontTrackingEvent = z
     .object({
     event: z.literal("designer_change_font"),
@@ -13,8 +12,7 @@ const _DesignerChangeFontTrackingEvent = z
         newFont: z.string(),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
-        /**An analytics/tracking code to help id the merchant for the event.*/
-        merchant: MerchantCode,
+        merchant: z.any(),
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
     })

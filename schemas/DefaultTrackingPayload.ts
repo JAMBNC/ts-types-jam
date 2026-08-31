@@ -1,14 +1,15 @@
 import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
-import { MerchantCode } from "./MerchantCode.js";
 
 const _DefaultTrackingPayload = z
   .object({
     /**An analytics/tracking code to help id the designer event source.*/
     designer: DesignerCode,
-    /**An analytics/tracking code to help id the merchant for the event.*/
-    merchant: MerchantCode,
+    /**Partner Code*/
+    partner: z.string().describe("Partner Code").optional(),
+    /**Channel Code*/
+    channel: z.string().describe("Channel Code").optional(),
     /**Time since the initial load in seconds*/
     deltaTime: DeltaTime,
   })

@@ -7,7 +7,7 @@ declare const _DesignerAddMailingAddressTrackingEvent: z.ZodObject<{
             variable: "variable";
         }>;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        merchant: z.ZodAny;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;

@@ -1,7 +1,8 @@
 import { z } from "zod";
 declare const _DefaultTrackingPayload: z.ZodObject<{
     designer: import("./DesignerCode.js").DesignerCodeSchema;
-    merchant: import("./MerchantCode.js").MerchantCodeSchema;
+    partner: z.ZodOptional<z.ZodString>;
+    channel: z.ZodOptional<z.ZodString>;
     deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
 }, z.core.$strict>;
 type _DefaultTrackingPayloadSchema = typeof _DefaultTrackingPayload;

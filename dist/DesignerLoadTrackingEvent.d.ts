@@ -5,7 +5,7 @@ declare const _DesignerLoadTrackingEvent: z.ZodObject<{
         loadTime: z.ZodNumber;
         productUrl: z.ZodOptional<z.ZodString>;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        merchant: z.ZodAny;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;

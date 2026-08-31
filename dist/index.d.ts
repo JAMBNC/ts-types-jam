@@ -148,7 +148,6 @@ export * from './DesignerChangeProductEvent.js';
 export * from './DesignerReinitializeEvent.js';
 export * from './DesignerLogoClickEvent.js';
 export * from './DesignerCode.js';
-export * from './MerchantCode.js';
 export * from './DeltaTime.js';
 export * from './DefaultTrackingPayload.js';
 export * from './DesignerImageEndpoints.js';

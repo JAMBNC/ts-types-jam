@@ -3,7 +3,6 @@ import { Color } from "./Color.js";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
-import { MerchantCode } from "./MerchantCode.js";
 const _DesignerChangeColorTrackingEvent = z
     .object({
     event: z.literal("designer_change_color"),
@@ -14,8 +13,7 @@ const _DesignerChangeColorTrackingEvent = z
         newColors: z.array(Color),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
-        /**An analytics/tracking code to help id the merchant for the event.*/
-        merchant: MerchantCode,
+        merchant: z.any(),
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
     })

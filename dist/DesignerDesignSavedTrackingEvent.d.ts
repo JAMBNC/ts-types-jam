@@ -9,7 +9,7 @@ declare const _DesignerDesignSavedTrackingEvent: z.ZodObject<{
         }, z.core.$strict>>;
         designReturnUrl: z.ZodString;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        merchant: z.ZodAny;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;

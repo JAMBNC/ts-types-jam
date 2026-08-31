@@ -6,7 +6,7 @@ declare const _DesignerChangeFontTrackingEvent: z.ZodObject<{
         oldFont: z.ZodString;
         newFont: z.ZodString;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        merchant: z.ZodAny;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;

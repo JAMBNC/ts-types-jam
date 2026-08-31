@@ -1,7 +1,6 @@
 import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
-import { MerchantCode } from "./MerchantCode.js";
 const _DesignerAddMailingAddressTrackingEvent = z
     .object({
     event: z.literal("designer_add_mailing_address"),
@@ -10,8 +9,7 @@ const _DesignerAddMailingAddressTrackingEvent = z
         type: z.enum(["single", "variable"]),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
-        /**An analytics/tracking code to help id the merchant for the event.*/
-        merchant: MerchantCode,
+        merchant: z.any(),
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
     })

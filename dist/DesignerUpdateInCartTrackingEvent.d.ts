@@ -4,7 +4,7 @@ declare const _DesignerUpdateInCartTrackingEvent: z.ZodObject<{
     payload: z.ZodObject<{
         productUrl: z.ZodOptional<z.ZodString>;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: import("./MerchantCode.js").MerchantCodeSchema;
+        merchant: z.ZodAny;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
         productSku: z.ZodString;
         quantity: z.ZodNumber;
