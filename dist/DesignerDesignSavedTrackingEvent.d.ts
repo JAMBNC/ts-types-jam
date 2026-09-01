@@ -7,6 +7,7 @@ declare const _DesignerDesignSavedTrackingEvent: z.ZodObject<{
             url: z.ZodString;
             label: z.ZodString;
         }, z.core.$strict>>;
+        designPreviewImage: z.ZodString;
         designReturnUrl: z.ZodString;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
         merchant: z.ZodAny;

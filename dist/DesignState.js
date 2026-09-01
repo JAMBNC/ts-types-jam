@@ -16,6 +16,28 @@ const _DesignState = z
         .passthrough()
         .describe("Stores some session based design information")
         .optional(),
+    /**Simple id for the design. Only present on a saved design.*/
+    id: z
+        .string()
+        .describe("Simple id for the design. Only present on a saved design.")
+        .optional(),
+    /**Full uuid for the design. Only present on a saved design.*/
+    uuid: z
+        .string()
+        .regex(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/)
+        .describe("Full uuid for the design. Only present on a saved design.")
+        .optional(),
+    /**Sku for the product*/
+    productSku: z.string().describe("Sku for the product").optional(),
+    snapshots: z
+        .array(z.object({ url: z.string().url(), label: z.string() }).strict())
+        .optional(),
+    /**Primary image used for previewing the design in cards or lists.*/
+    previewImage: z
+        .string()
+        .url()
+        .describe("Primary image used for previewing the design in cards or lists.")
+        .optional(),
     /**Documentation orientation 0-3 representing the rotation of this design state relative to its preferred orientation. 0 is default and each number represents a 90 degree rotation.*/
     orientation: z
         .union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)])

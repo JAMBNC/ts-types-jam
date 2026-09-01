@@ -8,6 +8,11 @@ const _DesignerDesignSavedTrackingEvent = z
         .object({
         designId: z.string(),
         snapshots: z.array(z.object({ url: z.string().url(), label: z.string() }).strict()),
+        /**Primary image used for previewing the design in cards or lists.*/
+        designPreviewImage: z
+            .string()
+            .url()
+            .describe("Primary image used for previewing the design in cards or lists."),
         designReturnUrl: z.string().url(),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,

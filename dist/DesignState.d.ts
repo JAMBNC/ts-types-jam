@@ -4,6 +4,14 @@ declare const _DesignState: z.ZodObject<{
         canRedo: z.ZodOptional<z.ZodBoolean>;
         canUndo: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$loose>>;
+    id: z.ZodOptional<z.ZodString>;
+    uuid: z.ZodOptional<z.ZodString>;
+    productSku: z.ZodOptional<z.ZodString>;
+    snapshots: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        url: z.ZodString;
+        label: z.ZodString;
+    }, z.core.$strict>>>;
+    previewImage: z.ZodOptional<z.ZodString>;
     orientation: z.ZodOptional<z.ZodUnion<readonly [z.ZodLiteral<0>, z.ZodLiteral<1>, z.ZodLiteral<2>, z.ZodLiteral<3>]>>;
     height: import("./Dimension.js").DimensionSchema;
     ingredients: z.ZodRecord<z.ZodString, import("./Ingredient.js").IngredientSchema>;
