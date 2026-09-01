@@ -3,12 +3,14 @@ import { DesignerAddressBookResponse } from "./DesignerAddressBookResponse.js";
 import { DesignerAddressBookUploadRequest } from "./DesignerAddressBookUploadRequest.js";
 import { DesignerAddressBookUploadResponse } from "./DesignerAddressBookUploadResponse.js";
 import { DesignerAddressBooksResponse } from "./DesignerAddressBooksResponse.js";
+import { DesignerLoadResponse } from "./DesignerLoadResponse.js";
 import { DesignerMediaDeleteResponse } from "./DesignerMediaDeleteResponse.js";
 import { DesignerMediaGalleryResponse } from "./DesignerMediaGalleryResponse.js";
 import { DesignerMediaRenditionRequest } from "./DesignerMediaRenditionRequest.js";
 import { DesignerMediaRenditionResponse } from "./DesignerMediaRenditionResponse.js";
 import { DesignerMediaUploadRequest } from "./DesignerMediaUploadRequest.js";
 import { DesignerMediaUploadResponse } from "./DesignerMediaUploadResponse.js";
+import { DesignerSaveRequest } from "./DesignerSaveRequest.js";
 import { DesignerSaveResponse } from "./DesignerSaveResponse.js";
 const _DesignerRestPayloads = z
     .union([
@@ -19,6 +21,8 @@ const _DesignerRestPayloads = z
     DesignerMediaRenditionResponse,
     DesignerMediaDeleteResponse,
     DesignerSaveResponse,
+    DesignerSaveRequest,
+    DesignerLoadResponse,
     DesignerAddressBooksResponse,
     DesignerAddressBookResponse,
     DesignerAddressBookUploadRequest,

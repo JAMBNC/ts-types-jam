@@ -2,6 +2,11 @@ import { z } from "zod";
 declare const _DesignerSaveResponse: z.ZodObject<{
     success: z.ZodBoolean;
     designId: z.ZodString;
+    snapshots: z.ZodArray<z.ZodObject<{
+        url: z.ZodString;
+        label: z.ZodString;
+    }, z.core.$strict>>;
+    designPreviewImage: z.ZodString;
 }, z.core.$strict>;
 type _DesignerSaveResponseSchema = typeof _DesignerSaveResponse;
 export interface DesignerSaveResponseSchema extends _DesignerSaveResponseSchema {
