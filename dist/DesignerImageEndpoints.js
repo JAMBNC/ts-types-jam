@@ -21,8 +21,7 @@ const _DesignerImageEndpoints = z
     templateAsset: z
         .string()
         .url()
-        .describe("The endpoint url to use for fetching images through the api proxy")
-        .optional(),
+        .describe("The endpoint url to use for fetching images through the api proxy"),
 })
     .strict();
 export const DesignerImageEndpoints = _DesignerImageEndpoints;

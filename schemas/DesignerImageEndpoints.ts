@@ -30,8 +30,7 @@ const _DesignerImageEndpoints = z
       .url()
       .describe(
         "The endpoint url to use for fetching images through the api proxy",
-      )
-      .optional(),
+      ),
   })
   .strict();
 type _DesignerImageEndpointsSchema = typeof _DesignerImageEndpoints;
