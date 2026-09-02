@@ -24,6 +24,14 @@ const _DesignerImageEndpoints = z
       .describe(
         "The endpoint URL for fetching a rendition of an image from the gallery. (uses the DesignerAuth.endpointAuth)",
       ),
+    /**The endpoint url to use for fetching images through the api proxy*/
+    templateAsset: z
+      .string()
+      .url()
+      .describe(
+        "The endpoint url to use for fetching images through the api proxy",
+      )
+      .optional(),
   })
   .strict();
 type _DesignerImageEndpointsSchema = typeof _DesignerImageEndpoints;

@@ -4,6 +4,7 @@ declare const _DesignerImageEndpoints: z.ZodObject<{
     upload: z.ZodAny;
     delete: z.ZodString;
     rendition: z.ZodString;
+    templateAsset: z.ZodOptional<z.ZodString>;
 }, z.core.$strict>;
 type _DesignerImageEndpointsSchema = typeof _DesignerImageEndpoints;
 export interface DesignerImageEndpointsSchema extends _DesignerImageEndpointsSchema {
