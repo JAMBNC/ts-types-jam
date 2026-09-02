@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignerSaveResponse: z.ZodObject<{
     success: z.ZodBoolean;
-    designId: z.ZodString;
+    designUuid: z.ZodString;
     snapshots: z.ZodArray<z.ZodObject<{
         url: z.ZodString;
         label: z.ZodString;

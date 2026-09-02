@@ -4,7 +4,6 @@ declare const _DesignState: z.ZodObject<{
         canRedo: z.ZodOptional<z.ZodBoolean>;
         canUndo: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$loose>>;
-    id: z.ZodOptional<z.ZodString>;
     uuid: z.ZodOptional<z.ZodString>;
     productSku: z.ZodOptional<z.ZodString>;
     snapshots: z.ZodOptional<z.ZodArray<z.ZodObject<{

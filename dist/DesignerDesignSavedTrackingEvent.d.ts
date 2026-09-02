@@ -2,7 +2,7 @@ import { z } from "zod";
 declare const _DesignerDesignSavedTrackingEvent: z.ZodObject<{
     event: z.ZodLiteral<"designer_design_saved">;
     payload: z.ZodObject<{
-        designId: z.ZodString;
+        designUuid: z.ZodString;
         snapshots: z.ZodArray<z.ZodObject<{
             url: z.ZodString;
             label: z.ZodString;

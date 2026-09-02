@@ -4,7 +4,7 @@ const _DesignerSaveResponse = z
     /**Whether the save was successful.*/
     success: z.boolean().describe("Whether the save was successful."),
     /**The unique identifier for the saved design.*/
-    designId: z
+    designUuid: z
         .string()
         .describe("The unique identifier for the saved design."),
     snapshots: z.array(z.object({ url: z.string().url(), label: z.string() }).strict()),

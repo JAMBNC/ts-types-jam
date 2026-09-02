@@ -6,7 +6,7 @@ const _DesignerDesignSavedTrackingEvent = z
     event: z.literal("designer_design_saved"),
     payload: z
         .object({
-        designId: z.string(),
+        designUuid: z.string(),
         snapshots: z.array(z.object({ url: z.string().url(), label: z.string() }).strict()),
         /**Primary image used for previewing the design in cards or lists.*/
         designPreviewImage: z

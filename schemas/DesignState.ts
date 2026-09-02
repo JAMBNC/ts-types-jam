@@ -17,11 +17,6 @@ const _DesignState = z
       .passthrough()
       .describe("Stores some session based design information")
       .optional(),
-    /**Simple id for the design. Only present on a saved design.*/
-    id: z
-      .string()
-      .describe("Simple id for the design. Only present on a saved design.")
-      .optional(),
     /**Full uuid for the design. Only present on a saved design.*/
     uuid: z
       .string()
