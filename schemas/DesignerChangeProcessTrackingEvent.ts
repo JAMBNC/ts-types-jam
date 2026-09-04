@@ -14,7 +14,10 @@ const _DesignerChangeProcessTrackingEvent = z
         newProcess: z.union([Process, z.null()]).optional(),
         /**An analytics/tracking code to help id the designer event source.*/
         designer: DesignerCode,
-        merchant: z.any(),
+        /**Partner Code*/
+        partner: z.string().describe("Partner Code"),
+        /**Channel Code*/
+        channel: z.string().describe("Channel Code"),
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
       })

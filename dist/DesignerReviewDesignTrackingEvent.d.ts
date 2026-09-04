@@ -4,12 +4,19 @@ declare const _DesignerReviewDesignTrackingEvent: z.ZodObject<{
     payload: z.ZodObject<{
         productUrl: z.ZodOptional<z.ZodString>;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: z.ZodAny;
+        partner: z.ZodString;
+        channel: z.ZodString;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
         productSku: z.ZodString;
         quantity: z.ZodNumber;
         price: z.ZodNumber;
         adders: z.ZodArray<import("./AdderCodeEnum.js").AdderCodeEnumSchema>;
+        snapshots: z.ZodOptional<z.ZodArray<z.ZodObject<{
+            url: z.ZodString;
+            label: z.ZodString;
+        }, z.core.$strict>>>;
+        designPreviewImage: z.ZodOptional<z.ZodString>;
+        designReturnUrl: z.ZodOptional<z.ZodString>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerReviewDesignTrackingEventSchema = typeof _DesignerReviewDesignTrackingEvent;

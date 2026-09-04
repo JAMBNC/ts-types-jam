@@ -4,7 +4,8 @@ declare const _DesignerRemoveItemTrackingEvent: z.ZodObject<{
     payload: z.ZodObject<{
         type: z.ZodOptional<z.ZodUnion<readonly [import("./IngredientMetadataType.js").IngredientMetadataTypeSchema, z.ZodNull]>>;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: z.ZodAny;
+        partner: z.ZodString;
+        channel: z.ZodString;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;

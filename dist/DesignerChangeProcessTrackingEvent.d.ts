@@ -6,7 +6,8 @@ declare const _DesignerChangeProcessTrackingEvent: z.ZodObject<{
         oldProcess: z.ZodOptional<z.ZodUnion<readonly [import("./Process.js").ProcessSchema, z.ZodNull]>>;
         newProcess: z.ZodOptional<z.ZodUnion<readonly [import("./Process.js").ProcessSchema, z.ZodNull]>>;
         designer: import("./DesignerCode.js").DesignerCodeSchema;
-        merchant: z.ZodAny;
+        partner: z.ZodString;
+        channel: z.ZodString;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
     }, z.core.$strict>;
 }, z.core.$strict>;
