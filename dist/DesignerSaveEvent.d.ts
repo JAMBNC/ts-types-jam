@@ -2,21 +2,11 @@ import { z } from "zod";
 declare const _DesignerSaveEvent: z.ZodObject<{
     type: z.ZodLiteral<"save">;
     payload: z.ZodObject<{
-        addressListId: z.ZodNumber;
-        alchemySnapshots: z.ZodString;
-        autoSeparated: z.ZodBoolean;
+        design: z.ZodString;
+        encodedSnapshots: z.ZodString;
         config: z.ZodString;
-        isCmyk: z.ZodBoolean;
-        orientation: z.ZodNumber;
-        pages: z.ZodString;
-        pagesOrdered: z.ZodString;
         preflight: z.ZodString;
-        productSku: z.ZodString;
-        qty: z.ZodNumber;
-        returnAddressString: z.ZodString;
-        sRecipAddressString: z.ZodString;
-        designerInstanceCode: z.ZodString;
-        saveRequestUuid: z.ZodOptional<z.ZodString>;
+        saveRequestUuid: z.ZodString;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerSaveEventSchema = typeof _DesignerSaveEvent;
