@@ -3,6 +3,7 @@ import { DesignerAuth } from "./DesignerAuth.js";
 import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerEndpoints } from "./DesignerEndpoints.js";
 import { DesignerImageReductionConfig } from "./DesignerImageReductionConfig.js";
+import { DesignerPendingDesigns } from "./DesignerPendingDesigns.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
@@ -68,6 +69,7 @@ const _DesignerInitializationPayload = z
     partner: z.string().describe("Partner Code").optional(),
     /**Channel Code*/
     channel: z.string().describe("Channel Code").optional(),
+    pendingDesigns: DesignerPendingDesigns.optional(),
   })
   .passthrough();
 type _DesignerInitializationPayloadSchema =

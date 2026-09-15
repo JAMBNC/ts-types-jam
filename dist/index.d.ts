@@ -159,6 +159,7 @@ export * from './DesignerEndpoints.js';
 export * from './DesignerAuth.js';
 export * from './DesignerPricing.js';
 export * from './DesignerImageReductionConfig.js';
+export * from './DesignerPendingDesigns.js';
 export * from './DesignerInitializationPayload.js';
 export * from './DesignerMediaEntry.js';
 export * from './DesignerMediaGalleryResponse.js';

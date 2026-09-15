@@ -16,6 +16,7 @@ declare const _DesignerInitializationPayload: z.ZodObject<{
     }, z.core.$loose>>;
     partner: z.ZodOptional<z.ZodString>;
     channel: z.ZodOptional<z.ZodString>;
+    pendingDesigns: z.ZodOptional<import("./DesignerPendingDesigns.js").DesignerPendingDesignsSchema>;
 }, z.core.$loose>;
 type _DesignerInitializationPayloadSchema = typeof _DesignerInitializationPayload;
 export interface DesignerInitializationPayloadSchema extends _DesignerInitializationPayloadSchema {
