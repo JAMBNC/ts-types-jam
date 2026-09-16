@@ -3,9 +3,9 @@ declare const _DesignerReinitializeEvent: z.ZodObject<{
     type: z.ZodLiteral<"reinitialize">;
     payload: z.ZodObject<{
         design: z.ZodRecord<z.ZodString, z.ZodAny>;
-        config: z.ZodUnion<readonly [import("./DesignerConfig.js").DesignerConfigSchema, z.ZodString]>;
-        product: z.ZodUnion<readonly [import("./Product.js").ProductSchema, z.ZodString]>;
-        pricing: z.ZodUnion<readonly [import("./DesignerPricing.js").DesignerPricingSchema, z.ZodString]>;
+        config: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerConfig.js").DesignerConfigSchema, z.ZodString]>>;
+        product: z.ZodOptional<z.ZodUnion<readonly [import("./Product.js").ProductSchema, z.ZodString]>>;
+        pricing: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerPricing.js").DesignerPricingSchema, z.ZodString]>>;
         metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         workspaceOptions: z.ZodOptional<z.ZodArray<import("./WorkspaceOption.js").WorkspaceOptionSchema>>;
         workspaceSessionTags: z.ZodOptional<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;

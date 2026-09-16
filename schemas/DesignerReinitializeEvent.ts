@@ -19,19 +19,22 @@ const _DesignerReinitializeEvent = z
           .union([DesignerConfig, z.string().url()])
           .describe(
             "The designer configuration schema or URI endpoint that returns a designer configuration schema",
-          ),
+          )
+          .optional(),
         /**A Product schema or URI endpoint that returns a Product schema*/
         product: z
           .union([Product, z.string().url()])
           .describe(
             "A Product schema or URI endpoint that returns a Product schema",
-          ),
+          )
+          .optional(),
         /**A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema*/
         pricing: z
           .union([DesignerPricing, z.string().url()])
           .describe(
             "A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema",
-          ),
+          )
+          .optional(),
         /**An (optional) object containing additional metadata for the designer initialization payload.*/
         metadata: z
           .record(z.string(), z.any())
