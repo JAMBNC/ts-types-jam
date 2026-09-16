@@ -6,5 +6,6 @@ const _WorkspaceTag = z.enum([
     "prepress",
     "disableAutoSave",
     "disableReviewModal",
+    "disablePendingDesignsModal",
 ]);
 export const WorkspaceTag = _WorkspaceTag;

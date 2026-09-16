@@ -1,0 +1,20 @@
+import { z } from "zod";
+
+const _DesignerReinitializeRequestEvent = z
+  .object({
+    type: z.literal("reinitializeRequest"),
+    payload: z
+      .object({ sku: z.string().optional(), designUuid: z.string().optional() })
+      .strict(),
+  })
+  .strict()
+  .describe("Event emitted when the designer requests a reinitialize");
+type _DesignerReinitializeRequestEventSchema =
+  typeof _DesignerReinitializeRequestEvent;
+export interface DesignerReinitializeRequestEventSchema extends _DesignerReinitializeRequestEventSchema {}
+/**Event emitted when the designer requests a reinitialize*/
+export const DesignerReinitializeRequestEvent: DesignerReinitializeRequestEventSchema =
+  _DesignerReinitializeRequestEvent;
+export type DesignerReinitializeRequestEvent = z.infer<
+  typeof DesignerReinitializeRequestEvent
+>;

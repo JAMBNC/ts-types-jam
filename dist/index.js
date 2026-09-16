@@ -144,7 +144,7 @@ export * from './DesignerCartEvent.js';
 export * from './DesignerSaveEvent.js';
 export * from './DesignerReviewEvent.js';
 export * from './DesignerPersistenceEvent.js';
-export * from './DesignerChangeProductEvent.js';
+export * from './DesignerReinitializeRequestEvent.js';
 export * from './DesignerReinitializeEvent.js';
 export * from './DesignerLogoClickEvent.js';
 export * from './DesignerCode.js';

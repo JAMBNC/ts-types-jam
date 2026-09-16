@@ -1,5 +1,5 @@
 import { z } from "zod";
-declare const _DesignerEvent: z.ZodUnion<readonly [import("./DesignerAnalyticsEvent.js").DesignerAnalyticsEventSchema, import("./DesignerSaveEvent.js").DesignerSaveEventSchema, import("./DesignerReviewEvent.js").DesignerReviewEventSchema, import("./DesignerPersistenceEvent.js").DesignerPersistenceEventSchema, import("./DesignerLogoClickEvent.js").DesignerLogoClickEventSchema, import("./DesignerLoginEvent.js").DesignerLoginEventSchema, import("./DesignerCartEvent.js").DesignerCartEventSchema, import("./DesignerChangeProductEvent.js").DesignerChangeProductEventSchema, import("./DesignerReinitializeEvent.js").DesignerReinitializeEventSchema]>;
+declare const _DesignerEvent: z.ZodUnion<readonly [import("./DesignerAnalyticsEvent.js").DesignerAnalyticsEventSchema, import("./DesignerSaveEvent.js").DesignerSaveEventSchema, import("./DesignerReviewEvent.js").DesignerReviewEventSchema, import("./DesignerPersistenceEvent.js").DesignerPersistenceEventSchema, import("./DesignerLogoClickEvent.js").DesignerLogoClickEventSchema, import("./DesignerLoginEvent.js").DesignerLoginEventSchema, import("./DesignerCartEvent.js").DesignerCartEventSchema, z.ZodAny, import("./DesignerReinitializeEvent.js").DesignerReinitializeEventSchema]>;
 type _DesignerEventSchema = typeof _DesignerEvent;
 export interface DesignerEventSchema extends _DesignerEventSchema {
 }

@@ -2,6 +2,7 @@ import { z } from "zod";
 declare const _WorkspaceTag: z.ZodEnum<{
     colorInk: "colorInk";
     disableAutoSave: "disableAutoSave";
+    disablePendingDesignsModal: "disablePendingDesignsModal";
     disableReviewModal: "disableReviewModal";
     foil: "foil";
     prepress: "prepress";

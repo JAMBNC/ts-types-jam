@@ -7,6 +7,7 @@ const _WorkspaceTag = z.enum([
   "prepress",
   "disableAutoSave",
   "disableReviewModal",
+  "disablePendingDesignsModal",
 ]);
 type _WorkspaceTagSchema = typeof _WorkspaceTag;
 export interface WorkspaceTagSchema extends _WorkspaceTagSchema {}
