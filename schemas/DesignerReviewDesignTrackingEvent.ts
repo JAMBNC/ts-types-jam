@@ -2,6 +2,7 @@ import { z } from "zod";
 import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
+import { WorkspaceTag } from "./WorkspaceTag.js";
 
 const _DesignerReviewDesignTrackingEvent = z
   .object({
@@ -35,6 +36,10 @@ const _DesignerReviewDesignTrackingEvent = z
           )
           .optional(),
         designReturnUrl: z.string().url().optional(),
+        /**The workspace tags when this event fired*/
+        workspaceTags: z
+          .array(z.array(WorkspaceTag))
+          .describe("The workspace tags when this event fired"),
       })
       .strict(),
   })

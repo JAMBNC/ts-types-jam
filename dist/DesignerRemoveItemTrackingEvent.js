@@ -2,6 +2,7 @@ import { z } from "zod";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
 import { IngredientMetadataType } from "./IngredientMetadataType.js";
+import { WorkspaceTag } from "./WorkspaceTag.js";
 const _DesignerRemoveItemTrackingEvent = z
     .object({
     event: z.literal("designer_remove_item"),
@@ -16,6 +17,10 @@ const _DesignerRemoveItemTrackingEvent = z
         channel: z.string().describe("Channel Code"),
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
+        /**The workspace tags when this event fired*/
+        workspaceTags: z
+            .array(z.array(WorkspaceTag))
+            .describe("The workspace tags when this event fired"),
     })
         .strict(),
 })

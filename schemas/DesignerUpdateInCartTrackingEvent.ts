@@ -2,6 +2,7 @@ import { z } from "zod";
 import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { DeltaTime } from "./DeltaTime.js";
 import { DesignerCode } from "./DesignerCode.js";
+import { WorkspaceTag } from "./WorkspaceTag.js";
 
 const _DesignerUpdateInCartTrackingEvent = z
   .object({
@@ -21,6 +22,10 @@ const _DesignerUpdateInCartTrackingEvent = z
         quantity: z.number().int(),
         price: z.number(),
         adders: z.array(AdderCodeEnum),
+        /**The workspace tags when this event fired*/
+        workspaceTags: z
+          .array(z.array(WorkspaceTag))
+          .describe("The workspace tags when this event fired"),
       })
       .strict(),
   })

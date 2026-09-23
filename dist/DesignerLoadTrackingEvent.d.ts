@@ -8,6 +8,7 @@ declare const _DesignerLoadTrackingEvent: z.ZodObject<{
         partner: z.ZodString;
         channel: z.ZodString;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
+        workspaceTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerLoadTrackingEventSchema = typeof _DesignerLoadTrackingEvent;
