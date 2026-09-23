@@ -84,6 +84,7 @@ declare const _DesignerConfig: z.ZodObject<{
     processRestrictions: z.ZodOptional<z.ZodArray<import("./ProcessRestriction.js").ProcessRestrictionSchema>>;
     productCategory: z.ZodString;
     vendors: z.ZodRecord<z.ZodString, z.ZodArray<import("./AdderCodeEnum.js").AdderCodeEnumSchema>>;
+    assets: z.ZodOptional<import("./Assets.js").AssetsSchema>;
 }, z.core.$loose>;
 type _DesignerConfigSchema = typeof _DesignerConfig;
 export interface DesignerConfigSchema extends _DesignerConfigSchema {

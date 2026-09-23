@@ -75,6 +75,7 @@ export * from './Process.js';
 export * from './VendorColor.js';
 export * from './VendorProcess.js';
 export * from './AdderCodeEnum.js';
+export * from './Assets.js';
 export * from './ContentPlacement.js';
 export * from './CoatingAdderCode.js';
 export * from './CoverageAdderCodeEnum.js';

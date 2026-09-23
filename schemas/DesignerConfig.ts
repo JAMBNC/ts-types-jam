@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { AdderCodeEnum } from "./AdderCodeEnum.js";
+import { Assets } from "./Assets.js";
 import { ContentPlacement } from "./ContentPlacement.js";
 import { DesignerConfigFeatureValue } from "./DesignerConfigFeatureValue.js";
 import { ProcessRestriction } from "./ProcessRestriction.js";
@@ -175,6 +176,7 @@ const _DesignerConfig = z
     processRestrictions: z.array(ProcessRestriction).optional(),
     productCategory: z.string(),
     vendors: z.record(z.string(), z.array(AdderCodeEnum)),
+    assets: Assets.optional(),
   })
   .passthrough();
 type _DesignerConfigSchema = typeof _DesignerConfig;
