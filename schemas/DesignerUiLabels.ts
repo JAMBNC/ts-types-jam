@@ -393,6 +393,26 @@ const _DesignerUiLabels = z
       .string()
       .describe("The label used for the back page selection option")
       .default("Back"),
+    /**The ui label for the ink coverage small adder*/
+    "adder.ink_coverage_sm.label": z
+      .string()
+      .describe("The ui label for the ink coverage small adder")
+      .default("Ink Coverage - Small"),
+    /**The ui label for the ink coverage standard adder*/
+    "adder.ink_coverage_std.label": z
+      .string()
+      .describe("The ui label for the ink coverage standard adder")
+      .default("Ink Coverage - Standard"),
+    /**The ui label for the ink coverage large adder*/
+    "adder.ink_coverage_lg.label": z
+      .string()
+      .describe("The ui label for the ink coverage large adder")
+      .default("Ink Coverage - Large"),
+    /**The ui label for the ink coverage extra-large adder*/
+    "adder.ink_coverage_xl.label": z
+      .string()
+      .describe("The ui label for the ink coverage extra-large adder")
+      .default("Ink Coverage - XLarge"),
     /**The ui label for the foil coverage small adder*/
     "adder.foil_coverage_sm.label": z
       .string()
@@ -418,6 +438,31 @@ const _DesignerUiLabels = z
       .string()
       .describe("The ui label for a single foil impression")
       .default("Single Foil Impression"),
+    /**The ui label for a single ink impression*/
+    "adder.ink_stamp_1.label": z
+      .string()
+      .describe("The ui label for a single ink impression")
+      .default("1 Ink Stamp"),
+    /**The ui label for two ink impressions*/
+    "adder.ink_stamp_2.label": z
+      .string()
+      .describe("The ui label for two ink impressions")
+      .default("2 Ink Stamps"),
+    /**The ui label for three ink impressions*/
+    "adder.ink_stamp_3.label": z
+      .string()
+      .describe("The ui label for three ink impressions")
+      .default("3 Ink Stamps"),
+    /**The ui label for four ink impressions*/
+    "adder.ink_stamp_4.label": z
+      .string()
+      .describe("The ui label for four ink impressions")
+      .default("4 Ink Stamps"),
+    /**The ui label for five ink impressions*/
+    "adder.ink_stamp_5.label": z
+      .string()
+      .describe("The ui label for five ink impressions")
+      .default("5 Ink Stamps"),
     /**The ui label for two foil impressions*/
     "adder.foil_stamp_2.label": z
       .string()
@@ -719,6 +764,11 @@ const _DesignerUiLabels = z
       .string()
       .describe("The ui label for mirroring adder.")
       .default("Face Outside"),
+    /**The ui label for setup charge.*/
+    "adder.setup_charge.label": z
+      .string()
+      .describe("The ui label for setup charge.")
+      .default("Setup Charge"),
     /**Error message when quantity is below the minimum order quantity.*/
     "error.ProductQuantityLessThanMinimumOrderQuantity": z
       .string()

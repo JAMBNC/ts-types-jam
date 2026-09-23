@@ -76,11 +76,20 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "modal.printPreview.description.label": z.ZodDefault<z.ZodString>;
     "modal.printPreview.pageSelector.front.label": z.ZodDefault<z.ZodString>;
     "modal.printPreview.pageSelector.back.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_coverage_sm.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_coverage_std.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_coverage_lg.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_coverage_xl.label": z.ZodDefault<z.ZodString>;
     "adder.foil_coverage_sm.label": z.ZodDefault<z.ZodString>;
     "adder.foil_coverage_std.label": z.ZodDefault<z.ZodString>;
     "adder.foil_coverage_lg.label": z.ZodDefault<z.ZodString>;
     "adder.foil_coverage_xl.label": z.ZodDefault<z.ZodString>;
     "adder.foil_stamp_1.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_stamp_1.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_stamp_2.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_stamp_3.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_stamp_4.label": z.ZodDefault<z.ZodString>;
+    "adder.ink_stamp_5.label": z.ZodDefault<z.ZodString>;
     "adder.foil_stamp_2.label": z.ZodDefault<z.ZodString>;
     "adder.foil_stamp_3.label": z.ZodDefault<z.ZodString>;
     "adder.foil_stamp_4.label": z.ZodDefault<z.ZodString>;
@@ -140,6 +149,7 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "adder.lamination_soft_touch.details": z.ZodDefault<z.ZodString>;
     "adder.individual_cut.label": z.ZodDefault<z.ZodString>;
     "adder.mirroring.label": z.ZodDefault<z.ZodString>;
+    "adder.setup_charge.label": z.ZodDefault<z.ZodString>;
     "error.ProductQuantityLessThanMinimumOrderQuantity": z.ZodDefault<z.ZodString>;
     "error.ProductQuantityIncrementNotValid": z.ZodDefault<z.ZodString>;
     "error.VariableAddressMultipleFrames": z.ZodDefault<z.ZodString>;
