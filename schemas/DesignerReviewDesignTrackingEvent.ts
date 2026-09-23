@@ -37,7 +37,7 @@ const _DesignerReviewDesignTrackingEvent = z
           .optional(),
         designReturnUrl: z.string().url().optional(),
         /**The workspace tags when this event fired*/
-        workspaceTags: z
+        workspaceSessionTags: z
           .array(z.array(WorkspaceTag))
           .describe("The workspace tags when this event fired"),
       })

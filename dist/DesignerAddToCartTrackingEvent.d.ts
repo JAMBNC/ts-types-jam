@@ -17,7 +17,7 @@ declare const _DesignerAddToCartTrackingEvent: z.ZodObject<{
         }, z.core.$strict>>>;
         designPreviewImage: z.ZodOptional<z.ZodString>;
         designReturnUrl: z.ZodOptional<z.ZodString>;
-        workspaceTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
+        workspaceSessionTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerAddToCartTrackingEventSchema = typeof _DesignerAddToCartTrackingEvent;

@@ -18,7 +18,7 @@ const _DesignerLoadTrackingEvent = z
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
         /**The workspace tags when this event fired*/
-        workspaceTags: z
+        workspaceSessionTags: z
             .array(z.array(WorkspaceTag))
             .describe("The workspace tags when this event fired"),
     })

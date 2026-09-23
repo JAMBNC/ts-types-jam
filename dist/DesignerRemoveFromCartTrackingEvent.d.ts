@@ -11,7 +11,7 @@ declare const _DesignerRemoveFromCartTrackingEvent: z.ZodObject<{
         quantity: z.ZodNumber;
         price: z.ZodNumber;
         adders: z.ZodArray<import("./AdderCodeEnum.js").AdderCodeEnumSchema>;
-        workspaceTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
+        workspaceSessionTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerRemoveFromCartTrackingEventSchema = typeof _DesignerRemoveFromCartTrackingEvent;

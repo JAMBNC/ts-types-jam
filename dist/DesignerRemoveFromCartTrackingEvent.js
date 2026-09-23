@@ -22,7 +22,7 @@ const _DesignerRemoveFromCartTrackingEvent = z
         price: z.number(),
         adders: z.array(AdderCodeEnum),
         /**The workspace tags when this event fired*/
-        workspaceTags: z
+        workspaceSessionTags: z
             .array(z.array(WorkspaceTag))
             .describe("The workspace tags when this event fired"),
     })

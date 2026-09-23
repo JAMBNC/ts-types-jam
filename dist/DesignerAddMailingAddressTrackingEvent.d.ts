@@ -10,7 +10,7 @@ declare const _DesignerAddMailingAddressTrackingEvent: z.ZodObject<{
         partner: z.ZodString;
         channel: z.ZodString;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
-        workspaceTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
+        workspaceSessionTags: z.ZodArray<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerAddMailingAddressTrackingEventSchema = typeof _DesignerAddMailingAddressTrackingEvent;
