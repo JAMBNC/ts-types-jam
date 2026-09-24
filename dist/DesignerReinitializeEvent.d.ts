@@ -6,6 +6,7 @@ declare const _DesignerReinitializeEvent: z.ZodObject<{
         config: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerConfig.js").DesignerConfigSchema, z.ZodString]>>;
         product: z.ZodOptional<z.ZodUnion<readonly [import("./Product.js").ProductSchema, z.ZodString]>>;
         pricing: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerPricing.js").DesignerPricingSchema, z.ZodString]>>;
+        quantityRules: z.ZodOptional<import("./DesignerQuantityRules.js").DesignerQuantityRulesSchema>;
         metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
         workspaceOptions: z.ZodOptional<z.ZodArray<import("./WorkspaceOption.js").WorkspaceOptionSchema>>;
         workspaceSessionTags: z.ZodOptional<z.ZodArray<import("./WorkspaceTag.js").WorkspaceTagSchema>>;

@@ -5,6 +5,7 @@ import { DesignerEndpoints } from "./DesignerEndpoints.js";
 import { DesignerImageReductionConfig } from "./DesignerImageReductionConfig.js";
 import { DesignerPendingDesigns } from "./DesignerPendingDesigns.js";
 import { DesignerPricing } from "./DesignerPricing.js";
+import { DesignerQuantityRules } from "./DesignerQuantityRules.js";
 import { DesignerUiLabels } from "./DesignerUiLabels.js";
 import { Product } from "./Product.js";
 import { WorkspaceOption } from "./WorkspaceOption.js";
@@ -38,6 +39,8 @@ const _DesignerInitializationPayload = z
         "A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema",
       )
       .optional(),
+    /**Quantity rules key by sku, A priced line without an entry is per_base, applied up from the product base quantity.*/
+    quantityRules: DesignerQuantityRules.optional(),
     uiLabels: DesignerUiLabels,
     /**An (optional) object containing additional metadata for the designer initialization payload.*/
     metadata: z

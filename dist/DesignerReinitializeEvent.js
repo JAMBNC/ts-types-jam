@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerPricing } from "./DesignerPricing.js";
+import { DesignerQuantityRules } from "./DesignerQuantityRules.js";
 import { Product } from "./Product.js";
 import { WorkspaceOption } from "./WorkspaceOption.js";
 import { WorkspaceTag } from "./WorkspaceTag.js";
@@ -28,6 +29,8 @@ const _DesignerReinitializeEvent = z
             .union([DesignerPricing, z.string().url()])
             .describe("A DesignerPricing schema or URI endpoint that returns a DesignerPricing schema")
             .optional(),
+        /**Quantity rules key by sku, A priced line without an entry is per_base, applied up from the product base quantity.*/
+        quantityRules: DesignerQuantityRules.optional(),
         /**An (optional) object containing additional metadata for the designer initialization payload.*/
         metadata: z
             .record(z.string(), z.any())

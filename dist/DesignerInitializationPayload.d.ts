@@ -6,6 +6,7 @@ declare const _DesignerInitializationPayload: z.ZodObject<{
     endpoints: import("./DesignerEndpoints.js").DesignerEndpointsSchema;
     auth: import("./DesignerAuth.js").DesignerAuthSchema;
     pricing: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerPricing.js").DesignerPricingSchema, z.ZodString]>>;
+    quantityRules: z.ZodOptional<import("./DesignerQuantityRules.js").DesignerQuantityRulesSchema>;
     uiLabels: import("./DesignerUiLabels.js").DesignerUiLabelsSchema;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     imageReduction: import("./DesignerImageReductionConfig.js").DesignerImageReductionConfigSchema;
