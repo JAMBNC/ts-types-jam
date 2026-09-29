@@ -15,7 +15,7 @@ const _DefaultTrackingPayload = z
     deltaTime: DeltaTime,
     /**The workspace tags when this event fired*/
     workspaceSessionTags: z
-      .array(z.array(WorkspaceTag))
+      .array(WorkspaceTag)
       .describe("The workspace tags when this event fired"),
   })
   .strict();
