@@ -177,6 +177,22 @@ const _DesignerUiLabels = z
       .string()
       .describe("The label for the Background Color tool")
       .default("Background"),
+    /**The icon for the Upload Full Design tool*/
+    "tool.uploadFullDesign.icon": z
+      .string()
+      .describe("The icon for the Upload Full Design tool")
+      .default("upload_file"),
+    /**The label for the Upload Full Design tool*/
+    "tool.uploadFullDesign.label": z
+      .string()
+      .describe("The label for the Upload Full Design tool")
+      .default("Upload Design"),
+    /**The url to use for the full instructions url*/
+    "tool.uploadFullDesign.fullInstructionsUrl": z
+      .string()
+      .url()
+      .describe("The url to use for the full instructions url")
+      .optional(),
     /**The label used for the return address tool in the tool bar*/
     "workspace.toolBar.stack.returnAddress.label": z
       .string()

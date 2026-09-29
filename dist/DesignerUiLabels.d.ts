@@ -33,6 +33,9 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "tool.mailingAddress.addressExample": z.ZodOptional<z.ZodString>;
     "tool.backgroundColor.icon": z.ZodDefault<z.ZodString>;
     "tool.backgroundColor.label": z.ZodDefault<z.ZodString>;
+    "tool.uploadFullDesign.icon": z.ZodDefault<z.ZodString>;
+    "tool.uploadFullDesign.label": z.ZodDefault<z.ZodString>;
+    "tool.uploadFullDesign.fullInstructionsUrl": z.ZodOptional<z.ZodString>;
     "workspace.toolBar.stack.returnAddress.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.stack.returnAddress.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.returnAddress.label": z.ZodDefault<z.ZodString>;
