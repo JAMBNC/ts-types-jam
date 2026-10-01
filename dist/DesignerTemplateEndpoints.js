@@ -2,7 +2,7 @@ import { z } from "zod";
 const _DesignerTemplateEndpoints = z
     .object({
     /**The endpoint URL for downloading full design template files.*/
-    template: z
+    download: z
         .string()
         .url()
         .describe("The endpoint URL for downloading full design template files."),

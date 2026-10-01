@@ -1,6 +1,6 @@
 import { z } from "zod";
 declare const _DesignerTemplateEndpoints: z.ZodObject<{
-    template: z.ZodString;
+    download: z.ZodString;
 }, z.core.$strict>;
 type _DesignerTemplateEndpointsSchema = typeof _DesignerTemplateEndpoints;
 export interface DesignerTemplateEndpointsSchema extends _DesignerTemplateEndpointsSchema {
