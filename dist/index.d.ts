@@ -156,6 +156,7 @@ export * from './DesignerAddressEndpoints.js';
 export * from './DesignerFontEndpoints.js';
 export * from './DesignerColorEndpoints.js';
 export * from './DesignerVendorEndpoints.js';
+export * from './DesignerTemplateEndpoints.js';
 export * from './DesignerEndpoints.js';
 export * from './DesignerAuth.js';
 export * from './DesignerPricing.js';
