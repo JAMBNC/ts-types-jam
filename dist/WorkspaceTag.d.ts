@@ -5,6 +5,7 @@ declare const _WorkspaceTag: z.ZodEnum<{
     disablePendingDesignsModal: "disablePendingDesignsModal";
     disableReviewModal: "disableReviewModal";
     foil: "foil";
+    lockQuantity: "lockQuantity";
     prepress: "prepress";
     whiteInk: "whiteInk";
 }>;
