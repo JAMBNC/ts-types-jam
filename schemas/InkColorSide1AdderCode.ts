@@ -27,6 +27,9 @@ const _InkColorSide1AdderCode = z.enum([
   "color_side1_4pms",
   "color_side1_cmyk",
   "color_side1_white_ink",
+  "color_side1_one_color",
+  "color_side1_two_color",
+  "color_side1_full_color",
 ]);
 type _InkColorSide1AdderCodeSchema = typeof _InkColorSide1AdderCode;
 export interface InkColorSide1AdderCodeSchema extends _InkColorSide1AdderCodeSchema {}

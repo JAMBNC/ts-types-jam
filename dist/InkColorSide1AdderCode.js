@@ -26,5 +26,8 @@ const _InkColorSide1AdderCode = z.enum([
     "color_side1_4pms",
     "color_side1_cmyk",
     "color_side1_white_ink",
+    "color_side1_one_color",
+    "color_side1_two_color",
+    "color_side1_full_color",
 ]);
 export const InkColorSide1AdderCode = _InkColorSide1AdderCode;

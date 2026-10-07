@@ -20,11 +20,14 @@ declare const _InkColorSide1AdderCode: z.ZodEnum<{
     color_side1_blk_std_2pms: "color_side1_blk_std_2pms";
     color_side1_blk_std_pms: "color_side1_blk_std_pms";
     color_side1_cmyk: "color_side1_cmyk";
+    color_side1_full_color: "color_side1_full_color";
+    color_side1_one_color: "color_side1_one_color";
     color_side1_pms: "color_side1_pms";
     color_side1_std: "color_side1_std";
     color_side1_std_2pms: "color_side1_std_2pms";
     color_side1_std_3pms: "color_side1_std_3pms";
     color_side1_std_pms: "color_side1_std_pms";
+    color_side1_two_color: "color_side1_two_color";
     color_side1_white_ink: "color_side1_white_ink";
 }>;
 type _InkColorSide1AdderCodeSchema = typeof _InkColorSide1AdderCode;

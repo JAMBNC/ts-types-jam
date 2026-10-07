@@ -6,6 +6,7 @@ const _InkColorSide2AdderCode = z.enum([
   "color_side2_three_color",
   "color_side2_four_color",
   "color_side2_cmyk",
+  "color_side2_full_color",
 ]);
 type _InkColorSide2AdderCodeSchema = typeof _InkColorSide2AdderCode;
 export interface InkColorSide2AdderCodeSchema extends _InkColorSide2AdderCodeSchema {}
