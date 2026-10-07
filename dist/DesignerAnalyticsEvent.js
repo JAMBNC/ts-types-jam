@@ -12,6 +12,7 @@ import { DesignerChangeQuantityTrackingEvent } from "./DesignerChangeQuantityTra
 import { DesignerDesignSavedTrackingEvent } from "./DesignerDesignSavedTrackingEvent.js";
 import { DesignerDesignStartedTrackingEvent } from "./DesignerDesignStartedTrackingEvent.js";
 import { DesignerDownloadProofTrackingEvent } from "./DesignerDownloadProofTrackingEvent.js";
+import { DesignerErrorTrackingEvent } from "./DesignerErrorTrackingEvent.js";
 import { DesignerImageRemovedFromGalleryTrackingEvent } from "./DesignerImageRemovedFromGalleryTrackingEvent.js";
 import { DesignerImageUploadedTrackingEvent } from "./DesignerImageUploadedTrackingEvent.js";
 import { DesignerLoadTrackingEvent } from "./DesignerLoadTrackingEvent.js";
@@ -53,6 +54,7 @@ const _DesignerAnalyticsEvent = z
         DesignerDesignSavedTrackingEvent,
         DesignerPriceSummaryViewedTrackingEvent,
         DesignerMiscInteractionTrackingEvent,
+        DesignerErrorTrackingEvent,
     ]),
 })
     .strict()

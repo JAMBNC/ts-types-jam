@@ -140,6 +140,7 @@ export * from './DesignerPriceSummaryViewedTrackingEvent.js';
 export * from './DesignerDownloadProofTrackingEvent.js';
 export * from './DesignerDesignSavedTrackingEvent.js';
 export * from './DesignerMiscInteractionTrackingEvent.js';
+export * from './DesignerErrorTrackingEvent.js';
 export * from './DesignerLoginEvent.js';
 export * from './DesignerCartEvent.js';
 export * from './DesignerSaveEvent.js';
