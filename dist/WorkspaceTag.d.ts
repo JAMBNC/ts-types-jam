@@ -1,10 +1,12 @@
 import { z } from "zod";
 declare const _WorkspaceTag: z.ZodEnum<{
+    autoSelectWorkspace: "autoSelectWorkspace";
     colorInk: "colorInk";
     disableAutoSave: "disableAutoSave";
     disablePendingDesignsModal: "disablePendingDesignsModal";
     disableReviewModal: "disableReviewModal";
     foil: "foil";
+    ingredientRestrictionsAdmin: "ingredientRestrictionsAdmin";
     lockQuantity: "lockQuantity";
     prepress: "prepress";
     whiteInk: "whiteInk";

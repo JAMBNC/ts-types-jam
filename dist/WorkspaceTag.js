@@ -8,5 +8,7 @@ const _WorkspaceTag = z.enum([
     "disableReviewModal",
     "disablePendingDesignsModal",
     "lockQuantity",
+    "ingredientRestrictionsAdmin",
+    "autoSelectWorkspace",
 ]);
 export const WorkspaceTag = _WorkspaceTag;
