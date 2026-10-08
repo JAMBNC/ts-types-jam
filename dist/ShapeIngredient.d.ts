@@ -12,6 +12,7 @@ declare const _ShapeIngredient: z.ZodObject<{
     paths: z.ZodRecord<z.ZodString, import("./Path.js").PathSchema>;
     pathsOrdered: z.ZodArray<z.ZodString>;
     rect: import("./Rect.js").RectSchema;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     rotation: z.ZodNumber;
     strokeColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
     strokeWidth: z.ZodOptional<import("./Dimension.js").DimensionSchema>;

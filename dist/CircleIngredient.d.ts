@@ -14,6 +14,7 @@ declare const _CircleIngredient: z.ZodObject<{
         x: import("./Dimension.js").DimensionSchema;
         y: import("./Dimension.js").DimensionSchema;
     }, z.core.$strict>;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     rotation: z.ZodNumber;
     strokeColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
     strokeWidth: z.ZodOptional<import("./Dimension.js").DimensionSchema>;

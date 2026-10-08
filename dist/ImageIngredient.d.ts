@@ -16,6 +16,7 @@ declare const _ImageIngredient: z.ZodObject<{
         imgWidthPixels: z.ZodOptional<z.ZodNumber>;
         imgHeightPixels: z.ZodOptional<z.ZodNumber>;
     }, z.core.$strict>>;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     rotation: z.ZodNumber;
     src: z.ZodString;
     textureMask: z.ZodOptional<z.ZodBoolean>;

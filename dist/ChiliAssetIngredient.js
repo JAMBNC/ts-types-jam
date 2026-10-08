@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { Rect } from "./Rect.js";
 import { ViewLayer } from "./ViewLayer.js";
 const _ChiliAssetIngredient = z
@@ -17,6 +18,7 @@ const _ChiliAssetIngredient = z
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
     asset: z.object({ externalId: z.string(), path: z.string() }).strict(),
+    restrictions: IngredientRestrictions.optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     textureMask: z.boolean().optional(),

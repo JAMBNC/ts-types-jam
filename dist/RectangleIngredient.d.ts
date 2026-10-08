@@ -10,6 +10,7 @@ declare const _RectangleIngredient: z.ZodObject<{
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     opacity: z.ZodNumber;
     rect: import("./Rect.js").RectSchema;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     rotation: z.ZodNumber;
     strokeColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
     strokeCornerRadius: z.ZodOptional<import("./Dimension.js").DimensionSchema>;

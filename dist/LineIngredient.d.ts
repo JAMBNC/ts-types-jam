@@ -7,6 +7,7 @@ declare const _LineIngredient: z.ZodObject<{
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     opacity: z.ZodNumber;
     rect: import("./Rect.js").RectSchema;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     rotation: z.ZodNumber;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;

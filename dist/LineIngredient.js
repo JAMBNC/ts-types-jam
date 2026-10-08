@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { Rect } from "./Rect.js";
 import { ViewLayer } from "./ViewLayer.js";
 const _LineIngredient = z
@@ -16,6 +17,7 @@ const _LineIngredient = z
     opacity: z.number().gte(0).lte(1),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
+    restrictions: IngredientRestrictions.optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     textureMask: z.boolean().optional(),

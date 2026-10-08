@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { ViewLayer } from "./ViewLayer.js";
 
 const _DataIngredient = z
@@ -29,6 +30,7 @@ const _DataIngredient = z
       .describe("Arbitrary metadata.")
       .optional(),
     opacity: z.number().gte(0).lte(1),
+    restrictions: IngredientRestrictions.optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     textureMask: z.boolean().optional(),

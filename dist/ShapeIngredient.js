@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { Path } from "./Path.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
@@ -29,6 +30,7 @@ const _ShapeIngredient = z
     pathsOrdered: z.array(z.string()).describe("Ordered list of path IDs."),
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
+    restrictions: IngredientRestrictions.optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     /**A color with name, hex code, and optional RGBA components.*/

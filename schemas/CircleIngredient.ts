@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Dimension } from "./Dimension.js";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { Rect } from "./Rect.js";
 import { RgbColor } from "./RgbColor.js";
 import { ViewLayer } from "./ViewLayer.js";
@@ -24,6 +25,7 @@ const _CircleIngredient = z
     /**A positioned rectangle defined by x, y, width, and height measurements.*/
     rect: Rect,
     radius: z.object({ x: Dimension, y: Dimension }).strict(),
+    restrictions: IngredientRestrictions.optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     /**A color with name, hex code, and optional RGBA components.*/

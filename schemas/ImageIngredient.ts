@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { Rect } from "./Rect.js";
 import { ViewLayer } from "./ViewLayer.js";
 
@@ -40,6 +41,7 @@ const _ImageIngredient = z
       .strict()
       .describe("Legacy Pixel Data for the chili save")
       .optional(),
+    restrictions: IngredientRestrictions.optional(),
     /**Rotation angle in degrees.*/
     rotation: z.number().describe("Rotation angle in degrees."),
     /**The image source path or URL.*/

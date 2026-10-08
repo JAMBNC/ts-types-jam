@@ -5,6 +5,7 @@ declare const _CoatingIngredient: z.ZodObject<{
     type: z.ZodLiteral<"coating">;
     editable: z.ZodOptional<z.ZodBoolean>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     code: z.ZodString;
     opacity: z.ZodOptional<z.ZodNumber>;
     texture: z.ZodOptional<z.ZodUnion<readonly [import("./TextureColor.js").TextureColorSchema, import("./TextureImage.js").TextureImageSchema]>>;

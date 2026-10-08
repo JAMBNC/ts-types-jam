@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { IngredientRestrictions } from "./IngredientRestrictions.js";
 import { Rect } from "./Rect.js";
 import { TextureColor } from "./TextureColor.js";
 import { TextureImage } from "./TextureImage.js";
@@ -16,6 +17,7 @@ const _CoatingIngredient = z
       .record(z.string(), z.any())
       .describe("Arbitrary metadata.")
       .optional(),
+    restrictions: IngredientRestrictions.optional(),
     /**Code for this coating. Two coatings with the same code should not be on the same page.*/
     code: z
       .string()

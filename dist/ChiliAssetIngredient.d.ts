@@ -11,6 +11,7 @@ declare const _ChiliAssetIngredient: z.ZodObject<{
         externalId: z.ZodString;
         path: z.ZodString;
     }, z.core.$strict>;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
     rotation: z.ZodNumber;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
