@@ -6,36 +6,51 @@ const _IngredientRestrictions = z
         .enum(["top", "bottom"])
         .describe("Pins the ingredient to the top or bottom of the stacking order.")
         .optional(),
-    /**Can the ingredient be selected?*/
-    select: z.boolean().describe("Can the ingredient be selected?").optional(),
-    /**Can the ingredient be scaled?*/
-    scale: z.boolean().describe("Can the ingredient be scaled?").optional(),
-    /**Can the ingredient be moved?*/
-    translate: z.boolean().describe("Can the ingredient be moved?").optional(),
-    /**Can the ingredient be rotated?*/
-    rotate: z.boolean().describe("Can the ingredient be rotated?").optional(),
-    /**Are transform widgets shown for the ingredient?*/
-    transformWidgets: z
+    /**If true, the ingredient can't be selected.*/
+    unselectable: z
         .boolean()
-        .describe("Are transform widgets shown for the ingredient?")
+        .describe("If true, the ingredient can't be selected.")
         .optional(),
-    /**Are z-index widgets shown for the ingredient?*/
-    zIndexWidgets: z
+    /**If true, the ingredient can't be scaled.*/
+    unscalable: z
         .boolean()
-        .describe("Are z-index widgets shown for the ingredient?")
+        .describe("If true, the ingredient can't be scaled.")
         .optional(),
-    /**Are content widgets shown for the ingredient?*/
-    contentWidgets: z
+    /**If true, the ingredient can't be moved.*/
+    unmovable: z
         .boolean()
-        .describe("Are content widgets shown for the ingredient?")
+        .describe("If true, the ingredient can't be moved.")
         .optional(),
-    /**Are style widgets shown for the ingredient?*/
-    styleWidgets: z
+    /**If true, the ingredient can't be rotated.*/
+    unrotatable: z
         .boolean()
-        .describe("Are style widgets shown for the ingredient?")
+        .describe("If true, the ingredient can't be rotated.")
         .optional(),
-    /**Can the ingredient be deleted?*/
-    delete: z.boolean().describe("Can the ingredient be deleted?").optional(),
+    /**If true, transform widgets are hidden for the ingredient.*/
+    hideTransformWidgets: z
+        .boolean()
+        .describe("If true, transform widgets are hidden for the ingredient.")
+        .optional(),
+    /**If true, z-index widgets are hidden for the ingredient.*/
+    hideZIndexWidgets: z
+        .boolean()
+        .describe("If true, z-index widgets are hidden for the ingredient.")
+        .optional(),
+    /**If true, content widgets are hidden for the ingredient.*/
+    hideContentWidgets: z
+        .boolean()
+        .describe("If true, content widgets are hidden for the ingredient.")
+        .optional(),
+    /**If true, style widgets are hidden for the ingredient.*/
+    hideStyleWidgets: z
+        .boolean()
+        .describe("If true, style widgets are hidden for the ingredient.")
+        .optional(),
+    /**If true, the ingredient can't be deleted.*/
+    undeletable: z
+        .boolean()
+        .describe("If true, the ingredient can't be deleted.")
+        .optional(),
 })
     .strict();
 export const IngredientRestrictions = _IngredientRestrictions;
