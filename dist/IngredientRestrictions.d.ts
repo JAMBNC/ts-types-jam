@@ -4,6 +4,7 @@ declare const _IngredientRestrictions: z.ZodObject<{
         bottom: "bottom";
         top: "top";
     }>>;
+    hidden: z.ZodOptional<z.ZodBoolean>;
     unselectable: z.ZodOptional<z.ZodBoolean>;
     unscalable: z.ZodOptional<z.ZodBoolean>;
     unmovable: z.ZodOptional<z.ZodBoolean>;

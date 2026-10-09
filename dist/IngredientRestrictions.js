@@ -6,6 +6,11 @@ const _IngredientRestrictions = z
         .enum(["top", "bottom"])
         .describe("Pins the ingredient to the top or bottom of the stacking order.")
         .optional(),
+    /**If true, the ingredient is hidden.*/
+    hidden: z
+        .boolean()
+        .describe("If true, the ingredient is hidden.")
+        .optional(),
     /**If true, the ingredient can't be selected.*/
     unselectable: z
         .boolean()
