@@ -3,6 +3,7 @@ import { AdderCodeEnum } from "./AdderCodeEnum.js";
 import { Assets } from "./Assets.js";
 import { ContentPlacement } from "./ContentPlacement.js";
 import { DesignerConfigFeatureValue } from "./DesignerConfigFeatureValue.js";
+import { DesignerToolId } from "./DesignerToolId.js";
 import { ProcessRestriction } from "./ProcessRestriction.js";
 const _DesignerConfig = z
     .object({
@@ -174,6 +175,12 @@ const _DesignerConfig = z
     pageLabels: z.array(z.string()).optional(),
     processRestrictions: z.array(ProcessRestriction).optional(),
     productCategory: z.string(),
+    /**Designer tools that must never be mounted for this config, even when the config's features would otherwise support them. Enforced by the designer's tool mounting.*/
+    toolDenylist: z
+        .array(DesignerToolId)
+        .unique()
+        .describe("Designer tools that must never be mounted for this config, even when the config's features would otherwise support them. Enforced by the designer's tool mounting.")
+        .optional(),
     vendors: z.record(z.string(), z.array(AdderCodeEnum)),
     assets: Assets.optional(),
 })
