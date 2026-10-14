@@ -2,6 +2,7 @@ import { z } from "zod";
 declare const _Page: z.ZodObject<{
     id: z.ZodString;
     ingredientsOrdered: z.ZodArray<z.ZodString>;
+    restrictions: z.ZodOptional<import("./PageRestrictions.js").PageRestrictionsSchema>;
 }, z.core.$strict>;
 type _PageSchema = typeof _Page;
 export interface PageSchema extends _PageSchema {

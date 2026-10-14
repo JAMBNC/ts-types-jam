@@ -9,7 +9,7 @@ const _WorkspaceTag = z.enum([
   "disableReviewModal",
   "disablePendingDesignsModal",
   "lockQuantity",
-  "ingredientRestrictionsAdmin",
+  "restrictionsAdmin",
   "autoSelectWorkspace",
 ]);
 type _WorkspaceTagSchema = typeof _WorkspaceTag;

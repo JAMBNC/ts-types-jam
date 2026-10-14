@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { PageRestrictions } from "./PageRestrictions.js";
 const _Page = z
     .object({
     /**Unique identifier for this page.*/
@@ -7,6 +8,7 @@ const _Page = z
     ingredientsOrdered: z
         .array(z.string())
         .describe("Ordered list of ingredient IDs rendered on this page."),
+    restrictions: PageRestrictions.optional(),
 })
     .strict()
     .describe("A page in the design containing ordered references to ingredients.");

@@ -250,6 +250,7 @@ export * from './FulfillmentOutboundMessage.js';
 export * from './IngredientRestrictions.js';
 export * from './InventoryDataFeed.js';
 export * from './LocationStock.js';
+export * from './PageRestrictions.js';
 export * from './PricingDataFeed.js';
 export * from './ProductDataFeed.js';
 export * from './GoogleShopping.js';

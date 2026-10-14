@@ -6,9 +6,9 @@ declare const _WorkspaceTag: z.ZodEnum<{
     disablePendingDesignsModal: "disablePendingDesignsModal";
     disableReviewModal: "disableReviewModal";
     foil: "foil";
-    ingredientRestrictionsAdmin: "ingredientRestrictionsAdmin";
     lockQuantity: "lockQuantity";
     prepress: "prepress";
+    restrictionsAdmin: "restrictionsAdmin";
     whiteInk: "whiteInk";
 }>;
 type _WorkspaceTagSchema = typeof _WorkspaceTag;
