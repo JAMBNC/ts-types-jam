@@ -83,7 +83,7 @@ declare const _DesignerConfig: z.ZodObject<{
     pageLabels: z.ZodOptional<z.ZodArray<z.ZodString>>;
     processRestrictions: z.ZodOptional<z.ZodArray<import("./ProcessRestriction.js").ProcessRestrictionSchema>>;
     productCategory: z.ZodString;
-    toolDenylist: any;
+    toolDenylist: z.ZodOptional<z.ZodArray<import("./DesignerToolId.js").DesignerToolIdSchema>>;
     vendors: z.ZodRecord<z.ZodString, z.ZodArray<import("./AdderCodeEnum.js").AdderCodeEnumSchema>>;
     assets: z.ZodOptional<import("./Assets.js").AssetsSchema>;
 }, z.core.$loose>;
