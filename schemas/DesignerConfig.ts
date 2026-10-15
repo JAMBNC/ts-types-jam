@@ -179,12 +179,6 @@ const _DesignerConfig = z
     /**Designer tools that must never be mounted for this config, even when the config's features would otherwise support them. Enforced by the designer's tool mounting.*/
     toolDenylist: z
       .array(DesignerToolId)
-      .refine(
-        (items) =>
-          new Set(items.map((item) => JSON.stringify(item))).size ===
-          items.length,
-        "Array items must be unique",
-      )
       .describe(
         "Designer tools that must never be mounted for this config, even when the config's features would otherwise support them. Enforced by the designer's tool mounting.",
       )
