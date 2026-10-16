@@ -1,5 +1,6 @@
 import { z } from "zod";
-const _WorkspaceTag = z.enum([
+const _WorkspaceTag = z
+    .enum([
     "foil",
     "whiteInk",
     "colorInk",
@@ -10,5 +11,8 @@ const _WorkspaceTag = z.enum([
     "lockQuantity",
     "restrictionsAdmin",
     "autoSelectWorkspace",
-]);
+    "panelWash",
+])
+    .describe("A behaviour a workspace turns on. panelWash shades every designable panel of a folding template, so whoever is editing the template can see what a customer will be able to design on.");
+/**A behaviour a workspace turns on. panelWash shades every designable panel of a folding template, so whoever is editing the template can see what a customer will be able to design on.*/
 export const WorkspaceTag = _WorkspaceTag;

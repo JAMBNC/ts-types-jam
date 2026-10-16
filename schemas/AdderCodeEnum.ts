@@ -16,6 +16,7 @@ import { PrintMethodAdderCode } from "./PrintMethodAdderCode.js";
 import { ProofAdderCode } from "./ProofAdderCode.js";
 import { ReturnAddressAdderCode } from "./ReturnAddressAdderCode.js";
 import { RollAdderCode } from "./RollAdderCode.js";
+import { SlitAdderCode } from "./SlitAdderCode.js";
 import { VariableAddressAdderCode } from "./VariableAddressAdderCode.js";
 import { WhiteInkAdderCode } from "./WhiteInkAdderCode.js";
 
@@ -37,6 +38,7 @@ const _AdderCodeEnum = z.union([
   ProofAdderCode,
   ReturnAddressAdderCode,
   RollAdderCode,
+  SlitAdderCode,
   VariableAddressAdderCode,
   WhiteInkAdderCode,
 ]);

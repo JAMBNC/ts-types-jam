@@ -1,25 +1,28 @@
 import { z } from "zod";
 declare const _RectangleIngredient: z.ZodObject<{
-    type: z.ZodLiteral<"rectangle">;
-    dropshadow: z.ZodOptional<z.ZodBoolean>;
-    editable: z.ZodOptional<z.ZodBoolean>;
-    fillColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
     id: z.ZodString;
-    invertFill: z.ZodOptional<z.ZodBoolean>;
-    lineDash: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-    opacity: z.ZodNumber;
-    rect: import("./Rect.js").RectSchema;
-    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
+    slot: z.ZodOptional<import("./Slot.js").SlotSchema>;
+    viewLayer: z.ZodOptional<import("./ViewLayer.js").ViewLayerSchema>;
     rotation: z.ZodNumber;
-    strokeColor: z.ZodOptional<import("./RgbColor.js").RgbColorSchema>;
-    strokeCornerRadius: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
-    strokeWidth: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodOptional<import("./ViewLayer.js").ViewLayerSchema>;
+    opacity: z.ZodNumber;
     zIndex: z.ZodNumber;
-}, z.core.$strict>;
+    simulated: z.ZodOptional<z.ZodBoolean>;
+    clip: z.ZodOptional<z.ZodArray<import("./ClipStep.js").ClipStepSchema>>;
+    type: z.ZodLiteral<"rectangle">;
+    fillColor: z.ZodOptional<import("./Color.js").ColorSchema>;
+    invertFill: z.ZodOptional<z.ZodBoolean>;
+    lineDash: z.ZodOptional<z.ZodArray<z.ZodNumber>>;
+    rect: import("./Rect.js").RectSchema;
+    strokeColor: z.ZodOptional<import("./Color.js").ColorSchema>;
+    strokeCornerRadius: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
+    strokeWidth: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
+}, z.core.$loose>;
 type _RectangleIngredientSchema = typeof _RectangleIngredient;
 export interface RectangleIngredientSchema extends _RectangleIngredientSchema {
 }

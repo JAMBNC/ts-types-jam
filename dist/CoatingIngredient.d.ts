@@ -4,10 +4,11 @@ declare const _CoatingIngredient: z.ZodObject<{
     rect: z.ZodOptional<import("./Rect.js").RectSchema>;
     type: z.ZodLiteral<"coating">;
     editable: z.ZodOptional<z.ZodBoolean>;
-    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
+    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
     code: z.ZodString;
     opacity: z.ZodOptional<z.ZodNumber>;
+    slot: z.ZodOptional<import("./Slot.js").SlotSchema>;
     texture: z.ZodOptional<z.ZodUnion<readonly [import("./TextureColor.js").TextureColorSchema, import("./TextureImage.js").TextureImageSchema]>>;
     zIndex: z.ZodOptional<z.ZodNumber>;
 }, z.core.$strict>;

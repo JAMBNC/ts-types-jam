@@ -2,6 +2,7 @@ import { z } from "zod";
 declare const _TextProperties: z.ZodObject<{
     alignment: import("./Alignment.js").AlignmentSchema;
     body: z.ZodArray<z.ZodString>;
+    color: z.ZodOptional<import("./Color.js").ColorSchema>;
     dataSource: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
     fontData: import("./Font.js").FontSchema;
     fontSize: z.ZodString;

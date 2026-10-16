@@ -7,6 +7,14 @@ const _DesignerTemplateEndpoints = z
       .string()
       .url()
       .describe("The endpoint URL for downloading full design template files."),
+    /**The endpoint URL that places a whole die-sheet PDF onto a folding design's views. (uses the DesignerAuth.endpointAuth)*/
+    sheetUpload: z
+      .string()
+      .url()
+      .describe(
+        "The endpoint URL that places a whole die-sheet PDF onto a folding design's views. (uses the DesignerAuth.endpointAuth)",
+      )
+      .optional(),
   })
   .strict();
 type _DesignerTemplateEndpointsSchema = typeof _DesignerTemplateEndpoints;

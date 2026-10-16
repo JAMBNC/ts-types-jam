@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { Alignment } from "./Alignment.js";
+import { Color } from "./Color.js";
 import { Dimension } from "./Dimension.js";
 import { Font } from "./Font.js";
 
@@ -12,6 +13,7 @@ const _TextProperties = z
       .describe(
         "Body text broken up into lines. Can contain variables surrounded with %%",
       ),
+    color: Color.optional(),
     /**Record of variable replacement strings*/
     dataSource: z
       .record(z.string(), z.string())

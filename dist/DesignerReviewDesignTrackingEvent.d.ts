@@ -8,6 +8,7 @@ declare const _DesignerReviewDesignTrackingEvent: z.ZodObject<{
         channel: z.ZodString;
         deltaTime: import("./DeltaTime.js").DeltaTimeSchema;
         productSku: z.ZodString;
+        designUuid: z.ZodOptional<z.ZodString>;
         quantity: z.ZodNumber;
         price: z.ZodNumber;
         adders: z.ZodArray<import("./AdderCodeEnum.js").AdderCodeEnumSchema>;

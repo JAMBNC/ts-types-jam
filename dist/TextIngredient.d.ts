@@ -1,21 +1,24 @@
 import { z } from "zod";
 declare const _TextIngredient: z.ZodObject<{
-    type: z.ZodLiteral<"text">;
-    allowRewrite: z.ZodOptional<z.ZodBoolean>;
-    dropshadow: z.ZodOptional<z.ZodBoolean>;
-    editable: z.ZodOptional<z.ZodBoolean>;
     id: z.ZodString;
     metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
-    opacity: z.ZodNumber;
-    rect: import("./Rect.js").RectSchema;
-    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
+    slot: z.ZodOptional<import("./Slot.js").SlotSchema>;
+    viewLayer: z.ZodOptional<import("./ViewLayer.js").ViewLayerSchema>;
     rotation: z.ZodNumber;
-    text: import("./TextProperties.js").TextPropertiesSchema;
+    editable: z.ZodOptional<z.ZodBoolean>;
+    restrictions: z.ZodOptional<import("./IngredientRestrictions.js").IngredientRestrictionsSchema>;
+    dropshadow: z.ZodOptional<z.ZodBoolean>;
     textureMask: z.ZodOptional<z.ZodBoolean>;
     validatorBoundingShape: z.ZodOptional<z.ZodBoolean>;
-    viewLayer: z.ZodOptional<import("./ViewLayer.js").ViewLayerSchema>;
+    opacity: z.ZodNumber;
     zIndex: z.ZodNumber;
-}, z.core.$strict>;
+    simulated: z.ZodOptional<z.ZodBoolean>;
+    clip: z.ZodOptional<z.ZodArray<import("./ClipStep.js").ClipStepSchema>>;
+    type: z.ZodLiteral<"text">;
+    allowRewrite: z.ZodOptional<z.ZodBoolean>;
+    rect: import("./Rect.js").RectSchema;
+    text: import("./TextProperties.js").TextPropertiesSchema;
+}, z.core.$loose>;
 type _TextIngredientSchema = typeof _TextIngredient;
 export interface TextIngredientSchema extends _TextIngredientSchema {
 }

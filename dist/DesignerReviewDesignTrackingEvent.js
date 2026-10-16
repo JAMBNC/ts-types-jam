@@ -18,6 +18,7 @@ const _DesignerReviewDesignTrackingEvent = z
         /**Time since the initial load in seconds*/
         deltaTime: DeltaTime,
         productSku: z.string(),
+        designUuid: z.string().optional(),
         quantity: z.number().int(),
         price: z.number(),
         adders: z.array(AdderCodeEnum),

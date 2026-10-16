@@ -18,6 +18,7 @@ declare const _DesignerMediaRenditionColorInfo: z.ZodIntersection<z.ZodObject<{
         }, z.core.$strict>>;
     }, z.core.$strict>;
     type: z.ZodLiteral<"color">;
+    intake: z.ZodOptional<z.ZodLiteral<"fusion">>;
 }, z.core.$loose>, z.ZodObject<{
     isVector: z.ZodBoolean;
     mediaId: z.ZodString;

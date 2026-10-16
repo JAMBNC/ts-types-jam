@@ -1,4 +1,6 @@
 import { z } from "zod";
+import { DerivedFrom } from "./DerivedFrom.js";
+import { DesignInterpretation } from "./DesignInterpretation.js";
 import { Dimension } from "./Dimension.js";
 import { Ingredient } from "./Ingredient.js";
 import { MaterialCode } from "./MaterialCode.js";
@@ -7,14 +9,10 @@ import { TextureColor } from "./TextureColor.js";
 import { TextureImage } from "./TextureImage.js";
 const _DesignState = z
     .object({
-    /**Stores some session based design information*/
-    expansion: z
-        .object({
-        canRedo: z.boolean().optional(),
-        canUndo: z.boolean().optional(),
-    })
-        .passthrough()
-        .describe("Stores some session based design information")
+    /**Map of coating location definitions.*/
+    coatingLocations: z
+        .record(z.string(), z.any())
+        .describe("Map of coating location definitions.")
         .optional(),
     /**Full uuid for the design. Only present on a saved design.*/
     uuid: z
@@ -33,6 +31,26 @@ const _DesignState = z
         .url()
         .describe("Primary image used for previewing the design in cards or lists.")
         .optional(),
+    /**The buffer applied around the design, per axis.*/
+    designBuffer: z
+        .object({ x: Dimension, y: Dimension })
+        .strict()
+        .describe("The buffer applied around the design, per axis.")
+        .optional(),
+    /**Stores some session based design information*/
+    expansion: z
+        .object({
+        canRedo: z.boolean().optional(),
+        canUndo: z.boolean().optional(),
+    })
+        .passthrough()
+        .describe("Stores some session based design information")
+        .optional(),
+    /**Whether the design has a buffer zone.*/
+    hasBuffer: z
+        .boolean()
+        .describe("Whether the design has a buffer zone.")
+        .optional(),
     /**Documentation orientation 0-3 representing the rotation of this design state relative to its preferred orientation. 0 is default and each number represents a 90 degree rotation.*/
     orientation: z
         .union([z.literal(0), z.literal(1), z.literal(2), z.literal(3)])
@@ -43,6 +61,8 @@ const _DesignState = z
     ingredients: z
         .record(z.string(), Ingredient)
         .describe("Map of ingredient IDs to ingredient definitions."),
+    /**The non-derivable half of a template: which regions are views, fold direction and order, region roles, and what a vendor's separation names mean.*/
+    interpretation: DesignInterpretation.optional(),
     materials: z
         .array(z
         .object({
@@ -51,10 +71,44 @@ const _DesignState = z
     })
         .strict())
         .optional(),
-    /**Design metadata*/
+    /**Design metadata. Open by design; the properties named here are the document-level stamps the system reads, and anything else a producer writes is carried through.*/
     metadata: z
-        .record(z.string(), z.any())
-        .describe("Design metadata")
+        .object({
+        /**What a design was derived from, stamped at instantiate/clone/transpose time. Structured rather than a display string, because reconciliation has to locate the source to fetch its current hash.*/
+        derivedFrom: DerivedFrom.optional(),
+        /**What a design was derived from, stamped at instantiate/clone/transpose time. Structured rather than a display string, because reconciliation has to locate the source to fetch its current hash.*/
+        startedFrom: DerivedFrom.optional(),
+        /**sha256 of the base DesignState at derivation time, lowercase hex. The staleness signal: stale is that it no longer matches the current base's hash. Stated by whoever derived the design; never recomputed by a reader, because a hash over a different serialization of the same document is a hash that never matches.*/
+        derivedStateHash: z
+            .string()
+            .regex(new RegExp("^[0-9a-f]{64}$"))
+            .describe("sha256 of the base DesignState at derivation time, lowercase hex. The staleness signal: stale is that it no longer matches the current base's hash. Stated by whoever derived the design; never recomputed by a reader, because a hash over a different serialization of the same document is a hash that never matches.")
+            .optional(),
+        /**This document is a rendition — the output of a vendor simulation — not something anybody designs on. Informational, never authoritative.*/
+        simulated: z
+            .boolean()
+            .describe("This document is a rendition — the output of a vendor simulation — not something anybody designs on. Informational, never authoritative.")
+            .optional(),
+        /**The canonical vendor code the rendition was simulated for.*/
+        vendor: z
+            .string()
+            .describe("The canonical vendor code the rendition was simulated for.")
+            .optional(),
+        /**The shopper's product option choices, keyed by option. Written by the designer as the shopper picks them; the product option adder validators price from it.*/
+        productOptions: z
+            .record(z.string(), z.any())
+            .describe("The shopper's product option choices, keyed by option. Written by the designer as the shopper picks them; the product option adder validators price from it.")
+            .optional(),
+    })
+        .passthrough()
+        .describe("Design metadata. Open by design; the properties named here are the document-level stamps the system reads, and anything else a producer writes is carried through.")
+        .optional(),
+    /**The schema generation this document was written against. What migrations dispatch on; `version` stays a producer tag.*/
+    schemaVersion: z
+        .number()
+        .int()
+        .gte(1)
+        .describe("The schema generation this document was written against. What migrations dispatch on; `version` stays a producer tag.")
         .optional(),
     /**Map of texture identifiers to textures*/
     textures: z

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { DesignState } from "./DesignState.js";
 import { DesignerConfig } from "./DesignerConfig.js";
 import { DesignerPricing } from "./DesignerPricing.js";
 import { DesignerQuantityRules } from "./DesignerQuantityRules.js";
@@ -10,10 +11,8 @@ const _DesignerReinitializeEvent = z
     type: z.literal("reinitialize"),
     payload: z
         .object({
-        /**Currently the design formula, to be the design state*/
-        design: z
-            .record(z.string(), z.any())
-            .describe("Currently the design formula, to be the design state"),
+        /**The complete design state containing dimensions, pages, and ingredients.*/
+        design: DesignState,
         /**The designer configuration schema or URI endpoint that returns a designer configuration schema*/
         config: z
             .union([DesignerConfig, z.string().url()])

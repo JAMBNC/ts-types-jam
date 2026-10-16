@@ -43,6 +43,11 @@ const _DesignerMediaRenditionColorInfo = z
         .describe("Analysis of the colors present in the media."),
     /**The rendition type.*/
     type: z.literal("color").describe("The rendition type."),
+    /**Which reader produced the print file. fusion means the upload was read, cleaned of die and guide layers and cropped by fusion, so the design renders through fusion. Absent means the older converter made it.*/
+    intake: z
+        .literal("fusion")
+        .describe("Which reader produced the print file. fusion means the upload was read, cleaned of die and guide layers and cropped by fusion, so the design renders through fusion. Absent means the older converter made it.")
+        .optional(),
 })
     .passthrough()
     .and(z

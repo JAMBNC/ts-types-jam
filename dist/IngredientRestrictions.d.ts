@@ -13,6 +13,7 @@ declare const _IngredientRestrictions: z.ZodObject<{
     hideZIndexWidgets: z.ZodOptional<z.ZodBoolean>;
     hideContentWidgets: z.ZodOptional<z.ZodBoolean>;
     hideStyleWidgets: z.ZodOptional<z.ZodBoolean>;
+    region: z.ZodOptional<z.ZodString>;
     undeletable: z.ZodOptional<z.ZodBoolean>;
 }, z.core.$strict>;
 type _IngredientRestrictionsSchema = typeof _IngredientRestrictions;

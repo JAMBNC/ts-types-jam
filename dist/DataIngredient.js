@@ -1,8 +1,7 @@
 import { z } from "zod";
+import { BaseIngredient } from "./BaseIngredient.js";
 import { Dimension } from "./Dimension.js";
-import { IngredientRestrictions } from "./IngredientRestrictions.js";
-import { ViewLayer } from "./ViewLayer.js";
-const _DataIngredient = z
+const _DataIngredient = BaseIngredient.merge(z
     .object({
     type: z.literal("data"),
     /**The data payload describing the content.*/
@@ -19,25 +18,7 @@ const _DataIngredient = z
     })
         .passthrough()
         .describe("The data payload describing the content."),
-    dropshadow: z.boolean().optional(),
-    editable: z.boolean().optional(),
-    /**Unique identifier for this ingredient.*/
-    id: z.string().describe("Unique identifier for this ingredient."),
-    /**Arbitrary metadata.*/
-    metadata: z
-        .record(z.string(), z.any())
-        .describe("Arbitrary metadata.")
-        .optional(),
-    opacity: z.number().gte(0).lte(1),
-    restrictions: IngredientRestrictions.optional(),
-    /**Rotation angle in degrees.*/
-    rotation: z.number().describe("Rotation angle in degrees."),
-    textureMask: z.boolean().optional(),
-    validatorBoundingShape: z.boolean().optional(),
-    viewLayer: ViewLayer.optional(),
-    zIndex: z.number().int(),
 })
-    .strict()
-    .describe("An ingredient that holds a generic data payload such as textures or backgrounds.");
+    .passthrough()).describe("An ingredient that holds a generic data payload such as textures or backgrounds.");
 /**An ingredient that holds a generic data payload such as textures or backgrounds.*/
 export const DataIngredient = _DataIngredient;

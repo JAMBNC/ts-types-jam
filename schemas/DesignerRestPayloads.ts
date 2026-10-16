@@ -12,6 +12,8 @@ import { DesignerMediaUploadRequest } from "./DesignerMediaUploadRequest.js";
 import { DesignerMediaUploadResponse } from "./DesignerMediaUploadResponse.js";
 import { DesignerSaveRequest } from "./DesignerSaveRequest.js";
 import { DesignerSaveResponse } from "./DesignerSaveResponse.js";
+import { DesignerSheetUploadRequest } from "./DesignerSheetUploadRequest.js";
+import { DesignerSheetUploadResponse } from "./DesignerSheetUploadResponse.js";
 
 const _DesignerRestPayloads = z
   .union([
@@ -28,6 +30,8 @@ const _DesignerRestPayloads = z
     DesignerAddressBookResponse,
     DesignerAddressBookUploadRequest,
     DesignerAddressBookUploadResponse,
+    DesignerSheetUploadRequest,
+    DesignerSheetUploadResponse,
   ])
   .describe(
     "A union of all possible Designer REST API request and response types.",

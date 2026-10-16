@@ -2,7 +2,7 @@ import { z } from "zod";
 declare const _DesignerReinitializeEvent: z.ZodObject<{
     type: z.ZodLiteral<"reinitialize">;
     payload: z.ZodObject<{
-        design: z.ZodRecord<z.ZodString, z.ZodAny>;
+        design: import("./DesignState.js").DesignStateSchema;
         config: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerConfig.js").DesignerConfigSchema, z.ZodString]>>;
         product: z.ZodOptional<z.ZodUnion<readonly [import("./Product.js").ProductSchema, z.ZodString]>>;
         pricing: z.ZodOptional<z.ZodUnion<readonly [import("./DesignerPricing.js").DesignerPricingSchema, z.ZodString]>>;

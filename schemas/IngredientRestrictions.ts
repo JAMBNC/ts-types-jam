@@ -54,6 +54,13 @@ const _IngredientRestrictions = z
       .boolean()
       .describe("If true, style widgets are hidden for the ingredient.")
       .optional(),
+    /**The id of a region on the ingredient's page that governs where it goes.*/
+    region: z
+      .string()
+      .describe(
+        "The id of a region on the ingredient's page that governs where it goes.",
+      )
+      .optional(),
     /**If true, the ingredient can't be deleted.*/
     undeletable: z
       .boolean()
