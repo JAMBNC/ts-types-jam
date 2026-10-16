@@ -9,13 +9,14 @@ declare const _WorkspaceTag: z.ZodEnum<{
     lockQuantity: "lockQuantity";
     panelWash: "panelWash";
     prepress: "prepress";
+    restrictionLock: "restrictionLock";
     restrictionsAdmin: "restrictionsAdmin";
     whiteInk: "whiteInk";
 }>;
 type _WorkspaceTagSchema = typeof _WorkspaceTag;
 export interface WorkspaceTagSchema extends _WorkspaceTagSchema {
 }
-/**A behaviour a workspace turns on. panelWash shades every designable panel of a folding template, so whoever is editing the template can see what a customer will be able to design on.*/
+/**A behaviour a workspace turns on. panelWash shades every designable panel of a folding template, so whoever is editing the template can see what a customer will be able to design on. restrictionLock puts a lock on a restricted ingredient's floating menu that lists its restrictions on hover, so whoever is editing a template or starter can see what a customer won't be able to change.*/
 export declare const WorkspaceTag: WorkspaceTagSchema;
 export type WorkspaceTag = z.infer<typeof WorkspaceTag>;
 export {};
