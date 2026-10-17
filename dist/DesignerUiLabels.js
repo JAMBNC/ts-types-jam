@@ -789,6 +789,2261 @@ const _DesignerUiLabels = z
         .string()
         .describe("The ui label for setup charge.")
         .default("Setup Charge"),
+    /**The ui label for the cslit_small slit adder*/
+    "adder.cslit_small.label": z
+        .string()
+        .describe("The ui label for the cslit_small slit adder")
+        .default("Certificate Slit: Small"),
+    /**The ui label for the cslit_standard slit adder*/
+    "adder.cslit_standard.label": z
+        .string()
+        .describe("The ui label for the cslit_standard slit adder")
+        .default("Certificate Slit: Standard"),
+    /**The ui label for the flap_slit_c1_center slit adder*/
+    "adder.flap_slit_c1_center.label": z
+        .string()
+        .describe("The ui label for the flap_slit_c1_center slit adder")
+        .default("Flap Slit: Combination Business Card 4 Square Tabs, Centered"),
+    /**The ui label for the flap_slit_h1_center slit adder*/
+    "adder.flap_slit_h1_center.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h1_center slit adder")
+        .default("Flap Slit: Horizontal Business Card 4 Corners, Centered"),
+    /**The ui label for the flap_slit_h2_center slit adder*/
+    "adder.flap_slit_h2_center.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h2_center slit adder")
+        .default("Flap Slit: Horizontal Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the flap_slit_h2_left slit adder*/
+    "adder.flap_slit_h2_left.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h2_left slit adder")
+        .default("Flap Slit: Horizontal Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the flap_slit_h2_right slit adder*/
+    "adder.flap_slit_h2_right.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h2_right slit adder")
+        .default("Flap Slit: Horizontal Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the flap_slit_h3_center slit adder*/
+    "adder.flap_slit_h3_center.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h3_center slit adder")
+        .default("Flap Slit: Horizontal Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the flap_slit_h3_left slit adder*/
+    "adder.flap_slit_h3_left.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h3_left slit adder")
+        .default("Flap Slit: Horizontal Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the flap_slit_h3_right slit adder*/
+    "adder.flap_slit_h3_right.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h3_right slit adder")
+        .default("Flap Slit: Horizontal Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the flap_slit_h4_center slit adder*/
+    "adder.flap_slit_h4_center.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h4_center slit adder")
+        .default("Flap Slit: Horizontal Business Card Square Tabs, Centered"),
+    /**The ui label for the flap_slit_h4_left slit adder*/
+    "adder.flap_slit_h4_left.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h4_left slit adder")
+        .default("Flap Slit: Horizontal Business Card Square Tabs, Left"),
+    /**The ui label for the flap_slit_h4_right slit adder*/
+    "adder.flap_slit_h4_right.label": z
+        .string()
+        .describe("The ui label for the flap_slit_h4_right slit adder")
+        .default("Flap Slit: Horizontal Business Card Square Tabs, Right"),
+    /**The ui label for the flap_slit_v4_center slit adder*/
+    "adder.flap_slit_v4_center.label": z
+        .string()
+        .describe("The ui label for the flap_slit_v4_center slit adder")
+        .default("Flap Slit: Vertical Business Card 2 Square Tabs, Centered"),
+    /**The ui label for the flap_slit_v4_left slit adder*/
+    "adder.flap_slit_v4_left.label": z
+        .string()
+        .describe("The ui label for the flap_slit_v4_left slit adder")
+        .default("Flap Slit: Vertical Business Card 2 Square Tabs, Left"),
+    /**The ui label for the flap_slit_v4_right slit adder*/
+    "adder.flap_slit_v4_right.label": z
+        .string()
+        .describe("The ui label for the flap_slit_v4_right slit adder")
+        .default("Flap Slit: Vertical Business Card 2 Square Tabs, Right"),
+    /**The ui label for the fslit_c1_low_right_center slit adder*/
+    "adder.fslit_c1_low_right_center.label": z
+        .string()
+        .describe("The ui label for the fslit_c1_low_right_center slit adder")
+        .default("Front Cover Slit: Combination Business Card 4 Square Tabs, Lower right, Centered"),
+    /**The ui label for the fslit_h1_low_right_center slit adder*/
+    "adder.fslit_h1_low_right_center.label": z
+        .string()
+        .describe("The ui label for the fslit_h1_low_right_center slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 4 Corners, Lower right, Centered"),
+    /**The ui label for the fslit_h1_low_right_right slit adder*/
+    "adder.fslit_h1_low_right_right.label": z
+        .string()
+        .describe("The ui label for the fslit_h1_low_right_right slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 4 Corners, Lower right, Right"),
+    /**The ui label for the fslit_h1_top_right_center slit adder*/
+    "adder.fslit_h1_top_right_center.label": z
+        .string()
+        .describe("The ui label for the fslit_h1_top_right_center slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 4 Corners, Upper right, Centered"),
+    /**The ui label for the fslit_h2_low_right_center slit adder*/
+    "adder.fslit_h2_low_right_center.label": z
+        .string()
+        .describe("The ui label for the fslit_h2_low_right_center slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 2 Corners Top Right, Lower right, Centered"),
+    /**The ui label for the fslit_h2_low_right_right slit adder*/
+    "adder.fslit_h2_low_right_right.label": z
+        .string()
+        .describe("The ui label for the fslit_h2_low_right_right slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 2 Corners Top Right, Lower right, Right"),
+    /**The ui label for the fslit_h3_low_right_center slit adder*/
+    "adder.fslit_h3_low_right_center.label": z
+        .string()
+        .describe("The ui label for the fslit_h3_low_right_center slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 2 Corners Top Left, Lower right, Centered"),
+    /**The ui label for the fslit_h3_low_right_right slit adder*/
+    "adder.fslit_h3_low_right_right.label": z
+        .string()
+        .describe("The ui label for the fslit_h3_low_right_right slit adder")
+        .default("Front Cover Slit: Horizontal Business Card 2 Corners Top Left, Lower right, Right"),
+    /**The ui label for the fslit_h4_low_right_center slit adder*/
+    "adder.fslit_h4_low_right_center.label": z
+        .string()
+        .describe("The ui label for the fslit_h4_low_right_center slit adder")
+        .default("Front Cover Slit: Horizontal Business Card Square Tabs, Lower right, Centered"),
+    /**The ui label for the lslit_b1_center slit adder*/
+    "adder.lslit_b1_center.label": z
+        .string()
+        .describe("The ui label for the lslit_b1_center slit adder")
+        .default("Left Pocket Slit: Brochure 4 3/8 Top Slit, Centered"),
+    /**The ui label for the lslit_b1_left slit adder*/
+    "adder.lslit_b1_left.label": z
+        .string()
+        .describe("The ui label for the lslit_b1_left slit adder")
+        .default("Left Pocket Slit: Brochure 4 3/8 Top Slit, Left"),
+    /**The ui label for the lslit_b1_right slit adder*/
+    "adder.lslit_b1_right.label": z
+        .string()
+        .describe("The ui label for the lslit_b1_right slit adder")
+        .default("Left Pocket Slit: Brochure 4 3/8 Top Slit, Right"),
+    /**The ui label for the lslit_b2_center slit adder*/
+    "adder.lslit_b2_center.label": z
+        .string()
+        .describe("The ui label for the lslit_b2_center slit adder")
+        .default("Left Pocket Slit: Brochure 6 3/8 Top Slit, Centered"),
+    /**The ui label for the lslit_b2_left slit adder*/
+    "adder.lslit_b2_left.label": z
+        .string()
+        .describe("The ui label for the lslit_b2_left slit adder")
+        .default("Left Pocket Slit: Brochure 6 3/8 Top Slit, Left"),
+    /**The ui label for the lslit_b2_right slit adder*/
+    "adder.lslit_b2_right.label": z
+        .string()
+        .describe("The ui label for the lslit_b2_right slit adder")
+        .default("Left Pocket Slit: Brochure 6 3/8 Top Slit, Right"),
+    /**The ui label for the lslit_b6_center slit adder*/
+    "adder.lslit_b6_center.label": z
+        .string()
+        .describe("The ui label for the lslit_b6_center slit adder")
+        .default("Left Pocket Slit: Brochure 4 3/8 Curved Up Slit, Centered"),
+    /**The ui label for the lslit_b7_center slit adder*/
+    "adder.lslit_b7_center.label": z
+        .string()
+        .describe("The ui label for the lslit_b7_center slit adder")
+        .default("Left Pocket Slit: Brochure 6 3/8 Curved Up Slit, Centered"),
+    /**The ui label for the lslit_b8_center slit adder*/
+    "adder.lslit_b8_center.label": z
+        .string()
+        .describe("The ui label for the lslit_b8_center slit adder")
+        .default("Left Pocket Slit: Brochure 4 3/8 Curved Down Slit, Centered"),
+    /**The ui label for the lslit_c1_center slit adder*/
+    "adder.lslit_c1_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c1_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Square Tabs, Centered"),
+    /**The ui label for the lslit_c1_left slit adder*/
+    "adder.lslit_c1_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c1_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Square Tabs, Left"),
+    /**The ui label for the lslit_c1_right slit adder*/
+    "adder.lslit_c1_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c1_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Square Tabs, Right"),
+    /**The ui label for the lslit_c1v_bot slit adder*/
+    "adder.lslit_c1v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_c1v_bot slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Square Tabs, Bottom"),
+    /**The ui label for the lslit_c1v_mid slit adder*/
+    "adder.lslit_c1v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_c1v_mid slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Square Tabs, Middle"),
+    /**The ui label for the lslit_c1v_top slit adder*/
+    "adder.lslit_c1v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_c1v_top slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Square Tabs, Top"),
+    /**The ui label for the lslit_c2_center slit adder*/
+    "adder.lslit_c2_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c2_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 8 Square Corners, Centered"),
+    /**The ui label for the lslit_c2_left slit adder*/
+    "adder.lslit_c2_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c2_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 8 Square Corners, Left"),
+    /**The ui label for the lslit_c2_right slit adder*/
+    "adder.lslit_c2_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c2_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 8 Square Corners, Right"),
+    /**The ui label for the lslit_c3_center slit adder*/
+    "adder.lslit_c3_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c3_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Half Moon Tabs, Centered"),
+    /**The ui label for the lslit_c3_left slit adder*/
+    "adder.lslit_c3_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c3_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Half Moon Tabs, Left"),
+    /**The ui label for the lslit_c3_right slit adder*/
+    "adder.lslit_c3_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c3_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Half Moon Tabs, Right"),
+    /**The ui label for the lslit_c4_center slit adder*/
+    "adder.lslit_c4_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c4_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Centered"),
+    /**The ui label for the lslit_c4_left slit adder*/
+    "adder.lslit_c4_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c4_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Left"),
+    /**The ui label for the lslit_c4_right slit adder*/
+    "adder.lslit_c4_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c4_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Right"),
+    /**The ui label for the lslit_c5_center slit adder*/
+    "adder.lslit_c5_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c5_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Centered"),
+    /**The ui label for the lslit_c5_left slit adder*/
+    "adder.lslit_c5_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c5_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Left"),
+    /**The ui label for the lslit_c5_right slit adder*/
+    "adder.lslit_c5_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c5_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Right"),
+    /**The ui label for the lslit_c6_center slit adder*/
+    "adder.lslit_c6_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c6_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Centered"),
+    /**The ui label for the lslit_c6_left slit adder*/
+    "adder.lslit_c6_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c6_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Left"),
+    /**The ui label for the lslit_c6_right slit adder*/
+    "adder.lslit_c6_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c6_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Right"),
+    /**The ui label for the lslit_c6v_bot slit adder*/
+    "adder.lslit_c6v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_c6v_bot slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Bottom"),
+    /**The ui label for the lslit_c6v_mid slit adder*/
+    "adder.lslit_c6v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_c6v_mid slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Middle"),
+    /**The ui label for the lslit_c6v_top slit adder*/
+    "adder.lslit_c6v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_c6v_top slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Top"),
+    /**The ui label for the lslit_c7_center slit adder*/
+    "adder.lslit_c7_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c7_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Centered"),
+    /**The ui label for the lslit_c7_left slit adder*/
+    "adder.lslit_c7_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c7_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Left"),
+    /**The ui label for the lslit_c7_right slit adder*/
+    "adder.lslit_c7_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c7_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Right"),
+    /**The ui label for the lslit_c7v_bot slit adder*/
+    "adder.lslit_c7v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_c7v_bot slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the lslit_c7v_mid slit adder*/
+    "adder.lslit_c7v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_c7v_mid slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the lslit_c7v_top slit adder*/
+    "adder.lslit_c7v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_c7v_top slit adder")
+        .default("Left Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the lslit_c8_center slit adder*/
+    "adder.lslit_c8_center.label": z
+        .string()
+        .describe("The ui label for the lslit_c8_center slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Centered"),
+    /**The ui label for the lslit_c8_left slit adder*/
+    "adder.lslit_c8_left.label": z
+        .string()
+        .describe("The ui label for the lslit_c8_left slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Left"),
+    /**The ui label for the lslit_c8_right slit adder*/
+    "adder.lslit_c8_right.label": z
+        .string()
+        .describe("The ui label for the lslit_c8_right slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Right"),
+    /**The ui label for the lslit_c8v_bot slit adder*/
+    "adder.lslit_c8v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_c8v_bot slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the lslit_c8v_mid slit adder*/
+    "adder.lslit_c8v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_c8v_mid slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the lslit_c8v_top slit adder*/
+    "adder.lslit_c8v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_c8v_top slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the lslit_c9v_bot slit adder*/
+    "adder.lslit_c9v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_c9v_bot slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the lslit_c9v_mid slit adder*/
+    "adder.lslit_c9v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_c9v_mid slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the lslit_c9v_top slit adder*/
+    "adder.lslit_c9v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_c9v_top slit adder")
+        .default("Left Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the lslit_d1_center slit adder*/
+    "adder.lslit_d1_center.label": z
+        .string()
+        .describe("The ui label for the lslit_d1_center slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Top Slit, Centered"),
+    /**The ui label for the lslit_d1_left slit adder*/
+    "adder.lslit_d1_left.label": z
+        .string()
+        .describe("The ui label for the lslit_d1_left slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Top Slit, Left"),
+    /**The ui label for the lslit_d1_right slit adder*/
+    "adder.lslit_d1_right.label": z
+        .string()
+        .describe("The ui label for the lslit_d1_right slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Top Slit, Right"),
+    /**The ui label for the lslit_d2_center slit adder*/
+    "adder.lslit_d2_center.label": z
+        .string()
+        .describe("The ui label for the lslit_d2_center slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Curved Down Slit, Centered"),
+    /**The ui label for the lslit_d2_left slit adder*/
+    "adder.lslit_d2_left.label": z
+        .string()
+        .describe("The ui label for the lslit_d2_left slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Curved Down Slit, Left"),
+    /**The ui label for the lslit_d2_right slit adder*/
+    "adder.lslit_d2_right.label": z
+        .string()
+        .describe("The ui label for the lslit_d2_right slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Curved Down Slit, Right"),
+    /**The ui label for the lslit_d3_center slit adder*/
+    "adder.lslit_d3_center.label": z
+        .string()
+        .describe("The ui label for the lslit_d3_center slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Curved Up Slit, Centered"),
+    /**The ui label for the lslit_d3_left slit adder*/
+    "adder.lslit_d3_left.label": z
+        .string()
+        .describe("The ui label for the lslit_d3_left slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Curved Up Slit, Left"),
+    /**The ui label for the lslit_d3_right slit adder*/
+    "adder.lslit_d3_right.label": z
+        .string()
+        .describe("The ui label for the lslit_d3_right slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Curved Up Slit, Right"),
+    /**The ui label for the lslit_d4_center slit adder*/
+    "adder.lslit_d4_center.label": z
+        .string()
+        .describe("The ui label for the lslit_d4_center slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Center Slit, Centered"),
+    /**The ui label for the lslit_d4_left slit adder*/
+    "adder.lslit_d4_left.label": z
+        .string()
+        .describe("The ui label for the lslit_d4_left slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Center Slit, Left"),
+    /**The ui label for the lslit_d4_right slit adder*/
+    "adder.lslit_d4_right.label": z
+        .string()
+        .describe("The ui label for the lslit_d4_right slit adder")
+        .default("Left Pocket Slit: CD 5 1/4 Center Slit, Right"),
+    /**The ui label for the lslit_d5_center slit adder*/
+    "adder.lslit_d5_center.label": z
+        .string()
+        .describe("The ui label for the lslit_d5_center slit adder")
+        .default("Left Pocket Slit: CD 2 1/4 7 Variable Center Slit, Centered"),
+    /**The ui label for the lslit_d5_left slit adder*/
+    "adder.lslit_d5_left.label": z
+        .string()
+        .describe("The ui label for the lslit_d5_left slit adder")
+        .default("Left Pocket Slit: CD 2 1/4 7 Variable Center Slit, Left"),
+    /**The ui label for the lslit_d5_right slit adder*/
+    "adder.lslit_d5_right.label": z
+        .string()
+        .describe("The ui label for the lslit_d5_right slit adder")
+        .default("Left Pocket Slit: CD 2 1/4 7 Variable Center Slit, Right"),
+    /**The ui label for the lslit_f1_center slit adder*/
+    "adder.lslit_f1_center.label": z
+        .string()
+        .describe("The ui label for the lslit_f1_center slit adder")
+        .default("Left Pocket Slit: Flash Drive 1/8 1/4 Thick, Centered"),
+    /**The ui label for the lslit_f1_left slit adder*/
+    "adder.lslit_f1_left.label": z
+        .string()
+        .describe("The ui label for the lslit_f1_left slit adder")
+        .default("Left Pocket Slit: Flash Drive 1/8 1/4 Thick, Left"),
+    /**The ui label for the lslit_f2_center slit adder*/
+    "adder.lslit_f2_center.label": z
+        .string()
+        .describe("The ui label for the lslit_f2_center slit adder")
+        .default("Left Pocket Slit: Flash Drive 5/16 1/2 Thick, Centered"),
+    /**The ui label for the lslit_f2_left slit adder*/
+    "adder.lslit_f2_left.label": z
+        .string()
+        .describe("The ui label for the lslit_f2_left slit adder")
+        .default("Left Pocket Slit: Flash Drive 5/16 1/2 Thick, Left"),
+    /**The ui label for the lslit_f2_right slit adder*/
+    "adder.lslit_f2_right.label": z
+        .string()
+        .describe("The ui label for the lslit_f2_right slit adder")
+        .default("Left Pocket Slit: Flash Drive 5/16 1/2 Thick, Right"),
+    /**The ui label for the lslit_h1_center slit adder*/
+    "adder.lslit_h1_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h1_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Corners, Centered"),
+    /**The ui label for the lslit_h1_left slit adder*/
+    "adder.lslit_h1_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h1_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Corners, Left"),
+    /**The ui label for the lslit_h1_right slit adder*/
+    "adder.lslit_h1_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h1_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Corners, Right"),
+    /**The ui label for the lslit_h1v_bot slit adder*/
+    "adder.lslit_h1v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_h1v_bot slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Corners, Bottom"),
+    /**The ui label for the lslit_h1v_mid slit adder*/
+    "adder.lslit_h1v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_h1v_mid slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Corners, Middle"),
+    /**The ui label for the lslit_h1v_top slit adder*/
+    "adder.lslit_h1v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_h1v_top slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Corners, Top"),
+    /**The ui label for the lslit_h2_center slit adder*/
+    "adder.lslit_h2_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h2_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the lslit_h2_left slit adder*/
+    "adder.lslit_h2_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h2_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the lslit_h2_right slit adder*/
+    "adder.lslit_h2_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h2_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the lslit_h2v_bot slit adder*/
+    "adder.lslit_h2v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_h2v_bot slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Right, Bottom"),
+    /**The ui label for the lslit_h2v_mid slit adder*/
+    "adder.lslit_h2v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_h2v_mid slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Right, Middle"),
+    /**The ui label for the lslit_h2v_top slit adder*/
+    "adder.lslit_h2v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_h2v_top slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Right, Top"),
+    /**The ui label for the lslit_h3_center slit adder*/
+    "adder.lslit_h3_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h3_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the lslit_h3_left slit adder*/
+    "adder.lslit_h3_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h3_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the lslit_h3_right slit adder*/
+    "adder.lslit_h3_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h3_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the lslit_h3v_bot slit adder*/
+    "adder.lslit_h3v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_h3v_bot slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Left, Bottom"),
+    /**The ui label for the lslit_h3v_mid slit adder*/
+    "adder.lslit_h3v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_h3v_mid slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Left, Middle"),
+    /**The ui label for the lslit_h3v_top slit adder*/
+    "adder.lslit_h3v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_h3v_top slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Corners Top Left, Top"),
+    /**The ui label for the lslit_h4_center slit adder*/
+    "adder.lslit_h4_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h4_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Square Tabs, Centered"),
+    /**The ui label for the lslit_h4_left slit adder*/
+    "adder.lslit_h4_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h4_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Square Tabs, Left"),
+    /**The ui label for the lslit_h4_right slit adder*/
+    "adder.lslit_h4_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h4_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Square Tabs, Right"),
+    /**The ui label for the lslit_h4v_bot slit adder*/
+    "adder.lslit_h4v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_h4v_bot slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Square Tabs, Bottom"),
+    /**The ui label for the lslit_h4v_mid slit adder*/
+    "adder.lslit_h4v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_h4v_mid slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Square Tabs, Middle"),
+    /**The ui label for the lslit_h4v_top slit adder*/
+    "adder.lslit_h4v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_h4v_top slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Square Tabs, Top"),
+    /**The ui label for the lslit_h5_center slit adder*/
+    "adder.lslit_h5_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h5_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Centered"),
+    /**The ui label for the lslit_h5_left slit adder*/
+    "adder.lslit_h5_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h5_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Left"),
+    /**The ui label for the lslit_h5_right slit adder*/
+    "adder.lslit_h5_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h5_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Right"),
+    /**The ui label for the lslit_h6_center slit adder*/
+    "adder.lslit_h6_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h6_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Centered"),
+    /**The ui label for the lslit_h6_left slit adder*/
+    "adder.lslit_h6_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h6_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Left"),
+    /**The ui label for the lslit_h6_right slit adder*/
+    "adder.lslit_h6_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h6_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Right"),
+    /**The ui label for the lslit_h7_center slit adder*/
+    "adder.lslit_h7_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h7_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Square Corners, Centered"),
+    /**The ui label for the lslit_h7_left slit adder*/
+    "adder.lslit_h7_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h7_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Square Corners, Left"),
+    /**The ui label for the lslit_h7_right slit adder*/
+    "adder.lslit_h7_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h7_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card 4 Square Corners, Right"),
+    /**The ui label for the lslit_h8_center slit adder*/
+    "adder.lslit_h8_center.label": z
+        .string()
+        .describe("The ui label for the lslit_h8_center slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Half Moon Tabs, Centered"),
+    /**The ui label for the lslit_h8_left slit adder*/
+    "adder.lslit_h8_left.label": z
+        .string()
+        .describe("The ui label for the lslit_h8_left slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Half Moon Tabs, Left"),
+    /**The ui label for the lslit_h8_right slit adder*/
+    "adder.lslit_h8_right.label": z
+        .string()
+        .describe("The ui label for the lslit_h8_right slit adder")
+        .default("Left Pocket Slit: Horizontal Business Card Half Moon Tabs, Right"),
+    /**The ui label for the lslit_k1 slit adder*/
+    "adder.lslit_k1.label": z
+        .string()
+        .describe("The ui label for the lslit_k1 slit adder")
+        .default("Left Pocket Slit: Key Card Slit"),
+    /**The ui label for the lslit_l1_right slit adder*/
+    "adder.lslit_l1_right.label": z
+        .string()
+        .describe("The ui label for the lslit_l1_right slit adder")
+        .default("Left Pocket Slit: Flash Drive 1/8 1/4 Thick, Right"),
+    /**The ui label for the lslit_none slit adder*/
+    "adder.lslit_none.label": z
+        .string()
+        .describe("The ui label for the lslit_none slit adder")
+        .default("Left Pocket Slit: None"),
+    /**The ui label for the lslit_v1_center slit adder*/
+    "adder.lslit_v1_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v1_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Corners, Centered"),
+    /**The ui label for the lslit_v1_left slit adder*/
+    "adder.lslit_v1_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v1_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Corners, Left"),
+    /**The ui label for the lslit_v1_right slit adder*/
+    "adder.lslit_v1_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v1_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Corners, Right"),
+    /**The ui label for the lslit_v1v_bot slit adder*/
+    "adder.lslit_v1v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_v1v_bot slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Corners, Bottom"),
+    /**The ui label for the lslit_v1v_mid slit adder*/
+    "adder.lslit_v1v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_v1v_mid slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Corners, Middle"),
+    /**The ui label for the lslit_v1v_top slit adder*/
+    "adder.lslit_v1v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_v1v_top slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Corners, Top"),
+    /**The ui label for the lslit_v2_center slit adder*/
+    "adder.lslit_v2_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v2_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the lslit_v2_left slit adder*/
+    "adder.lslit_v2_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v2_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the lslit_v2_right slit adder*/
+    "adder.lslit_v2_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v2_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the lslit_v2v_bot slit adder*/
+    "adder.lslit_v2v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_v2v_bot slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Right, Bottom"),
+    /**The ui label for the lslit_v2v_mid slit adder*/
+    "adder.lslit_v2v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_v2v_mid slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Right, Middle"),
+    /**The ui label for the lslit_v2v_top slit adder*/
+    "adder.lslit_v2v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_v2v_top slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Right, Top"),
+    /**The ui label for the lslit_v3_center slit adder*/
+    "adder.lslit_v3_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v3_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the lslit_v3_left slit adder*/
+    "adder.lslit_v3_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v3_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the lslit_v3_right slit adder*/
+    "adder.lslit_v3_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v3_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the lslit_v3v_bot slit adder*/
+    "adder.lslit_v3v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_v3v_bot slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Left, Bottom"),
+    /**The ui label for the lslit_v3v_mid slit adder*/
+    "adder.lslit_v3v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_v3v_mid slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Left, Middle"),
+    /**The ui label for the lslit_v3v_top slit adder*/
+    "adder.lslit_v3v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_v3v_top slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Corners Top Left, Top"),
+    /**The ui label for the lslit_v4_center slit adder*/
+    "adder.lslit_v4_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v4_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Tabs, Centered"),
+    /**The ui label for the lslit_v4_left slit adder*/
+    "adder.lslit_v4_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v4_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Tabs, Left"),
+    /**The ui label for the lslit_v4_right slit adder*/
+    "adder.lslit_v4_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v4_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Tabs, Right"),
+    /**The ui label for the lslit_v4v_bot slit adder*/
+    "adder.lslit_v4v_bot.label": z
+        .string()
+        .describe("The ui label for the lslit_v4v_bot slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Tabs, Bottom"),
+    /**The ui label for the lslit_v4v_mid slit adder*/
+    "adder.lslit_v4v_mid.label": z
+        .string()
+        .describe("The ui label for the lslit_v4v_mid slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Tabs, Middle"),
+    /**The ui label for the lslit_v4v_top slit adder*/
+    "adder.lslit_v4v_top.label": z
+        .string()
+        .describe("The ui label for the lslit_v4v_top slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Tabs, Top"),
+    /**The ui label for the lslit_v5_center slit adder*/
+    "adder.lslit_v5_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v5_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Centered"),
+    /**The ui label for the lslit_v5_left slit adder*/
+    "adder.lslit_v5_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v5_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Left"),
+    /**The ui label for the lslit_v5_right slit adder*/
+    "adder.lslit_v5_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v5_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Right"),
+    /**The ui label for the lslit_v6_center slit adder*/
+    "adder.lslit_v6_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v6_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Centered"),
+    /**The ui label for the lslit_v6_left slit adder*/
+    "adder.lslit_v6_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v6_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Left"),
+    /**The ui label for the lslit_v6_right slit adder*/
+    "adder.lslit_v6_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v6_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Right"),
+    /**The ui label for the lslit_v7_center slit adder*/
+    "adder.lslit_v7_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v7_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Square Corners, Centered"),
+    /**The ui label for the lslit_v7_left slit adder*/
+    "adder.lslit_v7_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v7_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Square Corners, Left"),
+    /**The ui label for the lslit_v7_right slit adder*/
+    "adder.lslit_v7_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v7_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card 4 Square Corners, Right"),
+    /**The ui label for the lslit_v8_center slit adder*/
+    "adder.lslit_v8_center.label": z
+        .string()
+        .describe("The ui label for the lslit_v8_center slit adder")
+        .default("Left Pocket Slit: Vertical Business Card Half Moon Tabs, Centered"),
+    /**The ui label for the lslit_v8_left slit adder*/
+    "adder.lslit_v8_left.label": z
+        .string()
+        .describe("The ui label for the lslit_v8_left slit adder")
+        .default("Left Pocket Slit: Vertical Business Card Half Moon Tabs, Left"),
+    /**The ui label for the lslit_v8_right slit adder*/
+    "adder.lslit_v8_right.label": z
+        .string()
+        .describe("The ui label for the lslit_v8_right slit adder")
+        .default("Left Pocket Slit: Vertical Business Card Half Moon Tabs, Right"),
+    /**The ui label for the mslit_b1_center slit adder*/
+    "adder.mslit_b1_center.label": z
+        .string()
+        .describe("The ui label for the mslit_b1_center slit adder")
+        .default("Middle Pocket Slit: Brochure 4 3/8 Top Slit, Centered"),
+    /**The ui label for the mslit_b1_left slit adder*/
+    "adder.mslit_b1_left.label": z
+        .string()
+        .describe("The ui label for the mslit_b1_left slit adder")
+        .default("Middle Pocket Slit: Brochure 4 3/8 Top Slit, Left"),
+    /**The ui label for the mslit_b1_right slit adder*/
+    "adder.mslit_b1_right.label": z
+        .string()
+        .describe("The ui label for the mslit_b1_right slit adder")
+        .default("Middle Pocket Slit: Brochure 4 3/8 Top Slit, Right"),
+    /**The ui label for the mslit_b2_center slit adder*/
+    "adder.mslit_b2_center.label": z
+        .string()
+        .describe("The ui label for the mslit_b2_center slit adder")
+        .default("Middle Pocket Slit: Brochure 6 3/8 Top Slit, Centered"),
+    /**The ui label for the mslit_b2_left slit adder*/
+    "adder.mslit_b2_left.label": z
+        .string()
+        .describe("The ui label for the mslit_b2_left slit adder")
+        .default("Middle Pocket Slit: Brochure 6 3/8 Top Slit, Left"),
+    /**The ui label for the mslit_b2_right slit adder*/
+    "adder.mslit_b2_right.label": z
+        .string()
+        .describe("The ui label for the mslit_b2_right slit adder")
+        .default("Middle Pocket Slit: Brochure 6 3/8 Top Slit, Right"),
+    /**The ui label for the mslit_c1_center slit adder*/
+    "adder.mslit_c1_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c1_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Square Tabs, Centered"),
+    /**The ui label for the mslit_c1_left slit adder*/
+    "adder.mslit_c1_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c1_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Square Tabs, Left"),
+    /**The ui label for the mslit_c1_right slit adder*/
+    "adder.mslit_c1_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c1_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Square Tabs, Right"),
+    /**The ui label for the mslit_c1v_bot slit adder*/
+    "adder.mslit_c1v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_c1v_bot slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Square Tabs, Bottom"),
+    /**The ui label for the mslit_c1v_mid slit adder*/
+    "adder.mslit_c1v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_c1v_mid slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Square Tabs, Middle"),
+    /**The ui label for the mslit_c1v_top slit adder*/
+    "adder.mslit_c1v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_c1v_top slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Square Tabs, Top"),
+    /**The ui label for the mslit_c2_center slit adder*/
+    "adder.mslit_c2_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c2_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 8 Square Corners, Centered"),
+    /**The ui label for the mslit_c2_left slit adder*/
+    "adder.mslit_c2_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c2_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 8 Square Corners, Left"),
+    /**The ui label for the mslit_c2_right slit adder*/
+    "adder.mslit_c2_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c2_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 8 Square Corners, Right"),
+    /**The ui label for the mslit_c3_center slit adder*/
+    "adder.mslit_c3_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c3_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Half Moon Tabs, Centered"),
+    /**The ui label for the mslit_c3_left slit adder*/
+    "adder.mslit_c3_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c3_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Half Moon Tabs, Left"),
+    /**The ui label for the mslit_c3_right slit adder*/
+    "adder.mslit_c3_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c3_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Half Moon Tabs, Right"),
+    /**The ui label for the mslit_c4_center slit adder*/
+    "adder.mslit_c4_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c4_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Centered"),
+    /**The ui label for the mslit_c4_left slit adder*/
+    "adder.mslit_c4_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c4_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Left"),
+    /**The ui label for the mslit_c4_right slit adder*/
+    "adder.mslit_c4_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c4_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Right"),
+    /**The ui label for the mslit_c5_center slit adder*/
+    "adder.mslit_c5_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c5_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Centered"),
+    /**The ui label for the mslit_c5_left slit adder*/
+    "adder.mslit_c5_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c5_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Left"),
+    /**The ui label for the mslit_c5_right slit adder*/
+    "adder.mslit_c5_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c5_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Right"),
+    /**The ui label for the mslit_c6_center slit adder*/
+    "adder.mslit_c6_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c6_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Centered"),
+    /**The ui label for the mslit_c6_left slit adder*/
+    "adder.mslit_c6_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c6_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Left"),
+    /**The ui label for the mslit_c6_right slit adder*/
+    "adder.mslit_c6_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c6_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Right"),
+    /**The ui label for the mslit_c6v_bot slit adder*/
+    "adder.mslit_c6v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_c6v_bot slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Bottom"),
+    /**The ui label for the mslit_c6v_mid slit adder*/
+    "adder.mslit_c6v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_c6v_mid slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Middle"),
+    /**The ui label for the mslit_c6v_top slit adder*/
+    "adder.mslit_c6v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_c6v_top slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Top"),
+    /**The ui label for the mslit_c7_center slit adder*/
+    "adder.mslit_c7_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c7_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Centered"),
+    /**The ui label for the mslit_c7_left slit adder*/
+    "adder.mslit_c7_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c7_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Left"),
+    /**The ui label for the mslit_c7_right slit adder*/
+    "adder.mslit_c7_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c7_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Right"),
+    /**The ui label for the mslit_c7v_bot slit adder*/
+    "adder.mslit_c7v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_c7v_bot slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the mslit_c7v_mid slit adder*/
+    "adder.mslit_c7v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_c7v_mid slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the mslit_c7v_top slit adder*/
+    "adder.mslit_c7v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_c7v_top slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the mslit_c8_center slit adder*/
+    "adder.mslit_c8_center.label": z
+        .string()
+        .describe("The ui label for the mslit_c8_center slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Centered"),
+    /**The ui label for the mslit_c8_left slit adder*/
+    "adder.mslit_c8_left.label": z
+        .string()
+        .describe("The ui label for the mslit_c8_left slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Left"),
+    /**The ui label for the mslit_c8_right slit adder*/
+    "adder.mslit_c8_right.label": z
+        .string()
+        .describe("The ui label for the mslit_c8_right slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Right"),
+    /**The ui label for the mslit_c8v_bot slit adder*/
+    "adder.mslit_c8v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_c8v_bot slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the mslit_c8v_mid slit adder*/
+    "adder.mslit_c8v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_c8v_mid slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the mslit_c8v_top slit adder*/
+    "adder.mslit_c8v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_c8v_top slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the mslit_c9v_bot slit adder*/
+    "adder.mslit_c9v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_c9v_bot slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the mslit_c9v_mid slit adder*/
+    "adder.mslit_c9v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_c9v_mid slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the mslit_c9v_top slit adder*/
+    "adder.mslit_c9v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_c9v_top slit adder")
+        .default("Middle Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the mslit_d1_center slit adder*/
+    "adder.mslit_d1_center.label": z
+        .string()
+        .describe("The ui label for the mslit_d1_center slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Top Slit, Centered"),
+    /**The ui label for the mslit_d1_left slit adder*/
+    "adder.mslit_d1_left.label": z
+        .string()
+        .describe("The ui label for the mslit_d1_left slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Top Slit, Left"),
+    /**The ui label for the mslit_d1_right slit adder*/
+    "adder.mslit_d1_right.label": z
+        .string()
+        .describe("The ui label for the mslit_d1_right slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Top Slit, Right"),
+    /**The ui label for the mslit_d2_center slit adder*/
+    "adder.mslit_d2_center.label": z
+        .string()
+        .describe("The ui label for the mslit_d2_center slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Curved Down Slit, Centered"),
+    /**The ui label for the mslit_d2_left slit adder*/
+    "adder.mslit_d2_left.label": z
+        .string()
+        .describe("The ui label for the mslit_d2_left slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Curved Down Slit, Left"),
+    /**The ui label for the mslit_d2_right slit adder*/
+    "adder.mslit_d2_right.label": z
+        .string()
+        .describe("The ui label for the mslit_d2_right slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Curved Down Slit, Right"),
+    /**The ui label for the mslit_d3_center slit adder*/
+    "adder.mslit_d3_center.label": z
+        .string()
+        .describe("The ui label for the mslit_d3_center slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Curved Up Slit, Centered"),
+    /**The ui label for the mslit_d3_left slit adder*/
+    "adder.mslit_d3_left.label": z
+        .string()
+        .describe("The ui label for the mslit_d3_left slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Curved Up Slit, Left"),
+    /**The ui label for the mslit_d3_right slit adder*/
+    "adder.mslit_d3_right.label": z
+        .string()
+        .describe("The ui label for the mslit_d3_right slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Curved Up Slit, Right"),
+    /**The ui label for the mslit_d4_center slit adder*/
+    "adder.mslit_d4_center.label": z
+        .string()
+        .describe("The ui label for the mslit_d4_center slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Center Slit, Centered"),
+    /**The ui label for the mslit_d4_left slit adder*/
+    "adder.mslit_d4_left.label": z
+        .string()
+        .describe("The ui label for the mslit_d4_left slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Center Slit, Left"),
+    /**The ui label for the mslit_d4_right slit adder*/
+    "adder.mslit_d4_right.label": z
+        .string()
+        .describe("The ui label for the mslit_d4_right slit adder")
+        .default("Middle Pocket Slit: CD 5 1/4 Center Slit, Right"),
+    /**The ui label for the mslit_d5_center slit adder*/
+    "adder.mslit_d5_center.label": z
+        .string()
+        .describe("The ui label for the mslit_d5_center slit adder")
+        .default("Middle Pocket Slit: CD 2 1/4 7 Variable Center Slit, Centered"),
+    /**The ui label for the mslit_d5_left slit adder*/
+    "adder.mslit_d5_left.label": z
+        .string()
+        .describe("The ui label for the mslit_d5_left slit adder")
+        .default("Middle Pocket Slit: CD 2 1/4 7 Variable Center Slit, Left"),
+    /**The ui label for the mslit_d5_right slit adder*/
+    "adder.mslit_d5_right.label": z
+        .string()
+        .describe("The ui label for the mslit_d5_right slit adder")
+        .default("Middle Pocket Slit: CD 2 1/4 7 Variable Center Slit, Right"),
+    /**The ui label for the mslit_f1_center slit adder*/
+    "adder.mslit_f1_center.label": z
+        .string()
+        .describe("The ui label for the mslit_f1_center slit adder")
+        .default("Middle Pocket Slit: Flash Drive 1/8 1/4 Thick, Centered"),
+    /**The ui label for the mslit_f1_left slit adder*/
+    "adder.mslit_f1_left.label": z
+        .string()
+        .describe("The ui label for the mslit_f1_left slit adder")
+        .default("Middle Pocket Slit: Flash Drive 1/8 1/4 Thick, Left"),
+    /**The ui label for the mslit_f2_center slit adder*/
+    "adder.mslit_f2_center.label": z
+        .string()
+        .describe("The ui label for the mslit_f2_center slit adder")
+        .default("Middle Pocket Slit: Flash Drive 5/16 1/2 Thick, Centered"),
+    /**The ui label for the mslit_f2_left slit adder*/
+    "adder.mslit_f2_left.label": z
+        .string()
+        .describe("The ui label for the mslit_f2_left slit adder")
+        .default("Middle Pocket Slit: Flash Drive 5/16 1/2 Thick, Left"),
+    /**The ui label for the mslit_f2_right slit adder*/
+    "adder.mslit_f2_right.label": z
+        .string()
+        .describe("The ui label for the mslit_f2_right slit adder")
+        .default("Middle Pocket Slit: Flash Drive 5/16 1/2 Thick, Right"),
+    /**The ui label for the mslit_h1_center slit adder*/
+    "adder.mslit_h1_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h1_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Corners, Centered"),
+    /**The ui label for the mslit_h1_left slit adder*/
+    "adder.mslit_h1_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h1_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Corners, Left"),
+    /**The ui label for the mslit_h1_right slit adder*/
+    "adder.mslit_h1_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h1_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Corners, Right"),
+    /**The ui label for the mslit_h1v_bot slit adder*/
+    "adder.mslit_h1v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_h1v_bot slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Corners, Bottom"),
+    /**The ui label for the mslit_h1v_mid slit adder*/
+    "adder.mslit_h1v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_h1v_mid slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Corners, Middle"),
+    /**The ui label for the mslit_h1v_top slit adder*/
+    "adder.mslit_h1v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_h1v_top slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Corners, Top"),
+    /**The ui label for the mslit_h2_center slit adder*/
+    "adder.mslit_h2_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h2_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the mslit_h2_left slit adder*/
+    "adder.mslit_h2_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h2_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the mslit_h2_right slit adder*/
+    "adder.mslit_h2_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h2_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the mslit_h2v_bot slit adder*/
+    "adder.mslit_h2v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_h2v_bot slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Right, Bottom"),
+    /**The ui label for the mslit_h2v_mid slit adder*/
+    "adder.mslit_h2v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_h2v_mid slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Right, Middle"),
+    /**The ui label for the mslit_h2v_top slit adder*/
+    "adder.mslit_h2v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_h2v_top slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Right, Top"),
+    /**The ui label for the mslit_h3_center slit adder*/
+    "adder.mslit_h3_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h3_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the mslit_h3_left slit adder*/
+    "adder.mslit_h3_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h3_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the mslit_h3_right slit adder*/
+    "adder.mslit_h3_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h3_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the mslit_h3v_bot slit adder*/
+    "adder.mslit_h3v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_h3v_bot slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Left, Bottom"),
+    /**The ui label for the mslit_h3v_mid slit adder*/
+    "adder.mslit_h3v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_h3v_mid slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Left, Middle"),
+    /**The ui label for the mslit_h3v_top slit adder*/
+    "adder.mslit_h3v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_h3v_top slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Corners Top Left, Top"),
+    /**The ui label for the mslit_h4_center slit adder*/
+    "adder.mslit_h4_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h4_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Square Tabs, Centered"),
+    /**The ui label for the mslit_h4_left slit adder*/
+    "adder.mslit_h4_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h4_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Square Tabs, Left"),
+    /**The ui label for the mslit_h4_right slit adder*/
+    "adder.mslit_h4_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h4_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Square Tabs, Right"),
+    /**The ui label for the mslit_h4v_bot slit adder*/
+    "adder.mslit_h4v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_h4v_bot slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Square Tabs, Bottom"),
+    /**The ui label for the mslit_h4v_mid slit adder*/
+    "adder.mslit_h4v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_h4v_mid slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Square Tabs, Middle"),
+    /**The ui label for the mslit_h4v_top slit adder*/
+    "adder.mslit_h4v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_h4v_top slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Square Tabs, Top"),
+    /**The ui label for the mslit_h5_center slit adder*/
+    "adder.mslit_h5_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h5_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Centered"),
+    /**The ui label for the mslit_h5_left slit adder*/
+    "adder.mslit_h5_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h5_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Left"),
+    /**The ui label for the mslit_h5_right slit adder*/
+    "adder.mslit_h5_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h5_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Right"),
+    /**The ui label for the mslit_h6_center slit adder*/
+    "adder.mslit_h6_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h6_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Centered"),
+    /**The ui label for the mslit_h6_left slit adder*/
+    "adder.mslit_h6_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h6_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Left"),
+    /**The ui label for the mslit_h6_right slit adder*/
+    "adder.mslit_h6_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h6_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Right"),
+    /**The ui label for the mslit_h7_center slit adder*/
+    "adder.mslit_h7_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h7_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Square Corners, Centered"),
+    /**The ui label for the mslit_h7_left slit adder*/
+    "adder.mslit_h7_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h7_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Square Corners, Left"),
+    /**The ui label for the mslit_h7_right slit adder*/
+    "adder.mslit_h7_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h7_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card 4 Square Corners, Right"),
+    /**The ui label for the mslit_h8_center slit adder*/
+    "adder.mslit_h8_center.label": z
+        .string()
+        .describe("The ui label for the mslit_h8_center slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Half Moon Tabs, Centered"),
+    /**The ui label for the mslit_h8_left slit adder*/
+    "adder.mslit_h8_left.label": z
+        .string()
+        .describe("The ui label for the mslit_h8_left slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Half Moon Tabs, Left"),
+    /**The ui label for the mslit_h8_right slit adder*/
+    "adder.mslit_h8_right.label": z
+        .string()
+        .describe("The ui label for the mslit_h8_right slit adder")
+        .default("Middle Pocket Slit: Horizontal Business Card Half Moon Tabs, Right"),
+    /**The ui label for the mslit_k1 slit adder*/
+    "adder.mslit_k1.label": z
+        .string()
+        .describe("The ui label for the mslit_k1 slit adder")
+        .default("Middle Pocket Slit: Key Card Slit"),
+    /**The ui label for the mslit_l1_right slit adder*/
+    "adder.mslit_l1_right.label": z
+        .string()
+        .describe("The ui label for the mslit_l1_right slit adder")
+        .default("Middle Pocket Slit: Flash Drive 1/8 1/4 Thick, Right"),
+    /**The ui label for the mslit_none slit adder*/
+    "adder.mslit_none.label": z
+        .string()
+        .describe("The ui label for the mslit_none slit adder")
+        .default("Middle Pocket Slit: None"),
+    /**The ui label for the mslit_v1_center slit adder*/
+    "adder.mslit_v1_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v1_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Corners, Centered"),
+    /**The ui label for the mslit_v1_left slit adder*/
+    "adder.mslit_v1_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v1_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Corners, Left"),
+    /**The ui label for the mslit_v1_right slit adder*/
+    "adder.mslit_v1_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v1_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Corners, Right"),
+    /**The ui label for the mslit_v1v_bot slit adder*/
+    "adder.mslit_v1v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_v1v_bot slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Corners, Bottom"),
+    /**The ui label for the mslit_v1v_mid slit adder*/
+    "adder.mslit_v1v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_v1v_mid slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Corners, Middle"),
+    /**The ui label for the mslit_v1v_top slit adder*/
+    "adder.mslit_v1v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_v1v_top slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Corners, Top"),
+    /**The ui label for the mslit_v2_center slit adder*/
+    "adder.mslit_v2_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v2_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the mslit_v2_left slit adder*/
+    "adder.mslit_v2_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v2_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the mslit_v2_right slit adder*/
+    "adder.mslit_v2_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v2_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the mslit_v2v_bot slit adder*/
+    "adder.mslit_v2v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_v2v_bot slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Right, Bottom"),
+    /**The ui label for the mslit_v2v_mid slit adder*/
+    "adder.mslit_v2v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_v2v_mid slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Right, Middle"),
+    /**The ui label for the mslit_v2v_top slit adder*/
+    "adder.mslit_v2v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_v2v_top slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Right, Top"),
+    /**The ui label for the mslit_v3_center slit adder*/
+    "adder.mslit_v3_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v3_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the mslit_v3_left slit adder*/
+    "adder.mslit_v3_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v3_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the mslit_v3_right slit adder*/
+    "adder.mslit_v3_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v3_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the mslit_v3v_bot slit adder*/
+    "adder.mslit_v3v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_v3v_bot slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Left, Bottom"),
+    /**The ui label for the mslit_v3v_mid slit adder*/
+    "adder.mslit_v3v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_v3v_mid slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Left, Middle"),
+    /**The ui label for the mslit_v3v_top slit adder*/
+    "adder.mslit_v3v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_v3v_top slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Corners Top Left, Top"),
+    /**The ui label for the mslit_v4_center slit adder*/
+    "adder.mslit_v4_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v4_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Tabs, Centered"),
+    /**The ui label for the mslit_v4_left slit adder*/
+    "adder.mslit_v4_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v4_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Tabs, Left"),
+    /**The ui label for the mslit_v4_right slit adder*/
+    "adder.mslit_v4_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v4_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Tabs, Right"),
+    /**The ui label for the mslit_v4v_bot slit adder*/
+    "adder.mslit_v4v_bot.label": z
+        .string()
+        .describe("The ui label for the mslit_v4v_bot slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Tabs, Bottom"),
+    /**The ui label for the mslit_v4v_mid slit adder*/
+    "adder.mslit_v4v_mid.label": z
+        .string()
+        .describe("The ui label for the mslit_v4v_mid slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Tabs, Middle"),
+    /**The ui label for the mslit_v4v_top slit adder*/
+    "adder.mslit_v4v_top.label": z
+        .string()
+        .describe("The ui label for the mslit_v4v_top slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Tabs, Top"),
+    /**The ui label for the mslit_v5_center slit adder*/
+    "adder.mslit_v5_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v5_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Centered"),
+    /**The ui label for the mslit_v5_left slit adder*/
+    "adder.mslit_v5_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v5_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Left"),
+    /**The ui label for the mslit_v5_right slit adder*/
+    "adder.mslit_v5_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v5_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Right"),
+    /**The ui label for the mslit_v6_center slit adder*/
+    "adder.mslit_v6_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v6_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Centered"),
+    /**The ui label for the mslit_v6_left slit adder*/
+    "adder.mslit_v6_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v6_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Left"),
+    /**The ui label for the mslit_v6_right slit adder*/
+    "adder.mslit_v6_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v6_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Right"),
+    /**The ui label for the mslit_v7_center slit adder*/
+    "adder.mslit_v7_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v7_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Square Corners, Centered"),
+    /**The ui label for the mslit_v7_left slit adder*/
+    "adder.mslit_v7_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v7_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Square Corners, Left"),
+    /**The ui label for the mslit_v7_right slit adder*/
+    "adder.mslit_v7_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v7_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card 4 Square Corners, Right"),
+    /**The ui label for the mslit_v8_center slit adder*/
+    "adder.mslit_v8_center.label": z
+        .string()
+        .describe("The ui label for the mslit_v8_center slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card Half Moon Tabs, Centered"),
+    /**The ui label for the mslit_v8_left slit adder*/
+    "adder.mslit_v8_left.label": z
+        .string()
+        .describe("The ui label for the mslit_v8_left slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card Half Moon Tabs, Left"),
+    /**The ui label for the mslit_v8_right slit adder*/
+    "adder.mslit_v8_right.label": z
+        .string()
+        .describe("The ui label for the mslit_v8_right slit adder")
+        .default("Middle Pocket Slit: Vertical Business Card Half Moon Tabs, Right"),
+    /**The ui label for the rslit_b1_center slit adder*/
+    "adder.rslit_b1_center.label": z
+        .string()
+        .describe("The ui label for the rslit_b1_center slit adder")
+        .default("Right Pocket Slit: Brochure 4 3/8 Top Slit, Centered"),
+    /**The ui label for the rslit_b1_left slit adder*/
+    "adder.rslit_b1_left.label": z
+        .string()
+        .describe("The ui label for the rslit_b1_left slit adder")
+        .default("Right Pocket Slit: Brochure 4 3/8 Top Slit, Left"),
+    /**The ui label for the rslit_b1_right slit adder*/
+    "adder.rslit_b1_right.label": z
+        .string()
+        .describe("The ui label for the rslit_b1_right slit adder")
+        .default("Right Pocket Slit: Brochure 4 3/8 Top Slit, Right"),
+    /**The ui label for the rslit_b2_center slit adder*/
+    "adder.rslit_b2_center.label": z
+        .string()
+        .describe("The ui label for the rslit_b2_center slit adder")
+        .default("Right Pocket Slit: Brochure 6 3/8 Top Slit, Centered"),
+    /**The ui label for the rslit_b2_left slit adder*/
+    "adder.rslit_b2_left.label": z
+        .string()
+        .describe("The ui label for the rslit_b2_left slit adder")
+        .default("Right Pocket Slit: Brochure 6 3/8 Top Slit, Left"),
+    /**The ui label for the rslit_b2_right slit adder*/
+    "adder.rslit_b2_right.label": z
+        .string()
+        .describe("The ui label for the rslit_b2_right slit adder")
+        .default("Right Pocket Slit: Brochure 6 3/8 Top Slit, Right"),
+    /**The ui label for the rslit_b6_center slit adder*/
+    "adder.rslit_b6_center.label": z
+        .string()
+        .describe("The ui label for the rslit_b6_center slit adder")
+        .default("Right Pocket Slit: Brochure 4 3/8 Curved Up Slit, Centered"),
+    /**The ui label for the rslit_b7_center slit adder*/
+    "adder.rslit_b7_center.label": z
+        .string()
+        .describe("The ui label for the rslit_b7_center slit adder")
+        .default("Right Pocket Slit: Brochure 6 3/8 Curved Up Slit, Centered"),
+    /**The ui label for the rslit_b8_center slit adder*/
+    "adder.rslit_b8_center.label": z
+        .string()
+        .describe("The ui label for the rslit_b8_center slit adder")
+        .default("Right Pocket Slit: Brochure 4 3/8 Curved Down Slit, Centered"),
+    /**The ui label for the rslit_c1_center slit adder*/
+    "adder.rslit_c1_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c1_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Square Tabs, Centered"),
+    /**The ui label for the rslit_c1_left slit adder*/
+    "adder.rslit_c1_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c1_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Square Tabs, Left"),
+    /**The ui label for the rslit_c1_right slit adder*/
+    "adder.rslit_c1_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c1_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Square Tabs, Right"),
+    /**The ui label for the rslit_c1v_bot slit adder*/
+    "adder.rslit_c1v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_c1v_bot slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Square Tabs, Bottom"),
+    /**The ui label for the rslit_c1v_mid slit adder*/
+    "adder.rslit_c1v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_c1v_mid slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Square Tabs, Middle"),
+    /**The ui label for the rslit_c1v_top slit adder*/
+    "adder.rslit_c1v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_c1v_top slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Square Tabs, Top"),
+    /**The ui label for the rslit_c2_center slit adder*/
+    "adder.rslit_c2_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c2_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 8 Square Corners, Centered"),
+    /**The ui label for the rslit_c2_left slit adder*/
+    "adder.rslit_c2_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c2_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 8 Square Corners, Left"),
+    /**The ui label for the rslit_c2_right slit adder*/
+    "adder.rslit_c2_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c2_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 8 Square Corners, Right"),
+    /**The ui label for the rslit_c3_center slit adder*/
+    "adder.rslit_c3_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c3_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Half Moon Tabs, Centered"),
+    /**The ui label for the rslit_c3_left slit adder*/
+    "adder.rslit_c3_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c3_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Half Moon Tabs, Left"),
+    /**The ui label for the rslit_c3_right slit adder*/
+    "adder.rslit_c3_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c3_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Half Moon Tabs, Right"),
+    /**The ui label for the rslit_c4_center slit adder*/
+    "adder.rslit_c4_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c4_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Centered"),
+    /**The ui label for the rslit_c4_left slit adder*/
+    "adder.rslit_c4_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c4_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Left"),
+    /**The ui label for the rslit_c4_right slit adder*/
+    "adder.rslit_c4_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c4_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 4 Quarter Moon Tabs, Right"),
+    /**The ui label for the rslit_c5_center slit adder*/
+    "adder.rslit_c5_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c5_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Centered"),
+    /**The ui label for the rslit_c5_left slit adder*/
+    "adder.rslit_c5_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c5_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Left"),
+    /**The ui label for the rslit_c5_right slit adder*/
+    "adder.rslit_c5_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c5_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Wide) Top Right, Right"),
+    /**The ui label for the rslit_c6_center slit adder*/
+    "adder.rslit_c6_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c6_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Centered"),
+    /**The ui label for the rslit_c6_left slit adder*/
+    "adder.rslit_c6_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c6_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Left"),
+    /**The ui label for the rslit_c6_right slit adder*/
+    "adder.rslit_c6_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c6_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Right"),
+    /**The ui label for the rslit_c6v_bot slit adder*/
+    "adder.rslit_c6v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_c6v_bot slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Bottom"),
+    /**The ui label for the rslit_c6v_mid slit adder*/
+    "adder.rslit_c6v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_c6v_mid slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Middle"),
+    /**The ui label for the rslit_c6v_top slit adder*/
+    "adder.rslit_c6v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_c6v_top slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Wide) Top Right, Top"),
+    /**The ui label for the rslit_c7_center slit adder*/
+    "adder.rslit_c7_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c7_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Centered"),
+    /**The ui label for the rslit_c7_left slit adder*/
+    "adder.rslit_c7_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c7_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Left"),
+    /**The ui label for the rslit_c7_right slit adder*/
+    "adder.rslit_c7_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c7_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Right"),
+    /**The ui label for the rslit_c7v_bot slit adder*/
+    "adder.rslit_c7v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_c7v_bot slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the rslit_c7v_mid slit adder*/
+    "adder.rslit_c7v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_c7v_mid slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the rslit_c7v_top slit adder*/
+    "adder.rslit_c7v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_c7v_top slit adder")
+        .default("Right Pocket Slit: Combination Business Card 2 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the rslit_c8_center slit adder*/
+    "adder.rslit_c8_center.label": z
+        .string()
+        .describe("The ui label for the rslit_c8_center slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Centered"),
+    /**The ui label for the rslit_c8_left slit adder*/
+    "adder.rslit_c8_left.label": z
+        .string()
+        .describe("The ui label for the rslit_c8_left slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Left"),
+    /**The ui label for the rslit_c8_right slit adder*/
+    "adder.rslit_c8_right.label": z
+        .string()
+        .describe("The ui label for the rslit_c8_right slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Right"),
+    /**The ui label for the rslit_c8v_bot slit adder*/
+    "adder.rslit_c8v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_c8v_bot slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the rslit_c8v_mid slit adder*/
+    "adder.rslit_c8v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_c8v_mid slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the rslit_c8v_top slit adder*/
+    "adder.rslit_c8v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_c8v_top slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the rslit_c9v_bot slit adder*/
+    "adder.rslit_c9v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_c9v_bot slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Bottom"),
+    /**The ui label for the rslit_c9v_mid slit adder*/
+    "adder.rslit_c9v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_c9v_mid slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Middle"),
+    /**The ui label for the rslit_c9v_top slit adder*/
+    "adder.rslit_c9v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_c9v_top slit adder")
+        .default("Right Pocket Slit: Combination Business Card 3 Sets of 2 Corners (Tall) Top Right, Top"),
+    /**The ui label for the rslit_d1_center slit adder*/
+    "adder.rslit_d1_center.label": z
+        .string()
+        .describe("The ui label for the rslit_d1_center slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Top Slit, Centered"),
+    /**The ui label for the rslit_d1_left slit adder*/
+    "adder.rslit_d1_left.label": z
+        .string()
+        .describe("The ui label for the rslit_d1_left slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Top Slit, Left"),
+    /**The ui label for the rslit_d1_right slit adder*/
+    "adder.rslit_d1_right.label": z
+        .string()
+        .describe("The ui label for the rslit_d1_right slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Top Slit, Right"),
+    /**The ui label for the rslit_d2_center slit adder*/
+    "adder.rslit_d2_center.label": z
+        .string()
+        .describe("The ui label for the rslit_d2_center slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Curved Down Slit, Centered"),
+    /**The ui label for the rslit_d2_left slit adder*/
+    "adder.rslit_d2_left.label": z
+        .string()
+        .describe("The ui label for the rslit_d2_left slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Curved Down Slit, Left"),
+    /**The ui label for the rslit_d2_right slit adder*/
+    "adder.rslit_d2_right.label": z
+        .string()
+        .describe("The ui label for the rslit_d2_right slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Curved Down Slit, Right"),
+    /**The ui label for the rslit_d3_center slit adder*/
+    "adder.rslit_d3_center.label": z
+        .string()
+        .describe("The ui label for the rslit_d3_center slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Curved Up Slit, Centered"),
+    /**The ui label for the rslit_d3_left slit adder*/
+    "adder.rslit_d3_left.label": z
+        .string()
+        .describe("The ui label for the rslit_d3_left slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Curved Up Slit, Left"),
+    /**The ui label for the rslit_d3_right slit adder*/
+    "adder.rslit_d3_right.label": z
+        .string()
+        .describe("The ui label for the rslit_d3_right slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Curved Up Slit, Right"),
+    /**The ui label for the rslit_d4_center slit adder*/
+    "adder.rslit_d4_center.label": z
+        .string()
+        .describe("The ui label for the rslit_d4_center slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Center Slit, Centered"),
+    /**The ui label for the rslit_d4_left slit adder*/
+    "adder.rslit_d4_left.label": z
+        .string()
+        .describe("The ui label for the rslit_d4_left slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Center Slit, Left"),
+    /**The ui label for the rslit_d4_right slit adder*/
+    "adder.rslit_d4_right.label": z
+        .string()
+        .describe("The ui label for the rslit_d4_right slit adder")
+        .default("Right Pocket Slit: CD 5 1/4 Center Slit, Right"),
+    /**The ui label for the rslit_d5_center slit adder*/
+    "adder.rslit_d5_center.label": z
+        .string()
+        .describe("The ui label for the rslit_d5_center slit adder")
+        .default("Right Pocket Slit: CD 2 1/4 7 Variable Center Slit, Centered"),
+    /**The ui label for the rslit_d5_left slit adder*/
+    "adder.rslit_d5_left.label": z
+        .string()
+        .describe("The ui label for the rslit_d5_left slit adder")
+        .default("Right Pocket Slit: CD 2 1/4 7 Variable Center Slit, Left"),
+    /**The ui label for the rslit_d5_right slit adder*/
+    "adder.rslit_d5_right.label": z
+        .string()
+        .describe("The ui label for the rslit_d5_right slit adder")
+        .default("Right Pocket Slit: CD 2 1/4 7 Variable Center Slit, Right"),
+    /**The ui label for the rslit_f1_center slit adder*/
+    "adder.rslit_f1_center.label": z
+        .string()
+        .describe("The ui label for the rslit_f1_center slit adder")
+        .default("Right Pocket Slit: Flash Drive 1/8 1/4 Thick, Centered"),
+    /**The ui label for the rslit_f1_left slit adder*/
+    "adder.rslit_f1_left.label": z
+        .string()
+        .describe("The ui label for the rslit_f1_left slit adder")
+        .default("Right Pocket Slit: Flash Drive 1/8 1/4 Thick, Left"),
+    /**The ui label for the rslit_f2_center slit adder*/
+    "adder.rslit_f2_center.label": z
+        .string()
+        .describe("The ui label for the rslit_f2_center slit adder")
+        .default("Right Pocket Slit: Flash Drive 5/16 1/2 Thick, Centered"),
+    /**The ui label for the rslit_f2_left slit adder*/
+    "adder.rslit_f2_left.label": z
+        .string()
+        .describe("The ui label for the rslit_f2_left slit adder")
+        .default("Right Pocket Slit: Flash Drive 5/16 1/2 Thick, Left"),
+    /**The ui label for the rslit_f2_right slit adder*/
+    "adder.rslit_f2_right.label": z
+        .string()
+        .describe("The ui label for the rslit_f2_right slit adder")
+        .default("Right Pocket Slit: Flash Drive 5/16 1/2 Thick, Right"),
+    /**The ui label for the rslit_h1_center slit adder*/
+    "adder.rslit_h1_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h1_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Corners, Centered"),
+    /**The ui label for the rslit_h1_left slit adder*/
+    "adder.rslit_h1_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h1_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Corners, Left"),
+    /**The ui label for the rslit_h1_right slit adder*/
+    "adder.rslit_h1_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h1_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Corners, Right"),
+    /**The ui label for the rslit_h1v_bot slit adder*/
+    "adder.rslit_h1v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_h1v_bot slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Corners, Bottom"),
+    /**The ui label for the rslit_h1v_mid slit adder*/
+    "adder.rslit_h1v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_h1v_mid slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Corners, Middle"),
+    /**The ui label for the rslit_h1v_top slit adder*/
+    "adder.rslit_h1v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_h1v_top slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Corners, Top"),
+    /**The ui label for the rslit_h2_center slit adder*/
+    "adder.rslit_h2_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h2_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the rslit_h2_left slit adder*/
+    "adder.rslit_h2_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h2_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the rslit_h2_right slit adder*/
+    "adder.rslit_h2_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h2_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the rslit_h2v_bot slit adder*/
+    "adder.rslit_h2v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_h2v_bot slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Right, Bottom"),
+    /**The ui label for the rslit_h2v_mid slit adder*/
+    "adder.rslit_h2v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_h2v_mid slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Right, Middle"),
+    /**The ui label for the rslit_h2v_top slit adder*/
+    "adder.rslit_h2v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_h2v_top slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Right, Top"),
+    /**The ui label for the rslit_h3_center slit adder*/
+    "adder.rslit_h3_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h3_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the rslit_h3_left slit adder*/
+    "adder.rslit_h3_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h3_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the rslit_h3_right slit adder*/
+    "adder.rslit_h3_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h3_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the rslit_h3v_bot slit adder*/
+    "adder.rslit_h3v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_h3v_bot slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Left, Bottom"),
+    /**The ui label for the rslit_h3v_mid slit adder*/
+    "adder.rslit_h3v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_h3v_mid slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Left, Middle"),
+    /**The ui label for the rslit_h3v_top slit adder*/
+    "adder.rslit_h3v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_h3v_top slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Corners Top Left, Top"),
+    /**The ui label for the rslit_h4_center slit adder*/
+    "adder.rslit_h4_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h4_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Square Tabs, Centered"),
+    /**The ui label for the rslit_h4_left slit adder*/
+    "adder.rslit_h4_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h4_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Square Tabs, Left"),
+    /**The ui label for the rslit_h4_right slit adder*/
+    "adder.rslit_h4_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h4_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Square Tabs, Right"),
+    /**The ui label for the rslit_h4v_bot slit adder*/
+    "adder.rslit_h4v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_h4v_bot slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Square Tabs, Bottom"),
+    /**The ui label for the rslit_h4v_mid slit adder*/
+    "adder.rslit_h4v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_h4v_mid slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Square Tabs, Middle"),
+    /**The ui label for the rslit_h4v_top slit adder*/
+    "adder.rslit_h4v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_h4v_top slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Square Tabs, Top"),
+    /**The ui label for the rslit_h5_center slit adder*/
+    "adder.rslit_h5_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h5_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Centered"),
+    /**The ui label for the rslit_h5_left slit adder*/
+    "adder.rslit_h5_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h5_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Left"),
+    /**The ui label for the rslit_h5_right slit adder*/
+    "adder.rslit_h5_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h5_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Square Corners Top Right, Right"),
+    /**The ui label for the rslit_h6_center slit adder*/
+    "adder.rslit_h6_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h6_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Centered"),
+    /**The ui label for the rslit_h6_left slit adder*/
+    "adder.rslit_h6_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h6_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Left"),
+    /**The ui label for the rslit_h6_right slit adder*/
+    "adder.rslit_h6_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h6_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 2 Square Corners Top Left, Right"),
+    /**The ui label for the rslit_h7_center slit adder*/
+    "adder.rslit_h7_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h7_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Square Corners, Centered"),
+    /**The ui label for the rslit_h7_left slit adder*/
+    "adder.rslit_h7_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h7_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Square Corners, Left"),
+    /**The ui label for the rslit_h7_right slit adder*/
+    "adder.rslit_h7_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h7_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card 4 Square Corners, Right"),
+    /**The ui label for the rslit_h8_center slit adder*/
+    "adder.rslit_h8_center.label": z
+        .string()
+        .describe("The ui label for the rslit_h8_center slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Half Moon Tabs, Centered"),
+    /**The ui label for the rslit_h8_left slit adder*/
+    "adder.rslit_h8_left.label": z
+        .string()
+        .describe("The ui label for the rslit_h8_left slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Half Moon Tabs, Left"),
+    /**The ui label for the rslit_h8_right slit adder*/
+    "adder.rslit_h8_right.label": z
+        .string()
+        .describe("The ui label for the rslit_h8_right slit adder")
+        .default("Right Pocket Slit: Horizontal Business Card Half Moon Tabs, Right"),
+    /**The ui label for the rslit_k1 slit adder*/
+    "adder.rslit_k1.label": z
+        .string()
+        .describe("The ui label for the rslit_k1 slit adder")
+        .default("Right Pocket Slit: Key Card Slit"),
+    /**The ui label for the rslit_l1_right slit adder*/
+    "adder.rslit_l1_right.label": z
+        .string()
+        .describe("The ui label for the rslit_l1_right slit adder")
+        .default("Right Pocket Slit: Flash Drive 1/8 1/4 Thick, Right"),
+    /**The ui label for the rslit_none slit adder*/
+    "adder.rslit_none.label": z
+        .string()
+        .describe("The ui label for the rslit_none slit adder")
+        .default("Right Pocket Slit: None"),
+    /**The ui label for the rslit_v1_center slit adder*/
+    "adder.rslit_v1_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v1_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Corners, Centered"),
+    /**The ui label for the rslit_v1_left slit adder*/
+    "adder.rslit_v1_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v1_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Corners, Left"),
+    /**The ui label for the rslit_v1_right slit adder*/
+    "adder.rslit_v1_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v1_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Corners, Right"),
+    /**The ui label for the rslit_v1v_bot slit adder*/
+    "adder.rslit_v1v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_v1v_bot slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Corners, Bottom"),
+    /**The ui label for the rslit_v1v_mid slit adder*/
+    "adder.rslit_v1v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_v1v_mid slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Corners, Middle"),
+    /**The ui label for the rslit_v1v_top slit adder*/
+    "adder.rslit_v1v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_v1v_top slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Corners, Top"),
+    /**The ui label for the rslit_v2_center slit adder*/
+    "adder.rslit_v2_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v2_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Right, Centered"),
+    /**The ui label for the rslit_v2_left slit adder*/
+    "adder.rslit_v2_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v2_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Right, Left"),
+    /**The ui label for the rslit_v2_right slit adder*/
+    "adder.rslit_v2_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v2_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Right, Right"),
+    /**The ui label for the rslit_v2v_bot slit adder*/
+    "adder.rslit_v2v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_v2v_bot slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Right, Bottom"),
+    /**The ui label for the rslit_v2v_mid slit adder*/
+    "adder.rslit_v2v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_v2v_mid slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Right, Middle"),
+    /**The ui label for the rslit_v2v_top slit adder*/
+    "adder.rslit_v2v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_v2v_top slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Right, Top"),
+    /**The ui label for the rslit_v3_center slit adder*/
+    "adder.rslit_v3_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v3_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Left, Centered"),
+    /**The ui label for the rslit_v3_left slit adder*/
+    "adder.rslit_v3_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v3_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Left, Left"),
+    /**The ui label for the rslit_v3_right slit adder*/
+    "adder.rslit_v3_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v3_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Left, Right"),
+    /**The ui label for the rslit_v3v_bot slit adder*/
+    "adder.rslit_v3v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_v3v_bot slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Left, Bottom"),
+    /**The ui label for the rslit_v3v_mid slit adder*/
+    "adder.rslit_v3v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_v3v_mid slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Left, Middle"),
+    /**The ui label for the rslit_v3v_top slit adder*/
+    "adder.rslit_v3v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_v3v_top slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Corners Top Left, Top"),
+    /**The ui label for the rslit_v4_center slit adder*/
+    "adder.rslit_v4_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v4_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Tabs, Centered"),
+    /**The ui label for the rslit_v4_left slit adder*/
+    "adder.rslit_v4_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v4_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Tabs, Left"),
+    /**The ui label for the rslit_v4_right slit adder*/
+    "adder.rslit_v4_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v4_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Tabs, Right"),
+    /**The ui label for the rslit_v4v_bot slit adder*/
+    "adder.rslit_v4v_bot.label": z
+        .string()
+        .describe("The ui label for the rslit_v4v_bot slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Tabs, Bottom"),
+    /**The ui label for the rslit_v4v_mid slit adder*/
+    "adder.rslit_v4v_mid.label": z
+        .string()
+        .describe("The ui label for the rslit_v4v_mid slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Tabs, Middle"),
+    /**The ui label for the rslit_v4v_top slit adder*/
+    "adder.rslit_v4v_top.label": z
+        .string()
+        .describe("The ui label for the rslit_v4v_top slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Tabs, Top"),
+    /**The ui label for the rslit_v5_center slit adder*/
+    "adder.rslit_v5_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v5_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Centered"),
+    /**The ui label for the rslit_v5_left slit adder*/
+    "adder.rslit_v5_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v5_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Left"),
+    /**The ui label for the rslit_v5_right slit adder*/
+    "adder.rslit_v5_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v5_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Corners Top Right, Right"),
+    /**The ui label for the rslit_v6_center slit adder*/
+    "adder.rslit_v6_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v6_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Centered"),
+    /**The ui label for the rslit_v6_left slit adder*/
+    "adder.rslit_v6_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v6_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Left"),
+    /**The ui label for the rslit_v6_right slit adder*/
+    "adder.rslit_v6_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v6_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 2 Square Corners Top Left, Right"),
+    /**The ui label for the rslit_v7_center slit adder*/
+    "adder.rslit_v7_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v7_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Square Corners, Centered"),
+    /**The ui label for the rslit_v7_left slit adder*/
+    "adder.rslit_v7_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v7_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Square Corners, Left"),
+    /**The ui label for the rslit_v7_right slit adder*/
+    "adder.rslit_v7_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v7_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card 4 Square Corners, Right"),
+    /**The ui label for the rslit_v8_center slit adder*/
+    "adder.rslit_v8_center.label": z
+        .string()
+        .describe("The ui label for the rslit_v8_center slit adder")
+        .default("Right Pocket Slit: Vertical Business Card Half Moon Tabs, Centered"),
+    /**The ui label for the rslit_v8_left slit adder*/
+    "adder.rslit_v8_left.label": z
+        .string()
+        .describe("The ui label for the rslit_v8_left slit adder")
+        .default("Right Pocket Slit: Vertical Business Card Half Moon Tabs, Left"),
+    /**The ui label for the rslit_v8_right slit adder*/
+    "adder.rslit_v8_right.label": z
+        .string()
+        .describe("The ui label for the rslit_v8_right slit adder")
+        .default("Right Pocket Slit: Vertical Business Card Half Moon Tabs, Right"),
     /**Error message when quantity is below the minimum order quantity.*/
     "error.ProductQuantityLessThanMinimumOrderQuantity": z
         .string()
