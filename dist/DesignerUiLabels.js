@@ -4246,5 +4246,5 @@ const _DesignerUiLabels = z
         .default("Bind the selected item"),
 })
     .passthrough()
-    .default({});
+    .prefault({});
 export const DesignerUiLabels = _DesignerUiLabels;

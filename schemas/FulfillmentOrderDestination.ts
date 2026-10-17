@@ -34,7 +34,7 @@ const _FulfillmentOrderDestination = z
         const result = z.any().safeParse(value[key]);
         if (!result.success) {
           ctx.addIssue({
-            path: [...ctx.path, key],
+            path: [key],
             code: "custom",
             message: `Invalid input: must match additionalProperties schema`,
             params: {

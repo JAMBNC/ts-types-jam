@@ -1,5 +1,5 @@
 import { z } from "zod";
-declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
+declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "menubar.undo.label": z.ZodDefault<z.ZodString>;
     "menubar.undo.icon": z.ZodDefault<z.ZodString>;
     "menubar.redo.label": z.ZodDefault<z.ZodString>;

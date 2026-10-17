@@ -23,6 +23,7 @@ import { DesignerRemoveCoatingTrackingEvent } from "./DesignerRemoveCoatingTrack
 import { DesignerRemoveFromCartTrackingEvent } from "./DesignerRemoveFromCartTrackingEvent.js";
 import { DesignerRemoveItemTrackingEvent } from "./DesignerRemoveItemTrackingEvent.js";
 import { DesignerReviewDesignTrackingEvent } from "./DesignerReviewDesignTrackingEvent.js";
+import { DesignerStartFromStarterTrackingEvent } from "./DesignerStartFromStarterTrackingEvent.js";
 import { DesignerToolInteractionTrackingEvent } from "./DesignerToolInteractionTrackingEvent.js";
 import { DesignerUpdateInCartTrackingEvent } from "./DesignerUpdateInCartTrackingEvent.js";
 
@@ -56,6 +57,7 @@ const _DesignerAnalyticsEvent = z
       DesignerPriceSummaryViewedTrackingEvent,
       DesignerMiscInteractionTrackingEvent,
       DesignerErrorTrackingEvent,
+      DesignerStartFromStarterTrackingEvent,
     ]),
   })
   .strict()

@@ -6,6 +6,7 @@ declare const _DesignerEndpoints: z.ZodObject<{
     colors: import("./DesignerColorEndpoints.js").DesignerColorEndpointsSchema;
     vendor: z.ZodOptional<import("./DesignerVendorEndpoints.js").DesignerVendorEndpointsSchema>;
     template: z.ZodOptional<import("./DesignerTemplateEndpoints.js").DesignerTemplateEndpointsSchema>;
+    starters: z.ZodOptional<import("./DesignerStarterEndpoints.js").DesignerStarterEndpointsSchema>;
 }, z.core.$strict>;
 type _DesignerEndpointsSchema = typeof _DesignerEndpoints;
 export interface DesignerEndpointsSchema extends _DesignerEndpointsSchema {

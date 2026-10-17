@@ -3,6 +3,7 @@ import { DesignerAddressEndpoints } from "./DesignerAddressEndpoints.js";
 import { DesignerColorEndpoints } from "./DesignerColorEndpoints.js";
 import { DesignerFontEndpoints } from "./DesignerFontEndpoints.js";
 import { DesignerImageEndpoints } from "./DesignerImageEndpoints.js";
+import { DesignerStarterEndpoints } from "./DesignerStarterEndpoints.js";
 import { DesignerTemplateEndpoints } from "./DesignerTemplateEndpoints.js";
 import { DesignerVendorEndpoints } from "./DesignerVendorEndpoints.js";
 
@@ -14,6 +15,7 @@ const _DesignerEndpoints = z
     colors: DesignerColorEndpoints,
     vendor: DesignerVendorEndpoints.optional(),
     template: DesignerTemplateEndpoints.optional(),
+    starters: DesignerStarterEndpoints.optional(),
   })
   .strict();
 type _DesignerEndpointsSchema = typeof _DesignerEndpoints;

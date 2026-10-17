@@ -25,5 +25,5 @@ const _DesignerImageReductionConfig = z
         .optional(),
 })
     .passthrough()
-    .default({});
+    .prefault({});
 export const DesignerImageReductionConfig = _DesignerImageReductionConfig;

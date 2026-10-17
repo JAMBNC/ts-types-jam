@@ -8,7 +8,7 @@ const _DesignerPricing = z
       const result = z.string().describe("A product sku").safeParse(key);
       if (!result.success) {
         ctx.addIssue({
-          path: [...ctx.path, key],
+          path: [key],
           code: "custom",
           message: `Invalid property name: ${key}`,
           params: {

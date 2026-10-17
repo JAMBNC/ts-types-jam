@@ -5020,7 +5020,7 @@ const _DesignerUiLabels = z
       .default("Bind the selected item"),
   })
   .passthrough()
-  .default({});
+  .prefault({});
 type _DesignerUiLabelsSchema = typeof _DesignerUiLabels;
 export interface DesignerUiLabelsSchema extends _DesignerUiLabelsSchema {}
 export const DesignerUiLabels: DesignerUiLabelsSchema = _DesignerUiLabels;

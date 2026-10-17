@@ -28,7 +28,7 @@ const _DesignerImageReductionConfig = z
       .optional(),
   })
   .passthrough()
-  .default({});
+  .prefault({});
 type _DesignerImageReductionConfigSchema = typeof _DesignerImageReductionConfig;
 export interface DesignerImageReductionConfigSchema extends _DesignerImageReductionConfigSchema {}
 export const DesignerImageReductionConfig: DesignerImageReductionConfigSchema =

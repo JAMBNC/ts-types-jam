@@ -1,5 +1,5 @@
 import { z } from "zod";
-declare const _DesignerImageReductionConfig: z.ZodDefault<z.ZodObject<{
+declare const _DesignerImageReductionConfig: z.ZodPrefault<z.ZodObject<{
     enabled: z.ZodDefault<z.ZodBoolean>;
     maxColors: z.ZodDefault<z.ZodNumber>;
     reductionEndpointUrl: z.ZodOptional<z.ZodString>;

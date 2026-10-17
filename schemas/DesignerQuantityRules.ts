@@ -8,7 +8,7 @@ const _DesignerQuantityRules = z
       const result = z.string().describe("sku").safeParse(key);
       if (!result.success) {
         ctx.addIssue({
-          path: [...ctx.path, key],
+          path: [key],
           code: "custom",
           message: `Invalid property name: ${key}`,
           params: {

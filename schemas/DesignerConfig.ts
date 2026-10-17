@@ -13,7 +13,7 @@ const _DesignerConfig = z
         const result = AdderCodeEnum.safeParse(key);
         if (!result.success) {
           ctx.addIssue({
-            path: [...ctx.path, key],
+            path: [key],
             code: "custom",
             message: `Invalid property name: ${key}`,
             params: {
@@ -162,7 +162,7 @@ const _DesignerConfig = z
             const result = DesignerConfigFeatureValue.safeParse(value[key]);
             if (!result.success) {
               ctx.addIssue({
-                path: [...ctx.path, key],
+                path: [key],
                 code: "custom",
                 message: `Invalid input: must match additionalProperties schema`,
                 params: {
