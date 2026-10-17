@@ -204,6 +204,7 @@ export * from './DesignerAddressBookUploadSuccessResponse.js';
 export * from './DesignerAddressBookUploadErrorResponse.js';
 export * from './DesignerAddressBookUploadResponse.js';
 export * from './DesignerLoadResponse.js';
+export * from './DesignerBaseDesignBoot.js';
 export * from './DesignerSaveRequest.js';
 export * from './DesignerSaveResponse.js';
 export * from './DesignerSheetUploadRequest.js';

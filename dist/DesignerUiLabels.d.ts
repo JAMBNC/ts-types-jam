@@ -68,6 +68,12 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "workspace.toolBar.tab.image.gallery.delete.button.icon": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingPageSelector.front.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingPageSelector.back.label": z.ZodDefault<z.ZodString>;
+    "workspace.canvasSpace.widgets.floatingPageSelector.outside.label": z.ZodDefault<z.ZodString>;
+    "workspace.canvasSpace.widgets.floatingPageSelector.inside.label": z.ZodDefault<z.ZodString>;
+    "workspace.canvasSpace.widgets.floatingPageSelector.closedFront.label": z.ZodDefault<z.ZodString>;
+    "workspace.canvasSpace.widgets.floatingPageSelector.closedBack.label": z.ZodDefault<z.ZodString>;
+    "workspace.canvasSpace.widgets.floatingPageSelector.insideSpread.label": z.ZodDefault<z.ZodString>;
+    "workspace.canvasSpace.widgets.floatingPageSelector.flat.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingToolTip.safetyLine.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingToolTip.safetyLine.hover.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingToolTip.cutLine.label": z.ZodDefault<z.ZodString>;
@@ -262,6 +268,7 @@ declare const _DesignerUiLabels: z.ZodDefault<z.ZodObject<{
     "editor.fold.views.help": z.ZodDefault<z.ZodString>;
     "editor.fold.view.name": z.ZodDefault<z.ZodString>;
     "editor.fold.view.nameHelp": z.ZodDefault<z.ZodString>;
+    "editor.fold.view.standardNameHelp": z.ZodDefault<z.ZodString>;
     "editor.fold.view.nameOf": z.ZodDefault<z.ZodString>;
     "editor.fold.view.shows": z.ZodDefault<z.ZodString>;
     "editor.fold.view.showsHelp": z.ZodDefault<z.ZodString>;

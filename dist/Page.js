@@ -22,6 +22,11 @@ const _Page = z
         .string()
         .describe("The DesignView this page renders, by id. A view is a page.")
         .optional(),
+    /**What a human is shown for this page, from its DesignView's label. Only a view with no page selector ui label carries one: a standard view such as closedFront is named by DesignerUiLabels, never per style.*/
+    label: z
+        .string()
+        .describe("What a human is shown for this page, from its DesignView's label. Only a view with no page selector ui label carries one: a standard view such as closedFront is named by DesignerUiLabels, never per style.")
+        .optional(),
     width: Dimension.optional(),
 })
     .strict()

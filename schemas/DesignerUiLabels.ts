@@ -346,6 +346,48 @@ const _DesignerUiLabels = z
       .string()
       .describe("The label used for the back page selection option")
       .default("Back"),
+    /**The label used for the page selection option of a folded product's outside view, the open sheet's print side*/
+    "workspace.canvasSpace.widgets.floatingPageSelector.outside.label": z
+      .string()
+      .describe(
+        "The label used for the page selection option of a folded product's outside view, the open sheet's print side",
+      )
+      .default("Outside"),
+    /**The label used for the page selection option of a folded product's inside view, the open sheet's reverse side*/
+    "workspace.canvasSpace.widgets.floatingPageSelector.inside.label": z
+      .string()
+      .describe(
+        "The label used for the page selection option of a folded product's inside view, the open sheet's reverse side",
+      )
+      .default("Inside"),
+    /**The label used for the page selection option of a folded product's closed front preview*/
+    "workspace.canvasSpace.widgets.floatingPageSelector.closedFront.label": z
+      .string()
+      .describe(
+        "The label used for the page selection option of a folded product's closed front preview",
+      )
+      .default("Front"),
+    /**The label used for the page selection option of a folded product's closed back preview*/
+    "workspace.canvasSpace.widgets.floatingPageSelector.closedBack.label": z
+      .string()
+      .describe(
+        "The label used for the page selection option of a folded product's closed back preview",
+      )
+      .default("Back"),
+    /**The label used for the page selection option of an inside spread view*/
+    "workspace.canvasSpace.widgets.floatingPageSelector.insideSpread.label": z
+      .string()
+      .describe(
+        "The label used for the page selection option of an inside spread view",
+      )
+      .default("Inside Spread"),
+    /**The label used for the page selection option of a flat product's sheet view*/
+    "workspace.canvasSpace.widgets.floatingPageSelector.flat.label": z
+      .string()
+      .describe(
+        "The label used for the page selection option of a flat product's sheet view",
+      )
+      .default("Flat Sheet"),
     /**The label used for the safety line floating tooltip*/
     "workspace.canvasSpace.widgets.floatingToolTip.safetyLine.label": z
       .string()
@@ -1405,6 +1447,15 @@ const _DesignerUiLabels = z
       .describe("Explains a view's name")
       .default(
         "What customers see on this view's tab, like Front, Inside or Back.",
+      ),
+    /**Explains why a standard view's name cannot be edited per style*/
+    "editor.fold.view.standardNameHelp": z
+      .string()
+      .describe(
+        "Explains why a standard view's name cannot be edited per style",
+      )
+      .default(
+        "Every style shows this view under the same name, from the designer's labels.",
       ),
     /**The accessible name of a view's name field. Can utilize $view*/
     "editor.fold.view.nameOf": z

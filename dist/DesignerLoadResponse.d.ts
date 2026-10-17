@@ -6,6 +6,7 @@ declare const _DesignerLoadResponse: z.ZodObject<{
         label: z.ZodString;
     }, z.core.$strict>>>;
     designPreviewImage: z.ZodOptional<z.ZodString>;
+    baseDesign: z.ZodOptional<import("./DesignerBaseDesignBoot.js").DesignerBaseDesignBootSchema>;
 }, z.core.$strict>;
 type _DesignerLoadResponseSchema = typeof _DesignerLoadResponse;
 export interface DesignerLoadResponseSchema extends _DesignerLoadResponseSchema {

@@ -42,11 +42,11 @@ const _DesignFoldEdit = z
         z
           .object({
             id: z.string(),
-            /**What a human is shown for the view. Prepress sets it here because the fold engine's names are not the product's.*/
+            /**What a human is shown for a view with no page selector ui label. Prepress names such a view here because the fold engine's names are not the product's; a standard view's label is not editable.*/
             label: z
               .string()
               .describe(
-                "What a human is shown for the view. Prepress sets it here because the fold engine's names are not the product's.",
+                "What a human is shown for a view with no page selector ui label. Prepress names such a view here because the fold engine's names are not the product's; a standard view's label is not editable.",
               )
               .optional(),
             state: z.string().optional(),

@@ -6,6 +6,7 @@ declare const _Page: z.ZodObject<{
     restrictions: z.ZodOptional<import("./PageRestrictions.js").PageRestrictionsSchema>;
     regions: z.ZodOptional<z.ZodArray<import("./DesignRegion.js").DesignRegionSchema>>;
     view: z.ZodOptional<z.ZodString>;
+    label: z.ZodOptional<z.ZodString>;
     width: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
 }, z.core.$strict>;
 type _PageSchema = typeof _Page;

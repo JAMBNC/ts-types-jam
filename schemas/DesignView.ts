@@ -6,10 +6,12 @@ import { Dimension } from "./Dimension.js";
 const _DesignView = z
   .object({
     id: z.string(),
-    /**What a human is shown. Never a hardcoded 'Front'/'Back'.*/
+    /**What a human is shown for a view with no page selector ui label, such as an outsideEdges face that is a Pocket on one style and a Gusset on another. A standard view such as closedFront is named by DesignerUiLabels and this is ignored for it.*/
     label: z
       .string()
-      .describe("What a human is shown. Never a hardcoded 'Front'/'Back'.")
+      .describe(
+        "What a human is shown for a view with no page selector ui label, such as an outsideEdges face that is a Pocket on one style and a Gusset on another. A standard view such as closedFront is named by DesignerUiLabels and this is ignored for it.",
+      )
       .optional(),
     width: Dimension.optional(),
     height: Dimension.optional(),
