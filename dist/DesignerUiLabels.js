@@ -659,6 +659,21 @@ const _DesignerUiLabels = z
         .string()
         .describe("Label for Full Color (CMYK) printing")
         .default("Full Color"),
+    /**The ui label for one color printing on side one*/
+    "adder.color_side1_one_color.label": z
+        .string()
+        .describe("The ui label for one color printing on side one")
+        .default("One Color"),
+    /**The ui label for two color printing on side one*/
+    "adder.color_side1_two_color.label": z
+        .string()
+        .describe("The ui label for two color printing on side one")
+        .default("Two Colors"),
+    /**The ui label for full color printing on side one*/
+    "adder.color_side1_full_color.label": z
+        .string()
+        .describe("The ui label for full color printing on side one")
+        .default("Full Color"),
     /**The ui label for one color printing on side two*/
     "adder.color_side2_one_color.label": z
         .string()
@@ -683,6 +698,11 @@ const _DesignerUiLabels = z
     "adder.color_side2_cmyk.label": z
         .string()
         .describe("The ui label for full color (CMYK) printing on side two")
+        .default("Second Side Full Color"),
+    /**The ui label for full color printing on side two*/
+    "adder.color_side2_full_color.label": z
+        .string()
+        .describe("The ui label for full color printing on side two")
         .default("Second Side Full Color"),
     /**The ui label for white ink on side one*/
     "adder.white_ink_side1.label": z
