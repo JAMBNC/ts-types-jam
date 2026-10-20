@@ -659,6 +659,7 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "error.SelectedColorRequiresOffsetPrinting": z.ZodDefault<z.ZodString>;
     "error.SelectedColorRequiresDigitalPrinting": z.ZodDefault<z.ZodString>;
     "error.WhiteInkCannotBePrintedDigitally": z.ZodDefault<z.ZodString>;
+    "error.FoilCannotBePrintedDigitally": z.ZodDefault<z.ZodString>;
     "tool.panels.icon": z.ZodDefault<z.ZodString>;
     "tool.panels.label": z.ZodDefault<z.ZodString>;
     "tool.fold.icon": z.ZodDefault<z.ZodString>;

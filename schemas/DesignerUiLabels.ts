@@ -4017,6 +4017,15 @@ const _DesignerUiLabels = z
       .default(
         "White ink cannot be printed digitally, but one of your selections requires digital printing.",
       ),
+    /**Error message when foil is used on a design that requires digital printing.*/
+    "error.FoilCannotBePrintedDigitally": z
+      .string()
+      .describe(
+        "Error message when foil is used on a design that requires digital printing.",
+      )
+      .default(
+        "Foil cannot be printed digitally, but one of your selections requires digital printing.",
+      ),
     /**The icon for the template editor panels tool*/
     "tool.panels.icon": z
       .string()
