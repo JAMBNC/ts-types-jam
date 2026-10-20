@@ -8,6 +8,10 @@ declare const _Page: z.ZodObject<{
     view: z.ZodOptional<z.ZodString>;
     label: z.ZodOptional<z.ZodString>;
     width: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
+    process: z.ZodOptional<z.ZodEnum<{
+        digital: "digital";
+        offset: "offset";
+    }>>;
 }, z.core.$strict>;
 type _PageSchema = typeof _Page;
 export interface PageSchema extends _PageSchema {

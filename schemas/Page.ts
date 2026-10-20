@@ -33,6 +33,13 @@ const _Page = z
       )
       .optional(),
     width: Dimension.optional(),
+    /**How this page prints, stamped on the press copy from what was bought. A digital page prints process colour: every spot ink on it renders through its CMYK equivalent, except the plates the vendor keeps (the dieline, white ink). Offset, or none, keeps spot inks as plates.*/
+    process: z
+      .enum(["digital", "offset"])
+      .describe(
+        "How this page prints, stamped on the press copy from what was bought. A digital page prints process colour: every spot ink on it renders through its CMYK equivalent, except the plates the vendor keeps (the dieline, white ink). Offset, or none, keeps spot inks as plates.",
+      )
+      .optional(),
   })
   .strict()
   .describe(
