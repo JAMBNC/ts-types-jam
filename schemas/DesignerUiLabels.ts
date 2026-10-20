@@ -3878,6 +3878,129 @@ const _DesignerUiLabels = z
         "Error message when white ink is combined with other print processes.",
       )
       .default("White ink cannot be combined with other print processes."),
+    /**Error message when part of the design uses a print process the product does not offer for that kind of element. $items names each process with its element kind from the process.* and process.option.* labels, e.g. "ink images and ink text".*/
+    "error.ProcessNotOffered": z
+      .string()
+      .describe(
+        'Error message when part of the design uses a print process the product does not offer for that kind of element. $items names each process with its element kind from the process.* and process.option.* labels, e.g. "ink images and ink text".',
+      )
+      .default(
+        "This product can't print $items. Switch those parts of your design to another print method, or remove them.",
+      ),
+    /**Error message when the design combines print processes the product's process restrictions keep apart. $processes names the combined processes from the process.* labels, e.g. "ink and foil".*/
+    "error.ProcessCombinationNotAllowed": z
+      .string()
+      .describe(
+        'Error message when the design combines print processes the product\'s process restrictions keep apart. $processes names the combined processes from the process.* labels, e.g. "ink and foil".',
+      )
+      .default(
+        "This product can print $processes, but not together on one design. Keep just one of them.",
+      ),
+    /**Error message when the design uses none of the print processes the product's process restrictions require. $processes names the choices from the process.* labels, e.g. "ink or foil".*/
+    "error.ProcessRequired": z
+      .string()
+      .describe(
+        'Error message when the design uses none of the print processes the product\'s process restrictions require. $processes names the choices from the process.* labels, e.g. "ink or foil".',
+      )
+      .default("Your design needs at least one element printed in $processes."),
+    /**The name of the offset process in designer messages, filled in for $items and $processes.*/
+    "process.offset.label": z
+      .string()
+      .describe(
+        "The name of the offset process in designer messages, filled in for $items and $processes.",
+      )
+      .default("ink"),
+    /**The name of the digital process in designer messages, filled in for $items and $processes.*/
+    "process.digital.label": z
+      .string()
+      .describe(
+        "The name of the digital process in designer messages, filled in for $items and $processes.",
+      )
+      .default("ink"),
+    /**The name of the foil process in designer messages, filled in for $items and $processes.*/
+    "process.foil.label": z
+      .string()
+      .describe(
+        "The name of the foil process in designer messages, filled in for $items and $processes.",
+      )
+      .default("foil"),
+    /**The name of the emboss process in designer messages, filled in for $items and $processes.*/
+    "process.emboss.label": z
+      .string()
+      .describe(
+        "The name of the emboss process in designer messages, filled in for $items and $processes.",
+      )
+      .default("emboss"),
+    /**The name of the white ink process in designer messages, filled in for $items and $processes.*/
+    "process.whiteInk.label": z
+      .string()
+      .describe(
+        "The name of the white ink process in designer messages, filled in for $items and $processes.",
+      )
+      .default("white ink"),
+    /**The name of the letterpress process in designer messages, filled in for $items and $processes.*/
+    "process.letterpress.label": z
+      .string()
+      .describe(
+        "The name of the letterpress process in designer messages, filled in for $items and $processes.",
+      )
+      .default("letterpress"),
+    /**The name of the engraving process in designer messages, filled in for $items and $processes.*/
+    "process.engraving.label": z
+      .string()
+      .describe(
+        "The name of the engraving process in designer messages, filled in for $items and $processes.",
+      )
+      .default("engraving"),
+    /**The name of the screen process in designer messages, filled in for $items and $processes.*/
+    "process.screen.label": z
+      .string()
+      .describe(
+        "The name of the screen process in designer messages, filled in for $items and $processes.",
+      )
+      .default("screen print"),
+    /**The name of the inkjet process in designer messages, filled in for $items and $processes.*/
+    "process.inkjet.label": z
+      .string()
+      .describe(
+        "The name of the inkjet process in designer messages, filled in for $items and $processes.",
+      )
+      .default("inkjet"),
+    /**The name of the flexography process in designer messages, filled in for $items and $processes.*/
+    "process.flexography.label": z
+      .string()
+      .describe(
+        "The name of the flexography process in designer messages, filled in for $items and $processes.",
+      )
+      .default("flexography"),
+    /**The name of the sublimation process in designer messages, filled in for $items and $processes.*/
+    "process.sublimation.label": z
+      .string()
+      .describe(
+        "The name of the sublimation process in designer messages, filled in for $items and $processes.",
+      )
+      .default("sublimation"),
+    /**The name of the thermal process in designer messages, filled in for $items and $processes.*/
+    "process.thermal.label": z
+      .string()
+      .describe(
+        "The name of the thermal process in designer messages, filled in for $items and $processes.",
+      )
+      .default("thermal print"),
+    /**What image elements are called in designer messages, after the process name, e.g. "ink images".*/
+    "process.option.image.label": z
+      .string()
+      .describe(
+        'What image elements are called in designer messages, after the process name, e.g. "ink images".',
+      )
+      .default("images"),
+    /**What text elements are called in designer messages, after the process name, e.g. "ink text".*/
+    "process.option.text.label": z
+      .string()
+      .describe(
+        'What text elements are called in designer messages, after the process name, e.g. "ink text".',
+      )
+      .default("text"),
     /**Error when offset color like a Pantone attempts to print digitally*/
     "error.SelectedColorRequiresOffsetPrinting": z
       .string()
