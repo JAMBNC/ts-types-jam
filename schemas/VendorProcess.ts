@@ -20,7 +20,7 @@ const _VendorProcess = z
       .describe(
         "Whether variable elements in this color are priced by `pricingGroup` instead of being converted to digital. When false or omitted, variable elements force digital printing.",
       )
-      .default(false),
+      .optional(),
   })
   .passthrough();
 type _VendorProcessSchema = typeof _VendorProcess;
