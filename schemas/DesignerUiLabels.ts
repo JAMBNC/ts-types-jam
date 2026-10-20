@@ -3806,13 +3806,6 @@ const _DesignerUiLabels = z
         "Error message when the number of variable addresses exceeds the order quantity.",
       )
       .default("The number of variable addresses exceeds the order quantity."),
-    /**Error message when a variable address uses a color the vendor does not allow with variable elements.*/
-    "error.VendorColorDoesNotSupportVariableAddress": z
-      .string()
-      .describe(
-        "Error message when a variable address uses a color the vendor does not allow with variable elements.",
-      )
-      .default("The selected color cannot be used with variable address data."),
     /**Error message when too many foil colors are used.*/
     "error.ExceedsMaxFoilColorAllowance": z
       .string()
@@ -4015,6 +4008,15 @@ const _DesignerUiLabels = z
         "Error message when a digital only custom color attempts to print offset",
       )
       .default("You have a color that requires digital printing."),
+    /**Error message when white ink is used on a design that requires digital printing.*/
+    "error.WhiteInkCannotBePrintedDigitally": z
+      .string()
+      .describe(
+        "Error message when white ink is used on a design that requires digital printing.",
+      )
+      .default(
+        "White ink cannot be printed digitally, but one of your selections requires digital printing.",
+      ),
     /**The icon for the template editor panels tool*/
     "tool.panels.icon": z
       .string()

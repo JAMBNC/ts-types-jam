@@ -628,7 +628,6 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "error.ProductQuantityIncrementNotValid": z.ZodDefault<z.ZodString>;
     "error.VariableAddressMultipleFrames": z.ZodDefault<z.ZodString>;
     "error.VariableAddressCountExceedsOrderQuantity": z.ZodDefault<z.ZodString>;
-    "error.VendorColorDoesNotSupportVariableAddress": z.ZodDefault<z.ZodString>;
     "error.ExceedsMaxFoilColorAllowance": z.ZodDefault<z.ZodString>;
     "error.ExceedsMaxFoilCoverageAllowance": z.ZodDefault<z.ZodString>;
     "error.ExceedsMaxFoilStampAllowance": z.ZodDefault<z.ZodString>;
@@ -659,6 +658,7 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "process.option.text.label": z.ZodDefault<z.ZodString>;
     "error.SelectedColorRequiresOffsetPrinting": z.ZodDefault<z.ZodString>;
     "error.SelectedColorRequiresDigitalPrinting": z.ZodDefault<z.ZodString>;
+    "error.WhiteInkCannotBePrintedDigitally": z.ZodDefault<z.ZodString>;
     "tool.panels.icon": z.ZodDefault<z.ZodString>;
     "tool.panels.label": z.ZodDefault<z.ZodString>;
     "tool.fold.icon": z.ZodDefault<z.ZodString>;
