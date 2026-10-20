@@ -11,6 +11,7 @@ declare const _DesignerStarterOffer: z.ZodObject<{
         label: z.ZodString;
     }, z.core.$strict>>;
     workspaceOptionUuid: z.ZodOptional<z.ZodString>;
+    productSku: z.ZodOptional<z.ZodString>;
 }, z.core.$strict>;
 type _DesignerStarterOfferSchema = typeof _DesignerStarterOffer;
 export interface DesignerStarterOfferSchema extends _DesignerStarterOfferSchema {

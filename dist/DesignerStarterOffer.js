@@ -31,6 +31,11 @@ const _DesignerStarterOffer = z
         .regex(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/)
         .describe("The workspace option the starter opens in, when it names one.")
         .optional(),
+    /**The channel SKU picking this starter switches to. Present only when the starter is sold as a different product than the loaded one on this channel; absent means the starter applies to the loaded product.*/
+    productSku: z
+        .string()
+        .describe("The channel SKU picking this starter switches to. Present only when the starter is sold as a different product than the loaded one on this channel; absent means the starter applies to the loaded product.")
+        .optional(),
 })
     .strict()
     .describe("One starter the designer can offer for the loaded product: a head-start design in the product's style that the shopper opens and finishes.");

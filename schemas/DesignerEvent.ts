@@ -4,7 +4,9 @@ import { DesignerCartEvent } from "./DesignerCartEvent.js";
 import { DesignerLoginEvent } from "./DesignerLoginEvent.js";
 import { DesignerLogoClickEvent } from "./DesignerLogoClickEvent.js";
 import { DesignerPersistenceEvent } from "./DesignerPersistenceEvent.js";
+import { DesignerProductChangeEvent } from "./DesignerProductChangeEvent.js";
 import { DesignerReinitializeEvent } from "./DesignerReinitializeEvent.js";
+import { DesignerReinitializeRequestEvent } from "./DesignerReinitializeRequestEvent.js";
 import { DesignerReviewEvent } from "./DesignerReviewEvent.js";
 import { DesignerSaveEvent } from "./DesignerSaveEvent.js";
 
@@ -17,7 +19,8 @@ const _DesignerEvent = z
     DesignerLogoClickEvent,
     DesignerLoginEvent,
     DesignerCartEvent,
-    z.any(),
+    DesignerReinitializeRequestEvent,
+    DesignerProductChangeEvent,
     DesignerReinitializeEvent,
   ])
   .describe(
