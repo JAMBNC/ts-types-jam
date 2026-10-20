@@ -336,6 +336,78 @@ const _DesignerUiLabels = z
       .string()
       .describe("The icon used for the delete image button")
       .default("Close"),
+    /**The label over a gallery image that can't be used because the chosen process needs vector artwork and the image is made of pixels*/
+    "workspace.toolBar.tab.image.gallery.notVector.label": z
+      .string()
+      .describe(
+        "The label over a gallery image that can't be used because the chosen process needs vector artwork and the image is made of pixels",
+      )
+      .default("Needs vector artwork"),
+    /**The name of the foil process used in image messages, filled in for $process*/
+    "workspace.toolBar.tab.image.process.foil.label": z
+      .string()
+      .describe(
+        "The name of the foil process used in image messages, filled in for $process",
+      )
+      .default("foil"),
+    /**The name of the emboss process used in image messages, filled in for $process*/
+    "workspace.toolBar.tab.image.process.emboss.label": z
+      .string()
+      .describe(
+        "The name of the emboss process used in image messages, filled in for $process",
+      )
+      .default("emboss"),
+    /**The name of the white ink process used in image messages, filled in for $process*/
+    "workspace.toolBar.tab.image.process.whiteInk.label": z
+      .string()
+      .describe(
+        "The name of the white ink process used in image messages, filled in for $process",
+      )
+      .default("white ink"),
+    /**The title of the notice on the image panel when the chosen process only accepts vector artwork*/
+    "workspace.toolBar.tab.image.vectorOnly.label": z
+      .string()
+      .describe(
+        "The title of the notice on the image panel when the chosen process only accepts vector artwork",
+      )
+      .default("Vector artwork only"),
+    /**The notice on the image panel when the chosen process only accepts vector artwork, can use the $process variable*/
+    "workspace.toolBar.tab.image.vectorOnly.description": z
+      .string()
+      .describe(
+        "The notice on the image panel when the chosen process only accepts vector artwork, can use the $process variable",
+      )
+      .default(
+        "Your image will print in $process, which needs vector artwork: an AI, EPS or SVG file, or a PDF made of shapes rather than pixels.",
+      ),
+    /**The icon used with the vector artwork only notice*/
+    "workspace.toolBar.tab.image.vectorOnly.icon": z
+      .string()
+      .describe("The icon used with the vector artwork only notice")
+      .default("info"),
+    /**The message after a pixel image is uploaded while the chosen process needs vector artwork, can use the $fileName and $process variables*/
+    "workspace.toolBar.tab.image.upload.notVector.label": z
+      .string()
+      .describe(
+        "The message after a pixel image is uploaded while the chosen process needs vector artwork, can use the $fileName and $process variables",
+      )
+      .default(
+        "$fileName is made of pixels, so it can't print in $process. Upload a vector version: an AI, EPS or SVG file, or a PDF made of shapes.",
+      ),
+    /**The message when an image can't be prepared for printing*/
+    "workspace.toolBar.tab.image.rendition.error.label": z
+      .string()
+      .describe("The message when an image can't be prepared for printing")
+      .default("Failed to load image rendition. Please try again."),
+    /**The message when a pixel image is chosen for a process that needs vector artwork, can use the $process variable*/
+    "workspace.toolBar.tab.image.rendition.error.notVector.label": z
+      .string()
+      .describe(
+        "The message when a pixel image is chosen for a process that needs vector artwork, can use the $process variable",
+      )
+      .default(
+        "This image is made of pixels, so it can't print in $process. Upload a vector version: an AI, EPS or SVG file, or a PDF made of shapes.",
+      ),
     /**The label used for the front page selection option*/
     "workspace.canvasSpace.widgets.floatingPageSelector.front.label": z
       .string()

@@ -66,6 +66,16 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "workspace.toolBar.tab.image.gallery.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.gallery.delete.button.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.gallery.delete.button.icon": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.gallery.notVector.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.process.foil.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.process.emboss.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.process.whiteInk.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.vectorOnly.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.vectorOnly.description": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.vectorOnly.icon": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.upload.notVector.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.rendition.error.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.rendition.error.notVector.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingPageSelector.front.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingPageSelector.back.label": z.ZodDefault<z.ZodString>;
     "workspace.canvasSpace.widgets.floatingPageSelector.outside.label": z.ZodDefault<z.ZodString>;
