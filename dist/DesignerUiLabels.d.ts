@@ -628,6 +628,7 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "error.ProductQuantityIncrementNotValid": z.ZodDefault<z.ZodString>;
     "error.VariableAddressMultipleFrames": z.ZodDefault<z.ZodString>;
     "error.VariableAddressCountExceedsOrderQuantity": z.ZodDefault<z.ZodString>;
+    "error.VendorColorDoesNotSupportVariableAddress": z.ZodDefault<z.ZodString>;
     "error.ExceedsMaxFoilColorAllowance": z.ZodDefault<z.ZodString>;
     "error.ExceedsMaxFoilCoverageAllowance": z.ZodDefault<z.ZodString>;
     "error.ExceedsMaxFoilStampAllowance": z.ZodDefault<z.ZodString>;

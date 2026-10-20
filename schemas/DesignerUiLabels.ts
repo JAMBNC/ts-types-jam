@@ -3806,6 +3806,13 @@ const _DesignerUiLabels = z
         "Error message when the number of variable addresses exceeds the order quantity.",
       )
       .default("The number of variable addresses exceeds the order quantity."),
+    /**Error message when a variable address uses a color the vendor does not allow with variable elements.*/
+    "error.VendorColorDoesNotSupportVariableAddress": z
+      .string()
+      .describe(
+        "Error message when a variable address uses a color the vendor does not allow with variable elements.",
+      )
+      .default("The selected color cannot be used with variable address data."),
     /**Error message when too many foil colors are used.*/
     "error.ExceedsMaxFoilColorAllowance": z
       .string()

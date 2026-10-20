@@ -13,6 +13,11 @@ const _VendorProcess = z
         .string()
         .describe("Pricing group names keyed by supported process.")
         .optional(),
+    /**Alternative pricing groups keyed by an override identifier, such as `variableElement` for colors used on variable elements. A string value is the pricing group to use instead of `pricingGroup`; `false` means the color is not allowed in that situation. Omitted keys fall back to `pricingGroup`.*/
+    overridePricingGroups: z
+        .record(z.string(), z.union([z.string(), z.literal(false)]))
+        .describe("Alternative pricing groups keyed by an override identifier, such as `variableElement` for colors used on variable elements. A string value is the pricing group to use instead of `pricingGroup`; `false` means the color is not allowed in that situation. Omitted keys fall back to `pricingGroup`.")
+        .optional(),
 })
     .passthrough();
 export const VendorProcess = _VendorProcess;

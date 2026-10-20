@@ -3,6 +3,7 @@ declare const _VendorProcess: z.ZodObject<{
     apiColorName: z.ZodOptional<z.ZodString>;
     colorName: z.ZodOptional<z.ZodString>;
     pricingGroup: z.ZodOptional<z.ZodString>;
+    overridePricingGroups: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodUnion<readonly [z.ZodString, z.ZodLiteral<false>]>>>;
 }, z.core.$loose>;
 type _VendorProcessSchema = typeof _VendorProcess;
 export interface VendorProcessSchema extends _VendorProcessSchema {
