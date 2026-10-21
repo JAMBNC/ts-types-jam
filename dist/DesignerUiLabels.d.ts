@@ -641,6 +641,7 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "error.WhiteInkAndOtherProcessNotAllowed": z.ZodDefault<z.ZodString>;
     "error.ProcessNotOffered": z.ZodDefault<z.ZodString>;
     "error.ProcessCombinationNotAllowed": z.ZodDefault<z.ZodString>;
+    "error.PrintSideNotOffered": z.ZodDefault<z.ZodString>;
     "error.ProcessRequired": z.ZodDefault<z.ZodString>;
     "process.offset.label": z.ZodDefault<z.ZodString>;
     "process.digital.label": z.ZodDefault<z.ZodString>;

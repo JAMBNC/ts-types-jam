@@ -3199,6 +3199,11 @@ const _DesignerUiLabels = z
         .string()
         .describe('Error message when the design combines print processes the product\'s process restrictions keep apart. $processes names the combined processes from the process.* labels, e.g. "ink and foil".')
         .default("This product can print $processes, but not together on one design. Keep just one of them."),
+    /**Error message when part of the design sits on a side of the piece the product does not print, such as the inside of a folder that only prints its outside.*/
+    "error.PrintSideNotOffered": z
+        .string()
+        .describe("Error message when part of the design sits on a side of the piece the product does not print, such as the inside of a folder that only prints its outside.")
+        .default("This product prints on one side only, so it can't print the parts of your design on its other side. Move them or remove them."),
     /**Error message when the design uses none of the print processes the product's process restrictions require. $processes names the choices from the process.* labels, e.g. "ink or foil".*/
     "error.ProcessRequired": z
         .string()
