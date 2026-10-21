@@ -3895,9 +3895,7 @@ const _DesignerUiLabels = z
       .describe(
         "Error message when part of the design sits on a side of the piece the product does not print, such as the inside of a folder that only prints its outside.",
       )
-      .default(
-        "This product prints on one side only, so it can't print the parts of your design on its other side. Move them or remove them.",
-      ),
+      .default("This product does not offer printing on this side."),
     /**Error message when the design uses none of the print processes the product's process restrictions require. $processes names the choices from the process.* labels, e.g. "ink or foil".*/
     "error.ProcessRequired": z
       .string()
