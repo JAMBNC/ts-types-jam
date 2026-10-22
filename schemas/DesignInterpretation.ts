@@ -56,11 +56,11 @@ const _DesignInterpretation = z
         "Areas that govern where customer art goes on their panels, such as glue tabs, hinge bands, an envelope window or a postal clear zone.",
       )
       .optional(),
-    /**Interior cuts the die drawing carries that are not the outline: slits, card slots, business-card cuts. A vendor bakes every slit style it can sell into one drawing and the customer pays for the one they order, so the base design carries none of them and these are the only record of the shapes. Held, never derived from: no panel, fold, region or view reads one.*/
+    /**Interior cuts the die drawing carries that are not the outline: slits, card slots, business-card cuts. A vendor bakes every slit style it can sell into one drawing and the customer pays for the one they order, so the base design carries none of them and these are the only record of the shapes. Held, never derived from: no panel, fold, region or view reads one. A cut marked standard is the exception: it ships on every piece and is drawn as part of the die.*/
     optionalCuts: z
       .array(DesignOptionalCut)
       .describe(
-        "Interior cuts the die drawing carries that are not the outline: slits, card slots, business-card cuts. A vendor bakes every slit style it can sell into one drawing and the customer pays for the one they order, so the base design carries none of them and these are the only record of the shapes. Held, never derived from: no panel, fold, region or view reads one.",
+        "Interior cuts the die drawing carries that are not the outline: slits, card slots, business-card cuts. A vendor bakes every slit style it can sell into one drawing and the customer pays for the one they order, so the base design carries none of them and these are the only record of the shapes. Held, never derived from: no panel, fold, region or view reads one. A cut marked standard is the exception: it ships on every piece and is drawn as part of the die.",
       )
       .optional(),
     /**Where a fixture can sit: a business card slit in a pocket, a ribbon across a spine, a window in a cover. The template says what fits, the product says what is sold, and a purchase lands a fixture on an anchor. Stated on the flat sheet, projected into every view through the anchor's panel.*/

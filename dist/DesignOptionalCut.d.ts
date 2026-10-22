@@ -5,6 +5,7 @@ declare const _DesignOptionalCut: z.ZodObject<{
     panelId: z.ZodOptional<z.ZodString>;
     layer: z.ZodOptional<z.ZodString>;
     option: z.ZodOptional<z.ZodBoolean>;
+    standard: z.ZodOptional<z.ZodBoolean>;
 }, z.core.$strict>;
 type _DesignOptionalCutSchema = typeof _DesignOptionalCut;
 export interface DesignOptionalCutSchema extends _DesignOptionalCutSchema {

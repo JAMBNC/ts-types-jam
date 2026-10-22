@@ -20,6 +20,11 @@ const _DesignOptionalCut = z
         .boolean()
         .describe("The vendor named the layer as an option, so the cut is a priced choice and never cut out of the base.")
         .optional(),
+    /**The vendor named the layer as standard, so the cut ships on every piece: it belongs to the die, is drawn on the die plate and shown with the outline. Never set together with option.*/
+    standard: z
+        .boolean()
+        .describe("The vendor named the layer as standard, so the cut ships on every piece: it belongs to the die, is drawn on the die plate and shown with the outline. Never set together with option.")
+        .optional(),
 })
     .strict()
     .describe("One interior cut on the flat sheet that is not the die outline. A priced vendor attribute rather than artwork, kept so the shape survives intake.");

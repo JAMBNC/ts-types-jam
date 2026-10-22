@@ -27,6 +27,13 @@ const _DesignOptionalCut = z
         "The vendor named the layer as an option, so the cut is a priced choice and never cut out of the base.",
       )
       .optional(),
+    /**The vendor named the layer as standard, so the cut ships on every piece: it belongs to the die, is drawn on the die plate and shown with the outline. Never set together with option.*/
+    standard: z
+      .boolean()
+      .describe(
+        "The vendor named the layer as standard, so the cut ships on every piece: it belongs to the die, is drawn on the die plate and shown with the outline. Never set together with option.",
+      )
+      .optional(),
   })
   .strict()
   .describe(
