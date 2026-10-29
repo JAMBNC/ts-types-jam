@@ -359,6 +359,31 @@ const _DesignerUiLabels = z
         .string()
         .describe("The icon used with the vector artwork only notice")
         .default("info"),
+    /**The note on a selected image whose white background was removed automatically*/
+    "workspace.toolBar.tab.image.whiteBackground.removed.label": z
+        .string()
+        .describe("The note on a selected image whose white background was removed automatically")
+        .default("White background removed"),
+    /**The note on a selected image whose white background the customer chose to keep*/
+    "workspace.toolBar.tab.image.whiteBackground.kept.label": z
+        .string()
+        .describe("The note on a selected image whose white background the customer chose to keep")
+        .default("White background kept"),
+    /**The action that puts a removed white background back*/
+    "workspace.toolBar.tab.image.whiteBackground.undo.label": z
+        .string()
+        .describe("The action that puts a removed white background back")
+        .default("Undo"),
+    /**The action that removes a kept white background again*/
+    "workspace.toolBar.tab.image.whiteBackground.remove.label": z
+        .string()
+        .describe("The action that removes a kept white background again")
+        .default("Remove it"),
+    /**The icon used with the white background note*/
+    "workspace.toolBar.tab.image.whiteBackground.icon": z
+        .string()
+        .describe("The icon used with the white background note")
+        .default("auto_fix_high"),
     /**The message after a pixel image is uploaded while the chosen process needs vector artwork, can use the $fileName and $process variables*/
     "workspace.toolBar.tab.image.upload.notVector.label": z
         .string()
@@ -3199,11 +3224,11 @@ const _DesignerUiLabels = z
         .string()
         .describe('Error message when the design combines print processes the product\'s process restrictions keep apart. $processes names the combined processes from the process.* labels, e.g. "ink and foil".')
         .default("This product can print $processes, but not together on one design. Keep just one of them."),
-    /**Error message when part of the design sits on a side of the piece the product does not print, such as the inside of a folder that only prints its outside.*/
+    /**Error message when part of the design sits on a side of the piece the product does not print, such as the inside covers of a folder that only prints one side. $panels names the panels the design sits on, e.g. "Back Cover and Front Cover".*/
     "error.PrintSideNotOffered": z
         .string()
-        .describe("Error message when part of the design sits on a side of the piece the product does not print, such as the inside of a folder that only prints its outside.")
-        .default("This product does not offer printing on this side."),
+        .describe('Error message when part of the design sits on a side of the piece the product does not print, such as the inside covers of a folder that only prints one side. $panels names the panels the design sits on, e.g. "Back Cover and Front Cover".')
+        .default("This product prints on one side. Move your design off the $panels."),
     /**Error message when the design uses none of the print processes the product's process restrictions require. $processes names the choices from the process.* labels, e.g. "ink or foil".*/
     "error.ProcessRequired": z
         .string()

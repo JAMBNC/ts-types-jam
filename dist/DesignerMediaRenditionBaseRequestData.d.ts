@@ -1,6 +1,8 @@
 import { z } from "zod";
 declare const _DesignerMediaRenditionBaseRequestData: z.ZodObject<{
     process: import("./Process.js").ProcessSchema;
+    spot: z.ZodOptional<import("./DesignerMediaSpotRecipe.js").DesignerMediaSpotRecipeSchema>;
+    keepBackground: z.ZodOptional<z.ZodBoolean>;
 }, z.core.$strict>;
 type _DesignerMediaRenditionBaseRequestDataSchema = typeof _DesignerMediaRenditionBaseRequestData;
 export interface DesignerMediaRenditionBaseRequestDataSchema extends _DesignerMediaRenditionBaseRequestDataSchema {

@@ -73,6 +73,11 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "workspace.toolBar.tab.image.vectorOnly.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.vectorOnly.description": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.vectorOnly.icon": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.whiteBackground.removed.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.whiteBackground.kept.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.whiteBackground.undo.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.whiteBackground.remove.label": z.ZodDefault<z.ZodString>;
+    "workspace.toolBar.tab.image.whiteBackground.icon": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.upload.notVector.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.rendition.error.label": z.ZodDefault<z.ZodString>;
     "workspace.toolBar.tab.image.rendition.error.notVector.label": z.ZodDefault<z.ZodString>;
