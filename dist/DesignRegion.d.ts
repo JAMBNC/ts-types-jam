@@ -5,6 +5,7 @@ declare const _DesignRegion: z.ZodObject<{
     admits: z.ZodOptional<import("./DesignRegionAdmits.js").DesignRegionAdmitsSchema>;
     policy: import("./DesignRegionPolicy.js").DesignRegionPolicySchema;
     path: import("./Path.js").PathSchema;
+    panelIds: z.ZodOptional<z.ZodArray<z.ZodString>>;
 }, z.core.$strict>;
 type _DesignRegionSchema = typeof _DesignRegion;
 export interface DesignRegionSchema extends _DesignRegionSchema {

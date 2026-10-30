@@ -18,6 +18,13 @@ const _DesignRegion = z
     policy: DesignRegionPolicy,
     /**A vector path consisting of ordered control points.*/
     path: Path,
+    /**The panels the region belongs to. When set, it reaches a view only through placements of these panels, so a seam on an envelope's back never lands on its front, which shares the sheet. Absent means every panel whose placement it overlaps.*/
+    panelIds: z
+      .array(z.string())
+      .describe(
+        "The panels the region belongs to. When set, it reaches a view only through placements of these panels, so a seam on an envelope's back never lands on its front, which shares the sheet. Absent means every panel whose placement it overlaps.",
+      )
+      .optional(),
   })
   .strict()
   .describe(

@@ -15,6 +15,11 @@ const _DesignRegion = z
     policy: DesignRegionPolicy,
     /**A vector path consisting of ordered control points.*/
     path: Path,
+    /**The panels the region belongs to. When set, it reaches a view only through placements of these panels, so a seam on an envelope's back never lands on its front, which shares the sheet. Absent means every panel whose placement it overlaps.*/
+    panelIds: z
+        .array(z.string())
+        .describe("The panels the region belongs to. When set, it reaches a view only through placements of these panels, so a seam on an envelope's back never lands on its front, which shares the sheet. Absent means every panel whose placement it overlaps.")
+        .optional(),
 })
     .strict()
     .describe("An area that governs where art goes: it keeps art in (interior) or out (exterior), and refuses, flags or trims what crosses it. On a template it governs all customer art on its panels; on a DesignState page it governs only the ingredients whose restrictions name it.");

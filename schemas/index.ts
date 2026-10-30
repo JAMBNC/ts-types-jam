@@ -317,6 +317,7 @@ export * from './DesignTranslation.js';
 export * from './DesignPlacementRegion.js';
 export * from './DesignPlacementRegionsByPage.js';
 export * from './DesignPlanePoint.js';
+export * from './DesignPrintForm.js';
 export * from './DesignCutPathSource.js';
 export * from './DesignCutPathBridge.js';
 export * from './DesignCutPathEnd.js';

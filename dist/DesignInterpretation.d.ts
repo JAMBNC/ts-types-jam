@@ -14,6 +14,7 @@ declare const _DesignInterpretation: z.ZodObject<{
     anchors: z.ZodOptional<z.ZodArray<import("./DesignAnchor.js").DesignAnchorSchema>>;
     folding: z.ZodOptional<import("./DesignFolding.js").DesignFoldingSchema>;
     views: z.ZodArray<import("./DesignView.js").DesignViewSchema>;
+    printForm: z.ZodOptional<import("./DesignPrintForm.js").DesignPrintFormSchema>;
     inkDictionary: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodString>>;
     provenance: z.ZodOptional<import("./DesignProvenance.js").DesignProvenanceSchema>;
     preflight: z.ZodOptional<z.ZodArray<import("./DesignFinding.js").DesignFindingSchema>>;

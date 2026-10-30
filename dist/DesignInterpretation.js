@@ -9,6 +9,7 @@ import { DesignFold } from "./DesignFold.js";
 import { DesignFolding } from "./DesignFolding.js";
 import { DesignOptionalCut } from "./DesignOptionalCut.js";
 import { DesignPanel } from "./DesignPanel.js";
+import { DesignPrintForm } from "./DesignPrintForm.js";
 import { DesignProvenance } from "./DesignProvenance.js";
 import { DesignRegion } from "./DesignRegion.js";
 import { DesignView } from "./DesignView.js";
@@ -65,6 +66,8 @@ const _DesignInterpretation = z
     views: z
         .array(DesignView)
         .describe("The assembled faces a customer designs on, and the previews of the finished product. Bound to pages by Page.view, except a preview, which is never a page."),
+    /**How a piece is printed: made, printed after it is converted so each page of the vendor's PDF is one face designed as is (an envelope), or flat, printed as a sheet that folds into views (a folder).*/
+    printForm: DesignPrintForm.optional(),
     /**Maps a separation name as the vendor wrote it to the role it plays, e.g. "Hinge Break" to "hinge". Configuration owned by prepress, never code.*/
     inkDictionary: z
         .record(z.string(), z.string())
