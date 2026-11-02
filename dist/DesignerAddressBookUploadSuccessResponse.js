@@ -18,10 +18,15 @@ const _DesignerAddressBookUploadSuccessResponse = z
         .array(DesignerAddressBookSkippedRow)
         .describe("The rows left out of the import and why. Present when the request asked for reportDetails.")
         .optional(),
-    /**Things the customer should check before ordering, such as ignored columns, rows with no street address, or a country that was guessed. Present when the request asked for reportDetails.*/
+    /**Things the customer should check before ordering, such as ignored columns or rows with no street address. Present when the request asked for reportDetails.*/
     warnings: z
         .array(z.string())
-        .describe("Things the customer should check before ordering, such as ignored columns, rows with no street address, or a country that was guessed. Present when the request asked for reportDetails.")
+        .describe("Things the customer should check before ordering, such as ignored columns or rows with no street address. Present when the request asked for reportDetails.")
+        .optional(),
+    /**What the import fixed in the file on its own, such as a column read under our name for it, a country filled in from the state, or a misspelled country read as the nearest one. Present when the request asked for reportDetails.*/
+    corrections: z
+        .array(z.string())
+        .describe("What the import fixed in the file on its own, such as a column read under our name for it, a country filled in from the state, or a misspelled country read as the nearest one. Present when the request asked for reportDetails.")
         .optional(),
 })
     .strict()
