@@ -25,6 +25,11 @@ const _DesignerAddressBookUploadRequest = z
             .regex(/^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/)
             .describe("The uuid for the design related to this address upload.")
             .optional(),
+        /**Ask for the import report (imported, skipped, warnings) on a successful upload. Off by default so clients that validate the response strictly keep the original shape.*/
+        reportDetails: z
+            .boolean()
+            .describe("Ask for the import report (imported, skipped, warnings) on a successful upload. Off by default so clients that validate the response strictly keep the original shape.")
+            .optional(),
     })
         .strict()
         .describe("The address bookupload payload."),

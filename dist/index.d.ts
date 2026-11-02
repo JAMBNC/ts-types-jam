@@ -209,6 +209,7 @@ export * from './DesignerAddressBookResponse.js';
 export * from './DesignerAddressBookUploadRequest.js';
 export * from './DesignerAddressBookUploadSuccessResponse.js';
 export * from './DesignerAddressBookUploadErrorResponse.js';
+export * from './DesignerAddressBookSkippedRow.js';
 export * from './DesignerAddressBookUploadResponse.js';
 export * from './DesignerLoadResponse.js';
 export * from './DesignerBaseDesignBoot.js';

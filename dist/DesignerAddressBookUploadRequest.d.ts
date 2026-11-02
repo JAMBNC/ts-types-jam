@@ -5,6 +5,7 @@ declare const _DesignerAddressBookUploadRequest: z.ZodObject<{
         addressBook64: z.ZodString;
         contentType: z.ZodOptional<z.ZodString>;
         designUuid: z.ZodOptional<z.ZodString>;
+        reportDetails: z.ZodOptional<z.ZodBoolean>;
     }, z.core.$strict>;
 }, z.core.$strict>;
 type _DesignerAddressBookUploadRequestSchema = typeof _DesignerAddressBookUploadRequest;
