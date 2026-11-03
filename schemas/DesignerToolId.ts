@@ -10,6 +10,7 @@ const _DesignerToolId = z
     "mailingAddress",
     "pageRestrictions",
     "prepress",
+    "qrCode",
     "returnAddress",
     "uploadFullDesign",
   ])

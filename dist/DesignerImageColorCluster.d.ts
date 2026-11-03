@@ -6,8 +6,8 @@ declare const _DesignerImageColorCluster: z.ZodObject<{
     peakRgb: z.ZodArray<z.ZodNumber>;
     pixelCount: z.ZodNumber;
     fuzz: z.ZodEnum<{
-        blended: "blended";
         tight: "tight";
+        blended: "blended";
     }>;
 }, z.core.$strict>;
 type _DesignerImageColorClusterSchema = typeof _DesignerImageColorCluster;

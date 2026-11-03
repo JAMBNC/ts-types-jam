@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _ProductUrlType: z.ZodEnum<{
-    customProduct: "customProduct";
-    product: "product";
     yourLogoHere: "yourLogoHere";
+    product: "product";
+    customProduct: "customProduct";
 }>;
 type _ProductUrlTypeSchema = typeof _ProductUrlType;
 export interface ProductUrlTypeSchema extends _ProductUrlTypeSchema {

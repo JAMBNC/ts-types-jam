@@ -2,6 +2,7 @@ import { z } from "zod";
 import { DesignerAddCoatingTrackingEvent } from "./DesignerAddCoatingTrackingEvent.js";
 import { DesignerAddImageTrackingEvent } from "./DesignerAddImageTrackingEvent.js";
 import { DesignerAddMailingAddressTrackingEvent } from "./DesignerAddMailingAddressTrackingEvent.js";
+import { DesignerAddQrCodeTrackingEvent } from "./DesignerAddQrCodeTrackingEvent.js";
 import { DesignerAddReturnAddressTrackingEvent } from "./DesignerAddReturnAddressTrackingEvent.js";
 import { DesignerAddTextTrackingEvent } from "./DesignerAddTextTrackingEvent.js";
 import { DesignerAddToCartTrackingEvent } from "./DesignerAddToCartTrackingEvent.js";
@@ -41,6 +42,7 @@ const _DesignerAnalyticsEvent = z
         DesignerAddImageTrackingEvent,
         DesignerAddMailingAddressTrackingEvent,
         DesignerAddReturnAddressTrackingEvent,
+        DesignerAddQrCodeTrackingEvent,
         DesignerAddCoatingTrackingEvent,
         DesignerRemoveCoatingTrackingEvent,
         DesignerRemoveItemTrackingEvent,

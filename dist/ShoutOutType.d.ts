@@ -1,9 +1,9 @@
 import { z } from "zod";
 declare const _ShoutOutType: z.ZodEnum<{
     category: "category";
+    product: "product";
     generic: "generic";
     group: "group";
-    product: "product";
     similar: "similar";
 }>;
 type _ShoutOutTypeSchema = typeof _ShoutOutType;

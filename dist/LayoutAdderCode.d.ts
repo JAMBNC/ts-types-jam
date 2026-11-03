@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _LayoutAdderCode: z.ZodEnum<{
-    orientation_landscape: "orientation_landscape";
     orientation_portrait: "orientation_portrait";
+    orientation_landscape: "orientation_landscape";
 }>;
 type _LayoutAdderCodeSchema = typeof _LayoutAdderCode;
 export interface LayoutAdderCodeSchema extends _LayoutAdderCodeSchema {

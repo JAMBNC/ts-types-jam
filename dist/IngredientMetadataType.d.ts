@@ -1,10 +1,11 @@
 import { z } from "zod";
 declare const _IngredientMetadataType: z.ZodEnum<{
+    text: "text";
     image: "image";
-    recipientAddress: "recipientAddress";
     returnAddress: "returnAddress";
     sRecipientAddress: "sRecipientAddress";
-    text: "text";
+    recipientAddress: "recipientAddress";
+    qrCode: "qrCode";
     variableData: "variableData";
 }>;
 type _IngredientMetadataTypeSchema = typeof _IngredientMetadataType;

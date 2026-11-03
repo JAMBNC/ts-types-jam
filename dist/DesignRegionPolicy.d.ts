@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignRegionPolicy: z.ZodEnum<{
-    block: "block";
     clip: "clip";
+    block: "block";
     warn: "warn";
 }>;
 type _DesignRegionPolicySchema = typeof _DesignRegionPolicy;

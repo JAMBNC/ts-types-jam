@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _DesignFindingSeverity: z.ZodEnum<{
     error: "error";
-    info: "info";
     warning: "warning";
+    info: "info";
 }>;
 type _DesignFindingSeveritySchema = typeof _DesignFindingSeverity;
 export interface DesignFindingSeveritySchema extends _DesignFindingSeveritySchema {

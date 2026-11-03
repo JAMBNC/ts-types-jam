@@ -5,6 +5,7 @@ const _IngredientMetadataType = z
     "recipientAddress",
     "returnAddress",
     "image",
+    "qrCode",
     "text",
     "variableData",
 ])

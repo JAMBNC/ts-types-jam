@@ -1,9 +1,9 @@
 import { z } from "zod";
 declare const _BadgePosition: z.ZodEnum<{
-    bottomLeft: "bottomLeft";
-    bottomRight: "bottomRight";
-    topLeft: "topLeft";
     topRight: "topRight";
+    bottomRight: "bottomRight";
+    bottomLeft: "bottomLeft";
+    topLeft: "topLeft";
 }>;
 type _BadgePositionSchema = typeof _BadgePosition;
 export interface BadgePositionSchema extends _BadgePositionSchema {

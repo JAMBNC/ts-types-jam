@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _ActionResultStatus: z.ZodEnum<{
-    failed: "failed";
     succeeded: "succeeded";
+    failed: "failed";
 }>;
 type _ActionResultStatusSchema = typeof _ActionResultStatus;
 export interface ActionResultStatusSchema extends _ActionResultStatusSchema {

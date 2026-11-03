@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _ProcessRestriction: z.ZodObject<{
     type: z.ZodEnum<{
-        anyOf: "anyOf";
         oneOf: "oneOf";
+        anyOf: "anyOf";
         zeroOrOneOf: "zeroOrOneOf";
     }>;
     processes: z.ZodArray<z.ZodArray<import("./Process.js").ProcessSchema>>;

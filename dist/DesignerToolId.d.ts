@@ -1,14 +1,15 @@
 import { z } from "zod";
 declare const _DesignerToolId: z.ZodEnum<{
+    lamination: "lamination";
+    logo: "logo";
+    returnAddress: "returnAddress";
+    prepress: "prepress";
+    qrCode: "qrCode";
     backgroundColor: "backgroundColor";
     freeText: "freeText";
     ingredientRestrictions: "ingredientRestrictions";
-    lamination: "lamination";
-    logo: "logo";
     mailingAddress: "mailingAddress";
     pageRestrictions: "pageRestrictions";
-    prepress: "prepress";
-    returnAddress: "returnAddress";
     uploadFullDesign: "uploadFullDesign";
 }>;
 type _DesignerToolIdSchema = typeof _DesignerToolId;

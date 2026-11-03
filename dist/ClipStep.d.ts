@@ -2,8 +2,8 @@ import { z } from "zod";
 declare const _ClipStep: z.ZodObject<{
     paths: z.ZodArray<import("./Path.js").PathSchema>;
     rule: z.ZodOptional<z.ZodEnum<{
-        evenodd: "evenodd";
         nonzero: "nonzero";
+        evenodd: "evenodd";
     }>>;
 }, z.core.$strict>;
 type _ClipStepSchema = typeof _ClipStep;

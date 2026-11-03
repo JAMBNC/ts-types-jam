@@ -1,10 +1,10 @@
 import { z } from "zod";
 declare const _FulfillmentDiscountType: z.ZodEnum<{
-    automatic: "automatic";
-    code: "code";
-    manual: "manual";
-    script: "script";
     unknown: "unknown";
+    code: "code";
+    automatic: "automatic";
+    script: "script";
+    manual: "manual";
 }>;
 type _FulfillmentDiscountTypeSchema = typeof _FulfillmentDiscountType;
 export interface FulfillmentDiscountTypeSchema extends _FulfillmentDiscountTypeSchema {

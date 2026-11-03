@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _OAuth2GrantType: z.ZodEnum<{
-    authorization_code: "authorization_code";
-    client_credentials: "client_credentials";
     password: "password";
+    client_credentials: "client_credentials";
+    authorization_code: "authorization_code";
     refresh_token: "refresh_token";
 }>;
 type _OAuth2GrantTypeSchema = typeof _OAuth2GrantType;

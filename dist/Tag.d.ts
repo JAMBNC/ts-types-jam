@@ -1,14 +1,14 @@
 import { z } from "zod";
 declare const _Tag: z.ZodEnum<{
-    amazon: "amazon";
-    carousel: "carousel";
-    insideView: "insideView";
-    other: "other";
-    primary: "primary";
     small: "small";
-    swatch: "swatch";
+    primary: "primary";
     thumbnail: "thumbnail";
     yourLogoHere: "yourLogoHere";
+    insideView: "insideView";
+    swatch: "swatch";
+    amazon: "amazon";
+    carousel: "carousel";
+    other: "other";
 }>;
 type _TagSchema = typeof _Tag;
 export interface TagSchema extends _TagSchema {

@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignerImageWhiteBackground: z.ZodEnum<{
-    kept: "kept";
     removed: "removed";
+    kept: "kept";
 }>;
 type _DesignerImageWhiteBackgroundSchema = typeof _DesignerImageWhiteBackground;
 export interface DesignerImageWhiteBackgroundSchema extends _DesignerImageWhiteBackgroundSchema {

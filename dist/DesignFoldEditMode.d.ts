@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignFoldEditMode: z.ZodEnum<{
-    propose: "propose";
     rederive: "rederive";
+    propose: "propose";
 }>;
 type _DesignFoldEditModeSchema = typeof _DesignFoldEditMode;
 export interface DesignFoldEditModeSchema extends _DesignFoldEditModeSchema {

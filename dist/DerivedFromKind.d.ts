@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _DerivedFromKind: z.ZodEnum<{
-    design: "design";
-    prebuilt: "prebuilt";
     style: "style";
+    prebuilt: "prebuilt";
+    design: "design";
 }>;
 type _DerivedFromKindSchema = typeof _DerivedFromKind;
 export interface DerivedFromKindSchema extends _DerivedFromKindSchema {

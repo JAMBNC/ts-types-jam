@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _IngredientRestrictions: z.ZodObject<{
     zIndex: z.ZodOptional<z.ZodEnum<{
-        bottom: "bottom";
         top: "top";
+        bottom: "bottom";
     }>>;
     hidden: z.ZodOptional<z.ZodBoolean>;
     unselectable: z.ZodOptional<z.ZodBoolean>;

@@ -4,11 +4,11 @@ declare const _Vendor: z.ZodEnum<{
     DUPLI: "DUPLI";
     GRAPHIC_AWARDS: "GRAPHIC_AWARDS";
     JARED: "JARED";
+    TRAFFICWORKS: "TRAFFICWORKS";
     TAYLOR_FOLDERWORKS: "TAYLOR_FOLDERWORKS";
-    TAYLOR_LABELWORKS: "TAYLOR_LABELWORKS";
     TAYLOR_NAVITOR: "TAYLOR_NAVITOR";
     TAYLOR_SIGNS: "TAYLOR_SIGNS";
-    TRAFFICWORKS: "TRAFFICWORKS";
+    TAYLOR_LABELWORKS: "TAYLOR_LABELWORKS";
 }>;
 type _VendorSchema = typeof _Vendor;
 export interface VendorSchema extends _VendorSchema {

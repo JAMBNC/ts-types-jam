@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _Alignment: z.ZodEnum<{
-    center: "center";
     left: "left";
+    center: "center";
     right: "right";
 }>;
 type _AlignmentSchema = typeof _Alignment;

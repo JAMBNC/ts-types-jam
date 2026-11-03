@@ -26,6 +26,8 @@ declare const _DesignerUiLabels: z.ZodPrefault<z.ZodObject<{
     "tool.freeText.label": z.ZodDefault<z.ZodString>;
     "tool.logo.icon": z.ZodDefault<z.ZodString>;
     "tool.logo.label": z.ZodDefault<z.ZodString>;
+    "tool.qrCode.icon": z.ZodDefault<z.ZodString>;
+    "tool.qrCode.label": z.ZodDefault<z.ZodString>;
     "tool.returnAddress.icon": z.ZodDefault<z.ZodString>;
     "tool.returnAddress.label": z.ZodDefault<z.ZodString>;
     "tool.mailingAddress.icon": z.ZodDefault<z.ZodString>;

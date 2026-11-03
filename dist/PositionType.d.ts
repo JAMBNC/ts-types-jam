@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _PositionType: z.ZodEnum<{
-    absolute: "absolute";
     relative: "relative";
+    absolute: "absolute";
 }>;
 type _PositionTypeSchema = typeof _PositionType;
 export interface PositionTypeSchema extends _PositionTypeSchema {

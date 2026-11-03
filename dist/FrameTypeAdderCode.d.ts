@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _FrameTypeAdderCode: z.ZodEnum<{
-    image: "image";
     text: "text";
+    image: "image";
 }>;
 type _FrameTypeAdderCodeSchema = typeof _FrameTypeAdderCode;
 export interface FrameTypeAdderCodeSchema extends _FrameTypeAdderCodeSchema {

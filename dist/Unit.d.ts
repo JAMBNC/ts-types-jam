@@ -2,8 +2,8 @@ import { z } from "zod";
 declare const _Unit: z.ZodEnum<{
     in: "in";
     mm: "mm";
-    pt: "pt";
     px: "px";
+    pt: "pt";
 }>;
 type _UnitSchema = typeof _Unit;
 export interface UnitSchema extends _UnitSchema {

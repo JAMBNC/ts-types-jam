@@ -33,6 +33,10 @@ const _DesignerConfig = z
         })
             .passthrough()
             .optional(),
+        codes: z
+            .object({ qr: DesignerConfigFeatureValue.optional() })
+            .passthrough()
+            .optional(),
         coatings: z
             .object({
             aqueous: DesignerConfigFeatureValue.optional(),
@@ -147,6 +151,7 @@ const _DesignerConfig = z
         .superRefine((value, ctx) => {
         const defined_keys = new Set([
             "addressing",
+            "codes",
             "coatings",
             "process",
             "processes",

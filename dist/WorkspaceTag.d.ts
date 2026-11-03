@@ -1,18 +1,18 @@
 import { z } from "zod";
 declare const _WorkspaceTag: z.ZodEnum<{
-    autoSelectWorkspace: "autoSelectWorkspace";
-    colorInk: "colorInk";
-    disableAutoSave: "disableAutoSave";
-    disablePendingDesignsModal: "disablePendingDesignsModal";
-    disableReviewModal: "disableReviewModal";
     foil: "foil";
-    lockQuantity: "lockQuantity";
-    panelSnapping: "panelSnapping";
-    panelWash: "panelWash";
-    prepress: "prepress";
-    restrictionLock: "restrictionLock";
-    restrictionsAdmin: "restrictionsAdmin";
     whiteInk: "whiteInk";
+    colorInk: "colorInk";
+    prepress: "prepress";
+    disableAutoSave: "disableAutoSave";
+    disableReviewModal: "disableReviewModal";
+    disablePendingDesignsModal: "disablePendingDesignsModal";
+    lockQuantity: "lockQuantity";
+    restrictionsAdmin: "restrictionsAdmin";
+    autoSelectWorkspace: "autoSelectWorkspace";
+    panelWash: "panelWash";
+    restrictionLock: "restrictionLock";
+    panelSnapping: "panelSnapping";
 }>;
 type _WorkspaceTagSchema = typeof _WorkspaceTag;
 export interface WorkspaceTagSchema extends _WorkspaceTagSchema {

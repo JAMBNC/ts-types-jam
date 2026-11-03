@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _DesignerQuantityRuleType: z.ZodEnum<{
-    one_time: "one_time";
     per_base: "per_base";
     per_n_base: "per_n_base";
+    one_time: "one_time";
 }>;
 type _DesignerQuantityRuleTypeSchema = typeof _DesignerQuantityRuleType;
 export interface DesignerQuantityRuleTypeSchema extends _DesignerQuantityRuleTypeSchema {

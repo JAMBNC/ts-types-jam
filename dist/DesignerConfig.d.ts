@@ -8,6 +8,9 @@ declare const _DesignerConfig: z.ZodObject<{
             return: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
             variable: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
         }, z.core.$loose>>;
+        codes: z.ZodOptional<z.ZodObject<{
+            qr: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
+        }, z.core.$loose>>;
         coatings: z.ZodOptional<z.ZodObject<{
             aqueous: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;
             uv: z.ZodOptional<import("./DesignerConfigFeatureValue.js").DesignerConfigFeatureValueSchema>;

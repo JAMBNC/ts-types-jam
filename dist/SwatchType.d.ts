@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _SwatchType: z.ZodEnum<{
+    TEXT: "TEXT";
     IMAGE: "IMAGE";
     RGB: "RGB";
-    TEXT: "TEXT";
 }>;
 type _SwatchTypeSchema = typeof _SwatchType;
 export interface SwatchTypeSchema extends _SwatchTypeSchema {

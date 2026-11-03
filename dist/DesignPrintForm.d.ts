@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignPrintForm: z.ZodEnum<{
-    flat: "flat";
     made: "made";
+    flat: "flat";
 }>;
 type _DesignPrintFormSchema = typeof _DesignPrintForm;
 export interface DesignPrintFormSchema extends _DesignPrintFormSchema {

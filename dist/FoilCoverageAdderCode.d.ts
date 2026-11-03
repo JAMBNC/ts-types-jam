@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _FoilCoverageAdderCode: z.ZodEnum<{
-    foil_coverage_lg: "foil_coverage_lg";
     foil_coverage_sm: "foil_coverage_sm";
     foil_coverage_std: "foil_coverage_std";
+    foil_coverage_lg: "foil_coverage_lg";
     foil_coverage_xl: "foil_coverage_xl";
 }>;
 type _FoilCoverageAdderCodeSchema = typeof _FoilCoverageAdderCode;

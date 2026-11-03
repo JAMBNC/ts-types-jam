@@ -1,15 +1,15 @@
 import { z } from "zod";
 declare const _SlotRole: z.ZodEnum<{
-    accent: "accent";
-    address: "address";
-    body: "body";
-    contact: "contact";
     image: "image";
-    legal: "legal";
-    logo: "logo";
-    returnAddress: "returnAddress";
-    subtitle: "subtitle";
     title: "title";
+    logo: "logo";
+    subtitle: "subtitle";
+    body: "body";
+    address: "address";
+    returnAddress: "returnAddress";
+    contact: "contact";
+    accent: "accent";
+    legal: "legal";
 }>;
 type _SlotRoleSchema = typeof _SlotRole;
 export interface SlotRoleSchema extends _SlotRoleSchema {

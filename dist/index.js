@@ -133,6 +133,7 @@ export * from './DesignerDesignStartedTrackingEvent.js';
 export * from './DesignerAddTextTrackingEvent.js';
 export * from './DesignerAddImageTrackingEvent.js';
 export * from './DesignerAddMailingAddressTrackingEvent.js';
+export * from './DesignerAddQrCodeTrackingEvent.js';
 export * from './DesignerAddReturnAddressTrackingEvent.js';
 export * from './DesignerAddCoatingTrackingEvent.js';
 export * from './DesignerRemoveCoatingTrackingEvent.js';

@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _OptionUse: z.ZodEnum<{
-    all: "all";
-    none: "none";
     selected: "selected";
+    none: "none";
+    all: "all";
 }>;
 type _OptionUseSchema = typeof _OptionUse;
 export interface OptionUseSchema extends _OptionUseSchema {

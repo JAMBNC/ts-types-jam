@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _ColorSpaceName: z.ZodEnum<{
-    CIELAB: "CIELAB";
-    US_Web_Coated_SWOP_v2: "US_Web_Coated_SWOP_v2";
     sRGB: "sRGB";
+    US_Web_Coated_SWOP_v2: "US_Web_Coated_SWOP_v2";
+    CIELAB: "CIELAB";
 }>;
 type _ColorSpaceNameSchema = typeof _ColorSpaceName;
 export interface ColorSpaceNameSchema extends _ColorSpaceNameSchema {

@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignCutPathSource: z.ZodEnum<{
-    bbox: "bbox";
     stitched: "stitched";
+    bbox: "bbox";
 }>;
 type _DesignCutPathSourceSchema = typeof _DesignCutPathSource;
 export interface DesignCutPathSourceSchema extends _DesignCutPathSourceSchema {

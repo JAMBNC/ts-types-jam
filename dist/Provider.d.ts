@@ -1,9 +1,9 @@
 import { z } from "zod";
 declare const _Provider: z.ZodEnum<{
     FedEx: "FedEx";
-    Other: "Other";
     UPS: "UPS";
     USPS: "USPS";
+    Other: "Other";
 }>;
 type _ProviderSchema = typeof _Provider;
 export interface ProviderSchema extends _ProviderSchema {

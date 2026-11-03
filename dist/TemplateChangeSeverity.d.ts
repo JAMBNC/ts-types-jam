@@ -1,9 +1,9 @@
 import { z } from "zod";
 declare const _TemplateChangeSeverity: z.ZodEnum<{
     annotation: "annotation";
+    tolerance: "tolerance";
     geometry: "geometry";
     structural: "structural";
-    tolerance: "tolerance";
 }>;
 type _TemplateChangeSeveritySchema = typeof _TemplateChangeSeverity;
 export interface TemplateChangeSeveritySchema extends _TemplateChangeSeveritySchema {

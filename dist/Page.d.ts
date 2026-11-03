@@ -9,8 +9,8 @@ declare const _Page: z.ZodObject<{
     label: z.ZodOptional<z.ZodString>;
     width: z.ZodOptional<import("./Dimension.js").DimensionSchema>;
     process: z.ZodOptional<z.ZodEnum<{
-        digital: "digital";
         offset: "offset";
+        digital: "digital";
     }>>;
 }, z.core.$strict>;
 type _PageSchema = typeof _Page;

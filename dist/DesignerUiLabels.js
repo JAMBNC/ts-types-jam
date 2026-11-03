@@ -134,6 +134,16 @@ const _DesignerUiLabels = z
         .string()
         .describe("The label for the logo tool")
         .default("Logo"),
+    /**The icon for the QR Code tool*/
+    "tool.qrCode.icon": z
+        .string()
+        .describe("The icon for the QR Code tool")
+        .default("qr_code_2"),
+    /**The label for the QR Code tool*/
+    "tool.qrCode.label": z
+        .string()
+        .describe("The label for the QR Code tool")
+        .default("QR Code"),
     /**The icon for the Return Address tool*/
     "tool.returnAddress.icon": z
         .string()

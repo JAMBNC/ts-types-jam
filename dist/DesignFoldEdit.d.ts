@@ -9,8 +9,8 @@ declare const _DesignFoldEdit: z.ZodObject<{
     creases: z.ZodOptional<z.ZodArray<z.ZodObject<{
         foldId: z.ZodString;
         direction: z.ZodEnum<{
-            mountain: "mountain";
             none: "none";
+            mountain: "mountain";
             valley: "valley";
         }>;
     }, z.core.$strict>>>;

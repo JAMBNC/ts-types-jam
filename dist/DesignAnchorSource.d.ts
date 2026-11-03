@@ -1,8 +1,8 @@
 import { z } from "zod";
 declare const _DesignAnchorSource: z.ZodEnum<{
+    face: "face";
     claim: "claim";
     die: "die";
-    face: "face";
     person: "person";
 }>;
 type _DesignAnchorSourceSchema = typeof _DesignAnchorSource;

@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _DesignRegionAdmits: z.ZodEnum<{
-    exterior: "exterior";
     interior: "interior";
+    exterior: "exterior";
 }>;
 type _DesignRegionAdmitsSchema = typeof _DesignRegionAdmits;
 export interface DesignRegionAdmitsSchema extends _DesignRegionAdmitsSchema {

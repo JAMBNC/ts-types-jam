@@ -10,11 +10,11 @@ declare const _Font: z.ZodObject<{
     priority: z.ZodOptional<z.ZodNumber>;
     style: z.ZodEnum<{
         bold: "bold";
-        bold_italic: "bold_italic";
+        regular: "regular";
         italic: "italic";
+        bold_italic: "bold_italic";
         light: "light";
         light_italic: "light_italic";
-        regular: "regular";
     }>;
     url: z.ZodOptional<z.ZodString>;
     uuid: z.ZodString;

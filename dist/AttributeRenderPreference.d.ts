@@ -1,9 +1,9 @@
 import { z } from "zod";
 declare const _AttributeRenderPreference: z.ZodEnum<{
-    dropdown: "dropdown";
-    modal: "modal";
-    swatches: "swatches";
     tabs: "tabs";
+    dropdown: "dropdown";
+    swatches: "swatches";
+    modal: "modal";
 }>;
 type _AttributeRenderPreferenceSchema = typeof _AttributeRenderPreference;
 export interface AttributeRenderPreferenceSchema extends _AttributeRenderPreferenceSchema {

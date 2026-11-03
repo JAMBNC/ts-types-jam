@@ -1,7 +1,7 @@
 import { z } from "zod";
 declare const _ProductUrlMetaDataCreativeEngine: z.ZodEnum<{
-    alchemy: "alchemy";
     chili: "chili";
+    alchemy: "alchemy";
 }>;
 type _ProductUrlMetaDataCreativeEngineSchema = typeof _ProductUrlMetaDataCreativeEngine;
 export interface ProductUrlMetaDataCreativeEngineSchema extends _ProductUrlMetaDataCreativeEngineSchema {
