@@ -1,12 +1,14 @@
 import { z } from "zod";
 import { DesignerMediaRenditionBaseRequestData } from "./DesignerMediaRenditionBaseRequestData.js";
 import { DesignerMediaRenditionFoilRequestData } from "./DesignerMediaRenditionFoilRequestData.js";
+import { DesignerMediaRenditionInkRequestData } from "./DesignerMediaRenditionInkRequestData.js";
 
 const _DesignerMediaRenditionRequest = z
   .object({
     data: z.union([
       DesignerMediaRenditionBaseRequestData,
       DesignerMediaRenditionFoilRequestData,
+      DesignerMediaRenditionInkRequestData,
     ]),
   })
   .strict()

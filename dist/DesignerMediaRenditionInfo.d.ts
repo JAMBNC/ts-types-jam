@@ -1,5 +1,5 @@
 import { z } from "zod";
-declare const _DesignerMediaRenditionInfo: z.ZodUnion<readonly [import("./DesignerMediaRenditionColorInfo.js").DesignerMediaRenditionColorInfoSchema, import("./DesignerMediaRenditionFoilInfo.js").DesignerMediaRenditionFoilInfoSchema]>;
+declare const _DesignerMediaRenditionInfo: z.ZodUnion<readonly [import("./DesignerMediaRenditionColorInfo.js").DesignerMediaRenditionColorInfoSchema, import("./DesignerMediaRenditionFoilInfo.js").DesignerMediaRenditionFoilInfoSchema, import("./DesignerMediaRenditionPlateInfo.js").DesignerMediaRenditionPlateInfoSchema]>;
 type _DesignerMediaRenditionInfoSchema = typeof _DesignerMediaRenditionInfo;
 export interface DesignerMediaRenditionInfoSchema extends _DesignerMediaRenditionInfoSchema {
 }

@@ -1,6 +1,6 @@
 import { z } from "zod";
 declare const _DesignerMediaRenditionRequest: z.ZodObject<{
-    data: z.ZodUnion<readonly [import("./DesignerMediaRenditionBaseRequestData.js").DesignerMediaRenditionBaseRequestDataSchema, import("./DesignerMediaRenditionFoilRequestData.js").DesignerMediaRenditionFoilRequestDataSchema]>;
+    data: z.ZodUnion<readonly [import("./DesignerMediaRenditionBaseRequestData.js").DesignerMediaRenditionBaseRequestDataSchema, import("./DesignerMediaRenditionFoilRequestData.js").DesignerMediaRenditionFoilRequestDataSchema, import("./DesignerMediaRenditionInkRequestData.js").DesignerMediaRenditionInkRequestDataSchema]>;
 }, z.core.$strict>;
 type _DesignerMediaRenditionRequestSchema = typeof _DesignerMediaRenditionRequest;
 export interface DesignerMediaRenditionRequestSchema extends _DesignerMediaRenditionRequestSchema {
