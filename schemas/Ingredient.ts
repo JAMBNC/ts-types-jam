@@ -8,6 +8,7 @@ import { ImageIngredient } from "./ImageIngredient.js";
 import { LineIngredient } from "./LineIngredient.js";
 import { RectangleIngredient } from "./RectangleIngredient.js";
 import { ShapeIngredient } from "./ShapeIngredient.js";
+import { SvgIngredient } from "./SvgIngredient.js";
 import { TextIngredient } from "./TextIngredient.js";
 
 const _Ingredient = z
@@ -18,6 +19,7 @@ const _Ingredient = z
     LineIngredient,
     RectangleIngredient,
     ShapeIngredient,
+    SvgIngredient,
     TextIngredient,
     CoatingIngredient,
     CircleIngredient,

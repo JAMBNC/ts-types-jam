@@ -28,6 +28,7 @@ export * from './RectangleIngredient.js';
 export * from './ShapeIngredient.js';
 export * from './Slot.js';
 export * from './SlotRole.js';
+export * from './SvgIngredient.js';
 export * from './TextIngredient.js';
 export * from './TextProperties.js';
 export * from './TextureColor.js';
