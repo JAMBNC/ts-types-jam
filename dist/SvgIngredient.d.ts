@@ -17,6 +17,7 @@ declare const _SvgIngredient: z.ZodObject<{
     type: z.ZodLiteral<"svg">;
     rect: import("./Rect.js").RectSchema;
     svg: z.ZodString;
+    requiresContentUpdateToCart: z.ZodOptional<z.ZodBoolean>;
 }, z.core.$loose>;
 type _SvgIngredientSchema = typeof _SvgIngredient;
 export interface SvgIngredientSchema extends _SvgIngredientSchema {

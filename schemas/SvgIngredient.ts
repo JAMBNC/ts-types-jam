@@ -10,6 +10,13 @@ const _SvgIngredient = BaseIngredient.merge(
       rect: Rect,
       /**The SVG markup.*/
       svg: z.string().describe("The SVG markup."),
+      /**When true, the svg must be updated before the design can continue to cart under normal circumstances. Cleared automatically on any svg update. Stripped from plain orders.*/
+      requiresContentUpdateToCart: z
+        .boolean()
+        .describe(
+          "When true, the svg must be updated before the design can continue to cart under normal circumstances. Cleared automatically on any svg update. Stripped from plain orders.",
+        )
+        .optional(),
     })
     .passthrough(),
 ).describe(

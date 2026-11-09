@@ -26,6 +26,7 @@ declare const _ImageIngredient: z.ZodObject<{
         imgHeightPixels: z.ZodOptional<z.ZodNumber>;
     }, z.core.$strict>>;
     src: z.ZodString;
+    requiresContentUpdateToCart: z.ZodOptional<z.ZodBoolean>;
 }, z.core.$loose>;
 type _ImageIngredientSchema = typeof _ImageIngredient;
 export interface ImageIngredientSchema extends _ImageIngredientSchema {

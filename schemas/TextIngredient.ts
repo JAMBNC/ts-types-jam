@@ -8,6 +8,13 @@ const _TextIngredient = BaseIngredient.merge(
     .object({
       type: z.literal("text"),
       allowRewrite: z.boolean().optional(),
+      /**When true, the body must be updated before the design can continue to cart under normal circumstances. Cleared automatically on any body update. Stripped from plain orders.*/
+      requiresContentUpdateToCart: z
+        .boolean()
+        .describe(
+          "When true, the body must be updated before the design can continue to cart under normal circumstances. Cleared automatically on any body update. Stripped from plain orders.",
+        )
+        .optional(),
       /**A positioned rectangle defined by x, y, width, and height measurements.*/
       rect: Rect,
       /**Properties for displayed text*/

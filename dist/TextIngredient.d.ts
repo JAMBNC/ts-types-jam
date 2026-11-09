@@ -16,6 +16,7 @@ declare const _TextIngredient: z.ZodObject<{
     clip: z.ZodOptional<z.ZodArray<import("./ClipStep.js").ClipStepSchema>>;
     type: z.ZodLiteral<"text">;
     allowRewrite: z.ZodOptional<z.ZodBoolean>;
+    requiresContentUpdateToCart: z.ZodOptional<z.ZodBoolean>;
     rect: import("./Rect.js").RectSchema;
     text: import("./TextProperties.js").TextPropertiesSchema;
 }, z.core.$loose>;
