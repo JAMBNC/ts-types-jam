@@ -5,7 +5,7 @@ declare const _IngredientMetadataType: z.ZodEnum<{
     returnAddress: "returnAddress";
     sRecipientAddress: "sRecipientAddress";
     recipientAddress: "recipientAddress";
-    qrCode: "qrCode";
+    barcode: "barcode";
     variableData: "variableData";
 }>;
 type _IngredientMetadataTypeSchema = typeof _IngredientMetadataType;

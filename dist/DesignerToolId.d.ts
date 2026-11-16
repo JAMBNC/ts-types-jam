@@ -4,12 +4,12 @@ declare const _DesignerToolId: z.ZodEnum<{
     logo: "logo";
     returnAddress: "returnAddress";
     prepress: "prepress";
-    qrCode: "qrCode";
     backgroundColor: "backgroundColor";
     freeText: "freeText";
     ingredientRestrictions: "ingredientRestrictions";
     mailingAddress: "mailingAddress";
     pageRestrictions: "pageRestrictions";
+    qrCode: "qrCode";
     uploadFullDesign: "uploadFullDesign";
 }>;
 type _DesignerToolIdSchema = typeof _DesignerToolId;

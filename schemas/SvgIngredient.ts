@@ -20,10 +20,10 @@ const _SvgIngredient = BaseIngredient.merge(
     })
     .passthrough(),
 ).describe(
-  "An ingredient that renders an inline SVG document carried in the ingredient itself. Restricted to a simple supported subset (svg, g, path and basic shapes; no transforms, animation or authored styles). Colors are referenced by class name c-<color uuid> and resolved through metadata.colors; the colors' hex values are mirrored in a managed style block. See isInlineSvgSupported in @jambnc/common.",
+  "An ingredient that renders an inline SVG document carried in the ingredient itself. The SVG states no colour: it is painted in the single colour given by metadata.colors. What the SVG was generated from (for a barcode: format and encoded data) is recorded in metadata.barcode.",
 );
 type _SvgIngredientSchema = typeof _SvgIngredient;
 export interface SvgIngredientSchema extends _SvgIngredientSchema {}
-/**An ingredient that renders an inline SVG document carried in the ingredient itself. Restricted to a simple supported subset (svg, g, path and basic shapes; no transforms, animation or authored styles). Colors are referenced by class name c-<color uuid> and resolved through metadata.colors; the colors' hex values are mirrored in a managed style block. See isInlineSvgSupported in @jambnc/common.*/
+/**An ingredient that renders an inline SVG document carried in the ingredient itself. The SVG states no colour: it is painted in the single colour given by metadata.colors. What the SVG was generated from (for a barcode: format and encoded data) is recorded in metadata.barcode.*/
 export const SvgIngredient: SvgIngredientSchema = _SvgIngredient;
 export type SvgIngredient = z.infer<typeof SvgIngredient>;

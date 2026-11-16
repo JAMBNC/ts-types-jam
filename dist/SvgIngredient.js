@@ -14,6 +14,6 @@ const _SvgIngredient = BaseIngredient.merge(z
         .describe("When true, the svg must be updated before the design can continue to cart under normal circumstances. Cleared automatically on any svg update. Stripped from plain orders.")
         .optional(),
 })
-    .passthrough()).describe("An ingredient that renders an inline SVG document carried in the ingredient itself. Restricted to a simple supported subset (svg, g, path and basic shapes; no transforms, animation or authored styles). Colors are referenced by class name c-<color uuid> and resolved through metadata.colors; the colors' hex values are mirrored in a managed style block. See isInlineSvgSupported in @jambnc/common.");
-/**An ingredient that renders an inline SVG document carried in the ingredient itself. Restricted to a simple supported subset (svg, g, path and basic shapes; no transforms, animation or authored styles). Colors are referenced by class name c-<color uuid> and resolved through metadata.colors; the colors' hex values are mirrored in a managed style block. See isInlineSvgSupported in @jambnc/common.*/
+    .passthrough()).describe("An ingredient that renders an inline SVG document carried in the ingredient itself. The SVG states no colour: it is painted in the single colour given by metadata.colors. What the SVG was generated from (for a barcode: format and encoded data) is recorded in metadata.barcode.");
+/**An ingredient that renders an inline SVG document carried in the ingredient itself. The SVG states no colour: it is painted in the single colour given by metadata.colors. What the SVG was generated from (for a barcode: format and encoded data) is recorded in metadata.barcode.*/
 export const SvgIngredient = _SvgIngredient;
